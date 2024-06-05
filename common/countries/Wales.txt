@@ -1,0 +1,164 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 117 127 174 }
+revolutionary_colors = { 0 5 10 }
+historical_idea_groups = {
+	maritime_ideas
+	aristocracy_ideas
+	trade_ideas
+	economic_ideas
+	religious_ideas
+	innovativeness_ideas
+	offensive_ideas
+	defensive_ideas
+}
+historical_units = {
+	anglofrench_line
+	british_hussar
+	british_redcoat
+	british_square
+	gaelic_free_shooter
+	gaelic_mercenary
+	irish_charge
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	western_longbow
+	western_medieval_infantry
+	western_medieval_knights
+}
+monarch_names = {
+	"Adda #0" = 0
+	"Alisander #0" = 0
+	"Annes #0" = -1
+	"Arod #0" = 0
+	"Arthws #0" = 0
+	"Blanche #0" = -1
+	"Bronwen #0" = -1
+	"Cadwgan #1" = 10
+	"Cadwr #0" = 0
+	"Caradog #0" = 0
+	"Coel #0" = 0
+	"Cynan #0" = 0
+	"Cynwyd #1" = 10
+	"Dogfael #3" = 10
+	"Elaine #0" = -1
+	"Elísabet #0" = -1
+	"Guðrún #0" = -1
+	"Gwen #0" = -1
+	"Heledd #0" = -1
+	"Hunydd #0" = -1
+	"Iestyn #0" = 0
+	"Ketill #0" = 0
+	"Lann #0" = -1
+	"Llecci #0" = -1
+	"Llywelyn #2" = 10
+	"Mael #0" = 0
+	"Maelgwn #0" = 0
+	"Margred #0" = -1
+	"Melisant #0" = -1
+	"Otto #0" = 0
+	"Pawl #0" = 0
+	"Raoul #0" = 0
+	"Rhydderch #3" = 10
+	"Simon #0" = 0
+	"Sior #0" = 0
+	"Trahaearn #0" = 0
+	"Tydy #0" = 0
+	"Ysfael #0" = 0
+}
+leader_names = {
+	"Bennett"
+	"Bevan"
+	"Bowen"
+	"Cadell"
+	"Cadwallader"
+	"Daniels"
+	"Davies"
+	"Davis"
+	"Edwards"
+	"Ellis"
+	"Evans"
+	"Gough"
+	"Griffiths"
+	"Gwyn"
+	"Harris"
+	"Hopkins"
+	"Howells"
+	"Hughes"
+	"Humphries"
+	"James"
+	"Jenkins"
+	"John"
+	"Jones"
+	"Lewis"
+	"Llewellyn"
+	"Lloyd"
+	"Madog"
+	"Matthews"
+	"Meredith"
+	"Merrick"
+	"Morgan"
+	"Morris"
+	"Mostyn"
+	"Owen"
+	"Parry"
+	"Phillips"
+	"Powell"
+	"Prees"
+	"Price"
+	"Pritchard"
+	"Protheroe"
+	"Pugh"
+	"Rees"
+	"Richards"
+	"Roberts"
+	"Rogers"
+	"Thomas"
+	"Vaughan"
+	"Watkins"
+	"Williams"
+}
+ship_names = {
+	"Bedwyr"
+	"Brycheiniog"
+	"Cadwaladr"
+	"Caerdydd"
+	"Caernarfon"
+	"Caradoc"
+	"Ceredigion"
+	"Conwy"
+	"Culhwch"
+	"Deheubarth"
+	"Dewi Sant"
+	"Dolbadarn"
+	"Dolwyddelan"
+	"Dyfed"
+	"Eryri"
+	"Glywysing"
+	"Gwalchmei"
+	"Gwenan Gorn"
+	"Gwydion"
+	"Gwyn"
+	"Gwynedd"
+	"Lleu"
+	"Llewellyn Fawr"
+	"Mabinogi"
+	"Math"
+	"Meirionydd"
+	"Morgannwg"
+	"Olwen"
+	"Owain Glyndwr"
+	"Penfro"
+	"Powys"
+	"Preiddeu Annwn"
+	"Pryderi"
+	"Pwyll"
+	"Rhiannon"
+	"Taff"
+	"Teifi"
+	"Teirnon"
+	"Tywi"
+	"Ynys Môn"
+}

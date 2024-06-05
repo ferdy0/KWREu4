@@ -1,0 +1,94 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 129 109 9 }
+revolutionary_colors = { 8 1 16 }
+historical_idea_groups = {
+	defensive_ideas
+	religious_ideas
+	offensive_ideas
+	economic_ideas
+	spy_ideas
+	innovativeness_ideas
+	trade_ideas
+	diplomatic_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Arnulf #1" = 10
+	"Berengar #1" = 10
+	"Berthold #1" = 10
+	"Eberhard #1" = 10
+	"Ekbert #1" = 10
+	"Eticho #0" = 0
+	"Friedrich #1" = 10
+	"Gebhard #1" = 10
+	"Gottfried #0" = 0
+	"Gottschalk #1" = 10
+	"Hartwig #1" = 10
+	"Heinrich #11" = 10
+	"Jakob #0" = 0
+	"Kuno #1" = 10
+	"Lantfrid #0" = 0
+	"Luitpold #1" = 10
+	"Odilo #1" = 10
+	"Otto #1" = 10
+	"Pilihilde #0" = -1
+	"Reinaerd #1" = 10
+	"Reinoud #1" = 10
+	"Rizzo #0" = 0
+	"Sieghart #1" = 10
+	"Simone #0" = 0
+	"Willa #0" = -1
+	"Willem #1" = 10
+}
+leader_names = {
+	"Aigner"
+	"Amanshauser"
+	"Burgstaller"
+	"Bäck"
+	"Doppler"
+	"Feiersinger"
+	"Gruber"
+	"Macheiner"
+	"Maislinger"
+	"Mayer"
+	"Mohr"
+	"Rendl"
+	"Rohracher"
+	"Scharl"
+	"Schönswetter"
+	"Trakl"
+	"Waggerl"
+	"Witzigmann"
+}
+ship_names = {
+	"Dachstein"
+	"Gmunden"
+	"Hallein"
+	"Hallstatt"
+	"Hochkönig"
+	"Lungau"
+	"Pinzgau"
+	"Pongau"
+	"Salzach"
+	"Tennengau"
+}
+army_names = {
+	"Armee von $PROVINCE$"
+	"Erzbischofliche Garde"
+}

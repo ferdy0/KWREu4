@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = franconian
+capital = 4718
+fixed_capital = 4718
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Hugo"
+		dynasty = "von Vinstingen"
+		adm = 4
+		dip = 3
+		mil = 4
+		birth_date = 1394.9.18
+		religion = catholic
+		culture = franconian
+	}
+	add_ruler_personality = obsessive_perfectionist_personality
+	add_ruler_personality = pious_personality
+	queen = {
+		name = "Fenne"
+		dynasty = "Folcwalding-Berg"
+		adm = 4
+		dip = 4
+		mil = 4
+		country_of_origin = Z3D
+		birth_date = 1397.6.6
+		death_date = 1457.6.6
+		female = yes
+		religion = catholic
+		culture = franconian
+	}
+	add_queen_personality = pious_personality
+	add_queen_personality = tolerant_personality
+	heir = {
+		name = "Adam"
+		monarch_name = "Adam II"
+		dynasty = "von Vinstingen"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1417.3.15
+		death_date = 1482.3.15
+		claim = 89
+		religion = catholic
+		culture = franconian
+	}
+	add_heir_personality = malevolent_personality
+	add_heir_personality = obsessive_perfectionist_personality
+}
+1444.11.11= {
+	add_prestige = 82
+	add_treasury = 0
+}

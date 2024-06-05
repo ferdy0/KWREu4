@@ -1,0 +1,88 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 252 209 22 }
+revolutionary_colors = { 5 8 13 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	aristocracy_ideas
+	spy_ideas
+	religious_ideas
+}
+historical_units = {
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	prussian_frederickian
+	prussian_uhlan
+	swedish_arme_blanche
+	swedish_caroline
+	swedish_gallop
+	swedish_gustavian
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Algebaeivi #0" = 0
+	"Anthimos #0" = 0
+	"Bótólfr #0" = 0
+	"Dan #0" = 0
+	"Gierá #0" = -1
+	"Gnúpa #0" = 0
+	"Ilme #0" = -1
+	"Ingiríðr #0" = -1
+	"Irina #0" = -1
+	"Járre #0" = 0
+	"Jórunn #0" = -1
+	"Knut #1" = 10
+	"Leandu #0" = -1
+	"Masgava #0" = 0
+	"Nikulás #0" = 0
+	"Njáll #0" = 0
+	"Oaván #0" = 0
+	"Padulesa #0" = -1
+	"Rabbi #0" = 0
+	"Ruigi #0" = 0
+	"Sigurðr #1" = 10
+	"Skjaldvör #0" = -1
+	"Speaidna #0" = 0
+	"Styrbjörn #0" = 0
+	"Suni #0" = 0
+	"Vagn #0" = 0
+	"Ággi #0" = 0
+	"Áilu #1" = 10
+	"Álfrhildr #0" = -1
+	"Önundr #0" = 0
+	"Þorbjörn #0" = 0
+}
+leader_names = {
+	"Guoládat"
+	"Gájka"
+	"Kaise"
+	"Magga"
+	"Nuoráne"
+	"Nylogid"
+	"Saiva"
+	"Syktyvkar"
+	"Ubmeje"
+	"Yugra"
+}
+ship_names = {
+	"Akka"
+	"Beaivi"
+	"Bieggolmai"
+	"Haldi"
+	"Laib Olmai"
+	"Lieaibolmmai"
+	"Raedieahkka"
+	"Ruohtta"
+	"Stallo"
+	"Tjaetsieålmaj"
+}

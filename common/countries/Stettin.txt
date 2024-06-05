@@ -1,0 +1,115 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 33 119 58 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	innovativeness_ideas
+	offensive_ideas
+	economic_ideas
+	maritime_ideas
+	quality_ideas
+	administrative_ideas
+}
+historical_units = {
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	prussian_frederickian
+	prussian_uhlan
+	swedish_arme_blanche
+	swedish_caroline
+	swedish_gallop
+	swedish_gustavian
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Andrzej #0" = 0
+	"Aron #0" = 0
+	"Bogislaw #1" = 10
+	"Branimir #0" = 0
+	"Bretislav #1" = 10
+	"Blazej #0" = 0
+	"Giselbert #1" = 10
+	"Halina #0" = -1
+	"Herman #1" = 10
+	"Janko #0" = 0
+	"Kasper #1" = 10
+	"Krzeslaw #0" = 0
+	"Liutbert #0" = 0
+	"Maria #1" = -1
+	"Msciwój #1" = 10
+	"Radbot #0" = 0
+	"Regelinda #0" = -1
+	"Reinhold #0" = 0
+	"Siemomysl #2" = 10
+	"Stanislaw #0" = 0
+	"Swietibor #1" = 10
+	"Udalrich #0" = 0
+	"Wendelmoet #1" = -1
+	"Willem #1" = 10
+	"Wincenty #0" = 0
+	"Zdislav #2" = 10
+}
+leader_names = {
+	"Behm"
+	"Beyse"
+	"Grosch"
+	"Heidmann"
+	"Jürgens"
+	"Krumtum"
+	"Kurzmann"
+	"Meuseling"
+	"Miercke"
+	"Normann"
+	"Rähl"
+	"Stellmacher"
+	"Wessel"
+	"Witt"
+	"von Borcke"
+	"von Cammin"
+	"von Eickstedt"
+	"von Greifswald"
+	"von Kolberg"
+	"von Krockows"
+	"von Lettows"
+	"von Neubrandenburg"
+	"von Neustettin"
+	"von Neustreliz"
+	"von Peglows"
+	"von Prenzlau"
+	"von Ramin"
+	"von Rügen"
+	"von Schwerin"
+	"von Stettin"
+	"von Stolp"
+	"von Stralsund"
+	"von Strelows"
+	"von Szczecin"
+	"von Wolgast"
+	"von Wolgatz"
+	"von Wolin"
+	"von Zitzewitzes"
+	"von und zu Stargard"
+}
+ship_names = {
+	"Anklam"
+	"Cammin"
+	"Demmin"
+	"Fräulein von Rügen"
+	"Greifswald"
+	"Herzog Bogislaw"
+	"Herzog Kasimir"
+	"Herzog Otto"
+	"Neustettin"
+	"Pommern"
+	"Rostock"
+	"Stettin Herzog Barnim"
+	"Stralsund"
+	"Wismar"
+	"Wolgast"
+}

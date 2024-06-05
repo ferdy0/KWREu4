@@ -1,0 +1,8 @@
+capital = "Zacatecas"
+culture = chichimecan
+religion = animism
+trade_goods = gold
+base_tax = 1
+base_production = 1
+base_manpower = 1
+discovered_by = mesoamerican

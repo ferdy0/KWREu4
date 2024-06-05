@@ -1,0 +1,41 @@
+government = monarchy
+add_government_reform = english_monarchy
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = lower_saxon
+capital = 4141
+fixed_capital = 4141
+1444.11.11= {
+	monarch = {
+		name = "Asig"
+		dynasty = "von Kiel"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1394.4.13
+		religion = catholic
+		culture = lower_saxon
+	}
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = calm_personality
+	heir = {
+		name = "Baldur"
+		monarch_name = "Baldur"
+		dynasty = "von Luxemburg"
+		adm = 6
+		dip = 5
+		mil = 6
+		birth_date = 1420.9.21
+		death_date = 1485.9.21
+		claim = 89
+		religion = catholic
+		culture = dynamic-franconian-culture-num1
+	}
+	add_heir_personality = charismatic_negotiator_personality
+	add_heir_personality = lawgiver_personality
+}
+1444.11.11= {
+	add_prestige = 47
+	add_treasury = 0
+}

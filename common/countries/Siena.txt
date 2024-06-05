@@ -1,0 +1,154 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 165 171 115 }
+revolutionary_colors = { 13 8 13 }
+historical_idea_groups = {
+	trade_ideas
+	economic_ideas
+	defensive_ideas
+	innovativeness_ideas
+	spy_ideas
+	offensive_ideas
+	religious_ideas
+	diplomatic_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	italian_condotta
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	spanish_tercio
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Amonius #1" = 10
+	"Anselmo #1" = 10
+	"Ardicino #0" = 0
+	"Arsenio #1" = 10
+	"Bassiano #1" = 10
+	"Basso #1" = 10
+	"Berta #0" = -1
+	"Carla #0" = -1
+	"Carlo #1" = 10
+	"Dietwin #0" = 0
+	"Elio #0" = 0
+	"Francesco #1" = 10
+	"Giustu #0" = 0
+	"Goffredo #1" = 10
+	"Gregorio #1" = 10
+	"Kaspar #0" = 0
+	"Rosso #0" = 0
+	"Ruggiero #0" = 0
+	"Sebastiaen #0" = 0
+	"Sieghard #1" = 10
+	"Teobaldo #0" = 0
+	"Ugolino #0" = 0
+	"Vissente #1" = 10
+}
+leader_names = {
+	"Accarigi"
+	"Alighieri"
+	"Amelia"
+	"Bardi"
+	"Barone"
+	"Barzagli"
+	"Borghese"
+	"Borgia"
+	"Castro"
+	"Cecchereni"
+	"Compagnoni"
+	"Damiani"
+	"Di Stefano"
+	"Fossombroni"
+	"Galilei"
+	"Gallo"
+	"Gentile"
+	"Golia di Siena"
+	"Griccioli"
+	"Grosso"
+	"Guerra"
+	"Idoni"
+	"Labriola"
+	"Marescotti"
+	"Nardi"
+	"Neri"
+	"Oddo"
+	"Orlando"
+	"Palumbo"
+	"Pannocchieschi"
+	"Pazzi"
+	"Peruzzi"
+	"Petrucci"
+	"Pianella"
+	"Piccolomini"
+	"Pirlo"
+	"Quercegrossa"
+	"Riario"
+	"Salimbeni"
+	"Segni"
+	"Testa"
+	"Torricelli"
+	"Uccello"
+	"Vagliagli"
+	"Visconti"
+	"Vitali"
+	"Viviani"
+	"Zaccardo"
+	"Zeti"
+	"da Porcari"
+	"da Sangallo"
+	"da Staggia"
+	"de Rossi"
+	"del Piero"
+}
+ship_names = {
+	"Ambrogio Lorenzetti"
+	"Asciano"
+	"Bartolomeo Guidi"
+	"Bonaguida Lucari"
+	"Carlo IV"
+	"Castelnuovo Berardenga"
+	"Chianti"
+	"Costalpino"
+	"Crete Senesi"
+	"Donatello"
+	"Duccio di Buoninsegna"
+	"Elsa"
+	"Francesco di Rinaldo"
+	"Ghibellini"
+	"Giovanni di Balduccio"
+	"Isola d'Arbia"
+	"Merse"
+	"Minuccio di Rinaldo"
+	"Misser santo Micchele arcangelo"
+	"Montagnola"
+	"Montaperti"
+	"Monteriggioni"
+	"Monteroni d'Arbia"
+	"Orlando Bonsignori"
+	"San Bernardino"
+	"San Domenico"
+	"San Francesco"
+	"San Galgano"
+	"San Giovanni"
+	"San Miniato"
+	"Sant'Ansano"
+	"Santa Caterina"
+	"Santa Maria dei Servi"
+	"Santissima Annunziata"
+	"Senius"
+	"Sovicille"
+	"Taverne d'Arbia"
+	"fiumi Arbia"
+}
+army_names = {
+	"Armata di $PROVINCE$"
+}

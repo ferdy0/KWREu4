@@ -1,0 +1,55 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = sicilian
+capital = 125
+1444.11.11= {
+	monarch = {
+		name = "Alessiu V"
+		dynasty = "Hauteville-Lentini"
+		adm = 3
+		dip = 4
+		mil = 3
+		birth_date = 1400.5.5
+		religion = catholic
+		culture = sicilian
+	}
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = midas_touched_personality
+	queen = {
+		name = "Albina"
+		dynasty = "de Guilcer"
+		adm = 5
+		dip = 3
+		mil = 5
+		country_of_origin = SIC
+		birth_date = 1400.3.26
+		death_date = 1460.3.26
+		female = yes
+		religion = catholic
+		culture = sardinian
+	}
+	add_queen_personality = just_personality
+	add_queen_personality = strict_personality
+	heir = {
+		name = "Tiudoru"
+		monarch_name = "Tiudoru III"
+		dynasty = "Hauteville-Lentini"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1417.3.28
+		death_date = 1482.3.28
+		claim = 89
+		religion = catholic
+		culture = sicilian
+	}
+	add_heir_personality = obsessive_perfectionist_personality
+	add_heir_personality = tolerant_personality
+}
+1444.11.11= {
+	add_prestige = 84
+	add_treasury = 49
+}

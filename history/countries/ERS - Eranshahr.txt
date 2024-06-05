@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = zoroastrian_persian_government_reform
+government_rank = 1
+technology_group = muslim
+religion = zoroastrian
+primary_culture = persian
+capital = 416

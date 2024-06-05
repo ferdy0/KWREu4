@@ -1,0 +1,13 @@
+government = monarchy
+add_government_reform = english_monarchy
+government_rank = 1
+technology_group = muslim
+religion = shiite
+primary_culture = bedouin_arabic
+capital = 1210
+religious_school = ismaili_school
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	add_prestige = 94
+	add_treasury = 28
+}

@@ -1,0 +1,180 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 117 146 167 }
+revolutionary_colors = { 1 5 0 }
+historical_idea_groups = {
+	maritime_ideas
+	trade_ideas
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	spy_ideas
+	offensive_ideas
+	quantity_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	italian_condotta
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	spanish_tercio
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Abisatu #0" = 0
+	"Albira #0" = -1
+	"Ausone #1" = 10
+	"Azzone #0" = 0
+	"Bobore #0" = 0
+	"Carolu #0" = 0
+	"Carule #3" = 10
+	"Constantìnu #2" = 10
+	"Emisu #0" = -1
+	"Everardo #0" = 0
+	"Frantzisca #0" = -1
+	"Gerkus #0" = -1
+	"Gialetu #1" = 10
+	"Giuanna #0" = -1
+	"Goffredu #1" = 10
+	"Grabielle #0" = 0
+	"Guantine #1" = 10
+	"Géraud #0" = 0
+	"Heribert #0" = 0
+	"Iginu #0" = 0
+	"Immel #0" = 0
+	"Jacopu #0" = 0
+	"Jatanpal #0" = 0
+	"Laurentu #0" = 0
+	"Leonardu #0" = 0
+	"Lionora #0" = -1
+	"Luciu #0" = 0
+	"Mamigon #0" = 0
+	"Maura #0" = -1
+	"Melissa #0" = -1
+	"Nicolau #1" = 10
+	"Pasca #0" = -1
+	"Pedru #2" = 10
+	"Pàulu #0" = 0
+	"Saltaru #0" = 0
+	"Sancho #0" = 0
+	"Sinispella #0" = -1
+	"Siyaka #0" = 0
+	"Susanna #0" = -1
+	"Tedu #1" = 10
+	"Torchitoriu #1" = 10
+	"Vissente #1" = 10
+	"Vittore #0" = 0
+}
+leader_names = {
+	"Alfieri"
+	"Arborio Mella"
+	"Asinari"
+	"Balbo"
+	"Benso"
+	"Boncompagni Ludovisi"
+	"Borromeo"
+	"Bosco"
+	"Botta"
+	"Broglia"
+	"Cafasso"
+	"Casati"
+	"Chiodo"
+	"Cisa Asinari"
+	"Cottolengo"
+	"Delitalia"
+	"Doria di Cirié"
+	"Facchinetti de Nuce"
+	"Ferrero-Fiesco"
+	"Gaetani dell'Aquila"
+	"Galletti"
+	"Gioberti"
+	"Homo dei Moura"
+	"Lascaris"
+	"Ludovisi"
+	"Luserna Campiglione"
+	"Micca"
+	"Ossorio"
+	"Pallavicini"
+	"Pignatelli"
+	"Solaro"
+	"Taparelli"
+	"Tassoni"
+	"Trivulzio"
+	"Vico"
+	"d'Appiani d'Aragona"
+	"d'Attalaya"
+	"d'Ottaiano"
+	"de Bette"
+	"de Maretta"
+	"de Tutavila"
+	"del Carreto"
+	"del Marco"
+	"della Torre"
+	"di Busca"
+	"di Cardé"
+	"di Cavour"
+	"di Luserna"
+	"di Paesana"
+	"di Savoia"
+}
+ship_names = {
+	"Alfonso il Benigno"
+	"Alghero"
+	"Asinara"
+	"Assemini"
+	"Cagliari"
+	"Campidano"
+	"Capoterra"
+	"Caprera"
+	"Carbonia-Iglesias"
+	"Cedrino"
+	"Coghinas"
+	"Dolomiti di Oliena"
+	"Eleanor Arborea"
+	"Flumendosa"
+	"Giacomo II"
+	"Giovanni il Galantuomo"
+	"Giudice Ugone"
+	"Martino l'Umano"
+	"Medio Campidano"
+	"Monserrato"
+	"Monte Albo"
+	"Monte Rasu"
+	"Monti di Alà"
+	"Monti di Limbara"
+	"Nuoro"
+	"Ogliastra"
+	"Olbia-Tempio"
+	"Oristano"
+	"Orosei"
+	"Porto Torres"
+	"Punta La Marmora"
+	"Quartucciu"
+	"S.Domenico"
+	"S.Maria"
+	"S.Saturnino"
+	"San Michele"
+	"San Pietro"
+	"Sant'Antioco"
+	"Sant'Elena"
+	"Santa Gilla"
+	"Sassari"
+	"Selargiu"
+	"Sestu"
+	"Sinnai"
+	"Sorso"
+	"Tavolara"
+	"Tirso"
+	"lago di Baratz"
+}
+army_names = {
+	"Armata de $PROVINCE$"
+}

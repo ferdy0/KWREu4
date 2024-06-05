@@ -1,0 +1,14 @@
+government = monarchy
+add_government_reform = feudal_theocracy
+government_rank = 1
+technology_group = sub_saharan
+religion = sunni
+primary_culture = mali
+capital = 2243
+fixed_capital = 2243
+religious_school = hanbali_school
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	add_prestige = 67
+	add_treasury = 63
+}

@@ -1,0 +1,79 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 211 184 179 }
+revolutionary_colors = { 5 9 1 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	spy_ideas
+	religious_ideas
+	quantity_ideas
+}
+historical_units = {
+	african_clubmen
+	african_dragoon
+	african_hussar
+	african_mandelaku
+	african_mossi_horsemen
+	african_tuareg_cavalry
+	niger_kongolese_forest_warfare
+	niger_kongolese_guerilla_warfare
+	niger_kongolese_gunpowder_warfare
+	niger_kongolese_tribal_warfare
+	westernized_niger_kongolese
+}
+monarch_names = {
+	"Abagbe #0" = -1
+	"Abegunde #0" = 0
+	"Abeke #0" = -1
+	"Abidugun #0" = 0
+	"Ademilu #0" = 0
+	"Adiba #0" = -1
+	"Ayo #0" = -1
+	"Ayomide #0" = 0
+	"Ayotunde #1" = 10
+	"Bore Enyi-enchi #0" = 0
+	"Chinedu #0" = 0
+	"Daa Mato #0" = 0
+	"Eniola #0" = -1
+	"Ghobad #0" = 0
+	"Judith #0" = -1
+	"Lafogido #0" = 0
+	"Lajamisan #0" = 0
+	"Lumobi #0" = 0
+	"Ngarmaba #0" = 0
+	"Olateju #0" = 0
+	"Oloyede #0" = 0
+	"Rasmata #0" = -1
+	"Temiloluwa #0" = -1
+	"Yewande #0" = -1
+	"Youma #0" = -1
+}
+leader_names = {
+	"Ajuwa"
+	"Aliu"
+	"Ezinwa"
+	"Kanu"
+	"Okara"
+	"Opara"
+	"Rufai"
+	"Solaja"
+	"Ubah"
+	"Umaru"
+}
+ship_names = {
+	"Ajaka"
+	"Ile n'fe"
+	"Ille-Ife"
+	"O'odua"
+	"Obatala"
+	"Odudua"
+	"Oduduwa"
+	"Olorun Olodumare"
+	"Oranyan"
+	"Oyo-Ille"
+	"Sango"
+}

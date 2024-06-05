@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudal_theocracy
+government_rank = 1
+technology_group = muslim
+religion = sunni
+primary_culture = tuareg
+capital = 2242
+religious_school = hanbali_school
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Zubeyr"
+		dynasty = "Toma"
+		adm = 3
+		dip = 6
+		mil = 4
+		birth_date = 1395.2.16
+		religion = sunni
+		culture = tuareg
+	}
+	add_ruler_personality = calm_personality
+	add_ruler_personality = tactical_genius_personality
+	queen = {
+		name = "Cala"
+		dynasty = "Toma"
+		adm = 3
+		dip = 4
+		mil = 3
+		country_of_origin = Z0Q
+		birth_date = 1398.2.21
+		death_date = 1458.2.21
+		female = yes
+		religion = sunni
+		culture = berber
+	}
+	add_queen_personality = martial_educator_personality
+	add_queen_personality = tolerant_personality
+	heir = {
+		name = "Khalil"
+		monarch_name = "Khalil"
+		dynasty = "Toma"
+		adm = 4
+		dip = 2
+		mil = 4
+		birth_date = 1434.6.27
+		death_date = 1499.6.27
+		claim = 89
+		religion = sunni
+		culture = bedouin_arabic
+	}
+	add_heir_personality = kind_hearted_personality
+	add_heir_personality = naive_personality
+}
+1444.11.11= {
+	add_prestige = 76
+	add_treasury = 51
+}

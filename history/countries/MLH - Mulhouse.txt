@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = swabian
+capital = 1880
+fixed_capital = 1880
+1444.11.11= {
+	monarch = {
+		name = "Magnus II"
+		dynasty = "Scarponnois"
+		adm = 5
+		dip = 3
+		mil = 5
+		birth_date = 1415.4.23
+		religion = catholic
+		culture = swabian
+	}
+	add_ruler_personality = obsessive_perfectionist_personality
+	add_ruler_personality = tolerant_personality
+	queen = {
+		name = "Vojslava"
+		dynasty = "z Pernštejna"
+		adm = 4
+		dip = 4
+		mil = 4
+		country_of_origin = MLH
+		birth_date = 1413.12.7
+		death_date = 1473.12.7
+		female = yes
+		religion = catholic
+		culture = czech
+	}
+	add_queen_personality = secretive_personality
+	add_queen_personality = silver_tongue_personality
+	heir = {
+		name = "Ulrich"
+		monarch_name = "Ulrich"
+		dynasty = "Scarponnois"
+		adm = 4
+		dip = 3
+		mil = 4
+		birth_date = 1435.10.26
+		death_date = 1500.10.26
+		claim = 89
+		religion = catholic
+		culture = swabian
+	}
+	add_heir_personality = charismatic_negotiator_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 84
+	add_treasury = 59
+}

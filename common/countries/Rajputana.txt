@@ -1,0 +1,124 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 49 13 22 }
+historical_idea_groups = {
+	aristocracy_ideas
+	offensive_ideas
+	defensive_ideas
+	diplomatic_ideas
+	religious_ideas
+	trade_ideas
+	spy_ideas
+	economic_ideas
+}
+historical_units = {
+	bhonsle_cavalry
+	indian_arquebusier
+	indian_footsoldier
+	indian_rifle
+	mughal_mansabdar
+	mughal_musketeer
+	rajput_hill_fighters
+	reformed_mughal_mansabdar
+	sikh_hit_and_run
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Betta #1" = 10
+	"Bhavadattavarman #1" = 10
+	"Bhuyikadevi #0" = -1
+	"Chachinidevi #0" = -1
+	"Chamundaraja #1" = 10
+	"Chanduka #1" = 10
+	"Deopali-Deo #0" = 0
+	"Dinakarn #0" = 0
+	"Durlabharaja #4" = 10
+	"Edha #0" = -1
+	"Ghatamdeva #0" = 0
+	"Govinda #1" = 10
+	"Harichandra #1" = 10
+	"Hemavati #0" = -1
+	"Hårik #0" = 0
+	"Itlar #1" = 10
+	"Jagatpal #0" = 0
+	"Kailaspal #0" = 0
+	"Kalahastambha #1" = 10
+	"Kalbhoj #0" = 0
+	"Katukaraja #0" = 0
+	"Kunwar #0" = 0
+	"Mahalakshmi #1" = -1
+	"Mahidevi #0" = -1
+	"Mulraja #0" = 0
+	"Nagabhata #1" = 10
+	"Nar-Verma #0" = 0
+	"Narabbhata #1" = 10
+	"Narapati #0" = 0
+	"Nattadevi #0" = -1
+	"Pihu #0" = -1
+	"Pravaraja #2" = 10
+	"Puppadevi #0" = -1
+	"Rajjila #1" = 10
+	"Rudaladevi #0" = -1
+	"Rupadevi #0" = -1
+	"Siluka #1" = 10
+	"Simghata #1" = 10
+	"Singhraja #1" = 10
+	"Someshvara #0" = 0
+	"Tata #1" = 10
+	"Taweret #0" = -1
+	"Udayamati #0" = -1
+	"Vakapati #1" = 10
+	"Vigraharaja #1" = 10
+	"Vinita #1" = 10
+	"Viryarama #1" = 10
+	"Yanchege #0" = 0
+	"Yashovardhana #1" = 10
+}
+leader_names = {
+	"Bargujar"
+	"Bhaal"
+	"Bhati"
+	"Chandela"
+	"Chauhan"
+	"Chudasama"
+	"Chundawa"
+	"Das"
+	"Gohil"
+	"Jadeja"
+	"Jadon"
+	"Khumba"
+	"Mori"
+	"Pratap"
+	"Sahu"
+	"Saran"
+	"Singh"
+	"Sisodiya"
+	"Tomara"
+	"Vaghela"
+}
+ship_names = {
+	"Chambal"
+	"Devi"
+	"Durga"
+	"Gayatri"
+	"Ghaggar"
+	"Godwar"
+	"Jalsena"
+	"Kala Jahazi"
+	"Lakshmi"
+	"Lal Jahazi"
+	"Luni"
+	"Merwar ka Nav"
+	"Nausena"
+	"Nav ka Yudh"
+	"Nila Jahazi"
+	"Padmini"
+	"Parvati"
+	"Radha"
+	"Rani"
+	"Ratri"
+	"Sagar"
+	"Sarasvati"
+	"Sekhawati"
+	"Sita"
+}

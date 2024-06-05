@@ -1,0 +1,55 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = dynamic-franconian-culture-num1
+capital = 61
+1444.11.11= {
+	monarch = {
+		name = "Przemysl"
+		dynasty = "Ludowinger-Misni"
+		adm = 4
+		dip = 5
+		mil = 3
+		birth_date = 1414.11.1
+		religion = catholic
+		culture = dynamic-franconian-culture-num1
+	}
+	add_ruler_personality = craven_personality
+	add_ruler_personality = midas_touched_personality
+	queen = {
+		name = "Engeltraud"
+		dynasty = "von Luxemburg"
+		adm = 5
+		dip = 5
+		mil = 5
+		country_of_origin = MEI
+		birth_date = 1415.5.19
+		death_date = 1475.5.19
+		female = yes
+		religion = catholic
+		culture = dynamic-franconian-culture-num1
+	}
+	add_queen_personality = secretive_personality
+	add_queen_personality = silver_tongue_personality
+	heir = {
+		name = "Wilhelm"
+		monarch_name = "Wilhelm II"
+		dynasty = "Ludowinger-Misni"
+		adm = 0
+		dip = 0
+		mil = 0
+		birth_date = 1443.2.15
+		death_date = 1508.2.15
+		claim = 89
+		religion = catholic
+		culture = dynamic-franconian-culture-num1
+	}
+	add_heir_personality = free_thinker_personality
+	add_heir_personality = tactical_genius_personality
+}
+1444.11.11= {
+	add_prestige = 73
+	add_treasury = 68
+}

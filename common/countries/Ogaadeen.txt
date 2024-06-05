@@ -1,0 +1,85 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 169 168 101 }
+revolutionary_colors = { 15 0 15 }
+historical_idea_groups = {
+	defensive_ideas
+	trade_ideas
+	offensive_ideas
+	spy_ideas
+	diplomatic_ideas
+	religious_ideas
+	economic_ideas
+	quantity_ideas
+}
+historical_units = {
+	african_abyssinian_cavalry
+	african_abyssinian_light_cavalry
+	african_clubmen
+	african_dragoon
+	african_hussar
+	african_somali_cavalry
+	african_western_franchise_warfare
+	bantu_gunpowder_warfare
+	bantu_plains_warfare
+	bantu_tribal_warfare
+	westernized_bantu
+}
+monarch_names = {
+	"Aasha #0" = -1
+	"Abadir #1" = 10
+	"Abdale #0" = 0
+	"Adan #1" = 10
+	"Adeer #0" = 0
+	"Alaso #0" = -1
+	"Amburo #0" = -1
+	"Aul #1" = 10
+	"Baldarich #0" = 0
+	"Burhanaddin #0" = 0
+	"Dobira #0" = -1
+	"Faruk #0" = 0
+	"Fawzia #0" = -1
+	"Hamar #1" = 10
+	"Jabir #0" = 0
+	"Khadra #0" = -1
+	"Khaireddin #0" = 0
+	"Khalil #0" = 0
+	"Koza #0" = 0
+	"Mahammad #1" = 10
+	"Mahmud #1" = 10
+	"Mariam #0" = -1
+	"Musa #0" = 0
+	"Muzaffaraddin #1" = 10
+	"Naleye #1" = 10
+	"Nusesi #1" = 10
+	"Paywand #0" = -1
+	"Sa'adaddin #0" = 0
+	"Sa'daddin #0" = 0
+	"Sabir #1" = 10
+	"Sabr #0" = 0
+	"Samir #0" = 0
+}
+leader_names = {
+	"Birir"
+	"Chirombo"
+	"Chrima"
+	"Kagona"
+	"Moyo"
+	"Mutasa"
+	"Njie"
+	"Nkomo"
+	"Rise"
+	"Tembo"
+}
+ship_names = {
+	"Dziva"
+	"Dzivaguru"
+	"Mai Vedu"
+	"Mazendere"
+	"Mbonga"
+	"Mulungu"
+	"Musikavanhu"
+	"Mutorwa"
+	"Mwari"
+	"Svikiro"
+}

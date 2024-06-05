@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudal_theocracy
+government_rank = 1
+technology_group = muslim
+religion = sunni
+primary_culture = berber
+capital = 2258
+religious_school = hanbali_school
+add_accepted_culture = aka
+1444.11.11= {
+	monarch = {
+		name = "Amennay"
+		dynasty = "Kokofu"
+		adm = 3
+		dip = 5
+		mil = 2
+		birth_date = 1415.1.19
+		religion = sunni
+		culture = berber
+	}
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = righteous_personality
+	queen = {
+		name = "Kilia"
+		dynasty = "Tunkara"
+		adm = 3
+		dip = 3
+		mil = 4
+		country_of_origin = ASH
+		birth_date = 1411.3.12
+		death_date = 1471.3.12
+		female = yes
+		religion = sunni
+		culture = mali
+	}
+	add_queen_personality = fertile_personality
+	add_queen_personality = kind_hearted_personality
+	heir = {
+		name = "Itri"
+		monarch_name = "Itri"
+		dynasty = "Kokofu"
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 1432.8.10
+		death_date = 1497.8.10
+		claim = 89
+		religion = sunni
+		culture = berber
+	}
+	add_heir_personality = calm_personality
+	add_heir_personality = just_personality
+}
+1444.11.11= {
+	add_prestige = 77
+	add_treasury = 56
+}

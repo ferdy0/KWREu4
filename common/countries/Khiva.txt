@@ -1,0 +1,110 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 210 175 60 }
+revolutionary_colors = { 10 1 10 }
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	trade_ideas
+	spy_ideas
+	diplomatic_ideas
+	economic_ideas
+	religious_ideas
+	quality_ideas
+}
+historical_units = {
+	afsharid_reformed
+	afsharid_reformed_infantry
+	muslim_cavalry_archers
+	muslim_dragoon
+	muslim_mass_infantry
+	persian_footsoldier
+	persian_rifle
+	persian_shamshir
+	qizilbash_cavalry_unit
+	shaybani
+	tofongchis_musketeer
+	topchis_artillery
+}
+monarch_names = {
+	"Abdallah #1" = 10
+	"Afrig #1" = 10
+	"Agwillul #0" = 0
+	"Ali #1" = 10
+	"Alp Arslan #2" = 10
+	"Armin #0" = 0
+	"Arsamuh #1" = 10
+	"Arslan Argun #1" = 10
+	"Artikhuvandakh #0" = 0
+	"Askajamuk #2" = 10
+	"Aurang #0" = 0
+	"Azkajwar #2" = 10
+	"Bagra #1" = 10
+	"Buzgar #2" = 10
+	"Eraq #1" = 10
+	"Farn #0" = 0
+	"Ghamze #0" = -1
+	"Ghoshfarn #2" = 10
+	"Girgen #1" = 10
+	"Hamgari #1" = 10
+	"Kanak #0" = 0
+	"Kerman Shah #1" = 10
+	"Kolo #1" = 10
+	"Ma'mun #2" = 10
+	"Mansur #1" = 10
+	"Mohammad #1" = 10
+	"Nazgol #0" = -1
+	"Parvaneh #0" = -1
+	"Qawurd #1" = 10
+	"Ranisa #0" = -1
+	"Roxana #0" = -1
+	"Sabri #1" = 10
+	"Sahhasak #1" = 10
+	"Sahr #4" = 10
+	"Sanakhram #0" = -1
+	"Savur #1" = 10
+	"Sawashfan #1" = 10
+	"Sevindik #0" = -1
+	"Shaush #1" = 10
+	"Torkasbatha #1" = 10
+	"Upach #0" = -1
+}
+leader_names = {
+	"Arighqan"
+	"Batulun"
+	"Batutai"
+	"Bayan Arslan"
+	"Bayarnai"
+	"Bokejin"
+	"Bora Tolui"
+	"Burilgiteni"
+	"Mongke Bayar"
+	"Mongke Cheren"
+	"Oyugun Nasan"
+	"Qadancher"
+	"Subegene"
+	"Suren Chinua"
+	"Tegusdai"
+	"Yekedei"
+}
+ship_names = {
+	"Abu Hasan Ali"
+	"Abu Mamun"
+	"Ahmed Sanjar"
+	"Ala Aziz"
+	"Ala Takish"
+	"Altun Yash"
+	"Amu Darya"
+	"Anush Tigin"
+	"Bukhara"
+	"Din Muhammad"
+	"Harun"
+	"Ismail Khandan"
+	"Jalal Mingburnu"
+	"Jaxartes"
+	"Khwarezm"
+	"Kunya"
+	"Syr Darya"
+	"Urganj"
+	"Yelu Dashi"
+}

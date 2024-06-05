@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = rajput_kingdom
+government_rank = 2
+technology_group = indian
+religion = hinduism
+primary_culture = gujarati
+capital = 2232
+add_accepted_culture = afghani
+add_accepted_culture = sindhi
+1444.11.11= {
+	monarch = {
+		name = "Acharya"
+		dynasty = "Mihirid"
+		adm = 3
+		dip = 3
+		mil = 4
+		birth_date = 1418.5.18
+		religion = hinduism
+		culture = gujarati
+	}
+	add_ruler_personality = malevolent_personality
+	add_ruler_personality = zealot_personality
+	queen = {
+		name = "Rudaladevi"
+		dynasty = "Bintid"
+		adm = 5
+		dip = 3
+		mil = 3
+		country_of_origin = BAL
+		birth_date = 1420.7.11
+		death_date = 1480.7.11
+		female = yes
+		religion = hinduism
+		culture = gujarati
+	}
+	add_queen_personality = greedy_personality
+	add_queen_personality = kind_hearted_personality
+	heir = {
+		name = "Vapyata"
+		monarch_name = "Vapyata II"
+		dynasty = "Mihirid"
+		adm = 2
+		dip = 3
+		mil = 3
+		birth_date = 1437.8.24
+		death_date = 1502.8.24
+		claim = 89
+		religion = hinduism
+		culture = gujarati
+	}
+	add_heir_personality = just_personality
+	add_heir_personality = naive_personality
+}
+1444.11.11= {
+	add_prestige = 94
+	add_treasury = 72
+}

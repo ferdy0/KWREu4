@@ -1,0 +1,121 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 135 104 85 }
+revolutionary_colors = { 9 0 9 }
+historical_idea_groups = {
+	trade_ideas
+	maritime_ideas
+	religious_ideas
+	economic_ideas
+	offensive_ideas
+	defensive_ideas
+	spy_ideas
+	diplomatic_ideas
+}
+historical_units = {
+	bhonsle_cavalry
+	indian_arquebusier
+	indian_elephant
+	indian_footsoldier
+	indian_rifle
+	mughal_mansabdar
+	mughal_musketeer
+	rajput_hill_fighters
+	rajput_musketeer
+	reformed_mughal_mansabdar
+	sikh_hit_and_run
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Asalup #0" = 0
+	"Ayten #0" = -1
+	"Bhoongar #1" = 10
+	"Bohemond #0" = 0
+	"Bozçin #0" = -1
+	"Dawlah #1" = 10
+	"Dodo #1" = 10
+	"Edha #1" = -1
+	"Etrek #1" = 10
+	"Faeq #2" = 10
+	"Hakam #0" = 0
+	"Hisam #1" = 10
+	"Humphrey #0" = 0
+	"Ipekel #0" = -1
+	"Khafif #1" = 10
+	"Laham #1" = 10
+	"Maira #0" = -1
+	"Mang #1" = 10
+	"Mistefa #0" = 0
+	"Richard #0" = 0
+	"Sibel #0" = -1
+	"Simhadeva #0" = 0
+	"Sirçan #0" = 0
+	"Soomar #1" = 10
+	"Togli #1" = 10
+	"Tshewang #0" = 0
+	"Tugor #0" = 0
+	"Ukkashah #1" = 10
+	"Umar #1" = 10
+	"Wabisah #1" = 10
+	"Z'ergha #0" = -1
+}
+leader_names = {
+	"Arghun"
+	"Bahadur"
+	"Begada"
+	"Bhatia"
+	"Bhil"
+	"Bhutto"
+	"Changezi"
+	"Chudasama"
+	"Desai"
+	"Farooqi"
+	"Ghazi"
+	"Golani"
+	"Jinnah"
+	"Kalhora"
+	"Khokhar"
+	"Khorasani"
+	"Malik"
+	"Mirza"
+	"Munshi"
+	"Naru"
+	"Pahore"
+	"Parikh"
+	"Patel"
+	"Patidar"
+	"Rushi"
+	"Samma"
+	"Shah"
+	"Sindhi"
+	"Singh"
+	"Solanki"
+	"Soomrah"
+	"Sultan"
+	"Tarkhan"
+	"Tomara"
+	"Zamindar"
+}
+ship_names = {
+	"Alia"
+	"Arusa"
+	"Baran"
+	"Fatimah"
+	"Haleji"
+	"Indus"
+	"Kalri"
+	"Khan"
+	"Malir"
+	"Manchhar"
+	"Mol"
+	"Niknaz"
+	"Niloufa"
+	"Noor"
+	"Salima"
+	"Sari"
+	"Shameena"
+	"Suhalia"
+	"Suk"
+	"Yasmine"
+	"Zahira"
+}

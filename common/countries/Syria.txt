@@ -1,0 +1,91 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 125 110 225 }
+revolutionary_colors = { 10 0 1 }
+historical_idea_groups = {
+	defensive_ideas
+	religious_ideas
+	offensive_ideas
+	trade_ideas
+	spy_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	economic_ideas
+}
+historical_units = {
+	afsharid_reformed
+	afsharid_reformed_infantry
+	muslim_dragoon
+	muslim_mass_infantry
+	persian_cavalry_charge
+	persian_footsoldier
+	persian_rifle
+	persian_shamshir
+	qizilbash_cavalry_unit
+	tofongchis_musketeer
+	topchis_artillery
+}
+monarch_names = {
+	"Akbar #1" = 10
+	"Ali #1" = 10
+	"Antonija #0" = -1
+	"Atenolfu #0" = 0
+	"Austina #0" = -1
+	"Bardas #0" = 0
+	"Custanzu #0" = 0
+	"Da'oud #1" = 10
+	"Elia #2" = 10
+	"Ermannu #0" = 0
+	"Eufemia #0" = -1
+	"Francisca #1" = -1
+	"Giacinta #0" = -1
+	"Giuditta #0" = -1
+	"Giulia #0" = -1
+	"Grana #0" = -1
+	"Ipa #0" = 0
+	"Irir #0" = 0
+	"Lucrezzia #0" = -1
+	"Maddalena #0" = -1
+	"Maria #0" = -1
+	"Mihovil #0" = 0
+	"Nabil #1" = 10
+	"Pandone #0" = 0
+	"Petru #1" = 10
+	"Ramadan #0" = 0
+	"Sacmis #0" = -1
+	"Salah #0" = 0
+	"Stefan #0" = 0
+	"Teodora #0" = -1
+	"Tibor #0" = 0
+	"Vali #0" = 0
+	"Valintinu #0" = 0
+	"Zaia #1" = 10
+}
+leader_names = {
+	"Damad"
+	"Esad"
+	"Farhad"
+	"Fazil"
+	"Hafiz"
+	"Ismail"
+	"Mehmed"
+	"Murad"
+	"Nasuh"
+	"Osman"
+	"Salih"
+	"Sinan"
+}
+ship_names = {
+	"Arif"
+	"Azmi"
+	"Dervish"
+	"Fuad"
+	"Haci"
+	"Haydar"
+	"Mulish"
+	"Nuri"
+	"Said"
+	"Salih"
+	"Sefveti"
+	"Shukri"
+}

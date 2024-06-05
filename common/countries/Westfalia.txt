@@ -1,0 +1,84 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 231 230 138 }
+revolutionary_colors = { 13 0 13 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	religious_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	offensive_ideas
+	spy_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Antoniu #1" = 10
+	"Baldur #1" = 10
+	"Bernhard #2" = 10
+	"Ciuccio #1" = 10
+	"Cord #2" = 10
+	"Erich #0" = 0
+	"Gerberga #0" = -1
+	"Gertrud #1" = -1
+	"Heinrich #1" = 10
+	"Hermann #1" = 10
+	"Hugo #1" = 10
+	"Ludolf #1" = 10
+	"Luidolf #1" = 10
+	"Magnus #3" = 10
+	"Ordulf #1" = 10
+	"Otto #2" = 10
+	"Sigfrid #0" = 0
+	"Theoderic #1" = 10
+	"Theodwin #2" = 10
+	"Tiziana #1" = -1
+	"Waltard #0" = 0
+	"Widukind #1" = 10
+}
+leader_names = {
+	"Aller"
+	"Detmold"
+	"Hamelm"
+	"Hildesheim"
+	"Kapp"
+	"Minden"
+	"Oldenburg"
+	"Salzgitter"
+	"Werden"
+	"Wernigerode"
+}
+ship_names = {
+	"Burgdorf"
+	"Deister"
+	"Georg von Calenberg"
+	"Langenhagen"
+	"Lehrte"
+	"Leine"
+	"Sarstedt"
+	"Stadthagen"
+	"Süntel"
+	"Wedemark"
+	"Weser"
+	"Wunstorf"
+}
+army_names = {
+	"Armee von $PROVINCE$"
+	"Königliche Garde"
+}

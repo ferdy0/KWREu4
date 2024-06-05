@@ -1,0 +1,99 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 80 201 64 }
+historical_idea_groups = {
+	spy_ideas
+	defensive_ideas
+	administrative_ideas
+	diplomatic_ideas
+	economic_ideas
+	quality_ideas
+	trade_ideas
+	innovativeness_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	prussian_uhlan
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Anselmo #1" = 10
+	"Arnold #0" = 0
+	"Berard #0" = 0
+	"Berta #0" = -1
+	"Bruno #0" = 0
+	"Drogo #0" = 0
+	"Eberhard #1" = 10
+	"Ehrenfried #1" = 10
+	"Emelrich #1" = 10
+	"Enguerrand #0" = 0
+	"Gerhard #2" = 10
+	"Gotthard #2" = 10
+	"Hartmann #1" = 10
+	"Hildegard #1" = -1
+	"Hupold #3" = 10
+	"Kunigunde #1" = -1
+	"Lambert #0" = 0
+	"Leopold #1" = 10
+	"Mangold #1" = 10
+	"Othon #0" = 0
+	"Radbot #0" = 0
+	"Reinhold #0" = 0
+	"Sieghard #4" = 10
+	"Susanna #0" = -1
+	"Thankulf #0" = 0
+	"Ulrich #0" = 0
+	"Wilhelmina #1" = -1
+}
+leader_names = {
+	"Adenau"
+	"Ansembourg"
+	"Bensenraede"
+	"Blittersdorf"
+	"Cölln"
+	"Dammerscheidt"
+	"Elmpt"
+	"Falkenberg"
+	"Gruithausen"
+	"Hillensberg"
+	"Hohenfeld"
+	"Naxleden"
+	"Schaluyn"
+	"Zebnitsch"
+	"von Clausbruch"
+	"von Dieblich"
+	"von Gelnhausen"
+	"von Leyen"
+	"von Namedy"
+	"von Schöneck"
+}
+ship_names = {
+	"Deidesheim"
+	"Elmstein"
+	"Hochspeyer"
+	"Kaiserslautern"
+	"Landstuhl"
+	"Neunkirchen"
+	"Neustadt"
+	"Rhodt"
+	"Winnweiler"
+	"Wolfstein"
+}
+army_names = {
+	"Armee von $PROVINCE$"
+}
+fleet_names = {
+	"Stadtflotte"
+}

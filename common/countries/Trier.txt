@@ -1,0 +1,97 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 208 104 44 }
+revolutionary_colors = { 5 8 5 }
+historical_idea_groups = {
+	trade_ideas
+	religious_ideas
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	offensive_ideas
+	spy_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	prussian_uhlan
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Adalhard #1" = 10
+	"Arnulf #0" = 0
+	"Baldur #0" = 0
+	"Bartolomeo #0" = 0
+	"Bohemond #0" = 0
+	"Bouvin #1" = 10
+	"Caracosa #0" = -1
+	"Costantino #1" = 10
+	"Dietrich #3" = 10
+	"Emmerich #0" = 0
+	"Eustache #0" = 0
+	"Ferdinand #0" = 0
+	"Foulques #0" = 0
+	"Friedrich #0" = 0
+	"Gunhilda #1" = -1
+	"Hartmann #1" = 10
+	"Havel #1" = 10
+	"Lothaire #1" = 10
+	"Lothar #0" = 0
+	"Poppo #1" = 10
+	"Robert #1" = 10
+	"Savary #0" = 0
+	"Sigifredo #0" = 0
+	"Simon #0" = 0
+	"Udo #1" = 10
+	"Wido #1" = 10
+}
+leader_names = {
+	"Backes"
+	"Corgell"
+	"Dahnfels"
+	"Feltes"
+	"Haerig"
+	"Hecker"
+	"Herrich"
+	"Kettler"
+	"Lohmann"
+	"Longnich"
+	"Pinkernell"
+	"Schmitt"
+	"Tristant"
+	"Wellner"
+	"Zimmer"
+}
+ship_names = {
+	"Aach"
+	"Gusterath"
+	"Hockweiler"
+	"Igel"
+	"Kasel"
+	"Kenn"
+	"Kordel"
+	"Korlingen"
+	"Longuich"
+	"Mertesdorf"
+	"Morscheid"
+	"Newel"
+	"Schweich"
+	"Waldrach"
+	"Zemmer"
+}
+army_names = {
+	"Armee von $PROVINCE$"
+	"Erzbischofliche Garde"
+}

@@ -1,0 +1,26 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 25 185 85 }
+monarch_names = {
+	"Alaeddin #1" = 10
+	"Anakhit #0" = -1
+	"Asli #0" = -1
+	"Faramarz #0" = 0
+	"Farkhonda #0" = -1
+	"Goland #1" = -1
+	"Ibrahim #1" = 10
+	"Iskender #1" = 10
+	"Kanak #0" = 0
+	"Mehrak #0" = 0
+	"Muhammad #1" = 10
+	"Nanaifarn #0" = 0
+	"Nasr #2" = 10
+	"Ogodei #1" = 10
+	"Sahr #0" = 0
+	"Sencer #2" = 10
+	"Sengun Bilge #1" = 10
+	"Shirinbano #0" = -1
+	"Temujin #1" = 10
+	"Ukhushukan #0" = 0
+	"Yena #0" = -1
+}

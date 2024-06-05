@@ -1,0 +1,83 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 72 194 212 }
+revolutionary_colors = { 5 0 5 }
+historical_idea_groups = {
+	religious_ideas
+	defensive_ideas
+	offensive_ideas
+	trade_ideas
+	innovativeness_ideas
+	economic_ideas
+	spy_ideas
+	diplomatic_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_tercio
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	prussian_drill
+	prussian_frederickian
+	prussian_uhlan
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Aleksander #1" = 10
+	"Alof #0" = -1
+	"Asig #0" = 0
+	"Damaes #1" = 10
+	"Donar #0" = 0
+	"Erp #0" = 0
+	"Frederik #3" = 10
+	"Gerberga #0" = -1
+	"Harald #1" = 10
+	"Hesso #1" = 10
+	"Irmgard #0" = -1
+	"Jarmila #1" = -1
+	"Maertijn #1" = 10
+	"Marbold #0" = 0
+	"Mateusz #1" = 10
+	"Oluf #1" = 10
+	"Reginar #1" = 10
+	"Rimbert #1" = 10
+	"Theoderic #0" = 0
+	"Witikind #0" = 0
+}
+leader_names = {
+	"Boie"
+	"Carl"
+	"Frese"
+	"Giesebert"
+	"Köster"
+	"Nann"
+	"Rachel"
+	"Reimers"
+	"Russe"
+	"Swyn"
+	"Wiben"
+	"von Hochwöhrden"
+	"von Wiemerstedt"
+}
+ship_names = {
+	"Dahme"
+	"Grossenbrode"
+	"Grömtz"
+	"Kellenhusen"
+	"Kiel"
+	"Neustadt"
+	"Ostsee"
+	"Scharbeutz"
+	"Sierksdorf"
+	"Telse von Hochwöhrden"
+	"Wedel"
+}
+army_names = {
+	"Armee von $PROVINCE$"
+}

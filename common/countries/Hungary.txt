@@ -1,0 +1,122 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 152 85 92 }
+revolutionary_colors = { 5 0 10 }
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	trade_ideas
+	innovativeness_ideas
+	religious_ideas
+	spy_ideas
+}
+historical_units = {
+	bardiche_infantry
+	eastern_carabinier
+	eastern_knights
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	germanized_pike
+	hungarian_hussar
+	polish_hussar
+	polish_musketeer
+	polish_tercio
+	polish_winged_hussar
+	slavic_stradioti
+}
+monarch_names = {
+	"Alajos #0" = 0
+	"András #1" = 10
+	"Ardoino #0" = 0
+	"Bertók #0" = 0
+	"Bonuslo #0" = 0
+	"Béla #1" = 10
+	"Drzislav #0" = 0
+	"Dávid #1" = 10
+	"Erika #1" = -1
+	"Felip Dalmau #0" = 0
+	"Friedrich #0" = 0
+	"Fulöp #0" = 0
+	"Gijsbrecht #1" = 10
+	"Ginevra #0" = -1
+	"Giulio #0" = 0
+	"Györgyi #1" = -1
+	"Géza #1" = 10
+	"Helga #0" = -1
+	"Heribert #0" = 0
+	"István #1" = 10
+	"Jenö #1" = 10
+	"Martin #2" = 10
+	"Meinhard #1" = 10
+	"Márton #0" = 0
+	"Natalia #0" = -1
+	"Olimpiu #0" = 0
+	"Péter #2" = 10
+	"Roberto #0" = 0
+	"Salamon #1" = 10
+	"Sámuel #1" = 10
+	"Taksony #1" = 10
+	"Tibor #1" = 10
+	"Tétény #1" = 10
+	"Wigerich #1" = 10
+	"Wilhelm #0" = 0
+	"Wolfgang #0" = 0
+	"Zoltán #1" = 10
+	"Zsuzsa #1" = -1
+	"Álmos #1" = 10
+	"Árpád #1" = 10
+}
+leader_names = {
+	"Alvinczy"
+	"Andrássy"
+	"Batthyány"
+	"Beleznay"
+	"Benovský"
+	"Bethlen"
+	"Bocskay"
+	"Báthory"
+	"Csák"
+	"Dessewffy"
+	"Esterházy"
+	"Festetics"
+	"Frangepán"
+	"Garay"
+	"Hadik"
+	"Horthy"
+	"Hunyadi"
+	"Kemeny"
+	"Kinizsi"
+	"Kán"
+	"Károlyi"
+	"Lackovic'"
+	"Losonci"
+	"Milványi"
+	"Mészáros"
+	"Nadasdy"
+	"Ozoray"
+	"Rozgonyi"
+	"Rákóczi"
+	"Széchenyi"
+	"Teleki"
+	"Thököly"
+	"Zichy"
+	"Zrinski"
+	"Zápolya"
+	"de Kovats"
+	"Šubic'"
+}
+ship_names = {
+	"Aranybulla"
+	"Arpad"
+	"Hunyadi Matyas"
+	"Kalman"
+	"Karoly Robert"
+	"Laszlo"
+	"Magyar"
+	"Nagy Lajos"
+	"Sigismund"
+	"Szent Istvan kiraly"
+}

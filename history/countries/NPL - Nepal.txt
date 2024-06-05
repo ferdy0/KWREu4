@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = uparaja_reform
+government_rank = 2
+technology_group = indian
+religion = vajrayana
+primary_culture = mon
+capital = 557
+add_accepted_culture = nepali
+1444.11.11= {
+	monarch = {
+		name = "Gada"
+		dynasty = "Sandowayid"
+		adm = 5
+		dip = 5
+		mil = 5
+		birth_date = 1395.12.17
+		religion = vajrayana
+		culture = mon
+	}
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = strict_personality
+	queen = {
+		name = "Thekchen"
+		dynasty = "Pugyel-Popa"
+		adm = 3
+		dip = 3
+		mil = 4
+		country_of_origin = NPL
+		birth_date = 1403.10.7
+		death_date = 1463.10.7
+		female = yes
+		religion = vajrayana
+		culture = tibetan
+	}
+	add_queen_personality = pious_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Hnin An Po"
+		monarch_name = "Hnin An Po"
+		dynasty = "Sandowayid"
+		adm = 6
+		dip = 5
+		mil = 6
+		birth_date = 1424.3.10
+		death_date = 1489.3.10
+		female = yes
+		claim = 89
+		religion = vajrayana
+		culture = mon
+	}
+	add_heir_personality = bold_fighter_personality
+	add_heir_personality = charismatic_negotiator_personality
+}
+1444.11.11= {
+	add_prestige = 97
+	add_treasury = 51
+}

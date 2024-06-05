@@ -1,0 +1,175 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 192 5 24 }
+revolutionary_colors = { 0 5 0 }
+historical_idea_groups = {
+	economic_ideas
+	quantity_ideas
+	humanist_ideas
+	defensive_ideas
+	trade_ideas
+	spy_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+}
+historical_units = {
+	bhonsle_cavalry
+	indian_arquebusier
+	indian_elephant
+	indian_footsoldier
+	indian_rifle
+	mughal_mansabdar
+	mughal_musketeer
+	rajput_hill_fighters
+	rajput_musketeer
+	sikh_hit_and_run
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Aaleyaamma #0" = -1
+	"Ammankâtêvi #0" = -1
+	"Amrapali #0" = -1
+	"Amritakala #0" = -1
+	"Avraaham #0" = 0
+	"Bhatta #0" = 0
+	"Bhavashankari #0" = -1
+	"Bhikhari #0" = 0
+	"Bhogavati #0" = -1
+	"Bhoja #5" = 10
+	"Bhumpala #0" = 0
+	"Bishwas Devi #0" = -1
+	"Chandrabbalabbe #0" = -1
+	"Damayanti #0" = -1
+	"Dandimahadevi #0" = -1
+	"Dattadevi #0" = -1
+	"Dev Singh #0" = 0
+	"Devasakti #1" = 10
+	"Devavati #0" = -1
+	"Dhruvadevi #1" = -1
+	"Durgavati #0" = -1
+	"Eluvanai #0" = -1
+	"Gayatri #0" = -1
+	"Hajo #0" = 0
+	"Harendranarayan #0" = 0
+	"Haridevnarayan #0" = 0
+	"Hariyamandal #1" = 10
+	"Hemantasen #0" = 0
+	"Hira #0" = -1
+	"Hulegu #0" = 0
+	"Jadu #0" = 0
+	"Jayapida #0" = 0
+	"Jayasimha #1" = 10
+	"Jira #0" = -1
+	"Jitendranarayan #0" = 0
+	"Jiyuan #0" = 0
+	"Kakustha #1" = 10
+	"Kalaha #0" = 0
+	"Kalua #0" = 0
+	"Kalyanavati #0" = -1
+	"Kanvarpala #0" = 0
+	"Kirti Singh #0" = 0
+	"Kota #0" = -1
+	"Krishanmishra #1" = 10
+	"Kuntavaiyalvar #0" = -1
+	"Kurian #0" = 0
+	"Lakshman #0" = -1
+	"Maharshi #0" = 0
+	"Mahendra #0" = 0
+	"Mahendrani #0" = -1
+	"Malavyadevi #0" = -1
+	"Margaréta #0" = -1
+	"Maturantikiyalvar #0" = -1
+	"Mindruk #0" = -1
+	"Mânaticcuran #0" = 0
+	"Mâravarman #0" = 0
+	"Nagabhata #2" = 10
+	"Nagasani #0" = 0
+	"Namgay #0" = 0
+	"Nannuka #1" = 10
+	"Nayanadevi #0" = -1
+	"Nettabhanja #0" = 0
+	"Padmini #0" = -1
+	"Parikshitnayaran #0" = 0
+	"Perrappai #0" = -1
+	"Prithviraj #1" = 10
+	"Puppadevi #0" = -1
+	"Ranatîran #0" = 0
+	"Rani #0" = -1
+	"Ratnavati #0" = -1
+	"Rudranarayan #0" = 0
+	"Shakrasingh Dev #0" = 0
+	"Shukladhwaj #0" = 0
+	"Siladitya #4" = 10
+	"Sindhu #1" = 10
+	"Siyaka #1" = 10
+	"Srimahadevi #0" = -1
+	"Surajpal #0" = 0
+	"Suryanarayan #0" = 0
+	"Suvrata #0" = -1
+	"Sönam #0" = -1
+	"Taturântakiyâr #0" = -1
+	"Thoma #0" = 0
+	"Tiruvennâval #0" = -1
+	"Tiruvênkatam #0" = -1
+	"Traillokyachandra #0" = 0
+	"Udirnakhadga #0" = 0
+	"Upendranayaran #0" = 0
+	"Vakpati #1" = 10
+	"Varakuni #0" = -1
+	"Vatsraja #1" = 10
+	"Waldrada #0" = -1
+	"Yosef #0" = 0
+	"Zeya #0" = 0
+}
+leader_names = {
+	"Bahadur"
+	"Bhilala"
+	"Changezi"
+	"Chattari"
+	"Chudasama"
+	"Farooqi"
+	"Gauri"
+	"Ghuri"
+	"Gilani"
+	"Haji"
+	"Jurjani"
+	"Kanjar"
+	"Khan"
+	"Khorasani"
+	"Latif"
+	"Malik"
+	"Mori"
+	"Naru"
+	"Pahore"
+	"Paramara"
+	"Solanki"
+	"Sultan"
+	"Tomara"
+	"Turani"
+	"Uzbek"
+}
+ship_names = {
+	"Alia"
+	"Betwa"
+	"Chambal"
+	"Dhasan"
+	"Fatimah"
+	"Ghambir"
+	"Jalsena"
+	"Kala Jahazi"
+	"Khan"
+	"Lal Jahazi"
+	"Mahi"
+	"Narmada"
+	"Nausena"
+	"Nav ka Yudh"
+	"Niknaz"
+	"Nila Jahazi"
+	"Niloufa"
+	"Sagar"
+	"Salima"
+	"Shameena"
+	"Shipra"
+	"Suhalia"
+	"Yasmine"
+}

@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudal_theocracy
+government_rank = 2
+technology_group = nomad_group
+religion = sunni
+primary_culture = uzbehk
+capital = 477
+religious_school = hanafi_school
+add_accepted_culture = ostyaki
+1444.11.11= {
+	monarch = {
+		name = "Sugr"
+		dynasty = "Hasanid"
+		adm = 4
+		dip = 2
+		mil = 3
+		birth_date = 1411.11.30
+		religion = sunni
+		culture = uzbehk
+	}
+	add_ruler_personality = kind_hearted_personality
+	add_ruler_personality = tolerant_personality
+	queen = {
+		name = "Holuikhan"
+		dynasty = "Bilgä"
+		adm = 4
+		dip = 3
+		mil = 3
+		country_of_origin = CMN
+		birth_date = 1424.8.7
+		death_date = 1484.8.7
+		female = yes
+		religion = sunni
+		culture = khazak
+	}
+	add_queen_personality = silver_tongue_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Kutan"
+		monarch_name = "Kutan"
+		dynasty = "Hasanid"
+		adm = 5
+		dip = 6
+		mil = 5
+		birth_date = 1413.6.6
+		death_date = 1478.6.6
+		claim = 89
+		religion = sunni
+		culture = uzbehk
+	}
+	add_heir_personality = obsessive_perfectionist_personality
+	add_heir_personality = pious_personality
+}
+1444.11.11= {
+	add_prestige = 81
+	add_treasury = 55
+}

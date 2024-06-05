@@ -1,0 +1,57 @@
+government = republic
+add_government_reform = free_city
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = franconian
+capital = 71
+fixed_capital = 71
+mercantilism = 25
+1444.11.11= {
+	monarch = {
+		name = "Markwart"
+		dynasty = "Aleramicci"
+		adm = 3
+		dip = 5
+		mil = 4
+		birth_date = 1398.2.11
+		religion = catholic
+		culture = franconian
+	}
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = strict_personality
+	queen = {
+		name = "Richwara"
+		dynasty = "von Luxemburg"
+		adm = 5
+		dip = 4
+		mil = 5
+		country_of_origin = ANS
+		birth_date = 1401.3.16
+		death_date = 1461.3.16
+		female = yes
+		religion = catholic
+		culture = franconian
+	}
+	add_queen_personality = bold_fighter_personality
+	add_queen_personality = pious_personality
+	heir = {
+		name = "Azzo"
+		monarch_name = "Azzo"
+		dynasty = "Aleramicci"
+		adm = 1
+		dip = 4
+		mil = 1
+		birth_date = 1435.8.17
+		death_date = 1500.8.17
+		claim = 89
+		religion = catholic
+		culture = bavarian
+	}
+	add_heir_personality = charismatic_negotiator_personality
+	add_heir_personality = free_thinker_personality
+}
+1444.11.11= {
+	add_prestige = 79
+	add_treasury = 73
+}

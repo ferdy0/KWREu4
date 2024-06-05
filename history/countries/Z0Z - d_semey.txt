@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudal_theocracy
+government_rank = 1
+technology_group = nomad_group
+religion = sunni
+primary_culture = uzbehk
+capital = 4687
+religious_school = hanafi_school
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Kuntuvdi"
+		dynasty = "Degelen"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1388.11.5
+		religion = sunni
+		culture = uzbehk
+	}
+	add_ruler_personality = obsessive_perfectionist_personality
+	add_ruler_personality = silver_tongue_personality
+	queen = {
+		name = "Songul"
+		dynasty = "Orsini"
+		adm = 4
+		dip = 3
+		mil = 4
+		country_of_origin = Z0Z
+		birth_date = 1388.2.4
+		death_date = 1448.2.4
+		female = yes
+		religion = sunni
+		culture = kirgiz
+	}
+	add_queen_personality = careful_personality
+	add_queen_personality = infertile_personality
+	heir = {
+		name = "Kopti"
+		monarch_name = "Kopti"
+		dynasty = "Degelen"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1417.1.13
+		death_date = 1482.1.13
+		claim = 89
+		religion = sunni
+		culture = uzbehk
+	}
+	add_heir_personality = obsessive_perfectionist_personality
+	add_heir_personality = tactical_genius_personality
+}
+1444.11.11= {
+	add_prestige = 83
+	add_treasury = 46
+}

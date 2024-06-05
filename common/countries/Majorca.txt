@@ -1,0 +1,160 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 243 111 107 }
+historical_idea_groups = {
+	trade_ideas
+	religious_ideas
+	maritime_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	spy_ideas
+	defensive_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	spanish_tercio
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Ajdir #1" = 10
+	"Alessiu #0" = 0
+	"Ali #1" = 10
+	"Andria #3" = 10
+	"Berenguer Renard #0" = 0
+	"Bonifàtziu #0" = 0
+	"Celestìnu #0" = 0
+	"Clemente #0" = 0
+	"Elena #0" = -1
+	"Enric #0" = 0
+	"Filippo #0" = 0
+	"Gaetànu #1" = 10
+	"Gialetu #0" = 0
+	"Ispella #0" = -1
+	"Juanna #0" = -1
+	"Laurentu #1" = 10
+	"Marwan #1" = 10
+	"Muyahid #1" = 10
+	"Nomedas #0" = 0
+	"Renard #0" = 0
+	"Tàntalu #0" = 0
+}
+leader_names = {
+	"Alemany"
+	"Ametller"
+	"Amic"
+	"Barceló"
+	"Blanc"
+	"Canals"
+	"Casanovas"
+	"Casaus"
+	"Dalmau"
+	"Desplà"
+	"Destorrent"
+	"Domènec"
+	"Ferrer"
+	"Folc de Cardona"
+	"Fontana"
+	"Gallart"
+	"Gassol"
+	"Gisbert"
+	"Graner"
+	"Guimet"
+	"Lleixà"
+	"Llull"
+	"Moragues"
+	"Muntaner"
+	"Nadal"
+	"Pallarès"
+	"Pinós"
+	"Piquer"
+	"Pons"
+	"Rasquí"
+	"Ribalta"
+	"Rifós"
+	"Ripio"
+	"Salavert"
+	"Tamarit"
+	"Vallès"
+	"Vergós"
+	"Vilamarí"
+	"Vilaplana"
+	"de Balaguer"
+	"de Grau"
+	"de Guimerà"
+	"de Margarit"
+	"de Montcada"
+	"de Mur"
+	"de Ripoll"
+	"de Subirats"
+	"de la Riba"
+	"d’Espés"
+	"d’Oms"
+}
+ship_names = {
+	"Alerta"
+	"Blanca Aurora"
+	"Catalunya"
+	"Ceres"
+	"Constança"
+	"Eclipsi"
+	"Empordà"
+	"Falcó"
+	"Flama"
+	"Invencible"
+	"Jaume el Conqueridor"
+	"Juno"
+	"La Bonaventura"
+	"La Garsa"
+	"La Gasela"
+	"La Reial"
+	"Lleona"
+	"Magnana"
+	"Mart"
+	"Roger de Flor"
+	"Roger de Llúria"
+	"Sant Ambrós"
+	"Sant Antoni"
+	"Sant Bernat"
+	"Sant Climent"
+	"Sant Ferran"
+	"Sant Francesc"
+	"Sant Gabriel"
+	"Sant Jacob"
+	"Sant Joan Baptista"
+	"Sant Joan Evangelista"
+	"Sant Jordi"
+	"Sant Miquel"
+	"Sant Pere de Roma"
+	"Sant Víctor"
+	"Santa Bàrbara"
+	"Santa Caterina"
+	"Santa Coloma"
+	"Santa Creu"
+	"Santa Eulàlia"
+	"Santa Magdalena"
+	"Santa Maria"
+	"Santa Ventura"
+	"Santa Ágata"
+	"Santíssima Trinitat"
+	"Sobirà"
+	"Sorpresa"
+	"Telèmac"
+	"Temerària"
+	"Terrible"
+	"Trinitat"
+	"Verge de Montserrat"
+	"Verge de les Neus"
+	"Verge del Carme"
+	"Vigilant"
+}

@@ -1,0 +1,55 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 2
+technology_group = western
+religion = converted_dynamic_faith_113
+primary_culture = dynamic-sicilian-culture-num1
+capital = 379
+1444.11.11= {
+	monarch = {
+		name = "Petru"
+		dynasty = "Hauteville-Gerusalemme"
+		adm = 5
+		dip = 5
+		mil = 4
+		birth_date = 1391.3.15
+		religion = converted_dynamic_faith_113
+		culture = dynamic-sicilian-culture-num1
+	}
+	add_ruler_personality = entrepreneur_personality
+	add_ruler_personality = tolerant_personality
+	queen = {
+		name = "Maria"
+		dynasty = "van Berthout"
+		adm = 1
+		dip = 4
+		mil = 3
+		country_of_origin = KOJ
+		birth_date = 1404.11.15
+		death_date = 1464.11.15
+		female = yes
+		religion = converted_dynamic_faith_113
+		culture = sorbian
+	}
+	add_queen_personality = drunkard_personality
+	add_queen_personality = expansionist_personality
+	heir = {
+		name = "Petru"
+		monarch_name = "Petru II"
+		dynasty = "Hauteville-Gerusalemme"
+		adm = 4
+		dip = 6
+		mil = 4
+		birth_date = 1422.8.22
+		death_date = 1487.8.22
+		claim = 89
+		religion = converted_dynamic_faith_113
+		culture = dynamic-sicilian-culture-num1
+	}
+	add_heir_personality = bold_fighter_personality
+	add_heir_personality = tolerant_personality
+}
+1444.11.11= {
+	add_prestige = 112
+	add_treasury = 86
+}

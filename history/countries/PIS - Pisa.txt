@@ -1,0 +1,41 @@
+government = republic
+add_government_reform = free_city
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = sardinian
+capital = 115
+mercantilism = 25
+1444.11.11= {
+	monarch = {
+		name = "Carule"
+		dynasty = "de Lacon-Gunale"
+		adm = 5
+		dip = 4
+		mil = 6
+		birth_date = 1402.9.23
+		religion = catholic
+		culture = sardinian
+	}
+	add_ruler_personality = architectural_visionary_personality
+	add_ruler_personality = midas_touched_personality
+	queen = {
+		name = "Emma"
+		dynasty = "di Saluzzo"
+		adm = 4
+		dip = 6
+		mil = 4
+		country_of_origin = PIS
+		birth_date = 1399.3.2
+		death_date = 1459.3.2
+		female = yes
+		religion = catholic
+		culture = swiss
+	}
+	add_queen_personality = secretive_personality
+	add_queen_personality = silver_tongue_personality
+}
+1444.11.11= {
+	add_prestige = 75
+	add_treasury = 61
+}

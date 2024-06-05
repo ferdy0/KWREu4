@@ -1,0 +1,127 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 67 96 179 }
+revolutionary_colors = { 12 14 0 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	religious_ideas
+	maritime_ideas
+	administrative_ideas
+	offensive_ideas
+	economic_ideas
+	expansion_ideas
+}
+historical_units = {
+	ali_bey_reformed_infantry
+	mamluk_archer
+	mamluk_cavalry_charge
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_dragoon
+	muslim_mass_infantry
+}
+monarch_names = {
+	"Abisatu #0" = 0
+	"Ablarion #0" = 0
+	"Abu Iqal #1" = 10
+	"Adaldag #1" = 10
+	"Adballah #1" = 10
+	"Adilet #0" = 0
+	"Agnese #0" = -1
+	"Agnès #0" = -1
+	"Agwillul #1" = 10
+	"Ahmad #1" = 10
+	"Akli #0" = 0
+	"Aksil #0" = 0
+	"Alberade #0" = -1
+	"Alena #0" = -1
+	"Angioletta #1" = -1
+	"Bagay #0" = 0
+	"Barisone #0" = 0
+	"Barsbeg #0" = 0
+	"Bozçin #0" = -1
+	"Branca #0" = -1
+	"Brigida #0" = -1
+	"Carule #0" = 0
+	"Danyal #0" = 0
+	"Dawud #1" = 10
+	"Dionisi #0" = 0
+	"Elianora #0" = -1
+	"Fabritziu #0" = 0
+	"Farhan #0" = 0
+	"Fella #0" = 0
+	"Fidula #0" = -1
+	"Gaine #0" = 0
+	"Giulia #0" = -1
+	"Gôsama #0" = -1
+	"Habib #1" = 10
+	"Habil #0" = 0
+	"Hashim #0" = 0
+	"Ibrahim #2" = 10
+	"Kuntuvdi #0" = 0
+	"Lussurgiu #0" = 0
+	"Mastanabal #1" = 10
+	"Meghighda #0" = -1
+	"Menna #0" = -1
+	"Mennad #0" = 0
+	"Micheli #0" = 0
+	"Mighele #0" = 0
+	"Muhammad #2" = 10
+	"Nasr #1" = 10
+	"Pascalina #0" = -1
+	"Pulad #0" = 0
+	"Rawh #1" = 10
+	"Saraginu #0" = 0
+	"Sebustianu #0" = 0
+	"Sirma #0" = -1
+	"Sokal #0" = 0
+	"Tamim #1" = 10
+	"Tamimunt #0" = -1
+	"Tawenza #0" = -1
+	"Tayyurt #0" = -1
+	"Tedora #0" = -1
+	"Tedore #0" = 0
+	"Tedu #0" = 0
+	"Togli #0" = 0
+	"Umar #2" = 10
+	"Usunbike #0" = -1
+	"Vakrim #0" = 0
+	"Yabdas #0" = 0
+	"Yahya #1" = 10
+	"Yazid #1" = 10
+	"Ziyadat Allah #1" = 10
+	"Ziydat Allah #1" = 10
+	"al-Fadl #1" = 10
+	"al-Muizz #1" = 10
+	"Çiçek #0" = -1
+	"Özgul #0" = -1
+}
+leader_names = {
+	"Barqa"
+	"Hamilcar"
+	"Hannibal"
+	"Hasdrubal"
+	"Mago"
+}
+ship_names = {
+	"Alim"
+	"Aziz"
+	"Bari"
+	"Fattah"
+	"Ghaffar"
+	"Jabbar"
+	"Khaliq"
+	"Malik"
+	"Mu'min"
+	"Muhaymin"
+	"Musawwir"
+	"Mutakabbir"
+	"Qahhar"
+	"Quddus"
+	"Rahim"
+	"Rahman"
+	"Razzaq"
+	"Salam"
+	"Wahhab"
+}

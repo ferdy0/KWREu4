@@ -1,0 +1,77 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 245 135 25 }
+revolutionary_colors = { 4 8 4 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	spy_ideas
+	diplomatic_ideas
+	economic_ideas
+	religious_ideas
+	innovativeness_ideas
+}
+historical_units = {
+	african_dragoon
+	african_hill_warfare
+	african_hussar
+	african_mandelaku
+	african_mossi_horsemen
+	african_spearmen
+	african_tuareg_cavalry
+	african_western_franchise_warfare
+	mali_tribal_warfare
+	niger_kongolese_gunpowder_warfare
+	westernized_niger_kongolese
+}
+monarch_names = {
+	"Afaghis #1" = 10
+	"Badä #1" = 10
+	"Diobé #1" = 10
+	"Esin #0" = -1
+	"Kiatamba #2" = 10
+	"Kisha #0" = 0
+	"Koy #0" = 0
+	"Kparnkpai #0" = 0
+	"Kukuray #1" = 10
+	"Maha #1" = 10
+	"Nana #0" = -1
+	"Ouankoÿ #1" = 10
+	"Sidibé #0" = -1
+	"Tandian #0" = 0
+	"Umar #1" = 10
+	"Wlejii #0" = -1
+}
+leader_names = {
+	"An"
+	"Bohi"
+	"Dundu"
+	"Garm"
+	"Jeegi"
+	"Kan"
+	"Kumba"
+	"Lamin Bal"
+	"Lamu"
+	"Ly"
+	"Musa"
+	"Njai"
+	"Tabakali"
+	"Talla"
+	"Ule"
+	"Wan"
+	"ru"
+}
+ship_names = {
+	"Anyam-Godo"
+	"Deny Kobe"
+	"Denyanke"
+	"Futa Tooro"
+	"Great Fulo"
+	"Koli"
+	"Laba"
+	"Silatigui"
+	"Sylla"
+	"Tekrur"
+	"Tengella"
+}

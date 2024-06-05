@@ -1,0 +1,55 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+technology_group = western
+religion = catholic
+primary_culture = aragonese
+capital = 213
+1444.11.11= {
+	monarch = {
+		name = "Radulf IV"
+		dynasty = "del Habsburg-Xalón"
+		adm = 4
+		dip = 3
+		mil = 4
+		birth_date = 1415.2.27
+		religion = catholic
+		culture = aragonese
+	}
+	add_ruler_personality = fierce_negotiator_personality
+	add_ruler_personality = pious_personality
+	queen = {
+		name = "Eufémia"
+		dynasty = "de Forcalquier"
+		adm = 6
+		dip = 4
+		mil = 6
+		country_of_origin = ARA
+		birth_date = 1415.1.15
+		death_date = 1475.1.15
+		female = yes
+		religion = catholic
+		culture = occitain
+	}
+	add_queen_personality = careful_personality
+	add_queen_personality = craven_personality
+	heir = {
+		name = "Lope"
+		monarch_name = "Lope"
+		dynasty = "del Habsburg-Xalón"
+		adm = 1
+		dip = 1
+		mil = 1
+		birth_date = 1440.7.15
+		death_date = 1505.7.15
+		claim = 89
+		religion = catholic
+		culture = aragonese
+	}
+	add_heir_personality = obsessive_perfectionist_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 81
+	add_treasury = 0
+}

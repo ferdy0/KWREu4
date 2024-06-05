@@ -1,0 +1,117 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 131 141 142 }
+revolutionary_colors = { 8 1 8 }
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	trade_ideas
+	spy_ideas
+	economic_ideas
+	quality_ideas
+	diplomatic_ideas
+	religious_ideas
+}
+historical_units = {
+	bardiche_infantry
+	druzhina_cavalry
+	eastern_carabinier
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	muscovite_caracolle
+	muscovite_cossack
+	muscovite_musketeer
+	muscovite_soldaty
+	russian_cuirassier
+	russian_green_coat
+	russian_lancer
+	russian_mass
+	russian_petrine
+	slavic_stradioti
+}
+monarch_names = {
+	"Alexandr #1" = 10
+	"Alexandra #0" = -1
+	"Andrei #0" = 0
+	"Anna #0" = -1
+	"Athanasios #0" = 0
+	"Dmitar #0" = 0
+	"Dobrava #0" = -1
+	"Gavril #0" = 0
+	"Geralda #0" = -1
+	"Hilaria #0" = -1
+	"Iliya #1" = 10
+	"Jougi #1" = -1
+	"Kapitolina #0" = -1
+	"Maertijn #1" = 10
+	"Maria #0" = -1
+	"Matfei #0" = 0
+	"Matjoi #0" = -1
+	"Mikhail #0" = 0
+	"Mitfora #1" = 10
+	"Nalka #0" = 0
+	"Ofonja #0" = 0
+	"Pankraatei #0" = 0
+	"Pavel #0" = 0
+	"Putiata #0" = 0
+	"Suero #0" = 0
+	"Varaka #0" = 0
+	"Vasiliy #1" = 10
+	"Vasilko #1" = 10
+	"Viacheslav #1" = 10
+	"Yekaterina #0" = -1
+	"Yelizaveta #1" = -1
+	"Yevdokia #0" = -1
+	"Yuriy #0" = 0
+}
+leader_names = {
+	"Alabyshe"
+	"Alenkin"
+	"Belsky"
+	"Deyev"
+	"Dulov"
+	"Golygin"
+	"Kubensky"
+	"Kurbsky"
+	"Mortkin"
+	"Mulozhsky"
+	"Okhlyabinin"
+	"Pnekov"
+	"Shchetinin"
+	"Siseev"
+	"Sitsky"
+	"Sontsov"
+	"Sudsky"
+	"Temnosiny"
+	"Troekurov"
+	"Ukhorsky"
+	"Ushaty"
+	"Velikogagin"
+	"Yukhotsky"
+	"Zaozersky"
+	"Zasekin"
+	"Zhirovy"
+	"Zubaty"
+}
+ship_names = {
+	"Berendeyevo"
+	"Borisoglebsky"
+	"Borok"
+	"Danilov"
+	"Itolar"
+	"Karabikha"
+	"Kurba"
+	"Lyubim"
+	"Myshkin"
+	"Nekouz"
+	"Nekrasovskoye"
+	"Pesochnoye"
+	"Petrovskoye"
+	"Prechistoye"
+	"Rybinsk"
+	"Semibratovo"
+	"Tunoshna"
+	"Uglich"
+	"Varegove"
+}

@@ -1,0 +1,143 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 231 224 107 }
+revolutionary_colors = { 5 0 5 }
+historical_idea_groups = {
+	trade_ideas
+	quantity_ideas
+	administrative_ideas
+	innovativeness_ideas
+	defensive_ideas
+	maritime_ideas
+	diplomatic_ideas
+	aristocracy_ideas
+}
+historical_units = {
+	bhonsle_cavalry
+	indian_arquebusier
+	indian_elephant
+	indian_footsoldier
+	indian_rifle
+	mughal_mansabdar
+	mughal_musketeer
+	rajput_hill_fighters
+	rajput_musketeer
+	sikh_hit_and_run
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Abdul-Jaleel #0" = 0
+	"Abdul-Qadir #0" = 0
+	"Abdul-Wahab #0" = 0
+	"Agathon #0" = 0
+	"Aghlab #0" = 0
+	"Akin #0" = 0
+	"Azarmidokht #0" = -1
+	"Betta #1" = 10
+	"Bhavadattavarman #1" = 10
+	"Bhoo-Chand #1" = 10
+	"Darab #0" = 0
+	"Dharapatta #1" = 10
+	"Dharasena #3" = 10
+	"Dhruvasena #3" = 10
+	"Dronasimha #1" = 10
+	"Faramarz #0" = 0
+	"Farrukhzad #0" = 0
+	"Farzad #0" = 0
+	"Guhasena #1" = 10
+	"Hariyamandal #1" = 10
+	"Huma #0" = -1
+	"Itlar #1" = 10
+	"Izzaddin #0" = 0
+	"Jamileh #0" = -1
+	"Janmejaya #1" = 10
+	"Jayasimha #2" = 10
+	"Jotman #0" = 0
+	"Kalahastambha #1" = 10
+	"Kandz #0" = 0
+	"Karnadeva #1" = 10
+	"Kharagraha #2" = 10
+	"Kumarapala #1" = 10
+	"Mehri #0" = -1
+	"Mirza #0" = 0
+	"Nahal #0" = -1
+	"Pailan #0" = 0
+	"Pendar #0" = 0
+	"Pravaraja #1" = 10
+	"Rukhshan #0" = 0
+	"Sahar #0" = -1
+	"Salar #0" = 0
+	"Shahrukh #0" = 0
+	"Shaya #0" = 0
+	"Shujah #0" = 0
+	"Siladitya #4" = 10
+	"Touran #0" = -1
+	"Vikramaditya #1" = 10
+	"Yahya #0" = 0
+	"Yasaman #0" = -1
+	"Yusuf #0" = 0
+	"Zeyd #0" = 0
+}
+leader_names = {
+	"Bahadur"
+	"Begada"
+	"Bhilala"
+	"Changezi"
+	"Chattari"
+	"Chudasama"
+	"Desai"
+	"Farooqi"
+	"Gauri"
+	"Ghuri"
+	"Gilani"
+	"Haji"
+	"Jurjani"
+	"Kanjar"
+	"Khan"
+	"Khorasani"
+	"Lakhaji"
+	"Latif"
+	"Malik"
+	"Mori"
+	"Munshi"
+	"Muzzafar"
+	"Naru"
+	"Pahore"
+	"Paramara"
+	"Parikh"
+	"Patel"
+	"Patidar"
+	"Ravalji"
+	"Shah"
+	"Solanki"
+	"Sultan"
+	"Tomara"
+	"Turani"
+	"Uzbek"
+}
+ship_names = {
+	"Ambika"
+	"Auranga"
+	"Bhadar"
+	"Damanganga"
+	"Devki"
+	"Jalsena"
+	"Kala Jahazi"
+	"Khari"
+	"Lal Jahazi"
+	"Luni"
+	"Mahi"
+	"Mithi"
+	"Narmada"
+	"Nausena"
+	"Nav ka Yudh"
+	"Nila Jahazi"
+	"Purna"
+	"Sabarmati"
+	"Sagar"
+	"Saraiya"
+	"Saraswati"
+	"Shetrunji"
+	"Tapi"
+	"Yasmin"
+}

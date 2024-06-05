@@ -1,0 +1,112 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 43 60 117 }
+revolutionary_colors = { 15 16 15 }
+historical_idea_groups = {
+	aristocracy_ideas
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	maritime_ideas
+}
+historical_score = 25
+historical_units = {
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	prussian_frederickian
+	prussian_uhlan
+	swedish_arme_blanche
+	swedish_caroline
+	swedish_gallop
+	swedish_gustavian
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Anders #0" = 0
+	"Ansgard #0" = 0
+	"Ari #0" = 0
+	"Arvid #0" = 0
+	"Bernt #0" = 0
+	"Birger #0" = 0
+	"Bj0rn #0" = 0
+	"Christoffer #0" = 10
+	"Daniel #0" = 0
+	"Edvard #0" = 0
+	"Eilert #0" = 0
+	"Einar #0" = 0
+	"Elias #0" = 0
+	"Erik #0" = 10
+	"Esben #0" = 0
+	"Folke #0" = 0
+	"Gissur #0" = 0
+	"Gunnar #0" = 0
+	"Gunnd0s #0" = -1
+	"Hallgr0m0na #0" = -1
+	"Harald #0" = 10
+	"Inge #0" = 5
+	"Ingibj0rg #0" = -1
+	"Kasper #0" = 0
+	"Kennet #0" = 0
+	"Knut #0" = 0
+	"Kristina #0" = -1
+	"Ludvig #0" = 0
+	"MONARCH_NAME_JON #0" = 10
+	"Margaret #0" = -5
+	"Mats #0" = 0
+	"Mikael #0" = 0
+	"Njord #0" = 0
+	"Nj0ld #0" = 0
+	"Oddmund #0" = 0
+	"Olav #0" = 10
+	"Peder #0" = 0
+	"Rikard #0" = 0
+	"Saga #0" = -1
+	"Selma #0" = -1
+	"Sigurd #0" = 5
+	"Simon #0" = 0
+	"S0ren #0" = 0
+	"Tollak #0" = 0
+	"Torhild #0" = 0
+	"0gmundur #0" = 10
+}
+leader_names = {
+	"Amundsen"
+	"Arason"
+	"Arnesson"
+	"Bjelke"
+	"Bolt"
+	"Egilsson"
+	"Eriksson"
+	"Haraldsson"
+	"Larsson"
+	"Leifsson"
+	"Magnusson"
+	"Nansen"
+	"Nikulásson"
+	"Norheim"
+	"Olavsson"
+	"Pálsson"
+	"Sverresson"
+	"Torgeirsson"
+}
+ship_names = {
+	"Drangajökull"
+	"Eiríksjökull"
+	"Eyjafjallajökull"
+	"Hofsjökull"
+	"Langjökull"
+	"Snæfellsjökull"
+	"Tindfjallajökull"
+	"Torfajökull"
+	"Tungnafellsjökull"
+	"Vattnajökul"
+}
+preferred_religion = protestant

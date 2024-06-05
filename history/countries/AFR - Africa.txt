@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = plutocratic_reform
+government_rank = 2
+technology_group = muslim
+religion = converted_dynamic_faith_113
+primary_culture = dynamic-berber-sardinian-culture-num1
+capital = 341
+mercantilism = 15
+1444.11.11= {
+	monarch = {
+		name = "Mastanabal"
+		dynasty = "de Lacon-Gunale"
+		adm = 6
+		dip = 5
+		mil = 6
+		birth_date = 1364.3.7
+		religion = converted_dynamic_faith_113
+		culture = dynamic-berber-sardinian-culture-num1
+	}
+	add_ruler_personality = industrious_personality
+	add_ruler_personality = midas_touched_personality
+	queen = {
+		name = "Alberade"
+		dynasty = "von Habsburg"
+		adm = 3
+		dip = 3
+		mil = 4
+		country_of_origin = AFR
+		birth_date = 1409.10.16
+		death_date = 1469.10.16
+		female = yes
+		religion = catholic
+		culture = swiss
+	}
+	add_queen_personality = pious_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Tedu"
+		monarch_name = "Tedu"
+		dynasty = "de Lacon-Gunale"
+		adm = 6
+		dip = 4
+		mil = 6
+		birth_date = 1392.4.17
+		death_date = 1457.4.17
+		claim = 89
+		religion = converted_dynamic_faith_113
+		culture = dynamic-berber-sardinian-culture-num1
+	}
+	add_heir_personality = expansionist_personality
+	add_heir_personality = midas_touched_personality
+}
+1444.11.11= {
+	add_prestige = 130
+	add_treasury = 102
+}

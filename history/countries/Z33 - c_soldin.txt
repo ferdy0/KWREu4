@@ -1,0 +1,58 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = dynamic-franconian-culture-num1
+capital = 49
+fixed_capital = 49
+add_accepted_culture = old_pommeranian
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Ulrich"
+		dynasty = "von Köln"
+		adm = 4
+		dip = 6
+		mil = 4
+		birth_date = 1388.1.25
+		religion = catholic
+		culture = dynamic-franconian-culture-num1
+	}
+	add_ruler_personality = architectural_visionary_personality
+	add_ruler_personality = expansionist_personality
+	queen = {
+		name = "Winfrida"
+		dynasty = "Orsini"
+		adm = 4
+		dip = 2
+		mil = 4
+		country_of_origin = Z33
+		birth_date = 1418.1.17
+		death_date = 1478.1.17
+		female = yes
+		religion = catholic
+		culture = franconian
+	}
+	add_queen_personality = obsessive_perfectionist_personality
+	add_queen_personality = secretive_personality
+	heir = {
+		name = "Baldur"
+		monarch_name = "Baldur"
+		dynasty = "von Luxemburg"
+		adm = 6
+		dip = 5
+		mil = 6
+		birth_date = 1420.9.21
+		death_date = 1485.9.21
+		claim = 89
+		religion = catholic
+		culture = dynamic-franconian-culture-num1
+	}
+	add_heir_personality = charismatic_negotiator_personality
+	add_heir_personality = lawgiver_personality
+}
+1444.11.11= {
+	add_prestige = 59
+	add_treasury = 44
+}

@@ -1,0 +1,101 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 60 123 65 }
+revolutionary_colors = { 9 6 4 }
+historical_idea_groups = {
+	trade_ideas
+	maritime_ideas
+	defensive_ideas
+	economic_ideas
+	religious_ideas
+	diplomatic_ideas
+	spy_ideas
+	administrative_ideas
+}
+historical_units = {
+	bhonsle_infantry
+	indian_archers
+	indian_arquebusier
+	indian_footsoldier
+	indian_shock_cavalry
+	maharathan_guerilla_warfare
+	reformed_mughal_musketeer
+	sikh_rifle
+	south_indian_musketeer
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Aggabodhi #1" = 10
+	"Akkâranankayâr #1" = -1
+	"Ammaraja #0" = 0
+	"Bachavarudhini #0" = 0
+	"Bottubeta #0" = 0
+	"Catturukâlamakalâtittan #0" = 0
+	"Cayantavarman #0" = 0
+	"Cêramankai #0" = -1
+	"Dharma #0" = -1
+	"Feramez #0" = 0
+	"Ganapatidev #0" = 0
+	"Gokarna #0" = 0
+	"Gonagudu #3" = 10
+	"Impânâyarpattan #1" = 10
+	"Jaggadeva #0" = 0
+	"Kalacci #0" = -1
+	"Kavatiyakkan #0" = -1
+	"Kañciakkan #0" = -1
+	"Kharstrang #0" = 0
+	"Kotukulapattan #0" = 0
+	"Kuñcaramalli #0" = -1
+	"Lakshmandeva #0" = 0
+	"Mallambika #0" = -1
+	"Manavâlapperumâl #1" = 10
+	"Naralokavira #0" = 0
+	"Narendrasinha #0" = 0
+	"Peranankai #0" = -1
+	"Periyapillai #0" = 0
+	"Perumâl #0" = 0
+	"Ranatitta #0" = 0
+	"Ravivarman #2" = 10
+	"Rudrama #0" = 0
+	"Sena #1" = 10
+	"Sárra #0" = 0
+	"Tirumûlattânam #0" = -1
+	"Tirupuvanavîratevar #0" = 0
+	"Têmpâvai #0" = -1
+	"Utaiya #0" = 0
+	"Varakunan #0" = 0
+	"Vellantânkinân #0" = 0
+	"Vikramâtittâ #0" = 0
+	"Vânavanmâtêvi #1" = -1
+	"Yajnavati #0" = -1
+	"Ânûrrenmanpiccan #1" = 10
+}
+leader_names = {
+	"Atapattu"
+	"Chandana"
+	"Jayaratne"
+	"Jayawardene"
+	"Kalpage"
+	"Pushpakumara"
+	"Ranga"
+	"Ratnayake"
+	"Thilakaratne"
+	"Tillekaratne"
+}
+ship_names = {
+	"Anaradhapura"
+	"Anula"
+	"Jaffna"
+	"Kandy"
+	"Mahaweli"
+	"Mannar"
+	"Nil Manel"
+	"Palk"
+	"Pidurutalagala"
+	"Siddhartha"
+	"Sigiriya"
+	"Sinharaja"
+	"Sirimavo"
+	"Sri Maha Bodhi"
+	"Sri Pada"
+}

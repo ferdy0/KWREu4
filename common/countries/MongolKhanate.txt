@@ -1,0 +1,121 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 108 153 65 }
+revolutionary_colors = { 4 15 4 }
+historical_idea_groups = {
+	humanist_ideas
+	trade_ideas
+	quantity_ideas
+	offensive_ideas
+	expansion_ideas
+	economic_ideas
+	defensive_ideas
+	administrative_ideas
+}
+historical_units = {
+	reformed_steppe_rifles
+	steppe_cavalry
+	steppe_footmen
+	steppe_infantry
+	steppe_lancers
+	steppe_mounted_raiders
+	steppe_musketeers
+	steppe_raiders
+	steppe_riders
+	steppe_rifles
+	steppe_uhlans
+}
+monarch_names = {
+	"Alfa #0" = 0
+	"Amritakala #0" = -1
+	"Amritnarayan #0" = 0
+	"Arthapatiraja #0" = 0
+	"Chagatai #1" = 10
+	"Dharmamahadevi #0" = -1
+	"Ferdows #0" = 0
+	"Gandharavati #0" = -1
+	"Govindapala #0" = 0
+	"Hira #0" = -1
+	"Khenchok #1" = 10
+	"Khsetravridha #0" = 0
+	"Lale #0" = -1
+	"Lomapada #0" = 0
+	"Malavyadevi #0" = -1
+	"Mandukhai #1" = -1
+	"Mina #0" = -1
+	"Mukundanarayan #0" = 0
+	"Nayanadevi #0" = -1
+	"Penden #1" = 10
+	"Prananarayan #0" = 0
+	"Pratapnarayan #0" = 0
+	"Pulindaka #0" = 0
+	"Rambhadra Singh Dev #0" = 0
+	"Ranjitsingha #0" = 0
+	"Sambhuyasa #0" = 0
+	"Samudrasen #0" = 0
+	"Shivendranarayan #0" = 0
+	"Sithu #0" = 0
+	"Suvrata #0" = -1
+	"Ulrich #0" = 0
+	"Vina #0" = -1
+}
+leader_names = {
+	"Abaga"
+	"Abaganar"
+	"Ast"
+	"Borjigin"
+	"Chagaan"
+	"Chakhar"
+	"Darqan"
+	"Hohhot"
+	"Jurim"
+	"Karakorum"
+	"Khalkha"
+	"Kharachin"
+	"Khorchin"
+	"Noyan"
+	"Onriut"
+	"Ordos"
+	"Tümed"
+	"Ulanqab"
+	"Uriankhai"
+	"Wang"
+	"Xilingol"
+	"Yingchang"
+	"Yungshiyebu"
+}
+ship_names = {
+	"Adai"
+	"Batu"
+	"Bo'orchu"
+	"Borokhula"
+	"Böke"
+	"Chagaan"
+	"Chilaun"
+	"Dharmapala"
+	"Dörben Külü'üd"
+	"Dörben Noyas"
+	"Elbeg"
+	"Ghengis Khan"
+	"Hohhot"
+	"Hülegü"
+	"Jebe"
+	"Jelme"
+	"Jinggim"
+	"Jöchi"
+	"Kamala"
+	"Karakorum"
+	"Khar Khiruge"
+	"Khubilai"
+	"Mugali"
+	"Möngke"
+	"Qubilai"
+	"Shikhikhutug"
+	"Sorqan Shira"
+	"Subutai"
+	"Tolui"
+	"Yelü Chucai"
+	"Yingchang"
+	"Ögödei"
+	"Örüg Temür"
+}

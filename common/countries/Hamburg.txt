@@ -1,0 +1,196 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 227 95 7 }
+revolutionary_colors = { 5 0 5 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	religious_ideas
+	economic_ideas
+	innovativeness_ideas
+	offensive_ideas
+	spy_ideas
+	administrative_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Adalbert #1" = 10
+	"Albert #1" = 10
+	"Alof #0" = -1
+	"Arnd #0" = 0
+	"Dago #1" = 10
+	"Dethard #1" = 10
+	"Detmar #0" = 0
+	"Gerold #1" = 10
+	"Guntram #1" = 10
+	"Hatto #1" = 10
+	"Helene #0" = -1
+	"Hildebold #0" = 0
+	"Hulderic #1" = 10
+	"Isidor #1" = 10
+	"Jacenty #1" = 10
+	"Kunigunde #0" = -1
+	"Lembert #0" = 0
+	"Leuderic #0" = 0
+	"Liudger #0" = 0
+	"Marbold #1" = 10
+	"Rimbert #1" = 10
+	"Rudolf #1" = 10
+	"Theoderic #1" = 10
+	"Theodrada #1" = -1
+	"Udu #0" = 0
+}
+leader_names = {
+	"Abendroth"
+	"Ackermann"
+	"Adler"
+	"Ahlers"
+	"Alpers"
+	"Alt"
+	"Amsinck"
+	"Baasch"
+	"Backer"
+	"Bagebuhr"
+	"Bastian"
+	"Billing"
+	"Boetefeur"
+	"Dabelstein"
+	"Dreyer"
+	"Eggers"
+	"Engel"
+	"Framhein"
+	"Gevert"
+	"Gossler"
+	"Grünewaldt"
+	"Hansen"
+	"Heinsohn"
+	"Henckell"
+	"Heuer"
+	"Horwege"
+	"Imbeck"
+	"Jarchow"
+	"Kehrhahn"
+	"Kellinghusen"
+	"Kindt"
+	"Lieb"
+	"Merck"
+	"Meyer"
+	"Muhl"
+	"Nanne"
+	"Olbers"
+	"Pape"
+	"Pollnau"
+	"Rosenbaum"
+	"Rosendahl"
+	"Schmerse"
+	"Schmidt"
+	"Schuberth"
+	"Schuemann"
+	"Soltau"
+	"Steetz"
+	"Thelemann"
+	"Tiedemann"
+	"Vick"
+	"Vilter"
+	"Vollmer"
+	"de Greve"
+	"von Düten"
+	"von Lengerke"
+	"von der Fechte"
+}
+ship_names = {
+	"Adler von Lübeck"
+	"Admiralität von Hamburg"
+	"Afrikaner"
+	"Anna"
+	"Arche Noah"
+	"Bersteinfänger"
+	"Bracke"
+	"Brunte Kuh"
+	"Clementia"
+	"Colonia"
+	"Der Große Adler"
+	"Derffinger"
+	"Dorothea"
+	"Engel"
+	"Engel Gabriel"
+	"Feuerblase"
+	"Fliegender Hirsch"
+	"Fortuna"
+	"Friede"
+	"Fuchs"
+	"Füchslein"
+	"Gabriel"
+	"Gelber Löve"
+	"Goldener Löwe"
+	"Grafschaft Mark"
+	"Grüner Drache"
+	"Herzogtum Cleve"
+	"Hoffning"
+	"Jesus von Lübeck"
+	"Johannesburg"
+	"Jonge Tobias"
+	"Kurprinz"
+	"König David"
+	"Leopoldus Primus"
+	"Lisa von Lübeck"
+	"Lybischer Trotz"
+	"Lübscher Adler"
+	"Makarele"
+	"Maria Catharina"
+	"Meermann"
+	"Meerweib"
+	"Mercurius"
+	"Morian"
+	"Nordischer Löwe"
+	"Pax"
+	"Peter und Paul"
+	"Peter von Danzig"
+	"Pierelepomp"
+	"Prinz Ludwig"
+	"Prophet Daniel"
+	"Ritter Sankt Georg"
+	"Roland"
+	"Rommelpot"
+	"Rosenfelde"
+	"Roter Hirsch"
+	"Salamander"
+	"Sankt Laurens"
+	"Sankt Peter"
+	"Schwarzer Rabe"
+	"Seemoewe"
+	"Seeritter"
+	"Sieben Provinzien"
+	"Stad Emden"
+	"Syrig"
+	"Vogel Greif"
+	"Wapen von Bremen"
+	"Wapen von Hamburg"
+	"Wappen von Bremen"
+	"Wappen von Cleve"
+	"Wasserhund"
+	"Weißer Löwe"
+	"Wilhelmina Margaretta"
+	"Windhund"
+	"Wolkensäule"
+	"Zwei Brüder"
+}
+army_names = {
+	"Armee von $PROVINCE$"
+}
+preferred_religion = protestant

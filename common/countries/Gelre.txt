@@ -1,0 +1,116 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 139 66 97 }
+revolutionary_colors = { 15 8 1 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	diplomatic_ideas
+	economic_ideas
+	innovativeness_ideas
+	spy_ideas
+	offensive_ideas
+	quantity_ideas
+}
+historical_units = {
+	anglofrench_line
+	dutch_maurician
+	french_bluecoat
+	french_caracolle
+	french_cuirassier
+	french_dragoon
+	french_impulse
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Damaes #0" = 0
+	"Folmar #0" = 0
+	"Gerrit #2" = 10
+	"Guij #0" = 0
+	"Irene #0" = -1
+	"Kristof #2" = 10
+	"Marquart #0" = 0
+	"Pieter #1" = 10
+	"Reynilde #0" = -1
+}
+leader_names = {
+	"Bachman"
+	"Bakker"
+	"Bentinck"
+	"Bosch"
+	"Bulterman"
+	"De Haas"
+	"De Waal"
+	"Derksen"
+	"Elgershuisen"
+	"Entink"
+	"Gelkom"
+	"Holst"
+	"Honekes"
+	"Hoornaert"
+	"Huethorst"
+	"Jansen"
+	"Kempermans"
+	"Kiperije"
+	"Kleinluking"
+	"Korthust"
+	"Kreijhoeft"
+	"Oldenhaven"
+	"Polkamp"
+	"Remmelink"
+	"Saelckink"
+	"Sluiter"
+	"Sweerts"
+	"Teerink"
+	"Ter Horst"
+	"Van Bentheim"
+	"Van Bommel"
+	"Van Bronckhorst"
+	"Van Gulik"
+	"Van Wassenberg"
+	"Van Zutfen"
+	"Van den Bergh"
+	"Vögelink"
+	"Wagevoord"
+	"Wassink"
+	"Wissink"
+}
+ship_names = {
+	"Betuwe"
+	"Bommelerwaard"
+	"Bronckhorst"
+	"De Zwarte Hertog"
+	"Flipje"
+	"Gelderse Worst"
+	"Graaf Godschalk"
+	"Hertog Arnold"
+	"Hertog Eduard"
+	"Hertog Gerard"
+	"Hertog Reinoud"
+	"Hertogin Maria"
+	"Jonge Daniël"
+	"Lichtenvoorde"
+	"Maas en Waal"
+	"Twee Gebroeders"
+	"Veluwe"
+	"Wapen van Deventer"
+	"Wapen van Harderwijk"
+	"Wapen van Hattem"
+	"Wapen van Kampen"
+	"Wapen van Nijmegen"
+	"Wapen van Zutphen"
+	"Wapen van Zwolle"
+	"Wassenberg"
+}
+army_names = {
+	"Leger van $PROVINCE$"
+}
+fleet_names = {
+	"Vloot van $PROVINCE$"
+}

@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = uparaja_reform
+government_rank = 2
+technology_group = nomad_group
+religion = vajrayana
+primary_culture = oghuz
+capital = 439
+add_accepted_culture = cuman
+1444.11.11= {
+	monarch = {
+		name = "Gzi"
+		dynasty = "Terteroba"
+		adm = 3
+		dip = 3
+		mil = 2
+		birth_date = 1399.4.22
+		religion = vajrayana
+		culture = oghuz
+	}
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = fierce_negotiator_personality
+	queen = {
+		name = "Cuiping"
+		dynasty = "Pugyel-Lhasa"
+		adm = 3
+		dip = 6
+		mil = 3
+		country_of_origin = OGZ
+		birth_date = 1413.4.30
+		death_date = 1473.4.30
+		female = yes
+		religion = converted_dynamic_faith_110
+		culture = tibetan
+	}
+	add_queen_personality = fierce_negotiator_personality
+	add_queen_personality = tolerant_personality
+	heir = {
+		name = "Alaeddin"
+		monarch_name = "Alaeddin"
+		dynasty = "Terteroba"
+		adm = 3
+		dip = 4
+		mil = 5
+		birth_date = 1431.9.25
+		death_date = 1496.9.25
+		claim = 89
+		religion = vajrayana
+		culture = oghuz
+	}
+	add_heir_personality = charismatic_negotiator_personality
+	add_heir_personality = kind_hearted_personality
+}
+1444.11.11= {
+	add_prestige = 75
+	add_treasury = 0
+}

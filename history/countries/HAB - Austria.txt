@@ -1,0 +1,35 @@
+government = monarchy
+add_government_reform = austrian_archduchy_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = austrian
+capital = 134
+1444.11.11= {
+	monarch = {
+		name = "(Regency Council)"
+		adm = 3
+		dip = 2
+		mil = 2
+		birth_date = 1.1.1
+		regent = yes
+		religion = catholic
+		culture = austrian
+	}
+	heir = {
+		name = "Weickhard"
+		dynasty = "Habsburg-Mürzzuschlag"
+		adm = 5
+		dip = 4
+		mil = 4
+		birth_date = 1430.8.10
+		death_date = 1495.8.10
+		claim = 89
+		religion = catholic
+		culture = austrian
+	}
+}
+1444.11.11= {
+	add_prestige = 64
+	add_treasury = 70
+}

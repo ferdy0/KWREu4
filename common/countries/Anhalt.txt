@@ -1,0 +1,105 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 203 93 124 }
+revolutionary_colors = { 5 10 0 }
+historical_idea_groups = {
+	religious_ideas
+	economic_ideas
+	defensive_ideas
+	offensive_ideas
+	innovativeness_ideas
+	spy_ideas
+	diplomatic_ideas
+	trade_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Adriaen #1" = 10
+	"Andreas #0" = 0
+	"Anna #0" = -1
+	"Bruno #0" = 0
+	"Budimír #0" = 0
+	"Centule #0" = 0
+	"Damaes #1" = 10
+	"Eva #0" = -1
+	"Kasimir #2" = 10
+	"Milena #1" = -1
+	"Miloslav #2" = 10
+	"Milosz #1" = 10
+	"Ondrej #1" = 10
+	"Robrecht #1" = 10
+	"Siegmund #0" = 0
+	"Václava #0" = -1
+	"Wawrzyniec #1" = 10
+	"Wulff #0" = 0
+}
+leader_names = {
+	"Ackermann"
+	"Alberti"
+	"Albrecht"
+	"Alvensleben"
+	"Amman"
+	"Annecke"
+	"Anthe"
+	"Bauer"
+	"Bause"
+	"Ehrenberg"
+	"Erxleben"
+	"Feuerstack"
+	"Flachsbart"
+	"Genthe"
+	"Gerstung"
+	"Held"
+	"Herzburg"
+	"Hoppe"
+	"Isaack"
+	"Janeck"
+	"Jantke"
+	"Kersten"
+	"Kleinau"
+	"März"
+	"Nehmiz"
+	"Rumpf"
+	"Scharfe"
+	"Schauseil"
+	"Schieck"
+	"von Zerbst"
+}
+ship_names = {
+	"Albrecht Ballenstedt"
+	"Albrecht der Bär"
+	"Aschersleben"
+	"Bernburg"
+	"Bernhard Wittenberg"
+	"Bischof Siegfried"
+	"Brocken"
+	"Coswig"
+	"Dessau"
+	"Dietrich Werben"
+	"Hartz"
+	"Heinrich I"
+	"Hermann Orlamünde"
+	"Köthen"
+	"Plötzkau"
+	"Ramberg"
+	"Rosslau"
+	"Zerbst"
+}
+army_names = {
+	"Armee von $PROVINCE$"
+}

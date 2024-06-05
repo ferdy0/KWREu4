@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudal_theocracy
+government_rank = 1
+technology_group = sub_saharan
+religion = sunni
+primary_culture = dyola
+capital = 1119
+religious_school = hanbali_school
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Qawurd"
+		dynasty = "Guere"
+		adm = 4
+		dip = 2
+		mil = 3
+		birth_date = 1415.5.5
+		religion = sunni
+		culture = dyola
+	}
+	add_ruler_personality = fierce_negotiator_personality
+	add_ruler_personality = obsessive_perfectionist_personality
+	queen = {
+		name = "Ciata"
+		dynasty = "Landuma"
+		adm = 3
+		dip = 4
+		mil = 4
+		country_of_origin = Z0C
+		birth_date = 1420.5.31
+		death_date = 1480.5.31
+		female = yes
+		religion = sunni
+		culture = senegambian
+	}
+	add_queen_personality = strict_personality
+	add_queen_personality = tactical_genius_personality
+	heir = {
+		name = "Flomo"
+		monarch_name = "Flomo"
+		dynasty = "Guere"
+		adm = 3
+		dip = 2
+		mil = 1
+		birth_date = 1439.12.10
+		death_date = 1504.12.10
+		claim = 89
+		religion = sunni
+		culture = dyola
+	}
+	add_heir_personality = just_personality
+	add_heir_personality = naive_personality
+}
+1444.11.11= {
+	add_prestige = 73
+	add_treasury = 53
+}

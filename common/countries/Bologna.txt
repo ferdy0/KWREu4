@@ -1,0 +1,218 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 236 95 0 }
+revolutionary_colors = { 6 5 6 }
+historical_idea_groups = {
+	defensive_ideas
+	trade_ideas
+	offensive_ideas
+	economic_ideas
+	religious_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	spy_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	italian_condotta
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Adalberto #1" = 10
+	"Adone #0" = 0
+	"Alberto #3" = 10
+	"Alessandro #0" = 0
+	"Amedeo #1" = 10
+	"Anastasios #0" = 0
+	"Anselmo #0" = 0
+	"Augustu #0" = 0
+	"Bernabò #1" = 10
+	"Bernardo #1" = 10
+	"Bertoldo #0" = 0
+	"Bohemond #0" = 0
+	"Bonifacio #2" = 10
+	"Cornelia #1" = -1
+	"Eugenia #1" = -1
+	"Gandolfo #1" = 10
+	"Hucbald #1" = 10
+	"Ioannes #1" = 10
+	"Lodovica #1" = -1
+	"Michele #1" = 10
+	"Pietro #1" = 10
+	"Serhilda #0" = -1
+	"Silvana #0" = -1
+	"Teobaldo #2" = 10
+	"Ugo #2" = 10
+	"Ursus #2" = 10
+	"Vilfredo #1" = 10
+	"Walfredo #1" = 10
+}
+leader_names = {
+	"Acquisti"
+	"Albergati"
+	"Aldrovandi"
+	"Alemani"
+	"Algardi"
+	"Angelelli"
+	"Ariosti"
+	"Attndolo"
+	"Bevilacqua"
+	"Bianchini"
+	"Bonasone"
+	"Boncompagni"
+	"Bovio"
+	"Budrioli"
+	"Buroni"
+	"Caccialupi"
+	"Campeggio"
+	"Caprara"
+	"Carracci"
+	"Casali"
+	"Chiodarolo"
+	"Coriolano"
+	"Cuniberti"
+	"Davia"
+	"Dotti"
+	"Facchinetti"
+	"Fancelli"
+	"Fantuzzi"
+	"Felicini"
+	"Fibbia"
+	"Fioravanti"
+	"Fontana"
+	"Foscherari"
+	"Gessi"
+	"Ghisilardi"
+	"Ghisilieri"
+	"Gozzadini"
+	"Grassi"
+	"Grati"
+	"Griffoni"
+	"Guastavillani"
+	"Guidotti"
+	"Hercolani"
+	"Isolani"
+	"Lambertini"
+	"Lelli"
+	"Lombardi"
+	"Ludivisi"
+	"Lupari"
+	"Magnani"
+	"Malvasia"
+	"Malvezzi"
+	"Manfredi"
+	"Marescalchi"
+	"Marescotti"
+	"Marsigli"
+	"Montecalvi"
+	"Ordelaffi"
+	"Orsi"
+	"Pallavincio"
+	"Paltroni"
+	"Pasi"
+	"Pepoli"
+	"Petraccini"
+	"Piatesi"
+	"Pizzardi"
+	"Poeti"
+	"Primaticcio"
+	"Purghi"
+	"Ranuzzi"
+	"Ratta"
+	"Riario"
+	"Ringhieri"
+	"Rossi"
+	"Ruini"
+	"Salaroli"
+	"Salimbeni"
+	"Sampieri"
+	"Sandri"
+	"Sanuti"
+	"Savioli"
+	"Scappi"
+	"Seccadenari"
+	"Spada"
+	"Tanari"
+	"Vitali"
+	"Vizzani"
+	"Volta"
+	"Zambeccari"
+	"Zovenzoni"
+	"da Calboli"
+	"da Legnano"
+	"da Liezaris"
+	"da Marzano"
+	"da Montone"
+	"dal Lino"
+	"de Berardi"
+	"de' Bianchi"
+	"de' Buoi"
+	"de' Ravignani"
+	"dei Mardoli"
+	"di Cagli"
+	"di Viadagola"
+}
+ship_names = {
+	"Accursi"
+	"Agresti"
+	"Alberici"
+	"Altabella"
+	"Arengo"
+	"Aristotele"
+	"Asinelli"
+	"Bartolo"
+	"Bertolotti-Clarissimi"
+	"Bononia"
+	"Bulgarus"
+	"Carrari"
+	"Catalani"
+	"Conoscenti"
+	"Coronata"
+	"Emilia"
+	"Felsina"
+	"Gallo di San Pietro"
+	"Galluzi"
+	"Garisenda"
+	"Ghisilieri"
+	"Giacomuzzo"
+	"Giovanna"
+	"Guidozagni"
+	"Irnerius"
+	"Lambertini"
+	"Lapi"
+	"Lucia"
+	"Marchesana"
+	"Marsobilia"
+	"Martino Gosia"
+	"Onestina"
+	"Orsola"
+	"Oseletti"
+	"Piella"
+	"Ravegnana"
+	"San Bononio"
+	"San Petronio"
+	"San Vitale"
+	"Sant'Agricola"
+	"Santa Gerusalemme"
+	"Santo Giardino"
+	"Santo Stefano"
+	"Scappi"
+	"Tonduzzo"
+	"Toschi"
+	"Ugo di Porta Ravegnana"
+	"Uguzzoni"
+	"Veronica"
+}
+army_names = {
+	"Armata di $PROVINCE$"
+}

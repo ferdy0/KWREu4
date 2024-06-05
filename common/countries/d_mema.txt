@@ -1,0 +1,27 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 230 170 46 }
+monarch_names = {
+	"Amennay #1" = 10
+	"Demba #0" = 0
+	"Deye #0" = -1
+	"Djire #0" = -1
+	"Ermanala #0" = 0
+	"Faga-Laye #0" = 0
+	"Gennatios #0" = 0
+	"Hargani #0" = 0
+	"Ibiza #1" = 10
+	"Joan #0" = -1
+	"Lorane #0" = -1
+	"Ma'afira #1" = 10
+	"Menzu #2" = 10
+	"Meq'wran #0" = 0
+	"Niakhata #1" = 10
+	"Nmad #0" = -1
+	"Safiatou #0" = -1
+	"Shahram #0" = 0
+	"Sidibé #0" = -1
+	"Soumaré #0" = 0
+	"Suggut #0" = 0
+	"Tunka Menin #1" = 10
+}

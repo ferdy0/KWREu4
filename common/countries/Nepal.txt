@@ -1,0 +1,121 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 215 12 64 }
+revolutionary_colors = { 13 16 0 }
+historical_idea_groups = {
+	religious_ideas
+	offensive_ideas
+	defensive_ideas
+	trade_ideas
+	spy_ideas
+	economic_ideas
+	diplomatic_ideas
+	aristocracy_ideas
+}
+historical_units = {
+	indian_arquebusier
+	indian_elephant
+	indian_footsoldier
+	indian_rifle
+	indian_shock_cavalry
+	mughal_mansabdar
+	mughal_musketeer
+	rajput_hill_fighters
+	rajput_musketeer
+	reformed_mughal_mansabdar
+	reformed_mughal_musketeer
+}
+monarch_names = {
+	"Ajmal #0" = 0
+	"Angula #0" = 0
+	"Augusta #0" = -1
+	"Böntsun #0" = 0
+	"Champei #0" = -1
+	"Chime #1" = -1
+	"Dharma #0" = 0
+	"Ekkathamanda #0" = 0
+	"Erzhena #0" = -1
+	"Gada #1" = 10
+	"Gémaspranglod #1" = -1
+	"Hachi Hülüg #0" = 0
+	"Hisi #0" = -1
+	"Jatakhadga #0" = 0
+	"Jhetpal #0" = 0
+	"Kaba #0" = -1
+	"Karma #0" = 0
+	"Kwiimba #0" = 0
+	"Kyan #0" = 0
+	"Law #0" = 0
+	"Lhami #2" = -1
+	"Mahintha #0" = 0
+	"Manuha #0" = 0
+	"Migadeippa #1" = 10
+	"Mongza #1" = -1
+	"Mukti #0" = -1
+	"Mwei It #0" = -1
+	"Narathu #0" = 0
+	"Nawang #1" = 10
+	"Pelmö #0" = -1
+	"Pheakkley #0" = -1
+	"Phhoung #0" = -1
+	"Puthykol #0" = -1
+	"Rani #0" = -1
+	"Songtsen #0" = 0
+	"Temba #0" = -1
+	"Thuganda #0" = 0
+	"Togo #0" = -1
+	"Udar #0" = 0
+	"Unnat #0" = 0
+	"Upadewa #0" = 0
+	"Urunnata #0" = 0
+	"Veata #0" = -1
+	"Wimala #0" = 0
+	"Zaw #0" = 0
+}
+leader_names = {
+	"Bahadur"
+	"Bikram"
+	"Chand"
+	"Chhettri"
+	"Dev"
+	"Gurung"
+	"Koirala"
+	"Limbu"
+	"Madhesi"
+	"Magar"
+	"Malla"
+	"Rai"
+	"Rana"
+	"Thapa"
+	"Yadav"
+}
+ship_names = {
+	"Arun"
+	"Behri"
+	"Bhote Kosi"
+	"Devi"
+	"Dudh Kosi"
+	"Durga"
+	"Gayatri"
+	"Jalsena"
+	"Kala Jahazi"
+	"Kali Gandaki"
+	"Karnali"
+	"Lakshmi"
+	"Lal Jahazi"
+	"Narayani"
+	"Nausena"
+	"Nav ka Yudh"
+	"Nila Jahazi"
+	"Parvati"
+	"Radha"
+	"Rapti"
+	"Ratri"
+	"Sagar"
+	"Sapt Kosi"
+	"Sarasvati"
+	"Seti"
+	"Sita"
+	"Sun Kosi"
+	"Trishuli"
+}

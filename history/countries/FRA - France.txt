@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+technology_group = western
+religion = catholic
+primary_culture = alsatian
+capital = 183
+add_accepted_culture = cosmopolitan_french
+1444.11.11= {
+	monarch = {
+		name = "Ghert"
+		dynasty = "von Bocksberg"
+		adm = 3
+		dip = 4
+		mil = 5
+		birth_date = 1427.7.1
+		religion = catholic
+		culture = alsatian
+	}
+	add_ruler_personality = infertile_personality
+	add_ruler_personality = righteous_personality
+	queen = {
+		name = "Gontroda"
+		dynasty = "Canales-Pravia"
+		adm = 3
+		dip = 2
+		mil = 2
+		country_of_origin = FRA
+		birth_date = 1427.1.25
+		death_date = 1487.1.25
+		female = yes
+		religion = catholic
+		culture = leonese
+	}
+	add_queen_personality = expansionist_personality
+	add_queen_personality = righteous_personality
+	heir = {
+		name = "Hatto"
+		monarch_name = "Hatto II"
+		dynasty = "von Bocksberg"
+		adm = 6
+		dip = 6
+		mil = 4
+		birth_date = 1400.9.24
+		death_date = 1465.9.24
+		claim = 89
+		religion = catholic
+		culture = cosmopolitan_french
+	}
+	add_heir_personality = fertile_personality
+	add_heir_personality = pious_personality
+}
+1444.11.11= {
+	add_prestige = 68
+	add_treasury = 76
+}

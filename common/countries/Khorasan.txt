@@ -1,0 +1,117 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 130 168 224 }
+revolutionary_colors = { 1 0 1 }
+historical_idea_groups = {
+	defensive_ideas
+	religious_ideas
+	offensive_ideas
+	trade_ideas
+	spy_ideas
+	diplomatic_ideas
+	economic_ideas
+	administrative_ideas
+}
+historical_units = {
+	afsharid_reformed
+	afsharid_reformed_infantry
+	muslim_dragoon
+	muslim_mass_infantry
+	persian_cavalry_charge
+	persian_footsoldier
+	persian_rifle
+	persian_shamshir
+	qizilbash_cavalry_unit
+	tofongchis_musketeer
+	topchis_artillery
+}
+monarch_names = {
+	"Abdul-Salaam #0" = 0
+	"Afsaneh #0" = -1
+	"Agathe #0" = -1
+	"Ahu #0" = -1
+	"Akbar #1" = 10
+	"Alia #0" = -1
+	"Amin #0" = 0
+	"Asa #0" = -1
+	"Aurang #0" = 0
+	"Babak #0" = 0
+	"Bakhtiar #0" = 0
+	"Behrouz #0" = 0
+	"Birka #0" = 0
+	"Darya #0" = -1
+	"Davud #1" = 10
+	"Ehsan #1" = 10
+	"Esfandiar #0" = 0
+	"Euphemia #0" = -1
+	"Farva #0" = -1
+	"Fath #0" = 0
+	"Ghazal #0" = -1
+	"Godarz #0" = 0
+	"Golbahar #0" = -1
+	"Golnaz #0" = -1
+	"Golpari #0" = -1
+	"Gulnaz #0" = -1
+	"Hazarasp #0" = 0
+	"Hormazd #0" = 0
+	"Humayun #1" = 10
+	"Imamaddin #0" = 0
+	"Iskender #1" = 10
+	"Jabir #0" = 0
+	"Jamshid #0" = 0
+	"Kedafu #0" = 0
+	"Kella #0" = -1
+	"Kharmandar #0" = 0
+	"Mahmud #0" = 0
+	"Mahâdeviyâr #0" = -1
+	"Malik Shah #2" = 10
+	"Mudary #0" = -1
+	"Muhammad #1" = 10
+	"Navvaba #0" = -1
+	"Nezam #0" = 0
+	"Onton #0" = 0
+	"Parvaneh #0" = -1
+	"Peroz #0" = 0
+	"Rabiya #0" = -1
+	"Rafiqa #0" = -1
+	"Roshanora #0" = -1
+	"Rostam #0" = 0
+	"Salaama #0" = -1
+	"Shahab #0" = 0
+	"Taninna #0" = -1
+	"Tsydenzap #0" = 0
+	"Vahhab #0" = 0
+	"Varshasb #0" = 0
+	"Xiao-Wen #0" = -1
+	"Yakta #0" = -1
+	"Yasaman #0" = -1
+	"Yekta #0" = -1
+	"Yousef #0" = 0
+	"Zakaria #0" = 0
+	"Zand #0" = 0
+	"Zohreh #0" = -1
+}
+leader_names = {
+	"Ali"
+	"Bali"
+	"Karawi"
+	"Khan"
+	"Mirza"
+	"Nawaz"
+	"Quli"
+	"Tadj"
+	"Wali"
+	"Zaman"
+}
+ship_names = {
+	"Badam"
+	"Bardeskan"
+	"Dasht"
+	"Deyhuk"
+	"Germi"
+	"Jandaq"
+	"Khvor"
+	"Kondor"
+	"Tabas"
+	"Torud"
+}

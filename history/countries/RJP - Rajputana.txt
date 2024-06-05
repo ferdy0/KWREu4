@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = rajput_kingdom
+government_rank = 2
+technology_group = indian
+religion = hinduism
+primary_culture = malvi
+capital = 2087
+add_accepted_culture = panjabi
+add_accepted_culture = rajput
+1444.11.11= {
+	monarch = {
+		name = "Kunwar"
+		dynasty = "Delhanadevi"
+		adm = 3
+		dip = 5
+		mil = 3
+		birth_date = 1377.4.23
+		religion = hinduism
+		culture = malvi
+	}
+	add_ruler_personality = greedy_personality
+	add_ruler_personality = intricate_web_weaver_personality
+	queen = {
+		name = "Nattadevi"
+		dynasty = "Mathurid"
+		adm = 4
+		dip = 5
+		mil = 4
+		country_of_origin = RJP
+		birth_date = 1377.2.22
+		death_date = 1437.2.22
+		female = yes
+		religion = hinduism
+		culture = avadhi
+	}
+	add_queen_personality = drunkard_personality
+	add_queen_personality = strict_personality
+	heir = {
+		name = "Govinda"
+		monarch_name = "Govinda II"
+		dynasty = "Delhanadevi"
+		adm = 5
+		dip = 4
+		mil = 5
+		birth_date = 1401.1.2
+		death_date = 1466.1.2
+		claim = 89
+		religion = hinduism
+		culture = malvi
+	}
+	add_heir_personality = charismatic_negotiator_personality
+	add_heir_personality = craven_personality
+}
+1444.11.11= {
+	add_prestige = 105
+	add_treasury = 75
+}

@@ -1,0 +1,125 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 182 134 100 }
+revolutionary_colors = { 0 13 0 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	aristocracy_ideas
+	spy_ideas
+	religious_ideas
+}
+historical_units = {
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	prussian_frederickian
+	prussian_uhlan
+	swedish_arme_blanche
+	swedish_caroline
+	swedish_gallop
+	swedish_gustavian
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Anastasia #0" = -1
+	"Danuta #0" = -1
+	"Darja #0" = -1
+	"Djemi #2" = 10
+	"Feodora #0" = -1
+	"Gremislava #0" = -1
+	"Johann #1" = 10
+	"Kuisma #1" = 10
+	"Marfa #1" = -1
+	"Markki #1" = 10
+	"Mikhail #0" = 0
+	"Mirjam #0" = -1
+	"Mitfora #1" = 10
+	"Ondrei #1" = 10
+	"Pamfila #0" = 0
+	"Piminä #0" = 0
+	"Rinaldo #0" = 0
+	"Sedziej #0" = 0
+	"Tatyana #0" = -1
+	"Tawaret #0" = -1
+	"Tiihpo #0" = 0
+}
+leader_names = {
+	"Adlercreutz"
+	"Ahlqvist"
+	"Berg"
+	"Björn"
+	"Blom"
+	"Cronstedt"
+	"Dufva"
+	"Ehrensvärd"
+	"Glad"
+	"Haataja"
+	"Helander"
+	"Helin"
+	"Hiltunen"
+	"Horn"
+	"Ilkka"
+	"Isotalo"
+	"Järnberg"
+	"Järvelä"
+	"Kesäläinen"
+	"Klingspor"
+	"Kortelainen"
+	"Krouvari"
+	"Kyrö"
+	"Liljencrantz"
+	"Länkinen"
+	"Pentti"
+	"Pietilä"
+	"Rehnskiöld"
+	"Renner"
+	"Rokka"
+	"Rutanen"
+	"Sakari"
+	"Sjögren"
+	"Stoor"
+	"Stålhandske"
+	"Tapani"
+	"Termonen"
+	"Turunen"
+	"Wilander"
+	"von Essen"
+}
+ship_names = {
+	"Agricola"
+	"Aura"
+	"Birger Jarl"
+	"Borgå"
+	"Hakkapeliitta"
+	"Helsingfors"
+	"Ilmarinen"
+	"Karelen"
+	"Kullervo"
+	"Kymi"
+	"Lapland"
+	"Lemminkäinen"
+	"Nyland"
+	"Oulu"
+	"Per Brahe"
+	"Sampo"
+	"Savolax"
+	"St. Henrik"
+	"Tavastehus"
+	"Tavastland"
+	"Vanda"
+	"Vasa"
+	"Viborg"
+	"Vuoksi"
+	"Väinämöinen"
+	"Åbo"
+	"Österbotten"
+}

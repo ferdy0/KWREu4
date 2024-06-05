@@ -1,0 +1,93 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 118 193 153 }
+revolutionary_colors = { 5 1 8 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	diplomatic_ideas
+	economic_ideas
+	innovativeness_ideas
+	offensive_ideas
+	spy_ideas
+	quality_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_tercio
+	dutch_maurician
+	french_bluecoat
+	french_dragoon
+	french_impulse
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Agnès #0" = -1
+	"Anselm #1" = 10
+	"Arnulf #0" = 0
+	"Arsinde #0" = -1
+	"Bérenger #0" = 0
+	"Eduard #1" = 10
+	"Filippa #0" = -1
+	"Gerolt #0" = 0
+	"Godefroy #1" = 10
+	"Gottfried #1" = 10
+	"Ijsbrecht #0" = 0
+	"Jasminne #1" = -1
+	"Koenraad #1" = 10
+	"Kristof #0" = 0
+	"Magnus #0" = 0
+	"Manassès #2" = 10
+	"Maria #0" = -1
+	"Otwin #0" = 0
+	"Plaisance #1" = -1
+	"Simon #1" = 10
+	"Steyn #0" = 0
+	"Walter #0" = 0
+	"Wicher #0" = 0
+}
+leader_names = {
+	"Albers"
+	"Aylett"
+	"Bielmacker"
+	"Camper"
+	"Debruyne"
+	"Jansen"
+	"Leschwein"
+	"Maas"
+	"Mons"
+	"Orthellius"
+	"Quellinus"
+	"de Avesnes"
+	"de Houtman"
+	"de Leeuw"
+	"van Egmont"
+	"van Kahlden"
+	"van Loewen"
+	"van Meteren"
+	"van Noort"
+	"van Wyhe"
+	"van der Most"
+}
+ship_names = {
+	"Brussel"
+	"Dender"
+	"Doornik"
+	"Edingen"
+	"Filips van Saint-Pol"
+	"Godfried I"
+	"Hendrik I"
+	"Hendrik van Leuven"
+	"Hertog Jan"
+	"Hertogin Johanna"
+	"Jan I"
+	"Mechelen"
+	"Namen"
+	"Zenne"
+}

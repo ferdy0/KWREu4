@@ -1,0 +1,120 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 122 179 97 }
+revolutionary_colors = { 8 5 0 }
+historical_idea_groups = {
+	offensive_ideas
+	defensive_ideas
+	trade_ideas
+	administrative_ideas
+	spy_ideas
+	economic_ideas
+	innovativeness_ideas
+	diplomatic_ideas
+}
+historical_units = {
+	bhonsle_cavalry
+	indian_arquebusier
+	indian_elephant
+	indian_footsoldier
+	indian_rifle
+	mughal_mansabdar
+	mughal_musketeer
+	rajput_hill_fighters
+	rajput_musketeer
+	sikh_hit_and_run
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Ama #1" = 10
+	"Betta #1" = 10
+	"Bhavadattavarman #1" = 10
+	"Bhoja #2" = 10
+	"Bhuyikadevi #0" = -1
+	"Chachinidevi #0" = -1
+	"Chaturanan #1" = 10
+	"Deopali-Deo #0" = 0
+	"Dinakarn #0" = 0
+	"Dundaka #1" = 10
+	"Edha #0" = -1
+	"Ghatamdeva #0" = 0
+	"Govindapala #1" = 10
+	"Hemavati #0" = -1
+	"Hårik #0" = 0
+	"Indrayudha #1" = 10
+	"Itlar #1" = 10
+	"Jagatpal #0" = 0
+	"Kailaspal #0" = 0
+	"Kalahastambha #1" = 10
+	"Kalayandevi #1" = -1
+	"Kalbhoj #0" = 0
+	"Katukaraja #0" = 0
+	"Kunwar #0" = 0
+	"Mahendrapala #2" = 10
+	"Mahidevi #0" = -1
+	"Mahipala #1" = 10
+	"Mulraja #0" = 0
+	"Nagabhata #1" = 10
+	"Nar-Verma #0" = 0
+	"Narapati #0" = 0
+	"Nattadevi #0" = -1
+	"Pavak #1" = 10
+	"Pihu #0" = -1
+	"Pravaraja #1" = 10
+	"Puppadevi #0" = -1
+	"Ramabhadra #1" = 10
+	"Rudaladevi #0" = -1
+	"Rupadevi #0" = -1
+	"Singhraja #0" = 0
+	"Sivaraja #1" = 10
+	"Someshvara #0" = 0
+	"Taweret #0" = -1
+	"Traillokyachandra #1" = 10
+	"Udayamati #0" = -1
+	"Vajrayudha #1" = 10
+	"Yanchege #0" = 0
+	"Yasovarman #1" = 10
+}
+leader_names = {
+	"Afridi"
+	"Awadhi"
+	"Bahadur"
+	"Bangash"
+	"Chand"
+	"Ghori"
+	"Hindustani"
+	"Karrani"
+	"Khan"
+	"Khilji"
+	"Lodi"
+	"Pundir"
+	"Sahgal"
+	"Sarwar"
+	"Satsangi"
+	"Sharqi"
+	"Siddiqui"
+	"Uzbek"
+	"Yousafzai"
+	"ud Daula"
+}
+ship_names = {
+	"Alia"
+	"Betwa"
+	"Fatimah"
+	"Gandak"
+	"Ghagra"
+	"Gomti"
+	"Jalsena"
+	"Kala Jahazi"
+	"Khan"
+	"Lal Jahazi"
+	"Nausena"
+	"Nav ka Yudh"
+	"Niknaz"
+	"Nila Jahazi"
+	"Niloufa"
+	"Sagar"
+	"Satlaj"
+	"Yamuna"
+	"Yasmine"
+}

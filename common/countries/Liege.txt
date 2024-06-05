@@ -1,0 +1,99 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 149 186 37 }
+revolutionary_colors = { 5 8 5 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	diplomatic_ideas
+	economic_ideas
+	innovativeness_ideas
+	offensive_ideas
+	spy_ideas
+	religious_ideas
+}
+historical_units = {
+	anglofrench_line
+	dutch_maurician
+	french_bluecoat
+	french_caracolle
+	french_cuirassier
+	french_dragoon
+	french_impulse
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Adelinde #0" = -1
+	"Adolf #1" = 10
+	"Aldebert #1" = 10
+	"Anselm #0" = 0
+	"Bernard #1" = 10
+	"Detleff #1" = 10
+	"Dietrich #1" = 10
+	"Drogo #0" = 0
+	"Folmar #1" = 10
+	"Francon #1" = 10
+	"Gaucelin #1" = 10
+	"Gertrude #0" = -1
+	"Gottschalk #0" = 0
+	"Hildebert #1" = 10
+	"Karlotte #0" = -1
+	"Leopold #0" = 0
+	"Liupolt #1" = 10
+	"Robert #2" = 10
+	"Romilda #1" = -1
+	"Simon #1" = 10
+	"Tagino #0" = 0
+}
+leader_names = {
+	"Aubry"
+	"Bastin"
+	"Bauduinet"
+	"Bitha"
+	"Bouchet"
+	"Chauchet"
+	"Cloet"
+	"Colson"
+	"Digneffe"
+	"Fabry"
+	"Gérard"
+	"Haeck"
+	"Hauzeur"
+	"Henkart"
+	"Josias"
+	"Lambermont"
+	"Nannan"
+	"Paulet"
+	"Philippens"
+	"Reul"
+	"Reynier"
+	"Vanhove"
+	"da Franquinet"
+	"de Donnea"
+	"de Finesse"
+	"de Haxhe"
+	"de Lacu"
+	"de Spirlet"
+	"la Vignette"
+}
+ship_names = {
+	"l'Ans"
+	"la Meuse"
+	"la Place-du-Queer"
+	"le Luik"
+	"le Notger de Liège"
+	"le Saint-Barthélemy"
+	"le Saint-Hubert"
+	"le Saint-Jacques"
+	"le Saint-Lambert"
+	"le Saint-Martin"
+	"le Saint-Nicolas"
+	"le Sart-Tilman"
+	"le Seraing"
+}

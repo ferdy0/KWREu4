@@ -1,0 +1,12 @@
+government = monarchy
+add_government_reform = principality
+government_rank = 2
+technology_group = eastern
+religion = orthodox
+primary_culture = kishinyov
+capital = 268
+add_accepted_culture = romanian
+1444.11.11= {
+	add_prestige = 86
+	add_treasury = 76
+}

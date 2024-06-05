@@ -1,0 +1,81 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 114 171 184 }
+revolutionary_colors = { 15 0 5 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	religious_ideas
+	economic_ideas
+	diplomatic_ideas
+	spy_ideas
+	offensive_ideas
+	innovativeness_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Adalbero #0" = 0
+	"Baldur #1" = 10
+	"Cord #1" = 10
+	"Egmund #0" = 0
+	"Engelbrecht #0" = 0
+	"Eusebios #0" = 0
+	"Folbert #0" = 0
+	"Gawel #0" = 0
+	"Godfried #0" = 0
+	"Hans #0" = 0
+	"Hilligonda #0" = -1
+	"Hinrik #1" = 10
+	"Ingeltrude #0" = -1
+	"Isabelle #0" = -1
+	"Margareta #0" = -1
+	"Reginar #0" = 0
+	"Reinoud #0" = 0
+	"Steen #0" = 0
+	"Theodwin #2" = 10
+	"Wiltrud #0" = -1
+	"Wolfram #0" = 0
+}
+leader_names = {
+	"Arnsberg"
+	"Bebra"
+	"Eder"
+	"Fulda"
+	"Hamm"
+	"Kassel"
+	"Knyphausen"
+	"Lippstadt"
+	"Münden"
+	"Paderborn"
+	"von Scheideck"
+}
+ship_names = {
+	"Fulda"
+	"Hanau"
+	"Heinrich I"
+	"Kassel"
+	"Lahn"
+	"Marburg"
+	"Stirnberg"
+	"Wasserkuppe"
+	"Werra"
+	"Wetzlar"
+}
+army_names = {
+	"Armee von $PROVINCE$"
+}

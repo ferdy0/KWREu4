@@ -1,0 +1,115 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 161 126 128 }
+revolutionary_colors = { 14 8 4 }
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	spy_ideas
+	trade_ideas
+	diplomatic_ideas
+	economic_ideas
+	innovativeness_ideas
+	religious_ideas
+}
+historical_units = {
+	eastern_carabinier
+	eastern_knights
+	eastern_medieval_infantry
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	ottoman_lancer
+	ottoman_new_model
+	ottoman_nizami_cedid
+	ottoman_reformed_janissary
+	ottoman_reformed_spahi
+	ottoman_sekban
+	ottoman_toprakli_dragoon
+	ottoman_toprakli_hit_and_run
+	slavic_stradioti
+}
+monarch_names = {
+	"Adrian #0" = 0
+	"Anastasia #0" = -1
+	"Anbazuk #0" = 0
+	"Arina #0" = -1
+	"Aul #0" = 0
+	"Bajan #0" = 0
+	"Balgor #1" = 10
+	"Basarab #0" = 0
+	"Björn #0" = 0
+	"Bojana #0" = -1
+	"Dionysia #0" = -1
+	"Elena #0" = -1
+	"Emerik #0" = 0
+	"Emilia #0" = -1
+	"Floarea #0" = -1
+	"Gheorghe #0" = 0
+	"Grigore #1" = 10
+	"Iacob #4" = 10
+	"Iancu #0" = 0
+	"Ieremia #0" = 0
+	"Iliya #0" = 0
+	"Irina #0" = -1
+	"Krsto #0" = 0
+	"Ladislau #0" = 0
+	"Laurentiu #0" = 0
+	"Lucian #0" = 0
+	"Mariankouda #0" = 0
+	"Mihai #0" = 0
+	"Olimpia #0" = -1
+	"Paraschiva #0" = -1
+	"Pelagia #0" = -1
+	"Radu #0" = 0
+	"Romane #0" = -1
+	"Roxana #0" = -1
+	"Sas #0" = 0
+	"Sergiu #0" = 0
+	"Simion #0" = 0
+	"Tibor #0" = 0
+	"Tihomir #0" = 0
+	"Timotei #0" = 0
+	"Vladislav #1" = 10
+	"Yevpraxia #0" = -1
+	"Zvenislava #0" = -1
+}
+leader_names = {
+	"Basarab"
+	"Brâncoveanu"
+	"Cantacuzino"
+	"Caragea"
+	"Craiovescu"
+	"Dracul"
+	"Duca"
+	"Ghica"
+	"Golescu"
+	"Ilias"
+	"Ipsilanti"
+	"Mavrocordat"
+	"Mircea"
+	"Moruzi"
+	"Racovita"
+	"Sutu"
+	"Tepelus"
+	"Tolmay"
+	"Vacarescu"
+	"Voda"
+}
+ship_names = {
+	"Atacul de noapte"
+	"Calugareni"
+	"Dracul"
+	"Frumuseatsa valurilor"
+	"Litovoi"
+	"Posada"
+	"Putera"
+	"Rovine"
+	"Sirmium"
+	"Sperietoaria"
+	"Viteazul"
+	"mari"
+}
+army_names = {
+	"Oastea de $PROVINCE$"
+}

@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = plutocratic_reform
+government_rank = 2
+technology_group = indian
+religion = hinduism
+primary_culture = bengali
+capital = 2093
+mercantilism = 15
+1444.11.11= {
+	monarch = {
+		name = "Hariyamandal"
+		dynasty = "Devi"
+		adm = 3
+		dip = 5
+		mil = 4
+		birth_date = 1405.3.16
+		religion = hinduism
+		culture = bengali
+	}
+	add_ruler_personality = malevolent_personality
+	add_ruler_personality = obsessive_perfectionist_personality
+	queen = {
+		name = "Eluvanai"
+		dynasty = "Piramârâyan"
+		adm = 4
+		dip = 2
+		mil = 5
+		country_of_origin = MLW
+		birth_date = 1405.4.9
+		death_date = 1465.4.9
+		female = yes
+		religion = hinduism
+		culture = tamil
+	}
+	add_queen_personality = lawgiver_personality
+	add_queen_personality = pious_personality
+	heir = {
+		name = "Mahendra"
+		monarch_name = "Mahendra"
+		dynasty = "Devi"
+		adm = 6
+		dip = 5
+		mil = 6
+		birth_date = 1422.6.16
+		death_date = 1487.6.16
+		claim = 89
+		religion = hinduism
+		culture = bengali
+	}
+	add_heir_personality = pious_personality
+	add_heir_personality = tolerant_personality
+}
+1444.11.11= {
+	add_prestige = 74
+	add_treasury = 93
+}

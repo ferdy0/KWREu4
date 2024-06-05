@@ -1,0 +1,139 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 112 150 105 }
+revolutionary_colors = { 10 0 6 }
+historical_idea_groups = {
+	maritime_ideas
+	aristocracy_ideas
+	exploration_ideas
+	trade_ideas
+	economic_ideas
+	innovativeness_ideas
+	spy_ideas
+	administrative_ideas
+}
+historical_units = {
+	anglofrench_line
+	british_hussar
+	british_redcoat
+	british_square
+	gaelic_free_shooter
+	gaelic_galloglaigh
+	gaelic_mercenary
+	irish_charge
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	western_medieval_infantry
+	western_medieval_knights
+}
+monarch_names = {
+	"Art #0" = 0
+	"Artbran #0" = 0
+	"Artgal #1" = 10
+	"Beccán #1" = 10
+	"Blanche #0" = -1
+	"Brian #1" = 10
+	"Cathbad #0" = 0
+	"Crínóch #1" = -1
+	"Dúinsech #0" = -1
+	"Dúnlang #0" = 0
+	"Emma #0" = -1
+	"Faílenn #0" = -1
+	"Fingen #1" = 10
+	"Flannacán #0" = 0
+	"Fothud #0" = 0
+	"Gilbert #0" = 0
+	"Gáethíne #1" = 10
+	"Hawise #0" = -1
+	"Liber #1" = 10
+	"Lochlann #0" = 0
+	"Máel Sechnaill #1" = 10
+	"Máel-Sechnaill #2" = 10
+	"Niallgus #0" = 0
+	"Oscar #0" = 0
+	"Richardis #0" = -1
+	"Scolaige #0" = 0
+	"Suaibsech #0" = -1
+	"Trengus #1" = 10
+	"Ualan #1" = 10
+	"Uilliam #1" = 10
+	"Éua #0" = -1
+}
+leader_names = {
+	"Alexander"
+	"Annesley"
+	"Balfour"
+	"Barry"
+	"Blayney"
+	"Bourke"
+	"Boyle"
+	"Browne"
+	"Burke"
+	"Butler"
+	"Caulfeild"
+	"Chichester"
+	"Cholmondeley"
+	"Coote"
+	"Digby"
+	"Dillon"
+	"Dongan"
+	"Duff"
+	"Feilding"
+	"FitzGerald"
+	"FitzMaurice"
+	"FitzOliver"
+	"FitzPatrick"
+	"FitzWilliam"
+	"Fortescue"
+	"Gardiner"
+	"Grimston"
+	"Guelph"
+	"Hamilton"
+	"Hare"
+	"Hervey"
+	"Kavanagh"
+	"Keane"
+	"Keating"
+	"Lambart"
+	"Macartney"
+	"Martyn"
+	"McCarthy"
+	"Meade"
+	"Moore"
+	"Nugent"
+	"O'Brien"
+	"O'Carroll"
+	"O'Connell"
+	"O'Donnell"
+	"O'Hara"
+	"O'Malley"
+	"O'Neill"
+	"Pakenham"
+	"Parsons"
+	"Plunkett"
+	"Preston"
+	"Ridgeway"
+	"Sterne"
+	"Taaffe"
+	"Touchet"
+	"Vaughan"
+	"Villiers"
+	"Wentworth"
+	"Wesley"
+	"de Burgh"
+}
+ship_names = {
+	"Aoife"
+	"Ciara"
+	"Connacht"
+	"Eithne"
+	"Emer"
+	"Leinster"
+	"Munster"
+	"Niamh"
+	"Orla"
+	"Roisin"
+	"Ulster"
+}

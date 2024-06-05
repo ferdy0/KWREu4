@@ -1,0 +1,178 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 106 178 46 }
+revolutionary_colors = { 15 0 16 }
+historical_idea_groups = {
+	defensive_ideas
+	trade_ideas
+	religious_ideas
+	diplomatic_ideas
+	economic_ideas
+	innovativeness_ideas
+	offensive_ideas
+	spy_ideas
+}
+historical_units = {
+	anglofrench_line
+	french_bluecoat
+	french_caracolle
+	french_cuirassier
+	french_dragoon
+	french_impulse
+	italian_condotta
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Abisatu #0" = 0
+	"Adalberto #2" = 10
+	"Adelia #1" = -1
+	"Alberto Azzo #1" = 10
+	"Albira #0" = -1
+	"Azzone #0" = 0
+	"Bobore #0" = 0
+	"Burchard #1" = 10
+	"Carolu #0" = 0
+	"Carule #3" = 10
+	"Constantìnu #1" = 10
+	"Emisu #0" = -1
+	"Everardo #0" = 0
+	"Folco #1" = 10
+	"Frantzisca #0" = -1
+	"Gerkus #0" = -1
+	"Giuanna #0" = -1
+	"Grabielle #0" = 0
+	"Géraud #0" = 0
+	"Heribert #0" = 0
+	"Iginu #0" = 0
+	"Immel #0" = 0
+	"Jacopu #0" = 0
+	"Jatanpal #0" = 0
+	"Laurentu #0" = 0
+	"Leonardu #0" = 0
+	"Lionora #0" = -1
+	"Luciu #0" = 0
+	"Mamigon #0" = 0
+	"Manfredo #1" = 10
+	"Maura #0" = -1
+	"Melissa #0" = -1
+	"Pasca #0" = -1
+	"Ponzu #1" = 10
+	"Pàulu #0" = 0
+	"Saltaru #0" = 0
+	"Sancho #0" = 0
+	"Sinispella #0" = -1
+	"Siyaka #0" = 0
+	"Susanna #0" = -1
+	"Ugo #1" = 10
+	"Vissente #1" = 10
+	"Vittore #0" = 0
+}
+leader_names = {
+	"Acquaviva"
+	"Agostini"
+	"Albertini"
+	"Angeli"
+	"Appietto"
+	"Astolfi"
+	"Bartoli"
+	"Batesti"
+	"Biancchini"
+	"Buonaparte"
+	"Cardi"
+	"Castelli"
+	"Ceccaldi"
+	"Cesari"
+	"Cipriani"
+	"Colonna"
+	"Corsofieru"
+	"Cucchi"
+	"Della Rocca"
+	"Della Serra"
+	"Franceschetti"
+	"Franceschini"
+	"Grafferi"
+	"Graziani"
+	"Guidoni"
+	"Leca"
+	"Lucchini"
+	"Luciani"
+	"Mancini"
+	"Marcaggi"
+	"Mariani"
+	"Mondolini"
+	"Moracchini"
+	"Natalini"
+	"Orsini"
+	"Orsoni"
+	"Palazzo"
+	"Paoli"
+	"Peretti"
+	"Raffaeli"
+	"Rivarola"
+	"Rossi"
+	"Salicetti"
+	"Sampiero"
+	"Sanguinetti"
+	"Santoni"
+	"Scarbonchi"
+	"Torre"
+}
+ship_names = {
+	"Aria Marina"
+	"Attunante"
+	"Bucarone"
+	"Corsica"
+	"Corso Fieru"
+	"Galleotta"
+	"Gregale"
+	"Independenzia"
+	"Indumevule"
+	"Inflessibile"
+	"Intraprendente"
+	"Libecciu"
+	"Libertà"
+	"Livante"
+	"Maistrale"
+	"Maria"
+	"Nazione"
+	"Orgugliosu"
+	"Patriota"
+	"Pruch'ella Duri"
+	"Punente"
+	"Sant'Abele"
+	"Sant'Apebe"
+	"Sant'Egidiu"
+	"Santa Brigita"
+	"Santa Prudenzia"
+	"Santa Tassiana"
+	"Santa Teresa"
+	"Santa Zita"
+	"Santissima Concezzione"
+	"Santu Briziu"
+	"Santu Ghjambattista"
+	"Santu Landericu"
+	"Santu Lanfrancu"
+	"Santu Mauru"
+	"Santu Prutasiu"
+	"Santu Tavianu"
+	"Sbuffulera"
+	"Scioru"
+	"Sciroccu"
+	"Sculapratu"
+	"St'Antonio di Padova"
+	"Stella"
+	"Terribile"
+	"Terrore"
+	"Timevule"
+	"Timpesta"
+	"Tramuntana"
+	"Tunizata"
+	"Ventizata"
+}

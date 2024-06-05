@@ -1,0 +1,8 @@
+government = republic
+add_government_reform = trade_company_government
+government_rank = 1
+technology_group = western
+religion = protestant
+primary_culture = english
+capital = 4476
+mercantilism = 25

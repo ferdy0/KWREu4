@@ -1,0 +1,11 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+technology_group = indian
+religion = hinduism
+primary_culture = bengali
+capital = 547
+1444.11.11= {
+	add_prestige = 74
+	add_treasury = 93
+}

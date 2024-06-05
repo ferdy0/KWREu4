@@ -1,0 +1,42 @@
+eastern = {
+	converted_dynamic_faith_110 = {
+		color = { 11 146 136 }
+		icon =  176
+		country = {
+ 
+		missionary_maintenance_cost = -0.4
+	
+
+		global_missionary_strength = -0.01
+		religious_unity = 0.25
+		tolerance_heathen = 2
+	
+
+		stability_cost_to_declare_war = 1
+		governing_capacity_modifier = 0.1
+	
+
+		female_advisor_chance = 0.5
+	
+}
+		country_as_secondary = {
+ 
+		missionary_maintenance_cost = -0.2
+	
+
+		religious_unity = 0.25
+	
+}
+		province = {
+ 
+		local_missionary_strength = 0.01
+	
+}
+		
+	heretic = { TAOIST }
+
+	harmonized_modifier = harmonized_other_eastern
+
+	}
+}
+
