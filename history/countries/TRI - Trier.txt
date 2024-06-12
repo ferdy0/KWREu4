@@ -6,7 +6,6 @@ religion = catholic
 primary_culture = hessian
 capital = 80
 fixed_capital = 80
-elector = yes
 1444.11.11= {
 	monarch = {
 		name = "Wolfgang"

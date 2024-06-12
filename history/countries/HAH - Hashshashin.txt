@@ -1,17 +1,81 @@
 government = monarchy
 add_government_reform = feudal_theocracy
-government_rank = 1
+government_rank = 2
 technology_group = muslim
 religion = shiite
 primary_culture = persian
-capital = 1002
+capital = 2215
+add_accepted_culture = mazandarani
 mercantilism = 10
-500.11.11= {
+1379.4.13 = {
 	monarch = {
-		name = "Al-Nizariyyun"
-		adm = 3
-		dip = 3
+		name = "Maziar I"
+		dynasty = "i-Sabbah"
+		adm = 6
+		dip = 4
 		mil = 3
-		regent = yes
+		birth_date = 1353.3.16
+		religion = shiite
+		culture = persian
 	}
+}
+1415.8.13 = {
+	monarch = {
+		name = "Salim I"
+		dynasty = "i-Sabbah"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1382.2.22
+		religion = shiite
+		culture = persian
+	}
+}
+1444.2.11= {
+	monarch = {
+		name = "Maziar II"
+		dynasty = "i-Sabbah"
+		adm = 5
+		dip = 4
+		mil = 4
+		birth_date = 1405.6.27
+		religion = shiite
+		culture = persian
+	}
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = drunkard_personality
+	queen = {
+		name = "Fatimah"
+		dynasty = "al-Ziyar"
+		adm = 3
+		dip = 5
+		mil = 3
+		country_of_origin = HAH
+		birth_date = 1401.5.23
+		death_date = 1465.8.14
+		female = yes
+		religion = shiite
+		culture = mazandarani
+	}
+	add_queen_personality = expansionist_personality
+	add_queen_personality = fertile_personality
+	heir = {
+		name = "Mirza"
+		monarch_name = "Mirza I"
+		dynasty = "i-Sabbah"
+		adm = 5
+		dip = 6
+		mil = 5
+		birth_date = 1428.3.16
+		death_date = 1464.11.20
+		claim = 89
+		religion = shiite
+		culture = persian
+	}
+	add_heir_personality = secretive_personality
+	add_heir_personality = silver_tongue_personality
+}
+1444.11.11= {
+	add_prestige = 105
+	add_treasury = 63
 }

@@ -5,43 +5,92 @@ technology_group = western
 religion = converted_dynamic_faith_113
 primary_culture = dynamic-sicilian-culture-num1
 capital = 379
-1444.11.11= {
+1356.8.18 = {
 	monarch = {
-		name = "Petru"
+		name = "Petru II"
+		dynasty = "Hauteville-Gerusalemme"
+		adm = 6
+		dip = 3
+		mil = 5
+		birth_date = 1333.8.22
+		religion = converted_dynamic_faith_113
+		culture = dynamic-sicilian-culture-num1
+	}
+}
+1410.11.15 = {
+	monarch = {
+		name = "Elia III"
+		dynasty = "Hauteville-Gerusalemme"
+		adm = 3
+		dip = 1
+		mil = 4
+		birth_date = 1380.11.12
+		religion = converted_dynamic_faith_113
+		culture = dynamic-sicilian-culture-num1
+	}
+}
+1419.9.18 = {
+	monarch = {
+		name = "Francisca II"
+		dynasty = "Hauteville-Gerusalemme"
+		adm = 3
+		dip = 3
+		mil = 1
+		birth_date = 1378.6.10
+		religion = converted_dynamic_faith_113
+		culture = dynamic-sicilian-culture-num1
+	}
+}
+1424.10.19 = {
+	monarch = {
+		name = "Fabritziu I"
+		dynasty = "Hauteville-Gerusalemme"
+		adm = 4
+		dip = 3
+		mil = 1
+		birth_date = 1397.2.9
+		religion = converted_dynamic_faith_113
+		culture = dynamic-sicilian-culture-num1
+	}
+}
+1438.3.29 = {
+	monarch = {
+		name = "Yisrael II"
 		dynasty = "Hauteville-Gerusalemme"
 		adm = 5
 		dip = 5
 		mil = 4
-		birth_date = 1391.3.15
+		birth_date = 1418.4.17
 		religion = converted_dynamic_faith_113
 		culture = dynamic-sicilian-culture-num1
 	}
 	add_ruler_personality = entrepreneur_personality
 	add_ruler_personality = tolerant_personality
 	queen = {
-		name = "Maria"
-		dynasty = "van Berthout"
+		name = "Fîdan"
+		dynasty = "Vrtanesid"
 		adm = 1
 		dip = 4
 		mil = 3
-		country_of_origin = KOJ
-		birth_date = 1404.11.15
+		country_of_origin = Z02
+		birth_date = 1421.9.8
 		death_date = 1464.11.15
 		female = yes
 		religion = converted_dynamic_faith_113
-		culture = sorbian
+		culture = kurdish
 	}
 	add_queen_personality = drunkard_personality
 	add_queen_personality = expansionist_personality
+1439.2.4 = {
 	heir = {
 		name = "Petru"
-		monarch_name = "Petru II"
+		monarch_name = "Petru III"
 		dynasty = "Hauteville-Gerusalemme"
 		adm = 4
 		dip = 6
 		mil = 4
-		birth_date = 1422.8.22
-		death_date = 1487.8.22
+		birth_date = 1439.2.4
+		death_date = 1498.5.15
 		claim = 89
 		religion = converted_dynamic_faith_113
 		culture = dynamic-sicilian-culture-num1
