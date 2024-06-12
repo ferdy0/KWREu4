@@ -5,6 +5,7 @@ technology_group = western
 religion = catholic
 primary_culture = dynamic-franconian-culture-num1
 capital = 266
+elector = yes
 1403.1.20 = {
 	monarch = {
 		name = "Michael III"

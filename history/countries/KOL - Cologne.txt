@@ -5,6 +5,7 @@ technology_group = western
 religion = catholic
 primary_culture = swabian
 capital = 84
+elector = yes
 1444.11.11= {
 	monarch = {
 		name = "Pieter"

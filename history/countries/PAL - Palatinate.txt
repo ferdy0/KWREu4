@@ -6,7 +6,6 @@ religion = catholic
 primary_culture = hessian
 capital = 77
 add_accepted_culture = bavarian
-elector = yes
 1398.1.6= {
 	monarch = {
 		name = "Rupert III"

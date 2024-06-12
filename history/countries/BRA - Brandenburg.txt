@@ -5,7 +5,6 @@ technology_group = western
 religion = catholic
 primary_culture = sorbian
 capital = 4748
-elector = yes
 1444.11.11= {
 	monarch = {
 		name = "Kasimir II"

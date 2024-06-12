@@ -7,7 +7,6 @@ primary_culture = dynamic-franconian-culture-num1
 capital = 93
 fixed_capital = 93
 add_accepted_culture = flemish
-elector = yes
 1444.11.11= {
 	monarch = {
 		name = "Gebhard"
