@@ -81,6 +81,7 @@ capital = 379
 	}
 	add_queen_personality = drunkard_personality
 	add_queen_personality = expansionist_personality
+}
 1439.2.4 = {
 	heir = {
 		name = "Petru"
