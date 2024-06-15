@@ -1,5 +1,5 @@
-owner = FRA
-controller = FRA
+owner = NEV
+controller = NEV
 capital = "Namur"
 is_city = yes
 culture = wallonian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 4
 base_production = 4
 base_manpower = 1
-add_core = FRA
+add_core = NEV
 add_core = HAI
 discovered_by = east_african
 discovered_by = eastern

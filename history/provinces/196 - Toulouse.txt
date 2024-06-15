@@ -1,5 +1,5 @@
-owner = FRA
-controller = FRA
+owner = TOU
+controller = TOU
 capital = "Toulouse"
 is_city = yes
 culture = occitain
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 5
 base_production = 2
 base_manpower = 2
-add_core = FRA
+add_core = TOU
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

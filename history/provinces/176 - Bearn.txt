@@ -1,5 +1,5 @@
-owner = FRA
-controller = FRA
+owner = AMG
+controller = AMG
 capital = "Pau"
 is_city = yes
 culture = basque
@@ -8,7 +8,7 @@ trade_goods = wool
 base_tax = 1
 base_production = 3
 base_manpower = 2
-add_core = FRA
+add_core = AMG
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

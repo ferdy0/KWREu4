@@ -1,5 +1,5 @@
-owner = FRA
-controller = FRA
+owner = FLA
+controller = FLA
 capital = "Amiens"
 is_city = yes
 culture = cosmopolitan_french
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 9
 base_production = 3
 base_manpower = 2
-add_core = FRA
+add_core = FLA
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -1,5 +1,5 @@
-owner = FRA
-controller = FRA
+owner = GUY
+controller = GUY
 capital = "Bordeaux"
 is_city = yes
 culture = aquitaine
@@ -10,8 +10,7 @@ base_production = 5
 base_manpower = 4
 extra_cost = 18
 center_of_trade = 1
-add_core = FRA
-add_core = TOU
+add_core = GUY
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

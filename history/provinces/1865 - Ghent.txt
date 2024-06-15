@@ -1,5 +1,5 @@
-owner = FRA
-controller = FRA
+owner = FLA
+controller = FLA
 capital = "Ghent"
 is_city = yes
 culture = flemish
@@ -10,7 +10,6 @@ base_tax = 6
 base_production = 6
 base_manpower = 4
 add_core = FLA
-add_core = FRA
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

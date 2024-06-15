@@ -1,5 +1,5 @@
-owner = FRA
-controller = FRA
+owner = NRM
+controller = NRM
 capital = "Rouen"
 is_city = yes
 culture = normand
@@ -9,7 +9,6 @@ base_tax = 5
 base_production = 4
 base_manpower = 3
 extra_cost = 10
-add_core = FRA
 add_core = NRM
 discovered_by = east_african
 discovered_by = eastern

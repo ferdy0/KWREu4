@@ -1,5 +1,5 @@
-owner = FRA
-controller = FRA
+owner = AMG
+controller = AMG
 capital = "Auch"
 is_city = yes
 culture = aquitaine
@@ -9,8 +9,7 @@ fort_15th = yes
 base_tax = 3
 base_production = 4
 base_manpower = 2
-add_core = FRA
-add_core = TOU
+add_core = AMG
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -1,5 +1,5 @@
-owner = FRA
-controller = FRA
+owner = BRI
+controller = BRI
 capital = "Rennes"
 is_city = yes
 culture = breton
@@ -9,7 +9,6 @@ base_tax = 1
 base_production = 4
 base_manpower = 2
 add_core = BRI
-add_core = FRA
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
