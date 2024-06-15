@@ -28,59 +28,67 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Alfred #0" = 0
-	"Andr0 #0" = 0
-	"Angela #0" = -1
-	"Benedikt #0" = 0
-	"Charles #0" = 0
-	"Christoph #0" = 0
-	"Claudio #0" = 0
-	"Didier #0" = 0
-	"Dietrich #0" = 0
-	"Edmondo #0" = 0
-	"Emmanuel #0" = 0
-	"Engelbert #0" = 0
-	"Ferdinand #0" = 10
-	"Florian #0" = 0
-	"Friedrich #0" = 20
-	"Fr0d0ric #0" = 0
-	"Gerhard #0" = 0
-	"G0rard #0" = 0
-	"Hanna #0" = -1
-	"Heinrich #0" = 15
-	"Henri #0" = 0
-	"Immanuel #0" = 0
-	"Johan #0" = 0
-	"Jules #0" = 0
-	"Karl #0" = 10
-	"Leonardo #0" = 0
-	"Leonhard #0" = 0
-	"Markus #0" = 0
-	"Marlene #0" = -1
-	"Matthieu #0" = 0
-	"Nicolas #0" = 0
-	"Nikolaus #0" = 0
-	"Otto #0" = 20
-	"Pascal #0" = 0
-	"Paul #0" = 0
-	"Ruprecht #0" = 0
-	"Stefan #0" = 0
-	"Thomas #0" = 0
-	"Timoteo #0" = 0
-	"Ulrich #0" = 0
-	"Vincent #0" = 0
-	"Vinzenz #0" = 0
-	"Werner #0" = 15
+	"Agnese #0" = -5
+	"Alberade #0" = -1
+	"Alessandro #0" = 0
+	"Aloisia #0" = -1
+	"Ambrogio #1" = 5
+	"Anselmo #0" = 1
+	"Ansgar #1" = 5
+	"Barbara #0" = -1
+	"Berengar #0" = 1
+	"Bona #0" = -1
+	"Bonifacio #1" = 5
+	"Burchard #3" = 10
+	"Christine #0" = -1
+	"Clara #0" = -1
+	"Constantza #0" = -3
+	"Dorothea #0" = -1
+	"Emelrich #0" = 3
+	"Ezzo #0" = 1
+	"Folmar #0" = 3
+	"Francesca #0" = -1
+	"Francesco #0" = 0
+	"Gautselin #0" = 1
+	"Gertrude #0" = -1
+	"Gherardo #0" = 1
+	"Gisela #0" = -1
+	"Giuditta #0" = -1
+	"Guido #1" = 3
+	"Hartmann #0" = 0
+	"Helene #0" = -1
+	"Ida #1" = -3
+	"Irmele #0" = -1
+	"Irmeltrud #0" = -1
+	"Juliana #0" = -1
+	"Konrad #0" = 0
+	"Leonide #0" = -3
+	"Lope #0" = 0
+	"Magnus #3" = 10
+	"Maria #0" = -1
+	"Martin #2" = 10
+	"Matilda #0" = -3
+	"Mechthild #0" = -3
+	"Oberto #1" = 5
+	"Pagano #0" = 0
+	"Peter #0" = 0
+	"Sofia #0" = -3
+	"Sybille #0" = -1
+	"Tereza #0" = -1
+	"Thietmar #0" = 0
+	"Werner #0" = 3
+	"Wulfhilde #0" = -1
 }
 leader_names = {
-	"Aebi"
-	"Amman"
+	"Adorno"
+	"Beck"
 	"Bischofberger"
 	"Blank"
 	"Blies"
 	"Brugger"
-	"Combe"
+	"Crivelli"
 	"Eugster"
+	"Feuchtwangen"
 	"Frei"
 	"Frisch"
 	"Gasenzer"
@@ -90,13 +98,19 @@ leader_names = {
 	"Hertzler"
 	"Hiltbrand"
 	"Honegger"
+	"Lancia"
 	"Luz"
 	"Miller"
 	"Munzinger"
 	"Oberholzer"
+	"Ohningen"
+	"Orto"
+	"Rosenberg"
 	"Schwendimann"
-	"Spörri"
+	"Signau"
+	"Venis"
 	"Vogt"
+	"Wartenberg"
 	"Wächter"
 	"Zumbach"
 	"von Baltharsar"

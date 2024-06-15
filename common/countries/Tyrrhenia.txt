@@ -31,98 +31,60 @@ historical_units = {
 }
 monarch_names = {
 	"Abisatu #0" = 0
-	"Adalberto #2" = 10
-	"Adelia #1" = -1
-	"Alberto Azzo #1" = 10
-	"Albira #0" = -1
-	"Azzone #0" = 0
-	"Bobore #0" = 0
-	"Burchard #1" = 10
-	"Carolu #0" = 0
-	"Carule #3" = 10
-	"Constantï¿½nu #1" = 10
-	"Emisu #0" = -1
-	"Everardo #0" = 0
-	"Folco #1" = 10
-	"Frantzisca #0" = -1
-	"Gerkus #0" = -1
-	"Giuanna #0" = -1
-	"Grabielle #0" = 0
-	"Gï¿½raud #0" = 0
-	"Heribert #0" = 0
-	"Iginu #0" = 0
-	"Immel #0" = 0
-	"Jacopu #0" = 0
-	"Jatanpal #0" = 0
-	"Laurentu #0" = 0
-	"Leonardu #0" = 0
-	"Lionora #0" = -1
-	"Luciu #0" = 0
-	"Mamigon #0" = 0
-	"Manfredo #1" = 10
+	"Agnese #0" = -5
+	"Alaverru #0" = 0
+	"Assunta #0" = -1
+	"Carule #3" = 15
+	"Constantza #0" = -1
+	"Constantìnu #1" = 5
+	"Corràdu #0" = 3
+	"Ferdinandu #1" = 3
+	"Frantzisca #1" = -5
+	"Frantziscu #0" = 0
+	"Gaetànu #0" = 1
+	"Giulia #0" = -3
+	"Giustu #0" = 0
+	"Goffredu #0" = 1
+	"Guantine #1" = 3
+	"Gublenu #0" = 0
+	"Guisiana #0" = -1
+	"Ippolita #0" = -1
+	"Ilariu #0" = 5
+	"Kipriana #0" = -1
+	"Lucia #0" = -3
+	"Luna #0" = -1
 	"Maura #0" = -1
-	"Melissa #0" = -1
-	"Pasca #0" = -1
-	"Ponzu #1" = 10
-	"Pï¿½ulu #0" = 0
-	"Saltaru #0" = 0
-	"Sancho #0" = 0
-	"Sinispella #0" = -1
-	"Siyaka #0" = 0
-	"Susanna #0" = -1
-	"Ugo #1" = 10
-	"Vissente #1" = 10
+	"Munio #0" = 0
+	"Mònica #0" = -1
+	"Padulesa #0" = -1
+	"Pedru #2" = 5
+	"Rita #0" = -1
+	"Rossana #0" = -5
+	"Ruggiero #0" = 0
+	"Saltaru #2" = 10
+	"Saragina #0" = -3
+	"Sardinnia #0" = -1
+	"Sèrgiu #0" = 0
+	"Teresa #0" = -1
+	"Vissente #1" = 5
 	"Vittore #0" = 0
+	"Àgata #0" = -1
 }
 leader_names = {
-	"Acquaviva"
-	"Agostini"
-	"Albertini"
-	"Angeli"
-	"Appietto"
-	"Astolfi"
-	"Bartoli"
-	"Batesti"
-	"Biancchini"
-	"Buonaparte"
-	"Cardi"
-	"Castelli"
-	"Ceccaldi"
-	"Cesari"
-	"Cipriani"
-	"Colonna"
-	"Corsofieru"
-	"Cucchi"
-	"Della Rocca"
-	"Della Serra"
-	"Franceschetti"
-	"Franceschini"
-	"Grafferi"
-	"Graziani"
-	"Guidoni"
-	"Leca"
-	"Lucchini"
-	"Luciani"
-	"Mancini"
-	"Marcaggi"
-	"Mariani"
-	"Mondolini"
-	"Moracchini"
-	"Natalini"
-	"Orsini"
-	"Orsoni"
-	"Palazzo"
-	"Paoli"
-	"Peretti"
-	"Raffaeli"
-	"Rivarola"
-	"Rossi"
-	"Salicetti"
-	"Sampiero"
-	"Sanguinetti"
-	"Santoni"
-	"Scarbonchi"
-	"Torre"
+	"Angeleri"
+	"Hauteville-Catanzaro"
+	"Hauteville-Lentini"
+	"Manon"
+	"Melis"
+	"Oppizzhingi"
+	"de Bosa"
+	"de Càlaris"
+	"de Grifai"
+	"de Guilcer"
+	"de Sagona"
+	"de Samassi"
+	"de Torres-Paleohora"
+	"di Montiloncu"
 }
 ship_names = {
 	"Aria Marina"
