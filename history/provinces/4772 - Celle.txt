@@ -1,5 +1,5 @@
-owner = BRU
-controller = BRU
+owner = LUN
+controller = LUN
 capital = "Celle"
 is_city = yes
 culture = lower_saxon
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 1
 base_production = 4
 base_manpower = 1
-add_core = BRU
+add_core = LUN
 add_core = HAN
 discovered_by = east_african
 discovered_by = eastern

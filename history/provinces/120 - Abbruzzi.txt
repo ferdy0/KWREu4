@@ -1,5 +1,5 @@
-owner = Z38
-controller = Z38
+owner = NAP
+controller = NAP
 capital = "L'Aquila"
 is_city = yes
 culture = umbrian
@@ -9,8 +9,7 @@ hre = yes
 base_tax = 5
 base_production = 1
 base_manpower = 2
-add_core = URB
-add_core = Z38
+add_core = NAP
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

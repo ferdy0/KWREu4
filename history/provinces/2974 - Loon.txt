@@ -9,7 +9,6 @@ hre = yes
 base_tax = 4
 base_production = 5
 base_manpower = 2
-add_core = FLA
 add_core = Z0N
 discovered_by = east_african
 discovered_by = eastern

@@ -1,5 +1,5 @@
-owner = SAV
-controller = SAV
+owner = SWI
+controller = SWI
 capital = "Geneva"
 is_city = yes
 culture = swiss
@@ -10,6 +10,7 @@ base_tax = 5
 base_production = 12
 base_manpower = 9
 add_core = SAV
+add_core = GNV
 add_core = SWI
 discovered_by = east_african
 discovered_by = eastern

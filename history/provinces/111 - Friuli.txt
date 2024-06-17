@@ -1,5 +1,5 @@
-owner = Z1Z
-controller = Z1Z
+owner = VEN
+controller = VEN
 capital = "Udine"
 is_city = yes
 culture = venetian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 1
 base_production = 4
 base_manpower = 2
-add_core = Z1Z
+add_core = VEN
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

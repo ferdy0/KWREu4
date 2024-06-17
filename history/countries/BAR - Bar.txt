@@ -1,10 +1,10 @@
-government = republic
-add_government_reform = free_city
+government = monarchy
+add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
 religion = catholic
-primary_culture = cosmopolitan_french
-capital = 4766
+primary_culture = burgundian
+capital = 187
 mercantilism = 25
 1444.11.11= {
 	monarch = {

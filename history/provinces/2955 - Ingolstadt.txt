@@ -1,5 +1,5 @@
-owner = Z1T
-controller = Z1T
+owner = ING
+controller = ING
 capital = "Ingolstadt"
 is_city = yes
 culture = bavarian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = Z1T
+add_core = ING
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

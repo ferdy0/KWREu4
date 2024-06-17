@@ -1,5 +1,5 @@
-owner = Z2B
-controller = Z2B
+owner = HAB
+controller = HAB
 capital = "Judenburg"
 is_city = yes
 culture = austrian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 4
 base_production = 2
 base_manpower = 2
-add_core = Z2B
+add_core = HAB
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -1,5 +1,5 @@
-owner = SAR
-controller = SAR
+owner = TYH
+controller = TYH
 capital = "Cagliari"
 is_city = yes
 culture = sardinian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 5
 base_production = 7
 base_manpower = 9
-add_core = SAR
+add_core = TYH
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

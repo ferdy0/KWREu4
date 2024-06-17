@@ -1,5 +1,5 @@
-owner = COR
-controller = COR
+owner = TYH
+controller = TYH
 capital = "Bastia"
 is_city = yes
 culture = sardinian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 4
 base_production = 7
 base_manpower = 6
-add_core = COR
+add_core = TYH
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

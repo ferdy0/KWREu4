@@ -1,5 +1,5 @@
-owner = WES
-controller = WES
+owner = MUN
+controller = MUN
 capital = "Paderborn"
 is_city = yes
 culture = hannoverian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 5
 base_production = 4
 base_manpower = 1
-add_core = WES
+add_core = MUN
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

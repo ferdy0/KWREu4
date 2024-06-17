@@ -1,5 +1,5 @@
-owner = FKN
-controller = FKN
+owner = THU
+controller = THU
 capital = "Coburg"
 is_city = yes
 culture = franconian
@@ -9,7 +9,8 @@ hre = yes
 base_tax = 3
 base_production = 4
 base_manpower = 2
-add_core = FKN
+add_core = THU
+add_core = COB
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

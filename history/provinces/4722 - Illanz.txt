@@ -1,5 +1,5 @@
-owner = TTL
-controller = TTL
+owner = SWI
+controller = SWI
 capital = "Illanz"
 is_city = yes
 culture = swiss

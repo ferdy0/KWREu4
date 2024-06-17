@@ -1,5 +1,5 @@
-owner = Z3A
-controller = Z3A
+owner = ROT
+controller = ROT
 capital = "Rothenburg ob der Tauber"
 is_city = yes
 culture = franconian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 4
 base_production = 4
 base_manpower = 2
-add_core = Z3A
+add_core = ROT
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

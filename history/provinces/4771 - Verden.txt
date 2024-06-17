@@ -1,5 +1,5 @@
-owner = Z0B
-controller = Z0B
+owner = VER
+controller = VER
 capital = "Verden"
 is_city = yes
 culture = lower_saxon
@@ -10,7 +10,7 @@ base_tax = 1
 base_production = 2
 base_manpower = 1
 add_core = HAN
-add_core = Z0B
+add_core = VER
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -1,5 +1,5 @@
-owner = Z2L
-controller = Z2L
+owner = ALS
+controller = ALS
 capital = "Metz"
 is_city = yes
 culture = alsatian
@@ -12,7 +12,7 @@ base_manpower = 2
 extra_cost = 8
 center_of_trade = 1
 add_core = ALS
-add_core = Z2L
+add_core = LOR
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

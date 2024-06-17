@@ -1,5 +1,5 @@
-owner = Z36
-controller = Z36
+owner = ALS
+controller = ALS
 capital = "Straﬂburg"
 is_city = yes
 culture = swabian
@@ -11,7 +11,7 @@ base_production = 1
 base_manpower = 1
 extra_cost = 8
 center_of_trade = 1
-add_core = Z36
+add_core = ALS
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -1,5 +1,5 @@
-owner = SWA
-controller = SWA
+owner = KNZ
+controller = KNZ
 capital = "Konstanz"
 is_city = yes
 culture = swabian
@@ -10,7 +10,7 @@ base_tax = 4
 base_production = 2
 base_manpower = 4
 center_of_trade = 1
-add_core = SWA
+add_core = KNZ
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -1,5 +1,5 @@
-owner = Z1K
-controller = Z1K
+owner = POL
+controller = POL
 capital = "Ratibor"
 is_city = yes
 culture = schlesian
@@ -10,7 +10,7 @@ base_tax = 1
 base_production = 2
 base_manpower = 2
 add_core = SIL
-add_core = Z1K
+add_core = POL
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -1,5 +1,5 @@
-owner = SWA
-controller = SWA
+owner = WBG
+controller = WBG
 capital = "Reutlingen"
 is_city = yes
 culture = swabian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 1
 base_production = 5
 base_manpower = 2
-add_core = SWA
+add_core = WBG
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -1,5 +1,5 @@
-owner = Z15
-controller = Z15
+owner = SWI
+controller = SWI
 capital = "Bern"
 is_city = yes
 culture = swiss
@@ -12,7 +12,6 @@ base_manpower = 6
 extra_cost = 8
 center_of_trade = 1
 add_core = SWI
-add_core = Z15
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

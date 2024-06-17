@@ -1,5 +1,5 @@
-owner = MVA
-controller = MVA
+owner = BOH
+controller = BOH
 capital = "Hradiste"
 is_city = yes
 culture = czech
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 5
 base_production = 4
 base_manpower = 4
-add_core = MVA
+add_core = BOH
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

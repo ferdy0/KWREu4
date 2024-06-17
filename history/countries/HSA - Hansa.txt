@@ -1,39 +1,26 @@
 government = republic
+add_government_reform = merchants_reform
 government_rank = 1
+mercantilism = 25
 technology_group = western
 religion = catholic
-primary_culture = sorbian
+primary_culture = lower_saxon
 capital = 45
 fixed_capital = 45
-1444.11.11= {
+historical_friend = HAM #Hamburg
+historical_friend = BRE #Bremen
+historical_friend = DNZ #Danzig
+
+1444.11.11 = {
 	monarch = {
-		name = "Jacenty"
-		dynasty = "z Roztoki"
+		name = "Stadtrat"
 		adm = 3
-		dip = 6
-		mil = 4
-		birth_date = 1383.3.5
-		religion = catholic
-		culture = sorbian
+		dip = 3
+		mil = 3
+		regent = yes
 	}
-	add_ruler_personality = strict_personality
-	add_ruler_personality = tactical_genius_personality
-	queen = {
-		name = "Imma"
-		dynasty = "von Are"
-		adm = 6
-		dip = 5
-		mil = 6
-		country_of_origin = HSA
-		birth_date = 1406.1.22
-		death_date = 1466.1.22
-		female = yes
-		religion = catholic
-		culture = saxon
-	}
-	add_queen_personality = lawgiver_personality
-	add_queen_personality = righteous_personality
 }
+
 1444.11.11= {
 	add_prestige = 71
 	add_treasury = 69

@@ -1,5 +1,5 @@
-owner = Z0R
-controller = Z0R
+owner = STY
+controller = STY
 capital = "Laibach"
 is_city = yes
 culture = slovene
@@ -10,7 +10,7 @@ base_tax = 4
 base_production = 2
 base_manpower = 2
 add_core = CLI
-add_core = Z0R
+add_core = STY
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

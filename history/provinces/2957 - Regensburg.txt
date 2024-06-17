@@ -1,5 +1,5 @@
-owner = BAV
-controller = BAV
+owner = REG
+controller = REG
 capital = "Regensburg"
 is_city = yes
 culture = bavarian
@@ -12,7 +12,7 @@ base_production = 1
 base_manpower = 2
 extra_cost = 16
 center_of_trade = 2
-add_core = BAV
+add_core = REG
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -1,5 +1,5 @@
-owner = FKN
-controller = FKN
+owner = BYT
+controller = BYT
 capital = "Bayreuth"
 is_city = yes
 culture = franconian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 5
 base_production = 4
 base_manpower = 3
-add_core = FKN
+add_core = BYT
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

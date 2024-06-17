@@ -1,5 +1,5 @@
-owner = PRO
-controller = PRO
+owner = PAP
+controller = PAP
 capital = "Avignon"
 is_city = yes
 culture = occitain
@@ -10,7 +10,7 @@ base_tax = 7
 base_production = 5
 base_manpower = 5
 extra_cost = 8
-add_core = PRO
+add_core = PAP
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

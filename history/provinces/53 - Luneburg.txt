@@ -1,5 +1,5 @@
-owner = Z0B
-controller = Z0B
+owner = LUN
+controller = LUN
 capital = "Lüneburg"
 is_city = yes
 culture = lower_saxon
@@ -10,7 +10,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 add_core = HAN
-add_core = Z0B
+add_core = LUN
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

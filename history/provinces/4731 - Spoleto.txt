@@ -10,7 +10,6 @@ base_tax = 5
 base_production = 5
 base_manpower = 2
 add_core = SPL
-add_core = URB
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

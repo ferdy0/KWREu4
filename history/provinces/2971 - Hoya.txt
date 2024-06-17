@@ -1,5 +1,5 @@
-owner = Z0B
-controller = Z0B
+owner = BRU
+controller = BRU
 capital = "Hoya"
 is_city = yes
 culture = hannoverian
@@ -10,7 +10,7 @@ hre = yes
 base_tax = 5
 base_production = 3
 base_manpower = 1
-add_core = Z0B
+add_core = BRU
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

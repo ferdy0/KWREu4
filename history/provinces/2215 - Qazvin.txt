@@ -1,5 +1,5 @@
-owner = KRY
-controller = KRY
+owner = HAH
+controller = HAH
 capital = "Qazvin"
 is_city = yes
 culture = mazandarani
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 6
 base_production = 4
 base_manpower = 1
-add_core = KRY
+add_core = HAH
 add_core = TAB
 discovered_by = east_african
 discovered_by = eastern

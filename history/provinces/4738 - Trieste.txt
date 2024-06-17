@@ -1,5 +1,5 @@
-owner = Z1C
-controller = Z1C
+owner = AQU
+controller = AQU
 capital = "Trieste"
 is_city = yes
 culture = venetian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 5
 base_production = 5
 base_manpower = 3
-add_core = Z1C
+add_core = AQU
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

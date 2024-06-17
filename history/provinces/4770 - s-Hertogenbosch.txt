@@ -1,5 +1,5 @@
-owner = UTR
-controller = UTR
+owner = Z0N
+controller = Z0N
 capital = "'s-Hertogenbosch"
 is_city = yes
 culture = dutch
@@ -10,7 +10,7 @@ base_tax = 2
 base_production = 3
 base_manpower = 3
 add_core = NED
-add_core = UTR
+add_core = Z0N
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

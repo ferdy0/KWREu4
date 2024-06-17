@@ -9,6 +9,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 add_core = DAN
+add_core = SHL
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

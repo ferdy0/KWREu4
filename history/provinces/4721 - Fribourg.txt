@@ -1,5 +1,5 @@
-owner = Z15
-controller = Z15
+owner = SWI
+controller = SWI
 capital = "Fribourg"
 is_city = yes
 culture = swiss
@@ -10,7 +10,6 @@ base_tax = 3
 base_production = 5
 base_manpower = 4
 add_core = SWI
-add_core = Z15
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

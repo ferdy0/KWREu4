@@ -1,5 +1,5 @@
-owner = BYT
-controller = BYT
+owner = ING
+controller = ING
 capital = "Amberg"
 is_city = yes
 culture = bavarian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 1
 base_production = 4
 base_manpower = 1
-add_core = BYT
+add_core = ING
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

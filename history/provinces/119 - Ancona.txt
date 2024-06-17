@@ -1,5 +1,5 @@
-owner = Z0A
-controller = Z0A
+owner = URB
+controller = URB
 capital = "Ancona"
 is_city = yes
 culture = umbrian
@@ -10,7 +10,6 @@ base_tax = 5
 base_production = 4
 base_manpower = 3
 add_core = URB
-add_core = Z0A
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

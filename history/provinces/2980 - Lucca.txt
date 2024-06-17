@@ -1,5 +1,5 @@
-owner = LUC
-controller = LUC
+owner = LAN
+controller = LAN
 capital = "Lucca"
 is_city = yes
 culture = tuscan
@@ -11,6 +11,7 @@ base_production = 3
 base_manpower = 1
 extra_cost = 8
 center_of_trade = 1
+add_core = LAN
 add_core = LUC
 discovered_by = east_african
 discovered_by = eastern

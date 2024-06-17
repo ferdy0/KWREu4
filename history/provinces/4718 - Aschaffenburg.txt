@@ -1,5 +1,5 @@
-owner = Z1U
-controller = Z1U
+owner = MAI
+controller = MAI
 capital = "Aschaffenburg"
 is_city = yes
 culture = franconian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 4
 base_production = 4
 base_manpower = 2
-add_core = Z1U
+add_core = MAI
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

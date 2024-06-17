@@ -3,7 +3,7 @@ add_government_reform = free_city
 government_rank = 1
 technology_group = western
 religion = catholic
-primary_culture = old_pommeranian
+primary_culture = pommeranian
 capital = 1858
 fixed_capital = 1858
 mercantilism = 25
@@ -16,7 +16,7 @@ mercantilism = 25
 		mil = 4
 		birth_date = 1421.1.30
 		religion = catholic
-		culture = old_pommeranian
+		culture = pommeranian
 	}
 	add_ruler_personality = drunkard_personality
 	add_ruler_personality = intricate_web_weaver_personality

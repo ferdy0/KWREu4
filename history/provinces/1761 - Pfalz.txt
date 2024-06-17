@@ -1,5 +1,5 @@
-owner = Z2A
-controller = Z2A
+owner = PAL
+controller = PAL
 capital = "Worms"
 is_city = yes
 culture = hessian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 6
 base_production = 1
 base_manpower = 4
-add_core = Z2A
+add_core = PAL
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

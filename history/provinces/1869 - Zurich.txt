@@ -1,5 +1,5 @@
-owner = TTL
-controller = TTL
+owner = SWI
+controller = SWI
 capital = "Zürich"
 is_city = yes
 culture = swiss
@@ -11,7 +11,6 @@ base_tax = 9
 base_production = 12
 base_manpower = 6
 add_core = SWI
-add_core = TTL
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -1,9 +1,9 @@
 government = republic
-add_government_reform = free_city
+add_government_reform = merchants_reform
 government_rank = 1
 technology_group = western
 religion = catholic
-primary_culture = swiss
+primary_culture = baltic_german
 capital = 4746
 fixed_capital = 4746
 mercantilism = 25

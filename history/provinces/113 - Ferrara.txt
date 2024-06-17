@@ -1,5 +1,5 @@
-owner = TUS
-controller = TUS
+owner = LAN
+controller = LAN
 capital = "Ferrara"
 is_city = yes
 culture = romagnan
@@ -11,7 +11,7 @@ base_production = 4
 base_manpower = 4
 extra_cost = 10
 add_core = FER
-add_core = TUS
+add_core = LAN
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -1,5 +1,5 @@
-owner = SWA
-controller = SWA
+owner = WBG
+controller = WBG
 capital = "Ulm"
 is_city = yes
 culture = swabian
@@ -12,7 +12,7 @@ base_production = 1
 base_manpower = 3
 extra_cost = 8
 center_of_trade = 1
-add_core = SWA
+add_core = WBG
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

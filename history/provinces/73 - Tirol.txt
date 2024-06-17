@@ -1,5 +1,5 @@
-owner = AUG
-controller = AUG
+owner = TIR
+controller = TIR
 capital = "Innsbruck"
 is_city = yes
 culture = austrian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 4
 base_production = 5
 base_manpower = 2
-add_core = AUG
+add_core = TIR
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

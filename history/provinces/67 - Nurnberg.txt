@@ -1,5 +1,5 @@
-owner = FKN
-controller = FKN
+owner = NUM
+controller = NUM
 capital = "Nürnberg"
 is_city = yes
 culture = franconian
@@ -11,7 +11,7 @@ base_production = 2
 base_manpower = 2
 extra_cost = 16
 center_of_trade = 2
-add_core = FKN
+add_core = NUM
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

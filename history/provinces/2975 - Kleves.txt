@@ -1,5 +1,5 @@
-owner = Z0N
-controller = Z0N
+owner = KLE
+controller = KLE
 capital = "Kleves"
 is_city = yes
 culture = dutch
@@ -10,7 +10,7 @@ base_tax = 8
 base_production = 5
 base_manpower = 7
 add_core = NED
-add_core = Z0N
+add_core = KLE
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

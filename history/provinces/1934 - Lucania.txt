@@ -5,7 +5,6 @@ is_city = yes
 culture = neapolitan
 religion = catholic
 trade_goods = livestock
-hre = yes
 base_tax = 3
 base_production = 1
 base_manpower = 2

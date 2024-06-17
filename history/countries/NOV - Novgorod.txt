@@ -1,30 +1,91 @@
-government = monarchy
-add_government_reform = principality
+government = republic
+add_government_reform = veche_republic
 government_rank = 2
+mercantilism = 25
 technology_group = eastern
 religion = orthodox
 primary_culture = novgorodian
-capital = 310
-1444.11.11= {
+capital = 310	# Novgorod
+fixed_capital = 310 # Cannot move capital away from this province & no power cost to move to it
+1382.2.8 = {
 	monarch = {
-		name = "(Regency Council)"
+		name = "Mstislav II"
+		dynasty = "Rurikovich"
+		adm = 2
+		dip = 6
+		mil = 5
+		religion = orthodox
+		culture = novgorodian
+	}
+}
+1396.12.18 = {
+	monarch = {
+		name = "Serafima"
 		adm = 2
 		dip = 4
 		mil = 2
-		birth_date = 1.1.1
+		birth_date = 1391.4.14
 		regent = yes
 		religion = orthodox
 		culture = novgorodian
 	}
-	heir = {
-		name = "Mitfora III"
-		dynasty = "Rurikid"
-		adm = 4
-		dip = 6
-		mil = 4
-		birth_date = 1429.12.1
-		death_date = 1494.12.1
-		claim = 89
+}
+1405.12.12 = {
+	monarch = {
+		name = "Mstislav III"
+		dynasty = "Rurikovich"
+		adm = 3
+		dip = 1
+		mil = 5
+		birth_date = 1390.12.12
+		religion = orthodox
+		culture = novgorodian
+	}
+}
+1413.8.3 = {
+	monarch = {
+		name = "Yusuf"
+		dynasty = "Trostensky"
+		adm = 2
+		dip = 4
+		mil = 2
+		birth_date = 1375.1.12
+		religion = orthodox
+		culture = novgorodian
+	}
+}
+1427.8.3 = {
+	monarch = {
+		name = "Rorgon"
+		dynasty = "Spyachy"
+		adm = 3
+		dip = 4
+		mil = 1
+		birth_date = 1392.10.9
+		religion = orthodox
+		culture = novgorodian
+	}
+}
+1433.8.3 = {
+	monarch = {
+		name = "Nikita"
+		dynasty = "Nagiye"
+		adm = 6
+		dip = 1
+		mil = 2
+		birth_date = 1390.4.18
+		religion = orthodox
+		culture = novgorodian
+	}
+}
+1439.8.3 = {
+	monarch = {
+		name = "Viacheslav"
+		dynasty = "Koninsky"
+		adm = 3
+		dip = 1
+		mil = 3
+		birth_date = 1403.7.21
 		religion = orthodox
 		culture = novgorodian
 	}

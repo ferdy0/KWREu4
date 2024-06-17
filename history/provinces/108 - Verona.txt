@@ -1,5 +1,5 @@
-owner = VRN
-controller = VRN
+owner = VEN
+controller = VEN
 capital = "Verona"
 is_city = yes
 culture = venetian
@@ -11,7 +11,7 @@ base_production = 1
 base_manpower = 2
 extra_cost = 8
 center_of_trade = 1
-add_core = VRN
+add_core = VEN
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

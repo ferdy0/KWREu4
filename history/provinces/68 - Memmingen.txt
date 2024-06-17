@@ -1,5 +1,5 @@
-owner = SWA
-controller = SWA
+owner = AUG
+controller = AUG
 capital = "Memmingen"
 is_city = yes
 culture = swabian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 4
 base_production = 4
 base_manpower = 3
-add_core = SWA
+add_core = AUG
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

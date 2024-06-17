@@ -1,5 +1,5 @@
-owner = SAV
-controller = SAV
+owner = SWI
+controller = SWI
 capital = "Sion"
 is_city = yes
 culture = swiss

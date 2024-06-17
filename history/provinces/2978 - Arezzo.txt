@@ -1,5 +1,5 @@
-owner = Z1J
-controller = Z1J
+owner = Z2Y
+controller = Z2Y
 capital = "Arezzo"
 is_city = yes
 culture = tuscan
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 3
 base_production = 2
 base_manpower = 2
-add_core = Z1J
+add_core = Z2Y
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -1,5 +1,5 @@
-owner = MLH
-controller = MLH
+owner = Z1L
+controller = Z1L
 capital = "Altkirch"
 is_city = yes
 culture = swabian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 6
 base_production = 5
 base_manpower = 4
-add_core = MLH
+add_core = Z1L
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

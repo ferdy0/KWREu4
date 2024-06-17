@@ -1,5 +1,5 @@
-owner = Z2W
-controller = Z2W
+owner = BAR
+controller = BAR
 capital = "Zweibrücken"
 is_city = yes
 culture = hessian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 1
 base_production = 3
 base_manpower = 2
-add_core = Z2W
+add_core = BAR
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

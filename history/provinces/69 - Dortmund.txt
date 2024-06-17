@@ -1,5 +1,5 @@
-owner = Z1R
-controller = Z1R
+owner = RVA
+controller = RVA
 capital = "Dortmund"
 is_city = yes
 culture = hannoverian
@@ -10,7 +10,7 @@ base_tax = 4
 base_production = 5
 base_manpower = 2
 center_of_trade = 1
-add_core = Z1R
+add_core = RVA
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

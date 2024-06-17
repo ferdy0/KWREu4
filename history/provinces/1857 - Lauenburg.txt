@@ -1,5 +1,5 @@
-owner = HAM
-controller = HAM
+owner = LAU
+controller = LAU
 capital = "Lauenburg"
 is_city = yes
 culture = lower_saxon
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 1
 base_production = 2
 base_manpower = 1
-add_core = HAM
+add_core = LAU
 add_core = HAN
 discovered_by = east_african
 discovered_by = eastern

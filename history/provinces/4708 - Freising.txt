@@ -1,5 +1,5 @@
-owner = BAV
-controller = BAV
+owner = UBV
+controller = UBV
 capital = "Freising"
 is_city = yes
 culture = bavarian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 5
 base_production = 4
 base_manpower = 2
-add_core = BAV
+add_core = UBV
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
