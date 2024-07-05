@@ -1,5 +1,5 @@
-owner = SYR
-controller = SYR
+owner = KOJ
+controller = KOJ
 capital = "Ayntab"
 is_city = yes
 culture = armenian
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 7
 base_production = 2
 base_manpower = 4
-add_core = SYR
+add_core = KOJ
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
