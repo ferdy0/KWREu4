@@ -1,5 +1,5 @@
-owner = NOR
-controller = NOR
+owner = SWE
+controller = SWE
 capital = "Västerås"
 is_city = yes
 culture = norwegian
@@ -8,7 +8,7 @@ trade_goods = iron
 base_tax = 7
 base_production = 5
 base_manpower = 5
-add_core = NOR
+add_core = SWE
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

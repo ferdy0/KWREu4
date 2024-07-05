@@ -1,5 +1,5 @@
-owner = SWE
-controller = SWE
+owner = NOR
+controller = NOR
 capital = "Dalaborg"
 is_city = yes
 culture = swedish
@@ -8,7 +8,7 @@ trade_goods = naval_supplies
 base_tax = 1
 base_production = 1
 base_manpower = 2
-add_core = SWE
+add_core = NOR
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
