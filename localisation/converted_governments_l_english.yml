@@ -9,6 +9,8 @@
  DAUPHIN_fem:0 "Dauphine"
  ECUMENICAL_PATRIARCH:0 "Ecumenical Patriarch"
  ECUMENICAL_MATRIARCH:0 "Ecumenical Matriarch"
+ PENDEN:0 "Penden"
+ PENDEN_fem:0 "Penden"
 
  #Governments
  NOME:0 "Nome"
