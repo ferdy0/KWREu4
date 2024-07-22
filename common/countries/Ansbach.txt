@@ -30,30 +30,35 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Adalbert #4" = 10
-	"Albrecht #0" = 0
-	"Azzo #0" = 0
+	"Albrecht #0" = 20
+	"Azzone #1" = 10
 	"Beatrix #1" = -1
-	"Bonifazio #2" = 10
+	"Bonifaz #3" = 50
+	"Bruno #0" = 10
 	"Cataldo #0" = 0
-	"Eberhard #1" = 10
+	"Cäcilia #0" = -1
 	"Ekbert #0" = 0
 	"Ekkehard #0" = 0
+	"Eriprando #0" = 10
+	"Ermenegilda #0" = -1
 	"Hatto #0" = 0
 	"Hemma #1" = -1
+	"Hildeburg #0" = -1
+	"Hildegarde #0" = -1
 	"Hugbert #0" = 0
 	"Ludolf #0" = 0
 	"Ludwig #1" = 10
-	"Markwart #1" = 10
+	"Maria #0" = -1
+	"Markwart #1" = 20
+	"Opizzino #0" = 10
 	"Philipp #0" = 0
 	"Richwara #0" = -1
-	"Roberto #1" = 10
-	"Salinguerra #0" = 0
+	"Ruprecht #1" = 20
 	"Seburg #0" = -1
-	"Sieghard #4" = 10
+	"Sophia #0" = -1
 	"Stephan #0" = 0
-	"Viktor #1" = 10
-	"Vittorio #1" = 10
+	"Susanna #0" = -1
+	"Viktor #1" = 50
 	"Wartrun #0" = -1
 	"Welf #0" = 0
 	"Wernhard #0" = 0
@@ -63,11 +68,13 @@ leader_names = {
 	"Dietsch"
 	"Däumler"
 	"Ernst"
+	"Fibonacci"
 	"Fichtelmann"
 	"Fischer"
 	"Franck"
 	"Födisch"
 	"Grimm"
+	"Gualch"
 	"Hofmann"
 	"Höhrer"
 	"Knörnschild"
@@ -85,11 +92,24 @@ leader_names = {
 	"Söll"
 	"Teichmann"
 	"Weinrich"
+	"de Castro Arquato"
+	"di Cutroni"
+	"von Andernach"
+	"von Beetzen"
+	"von Calw"
+	"von Eurasburg"
+	"von Landsberg"
+	"von Meissen"
+	"von Nörvenich"
+	"von Sulzbach"
+	"von Uffenheim"
+	"von Weinsberg"
+	"von Wittelsbach"
+	"von Zähringen"
 }
 ship_names = {
 	"Albrecht Achilles"
 	"Bayreuth"
-	"Friedrich V"
 	"Friedrich von Ansbach"
 	"Georg"
 	"Georg Friedrich"

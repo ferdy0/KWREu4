@@ -31,27 +31,43 @@ historical_units = {
 }
 monarch_names = {
 	"Adelia #0" = -1
+	"Alfons #0" = 0
+	"Amédée #0" = 0
+	"Ancel #0" = 5
+	"Antonius #0" = 10
 	"Arnold #0" = 0
-	"Cecily #0" = -1
+	"Birgit #0" = -1
+	"Blanche #0" = -10
 	"Cécile #0" = -1
-	"Dobroslava #0" = -1
+	"Emund #0" = 0
+	"Ermengard #1" = -10
+	"Eudes #0" = 0
 	"François #0" = 0
 	"Gelduin #0" = 0
-	"Gerhard #2" = 10
-	"Gunzelin #2" = 10
-	"Henri #2" = 10
+	"Gunzelin #2" = 15
+	"Gérard #5" = 40
+	"Henri #2" = 15
+	"Hélie #0" = 0
 	"Ide #0" = -1
 	"Isanrich #0" = 0
-	"Jirík #0" = 0
-	"Meinhard #1" = 10
+	"Isentrude #0" = -1
+	"Jeanne #0" = -1
+	"Jourdain #0" = 5
+	"Laura #0" = -1
+	"Nikolaus #0" = 10
 	"Onfroy #0" = 0
+	"Philomena #0" = -1
 	"Richenza #0" = -1
-	"Siegfried #2" = 10
+	"Siegfried #4" = 20
+	"Simone #0" = -1
+	"Ulrich #0" = 0
+	"Victor #0" = 0
 }
 leader_names = {
-	"Desgouttes"
-	"Duquesne"
+	"Chatenois-Vaucouleurs"
+	"Gerulfing-Lautern"
 	"Le Tellier"
+	"Nalecz"
 	"d'Ambleteuse"
 	"d'Aulnay"
 	"d'Entraigues"
@@ -65,14 +81,8 @@ leader_names = {
 	"de Bonneuil"
 	"de Broglie"
 	"de Béthune"
-	"de Castaing"
-	"de Caumartin"
-	"de Chambly"
-	"de Chambronne"
-	"de Champmartin"
-	"de Chevigny"
-	"de Crussol"
-	"de Crèvecoeur"
+	"de Chateauneuf"
+	"de Comps"
 	"de Dampierre"
 	"de Galard"
 	"de La Barthe"
@@ -91,11 +101,7 @@ leader_names = {
 	"de Rieu"
 	"de Rochechouart"
 	"de Rochemaure"
-	"de Saint Chamond"
-	"de Saint Esprit"
-	"de Saint Germain"
-	"de Saint Omer"
-	"de Siorac"
+	"de Sablé"
 	"de Tocqueville"
 	"de Tréville"
 	"de Vergennes"
@@ -110,6 +116,11 @@ leader_names = {
 	"du Bosquet"
 	"du Fournay"
 	"du Valentinois"
+	"von Henneberg"
+	"von Luxemburg"
+	"von Rosenberg"
+	"von Trier"
+	"ze Sovince"
 }
 ship_names = {
 	"Barrois"

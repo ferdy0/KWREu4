@@ -34,9 +34,10 @@ monarch_names = {
 	"Albrecht Karl #0" = 10
 	"August Georg #0" = 20
 	"Aurora #0" = -1
-	"Bernhard #0" = 70
+	"Bernhard #1" = 70
 	"Christoph #0" = 40
 	"Christoph Gustav #0" = 10
+	"Dieter #2" = 40
 	"Dorothea #0" = -1
 	"Eduard Fortunat #0" = 20
 	"Erich #0" = 0
@@ -47,9 +48,9 @@ monarch_names = {
 	"Georg Friedrich #0" = 20
 	"Gregor #0" = 0
 	"Henriette #0" = -1
-	"Hermann Fortunat #0" = 15
+	"Helferich #0" = 30
 	"Isaak #0" = 0
-	"Jakob #0" = 50
+	"Jakob #1" = 50
 	"Johann #0" = 10
 	"Johann Karl #0" = 10
 	"Karl #0" = 40
@@ -64,9 +65,10 @@ monarch_names = {
 	"Markus #0" = 10
 	"Oskar #0" = 0
 	"Philibert #0" = 20
-	"Philipp #1" = 30
+	"Philipp #0" = 30
 	"Philipp Siegmund #0" = 10
-	"Rudolf #4" = 10
+	"Rudolf #0" = 10
+	"Walter #0" = 0
 	"Wilhelm #0" = 20
 	"Wilhelm Georg #0" = 15
 	"Wilhelm Ludwig #0" = 10
@@ -88,6 +90,7 @@ leader_names = {
 	"Göhringer"
 	"Heitzmann"
 	"Helff"
+	"Jastrzebiec"
 	"Kempf"
 	"Klee"
 	"Mackensen"
@@ -97,6 +100,7 @@ leader_names = {
 	"Tientjen"
 	"Tuve"
 	"Wachsmuth"
+	"von Wittelsbach"
 }
 ship_names = {
 	"Bretten"

@@ -30,26 +30,26 @@ monarch_names = {
 	"Angioletta #1" = -1
 	"Branca #0" = -1
 	"Brigida #0" = -1
-	"Carule #0" = 1
+	"Carule #0" = 10
 	"Danyal #0" = 0
-	"Dawud #1" = 5
+	"Dawud #1" = 20
 	"Elianora #0" = -1
 	"Fabritziu #0" = 0
-	"Farhan #0" = 1
+	"Farhan #0" = 10
 	"Fidula #0" = -1
 	"Gaine #0" = 0
 	"Giulia #0" = -1
 	"Guantine #0" = 1
-	"Ilariu #1" = 5
-	"Isidor #0" = 1
-	"Lucia #1" = -3
-	"Lussurgiu #1" = 10
-	"Martin #1" = 1
-	"Mastanabal #2" = 10
+	"Ilariu #1" = 20
+	"Isidor #0" = 10
+	"Lucia #1" = -10
+	"Lussurgiu #1" = 40
+	"Martin #1" = 10
+	"Mastanabal #2" = 40
 	"Meghighda #0" = -1
 	"Menna #0" = -1
 	"Micheli #0" = 0
-	"Rossana #0" = -3
+	"Rossana #0" = -10
 	"Saraginu #0" = 0
 	"Sebustianu #0" = 0
 	"Sèrgiu #0" = 0
@@ -61,11 +61,17 @@ monarch_names = {
 	"Togli #0" = 0
 }
 leader_names = {
-	"Barqa"
-	"Hamilcar"
-	"Hannibal"
-	"Hasdrubal"
-	"Mago"
+	"Aznagid"
+	"Bari"
+	"Durgali"
+	"Lacon"
+	"Premyslid"
+	"Tortoli"
+	"al-Baloch"
+	"al-Idrisi"
+	"al-Kamal"
+	"de Bonàrcadu"
+	"di San Vitu"
 }
 ship_names = {
 	"Alim"

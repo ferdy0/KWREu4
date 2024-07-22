@@ -29,88 +29,101 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Adalbert #0" = 2
-	"Adergazuz #1" = 4
-	"Alberich #0" = 3
-	"Andrzej #0" = 1
+	"Adalbert #0" = 10
+	"Adergazuz #1" = 20
+	"Alberich #0" = 15
+	"Andrzej #0" = 10
 	"Anna #0" = -1
 	"Arnošt #0" = 0
-	"Arnulf #0" = 2
-	"Beatrix #0" = -5
-	"Benedicta #0" = -3
-	"Benedikt #0" = 3
-	"Berengar #0" = 1
-	"Berthold #1" = 5
+	"Arnulf #0" = 10
+	"Beatrix #0" = -10
+	"Benedicta #0" = -10
+	"Benedikt #0" = 15
+	"Berengar #0" = 10
+	"Berthold #1" = 25
 	"Boleslav #0" = 0
 	"Burchard #0" = 0
-	"Bretislav #1" = 10
-	"Cäcilia #0" = -3
-	"Dietrich #0" = 1
+	"Bretislav #1" = 25
+	"Cäcilia #0" = -10
+	"Dietrich #0" = 10
 	"Eilika #0" = -1
-	"Ekkehard #0" = 2
-	"Elisabeth #0" = -2
-	"Emma #0" = -3
-	"Ermengarde #0" = -2
-	"Eva #0" = -2
-	"Ferdinand #1" = 2
+	"Ekkehard #0" = 10
+	"Elisabeth #0" = -1
+	"Emma #0" = -10
+	"Ermengarde #0" = -1
+	"Eva #0" = -1
+	"Ferdinand #1" = 10
 	"Filibert #0" = 0
 	"Filomena #0" = -1
-	"Friedrich #0" = 4
-	"Gaitana #0" = -2
-	"Gawel #0" = 1
-	"Gisela #0" = -2
-	"Giselbert #0" = 5
-	"Hans #0" = 1
-	"Hedwig #0" = -2
+	"Friedrich #0" = 20
+	"Gaitana #0" = -1
+	"Gawel #0" = 10
+	"Gisela #0" = -1
+	"Giselbert #0" = 25
+	"Hans #0" = 10
+	"Hedwig #0" = -1
 	"Heilwig #0" = -1
-	"Heinrich #1" = 9
-	"Helene #0" = -2
+	"Heinrich #1" = 45
+	"Helene #0" = -1
 	"Hermann #0" = 0
-	"Ingeltrude #0" = -2
+	"Ingeltrude #0" = -1
 	"Isabel #0" = -1
-	"Isentrude #0" = -2
+	"Isentrude #0" = -1
 	"Juliana #0" = -1
-	"Karlmann #1" = 2
-	"Kochan #0" = 1
-	"Konrád #0" = 5
-	"Lothar #1" = 10
+	"Karlmann #1" = 10
+	"Kochan #0" = 10
+	"Konrád #0" = 25
+	"Lothar #1" = 45
 	"Ludolf #0" = 0
 	"Marek #0" = 0
-	"Mathilde #0" = -2
-	"Matthias #0" = 3
-	"Mechthild #0" = -5
-	"Michael #3" = 10
-	"Oldrich #0" = 1
+	"Mathilde #0" = -1
+	"Matthias #0" = 15
+	"Mechthild #0" = -10
+	"Michael #3" = 45
+	"Oldrich #0" = 10
 	"Richer #0" = 0
-	"Ramhilda #0" = -3
+	"Ramhilda #0" = -10
 	"Reginlint #0" = -1
 	"Sára #0" = -1
-	"Siegfried #0" = 2
+	"Siegfried #0" = 10
 	"Simon #0" = 1
-	"Sofie #0" = -5
+	"Sofie #0" = -10
 	"Tomaltach #0" = 0
-	"Wenzel #1" = 4
-	"Wilhelm #0" = 1
-	"Wilhelmina #0" = -2
-	"Wulfhilde #0" = -2
+	"Wenzel #1" = 20
+	"Wilhelm #0" = 10
+	"Wilhelmina #0" = -1
+	"Wulfhilde #0" = -1
 }
 leader_names = {
 	"Brauchitsch"
 	"Czernín"
 	"Heldrungen"
 	"Hrabisid"
+	"Jastrzebiec"
 	"Mansfeld"
+	"Obroditen"
+	"Orlamunde"
 	"Reiner"
 	"Schwarzenberg"
 	"der Marck"
+	"di Sambonifacio"
+	"von Bocksberg"
 	"von Egisheim"
+	"von Eurasburg"
 	"von Gudensberg"
 	"von Harrach"
 	"von Hessen"
+	"von Hoya"
 	"von Kyrburg"
+	"von Lengenfeld"
 	"von Muhlhausen"
+	"von Nauen"
 	"von Naumburg"
+	"von Oldenburg"
+	"von Rietberg"
+	"von Scharfenberg"
 	"von Schwanden"
+	"von Schweipünt"
 	"von Stolzenberg"
 	"von Trier"
 	"von Wippra"

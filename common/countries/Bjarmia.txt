@@ -13,30 +13,56 @@ historical_idea_groups = {
 	quantity_ideas
 }
 monarch_names = {
-	"Alfonsina #0" = -1
+	"Galya #0" = -1
 	"Grzymislawa #0" = -1
+	"Gáktu #0" = 0
 	"Ilme #0" = -1
-	"Kolik #0" = 0
+	"Járre #2" = 10
+	"Kolik #0" = 10
+	"Kujku #0" = -1
+	"Laptsui #0" = -1
 	"Luca #0" = 0
-	"Montefeltrano #0" = 0
+	"Mandak #0" = 10
 	"Nabtiko #0" = 0
 	"Nastoi #0" = -1
-	"Nenyts #0" = 0
-	"Ngënoh #0" = 0
-	"Noumea #0" = 0
-	"Richard #0" = 0
-	"Roberto #0" = 0
-	"Salinder #1" = 10
-	"Sarak #1" = 10
+	"Nenyts #0" = 20
+	"Ngeva #0" = -1
+	"Noumea #0" = 10
+	"Nyalku #0" = 10
+	"Panay #0" = 15
+	"Salinder #1" = 30
+	"Samatu #0" = 15
+	"Sarak #1" = 30
 	"Sviatoslava #0" = -1
-	"Syudbya #1" = 10
-	"Tatva #1" = 10
+	"Syeju #0" = -1
+	"Syudbya #2" = 20
+	"Tadane #0" = -1
 	"Tero #0" = 0
 	"Tolik #0" = 0
 	"Ulitis #0" = 0
 	"Vysheslav #0" = 0
-	"Wayngachi #0" = 0
-	"Yavlad #1" = 10
+	"Yar #0" = -1
+	"Yavlad #2" = 30
 	"Yudki #0" = 0
-	"Yurak #0" = 0
+	"Yurak #1" = 50
+}
+leader_names = {
+	"Davidovich"
+	"Dvinid"
+	"Jankowskie"
+	"Kemeloe"
+	"Kneesma"
+	"Kuluio"
+	"Lagoda"
+	"Neem"
+	"Onegin"
+	"Razlivnoye"
+	"Somatu"
+	"Ukhta"
+	"Uspinega"
+	"Varakovich"
+	"Yaga"
+	"Yensu"
+	"Yurakovich"
+	"gada Adazi"
 }
