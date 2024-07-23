@@ -30,28 +30,29 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Adele #0" = -1
-	"Alvin #0" = 10
-	"Andreas #2" = 20
-	"Anna #0" = -1
-	"Arnulf #2" = 10
-	"Cosimo #0" = 0
-	"Ezio #1" = 20
-	"Gausbert #0" = 0
-	"Gebhard #0" = 0
 	"Heinrich #7" = 50
-	"Helena #0" = -1
-	"Hänsel #0" = 10
-	"Isnard #0" = 0
+	"Wolfram #3" = 30
+	"Andreas #2" = 20
+	"Ezio #1" = 20
 	"Konrad #0" = 20
 	"Lambert #2" = 20
-	"Ludwig #0" = 0
-	"Marcella #0" = -1
+	"Alvin #0" = 10
+	"Arnulf #2" = 10
+	"Hänsel #0" = 10
 	"Otto #2" = 10
+	"Cosimo #0" = 0
+	"Gausbert #0" = 0
+	"Gebhard #0" = 0
+	"Isnard #0" = 0
+	"Ludwig #0" = 0
+	"Vinzenz #0" = 0
+	
+	"Adele #0" = -1
+	"Anna #0" = -1
+	"Helena #0" = -1
+	"Marcella #0" = -1
 	"Salomea #0" = -1
 	"Sofia #0" = -1
-	"Vinzenz #0" = 0
-	"Wolfram #3" = 30
 }
 leader_names = {
 	"Dick"
