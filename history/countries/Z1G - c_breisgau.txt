@@ -7,49 +7,78 @@ primary_culture = swabian
 capital = 72
 fixed_capital = 72
 set_country_flag = ZZZ_generated_converter_nation
-1444.11.11= {
+1358.12.2 = {
 	monarch = {
-		name = "Berchte"
-		dynasty = "von Baden"
+		name = "Karlmann I"
+		dynasty = "von Ohningen"
 		adm = 3
 		dip = 5
 		mil = 3
-		birth_date = 1394.6.3
-		female = yes
+		birth_date = 1323.6.23
 		religion = catholic
 		culture = swabian
 	}
-	add_ruler_personality = drunkard_personality
-	add_ruler_personality = strict_personality
-	queen = {
-		name = "Teobaldo"
-		dynasty = "Soranzo"
-		adm = 5
-		dip = 3
-		mil = 5
-		country_of_origin = Z1G
-		birth_date = 1385.9.2
-		death_date = 1445.9.2
+}
+1383.7.7 = {
+	monarch = {
+		name = "Bonconte I"
+		dynasty = "von Ohningen"
+		adm = 3
+		dip = 5
+		mil = 3
+		birth_date = 1343.7.1
 		religion = catholic
 		culture = italian
 	}
-	add_queen_personality = strict_personality
-	add_queen_personality = zealot_personality
+}
+1387.10.11 = {
+	monarch = {
+		name = "Bernhard I"
+		dynasty = "von Ohningen"
+		adm = 3
+		dip = 5
+		mil = 3
+		birth_date = 1368.6.18
+		religion = catholic
+		culture = swabian
+	}
+}
+1436.12.17= {
+	monarch = {
+		name = "Jakob II"
+		dynasty = "von Ohningen"
+		adm = 3
+		dip = 5
+		mil = 3
+		birth_date = 1408.5.28
+		religion = catholic
+		culture = swabian
+	}
+	queen = {
+		name = "Sofie"
+		dynasty = "von Bocksberg"
+		adm = 5
+		dip = 3
+		mil = 5
+		country_of_origin = BRI
+		birth_date = 1405.9.2
+		death_date = 1465.9.2
+		religion = catholic
+		culture = breton
+	}
 	heir = {
-		name = "Karlmann"
-		monarch_name = "Karlmann"
+		name = "Christoph"
+		monarch_name = "Christoph I"
 		dynasty = "von Ohningen"
 		adm = 4
 		dip = 6
 		mil = 4
-		birth_date = 1412.6.23
-		death_date = 1477.6.23
+		birth_date = 1432.6.23
+		death_date = 1507.6.23
 		claim = 89
 		religion = catholic
 		culture = swabian
 	}
-	add_heir_personality = martial_educator_personality
-	add_heir_personality = pious_personality
 }
 1444.11.11= {
 	add_prestige = 63
