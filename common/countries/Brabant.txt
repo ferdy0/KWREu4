@@ -28,31 +28,32 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Adèle #0" = -1
-	"Albrecht #0" = 0
+	"Koenraad #2" = 30
+	"Simon #1" = 20
+	"Eduard #2" = 15
+	"Godfried #3" = 15
+	"Otto #0" = 15
 	"Anselm #1" = 10
+	"Ijsbrecht #1" = 10
+	"Ilbert #0" = 10
+	"Steyn #0" = 10
+	"Albrecht #0" = 0
 	"Arnulf #0" = 0
 	"Bérenger #0" = 0
 	"Christof #0" = 0
-	"Eduard #2" = 15
-	"Ermengarde #0" = -1
-	"Filippa #0" = -1
 	"Gauthier #0" = 0
 	"Gerolt #0" = 0
-	"Godfried #3" = 15
 	"Gwijde #0" = 0
-	"Ijsbrecht #1" = 10
-	"Ilbert #0" = 10
-	"Jasminne #1" = -10
-	"Koenraad #2" = 30
 	"Manassès #0" = 0
+	"Wouter #0" = 0
+	
+	"Jasminne #1" = -10
+	"Plaisance #1" = -10
+	"Adèle #0" = -1
+	"Ermengarde #0" = -1
+	"Filippa #0" = -1
 	"Maria #0" = -1
 	"Olinde #0" = -1
-	"Otto #0" = 15
-	"Plaisance #1" = -10
-	"Simon #1" = 20
-	"Steyn #0" = 10
-	"Wouter #0" = 0
 }
 leader_names = {
 	"Albers"

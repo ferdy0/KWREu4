@@ -28,34 +28,35 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Adone #0" = 0
-	"Alberto #4" = 25
-	"Alessandro #0" = 0
-	"Amedeo #1" = 10
-	"Anastasios #0" = 0
-	"Anselmo #0" = 0
-	"Augustu #0" = 0
-	"Bernardo #1" = 10
-	"Bertoldo #0" = 0
-	"Bonconte #1" = 10
 	"Bonifacio #2" = 30
-	"Carlo #0" = 0
-	"Cornelia #1" = -1
+	"Alberto #4" = 25
+	"Teobaldo #2" = 20
+	"Ugo #2" = 20
 	"Enrico #1" = 15
-	"Eugenia #1" = -1
-	"Everardo #0" = 0
+	"Walfredo #1" = 15
+	"Amedeo #1" = 10
+	"Bernardo #1" = 10
+	"Bonconte #1" = 10
 	"Gandolfo #1" = 10
-	"Gotefredo #0" = 0
 	"Michele #1" = 10
 	"Paolo #1" = 10
 	"Pietro #1" = 10
 	"Sigifredo #0" = 10
-	"Silvana #0" = -1
-	"Teobaldo #2" = 20
 	"Ubaldo #0" = 10
-	"Ugo #2" = 20
 	"Vilfredo #1" = 10
-	"Walfredo #1" = 15
+	"Adone #0" = 0
+	"Alessandro #0" = 0
+	"Anastasios #0" = 0
+	"Anselmo #0" = 0
+	"Augustu #0" = 0
+	"Bertoldo #0" = 0
+	"Carlo #0" = 0
+	"Everardo #0" = 0
+	"Gotefredo #0" = 0
+	
+	"Cornelia #1" = -1
+	"Eugenia #1" = -1
+	"Silvana #0" = -1
 }
 leader_names = {
 	"Acquisti"

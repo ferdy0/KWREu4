@@ -43,7 +43,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		culture = swabian
 	}
 }
-1436.12.17= {
+1436.12.17 = {
 	monarch = {
 		name = "Jakob II"
 		dynasty = "von Ohningen"
@@ -60,6 +60,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		adm = 5
 		dip = 3
 		mil = 5
+		female = yes
 		country_of_origin = BRI
 		birth_date = 1405.9.2
 		death_date = 1465.9.2

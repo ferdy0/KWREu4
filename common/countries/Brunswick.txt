@@ -29,34 +29,35 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
+	"Magnus #7" = 40
+	"Bernhard #3" = 15
+	"Floribert #1" = 15
+	"Ludolf #1" = 15
+	"Wilbrand #0" = 15
 	"Albert #0" = 10
 	"Albert Magnus #0" = 10
-	"Antonius #0" = 0
-	"Baldwin #0" = 0
-	"Bernhard #3" = 15
 	"Bruno #0" = 10
-	"Christina #1" = -1
-	"Dervan #0" = 0
-	"Eberhard #0" = 0
-	"Eggerd #0" = 0
-	"Floribert #1" = 15
 	"Friedrich #0" = 10
 	"Friedrich Wilhelm #1" = 10
-	"Gerberga #0" = -1
 	"Heinrich #1" = 10
 	"Johannes Magnus #0" = 10
-	"Kaspar #0" = 0
-	"Ludolf #1" = 15
-	"Magnus #7" = 40
 	"Norbert #0" = 10
 	"Oscar #0" = 10
 	"Peter #0" = 10
-	"Reinmar #0" = 0
 	"Theodoric #1" = 10
-	"Wenzel #0" = 0
-	"Wilbrand #0" = 15
 	"Wilhelm #0" = 10
 	"Wilhelm Heinrich #0" = 10
+	"Antonius #0" = 0
+	"Baldwin #0" = 0
+	"Dervan #0" = 0
+	"Eberhard #0" = 0
+	"Eggerd #0" = 0
+	"Kaspar #0" = 0
+	"Reinmar #0" = 0
+	"Wenzel #0" = 0
+	
+	"Christina #1" = -1
+	"Gerberga #0" = -1
 }
 leader_names = {
 	"Brach"
