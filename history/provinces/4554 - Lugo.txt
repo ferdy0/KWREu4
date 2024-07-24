@@ -1,5 +1,5 @@
-owner = CAS
-controller = CAS
+owner = POR
+controller = POR
 capital = "Lugo"
 is_city = yes
 culture = sephardi
@@ -8,7 +8,7 @@ trade_goods = fish
 base_tax = 4
 base_production = 1
 base_manpower = 2
-add_core = CAS
+add_core = POR
 add_core = ISR
 discovered_by = east_african
 discovered_by = eastern
