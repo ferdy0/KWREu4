@@ -3,143 +3,85 @@ add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
 religion = catholic
-primary_culture = hessian
+primary_culture = dutch
 capital = 2975
-1394.1.1= {
+1363.2.14 = {
 	monarch = {
-		name = "Adolf"
-		dynasty = "von der Mark"
-		birth_date = 1373.8.2
+		name = "Heinrich III"
+		dynasty = "von Namen"
+		birth_date = 1351.8.30
 		adm = 2
 		dip = 4
 		mil = 2
+		religion = catholic
+		culture = hessian
 	}
-	clear_scripted_personalities = yes
-	add_ruler_personality = conqueror_personality
-	add_ruler_personality = greedy_personality
-	add_ruler_personality = architectural_visionary_personality
 }
-1419.2.16= {
-	heir = {
-		name = "Johann"
-		monarch_name = "Johann I"
-		dynasty = "von der Mark"
-		birth_date = 1419.2.16
-		death_date = 1481.9.5
-		claim = 95
-		adm = 3
-		dip = 3
-		mil = 1
-	}
-	clear_scripted_personalities = yes
-	add_ruler_personality = conqueror_personality
-	add_ruler_personality = greedy_personality
-	add_ruler_personality = architectural_visionary_personality
-	add_heir_personality = well_connected_personality
-}
-1448.9.24= {
+1387.7.4 = {
 	monarch = {
-		name = "Johann I"
-		dynasty = "von der Mark"
-		birth_date = 1419.2.16
-		adm = 3
-		dip = 3
-		mil = 1
-	}
-	clear_scripted_personalities = yes
-	add_ruler_personality = well_connected_personality
-}
-1458.4.13= {
-	heir = {
-		name = "Johann"
-		monarch_name = "Johann II"
-		dynasty = "von der Mark"
-		birth_date = 1458.4.13
-		death_date = 1521.3.15
-		claim = 95
-		adm = 3
-		dip = 3
-		mil = 4
-		leader = {	name = "Johann II"             	type = general	fire = 3	shock = 2	manuever = 3	siege = 0}
+		name = "Jan II"
+		dynasty = "von Namen"
+		birth_date = 1377.4.8
+		adm = 2
+		dip = 4
+		mil = 2
+		religion = catholic
+		culture = dutch
 	}
 }
-1481.9.6= {
+1392.6.21 = {
 	monarch = {
-		name = "Johann II"
-		dynasty = "von der Mark"
-		birth_date = 1458.4.13
-		adm = 3
-		dip = 3
-		mil = 4
-		leader = {	name = "Johann II"             	type = general	fire = 3	shock = 2	manuever = 3	siege = 0}
+		name = "Albert III"
+		dynasty = "von Mansfeld"
+		birth_date = 1349.5.23
+		adm = 2
+		dip = 4
+		mil = 2
+		religion = catholic
+		culture = hessian
 	}
 }
-1490.11.10= {
-	heir = {
-		name = "Johann"
-		monarch_name = "Johann III"
-		dynasty = "von der Mark"
-		birth_date = 1490.11.10
-		death_date = 1539.2.6
-		claim = 95
-		adm = 3
+1422.7.19 = {
+	monarch = {
+		name = "Rüdiger III"
+		dynasty = "von Mansfeld"
+		birth_date = 1410.12.13
+		adm = 2
+		dip = 4
+		mil = 2
+		religion = catholic
+		culture = hessian
+	}
+	queen = {
+		name = "Juliane"
+		dynasty = "von Cappeln"
+		adm = 2
 		dip = 3
 		mil = 3
+		country_of_origin = REG
+		birth_date = 1406.5.14
+		death_date = 1466.5.14
+		female = yes
+		religion = catholic
+		culture = bavarian
 	}
 }
-1521.3.16= {
-	monarch = {
-		name = "Johann III"
-		dynasty = "von der Mark"
-		birth_date = 1490.11.10
+1429.2.16= {
+	heir = {
+		name = "Jan"
+		monarch_name = "Jan III"
+		dynasty = "von Mansfeld"
+		birth_date = 1429.2.16
+		death_date = 1491.9.5
+		claim = 95
 		adm = 3
 		dip = 3
-		mil = 3
-	}
-}
-1521.3.16= {
-	heir = {
-		name = "Wilhelm"
-		monarch_name = "Wilhelm der Reiche"
-		dynasty = "von der Mark"
-		birth_date = 1516.7.28
-		death_date = 1592.1.5
-		claim = 95
-		adm = 4
-		dip = 0
 		mil = 1
+		religion = catholic
+		culture = dutch
 	}
 }
-1539.2.6= {
-	monarch = {
-		name = "Wilhelm der Reiche"
-		dynasty = "von der Mark"
-		birth_date = 1516.7.28
-		adm = 4
-		dip = 0
-		mil = 1
-	}
-}
-1562.5.29= {
-	heir = {
-		name = "Johann Wilhelm"
-		monarch_name = "Johann Wilhelm"
-		dynasty = "von der Mark"
-		birth_date = 1562.5.29
-		death_date = 1609.3.25
-		claim = 95
-		adm = 1
-		dip = 4
-		mil = 1
-	}
-}
-1592.1.6= {
-	monarch = {
-		name = "Johann Wilhelm"
-		dynasty = "von der Mark"
-		birth_date = 1562.5.29
-		adm = 1
-		dip = 4
-		mil = 0
-	}
+1444.11.11= {
+	add_prestige = 76
+	add_treasury = 0
 }
