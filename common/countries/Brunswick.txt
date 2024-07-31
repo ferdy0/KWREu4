@@ -29,61 +29,50 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Magnus #7" = 40
-	"Bernhard #3" = 15
-	"Floribert #1" = 15
-	"Ludolf #1" = 15
-	"Wilbrand #0" = 15
-	"Albert #0" = 10
-	"Albert Magnus #0" = 10
-	"Bruno #0" = 10
-	"Friedrich #0" = 10
-	"Friedrich Wilhelm #1" = 10
-	"Heinrich #1" = 10
-	"Johannes Magnus #0" = 10
-	"Norbert #0" = 10
-	"Oscar #0" = 10
-	"Peter #0" = 10
-	"Theodoric #1" = 10
-	"Wilhelm #0" = 10
-	"Wilhelm Heinrich #0" = 10
-	"Antonius #0" = 0
-	"Baldwin #0" = 0
-	"Dervan #0" = 0
-	"Eberhard #0" = 0
-	"Eggerd #0" = 0
-	"Kaspar #0" = 0
-	"Reinmar #0" = 0
-	"Wenzel #0" = 0
-	
+	"Antoni #0" = 0
+	"Balduin #0" = 0
+	"Bruno #4" = 10
+	"Blazej #0" = 0
 	"Christina #1" = -1
+	"Dervan #0" = 0
+	"Eggerd #0" = 0
+	"Egilmar #0" = 0
+	"Ekbert #1" = 10
+	"František #1" = 10
 	"Gerberga #0" = -1
+	"Jaspar #0" = 0
+	"Kasimir #1" = 10
+	"Krzeslaw #0" = 0
+	"Ludolf #3" = 10
+	"Luidolf #1" = 10
+	"Magnus #2" = 10
+	"Peter #1" = 10
+	"Reinmar #0" = 0
+	"Rostislav #0" = 0
+	"Salomea #0" = -1
+	"Sigward #1" = 10
+	"Svietoslav #0" = 0
+	"Theodoric #1" = 10
+	"Walenty #0" = 0
+	"Werneke #0" = 0
+	"Zdenek #0" = 0
 }
 leader_names = {
 	"Brach"
 	"Eickenroth"
 	"Gruebel"
-	"Hauteville-Catanzaro"
 	"Hattendorf"
 	"Hehn"
 	"Hein"
 	"Ickelrath"
 	"Jaxtheim"
 	"Lindemann"
-	"Oeningen"
+	"Opp"
 	"Schauseil"
 	"Schütze"
 	"Talken"
 	"Wassman"
-	"von Braunschweig"
-	"von Bruchhausen"
-	"von Klingenburg"
 	"von Rhein"
-	"von Schwalenberg"
-	"von Tecklenburg"
-	"von Wettin"
-	"von Weyhe"
-	"von Wunstorf"
 }
 ship_names = {
 	"Albert I"

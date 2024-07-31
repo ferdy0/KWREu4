@@ -30,29 +30,50 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Heinrich #7" = 50
-	"Wolfram #3" = 30
-	"Andreas #2" = 20
-	"Ezio #1" = 20
-	"Konrad #0" = 20
-	"Lambert #2" = 20
-	"Alvin #0" = 10
+	"Adelia #0" = -1
+	"Andreas #1" = 10
+	"Anno #1" = 10
 	"Arnulf #2" = 10
-	"Hänsel #0" = 10
-	"Otto #2" = 10
-	"Cosimo #0" = 0
+	"Berengar #1" = 10
+	"Berthold #1" = 10
+	"Dietrich #1" = 10
+	"Eberhard #1" = 10
+	"Ekbert #0" = 0
+	"Engelbert #1" = 10
+	"Ernst #2" = 10
+	"Federigo #0" = 0
+	"Garibald #2" = 10
 	"Gausbert #0" = 0
 	"Gebhard #0" = 0
-	"Isnard #0" = 0
-	"Ludwig #0" = 0
-	"Vinzenz #0" = 0
-	
-	"Adele #0" = -1
-	"Anna #0" = -1
-	"Helena #0" = -1
-	"Marcella #0" = -1
+	"Grifo #1" = 10
+	"Grimoald #1" = 10
+	"Heinrich #11" = 10
+	"Hugbert #1" = 10
+	"Jakusz #0" = 0
+	"Karl #2" = 10
+	"Kuno #1" = 10
+	"Lamberto #1" = 10
+	"Lantpert #1" = 10
+	"Lodovica #0" = -1
+	"Lothaire #1" = 10
+	"Louis #1" = 10
+	"Ludwig #3" = 10
+	"Luitpold #1" = 10
+	"Lutbert #0" = 0
+	"Mario #0" = 0
+	"Obizzo #0" = 0
+	"Odilo #1" = 10
+	"Otto #2" = 10
 	"Salomea #0" = -1
+	"Sciarra #0" = 0
 	"Sofia #0" = -1
+	"Tassilo #3" = 10
+	"Theobald #1" = 10
+	"Theodbert #1" = 10
+	"Theodo #2" = 10
+	"Ubaldo #0" = 0
+	"Vinciguerra #0" = 0
+	"Wolfram #3" = 10
 }
 leader_names = {
 	"Dick"
@@ -68,10 +89,9 @@ leader_names = {
 	"Höhrer"
 	"Knörnschild"
 	"Langheinrich"
-	"Mastropiero"
+	"Maier"
 	"Narr"
 	"Ott"
-	"Pecoriari"
 	"Ranck"
 	"Rudl"
 	"Sack"
@@ -80,15 +100,9 @@ leader_names = {
 	"Seel"
 	"Sell"
 	"Söll"
-	"Swieca"
 	"Teichmann"
 	"Weinrich"
-	"de Caylus"
-	"della Faggiola"
-	"di Ocri"
-	"van Grimberghe"
-	"von Brunshorn"
-	"von Bogen"
+	"von Kulmbach"
 }
 ship_names = {
 	"Albrecht Achilles"

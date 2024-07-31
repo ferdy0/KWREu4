@@ -29,62 +29,48 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Christian #0" = 140
-	"Frederik #0" = 120
-	"Mózes #3" = 80
-	"Karl #1" = 25
-	"Benedikt #1" = 20
-	"Christoffer #0" = 20
-	"Erik #3" = 20
-	"Hans #0" = 20
-	"Abel #0" = 10
-	"Frode #0" = 10
-	"Helge #1"= 10
-	"Maximilian #0" = 10
-	"Niels #1" = 10
-	"Torben #0" = 10
-	"Ulrik #0" = 10
-	"Bjørn #0" = 5
-	"Wilhelm #0" = 5
-	"Harald #2" = 1
-	"Magnus #1" = 1
-	"Olaf #0" = 1
-	"Valdemar #0" = 1
-	"Alfred #0" = 0
-	"Anton #0" = 0
-	"Bent #0" = 0
-	"Emanuel #0" = 0
-	"Ernst #0" = 0
-	"Esben #0" = 0
-	"Frans #0" = 0
-	"Fritjof #0" = 0
-	"Gunnar #0" = 0
-	"Halfdan #0" = 0
-	"Henrik #0" = 0
-	"Holger #0" = 0
-	"Joachim #0" = 0
-	"Jørgen #0" = 0
-	"Kasper #0" = 0
-	"Peter #0" = 0
-	"Poul #0" = 0
-	"Rudolf #0" = 0
-	"Sigrun #0" = 0
-	"Stefan #0" = 0
-	"Tobias #0" = 0
-	"Torbald #0" = 0
-	"Viktor #0" = 0
-	"Vilfred #0" = 0
-	
-	"Anne #0" = -10
-	"Christina #0" = -10
-	"Margrete #0" = -10
-	"Sofie #0" = -5
+	"Alfhild #0" = -1
+	"Asger #0" = 0
+	"Asta #0" = -1
+	"Brwyn #0" = 0
+	"Dorothea #0" = -1
+	"Erik #2" = 10
+	"Freja #0" = -1
+	"Frode #0" = 0
+	"Gnupa #0" = 0
+	"Gorm #1" = 10
+	"Gottfried #0" = 0
 	"Grethe #0" = -1
-	"Lise #0" = -1
-	"Rune #0" = -1
-	"Sanna #0" = -1
+	"Gulnara #0" = -1
+	"Haraldr #2" = 10
+	"Helge #1" = 10
+	"Holger #0" = 0
+	"Hårik #0" = 0
+	"Ingeborg #0" = -1
+	"Johann #0" = 0
+	"Karl #1" = 10
+	"Knud #4" = 10
+	"Luitgard #0" = -1
+	"Léonard #0" = 0
+	"Magnus #1" = 10
+	"Milorad #0" = 0
+	"Mózes #2" = 10
+	"Oiva #0" = 0
+	"Orvar #0" = 0
+	"Popatraj #0" = 0
+	"Rikissa #0" = -1
+	"Rycheza #0" = -1
+	"Rørik #1" = 10
 	"Sigrid #0" = -1
-	"Wilhelmina #0" = -1
+	"Styrbjörn #0" = 0
+	"Svanhild #0" = -1
+	"Sveinn #1" = 10
+	"Svend #2" = 10
+	"Ture #0" = 0
+	"Vilfred #0" = 0
+	"Werneke #0" = 0
+	"Yngvar #0" = 0
+	"Ödgrim #0" = 0
 }
 leader_names = {
 	"Adeler"
@@ -98,7 +84,7 @@ leader_names = {
 	"Brock"
 	"Brockenhuus"
 	"Christiansen"
-	"Darre"
+	"Daa"
 	"Ebbesen"
 	"Eberstein"
 	"Ellbrecht"
@@ -107,11 +93,10 @@ leader_names = {
 	"Galt"
 	"Gersdorff"
 	"Gjedde"
-	"Glysing"
 	"Gyldenløve"
 	"Gyldenstjerne"
 	"Gøye"
-	"Hack"
+	"Harboe"
 	"Hardenberg"
 	"Holstein"
 	"Huitfeldt"
@@ -119,7 +104,6 @@ leader_names = {
 	"Høegh-Guldberg"
 	"Jensen"
 	"Juel"
-	"Juul"
 	"Kaas"
 	"Knudtzon"
 	"Krabbe"
@@ -149,17 +133,9 @@ leader_names = {
 	"Scholten"
 	"Sehested"
 	"Skram"
-	"Stenkiling"
-	"Sturlung"
-	"Svarte"
 	"Thomsen"
 	"Trolle"
 	"Ulfeldt"
-	"Vogelius-Bregne"
-	"Vogelius-Vorbasse"
-	"af Borgholm"
-	"von der Mark"
-	"von Jülich"
 	"von Trampe"
 }
 ship_names = {

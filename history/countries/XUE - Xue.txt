@@ -1,9 +1,0 @@
-government = monarchy
-add_government_reform = celestial_empire
-government_rank = 3
-technology_group = chinese
-religion = confucianism
-primary_culture = tibetan_new
-capital = 1821
-add_harmonized_religion = mahayana
-add_harmonized_religion = vajrayana

@@ -29,38 +29,37 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Ansgar #2" = 20
-	"Bonifaz #2" = 20
-	"Werigand #1" = 20
 	"Adalbert #2" = 10
-	"Berthold #1" = 10
-	"Heinrich #1" = 10
-	"Weickhard #1" = 10
 	"Amaneus #0" = 0
 	"Andreas #0" = 0
+	"Ansgar #2" = 10
 	"Aribo #0" = 0
-	"Ernst #0" = 0
-	"Leopold #0" = 0
+	"Beatrix #0" = -1
+	"Berthold #1" = 10
+	"Ernst #2" = 10
+	"Guigues #0" = 0
+	"Guntram #0" = 0
+	"Heinrich #1" = 10
+	"Hemma #0" = -1
+	"Hermígio #0" = 0
+	"Irmingard #0" = -1
+	"Lantpert #1" = 10
+	"Leopold #1" = 10
 	"Menendo #0" = 0
 	"Meshulam #0" = 0
-	"Sigismund #0" = 0
-	
-	"Adriana #0" = -1
-	"Agnes #0" = -1
-	"Argentina #0" = -1
-	"Beatrix #0" = -1
-	"Berenice #0" = -1
-	"Eugenia #0" = -1
-	"Hemma #0" = -1
-	"Irmingard #0" = -1
 	"Richenza #1" = -1
-	"Richgard #0" = -1
-	"Sybille #0" = -1
-	"Violante #0" = -1
+	"Salomea #0" = -1
+	"Sigismund #0" = 0
+	"Weickhard #1" = 10
+	"Werigand #1" = 10
 }
 leader_names = {
+	"Alvintzky"
 	"Arenberg"
-	"Biyomaal"
+	"Bethmann"
+	"Boroewitsch"
+	"Buseck"
+	"Byszynski"
 	"Casper"
 	"Erlmayr"
 	"Frantsits"
@@ -71,26 +70,38 @@ leader_names = {
 	"Ketterer"
 	"Kolin"
 	"Lobkowitz"
-	"Markgraf"
-	"Pomesania"
-	"Stein"
+	"Meinl"
+	"Minucci"
+	"Mittelbach"
+	"Poll"
+	"Sauerzapff"
+	"Schrüder"
+	"Seyssel"
+	"Steiger"
+	"Stichsenstein"
+	"Sulerzycki"
 	"Tegethoff"
 	"Zakrzewsky"
 	"Zwerger"
-	"Ben Yosef"
-	"d'Agen"
-	"de Castelo Branco"
-	"de Valladolid"
-	"von Ansbach"
-	"von Dachau"
-	"von Frontenhausen"
-	"von Gmünd"
-	"von Haugsdorf"
-	"von Hallstatt"
-	"von Plain"
-	"von Schweipünt"
-	"von Waidhofen"
-	"von Wangen"
+	"von Esterhazy"
+	"von Guttenberg"
+	"von Habsburg"
+	"von Hatzfeldt"
+	"von Hohenberg"
+	"von Ihering"
+	"von Kapfenberg"
+	"von Laudon"
+	"von Neippberg"
+	"von Oberg"
+	"von Quadt"
+	"von Riedesel"
+	"von Schwarzenberg"
+	"von Schönbrunn"
+	"von Schönburg"
+	"von Stark"
+	"von Stauffenberg"
+	"von Stubenrauch"
+	"von Waldstein"
 }
 ship_names = {
 	"Albatros"

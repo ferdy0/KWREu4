@@ -31,37 +31,40 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"François #0" = 60
-	"Jean #1" = 40
-	"Alan #6" = 30
-	"Alebrand #2" = 30
-	"Arthur #0" = 20
-	"Pierre #0" = 20
-	"Clamenç #0" = 10
-	"Henri #0" = 10
-	"Thierry #0" = 10
-	"Charles #0" = 5
-	"Gilles #0" = 5
-	"Richard #0" = 5
-	"Baudouin #0" = 0
+	"Anne #0" = -10
+	"Arthur #2" = 20
+	"Catherine #0" = -1
+	"Charles #1" = 5
+	"Claudine #0" = -10
 	"Corentin #0" = 0
 	"Deniel #0" = 0
 	"Dinan #0" = 0
 	"Erwan #0" = 0
-	"Gaël #0" = 0
-	"Gwenaël #0" = 0
+	"Fran0ois #0" = 60
+	"Ga0l #0" = 0
+	"Gilles #0" = 5
+	"Gwena0l #0" = 0
 	"Gwenneg #0" = 0
+	"Gwenola #0" = -1
+	"Gwenvred #0" = -10
 	"Gwilherm #0" = 0
+	"Henri #0" = 10
 	"Iouennic #0" = 0
-	"Loïc #0" = 0
+	"Isabelle #0" = -1
+	"Jean #4" = 40
+	"Lo0c #0" = 0
 	"Maeldan #0" = 0
+	"Marguerite #0" = -1
+	"Ma0lle #0" = -1
 	"Mikael #0" = 0
 	"Olier #0" = 0
 	"Padrig #0" = 0
 	"Paol #0" = 0
 	"Patern #0" = 0
 	"Pier #0" = 0
+	"Pierre #2" = 20
 	"Primel #0" = 0
+	"Richard #0" = 5
 	"Ronan #0" = 0
 	"Roparzh #0" = 0
 	"Servan #0" = 0
@@ -73,31 +76,18 @@ monarch_names = {
 	"Vonig #0" = 0
 	"Vougay #0" = 0
 	"Yann #0" = 0
-	
-	"Anne #0" = -10
-	"Claudine #0" = -10
-	"Gwenvred #0" = -10
-	"Catherine #0" = -1
-	"Gwenola #0" = -1
-	"Isabelle #0" = -1
-	"Marguerite #0" = -1
-	"Maëlle #0" = -1
 }
 leader_names = {
 	"Couasnon de la Barillière"
-	"Guennec"
-	"Hwicce-Évreux"
 	"Kalbean de Cardelan"
 	"Madec"
-	"Sant Nazar"
 	"d'Ancenis"
 	"d'Angennes"
-	"d'Auvergne"
+	"d'Argentré"
 	"d'Elbène"
 	"de Bain"
 	"de Beaudiez"
 	"de Beaumetz"
-	"de Bissy"
 	"de Boisguéhenneuc"
 	"de Bouëtiez"
 	"de Châteaubriand"
@@ -106,10 +96,8 @@ leader_names = {
 	"de Coëtivy"
 	"de Coëtmen"
 	"de Craon"
-	"de Dinan"
 	"de Dol"
 	"de Francheville"
-	"de Geneve"
 	"de Goulaine"
 	"de Gourcuff"
 	"de Halgoët"
@@ -127,12 +115,11 @@ leader_names = {
 	"de Malestroit"
 	"de Mercœur"
 	"de Monfort"
-	"de Nice"
 	"de Penguem"
 	"de Penhoadic"
 	"de Penthièvre"
-	"de Porhoët"
-	"de Riom"
+	"de Pontbriand"
+	"de Rieux"
 	"de Rodellec"
 	"de Rohan"
 	"de Roscoat"
@@ -151,8 +138,6 @@ leader_names = {
 	"de Vitré"
 	"de la Nouë-Bogat"
 	"de la Trémoille"
-	"Le Tellier"
-	"von Hoya"
 }
 ship_names = {
 	"l'Achille"

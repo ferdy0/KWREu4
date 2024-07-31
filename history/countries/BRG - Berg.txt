@@ -5,83 +5,84 @@ technology_group = western
 religion = catholic
 primary_culture = hessian
 capital = 84
-1359.2.9 = {
+1423.6.25= {
 	monarch = {
-		name = "Alwin I"
-		dynasty = "Etichonen"
-		birth_date = 1307.12.24
+		name = "Adolf VII"
+		dynasty = "von Jülich-Berg"
+		birth_date = 1370.1.1
 		adm = 3
 		dip = 3
 		mil = 3
-		religion = catholic
-		culture = hessian
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = well_connected_personality
 }
-1363.12.14 = {
-	monarch = {
-		name = "Pieter II"
-		dynasty = "Etichonen"
-		birth_date = 1331.3.10
-		adm = 3
-		dip = 3
-		mil = 3
-		religion = catholic
-		culture = hessian
-	}
-}
-1372.11.24 = {
-	monarch = {
-		name = "Alwin II"
-		dynasty = "Etichonen"
-		birth_date = 1349.4.16
-		adm = 3
-		dip = 3
-		mil = 3
-		religion = catholic
-		culture = hessian
-	}
-}
-1417.4.7 = {
-	monarch = {
-		name = "Wilhelm I"
-		dynasty = "Etichonen"
-		birth_date = 1408.10.16
-		adm = 3
-		dip = 3
-		mil = 4
-		religion = catholic
-		culture = hessian
-	}
-	queen = {
-		name = "Charlotte"
-		dynasty = "de Huy"
-		adm = 4
-		dip = 3
-		mil = 4
-		country_of_origin = LIE
-		birth_date = 1409.6.12
-		death_date = 1469.6.12
-		female = yes
-		religion = catholic
-		culture = wallonian
-	}
-}
-1435.1.9= {
+1416.1.1= {
 	heir = {
-		name = "Alwin"
-		monarch_name = "Alwin III"
-		dynasty = "Etichonen"
-		birth_date = 1435.1.9
-		death_date = 1491.9.6
+		name = "Gerhard"
+		monarch_name = "Gerhard I"
+		dynasty = "von Jülich-Berg"
+		birth_date = 1416.1.1
+		death_date = 1475.8.18
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+1437.7.14= {
+	monarch = {
+		name = "Gerhard I"
+		dynasty = "von Jülich-Berg"
+		birth_date = 1416.1.1
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+	clear_scripted_personalities = yes
+}
+1455.1.9= {
+	heir = {
+		name = "Wilhelm"
+		monarch_name = "Wilhelm III"
+		dynasty = "von Jülich-Berg"
+		birth_date = 1455.1.9
+		death_date = 1511.9.6
 		claim = 95
 		adm = 3
 		dip = 3
 		mil = 3
-		religion = catholic
-		culture = wallonian
 	}
 }
-1444.11.11= {
-	add_prestige = 68
-	add_treasury = 55
+1475.8.18= {
+	monarch = {
+		name = "Wilhelm III"
+		dynasty = "von Jülich-Berg"
+		birth_date = 1455.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+1806.3.15= {
+	monarch = {
+		name = "Joachim"
+		dynasty = "Murat"
+		birth_date = 1767.3.25
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+1809.3.17= {
+	monarch = {
+		name = "Louis I"
+		culture = sardinian #Corsican
+		religion = catholic
+		dynasty = "Bonaparte"
+		birth_date = 1804.10.11
+		adm = 3
+		dip = 3
+		mil = 2
+	}
 }

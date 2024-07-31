@@ -1,5 +1,5 @@
-owner = ORL
-controller = ORL
+owner = BUR
+controller = BUR
 capital = "Bourges"
 is_city = yes
 culture = cosmopolitan_french
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 5
 base_production = 4
 base_manpower = 2
-add_core = ORL
+add_core = BUR
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

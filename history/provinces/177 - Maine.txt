@@ -1,5 +1,5 @@
-owner = NRM
-controller = NRM
+owner = FRA
+controller = FRA
 capital = "Le Mans"
 is_city = yes
 culture = normand
@@ -8,6 +8,7 @@ trade_goods = cloth
 base_tax = 2
 base_production = 4
 base_manpower = 3
+add_core = FRA
 add_core = NRM
 discovered_by = east_african
 discovered_by = eastern

@@ -1,21 +1,53 @@
 government = republic
 add_government_reform = free_city
 government_rank = 1
-mercantilism = 25
 technology_group = western
 religion = catholic
 primary_culture = prussian
 capital = 43
-fixed_capital = 43
-1399.1.1 = {
+1444.11.11= {
 	monarch = {
-		name = "Stadtrat"
+		name = "Bohdan"
+		dynasty = "Hunfriding-Ziethen"
+		adm = 3
+		dip = 4
+		mil = 4
+		birth_date = 1382.8.14
+		religion = catholic
+		culture = old_pommeranian
+	}
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = entrepreneur_personality
+	queen = {
+		name = "Sofie"
+		dynasty = "von Heldrungen"
 		adm = 3
 		dip = 3
 		mil = 3
-		regent = yes
+		country_of_origin = DNZ
+		birth_date = 1422.1.20
+		death_date = 1482.1.20
+		female = yes
+		religion = catholic
+		culture = franconian
 	}
-}
+	add_queen_personality = calm_personality
+	add_queen_personality = tactical_genius_personality
+	heir = {
+		name = "Wladyslaw"
+		monarch_name = "Wladyslaw"
+		dynasty = "Hunfriding-Ziethen"
+		adm = 2
+		dip = 6
+		mil = 6
+		birth_date = 1407.10.21
+		death_date = 1472.10.21
+		claim = 89
+		religion = catholic
+		culture = old_pommeranian
+	}
+	add_heir_personality = silver_tongue_personality
+	add_heir_personality = tolerant_personality
 }
 1444.11.11= {
 	add_prestige = 87

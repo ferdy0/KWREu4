@@ -1,18 +1,3 @@
-tibetan_empire_local = {
-	rank = {
-		3 = EMPIRE
-	}
-	ruler_male = {
-		3 = PENDEN
-	}
-	ruler_female = {
-		3 = PENDEN_fem
-	}
-	trigger = {
-		tag = TIB
-		government = monarchy
-	}
-}
 grand_duchy_monarchy = {
 	rank = {
 		1 = GRAND_DUCHY

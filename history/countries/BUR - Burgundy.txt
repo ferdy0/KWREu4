@@ -28,6 +28,8 @@ capital = 192
 		religion = catholic
 		culture = burgundian
 	}
+	add_ruler_personality = secretive_personality
+	add_ruler_personality = silver_tongue_personality
 	queen = {
 		name = "Bona"
 		dynasty = "Capraia"
@@ -41,6 +43,8 @@ capital = 192
 		religion = catholic
 		culture = neapolitan
 	}
+	add_queen_personality = free_thinker_personality
+	add_queen_personality = intricate_web_weaver_personality
 }
 1410.3.3 = {
 	heir = {
@@ -56,6 +60,8 @@ capital = 192
 		religion = catholic
 		culture = burgundian
 	}
+	add_heir_personality = cruel_personality
+	add_heir_personality = infertile_personality
 }
 1444.11.11= {
 	add_prestige = 73
