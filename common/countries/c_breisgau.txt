@@ -2,31 +2,94 @@ ck2_converter_generated = yes
 graphical_culture = westerngfx
 color = { 185 185 200 }
 monarch_names = {
-	"Adam #0" = 0
+	"Bernhard #0" = 70
+	"Jakob #1" = 60
+	"Christoph #0" = 40
+	"Karl #0" = 40
+	"Philipp #0" = 30
+	"August Georg #0" = 20
+	"Ernst Friedrich #0" = 20
+	"Georg Friedrich #0" = 20
+	"Karl Friedrich #0" = 20
+	"Ludwig #0" = 20
+	"Ludwig Georg #0" = 20
+	"Ludwig Wilhelm #0" = 20
+	"Philibert #0" = 20
+	"Wilhelm #0" = 20
+	"Ferdinand Maximilian #0" = 15
+	"Karl Joseph #0" = 15
+	"Karl Leopold #0" = 15
+	"Karl Ludwig #0" = 15
+	"Leopold Wilhelm #0" = 15
+	"Wilhelm Georg #0" = 15
+	"Albrecht #0" = 10
+	"Albrecht Karl #0" = 10
 	"Ansgar #1" = 10
-	"Berchte #1" = -1
 	"Berthold #1" = 10
-	"Centule #0" = 0
+	"Emmerich #0" = 10
+	"Ernst #0" = 10
+	"Folkhard #1" = 10
+	"Georg #0" = 10
+	"Johann #0" = 10
+	"Johann Karl #0" = 10
+	"Markus #0" = 10
+	"Philipp Siegmund #0" = 10
+	"Rudolf #0" = 10
+	"Stefan #1" = 10
+	"Theobald #1" = 10
+	"Welf #0" = 10
+	"Wilhelm Ludwig #0" = 10
+	"Wolfgang #0" = 10
+	"Adam #0" = 0
 	"Dietwin #0" = 0
 	"Ekbert #0" = 0
-	"Elisabeth #0" = -1
-	"Emmerich #0" = 0
-	"Emmo #0" = 0
-	"Engeltraud #0" = -1
-	"Folkhard #1" = 10
+	"Erich #0" = 0
 	"Franz #0" = 0
-	"Gertrud #0" = -1
 	"Gottschalk #0" = 0
-	"Gotzelo #0" = 0
+	"Gregor #0" = 0
 	"Günther #0" = 0
-	"Jakob #1" = 10
-	"Karlmann #0" = 0
+	"Isaak #0" = 0
+	"Oskar #0" = 0
+	"Wolfram #0" = 0
+	
+	"Berchte #1" = -1
+	"Dorothea #0" = -1
+	"Elisabeth #0" = -1
+	"Gertrud #0" = -1
+	"Henriette #0" = -1
+	"Ingeltrude #0" = -1
 	"Katharina #0" = -1
-	"Lothar #1" = 10
 	"Richenza #1" = -1
-	"Stefan #1" = 10
-	"Teobaldo #1" = 10
-	"Udalrich #1" = 10
-	"Unruoch #1" = 10
-	"Welf #1" = 10
+	"Sofie #0" = -1
+}
+leader_names = {
+	"Albers"
+	"Beer"
+	"Benthens"
+	"Breh"
+	"Bächtold"
+	"Eisenkolb"
+	"Erb"
+	"Ferstenfeld"
+	"Fischer"
+	"Grether"
+	"Göhringer"
+	"Heitzmann"
+	"Helff"
+	"Kempf"
+	"Klee"
+	"Mackensen"
+	"Oeningen"
+	"Römermann"
+	"Scarponnois"
+	"Tientchen"
+	"Wachsmuth"
+	"van Heemskerk"
+	"von Grenchen"
+	"von Bern"
+	"von Baden"
+	"von Offenburg"
+	"von Schmidtburg"
+	"von Zähringen"
+	"von Österreich"
 }

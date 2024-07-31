@@ -3,24 +3,60 @@ add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
 religion = catholic
-primary_culture = sorbian
+primary_culture = lower_saxon
 capital = 4772
 fixed_capital = 4772
-add_accepted_culture = lower_saxon
-1444.11.11= {
+1358.3.3 = {
 	monarch = {
-		name = "(Regency Council)"
+		name = "Floribert I"
+		dynasty = "von Tecklenburg"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1342.6.6
+		religion = catholic
+		culture = lower_saxon
+	}
+}
+1362.5.18 = {
+	monarch = {
+		name = "Magnus VII"
+		dynasty = "von Oldenburg"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1336.3.3
+		religion = catholic
+		culture = lower_saxon
+	}
+}
+1388.9.22 = {
+	monarch = {
+		name = "Benedikt I"
+		dynasty = "von Oldenburg"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1365.4.20
+		religion = catholic
+		culture = lower_saxon
+	}
+}
+1433.12.15 = {
+	monarch = {
+		name = "Friedrich Wilhelm I"
+		dynasty = "von Oldenburg"
 		adm = 3
 		dip = 4
 		mil = 3
-		birth_date = 1.1.1
-		regent = yes
+		birth_date = 1400.4.14
 		religion = catholic
-		culture = sorbian
+		culture = lower_saxon
 	}
 	heir = {
-		name = "František"
-		dynasty = "z Liubic"
+		name = "Baldwin"
+		monarch_name = "Baldwin I"
+		dynasty = "von Oldenburg"
 		adm = 5
 		dip = 6
 		mil = 5
@@ -28,7 +64,7 @@ add_accepted_culture = lower_saxon
 		death_date = 1494.5.30
 		claim = 89
 		religion = catholic
-		culture = sorbian
+		culture = lower_saxon
 	}
 }
 1444.11.11= {

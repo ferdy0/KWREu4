@@ -4,6 +4,7 @@ government_rank = 3
 technology_group = eastern
 religion = orthodox
 primary_culture = serbian
+historical_friend = KOJ
 capital = 1827
 add_accepted_culture = anatolian
 1362.6.14 = {

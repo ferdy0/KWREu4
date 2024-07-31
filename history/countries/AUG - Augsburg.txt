@@ -3,26 +3,62 @@ add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
 religion = catholic
-primary_culture = italian
+primary_culture = swabian
 capital = 1868
 add_accepted_culture = austrian
-add_accepted_culture = swabian
-1444.11.11= {
+1366.10.23 = {
 	monarch = {
-		name = "Corrado II"
+		name = "Abelina I"
 		dynasty = "Capraia"
 		adm = 4
 		dip = 4
 		mil = 5
-		birth_date = 1402.4.3
+		birth_date = 1331.4.27
+		female = yes
 		religion = catholic
 		culture = italian
 	}
-	add_ruler_personality = benevolent_personality
-	add_ruler_personality = drunkard_personality
+}
+1390.4.24 = {
+	monarch = {
+		name = "Theodor I"
+		dynasty = "von Bucheck"
+		adm = 4
+		dip = 4
+		mil = 5
+		birth_date = 1348.5.27
+		religion = catholic
+		culture = swabian
+	}
+}
+1391.9.4 = {
+	monarch = {
+		name = "Konrad IV"
+		dynasty = "von Bucheck"
+		adm = 4
+		dip = 4
+		mil = 5
+		birth_date = 1369.7.25
+		religion = catholic
+		culture = swabian
+	}
+}
+1393.10.4 = {
+	monarch = {
+		name = "Bertold II"
+		dynasty = "von Bucheck"
+		adm = 4
+		dip = 4
+		mil = 5
+		birth_date = 1393.7.16
+		religion = catholic
+		culture = swabian
+	}
+}
+1402.3.7 = {
 	queen = {
 		name = "Richwara"
-		dynasty = "Habsburg-Mürzzuschlag"
+		dynasty = "von Habsburg"
 		adm = 4
 		dip = 4
 		mil = 5
@@ -31,14 +67,14 @@ add_accepted_culture = swabian
 		death_date = 1462.3.7
 		female = yes
 		religion = catholic
-		culture = bavarian
+		culture = austrian
 	}
-	add_queen_personality = careful_personality
-	add_queen_personality = tolerant_personality
+}
+1420.4.27 = {
 	heir = {
-		name = "Abelina"
-		monarch_name = "Abelina"
-		dynasty = "Capraia"
+		name = "Mechthild"
+		monarch_name = "Mechthild I"
+		dynasty = "von Bucheck"
 		adm = 6
 		dip = 6
 		mil = 6
@@ -47,10 +83,8 @@ add_accepted_culture = swabian
 		female = yes
 		claim = 89
 		religion = catholic
-		culture = italian
+		culture = swabian
 	}
-	add_heir_personality = craven_personality
-	add_heir_personality = free_thinker_personality
 }
 1444.11.11= {
 	add_prestige = 76

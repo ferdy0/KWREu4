@@ -30,33 +30,45 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Agnese #0" = -1
-	"Bretislav #0" = 0
-	"Ceh #0" = 0
-	"Foulques #0" = 0
-	"Gaudenty #0" = 0
-	"Gero #1" = 10
+	"Robrecht #4" = 50
+	"Kasimir #2" = 30
+	"Wilhelm #1" = 30
+	"Wilhelm Kasimir #1" = 30
+	"Andreas #1" = 20
+	"Ernst Kasimir #0" = 20
+	"Sebastian #2" = 20
+	"Milan #1" = 15
+	"Damaes #0" = 10
+	"Kaspar #1" = 10
+	"Niklaus #0" = 10
+	"Otto #1" = 10
+	"Fulco #0" = 0
+	"Gaudentius #0" = 0
+	"Gerhardt #0" = 0
 	"Jaromir #0" = 0
-	"Kasimir #2" = 10
-	"Kasper #1" = 10
-	"Kornel #2" = 10
-	"Krystyna #0" = -1
-	"Lucjan #1" = 10
-	"Marek #1" = 10
-	"Margherita #0" = -1
 	"Martin #0" = 0
 	"Mateusz #0" = 0
 	"Meinhard #0" = 0
-	"Miloslav #1" = 10
-	"Milosz #1" = 10
-	"Mscislav #1" = 10
-	"Odo #1" = 10
-	"Pribislav #1" = 10
-	"Radomira #0" = -1
+	"Radomir #0" = 0
 	"Ratibor #0" = 0
-	"Robrecht #3" = 10
-	"Thietmar #1" = 10
-	"Willem #1" = 10
+	"Thietmar #0" = 0
+	"Waldemar #0" = 0
+	"Wenzeslaus #0" = 0
+	
+	"Angelina #0" = -1
+	"Beatrix #0" = -1
+	"Cäcilia #0" = -1
+	"Eva #0" = -1
+	"Jacobine #0" = -1
+	"Katarina #0" = -1
+	"Kornelia #0" = -1
+	"Margharetha #0" = -1
+	"Maria #0" = -1
+	"Milena #1" = -1
+	"Octavia #0" = -1
+	"Radomira #0" = -1
+	"Sofia #0" = -1
+	"Vera #0" = -1
 }
 leader_names = {
 	"Arnim"
@@ -67,23 +79,28 @@ leader_names = {
 	"Briesen"
 	"Casimir"
 	"Cisielsky"
+	"Dmowski"
 	"Finck"
+	"Gryfita"
 	"Höltzendorff"
 	"Knobelsdorf"
 	"Kreytz"
 	"Linkendorf"
+	"Lodzia"
 	"Münchov"
 	"Perlkowski"
 	"Posadofsky"
-	"Riwotzki"
+	"Roztoki"
 	"Schach"
 	"Schnittern"
 	"Selasinky"
 	"Treskaw"
 	"Truxes"
 	"Ucklanski"
+	"Vognsen"
 	"Zitzwitz"
-	"von Anhalt-Dessau"
+	"von Altenburg"
+	"von Arnstein"
 	"von Bimback"
 	"von Bühler"
 	"von Derfflinger"
@@ -92,6 +109,7 @@ leader_names = {
 	"von Hohenlohe"
 	"von Hohenzollern"
 	"von Kyau"
+	"von Leiningen"
 	"von Mach"
 	"von Manstein"
 	"von Merckatz"
@@ -102,12 +120,13 @@ leader_names = {
 	"von Rauch"
 	"von Rottenburg"
 	"von Rüts"
-	"von Schwerin"
+	"von Schwedt"
 	"von Seel"
 	"von Stille"
 	"von Taubeneck"
 	"von Wermsdorff"
 	"von Ziethen"
+	"ze Slupska"
 }
 ship_names = {
 	"Afrikaner"

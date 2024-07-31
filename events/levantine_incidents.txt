@@ -1,0 +1,29 @@
+namespace = levantine
+
+# Set isolationism to the Levantine ones
+
+country_event = {
+    id = levantine.1
+    title = levantine.1.t
+    desc = levantine.1.d
+    picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+
+    trigger = {
+        religion = converted_dynamic_faith_113
+        NOT = { has_country_flag = levantine_isolationism_set }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    immediate = {
+        hidden_effect = {
+            set_country_flag = levantine_isolationism_set
+        }
+    }
+
+    option = {
+        add_isolationism = 3
+    }
+}

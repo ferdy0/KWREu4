@@ -30,44 +30,52 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Adalbert #4" = 10
-	"Albrecht #0" = 0
-	"Azzo #0" = 0
-	"Beatrix #1" = -1
-	"Bonifazio #2" = 10
+	"Bonifaz #3" = 50
+	"Viktor #1" = 50
+	"Albrecht #0" = 20
+	"Markwart #1" = 20
+	"Ruprecht #1" = 20
+	"Azzone #1" = 10
+	"Bruno #0" = 10
+	"Eriprando #0" = 10
+	"Ludwig #1" = 10
+	"Opizzino #0" = 10
 	"Cataldo #0" = 0
-	"Eberhard #1" = 10
 	"Ekbert #0" = 0
 	"Ekkehard #0" = 0
 	"Hatto #0" = 0
-	"Hemma #1" = -1
 	"Hugbert #0" = 0
 	"Ludolf #0" = 0
-	"Ludwig #1" = 10
-	"Markwart #1" = 10
 	"Philipp #0" = 0
-	"Richwara #0" = -1
-	"Roberto #1" = 10
-	"Salinguerra #0" = 0
-	"Seburg #0" = -1
-	"Sieghard #4" = 10
 	"Stephan #0" = 0
-	"Viktor #1" = 10
-	"Vittorio #1" = 10
-	"Wartrun #0" = -1
 	"Welf #0" = 0
 	"Wernhard #0" = 0
+	
+	"Beatrix #1" = -1
+	"Cäcilia #0" = -1
+	"Ermenegilda #0" = -1
+	"Hemma #1" = -1
+	"Hildeburg #0" = -1
+	"Hildegarde #0" = -1
+	"Maria #0" = -1
+	"Richwara #0" = -1
+	"Seburg #0" = -1
+	"Sophia #0" = -1
+	"Susanna #0" = -1
+	"Wartrun #0" = -1
 }
 leader_names = {
 	"Dick"
 	"Dietsch"
 	"Däumler"
 	"Ernst"
+	"Fibonacci"
 	"Fichtelmann"
 	"Fischer"
 	"Franck"
 	"Födisch"
 	"Grimm"
+	"Gualch"
 	"Hofmann"
 	"Höhrer"
 	"Knörnschild"
@@ -85,11 +93,24 @@ leader_names = {
 	"Söll"
 	"Teichmann"
 	"Weinrich"
+	"de Castro Arquato"
+	"di Cutroni"
+	"von Andernach"
+	"von Beetzen"
+	"von Calw"
+	"von Eurasburg"
+	"von Landsberg"
+	"von Meissen"
+	"von Nörvenich"
+	"von Sulzbach"
+	"von Uffenheim"
+	"von Weinsberg"
+	"von Wittelsbach"
+	"von Zähringen"
 }
 ship_names = {
 	"Albrecht Achilles"
 	"Bayreuth"
-	"Friedrich V"
 	"Friedrich von Ansbach"
 	"Georg"
 	"Georg Friedrich"

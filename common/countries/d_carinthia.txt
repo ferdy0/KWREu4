@@ -1,45 +1,119 @@
 ck2_converter_generated = yes
 graphical_culture = easterngfx
 color = { 100 105 120 }
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
 monarch_names = {
-	"Adalbero #1" = 10
-	"Anselmo #1" = 10
-	"Arnulf #1" = 10
+	"Gotthard #1" = 30
+	"Matthias #1" = 30
+	"Eckhard #1" = 20
+	"Ernst #0" = 20
+	"Friedrich #0" = 20
+	"Isanrich #0" = 20
+	"Karl #0" = 20
+	"Wilhelm #0" = 20
+	"Johann Karl #0" = 15
+	"Leopold #0" = 15
+	"Cristoph #0" = 15
+	"Maximilian Ernst #1" = 15
+	"Albrecht #0" = 10
+	"Alexander #0" = 10
+	"Anselm #2" = 10
 	"Berthold #1" = 10
-	"Claudia #0" = -1
-	"Dietpold #0" = 0
-	"Dorota #1" = -1
-	"Eberhard #0" = 0
-	"Ekkehard #1" = 10
-	"Emund #1" = 10
-	"Gotthard #1" = 10
-	"Gundakar #1" = 10
-	"Heinrich #5" = 10
-	"Hermann #1" = 10
-	"Hoten #0" = 0
-	"Humbert #1" = 10
-	"Inko #0" = 0
-	"Isanrich #1" = 10
-	"Karlmann #1" = 10
+	"Heinrich #4" = 10
+	"Hoten #1" = 10
+	"Johann #0" = 10
 	"Konrad #3" = 10
-	"Ljubonega #0" = -1
-	"Markward #0" = 0
-	"Matilda #0" = -1
-	"Nikola #0" = 0
-	"Oda #1" = -1
-	"Orel #0" = 0
-	"Otbert #0" = 0
-	"Radan #0" = 0
-	"Radomir #0" = 0
-	"Ramhilde #0" = -1
-	"Rutger #0" = 0
-	"Sebimir #0" = 0
-	"Senica #0" = 0
-	"Serhilda #1" = -1
-	"Stana #0" = -1
+	"Leopold Wilhelm #0" = 10
+	"Nikola #0" = 10
+	"Rudolf #1" = 10
+	"Siegfried #0" = 10
 	"Theodorich #1" = 10
-	"Unislav #0" = 0
-	"Vidojko #0" = 0
+	"Wolfram #1" = 10
+	"Adalbert #0" = 0
+	"Aleramo #0" = 0
+	"Benedikt #0" = 0
+	"Bruno #0" = 0
+	"Clemens #0" = 0
+	"Eberhard #0" = 0
+	"Florian #0" = 0
+	"Gerhard #0" = 0
+	"Günther #0" = 0
+	"Immanuel #0" = 0
+	"Isidor #0" = 0
+	"Jakob #0" = 0
+	"Joachim #0" = 0
+	"Michael #0" = 0
+	"Oskar #0" = 0
+	"Otto #0" = 0
+	"Radomir #0" = 0
+	"Rutger #0" = 0
+	"Stefan #0" = 0
+	"Tomislav #0" = 0
+	"Viktor #0" = 0
 	"Vratislav #0" = 0
-	"Welf #1" = 10
+	"Wolfgang #0" = 0
+	
+	"Anna #0" = -10
+	"Ingelrade #1" = -10
+	"Mechthild #0" = -10
+	"Christine #0" = -1
+	"Claudia #0" = -1
+	"Dorothea #1" = -1
+	"Karolina #0" = -1
+	"Matilda #0" = -1
+	"Ramhilde #0" = -1
+}
+leader_names = { 
+	Absenger
+	Allmer
+	Almer
+	Altmann
+	Amtmann
+	Andreitsch
+	Arlitz
+	Fuchs
+	Goricko
+	Gorjancic
+	Grelle
+	Gross
+	Herndler
+	Hierzegger
+	Kozjansko
+	Lanz
+	Messner
+	Mura
+	Potetz
+	Prekmurjec
+	Rumeniv
+	Schmidtberger
+	Steinegger
+	Teubenbacher
+	Trenkler
+	Volk
+	Wergals
+	Zajc
+	Zingl
+	"von Andechs"
+	"von Daun"
+	"von Judenburg"
+	"von Lenzburg"
+	"von Magdeburg"
+	"von Spittal"
+	"von Stade"
+	"von Wolfsberg"
 }

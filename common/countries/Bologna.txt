@@ -28,37 +28,39 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Adalberto #1" = 10
-	"Adone #0" = 0
-	"Alberto #3" = 10
-	"Alessandro #0" = 0
+	"Bonifacio #2" = 30
+	"Alberto #4" = 25
+	"Teobaldo #2" = 20
+	"Ugo #2" = 20
+	"Enrico #1" = 15
+	"Walfredo #1" = 15
 	"Amedeo #1" = 10
+	"Bernardo #1" = 10
+	"Bonconte #1" = 10
+	"Gandolfo #1" = 10
+	"Michele #1" = 10
+	"Paolo #1" = 10
+	"Pietro #1" = 10
+	"Sigifredo #0" = 10
+	"Ubaldo #0" = 10
+	"Vilfredo #1" = 10
+	"Adone #0" = 0
+	"Alessandro #0" = 0
 	"Anastasios #0" = 0
 	"Anselmo #0" = 0
 	"Augustu #0" = 0
-	"Bernabò #1" = 10
-	"Bernardo #1" = 10
 	"Bertoldo #0" = 0
-	"Bohemond #0" = 0
-	"Bonifacio #2" = 10
+	"Carlo #0" = 0
+	"Everardo #0" = 0
+	"Gotefredo #0" = 0
+	
 	"Cornelia #1" = -1
 	"Eugenia #1" = -1
-	"Gandolfo #1" = 10
-	"Hucbald #1" = 10
-	"Ioannes #1" = 10
-	"Lodovica #1" = -1
-	"Michele #1" = 10
-	"Pietro #1" = 10
-	"Serhilda #0" = -1
 	"Silvana #0" = -1
-	"Teobaldo #2" = 10
-	"Ugo #2" = 10
-	"Ursus #2" = 10
-	"Vilfredo #1" = 10
-	"Walfredo #1" = 10
 }
 leader_names = {
 	"Acquisti"
+	"Adorno"
 	"Albergati"
 	"Aldrovandi"
 	"Alemani"
@@ -66,26 +68,20 @@ leader_names = {
 	"Angelelli"
 	"Ariosti"
 	"Attndolo"
-	"Bevilacqua"
+	"Beccaria"
 	"Bianchini"
 	"Bonasone"
 	"Boncompagni"
 	"Bovio"
 	"Budrioli"
 	"Buroni"
-	"Caccialupi"
-	"Campeggio"
-	"Caprara"
-	"Carracci"
-	"Casali"
+	"Caltanisetta"
 	"Chiodarolo"
 	"Coriolano"
 	"Cuniberti"
 	"Davia"
 	"Dotti"
-	"Facchinetti"
-	"Fancelli"
-	"Fantuzzi"
+	"Faliero"
 	"Felicini"
 	"Fibbia"
 	"Fioravanti"
@@ -124,7 +120,7 @@ leader_names = {
 	"Petraccini"
 	"Piatesi"
 	"Pizzardi"
-	"Poeti"
+	"Polentano"
 	"Primaticcio"
 	"Purghi"
 	"Ranuzzi"
@@ -139,27 +135,34 @@ leader_names = {
 	"Sandri"
 	"Sanuti"
 	"Savioli"
-	"Scappi"
+	"Scrovegni"
 	"Seccadenari"
 	"Spada"
 	"Tanari"
-	"Vitali"
-	"Vizzani"
+	"Visconti"
+	"Vistarini"
 	"Volta"
-	"Zambeccari"
+	"Zanardelli"
 	"Zovenzoni"
-	"da Calboli"
+	"d'Urbino"
+	"da Carmagnola"
 	"da Legnano"
 	"da Liezaris"
 	"da Marzano"
 	"da Montone"
+	"da Verucchio"
 	"dal Lino"
 	"de Berardi"
+	"della Torre"
 	"de' Bianchi"
 	"de' Buoi"
 	"de' Ravignani"
 	"dei Mardoli"
-	"di Cagli"
+	"di Bologna"
+	"di Castropola"
+	"di Maltraversi"
+	"di San Cassiano"
+	"di Serra"
 	"di Viadagola"
 }
 ship_names = {

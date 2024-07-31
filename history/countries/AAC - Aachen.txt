@@ -1,12 +1,19 @@
-government = monarchy
-add_government_reform = feudalism_reform
+government = republic
+add_government_reform = free_city
 government_rank = 1
+mercantilism = 25
 technology_group = western
 religion = catholic
-primary_culture = dynamic-franconian-culture-num1
-capital = 1878
-fixed_capital = 1878
-1444.11.11= {
-	add_prestige = 99
-	add_treasury = 101
+primary_culture = hessian
+capital = 1878	# Aachen
+fixed_capital = 1878 # Cannot move capital away from this province & no power cost to move to it
+
+1399.1.1 = {
+	monarch = {
+		name = "Stadtrat"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
 }
