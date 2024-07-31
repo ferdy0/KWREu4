@@ -1,5 +1,5 @@
-owner = ICE
-controller = ICE
+owner = NOR
+controller = NOR
 capital = "Akureyri"
 is_city = yes
 culture = icelandic
@@ -9,6 +9,7 @@ base_tax = 4
 base_production = 1
 base_manpower = 1
 add_core = ICE
+add_core = NOR
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
