@@ -31,47 +31,79 @@ historical_units = {
 	western_medieval_infantry
 }
 monarch_names = {
+	"Henry #0" = 100
+	"William #8" = 100
+	"Edward #2" = 80
+	"Robert #5" = 80
+	"Richard #1" = 60
+	"Charles #0" = 40
+	"James #0" = 40
+	"Simon #0" = 30
+	"Thomas #0" = 25
+	"Philip #0" = 20
+	"Roger #0" = 20
+	"Arthur #0" = 10
+	"Edgar #0" = 10
+	"Edmund #3" = 10
+	"John #0" = 10
+	"Laurence #0" = 10
+	"Walter #0" = 10
+	"David #0" = 5
+	"Geoffrey #0" = 5
+	"George #0" = 5
+	"Humphrey #0" = 5
+	"Stephen #0" = 5
 	"Adam #0" = 0
-	"Alastair #0" = 0
-	"Alice #1" = -1
-	"Bernat Amat #0" = 0
-	"Cecilia #0" = -1
-	"Damaes #1" = 10
-	"Eadgar #1" = 10
-	"Eadmund #2" = 10
-	"Eadred #1" = 10
-	"Eadward #2" = 10
-	"Eadwig #1" = 10
-	"Edith #0" = -1
-	"Eilífr #0" = 0
-	"Eleanor #1" = -1
-	"Elen #0" = -1
-	"Elizabeth #1" = -1
-	"Goina #0" = -1
-	"Guglielmo #1" = 10
-	"Haraldr #1" = 10
-	"Harold #1" = 10
+	"Alexander #0" = 0
+	"Albert #0" = 0
+	"Alfred #0" = 0
+	"Ambrose #0" = 0
+	"Andrew #0" = 0
+	"Anthony #0" = 0
+	"Archibald #0" = 0
+	"Arnold #0" = 0
+	"Benjamin #0" = 0
+	"Christopher #0" = 0
+	"Damian #0" = 0
+	"Daniel #0" = 0
+	"Ernest #0" = 0
+	"Francis #0" = 0
+	"Gerald #0" = 0
+	"Horatio #0" = 0
 	"Hugh #0" = 0
-	"Kenwa #0" = -1
-	"Knud #2" = 10
-	"Massimiliano #0" = 0
-	"Philip #0" = 0
-	"Philippa #0" = -1
-	"Robert #3" = 10
-	"Sveinn #1" = 10
-	"Thomas #0" = 0
-	"Waleran #0" = 0
-	"William #2" = 10
-	"Æthelræd #2" = 10
-	"Æthelstan #1" = 10
+	"Isaac #0" = 0
+	"Jacob #0" = 0
+	"Jeremy #0" = 0
+	"Jonathan #0" = 0
+	"Joseph #0" = 0
+	"Lawrence #0" = 0
+	"Matthew #0" = 0
+	"Maurice #0" = 0
+	"Nehemiah #0" = 0
+	"Oliver #0" = 0
+	"Randel #0" = 0
+	"Samuel #0" = 0
+	"Sydney #0" = 0
+	
+	"Elizabeth #0" = -20
+	"Mary #0" = -20
+	"Anne #0" = -10
+	"Eleanore #0" = -10
+	"Isabel #0" = -10
+	"Jane #0" = -10
+	"Alice #0" = -1
+	"Amice #0" = -1
+	"Beatrice #0" = -1
+	"Joanna #0" = -1
+	"Margaret #0" = -1
 }
 leader_names = {
 	"Albemarle"
 	"Amherst"
 	"Anson"
 	"Baffin"
-	"Bedford"
-	"Benbow"
+	"Beckett"
+	"Belles-mains"
 	"Beresford"
 	"Blake"
 	"Boscawen"
@@ -82,9 +114,9 @@ leader_names = {
 	"Button"
 	"Byron"
 	"Cabot"
-	"Carleton"
+	"Camville"
 	"Cavendish"
-	"Clarence"
+	"Chesterfield"
 	"Clinton"
 	"Clive"
 	"Cook"
@@ -96,38 +128,44 @@ leader_names = {
 	"Drake"
 	"Essex"
 	"Fairfax"
-	"Frobisher"
+	"FitzMaud"
 	"Gilbert"
 	"Gloucester"
 	"Hastings"
 	"Hawke"
 	"Herbert"
 	"Hood"
-	"Howard"
-	"Howe"
-	"Hudson"
+	"Holland"
+	"Hwicce-Wigton"
+	"Ilchester"
+	"Jess"
 	"Leicester"
-	"Marlborough"
+	"Mathrafal-Ceafyrddin"
 	"Middleton"
 	"Moore"
 	"Norfolk"
 	"Northumberland"
 	"Procter"
 	"Raleigh"
-	"Rodney"
+	"Richmond"
 	"Rooke"
 	"Salisbury"
 	"Saunders"
 	"Smith"
 	"Somerset"
 	"Suffolk"
-	"Talbot"
-	"Tarleton"
+	"Thornham"
+	"Tonbridge"
+	"Tralee"
+	"Turberville"
 	"Uxbridge"
 	"Warwick"
-	"Wolfe"
-	"York"
-	"de Clifford"
+	"Winchcombe"
+	"d'Umfraville"
+	"de Brionne"
+	"de Crepon"
+	"de Vere"
+	"von Habsburg"
 }
 ship_names = {
 	"Abyssinia"

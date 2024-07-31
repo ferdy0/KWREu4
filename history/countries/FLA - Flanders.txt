@@ -4,4 +4,66 @@ government_rank = 1
 technology_group = western
 religion = catholic
 primary_culture = flemish
-capital = 1865
+capital = 88
+1355.8.31 = {
+	monarch = {
+		name = "Lodewijk"
+		dynasty = "d'Apremont"
+		adm = 6
+		dip = 5
+		mil = 5
+		birth_date = 1337.11.4
+		religion = catholic
+		culture = flemish
+	}
+}
+1386.3.4 = {
+	monarch = {
+		name = "Jan I"
+		dynasty = "d'Apremont"
+		adm = 6
+		dip = 5
+		mil = 5
+		birth_date = 1370.1.26
+		religion = catholic
+		culture = flemish
+	}
+}
+1432.2.28 = {
+	monarch = {
+		name = "Jan II"
+		dynasty = "d'Apremont"
+		adm = 3
+		dip = 5
+		mil = 3
+		birth_date = 1402.5.20
+		religion = catholic
+		culture = flemish
+	}
+	queen = {
+		name = "Alisce"
+		dynasty = "de Blaison"
+		adm = 3
+		dip = 4
+		mil = 4
+		country_of_origin = FRA
+		birth_date = 1403.8.22
+		death_date = 1473.8.22
+		female = yes
+		religion = catholic
+		culture = flemish
+	}
+	heir = {
+		name = "Willem"
+		monarch_name = "Willem I"
+		dynasty = "d'Apremont"
+		adm = 5
+		dip = 6
+		mil = 5
+		birth_date = 1421.5.12
+		death_date = 1486.5.12
+		claim = 89
+		religion = catholic
+		culture = flemish
+	}
+}

@@ -22,50 +22,84 @@ historical_units = {
 	muslim_mass_infantry
 }
 monarch_names = {
-	"Abdul #0" = 0
-	"Abdul-Jaleel #1" = 10
-	"Abdul-Qadir #0" = 0
-	"Abdullah #1" = 10
-	"Adesina #0" = -1
-	"Ako #0" = 0
-	"Azam #1" = 10
-	"Azeg #0" = 0
-	"Boleslava #0" = -1
-	"Böntsen #0" = 0
-	"Dhargey #0" = 0
-	"Jamshid #0" = 0
-	"Kahina #0" = -1
-	"Khaireddin #1" = 10
-	"Mansur #1" = 10
-	"Maryam #0" = -1
-	"Muhammad #1" = 10
-	"Parween #0" = -1
-	"Qawurd #0" = 0
-	"Ramadan #0" = 0
+	"'Alî #1" = 70
+	"Muhammad #1" = 70
+	"Mansur #2" = 40
+	"Yûsuf #2" = 40
+	"'Abd Allah #2" = 30
+	"Ahmad #2" = 20
+	"Yahyâ #0" = 20
+	"Zkariyâ' #0" = 20
+	"'Abd al-'Aziz #0" = 20
+	"'Abd al-Mu'min #0" = 20
+	"Hamûda #0" = 20
+	"Husayn #0" = 20
+	"'Usman #0" = 20
+	"Azam #1" = 15
+	"Bahir #0" = 15
+	"Faruk #1" = 15
+	"Khalil #0" = 15
+	"Ramadan #0" = 15
+	"Said #1" = 15
+	"Salih #0" = 15
+	"'Abd al-Qawi #0" = 10
+	"Isma'îl #1" = 10
+	"Murad #0" = 10
+	"Nasr #0" = 10
+	"Sa'daddin #0" = 10
+	"'Abd al-Jaleel #0" = 0
+	"Abû Bakr #0" = 0
+	"Ala ad-Din #0" = 0
+	"Butrus #0" = 0
+	"Fakhri #0" = 0
+	"Fayiz #0" = 0
+	"Hadj #0" = 0
+	"Hafiz #0" = 0
+	"Harun #0" = 0
+	"Hasan #0" = 0
+	"Hashim #0" = 0
+	"Ibrahim #0" = 0
+	"Ja'far #0" = 0
+	"Khaireddin #0" = 0
+	"Mahir #0" = 0
+	"Mahmud #0" = 0
+	"Mas'ud #0" = 0
+	"Mustafa #0" = 0
+	"Qadir #0" = 0
+	"Rasim #0" = 0
+	"Salah #0" = 0
+	"Shadi #0" = 0
+	"Tahir #0" = 0
+	"Torgud #0" = 0
+	
+	"Fatima #0" = -1
+	"Habiba #0" = -1
+	"Inas #0" = -1
+	"Kamala #0" = -1
+	"Layla #0" = -1
+	"Paymaneh #0" = -1
 	"Rasa #1" = -1
-	"Saaman #0" = -1
-	"Sajida #0" = -1
-	"Shararah #0" = -1
-	"Sheeftah #0" = -1
-	"Sibiri #0" = -1
-	"Uregh #0" = 0
-	"Uways #0" = 0
-	"Wouko #0" = 0
-	"Ya'qub #0" = 0
+	"Samira #0" = -1
+	"Setara #0" = -1
 	"Yasmin #0" = -1
-	"Yusuf #1" = 10
+	
 }
 leader_names = {
-	"Adhoum"
-	"Akimi"
+	"Arik"
+	"Azfavid"
 	"Badra"
 	"Bassir"
 	"Dali"
-	"Hakimi"
-	"Naybet"
-	"Saber"
-	"Sassi"
-	"Taher"
+	"Hallaj"
+	"Ketu"
+	"Minianka"
+	"Odegid"
+	"Qutalmish"
+	"Sabha"
+	"Sedkid"
+	"Tayebid"
+	"Toussiana"
+	"al-Marin"
 }
 ship_names = {
 	"Alim"

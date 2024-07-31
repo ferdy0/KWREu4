@@ -22,53 +22,105 @@ historical_units = {
 	muslim_mass_infantry
 }
 monarch_names = {
-	"Abdul #0" = 0
-	"Abdul-Haq #0" = 0
-	"Abdul-Madjid #0" = 0
-	"Abdul-Salaam #0" = 0
-	"Abu-Bakr #0" = 0
-	"Adnan #0" = 0
-	"Ahmad #1" = 10
-	"Akbar #0" = 0
-	"Alam #1" = 10
-	"Androus #1" = 10
-	"Anthinos #0" = 0
-	"Asim #1" = 10
-	"Badiat #0" = -1
-	"Bashir #0" = 0
-	"Bijjabbe #0" = -1
-	"Boutros #1" = 10
-	"Chibueze #0" = -1
+	"Da'oud #3" = 80
+	"Isma'îl #0" = 70
+	"Muhammad #1" = 70
+	"Ahmad #1" = 40
+	"Akbar #1" = 40
+	"Qânsawh #0" = 40
+	"Salim #0" = 40
+	"Tûmân Bay #0" = 40
+	"Yasr #0" = 40
+	"Zakariyah #1" = 40
+	"'Abd al-'Aziz #0" = 30
+	"'Alî #1" = 30
+	"Abu Mansur al-Nasr #0" = 30
+	"Mina #1" = 30
+	"Nabil #1" = 30
+	"Sha'bân #0" = 30
+	"'Abd al-Majid #2" = 25
+	"Abû Bakr #0" = 20
+	"Asim #1" = 20
+	"Inâl #0" = 20
+	"Khusqadam #0" = 20
+	"Murad #0" = 20
+	"al-Musta'in #0" = 20
+	"al-Nasr Faraj #0" = 20
+	"Barsbay #0" = 20
+	"Jaqmaq #0" = 20
+	"Jânbulât #0" = 20
+	"Qâyit Bay #0" = 20
+	"Shaik al-Mahmudi #0" = 20
+	"Timurbughâ #0" = 20
+	"'Uthman #0" = 20
+	"Yalbay #0" = 20
+	"Yûsuf #0" = 20
+	"al-Hakim #1" = 20
+	"az-Zahir #1" = 20
+	"Abisalom #0" = 15
+	"Barqûq #0" = 15
+	"Ridwan #0" = 15
+	"Walid #1" = 15
+	"al-Majid #0" = 15
+	"al-Mustansir #1" = 15
+	"Baybars #0" = 10
+	"Hâjjî #0" = 10
+	"Mahdi #0" = 10
+	"Tayyib #0" = 10
+	"al-Hasan #0" = 10
+	"Kûjûk #0" = 10
+	"Sâlih #0" = 10
+	"al-Mustali #0" = 10
+	"'Abd al-Malik #0" = 0
+	"Androus #0" = 0
+	"Basir #0" = 0
+	"Boutros #0" = 0
+	"Dawlat #0" = 0
 	"Fadl #0" = 0
-	"Faghira #0" = -1
-	"Jamila #0" = -1
-	"Khadija #0" = -1
-	"Mina #1" = 10
-	"Muammar #0" = 0
-	"Nabila #0" = -1
-	"Nassib #0" = 0
-	"Rafiqa #0" = -1
-	"Ridwan #0" = 0
-	"Robert #0" = 0
-	"Tamrust #0" = -1
-	"Yasmin #0" = -1
-	"Yazid #1" = 10
-	"Zakariyah #0" = 0
-	"al-Hakim #1" = 10
-	"al-Mustansir #1" = 10
-	"az-Zahir #1" = 10
+	"Ghayth #0" = 0
+	"Hatim #0" = 0
+	"Ilyas #0" = 0
+	"Jabir #0" = 0
+	"Jerjer #0" = 0
+	"Khalil #0" = 0
+	"Malik #0" = 0
+	"Nadim #0" = 0
+	"Nizar #0" = 0
+	"Qasim #0" = 0
+	"Sa'di #0" = 0
+	"Sayyid #0" = 0
+	"Usama #0" = 0
+	"Yunus #0" = 0
+	
+	"Shahira #0" = -1
+	"Yusra #0" = -1
+	"Asma #0" = -1
 }
 leader_names = {
 	"Ali"
 	"Aybak"
-	"Baibars"
-	"Bay"
+	"Badr"
+	"Banoubid"
 	"Bey"
 	"Bugha"
+	"Ghanemid"
 	"Inâl"
-	"Kansur"
-	"Sayfuddin"
+	"Jilani"
+	"Jukondarid"
+	"Kanzid"
+	"Ramzan"
+	"Sa'di"
+	"Shamyid"
 	"Zangi"
+	"Zurayid"
+	"al-Abaz"
+	"al-Athbej"
+	"al-Aziz"
+	"al-Bahur"
+	"al-Bashand"
+	"al-Bekhit"
+	"al-Hammad"
+	"al-Harar"
 }
 ship_names = {
 	"Ad-Däkhilah"

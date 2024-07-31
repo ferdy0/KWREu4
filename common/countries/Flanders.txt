@@ -1,7 +1,10 @@
-ck2_converter_generated = yes
+#Country Name: Please see filename.
+
 graphical_culture = westerngfx
-color = { 43 141 172 }
+
+color = { 43  141  172 }
 revolutionary_colors = { 1 8 5 }
+
 historical_idea_groups = {
 	trade_ideas
 	defensive_ideas
@@ -12,108 +15,132 @@ historical_idea_groups = {
 	exploration_ideas
 	economic_ideas
 }
+
 historical_units = {
-	austrian_grenzer
-	austrian_tercio
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
 	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
 	french_bluecoat
 	french_dragoon
 	french_impulse
 	mixed_order_infantry
-	napoleonic_lancers
-	napoleonic_square
 	open_order_cavalry
-	western_medieval_infantry
-	western_medieval_knights
-	western_men_at_arms
+	napoleonic_square
+	napoleonic_lancers
 }
+
 monarch_names = {
+	"Boudewijn #7" = 60
+	"Robert #2" = 60
+	"Arnulf #3" = 40
+	"Ekbert #1" = 20
+	"Filips #0" = 20
+	"Ijsbrecht #2" = 20
+	"Jan #2" = 20
+	"Lodewijk #1" = 20
+	"Reinoud #0" = 15
+	"Simon #1" = 15
+	"Karel #0" = 10
+	"Otto #0" = 10
+	"Sebastiaen #0" = 10
+	"Wolfard #0" = 10
+	"Antoon #0" = 5
+	"Diederik #0" = 5	
+	"Gwijde #0" = 5
+	"Rudolf #0" = 5
+	"Willem #0" = 5
 	"Abraham #0" = 0
+	"Adriaen #0" = 0
 	"Alexander #0" = 0
 	"Alfons #0" = 0
 	"Andries #0" = 0
-	"Antoon #0" = 5
-	"Arnolf #3" = 5
 	"Balthasar #0" = 0
 	"Bartholomeus #0" = 0
-	"Beatrix #0" = -1
-	"Boudewijn #9" = 5
 	"Christoffel #0" = 0
 	"Constantijn #0" = 0
 	"Cornelis #0" = 0
-	"Dani0l #0" = 0
+	"Daniël #0" = 0
 	"David #0" = 0
-	"Diederik #1" = 5
 	"Ernst #0" = 0
 	"Erwin #0" = 0
+	"Eudes #0" = 0
 	"Ewoud #0" = 0
-	"Filips #1" = 15
 	"Floris #0" = 0
 	"Gabriel #0" = 0
 	"Godfried #0" = 0
-	"Gwijde #1" = 5
+	"Guij #0" = 0
 	"Hans #0" = 0
 	"Jacob #0" = 0
-	"Jan #0" = 15
-	"Jeanne #0" = -1
-	"Karel #1" = 5
 	"Kasper #0" = 0
-	"Lodewijk #3" = 5
 	"Ludger #0" = 0
 	"Luuk #0" = 0
-	"Margareta #3" = -15
-	"Maria #0" = -5
 	"Marinus #0" = 0
-	"Matilda #0" = -1
 	"Pieter #0" = 0
 	"Renate #0" = 0
-	"Robrecht #3" = 5
-	"Rodolf #0" = 0
 	"Roeland #0" = 0
+	"Theodolf #0" = 0
 	"Valentijn #0" = 0
-	"Willem #2" = 5
-	"Yolande #2" = -1
+	
+	"Margareta #0" = -10
+	"Maria #0" = -5
+	"Beatrix #0" = -1
+	"Blanche #0" = -1
+	"Jeanne #0" = -1
+	"Judith #0" = -1
+	"Matilda #0" = -1
+	"Sophie #0" = -1
+	"Yolande #0" = -1
 }
+
 leader_names = {
-	"Dampierre"
-	"Deconinck"
-	"Goethals"
-	"Nevers"
-	"Penen"
-	"Van Bellegem"
-	"Van Gulik"
-	"Van Herstal"
-	"Van Leeuwergem"
-	"Van Lichtervelde"
-	"Van Nieuwland"
-	"Van Oudenaarde"
-	"Van Petershem"
-	"Van Raveschoot"
-	"Van Renesse"
+	Badewide
+	Dampierre
+	Deconinck
+	Goethals
+	Groth
+	Ledur
+	Montacute-Saintonge
+	Nevers
+	Penen
+	"d'Euse"
+	"de Laval"
+	"de la Rochelambert"
+	"van Bellegem"
+	"van Cuijck"
+	"van Gulik"
+	"van Heinsberg"
+	"van Keppel"
+	"van Leeuwergem"
+	"van Lichtervelde"
+	"van Nieuwland"
+	"van Oudenaarde"
+	"van Petershem"
+	"van Raveschoot"
+	"van Renesse"
+	"van Rheden"
+	"van Wesemael"
 }
+
 ship_names = {
-	"Antwerpen"
-	"Boudewijn I"
-	"Brugge"
+	Antwerpen
+	"Boudewijn I" Brugge
 	"De Vlaamse leeuw"
-	"Gent"
-	"Guldensporenslag"
-	"Gwijde van Dampierre"
-	"Hasselt"
+	Gent Guldensporenslag "Gwijde van Dampierre" 
+	Hasselt
 	"Jacob van Artevelde"
-	"Karel de Goede"
-	"Kerel van Vlaanderen"
-	"Leuven"
-	"Manneken Pis"
-	"Mechelen"
+	"Karel de Goede" "Kerel van Vlaanderen"
+	Leuven
+	"Manneken Pis" Mechelen
 	"Pieter de Coninck"
-	"Schelde"
+	Schelde
 	"Tijl Uilenspiegel"
-	"Vlaanderen"
+	Vlaanderen
 }
+
 army_names = {
-	"Leger van $PROVINCE$"
-}
-fleet_names = {
-	"Vloot van $PROVINCE$"
-}
+	"Leger van $PROVINCE$"  }
+
+fleet_names = {  "Vloot van $PROVINCE$" }

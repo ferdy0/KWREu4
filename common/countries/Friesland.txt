@@ -29,23 +29,67 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Adela #1" = -1
-	"Antoni #1" = 10
-	"Bavo #0" = 0
-	"Blanceflore #1" = -1
-	"Diederick #1" = 10
-	"Egmund #1" = 10
-	"Gawel #2" = 10
-	"Maertijn #1" = 10
-	"Rutger #0" = 0
-	"Wila #0" = -1
+	"Antoni #2" = 40
+	"Hendrik Casimir #0" = 40
+	"Willem #0" = 40
+	"Egmond #2" = 30
+	"Gawel #2" = 30
+	"Hans #2" = 30
+	"Albrecht #0" = 20
+	"Ernst Casimir #0" = 20
+	"Hendrik #0" = 20
+	"Johan Willem #0" = 20
+	"Joris #0" = 20
+	"Maertijn #1" = 20
+	"Willem Frederik #0" = 20
+	"Willem Lodewijk #0" = 20
+	"Diederick #2" = 15
+	"Willem Joris #0" = 15
+	"Johan Ernst #0" = 10
+	"Maurits #0" = 10
+	"Engelbrecht #0" = 5
+	"Floris #0" = 5
+	"Gerrit #0" = 5
+	"Koenraad #0" = 5
+	"Michael #0" = 5
+	"Waelram #0" = 5
+	"Enhard #0" = 0
+	"Fedde #0" = 0
+	"Fokke #0" = 0
+	"Friso #0" = 0
+	"Geldulf #0" = 0
+	"Gerulf #0" = 0
+	"Kai #0" = 0
+	"Klaes #0" = 0
+	"Lubbert #0" = 0
+	"Menfrid #0" = 0
+	"Reginar #0" = 0
+	"Reginhard #0" = 0
+	"Sibraht #0" = 0
+	"Siemen #0" = 0
+	"Sikke #0" = 0
+	"Sjoerd #0" = 0
+	"Tado #0" = 0
+	"Thiadulf #0" = 0
+	"Wiebe #0" = 0
+	"Wilbrand #0" = 0
+	
+	"Angelina #0" = -1
+	"Anne #0" = -1
+	"Emmelie #0" = -1
+	"Hendrike #0" = -1
+	"Isabelle #0" = -1
+	"Johanne #0" = -1
+	"Katrien #0" = -1
+	"Maria #0" = -1
+	"Rodelinde #0" = -1
+	"Wilhelmine #0" = -1
 }
 leader_names = {
 	"Banda"
 	"Barents"
 	"Bergsma"
 	"Bonga"
-	"De Vries"
 	"Donia"
 	"Dykstra"
 	"Eelsma"
@@ -69,12 +113,14 @@ leader_names = {
 	"Sems"
 	"Stellingwerf"
 	"Stiensma"
-	"Stijl"
+	"Sturlung"
 	"Sytstra"
 	"Tjerkstra"
-	"Van Schellinkhout"
-	"Van Uylenburgh"
 	"Wynja"
+	"de Vries"
+	"van Lathum"
+	"van Schellinkhout"
+	"van Uylenburgh"
 }
 ship_names = {
 	"Bernlef"

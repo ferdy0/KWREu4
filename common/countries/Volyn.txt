@@ -31,72 +31,101 @@ historical_units = {
 	slavic_stradioti
 }
 monarch_names = {
-	"Agafya #1" = -1
-	"Alcide #0" = 0
-	"Alexandr #0" = 0
-	"Alexandra #1" = -1
-	"Alexei #1" = 10
-	"Arsenios #1" = 10
-	"Davyd #0" = 0
-	"Dobrynia #0" = 0
-	"Ela #0" = -1
-	"Elena #0" = -1
-	"Eunike #1" = -1
-	"Gintaras #1" = 10
-	"Grzymislawa #0" = -1
-	"Ignatios #1" = 10
-	"Ingvar #0" = 0
-	"Konstantin #0" = 0
+	"Vladimir #0" = 70
+	"Yuriy #2" = 50
+	"Arseniy #1" = 40
+	"Ignatiy #1" = 30
+	"Voislav #2" = 30
+	"Mikhail #0" = 20
+	"Rafail #0" = 20
+	"Vsevolod #0" = 20
+	"Davyd #0" = 15
+	"Kyros #0" = 15
+	"Stephan #0" = 15
+	"Andrei #0" = 10
+	"Boris #0" = 10
+	"Germanos #0" = 10
+	"Grigoriy #0" = 10
+	"Igor #0" = 10
+	"Ivan #0" = 10
+	"Lazaros #0" = 10
 	"Mstislav #1" = 10
-	"Natalia #0" = -1
-	"Odola #0" = -1
-	"Pribislava #0" = -1
-	"Reinhold #0" = 0
-	"Rostislav #1" = 10
-	"Rurik #0" = 0
-	"Sophia #0" = -1
-	"Stepan #0" = 0
-	"Sviatopolk #0" = 0
-	"Tadane #0" = -1
+	"Pavel #0" = 10
+	"Rostislav #2" = 10
+	"Theodoulos #0" = 10
+	"Yaropolk #1" = 10
+	"Yaroslav #0" = 10
+	"Aleksandr #0" = 5
+	"Izyaslav #0" = 5
+	"Roman #0" = 5
+	"Svyatoslav #0" = 5
+	"Svyatopolk #0" = 5
+	"Vladimir-Ivan #0" = 5
+	"Afanasiy #0" = 0
+	"Alexei #0" = 0
+	"Anatoliy #0" = 0
+	"Daniil #0" = 0
+	"Dmitriy #0" = 0
+	"Feodosiy #0" = 0
+	"Feofilakt #0" = 0
+	"Fyodor #0" = 0
+	"Gavriil #0" = 0
+	"Innokentiy #0" = 0
+	"Iosif #0" = 0
+	"Lavrentiy #0" = 0
+	"Lev #1" = 0
+	"Makariy #0" = 0
+	"Matveiy #0" = 0
+	"Nazariy #0" = 0
+	"Nikifor #0" = 0
+	"Oleg #0" = 0
+	"Onisim #0" = 0
+	"Prokopiy #0" = 0
+	"Pyotr #0" = 0
+	"Radomir #0" = 0
+	"Saveliy #0" = 0
+	"Semen #0" = 0
+	"Sergei #0" = 0
+	"Terentiy #0" = 0
+	"Valeriy #0" = 0
+	"Yakim #0" = 0
+	"Yevgeniy #0" = 0
+	
+	"Agafya #0" = -1
+	"Feodora #0" = -1
+	"Svetlana #0" = -1
 	"Tatyana #0" = -1
-	"Thakiya #0" = 0
-	"Valentin #0" = 0
-	"Vasiliy #0" = 0
-	"Viacheslav #1" = 10
-	"Vilitõiv #0" = 0
-	"Vladimir #0" = 0
-	"Voislav #1" = 10
-	"Vysheslav #0" = 0
-	"Wolfram #1" = 10
-	"Yaroslava #0" = -1
-	"Yefrosinia #0" = -1
-	"Yevpraxia #0" = -1
-	"Yuriy #1" = 10
+	"Yuliya #0" = -1
 }
 leader_names = {
-	"Apraksin"
+	"Andreievich"
 	"Bagration"
-	"Barclay de Tolly"
 	"Bibikoff"
 	"Bodisco"
-	"Boruffsin"
-	"Golitzin"
-	"Kaibula"
-	"Kamenski"
+	"Dmitrievich"
+	"Dobrynich"
+	"Fedorovich"
+	"Filipescu"
+	"Giurgiuveni"
+	"Giurgiuveni-Iasi"
+	"Gurielov"
+	"Haukadalur-Rostov"
+	"Khitrov"
 	"Kolzoff"
-	"Mensjikov"
-	"Mustislavski"
-	"Ostermann Tolstoy"
+	"Ladyzyn"
+	"Metveyev"
+	"Mikhailovich"
+	"Ossowski"
 	"Paletskij"
-	"Rajevski"
-	"Schuvalov"
-	"Sjeremetjev"
-	"Sjtjenjatvev"
-	"Tiesenhusen"
-	"Vasiljevitj"
-	"von Buxhoevden"
+	"Rurikovich"
+	"Skandales"
+	"Sobakin"
+	"Terebovl"
+	"Tolstoy"
+	"Vseslavich"
+	"von Habsburg"
 	"von Knorring"
-	"von Lascy"
+	"von Mansfeld"
 }
 ship_names = {
 	"Coluna"

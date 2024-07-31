@@ -1,11 +1,13 @@
 government = republic
 add_government_reform = peasants_republic
 government_rank = 1
-technology_group = western
-religion = catholic
 primary_culture = frisian
-capital = 1931
-1345.1.1= {
+religion = catholic
+technology_group = western
+capital = 1931	# Emden
+
+
+1345.1.1 = {
 	monarch = {
 		name = "Ocko I"
 		dynasty = "tom Brok"
@@ -14,7 +16,8 @@ capital = 1931
 		mil = 2
 	}
 }
-1380.1.1= {
+
+1380.1.1 = {
 	heir = {
 		name = "Keno II"
 		monarch_name = "Keno II"
@@ -27,7 +30,8 @@ capital = 1931
 		mil = 1
 	}
 }
-1391.1.1= {
+
+1391.1.1 = {
 	monarch = {
 		name = "Keno II"
 		dynasty = "tom Brok"
@@ -37,8 +41,10 @@ capital = 1931
 		mil = 1
 	}
 }
-1391.1.1= { leader = {	name = "Focko Ukena"	type = general	fire = 1	shock = 3	manuever = 3	siege = 1	death_date = 1426.1.1 } }
-1407.1.1= {
+
+1391.1.1 = { leader = {	name = "Focko Ukena"	type = general	fire = 1	shock = 3	manuever = 3	siege = 1	death_date = 1426.1.1 } }
+
+1407.1.1 = {
 	heir = {
 		name = "Ocko"
 		monarch_name = "Ocko II"
@@ -51,7 +57,8 @@ capital = 1931
 		mil = 1
 	}
 }
-1417.1.1= {
+
+1417.1.1 = {
 	monarch = {
 		name = "Ocko II"
 		dynasty = "tom Brok"
@@ -61,7 +68,10 @@ capital = 1931
 		mil = 1
 	}
 }
-1427.10.28= {
+
+# Ruler structure between capture of Ocko II on 28 October 1427 and Enno Edzardisna unknown
+
+1427.10.28 = {
 	monarch = {
 		name = "Focko"
 		dynasty = "Ukena"
@@ -71,7 +81,10 @@ capital = 1931
 		mil = 3
 	}
 }
-1430.1.1= {
+
+# Enno leads the rebellion against Focko Ukena
+
+1430.1.1 = {
 	monarch = {
 		name = "Enno Edzardisna"
 		dynasty = "Cirksena"
@@ -96,7 +109,8 @@ capital = 1931
 		mil = 3
 	}
 }
-1450.1.1= {
+
+1450.1.1 = {
 	monarch = {
 		name = "Ulrich I"
 		dynasty = "Cirksena"
@@ -108,7 +122,8 @@ capital = 1931
 	clear_scripted_personalities = yes
 	add_ruler_personality = charismatic_negotiator_personality
 }
-1461.1.1= {
+
+1461.1.1 = {
 	heir = {
 		name = "Edzard"
 		monarch_name = "Edzard I"
@@ -121,7 +136,10 @@ capital = 1931
 		mil = 6
 	}
 }
-1491.1.1= {
+
+# East Frisia raised to the status of Imperial Count in 1464 by Emperor Frederick III
+
+1491.1.1 = {
 	monarch = {
 		name = "Edzard I" # The Great
 		dynasty = "Cirksena"
@@ -131,7 +149,8 @@ capital = 1931
 		mil = 6
 	}
 }
-1505.1.1= {
+
+1505.1.1 = {
 	heir = {
 		name = "Enno"
 		monarch_name = "Enno II"
@@ -144,7 +163,8 @@ capital = 1931
 		mil = 2
 	}
 }
-1528.2.14= {
+
+1528.2.14 = {
 	monarch = {
 		name = "Enno II"
 		dynasty = "Cirksena"
@@ -154,8 +174,10 @@ capital = 1931
 		mil = 2
 	}
 }
-1528.6.1= { religion = reformed }
-1532.6.24= {
+
+1528.6.1 = { religion = reformed } # Unknown date, but early
+
+1532.6.24 = {
 	heir = {
 		name = "Edzard"
 		monarch_name = "Edzard II"
@@ -168,7 +190,8 @@ capital = 1931
 		mil = 3
 	}
 }
-1561.1.1= {
+
+1561.1.1 = {
 	monarch = {
 		name = "Edzard II"
 		dynasty = "Cirksena"
@@ -178,7 +201,8 @@ capital = 1931
 		mil = 3
 	}
 }
-1563.9.30= {
+
+1563.9.30 = {
 	heir = {
 		name = "Enno"
 		monarch_name = "Enno III"
@@ -191,7 +215,8 @@ capital = 1931
 		mil = 1
 	}
 }
-1599.3.1= {
+
+1599.3.1 = {
 	monarch = {
 		name = "Enno III"
 		dynasty = "Cirksena"
@@ -201,7 +226,8 @@ capital = 1931
 		mil = 1
 	}
 }
-1602.6.2= {
+
+1602.6.2 = {
 	heir = {
 		name = "Rudolf Christian"
 		monarch_name = "Rudolf Christian"
@@ -214,7 +240,8 @@ capital = 1931
 		mil = 3
 	}
 }
-1625.8.19= {
+
+1625.8.19 = {
 	monarch = {
 		name = "Rudolf Christian"
 		dynasty = "Cirksena"
@@ -224,7 +251,8 @@ capital = 1931
 		mil = 3
 	}
 }
-1628.4.17= {
+
+1628.4.17 = {
 	monarch = {
 		name = "Ulrich II"
 		dynasty = "Cirksena"
@@ -234,7 +262,8 @@ capital = 1931
 		mil = 1
 	}
 }
-1632.10.29= {
+
+1632.10.29 = {
 	heir = {
 		name = "Enno Louis"
 		monarch_name = "Enno Louis"
@@ -247,7 +276,8 @@ capital = 1931
 		mil = 2
 	}
 }
-1648.11.1= {
+
+1648.11.1 = {
 	monarch = {
 		name = "Enno Louis"
 		dynasty = "Cirksena"
@@ -257,7 +287,8 @@ capital = 1931
 		mil = 2
 	}
 }
-1660.4.4= {
+
+1660.4.4 = {
 	monarch = {
 		name = "George Christian"
 		dynasty = "Cirksena"
@@ -267,7 +298,8 @@ capital = 1931
 		mil = 0
 	}
 }
-1665.6.6= {
+
+1665.6.6 = {
 	monarch = {
 		name = "Christian Everhard"
 		dynasty = "Cirksena"
@@ -276,7 +308,8 @@ capital = 1931
 		mil = 4
 	}
 }
-1690.6.13= {
+
+1690.6.13 = {
 	heir = {
 		name = "George Albert"
 		monarch_name = "George Albert"
@@ -289,7 +322,8 @@ capital = 1931
 		mil = 1
 	}
 }
-1708.6.30= {
+
+1708.6.30 = {
 	monarch = {
 		name = "George Albert"
 		dynasty = "Cirksena"
@@ -299,7 +333,8 @@ capital = 1931
 		mil = 1
 	}
 }
-1716.6.18= {
+
+1716.6.18 = {
 	heir = {
 		name = "Charles Edzard"
 		monarch_name = "Charles Edzard"
@@ -312,7 +347,8 @@ capital = 1931
 		mil = 1
 	}
 }
-1734.6.12= {
+
+1734.6.12 = {
 	monarch = {
 		name = "Charles Edzard"
 		dynasty = "Cirksena"
@@ -322,3 +358,5 @@ capital = 1931
 		mil = 1
 	}
 }
+
+# On the death of Charles Edzard 26 May 1744, the county passed to King Frederick II of Prussia

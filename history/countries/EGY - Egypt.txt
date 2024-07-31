@@ -6,37 +6,59 @@ religion = shiite
 primary_culture = al_misr_arabic
 capital = 361
 religious_school = ismaili_school
-1444.11.11= {
+1377.2.27 = {
 	monarch = {
-		name = "Da'oud"
+		name = "'Abd al-Majid II"
 		dynasty = "Fatimid"
 		adm = 5
 		dip = 3
 		mil = 5
-		birth_date = 1412.3.27
+		birth_date = 1349.9.20
 		religion = shiite
 		culture = al_misr_arabic
 	}
-	add_ruler_personality = pious_personality
-	add_ruler_personality = zealot_personality
+}
+1396.6.1 = {
+	monarch = {
+		name = "Muhammad I"
+		dynasty = "Fatimid"
+		adm = 5
+		dip = 3
+		mil = 5
+		birth_date = 1372.1.11
+		religion = shiite
+		culture = al_misr_arabic
+	}
+}
+1412.8.24 = {
+	monarch = {
+		name = "Da'oud III"
+		dynasty = "Fatimid"
+		adm = 5
+		dip = 3
+		mil = 5
+		birth_date = 1397.9.29
+		religion = shiite
+		culture = al_misr_arabic
+	}
 	queen = {
 		name = "Yasmin"
-		dynasty = "Athbejid"
+		dynasty = "Zurayid"
 		adm = 3
 		dip = 3
 		mil = 4
 		country_of_origin = EGY
-		birth_date = 1414.3.1
+		birth_date = 1404.3.1
 		death_date = 1474.3.1
 		female = yes
 		religion = shiite
 		culture = bedouin_arabic
 	}
-	add_queen_personality = righteous_personality
-	add_queen_personality = strict_personality
+}
+1438.7.14 = {
 	heir = {
-		name = "Alam"
-		monarch_name = "Alam II"
+		name = "Da'oud"
+		monarch_name = "Da'oud IV"
 		dynasty = "Fatimid"
 		adm = 3
 		dip = 1
@@ -47,8 +69,6 @@ religious_school = ismaili_school
 		religion = shiite
 		culture = al_misr_arabic
 	}
-	add_heir_personality = charismatic_negotiator_personality
-	add_heir_personality = kind_hearted_personality
 }
 1444.11.11= {
 	add_prestige = 90

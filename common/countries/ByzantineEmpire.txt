@@ -31,82 +31,96 @@ historical_units = {
 	slavic_stradioti
 }
 monarch_names = {
+	"Martin #5" = 120
+	"Ioannes #5" = 50
+	"Borna #0" = 15
+	"Constantius #3" = 15
+	"Petar #0"= 15
+	"Tihomir #0" = 15
+	"Vuk #0" = 15
+	"Alexandr #1" = 10
+	"Artavasdos #1" = 10
+	"Basiliskos #1" = 10
+	"Carinus #1" = 10
+	"Carus #1" = 10
+	"Constans #1" = 10
+	"Domitian #1" = 10
+	"Gratian #1" = 10
+	"Grgur #0" = 10
+	"Kosmin #0" = 10
+	"Lazar #0" = 10
+	"Meletios #0" = 10
+	"Phokas #1" = 10
+	"Romanos #3" = 10
+	"Simeon #0"= 10
+	"Slobodan #0" = 10
 	"Alessandro #0" = 0
-	"Alexandr #1" = 1
-	"Anastasios #2" = -3
-	"Artavasdos #1" = 1
 	"Arthmael #0" = 0
-	"Augustus #1" = 0
-	"Basiliskos #1" = 1
-	"Bistrina #1" = -1
-	"Borna #0" = 5
+	"Augustus #0" = 0
 	"Branimir #0" = 0
-	"Carinus #1" = 1
-	"Carus #1" = 1
-	"Chasna #0" = -1
-	"Constans #1" = 1
-	"Constantius #3" = 3
-	"Desislava #1" = -1
 	"Dmitriy #0" = 0
-	"Domitian #1" = 1
-	"Eirene #1" = -1
-	"Eufemia #0" = -3
-	"Gratian #1" = 1
-	"Grgur #0" = 1
-	"Ioannes #5" = 10
 	"Ignatios #0" = 0
 	"Kopulch #0" = 0
-	"Kosmin #0" = 1
-	"Lazar #0" = 1
-	"Martin #5" = 25
-	"Meletios #0" = 1
 	"Mihovil #0" = 0
-	"Petar #0"= 3
-	"Phokas #1" = 1
 	"Porin #0" = 0
-	"Romanos #3" = 1
-	"Severina #1" = -1
-	"Simeon #0"= 1
-	"Slobodan #0" = 1
-	"Tihomir #0" = 3
 	"Vlastimir #0" = 0
-	"Vuk #0" = 3
 	"Yitzchak #0" = 0
+	
+	"Anastasios #2" = -10
+	"Eufemia #0" = -10
+	"Bistrina #1" = -1
+	"Chasna #0" = -1
+	"Desislava #1" = -1
+	"Eirene #1" = -1
+	"Severina #1" = -1
 	"Zoe #1" = -1
 }
 leader_names = {
+	"Antiochites"
 	"Bagratuni"
-	"Bagratuni-Satala"
 	"Balin"
 	"Blagai"
+	"Botaneiates"
+	"Chandrenos"
 	"Czobor"
 	"Diogenes"
 	"Diogenes-Tyana"
 	"Doukas-Tarnovgrad"
 	"Gojnikovic"
-	"Habsburg-Larissa"
+	"Gurielov"
+	"Hauteville-Gerusalemme"
 	"Hlapen"
+	"Igorevich"
 	"Kamateros"
+	"Kaprielian"
+	"Kegenes"
+	"Kopsenos"
 	"Mamalos"
 	"Mauros"
 	"Mrnjavcevic"
+	"Muzaka"
 	"Nemanjic"
 	"Palaiologos"
 	"Palaiologos-Euchaita"
 	"Palaiologos-Tabia"
 	"Pegonites"
+	"Petrosian"
+	"Polovtsy"
 	"Pribisavljevic"
+	"Radomiros"
+	"Sasudo"
 	"Soimirovich"
-	"Synadenos-Avlonas"
+	"Strabomytes"
+	"Synadenos"
 	"Synadenos-Branicevo"
-	"Synadenos-Cado"
-	"Synadenos-Patras"
-	"Synadenos-Rudnik"
+	"Taronites-Satala"
 	"Tich"
+	"Traphines"
 	"Tvrtkovic"
 	"Vojislavljevic"
 	"de Boulogne"
 	"de Bragança"
+	"von Habsburg"
 }
 ship_names = {
 	"12 Apostoloi"

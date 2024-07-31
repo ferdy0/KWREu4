@@ -30,49 +30,59 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Algebaeivi #0" = 0
-	"Anthimos #0" = 0
-	"Bótólfr #0" = 0
-	"Dan #0" = 0
-	"Gierá #0" = -1
-	"Gnúpa #0" = 0
-	"Ilme #0" = -1
-	"Ingiríðr #0" = -1
-	"Irina #0" = -1
-	"Járre #0" = 0
-	"Jórunn #0" = -1
-	"Knut #1" = 10
-	"Leandu #0" = -1
-	"Masgava #0" = 0
-	"Nikulás #0" = 0
-	"Njáll #0" = 0
-	"Oaván #0" = 0
-	"Padulesa #0" = -1
-	"Rabbi #0" = 0
-	"Ruigi #0" = 0
-	"Sigurðr #1" = 10
-	"Skjaldvör #0" = -1
-	"Speaidna #0" = 0
-	"Styrbjörn #0" = 0
-	"Suni #0" = 0
-	"Vagn #0" = 0
-	"Ággi #0" = 0
+	"Nikolai #1" = 30
+	"Bótulfr #1" = 20
+	"Rolf #0" = 20
+	"Sigurd #2" = 20
+	"Simon #1" = 20
+	"Ingvar #0" = 15
+	"Arngrimm #0" = 10
+	"Járre #1" = 10
+	"Nils-Sako #0" = 10
+	"Surtur #0" = 10
 	"Áilu #1" = 10
-	"Álfrhildr #0" = -1
-	"Önundr #0" = 0
-	"Þorbjörn #0" = 0
+	"Baeivi #0" = 5
+	"Jaco #0" = 5
+	"Frode #0" = 5
+	"Dovyat #0" = 0
+	"Kaupo #0" = 0
+	"Likiik #0" = 0
+	"Narvait #0" = 0
+	"Vetseke #0" = 0
+	"Vaishvilkas #0" = 0
+	"Yudki #0" = 0
+	
+	"Alfreda #0" = -1
+	"Helena #0" = -1
+	"Ingebjørg #0" = -1
+	"Lisa #0" = -1
+	"Skjaldvør #0" = -1
+	"Ulla #0" = -1
 }
 leader_names = {
-	"Guoládat"
-	"Gájka"
-	"Kaise"
-	"Magga"
+	"Adelswärd"
+	"Aurland"
+	"Benkestokk"
+	"Finne"
+	"Gunn"
+	"Gullbjelke"
+	"Jio"
+	"Kamban"
+	"Kemeloe"
+	"Kjærnested"
+	"Lujavorovich"
+	"Maggeroe"
 	"Nuoráne"
 	"Nylogid"
-	"Saiva"
+	"Rurikovich"
+	"Sarakid"
+	"Simo"
 	"Syktyvkar"
-	"Ubmeje"
-	"Yugra"
+	"Trætte"
+	"Ulfhilde"
+	"Varakid"
+	"Warager"
+	"Yurakovich"
 }
 ship_names = {
 	"Akka"

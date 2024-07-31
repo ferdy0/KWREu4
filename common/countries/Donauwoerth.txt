@@ -29,55 +29,82 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Anselmo #1" = 10
-	"Arnold #0" = 0
-	"Berard #0" = 0
-	"Berta #0" = -1
+	"Friedrich #0" = 100
+	"Ludwig #0" = 80
+	"Gotthard #2" = 30
+	"Alberich #1" = 20
+	"Johann Wilhelm #0" = 20
+	"Karl #0" = 20
+	"Karl Ludwig #0" = 20
+	"Karl Philipp #0" = 20
+	"Karl Theodor #0" = 20
+	"Otto Heinrich #0" = 20
+	"Philipp #0" = 20
+	"Philipp Wilhelm #0" = 20
+	"Ruprecht #0" = 20
+	"Alexander Siegmund #0" = 15
+	"Ehrenfried #1" = 15
+	"Friedrich Philipp #0" = 15
+	"Heinrich Friedrich #0" = 15
+	"Johann Friedrich #0" = 15
+	"Ludwig Anton #0" = 15
+	"Ludwig Philipp #0" = 15
+	"Christoph #0" = 10
+	"Hermann Ludwig #0" = 10
+	"Eduard #0" = 10
+	"Franz Ludwig #0" = 10
+	"Friedrich Wilhelm #0" = 10
+	"Georg #0" = 10
+	"Gustav Adolf #0" = 10
+	"Johann Kasimir #0" = 10
+	"Jakob #0" = 10
+	"Ludwig Wilhelm #0" = 10
+	"Moritz #0" = 10
+	"Moritz Christian #0" = 10
+	"Richard #0" = 10
+	"Wilhelm #0" = 10
+	"Wolfgang Georg #0" = 10
+	"Gottfried #0" = 5
 	"Bruno #0" = 0
-	"Drogo #0" = 0
-	"Eberhard #1" = 10
-	"Ehrenfried #1" = 10
-	"Emelrich #1" = 10
-	"Enguerrand #0" = 0
-	"Gerhard #2" = 10
-	"Gotthard #2" = 10
-	"Hartmann #1" = 10
-	"Hildegard #1" = -1
-	"Hupold #3" = 10
-	"Kunigunde #1" = -1
+	"Gottschalk #0" = 0
+	"Herbert #0" = 0
+	"Hieronymus #0" = 0
+	"Ignatz #0" = 0
 	"Lambert #0" = 0
-	"Leopold #1" = 10
-	"Mangold #1" = 10
-	"Othon #0" = 0
-	"Radbot #0" = 0
-	"Reinhold #0" = 0
-	"Sieghard #4" = 10
-	"Susanna #0" = -1
-	"Thankulf #0" = 0
-	"Ulrich #0" = 0
-	"Wilhelmina #1" = -1
+	"Markus #0" = 0
+	"Raphael #0" = 0
+	"Rüdiger #0" = 0
+	
+	"Gertrude #1" = -1
+	"Ida #1" = -1
+	"Nina #0" = -1
+	"Ottilie #0" = -1
+	"Reinhild #0" = -1
 }
 leader_names = {
 	"Adenau"
 	"Ansembourg"
 	"Bensenraede"
-	"Blittersdorf"
+	"Bluome"
 	"Cölln"
 	"Dammerscheidt"
+	"Diest"
 	"Elmpt"
 	"Falkenberg"
-	"Gruithausen"
-	"Hillensberg"
+	"Grelle"
+	"Hildemar"
 	"Hohenfeld"
 	"Naxleden"
-	"Schaluyn"
+	"Scarponnois"
 	"Zebnitsch"
+	"von Bikkenbach"
 	"von Clausbruch"
 	"von Dieblich"
-	"von Gelnhausen"
+	"von Glogau"
 	"von Leyen"
 	"von Namedy"
 	"von Schöneck"
+	"von Tunna"
 }
 ship_names = {
 	"Deidesheim"
