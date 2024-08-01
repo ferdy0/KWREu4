@@ -8,14 +8,6 @@ union=
 
 union=
 {
-	first="KOJ"
-	second="SYR"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
 	first="Z05"
 	second="CAS"
 	start_date="1444.11.11"
@@ -26,14 +18,6 @@ union=
 {
 	first="NOV"
 	second="EST"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="ANS"
-	second="Z1Z"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -85,28 +69,3 @@ union=
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
-
-union=
-{
-	first="STY"
-	second="Z0R"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="BOH"
-	second="AAC"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="BOH"
-	second="MVA"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
