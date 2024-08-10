@@ -28,35 +28,38 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Agnès #0" = -1
+	"Koenraad #2" = 30
+	"Godfried #3" = 20
+	"Simon #1" = 20
+	"Eduard #2" = 15
+	"Otto #0" = 15
 	"Anselm #1" = 10
+	"Ijsbrecht #0" = 10
+	"Ilbert #0" = 10
+	"Steyn #0" = 10
+	"Albrecht #0" = 0
 	"Arnulf #0" = 0
-	"Arsinde #0" = -1
 	"Bérenger #0" = 0
-	"Eduard #1" = 10
-	"Filippa #0" = -1
+	"Christof #0" = 0
+	"Gauthier #0" = 0
 	"Gerolt #0" = 0
-	"Godefroy #1" = 10
-	"Gottfried #1" = 10
-	"Ijsbrecht #0" = 0
-	"Jasminne #1" = -1
-	"Koenraad #1" = 10
-	"Kristof #0" = 0
-	"Magnus #0" = 0
-	"Manassès #2" = 10
+	"Gwijde #0" = 0
+	"Manassès #0" = 0
+	"Wouter #0" = 0
+	
+	"Jasminne #1" = -10
+	"Plaisance #1" = -10
+	"Adèle #0" = -1
+	"Ermengarde #0" = -1
+	"Filippa #0" = -1
 	"Maria #0" = -1
-	"Otwin #0" = 0
-	"Plaisance #1" = -1
-	"Simon #1" = 10
-	"Steyn #0" = 0
-	"Walter #0" = 0
-	"Wicher #0" = 0
+	"Olinde #0" = -1
 }
 leader_names = {
 	"Albers"
 	"Aylett"
 	"Bielmacker"
-	"Camper"
+	"Cirkensa"
 	"Debruyne"
 	"Jansen"
 	"Leschwein"
@@ -65,15 +68,23 @@ leader_names = {
 	"Orthellius"
 	"Quellinus"
 	"de Avesnes"
+	"de Chartres"
+	"de Courtenay"
 	"de Houtman"
 	"de Leeuw"
+	"de Ville-Bride"
+	"van Brabant"
+	"van Brunesheim"
 	"van Egmont"
 	"van Kahlden"
-	"van Loewen"
+	"van Loon"
 	"van Meteren"
 	"van Noort"
+	"van Randerath"
+	"van Renesse"
 	"van Wyhe"
 	"van der Most"
+	"von Wassel"
 }
 ship_names = {
 	"Brussel"

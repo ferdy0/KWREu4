@@ -2,36 +2,93 @@ ck2_converter_generated = yes
 graphical_culture = westerngfx
 color = { 185 175 130 }
 monarch_names = {
-	"Anna #0" = -1
-	"Ardoino #1" = 10
+	"Magnus #3" = 50
+	"Albrecht #0" = 40
+	"Friedrich #0" = 40
+	"Peter #1" = 40
+	"Meginhard #2" = 25
+	"August #0" = 20
+	"Christian Wilhelm #0" = 20
+	"Ernst #0" = 20
+	"Günther #0" = 20
+	"Joachim Friedrich #0" = 20
+	"Johann #0" = 20
+	"Johann Albrecht #0" = 20
+	"Leopold Wilhelm #0" = 20
+	"Siegmund #0" = 20
+	"Dietrich #1" = 15
+	"Ludwig #0" = 15
+	"Otto #2" = 15
 	"Bernhard #4" = 10
-	"Bohdan #0" = 0
-	"Dietrich #0" = 0
-	"Elisabeth #0" = -1
-	"Garibald #0" = 0
-	"Gehrke #0" = 0
-	"Havel #0" = 0
-	"Heinrich #1" = 10
-	"Hermann #2" = 10
-	"Hulderic #0" = 0
+	"Burkhard #0" = 10
+	"Heinrich #0" = 10
+	"Hermann #4" = 10
 	"Isidor #1" = 10
-	"Jaspar #0" = 0
-	"Kirsten #0" = -1
-	"Lech #0" = 0
-	"Lembert #0" = 0
-	"Luidolf #1" = 10
-	"Magnus #1" = 10
-	"Meginhard #1" = 10
+	"Konrad #0" = 10
+	"Erich #0" = 10
+	"Rudolf #0" = 10
+	"Ruprecht #0" = 10
+	"Adolf #0" = 0
+	"Clemens #0" = 0
+	"Diederick #0" = 0
+	"Eberhard #0" = 0
+	"Fabian #0" = 0
+	"Gehrke #0" = 0
+	"Goswin #0" = 0
+	"Gottfried #0" = 0
+	"Helmut #0" = 0
+	"Herbert #0" = 0
+	"Hildebold #0" = 0
+	"Jakob #0" = 0
+	"Leopold #0" = 0
+	"Ludolf #0" = 0
+	"Manfred #0" = 0
+	"Markus #0" = 0
 	"Michael #0" = 0
-	"Negomir #0" = 0
-	"Ordulf #1" = 10
-	"Otto #2" = 10
-	"Peter #1" = 10
-	"Salomea #0" = -1
-	"Sigfrid #0" = 0
-	"Szczepan #0" = 0
-	"Theoderic #1" = 10
-	"Wichmann #0" = 0
-	"Èlina #0" = -1
-	"Swietopelk #0" = 0
+	"Philipp #0" = 0
+	"Siegfried #0" = 0
+	"Stefan #0" = 0
+	"Viktor #0" = 0
+	"Wolfgang #0" = 0
+	
+	"Hannah #1" = -10
+	"Wienke #0" = -10
+	"Elisabeth #0" = -1
+	"Gisela #0" = -1
+	"Hildegard #0" = -1
+	"Monika #0" = -1
+	"Philippa #0" = -1
+	"Swanhilde #0" = -1
+	"Thiedburga #0" = -1
+}
+
+leader_names = {
+	Ahrendt
+	Ahrenkiel
+	Bastel
+	Bause
+	Berthout-Pyrzyce
+	Bollers
+	Burghoff
+	Bärwald
+	Gryfita
+	Hauteville-Catanzaro
+	Herms
+	Lisjak
+	Meyer
+	Nalecz
+	Schlehenstein
+	Schulz
+	Schönebeck
+	Wahrenholz
+	Wittenborg
+	Wullenpund
+	Wäger
+	Zimmerhëckel
+	"von Badewide"
+	"von Breisgau"
+	"von Brunesheim"
+	"von Gifhorn"
+	"von Mansfeld"
+	"von Stein"
 }

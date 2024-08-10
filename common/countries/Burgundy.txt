@@ -30,50 +30,89 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Adalmode #0" = -1
-	"Adèle #0" = -1
-	"Agnès #0" = -1
-	"Alain #0" = 1
-	"Alix #1" = -3
-	"Almodis #1" = -1
-	"André #1" = 1
-	"Anne #0" = -1
-	"Bernard #0" = 1
-	"Bonne #0" = -1
+	"Philippe #0" = 80
+	"Charles #0" = 60
+	"Guy #2" = 30
+	"Louis #0" = 30
+	"Jean #0" = 20
+	"Louis-Henri #0" = 20
+	"Louis-Joseph #0" = 20
+	"Valeran #1" = 20
+	"Othon-Guillaume #1" = 15
+	"Henri #3" = 10
+	"Antoine #0" = 10
+	"Gauthier #1" = 10
+	"Gelduin #1" = 10
+	"Henri-Jules #0" = 10
+	"Hughes #1" = 10
+	"Joseph #0" = 10
+	"Robert #4" = 10
+	"Alain #0" = 5
+	"Bernard #0" = 5
+	"François #0" = 5
+	"Armand #0" = 0
+	"Barthélemy #0" = 0
+	"Benoît #0" = 0
 	"Bouchard #0" = 0
-	"Bourgogne #0" = -1
-	"Cécile #0" = -1
-	"Éléonore #1" = -3
-	"Ermessinde #0" = -1
+	"Claude #0" = 0
+	"Denis #0" = 0
+	"Étienne #0" = 0
+	"Eugène #0" = 0
+	"Eustache #0" = 0
 	"Evrard #0" = 0
-	"François #0" = 0
-	"Gauthier #1" = 1
-	"Gelduin #1" = 1
-	"Guy #2" = 10
-	"Hugh #0" = 0
-	"Jaufré #0" = 0
-	"Marie #1" = -1
-	"Mathilde #0" = -1
-	"Onfroy #0" = 0
-	"Robin #1" = 3
-	"Simon #1" = 3
-	"Valeran #1" = 5
+	"Georges #0" = 0
+	"Guillaume #0" = 0
+	"Isidore #0" = 0
+	"Jean-Baptiste #0" = 0
+	"Jules #0" = 0
+	"Marc #0" = 0
+	"Maurice #0" = 0
+	"Michel #0" = 0
+	"Nicolas #0" = 0
+	"Pascal #0" = 0
+	"Pierre #0" = 0
+	"Raoul #0" = 0
+	"René #0" = 0
+	"Sébastien #0" = 0
+	
+	"Alix #1" = -10
+	"Marie #0" = -10
+	"Éléonore #1" = -10
+	"Catherine #0" = -2
+	"Geneviève #0" = -2
+	
+	"Anne #0" = -1
+	"Béatrice #0" = -1
+	"Charlotte #0" = -1
+	"Cécile #0" = -1
+	"Hélène #0" = -1
+	"Isabelle #0" = -1
+	"Jeanne #0" = -1
+	"Louise #0" = -1
 }
 leader_names = {
+	"Avesnes"
 	"Badewide"
 	"Baudement"
 	"Chamillart"
 	"Fontaines"
 	"le Bourg"
+	"Melis"
+	"Nordheim-Orlamünde"
 	"Vienne"
+	"Wettin-Ziethen"
 	"d'Aban"
+	"d'Aissailly"
 	"d'Aix"
+	"d'Alamant"
 	"d'Auxerre"
+	"de Baalun"
 	"de Balay"
 	"de Bauffremont"
 	"de Beaumont"
 	"de Beugre"
 	"de Boulay"
+	"de Bourg"
 	"de Bourgogne"
 	"de Brachet"
 	"de Brimeu"
@@ -85,6 +124,7 @@ leader_names = {
 	"de Chur"
 	"de Châlon-Arlay"
 	"de Cicon"
+	"de Clermont"
 	"de Coligny"
 	"de Créquy"
 	"de Cîteaux"
@@ -92,13 +132,18 @@ leader_names = {
 	"de Dammartin"
 	"de Donzy"
 	"de Fezenzaguet"
+	"de Guise"
 	"de Lannoy"
 	"de Lorraine"
 	"de Macon"
+	"de Montesquiou"
 	"de Montreuil"
 	"de Mortemart"
+	"de Nanteuil"
 	"de Nanton"
+	"de Narbonne"
 	"de Neufchâtel"
+	"de Nogent"
 	"de Noyelles"
 	"de Pontailler"
 	"de Rochebaron"
@@ -110,14 +155,21 @@ leader_names = {
 	"de Tonnerre"
 	"de Tournemire"
 	"de Tourraine"
+	"de Tresmes"
+	"de Trith"
 	"de Vaubresson"
 	"de Vaudrey"
 	"de Vellexon"
 	"de Vergy"
 	"de Vienne"
+	"de Vierzon"
+	"de Ville-Bride"
 	"de Villiers"
+	"de Vexin-Amiens"
 	"de la Roche Aymon"
 	"von Bocksberg"
+	"von Berlichingen"
+	"von Hoya"
 }
 ship_names = {
 	"l'Armançon"

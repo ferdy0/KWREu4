@@ -2,32 +2,94 @@ ck2_converter_generated = yes
 graphical_culture = easterngfx
 color = { 150 103 38 }
 monarch_names = {
-	"Aleksandr #1" = 10
-	"Amadeus #0" = 0
-	"Artavazd #0" = 0
-	"Ayasun #1" = -1
-	"Bagour #0" = 0
-	"Basil #0" = 0
-	"Baydzar #0" = -1
-	"Beatrix #0" = -1
-	"Ber #0" = 0
-	"Brkisho #0" = 0
-	"Datevig #0" = -1
-	"Dionysia #0" = -1
-	"Ishkhan #1" = 10
-	"Khosrov #1" = 10
+	"Aleksandr #2" = 30
+	"Khachik #1" = 30
+	"Khosrov #2" = 30
+	"David #0" = 20
+	"Mkhitar #0" = 20
+	"Brkisho #0" = 20
+	"Ishkhan #1" = 20
+	"Stepanos #0" = 20
+	"Zakare #1" = 20
+	"Ashot #0" = 15
+	"Gagik #0" = 15
+	"Mzhezh #0" = 15
+	"Smbat #0" = 15
+	"Ivan Smbat #0" = 15
+	"Ivan #0" = 10
+	"Musegh #0" = 10
+	"Sahak #1" = 10
+	"Tachar #0" = 10
+	"Vagram #0" = 10
+	"Arakel #0" = 0
+	"Ari #0" = 0
+	"Armen #0" = 0
+	"Arsen #0" = 0
+	"Arshavir #0" = 0
+	"Avedis #0" = 0
+	"Badouagan #0" = 0
+	"Bedros #0" = 0
+	"Berjouhi #0" = 0
+	"Boghos #0" = 0
+	"Daniil #0" = 0
+	"Ghoukas #0" = 0
+	"Hagop #0" = 0
+	"Haig #0" = 0
+	"Ioseph #0" = 0
+	"Jirair #0" = 0
+	"Kapriel #0" = 0
+	"Karayan #0" = 0
+	"Kevork #0" = 0
+	"Khajag #0" = 0
+	"Krikor #0" = 0
+	"Levon #0" = 0
 	"Mihrdat #0" = 0
-	"Oshin #0" = 0
-	"Serapion #0" = 0
-	"Sevenç #0" = 0
-	"Sharukan #1" = 10
-	"Shoushanig #0" = -1
-	"Tapar #0" = 0
-	"Tetr #0" = 0
-	"Trdat #0" = 0
-	"Usunbike #1" = -1
-	"Vartan #0" = 0
-	"Violeta #0" = -1
-	"Zabel #0" = -1
-	"Zmroukhd #0" = -1
+	"Movses #0" = 0
+	"Nairi #0" = 0
+	"Sevan #0" = 0
+	"Vahan #0" = 0
+	"Vahram #0" = 0
+	"Vasiliy #0" = 0
+	"Zadig #0" = 0
+	"Zoravan #0" = 0
+	
+	"Eliz #0" = -10
+	"Adrine #0" = -1
+	"Berjouhi #0" = -1
+	"Elsapet #0" = -1
+	"Houri #0" = -1
+	"Maria #0" = -1
+	"Nazani #0" = -1
+	"Sarine #0" = -1
+	"Sirvart #0" = -1
+	"Varya #0" = -1
+}
+
+leader_names = { 
+	Arakelian
+	Autoreianos
+	Bagratuni
+	Barsamian
+	Chobanian
+	Dzebysatæ
+	Eskandarian
+	Gardman-Aghbania
+	Ghougasian
+	Giurgiuveni
+	Godjysatæ
+	Haladjian
+	Hasan-Jalalyan
+	Klimovich
+	Kuchka
+	Kuman
+	Mickaelian
+	Orbeli
+	Poyetou
+	Sadian
+	Sevanian
+	Shahinian
+	Simjian
+	Tsæykostæ
+	Zohrabian
+	"ve Beksima"
 }

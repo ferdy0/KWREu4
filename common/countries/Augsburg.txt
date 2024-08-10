@@ -29,71 +29,66 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Abelina #0" = -1
-	"Agapito #0" = 0
-	"Alda #0" = -1
-	"Azzo #2" = 10
-	"Barbara #0" = -1
-	"Bona #0" = -1
-	"Corrado #2" = 10
-	"Domenico #0" = 0
-	"Egilmar #0" = 0
-	"Gabrino #0" = 0
-	"Gisela #1" = -1
-	"Guntbert #1" = 10
-	"Hugo #0" = 0
-	"Jagoda #0" = -1
-	"Konrad #1" = 10
-	"Marcella #0" = -1
-	"Niccolò #0" = 0
-	"Nizzo #1" = 10
-	"Oldrik #0" = 0
-	"Richwara #0" = -1
+	"Konrad #4" = 30
+	"Heinrich #1" = 20
+	"Azzo #2" = 15
+	"Bertold #2" = 15
+	"Otto #1" = 15
+	"Theodor #1" = 15
+	"Albin #0" = 10
+	"Cosimo #0" = 10
+	"Kuno #0" = 10
+	"Philipp #0" = 10
 	"Siegfried #1" = 10
-	"Teodoro #0" = 0
+	"Vinzenz #0" = 10
+	"Egilmar #0" = 0
+	"Hugo #0" = 0
+	"Oldrik #0" = 0
+	
+	"Mechthild #0" = -10
+	"Amalberga #0" = -1
+	"Bertha #0" = -1
+	"Ethelinde #0" = -1
+	"Gerhild #0" = -1
+	"Gisela #1" = -1
+	"Hedwig #0" = -1
+	"Hildegard #0" = -1
+	"Ida #0" = -1
+	"Marcella #0" = -1
+	"Richgard #0" = -1
+	"Tiziana #0" = -1
 	"Ulrike #1" = -1
+	"Willa #0" = -1
 }
 leader_names = {
 	"Adler"
-	"Alers"
-	"Bake"
 	"Beckröge"
-	"Bergius"
 	"Berninghausen"
 	"Boelken"
 	"Bollheim"
-	"Brill"
-	"Delius"
+	"Capraia"
 	"Drewers"
+	"Duodi"
 	"Engels"
-	"Ficke"
 	"Foukhard"
-	"Geffken"
 	"Gildemeister"
 	"Grovermann"
-	"Happach"
 	"Heimbruch"
-	"Hinke"
-	"Kindt"
 	"Krefting"
 	"Köhne"
-	"Laporte"
-	"Löning"
-	"Meyer"
+	"Larsa"
 	"Oelrichs"
 	"Ordemann"
 	"Reiners"
-	"Rohde"
-	"Sanders"
-	"Schulken"
+	"Scolari"
 	"Steinwachs"
-	"Stucken"
-	"Truernitt"
-	"von Bobert"
-	"von Cappeln"
-	"von Holten"
-	"von Horn"
-	"von Meinertzhagen"
+	"von Bodeck"
+	"von Esschenloch"
+	"von Habsburg"
+	"von Lichtenberg"
+	"von Montemerlo"
+	"von Rietberg"
+	"von Veringen"
 }
 ship_names = {
 	"Anticipation Of A New Lover's Arrival"

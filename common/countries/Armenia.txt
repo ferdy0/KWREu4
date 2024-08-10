@@ -31,49 +31,50 @@ historical_units = {
 	slavic_stradioti
 }
 monarch_names = {
-	"Abas #1" = 1
-	"Aghavni #0" = -1
+	"Zakare #5" = 40
+	"Ashot #4" = 30
+	"Gagik #3" = 30
+	"Kapriel #0" = 20
+	"Smbat #3" = 20
+	"Stepanos #1" = 20
+	"Yeghishe #1" = 20
+	"Mzhezh #1" = 15
+	"Tachat #1" = 15
+	"Abas #1" = 10
+	"Kyud #1" = 10
 	"Aleksandr #0" = 0
 	"Anushirvan #0" = 0
-	"Arda #0" = -1
-	"Arina #0" = -1
-	"Ashot #4" = 10
 	"Barbat #0" = 0
 	"Bouchard #0" = 0
-	"Dzabuli #0" = -1
 	"Elia #0" = 0
-	"Francisca #0" = -1
-	"Gagik #3" = 10
-	"Hasmig #0" = -1
 	"Kahil #0" = 0
-	"Kapriel #0" = 5
-	"Khorishah #0" = -1
-	"Kyud #1" = 1
 	"Léon #0" = 0
 	"Malkhas #0" = 0
-	"Mara #0" = -1
-	"Meghranoush #1" = -1
-	"Mzhezh #1" = 3
-	"Ovsanna #0" = -1
 	"Pirvu #0" = 0
 	"Robin #0" = 0
 	"Sarkis #0" = 0
-	"Smbat #3" = 5
-	"Stepanos #1" = 5
-	"Tachat #1" = 3
 	"Tacsony #0" = 0
 	"Tahmasp #0" = 0
 	"Vache #0" = 0
 	"Vartan #0" = 0
-	"Yeghishe #1" = 5
-	"Zakare #5" = 10
+	
+	"Aghavni #0" = -1
+	"Arda #0" = -1
+	"Arina #0" = -1
+	"Dzabuli #0" = -1
+	"Francisca #0" = -1
+	"Hasmig #0" = -1
+	"Khorishah #0" = -1
+	"Mara #0" = -1
+	"Meghranoush #1" = -1
+	"Ovsanna #0" = -1
 }
 leader_names = {
 	"Aharonian"
 	"Andzewatsi"
 	"Arzrouni"
 	"Bagratuni"
-	"Bagratuni-Jarabulus"
+	"Kabasilas-Jarabulus"
 	"Bagratuni-Tbilisi"
 	"Baljian"
 	"Haladjian"

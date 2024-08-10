@@ -29,40 +29,48 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Agnès #0" = -1
-	"Anna #0" = -1
+	"Radulf #5" = 50
+	"Felipe #0" = 20
+	"Pero #0" = 15
+	"Aznar #1" = 10
+	"Diago #0" = 10
+	"Lope #1" = 10
+	"Sancho #5" = 10
+	"Chaime #0" = 5
+	"Flaín #0" = 5
+	"Galcerà #0" = 5
+	"García #0" = 5
+	"Gonzalo #0" = 5
+	"Isteban #0" = 5
+	"Manrique #0" = 5
+	"Remiro #0" = 5
+	"Veremundo #0" = 5
 	"Armengol #0" = 0
 	"Aymeric #0" = 0
-	"Aznar #1" = 10
-	"Blush #0" = 0
-	"Dabo #0" = 0
-	"Diago #0" = 0
-	"Eba #0" = -1
-	"Eglantine #0" = -1
-	"Eilo #0" = -1
-	"Eufémia #0" = -1
-	"Felipe #0" = 0
 	"Fortún #0" = 0
-	"Galcerà #0" = 0
 	"Gasparru #0" = 0
 	"Gatón #0" = 0
-	"Gil #0" = 0
-	"Guillem Jordà #1" = 10
 	"Guillén #0" = 0
 	"Guiral #0" = 0
 	"Gómez #0" = 0
-	"Irmgard #0" = -1
-	"Isteban #0" = 0
-	"Lope #0" = 0
+	"Rodrigo #0" = 0
+	"Tahir #0" = 0
+	
+	"Agnès #0" = -10
+	"Beatriz #0" = -10
+	"Constanza #0" = -10
+	"Albira #0" = -1
+	"Alionor #0" = -1
+	"Anna #0" = -1
+	"Eba #0" = -1
+	"Eglantine #0" = -1
+	"Ermisenda #0" = -1
+	"Estefanía #0" = -1
+	"Isabela #0" = -1
 	"Mencía #0" = -1
 	"Peironela #0" = -1
-	"Radulf #4" = 10
-	"Remiro #1" = 10
-	"Rodrigo #0" = 0
-	"Sancho #5" = 10
-	"Tahir #0" = 0
-	"Thankulf #0" = 0
-	"Veremundo #0" = 0
+	"Talesa #0" = -1
+	"Urraca #0" = -1
 }
 leader_names = {
 	"Amic"
@@ -71,16 +79,21 @@ leader_names = {
 	"Barceló"
 	"Berguedà"
 	"Bielsa"
-	"Cajal"
-	"Colom"
-	"Domènec"
+	"Calatayudid"
+	"Certorez"
+	"Díaz"
+	"Ennéguez"
+	"Enríquez"
+	"Estévez"
 	"Fernández de Hijar"
 	"Ferrer"
 	"Folc de Cardona"
 	"Franco"
-	"Galindo"
+	"Garcés"
 	"Gil de Biedma"
 	"Gisbert"
+	"Hamdinid"
+	"Ibáñez"
 	"Loaisa"
 	"Martorell"
 	"Monteagudo"
@@ -89,24 +102,28 @@ leader_names = {
 	"Ordovás"
 	"Peña"
 	"Piquer"
-	"Pérez de Coloma"
+	"Pérez"
 	"Ripoll"
-	"Sastre"
-	"Vallès"
+	"Sprakalegg-Urgell"
+	"Sylla"
+	"Tremecen"
+	"Varela"
 	"Veldrán"
 	"Vilamarí"
 	"Villarroya"
+	"Yeshayahu"
+	"Álvarez"
 	"d'Aragó"
 	"d'Empúries"
 	"d'Ixer"
 	"d'Ors"
 	"d'Urgell"
-	"d'Àustria"
-	"de Alagón"
-	"de Ayerbe"
+	"de Alvarenga"
+	"de Aragón"
 	"de Belchite"
 	"de Borja"
-	"de Cabrera"
+	"de Castelló"
+	"de Chaca"
 	"de Gotor"
 	"de Guimerà"
 	"de Gurrea"
@@ -116,6 +133,8 @@ leader_names = {
 	"de Ripperdá"
 	"de Zaporta"
 	"de la Riba"
+	"von Habsburg"
+	"von Isenberg"
 }
 ship_names = {
 	"Blanca Aurora"

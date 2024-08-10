@@ -1,6 +1,6 @@
 owner = YAR
 controller = YAR
-capital = "Moskva"
+capital = "Timofeyevsk"
 is_city = yes
 culture = novgorodian
 religion = orthodox

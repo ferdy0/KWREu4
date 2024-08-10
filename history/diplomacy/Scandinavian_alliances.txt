@@ -1,5 +1,4 @@
-dependency=
-{
+dependency = {
 	subject_type="vassal"
 	first="NOR"
 	second="ICE"

@@ -4,6 +4,7 @@ government_rank = 3
 technology_group = eastern
 religion = orthodox
 primary_culture = serbian
+historical_friend = KOJ
 capital = 1827
 add_accepted_culture = anatolian
 1362.6.14 = {
@@ -53,8 +54,6 @@ add_accepted_culture = anatolian
 		religion = orthodox
 		culture = serbian
 	}
-	add_ruler_personality = bold_fighter_personality
-	add_ruler_personality = tactical_genius_personality
 	queen = {
 		name = "Eirene"
 		dynasty = "Kamateros"
@@ -68,8 +67,6 @@ add_accepted_culture = anatolian
 		religion = orthodox
 		culture = greek
 	}
-	add_queen_personality = bold_fighter_personality
-	add_queen_personality = silver_tongue_personality
 	heir = {
 		name = "Martin"
 		monarch_name = "Martin VI"
@@ -83,8 +80,6 @@ add_accepted_culture = anatolian
 		religion = orthodox
 		culture = serbian
 	}
-	add_heir_personality = just_personality
-	add_heir_personality = strict_personality
 }
 1444.11.11= {
 	add_prestige = 123

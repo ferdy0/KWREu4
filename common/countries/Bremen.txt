@@ -1,7 +1,15 @@
-ck2_converter_generated = yes
+#Country name: Please see file name.
+
 graphical_culture = westerngfx
+
 color = { 33 101 137 }
+
 revolutionary_colors = { 5 0 5 }
+
+historical_score = 50
+
+preferred_religion = protestant
+
 historical_idea_groups = {
 	religious_ideas
 	trade_ideas
@@ -12,44 +20,73 @@ historical_idea_groups = {
 	administrative_ideas
 	spy_ideas
 }
+
 historical_units = {
-	austrian_grenzer
-	austrian_hussar
-	austrian_jaeger
-	austrian_tercio
-	austrian_white_coat
-	dutch_maurician
-	mixed_order_infantry
-	napoleonic_lancers
-	napoleonic_square
-	open_order_cavalry
-	swiss_landsknechten
 	western_medieval_infantry
 	western_medieval_knights
 	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
 }
 monarch_names = {
-	"Adalbert #1" = 10
-	"Albert #1" = 10
-	"Bertold #0" = 0
-	"Dago #1" = 10
-	"Ellenhard #1" = 10
-	"Ezzo #1" = 10
-	"Gerold #0" = 0
-	"Gevert #1" = 10
-	"Guntram #1" = 10
-	"Hatto #1" = 10
-	"Humbert #0" = 0
-	"Isidor #1" = 10
-	"Richfrid #1" = 10
-	"Rimbert #1" = 10
-	"Rüdiger #0" = 0
-	"Viric #0" = 0
-	"Warin #1" = 10
+	"Heinrich #1" = 40
+	"Johann #1" = 40
+	"Baldwin #0" = 20
+	"Christoph #0" = 20
+	"Friedrich #1" = 20
+	"Georg #0" = 20
+	"Gerhard #2" = 20
+	"Johann Adolf #0" = 20
+	"Johann Friedrich #0" = 20
+	"Nicolaus #0" = 20
+	"Otto #1" = 20
+	"Burkhard #2" = 15
+	"Albrecht #1" = 15
+	"Gottfried #1" = 15
+	"Bernhard #1" = 10
+	"Florent #1" = 10
+	"Adam #0" = 0
+	"Alexander #0" = 0
+	"Andreas #0" = 0
+	"Baldur #0" = 0
+	"Bruno #0" = 0
+	"Clemens #0" = 0
+	"Denis #0" = 0
+	"Eckhard #0" = 0
+	"Ernst #0" = 0
+	"Florian #0" = 0
+	"Gregor #0" = 0
+	"Helmfried #0" = 0
+	"Helmut #0" = 0
+	"Isaak #0" = 0
+	"Joachim #0" = 0
+	"Jürgen #0" = 0
+	"Klaus #0" = 0
+	"Martin #0" = 0
+	"Maximilian #0" = 0
+	"Michael #0" = 0
+	"Rainer #0" = 0
+	"Rudolf #0" = 0
+	"Siegert #0" = 0
+	"Siegmund #0" = 0
+	
+	"Alexia #0" = -1
+	"Beatrix #0" = -1
+	"Verena #0" = -1
 }
+
 leader_names = {
 	"Adler"
-	"Alers"
+	"Arstein"
 	"Bake"
 	"Beckröge"
 	"Bergius"
@@ -64,11 +101,12 @@ leader_names = {
 	"Foukhard"
 	"Geffken"
 	"Gildemeister"
-	"Grovermann"
+	"Grelle"
 	"Happach"
-	"Heimbruch"
+	"Herschberg"
 	"Hinke"
 	"Kindt"
+	"Köhne"
 	"Krefting"
 	"Köhne"
 	"Laporte"
@@ -83,11 +121,19 @@ leader_names = {
 	"Steinwachs"
 	"Stucken"
 	"Truernitt"
+	"Warendorp"
+	"Wesel"
 	"von Bobert"
 	"von Cappeln"
-	"von Holten"
-	"von Horn"
-	"von Meinertzhagen"
+	"von Dithmarschen"
+	"von Goseck"
+	"von Henneberg"
+	"von Hoya"
+	"von Liebnitz"
+	"von Meissen"
+	"von Rügen"
+	"von Wittenberg"
+	"von Zeven"
 }
 ship_names = {
 	"Adler von Lübeck"
@@ -170,4 +216,3 @@ army_names = {
 	"Armee von $PROVINCE$"
 	"Erzbischofliche Garde"
 }
-preferred_religion = protestant
