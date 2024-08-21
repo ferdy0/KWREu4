@@ -31,122 +31,170 @@ historical_units = {
 	slavic_stradioti
 }
 monarch_names = {
-	"Aghavni #0" = -1
-	"Aleksandr #0" = 0
-	"Anushirvan #0" = 0
-	"Archambaud #0" = 0
-	"Arda #0" = -1
-	"Arina #0" = -1
-	"Bagrat #2" = 10
-	"Barbat #0" = 0
-	"Bouchard #0" = 0
-	"Dzabuli #0" = -1
-	"Elia #0" = 0
-	"Eustratios #1" = 10
-	"Francisca #0" = -1
-	"Gagiki #1" = 10
-	"Giorgi #2" = 10
-	"Gremislava #0" = -1
-	"Hasmig #0" = -1
-	"Kahil #0" = 0
-	"Kapriel #0" = 0
-	"Khorishah #0" = -1
-	"Konstantinos #2" = 10
-	"Léon #0" = 0
-	"Malkhas #0" = 0
-	"Martha #1" = -1
-	"Michael #1" = 10
-	"Ovsanna #0" = -1
-	"Pirvu #0" = 0
-	"Robin #0" = 0
-	"Sarkis #0" = 0
-	"Stepanos #1" = 10
-	"Tachat #1" = 10
-	"Tacsony #0" = 0
-	"Tahmasp #0" = 0
-	"Vache #0" = 0
-	"Vartan #0" = 0
-	"Zakare #2" = 10
+	"Giorgi #6" = 120
+	"David #9" = 60
+	"Vakhtang #3" = 60
+	"Bagrat #5" = 40
+	"Erekle #0" = 40
+	"Konstantine #0" = 40
+	"Luarsab #0" = 40
+	"Simon #0" = 40
+	"Teimuraz #0" = 40
+	"Aleksandre #0" = 20
+	"Demetre #2" = 20
+	"Iese #0" = 15
+	"Levan #0" = 15
+	"Archil #0" = 10
+	"Kaikhosro #0" = 10
+	"Rostom #0" = 10
+	"Bakar #0" = 5
+	"Bebur #0" = 0
+	"Torgva #0" = 0
+	"Stepanoz #0" = 0
+	"Aghatang #0" = 0
+	"Andukapar #0" = 0
+	"Givi #0" = 0
+	"Grigol #0" = 0
+	"Ivane #0" = 0
+	"Paata #0" = 0
+	"Tornike #0" = 0
+	"Tsotne #0" = 0
+	"Zaal #0" = 0
+	"Zaza #0" = 0
+	"Zurab #0" = 0
+	"Zviad #0" = 0
+	"Sumbat #0" = 0
+#KAKHETI
+	"Bidzina #0" = 0
+	"Nikoloz #0" = 0
+	"Garsevan #0" = 0
+	"Ioane #0" = 0
+#IMERETI
+	"Datua #0" = 0
+	"Bezhan #0" = 0
+	"Katsia #0" = 0
+	"Otia #0" = 0
+	"Grigol #0" = 0
+	"Kakhaber #0" = 0
+	"Shamandavle #0" = 0
+	"Vamiq #0" = 0
+	"Liparit #0" = 0
+	"Rabia #0" = 0
+	"Puto #0" = 0
+	"Seteman #0" = 0
+	"Zegnak #0" = 0
+	"Timote #0" = 0
+#SAMTSKHE
+	"Qvarqvare #0" = 0
+	"Beka #0" = 0
+	"Manuchar #0" = 0
+	"Aghbugha #0" = 0
+	"Baadur #0" = 0
+	"Mzetchabuk #0" = 0
+	"Botso #0" = 0
+	"Sargis #0" = 0
+	"Ivane #0" = 0
+	
+#QUEENS
+	"Tamar #1" = -20
+	"Rusudan #1" = -10
+	"Nestan-Darejan #0" = -10
+	"Darejan #0" = -5
+	"Ketevan #0" = -5
+	"Tinatin #0" = -5
+	"Nino #0" = -1
+	"Elene #0" = -1
+	"Ana #0" = -1
+	"Mariam #0" = -1
+	"Khoreshan #0" = -1
+	"Dedisimedi #0" = -1
 }
 leader_names = {
-	"Abashidze"
-	"Abkhazi"
-	"Agiashvili"
-	"Amilakhori"
-	"Amilakhvari"
-	"Amirejibi"
-	"Anchabadze"
-	"Andronikashvili"
-	"Apakidze"
-	"Avilishvili"
-	"Babadishvili"
-	"Baratashvili"
-	"Bebutashvili"
-	"Begtabegishvili"
-	"Chavchavadze"
-	"Cherkezeshvili"
-	"Chichua"
-	"Chijavadze"
-	"Chikovani"
-	"Chkheidze"
-	"Chkhetidze"
-	"Cholokashvili"
-	"Dadeshkeliani"
-	"Dadiani"
-	"Diasamidze"
-	"Gabashvili"
-	"Gaganidze"
-	"Gegechkori"
-	"Gelovani"
-	"Gogibashvili"
-	"Gogorishvili"
-	"Guramishvili"
-	"Gurgenidze"
-	"Gurieli"
-	"Iashvili"
-	"Jandieri"
-	"Javakhishvili"
-	"Jorjadze"
-	"Kherkheulidze"
-	"Khildirbegashvili"
-	"Kobulashvili"
-	"Kobulisdze"
-	"Kopasdze"
-	"Kvenipneveli"
-	"Lionidze"
-	"Lortkipanidze"
-	"Machavariani"
-	"Machutadze"
-	"Maghalashvili"
-	"Mikeladze"
-	"Mkheidze"
-	"Mukhranbatoni"
-	"Mukhrani"
-	"Nakashidze"
-	"Nikoladze"
-	"Nizharadze"
-	"Orbeliani"
-	"Palavandishvili"
-	"Panaskerteli"
-	"Ratishvili"
-	"Robatishvili"
-	"Rusishvili"
-	"Shaburidze"
-	"Shalikashvili"
-	"Shervashidze"
-	"Sidamoni"
-	"Solagashvili"
-	"Sologashvili"
-	"Sumbatishvili"
-	"Tavdgiridze"
-	"Tsereteli"
-	"Tsitsishvili"
-	"Tsulukidze"
-	"Tukhareli"
-	"Tumanisdze"
-	"Turkestanishvili"
-	"Tusishvili"
-	"Vachnadze"
+#UNCLASSIFIED
+	Gabashvili Gegechkori	
+#KARTLI
+	Amilakhvari
+	Amirejibi
+	Baratashvili
+	Bebutashvili
+	Begtabegishvili
+	Cherkezeshvili
+	Chkhetidze
+	Gabashvili
+	Javakhishvili
+	Kherkheulidze
+	Kvenipneveli
+	Maghalashvili
+	Mikeladze
+	Mukhrani
+	Mukhranbatoni
+	Orbeliani
+	Ratishvili
+	Sidamoni
+	Solagashvili
+	Tsitsishvili
+	Turkestanishvili
+#KAKHETI
+	Abashidze
+	Abkhazi
+	Andronikashvili
+	Babadishvili
+	Chavchavadze
+	Cherkezeshvili
+	Cholokashvili
+	Guramishvili
+	Gurgenidze
+	Jandieri
+	Jorjadze
+	Kobulashvili
+	Lionidze
+	Robatishvili
+	Rusishvili
+	Shaburidze
+	Tumanisdze
+	Tusishvili
+	Vachnadze
+#IMERETI
+	Agiashvili
+	Anchabadze
+	Apakidze
+	Chichua
+	Chijavadze
+	Chikovani
+	Chkheidze
+	Dadiani
+	Dadeshkeliani
+	Gelovani
+	Gurieli
+	Iashvili
+	Lortkipanidze
+	Machavariani
+	Machutadze
+	Mkheidze
+	Mikeladze
+	Nakashidze
+	Nikoladze
+	Nizharadze
+	Shervashidze
+	Tsereteli
+	Tsulukidze
+#SAMTSKHE
+	Amilakhori
+	Avilishvili
+	Diasamidze
+	Gaganidze
+	Gogibashvili
+	Gogorishvili
+	Khildirbegashvili
+	Kobulisdze
+	Kopasdze
+	Palavandishvili
+	Panaskerteli
+	Shalikashvili
+	Sologashvili
+	Sumbatishvili
+	Tavdgiridze
+	Tukhareli
 }
 ship_names = {
 	"Abkhazeti"

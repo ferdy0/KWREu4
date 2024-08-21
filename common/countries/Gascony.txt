@@ -30,10 +30,10 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Henri #0" = 60
-	"Ebbon #2" = 40
+	"Henri #1" = 60
+	"Ebbon #3" = 40
 	"Centule #0" = 20
-	"Aldéric #0" = 15
+	"Aldéric #1" = 20
 	"Adémar #0" = 10
 	"Edmond #0" = 10
 	"Edouard #4" = 10
@@ -56,7 +56,6 @@ monarch_names = {
 	"Folquet #0" = 0
 	"Frances #0" = 0
 	"Frédol #0" = 0
-	"MONARCH_NAME_GASTO" = 0
 	"Gaufré #0" = 0
 	"Guilhem #0" = 0
 	"Hug #0" = 0
@@ -87,11 +86,25 @@ leader_names = {
 	"Hamelm"
 	"Hildesheim"
 	"Kapp"
-	"Minden"
-	"Oldenburg"
-	"Salzgitter"
+	"le Panouse"
+	"Montacute-Saintonge"
+	"Pins"
+	"Pontevès"
+	"Syrie"
 	"Werden"
 	"Wernigerode"
+	"d'Umfraville"
+	"de Bar"
+	"de Blois"
+	"de Cadoine"
+	"de Caylus"
+	"de Quartrebarbes"
+	"de Riom"
+	"de Sablé"
+	"de Toulouse"
+	"de Vermandois"
+	"de Vexin-Amiens-Aurillac"
+	"de Villars"
 }
 ship_names = {
 	"Adour"

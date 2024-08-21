@@ -2,29 +2,61 @@ ck2_converter_generated = yes
 graphical_culture = muslimgfx
 color = { 10 205 90 }
 monarch_names = {
-	"Amalie #0" = -1
+	"Stepanos #2" = 60
+	"Zakare #2" = 60
+	"Erdesîr #0" = 30
+	"Vrtanes #1" = 30
+	"Hafez #2" = 20
+	"Khachik #0" = 20
+	"Tachat #1" = 20
+	"Brkisho #0" = 10
+	"Hagop #1" = 10
+	"Mzhezh #0" = 10
+	"Abas #0" = 0
 	"Amin #0" = 0
-	"Bagour #0" = 0
-	"Befrîn #0" = -1
-	"Bohar #0" = -1
-	"Erdešîr #0" = 0
-	"Eulalia #0" = -1
+	"Bedros #0" = 0
+	"Dartad #0" = 0
 	"Ferzad #0" = 0
-	"Fîdan #0" = -1
 	"Gagik #0" = 0
 	"Gavriil #0" = 0
-	"Hafez #0" = 0
 	"Hossein #0" = 0
-	"Junpala #0" = 0
-	"Kambiz #0" = 0
-	"Mara #0" = -1
+	"Hovhannes #0" = 0
+	"Ivane #0" = 0
 	"Marcu #0" = 0
 	"Mîrza #0" = 0
-	"Nazani #0" = -1
 	"Seyfullah #0" = 0
-	"Stepanos #1" = 10
-	"Tachat #1" = 10
+	"Vahag #0" = 0
 	"Vahid #0" = 0
 	"Vahusdan #0" = 0
-	"Zakare #1" = 10
+	
+	"Razmouhi #0" = -10
+	"Anoush #0" = -1
+	"Befrîn #0" = -1
+	"Berjouhi #0" = -1
+	"Fîdan #0" = -1
+	"Houri #0" = -1
+	"Mara #0" = -1
+	"Nazani #0" = -1
+	"Satenik #0" = -1
+	"Sirvart #0" = -1
+}
+leader_names = {
+	"Ayyubid"
+	"Bagratuni"
+	"Bagratuni-Lori"
+	"Bseisoid"
+	"Buyid"
+	"Choniates"
+	"Forsa"
+	"Gardman-Aghbania"
+	"Kaprielian"
+	"Moustapha"
+	"Sadakiyanid"
+	"Suhrawardi"
+	"Uqaylid"
+	"Yadav"
+	"al-Ayyar"
+	"al-Juwayni"
+	"al-Kayush"
+	"di Qasr at-Tuba"
 }

@@ -30,8 +30,6 @@ elector = yes
 		religion = catholic
 		culture = frisian
 	}
-	add_ruler_personality = entrepreneur_personality
-	add_ruler_personality = kind_hearted_personality
 	queen = {
 		name = "Kirsten"
 		dynasty = "van Namen"
@@ -45,8 +43,6 @@ elector = yes
 		religion = catholic
 		culture = dutch
 	}
-	add_queen_personality = martial_educator_personality
-	add_queen_personality = tactical_genius_personality
 	heir = {
 		name = "Dirk"
 		monarch_name = "Dirk VI"
@@ -60,8 +56,6 @@ elector = yes
 		religion = catholic
 		culture = frisian
 	}
-	add_heir_personality = charismatic_negotiator_personality
-	add_heir_personality = kind_hearted_personality
 }
 1444.11.11= {
 	add_prestige = 108

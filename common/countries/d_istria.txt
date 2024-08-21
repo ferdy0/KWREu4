@@ -2,35 +2,68 @@ ck2_converter_generated = yes
 graphical_culture = easterngfx
 color = { 75 110 105 }
 monarch_names = {
-	"Ausilia #0" = -1
-	"Baldomar #0" = 0
-	"Bisina #0" = -1
-	"Cededa #1" = -1
+	"Oskar #0" = 60
+	"Jitej #0" = 30
+	"Benedikt #0" = 20
+	"Boris #1" = 20
+	"Wilhelm #0" = 20
+	"Eckbert #0" = 15
+	"Filip #1" = 15
 	"Dietwin #1" = 10
-	"Dragan #0" = 0
-	"Filip #0" = 0
-	"Hatto #1" = 10
-	"Hrvoje #0" = 0
-	"Jagoda #0" = -1
-	"Jitej #0" = 0
-	"Ksenia #0" = -1
-	"Ljutomisl #0" = 0
-	"Lucija #0" = -1
-	"Magdalena #0" = -1
-	"Mojca #1" = -1
-	"Muiredach #0" = 0
-	"Petrus #0" = 0
-	"Raina #0" = -1
-	"Sergiu #0" = 0
-	"Silvija #0" = -1
-	"Stanislav #0" = 0
-	"Stjepan #0" = 0
-	"Tatjana #0" = -1
-	"Teodor #0" = 0
-	"Thimo #0" = 0
-	"Uskrsimir #4" = 10
-	"Vjekoslava #0" = -1
-	"Wernhard #0" = 0
+	"Grigorii #0" = 10
 	"Wigerich #1" = 10
-	"Zvonimir #0" = 0
+	"Baldomar #0" = 0
+	"Demetrios #0" = 0
+	"Dobromir #0" = 0
+	"Dragan #0" = 0
+	"Hatto #0" = 0
+	"Hrvoje #0" = 0
+	"Ljutomisl #0" = 0
+	"Petrus #0" = 0
+	"Stjepan #0" = 0
+	"Teodor #0" = 0
+	"Wernhard #0" = 0
+	
+	"Ausilia #0" = -1
+	"Jagoda #0" = -1
+	"Lucia #0" = -1
+	"Magdalena #0" = -1
+	"Mojca #0" = -1
+	"Raina #0" = -1
+	"Silvija #0" = -1
+	"Tatjana #0" = -1
+}
+leader_names = { 
+	Absenger
+	Almer
+	Altmann
+	Amtmann
+	Andreitsch
+	Arlitz
+	Fuchs
+	Herndler
+	Hierzegger
+	Kacic
+	Kroha
+	Lackfi
+	Lanz
+	Maxa
+	Messner
+	Nalecz
+	Potetz
+	Ruckenstuhl
+	Schmidtberger
+	Steinegger
+	Svacic
+	Terovic
+	Teubenbacher
+	Trenkler
+	Wergals 
+	Zingl
+	"di Cinarca"
+	"von Bucheck"
+	"von Cilli"
+	"von Lenzburg"
+	"von Mainz"
+	"von Raabs"
 }

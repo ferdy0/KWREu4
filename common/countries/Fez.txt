@@ -21,38 +21,63 @@ historical_units = {
 	muslim_dragoon
 	muslim_mass_infantry
 }
-monarch_names = {
-	"Abd al-Malik #1" = 10
-	"Abu-Bakr #1" = 10
-	"Aires #1" = 10
-	"Ajissa #1" = 10
-	"Ali #1" = 10
-	"Amaz'uz' #1" = 10
-	"Aras #0" = 0
-	"Aylal #0" = 0
-	"Constança #0" = -1
-	"Dunas #1" = 10
-	"Dórdia #0" = -1
-	"Fath #1" = 10
-	"Hammama #1" = 10
-	"Hotha #0" = 0
-	"Lambertu #0" = 0
-	"Lovesendo #0" = 0
-	"Mu'ansir #1" = 10
-	"Pedro #1" = 10
-	"Sancha #1" = -1
-	"Sancho #0" = 0
-	"Sebastião #0" = 0
-	"Sekla #1" = 10
-	"Stembanos #1" = 10
-	"Vasco #0" = 0
-	"Vysheslav #0" = 0
-	"Wadih #1" = 10
-	"Yabdas #1" = 10
-	"Yahya #1" = 10
-	"Zuber #0" = 0
-	"al-Futuh #2" = 10
-	"al-Mu'izz #1" = 10
+monarch_names = {	
+	"Muhammad #1" = 30
+	"'Abdallâh #0" = 20
+	"'Abd al-Malik #0" = 20
+	"Ahmad #0" = 20
+	"Aires #1" = 20
+	"Monio #1" = 20
+	"Pedro #2" = 20
+	"Sulaymân #0" = 20
+	"Yazîd #0" = 0
+	"Zaydân #0" = 20
+	"Alim #0" = 15
+	"'Alî #1" = 10
+	"Sancho #1" = 10
+	"al-Walîd #0" = 0
+	"Ataullah #0" = 0
+	"Azhar #0" = 0
+	"Barakat #0" = 0
+	"Dawud #0" = 0
+	"Fahd #0" = 0
+	"Faraj #0" = 0
+	"Faruq #0" = 0
+	"Firuz #0" = 0
+	"Habib #0" = 0
+	"Hafiz #0" = 0
+	"Hakim #0" = 0
+	"Hashim #0" = 0
+	"Ibrahim #0" = 0
+	"Imtiyaz #0" = 0
+	"Jabril #0" = 0
+	"Khalil #0" = 0
+	"Latif #0" = 0
+	"Lutfi #0" = 0
+	"Maram #0" = 0
+	"Muhsin #0" = 0
+	"Najib #0" = 0
+	"Qismat #0" = 0
+	"Qusay #0" = 0
+	"Rashad #0" = 0
+	"Rasul #0" = 0
+	"Ridwan #0" = 0
+	"Shafaqat #0" = 0
+	"Sharif #0" = 0
+	"Yasir #0" = 0
+	"Yûsuf #0" = 0
+	"Zulfiqar #0" = 0
+	
+	"Khnata #0" = -5
+	"Zaidana #0" = -5
+	"Aisha #0" = -1
+	"Alwa #0" = -1
+	"Bilqis #0" = -1
+	"Halima #0" = -1
+	"Selima #0" = -1
+	"Thamina #0" = -1
+	"Thana #0" = -1
+	"Widad #0" = -1
 }
 leader_names = {
 	"Alami"
@@ -63,8 +88,17 @@ leader_names = {
 	"Bidouane"
 	"Hadda"
 	"Hadji"
+	"Hispano"
 	"Sediki"
 	"Sellami"
+	"al-Baitar"
+	"al-Hannach"
+	"al-Tariq"
+	"d'Aubigny"
+	"de Castelo Branco"
+	"de Sousa Chichorro"
+	"de Tagragra"
+	"di Sarausa"
 }
 ship_names = {
 	"Adl"

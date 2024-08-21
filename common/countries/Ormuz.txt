@@ -26,47 +26,76 @@ historical_units = {
 	topchis_artillery
 }
 monarch_names = {
-	"Abdul-Jaleel #0" = 0
-	"Abdul-Wahab #0" = 0
-	"Ardeshir #0" = 0
-	"Asiya #0" = -1
+	"Hazarasp #3" = 40
+	"Mashad #1" = 25
+	"Sulayman #2" = 25
+	"Gholam #1" = 15
+	"Idris #1" = 15
+	"'Ali #0" = 10
+	"Ayaz #0" = 10
 	"Baytas #1" = 10
-	"Faghira #0" = -1
+	"Butaiyin #0" = 10
+	"Dudjayn #0" = 10
+	"Fackhr al-Din #0" = 10
+	"Hamada #0" = 10
+	"Mahmud #0" = 10
+	"Muhammad #0" = 10
+	"Nadjim ibn Duhaynim #0" = 10
+	"Neyn #0" = 10
+	"Orhan #2" = 10
+	"Rashid #0" = 10
+	"Zayid #0" = 10
+	"Naveed #0" = 5
+	"Pujman #0" = 5
+	"'Abd al-Jaleel #0" = 0
+	"'Abd al-Wahab #0" = 0
+	"Ardeshir #0" = 0
 	"Firuz #0" = 0
-	"Gholam #0" = 0
-	"Habiba #0" = -1
 	"Halil #0" = 0
-	"Hazarasp #1" = 10
 	"Husam #0" = 0
-	"Idris #0" = 0
-	"Mahtab #0" = -1
-	"Marwa #0" = -1
-	"Mashad #1" = 10
 	"Mubarak #0" = 0
-	"Muhammad #0" = 0
 	"Mukhtar #0" = 0
 	"Muzaffaraddin #0" = 0
-	"Orhan #2" = 10
 	"Qawurd #0" = 0
 	"Sa'daddin #0" = 0
-	"Safiya #0" = -1
 	"Samir #0" = 0
+	
+	"Aisha #0" = -1
+	"Faghira #0" = -1
+	"Habiba #0" = -1
+	"Ilham #0" = -1
+	"Lujayn #0" = -1
+	"Mahtab #0" = -1
+	"Marwa #0" = -1
+	"Safiya #0" = -1
 	"Samira #0" = -1
-	"Setara #0" = -1
 	"Sitara #0" = -1
 	"Souzan #0" = -1
 	"Tanaz #0" = -1
 }
 leader_names = {
-	"Al-Karachi"
-	"Al-Muwalid"
 	"Anwar"
 	"Atef"
-	"Faraj"
+	"Balkhi"
+	"Bannu Man"
+	"Behahbadid"
+	"Fatimid"
+	"Gorno"
+	"Hakamid"
 	"Ismail"
+	"Jazrid"
+	"Jilani"
 	"Madari"
 	"Saleh"
+	"Shehhid"
 	"Siham"
+	"Ziyarid"
+	"al-Abbas"
+	"al-Adid"
+	"al-Aziz"
+	"al-Debbabid"
+	"al-Karachi"
+	"al-Muwalid"
 }
 ship_names = {
 	"Abu Ali"

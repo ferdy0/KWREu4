@@ -26,94 +26,136 @@ historical_units = {
 	tipu_sultan_rocket
 }
 monarch_names = {
-	"Abdul-Jaleel #0" = 0
-	"Abdul-Qadir #0" = 0
-	"Abdul-Wahab #0" = 0
-	"Agathon #0" = 0
-	"Aghlab #0" = 0
-	"Akin #0" = 0
-	"Azarmidokht #0" = -1
-	"Betta #1" = 10
-	"Bhavadattavarman #1" = 10
-	"Bhoo-Chand #1" = 10
-	"Darab #0" = 0
-	"Dharapatta #1" = 10
-	"Dharasena #3" = 10
-	"Dhruvasena #3" = 10
-	"Dronasimha #1" = 10
-	"Faramarz #0" = 0
-	"Farrukhzad #0" = 0
-	"Farzad #0" = 0
-	"Guhasena #1" = 10
-	"Hariyamandal #1" = 10
-	"Huma #0" = -1
-	"Itlar #1" = 10
-	"Izzaddin #0" = 0
-	"Jamileh #0" = -1
-	"Janmejaya #1" = 10
-	"Jayasimha #2" = 10
-	"Jotman #0" = 0
-	"Kalahastambha #1" = 10
-	"Kandz #0" = 0
-	"Karnadeva #1" = 10
-	"Kharagraha #2" = 10
-	"Kumarapala #1" = 10
-	"Mehri #0" = -1
-	"Mirza #0" = 0
-	"Nahal #0" = -1
-	"Pailan #0" = 0
-	"Pendar #0" = 0
-	"Pravaraja #1" = 10
-	"Rukhshan #0" = 0
-	"Sahar #0" = -1
-	"Salar #0" = 0
-	"Shahrukh #0" = 0
-	"Shaya #0" = 0
-	"Shujah #0" = 0
-	"Siladitya #4" = 10
-	"Touran #0" = -1
-	"Vikramaditya #1" = 10
-	"Yahya #0" = 0
-	"Yasaman #0" = -1
-	"Yusuf #0" = 0
-	"Zeyd #0" = 0
+	"Akbar #3" = 80
+	"Ali #4" = 80
+	"Mohammed #5" = 80
+	"Abdullah #2" = 40
+	"Da'oud #1" = 40
+	"Hussain #2" = 40
+	"Nabil #1" = 40
+	"'Abd an-Nabi Khan #0" = 20
+	"'Abd Allah Khan Talpur #0" = 20
+	"Ali Sher #0" = 20
+	"al-Hakim #1" = 20
+	"az-Zahir #1" = 20
+	"Fath Khan #0" = 20
+	"Furuz Salah ad-Din #0" = 20
+	"Gulam Nabi Khan #0" = 20
+	"Gulam Shah #0" = 20
+	"Mina #1" = 20
+	"Mir Fath Ali #0" = 20
+	"Mirza Jani Beg #0" = 20
+	"Mirza Mohammed 'Isa #0" = 20
+	"Mirza Mohammed Baqi #0" = 20
+	"Mohammed 'Isa #0" = 20
+	"Mohammed Baqi #0" = 20
+	"Mohammed Murad #0" = 20
+	"Nanda #0" = 20
+	"Nizam ad-Din #0" = 20
+	"Nur Mohammed #0" = 20
+	"Sanjar #0" = 20
+	"Sarfaraz Khan #0" = 20
+	"Shah Hussain #0" = 20
+	"Shah Shuja' Beg #0" = 20
+	"Sikandar #0" = 20
+	"Thara #0" = 20
+	"Tughluq #0" = 20
+	"Yar Mohammed Khan #0" = 20
+	"Zaia #1" = 20
+	"Abianos #0" = 10
+	"Abisalom #1" = 10
+	"Ahmad #1" = 10
+	"al-Aziz #1" = 10
+	"al-Majid #0" = 10
+	"al-Mansur #1" = 10
+	"al-Muizz #1" = 10
+	"al-Mustansir #1" = 10
+	"al-Qaim #1" = 10
+	"Jafar #1" = 10
+	"Musa #1" = 10
+	"'Abd al-Aziz #0" = 0
+	"Alam #0" = 0
+	"al-Mustali #0" = 0
+	"Bhav #0" = 0
+	"Bhenji #0" = 0
+	"Boutros #0" = 0
+	"Ghulam #0" = 0
+	"Hamirji #0" = 0
+	"Haroun #0" = 0
+	"Khalil #0" = 0
+	"Malik #0" = 0
+	"Murad #0" = 0
+	"Murshid #0" = 0
+	"Muzzafar #0" = 0
+	"Natwar #0" = 0
+	"Ridwan #0" = 0
+	"Sidhraj #0" = 0
+	"Tayyib #0" = 0
+	"Yassir #0" = 0
 }
 leader_names = {
-	"Bahadur"
-	"Begada"
-	"Bhilala"
-	"Changezi"
-	"Chattari"
-	"Chudasama"
-	"Desai"
-	"Farooqi"
-	"Gauri"
-	"Ghuri"
-	"Gilani"
-	"Haji"
-	"Jurjani"
-	"Kanjar"
-	"Khan"
-	"Khorasani"
-	"Lakhaji"
-	"Latif"
-	"Malik"
-	"Mori"
-	"Munshi"
-	"Muzzafar"
-	"Naru"
-	"Pahore"
-	"Paramara"
-	"Parikh"
-	"Patel"
-	"Patidar"
-	"Ravalji"
-	"Shah"
-	"Solanki"
-	"Sultan"
-	"Tomara"
-	"Turani"
-	"Uzbek"
+	Ardalanid
+	Arghun
+	Bahramid
+	Begada
+	Bhatti
+	Bhilala
+	Bhutto
+	Bukhari
+	Changezi
+	Chattari
+	Chudasama
+	Desai
+	Dihgani
+	Farooqi
+	Gauri
+	Ghuri
+	Gilani
+	Haji
+	Jinnah
+	Jurjani
+	Kanjar
+	Khan
+	Khorasani
+	Lakshmivarman
+	Latif
+	Malik
+	Mori
+	Munshi
+	Muzzafar
+	Naru
+	Pahore
+	Paramara
+	Parikh
+	Patel
+	Patidar
+	Rangid
+	Ravalji
+	Rushi
+	Samanid
+	Shah
+	Sindhi
+	Singh
+	Solanki
+	Soomrah
+	Sultan
+	Tomara
+	Solanki
+	Tarkhan
+	Turani
+	Uzbek
+	Vesugi
+	Yadav
+	Zamindar
+	"al-Mahmud"
+	"al-Mihran"
+	"al-Nadjaf"
+	"al-Quraish"
+	"al-Rasul"
+	"al-Riyahdid"
+	"al-Tus"
+	"al-Zegbid"
+	"i-Sabbah"
 }
 ship_names = {
 	"Ambika"

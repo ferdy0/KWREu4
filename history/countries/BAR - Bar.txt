@@ -33,7 +33,7 @@ mercantilism = 25
 }
 1419.3.25 = {
 	monarch = {
-		name = "GÃ©rard V"
+		name = "Gérard V"
 		dynasty = "Hauteville-Catanzaro"
 		adm = 4
 		dip = 4

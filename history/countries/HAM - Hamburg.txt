@@ -1,27 +1,26 @@
 government = republic
 add_government_reform = free_city
 government_rank = 1
+mercantilism = 25
 technology_group = western
 religion = catholic
 primary_culture = lower_saxon
-capital = 44
-fixed_capital = 44
-1444.11.11= {
+capital = 44	# Hamburg
+fixed_capital = 44 # Cannot move capital away from this province & no power cost to move to it
+historical_friend = HSA #Lübeck
+historical_friend = BRE #Bremen
+historical_friend = RIG #Riga
+
+1399.1.1 = {
 	monarch = {
-		name = "Jochim"
-		dynasty = "von Gustrow"
-		adm = 6
-		dip = 3
-		mil = 5
-		birth_date = 1388.7.15
-		religion = catholic
-		culture = lower_saxon
+		name = "Stadtrat"
+		adm = 2
+		dip = 2
+		mil = 4
+		regent = yes
 	}
-	add_ruler_personality = bold_fighter_personality
-	add_ruler_personality = tolerant_personality
 }
-1444.11.11= {
-	add_prestige = 51
-	add_treasury = 45
-	excommunicate = HAM
-}
+
+1529.1.1 = { religion = protestant }
+
+1529.1.1 = { set_legacy_government = administrative_republic }

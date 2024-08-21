@@ -29,15 +29,58 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Damaes #0" = 0
-	"Folmar #0" = 0
-	"Gerrit #2" = 10
-	"Guij #0" = 0
-	"Irene #0" = -1
-	"Kristof #2" = 10
-	"Marquart #0" = 0
-	"Pieter #1" = 10
-	"Reynilde #0" = -1
+	"Reinoud #2" = 40
+	"Gerrit #2" = 30
+	"Kristof #2" = 30
+	"Willem #1" = 30
+	"Hendrik #0" = 25
+	"Floris #1" = 20
+	"Arnold #0" = 15
+	"Adolf #0" = 15
+	"Karel #0" = 15
+	"Adriaen #0" = 10
+	"Emich #1" = 10
+	"Pieter #0" = 10
+	"Diederik #0" = 5
+	"Gerard #0" = 5
+	"Jan #0" = 5
+	"Alfons #0" = 0
+	"Andries #0" = 0
+	"Arnulf #0" = 0
+	"Bartholomeus #0" = 0
+	"Constantijn #0" = 0
+	"Ernst #0" = 0
+	"Erwin #0" = 0
+	"Ewoud #0" = 0
+	"Floris #0" = 0
+	"Godfried #0" = 0
+	"Jacobus #0" = 0
+	"Joost #0" = 0
+	"Joris #0" = 0
+	"Kasper #0" = 0
+	"Koenraad #0" = 0
+	"Ludger #0" = 0
+	"Luuk #0" = 0
+	"Marinus #0" = 0
+	"Maurits #0" = 0
+	"Michaël #0" = 0
+	"Nikolaas #0" = 0
+	"Rutger #0" = 0
+	"Reinier #0" = 0
+	"Rien #0" = 0
+	"Rudolf #0" = 0
+	"Sebastiaan #0" = 0
+	"Siemen #0" = 0
+	"Sieuwerd #0" = 0
+	"Sjoerd #0" = 0
+	"Vincent #0" = 0
+	"Werner #0" = 0
+	"Wilfred #0" = 0
+	
+	"Amalia #0" = -1
+	"Cécile #0" = -1
+	"Jacoba #0" = -1
+	"Yvonne #0" = -1
 }
 leader_names = {
 	"Bachman"
@@ -49,7 +92,7 @@ leader_names = {
 	"De Waal"
 	"Derksen"
 	"Elgershuisen"
-	"Entink"
+	"Etichonen"
 	"Gelkom"
 	"Holst"
 	"Honekes"
@@ -68,18 +111,20 @@ leader_names = {
 	"Sluiter"
 	"Sweerts"
 	"Teerink"
-	"Ter Horst"
-	"Van Bentheim"
-	"Van Bommel"
-	"Van Bronckhorst"
-	"Van Gulik"
-	"Van Wassenberg"
-	"Van Zutfen"
-	"Van den Bergh"
+	"ter Horst"
 	"Vögelink"
 	"Wagevoord"
 	"Wassink"
 	"Wissink"
+	"van Bentheim"
+	"van Bommel"
+	"van Bronckhorst"
+	"van den Bergh"
+	"van Gulik"
+	"van Loon"
+	"van Nijmegen"
+	"van Wassenberg"
+	"van Zutfen"
 }
 ship_names = {
 	"Betuwe"

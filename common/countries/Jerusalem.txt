@@ -28,55 +28,69 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Agrippina #0" = -1
-	"Aurelia #0" = -1
-	"Cristina #0" = -1
+	"Elia #4" = 50
+	"Petru #1" = 50
+	"Fabritziu #1" = 20
+	"Guidu #2" = 20
+	"Yisrael #2" = 20
+	"Corràdu #0" = 10
+	"Giovanni #0" = 10
+	"Rudolfu #0" = 10
+	"Amalric #0" = 0
+	"Baudouin #0" = 0
 	"Custanzu #0" = 0
-	"Clàudia #0" = -1
-	"Elia #2" = 10
 	"Ermannu #0" = 0
-	"Eufemia #0" = -3
-	"Fabritziu #1" = 5
-	"Francisca #1" = -5
-	"Giacinta #0" = -1
-	"Giuditta #0" = -1
-	"Giulia #0" = -1
-	"Giuseppa #0" = -1
-	"Guidu #2" = 10
-	"Isabella #1" = -3
-	"Lucina #0" = -1
-	"Lucrezzia #0" = -1
-	"Maddalena #0" = -1
-	"Maria #0" = -1
+	"Godfrey #0" = 0
+	"Guido #0" = 0
+	"Heinrich #0" = 0
+	"Hugues #0" = 0
 	"Marianu #0" = 0
 	"Pandone #0" = 0
-	"Petru #2" = 10
 	"Pàulu #0" = 0
-	"Rudolfu #0" = 1
-	"Sacmis #0" = -1
 	"Stèfanu #0" = 0
-	"Teodora #0" = -1
 	"Vali #0" = 0
 	"Valintinu #0" = 0
-	"Yisrael #2" = 5
 	"Zakare #0" = 0
+	
+	"Francisca #2" = -10
+	"Eufemia #0" = -1
+	"Giacinta #0" = -1
+	"Giulia #0" = -1
+	"Isabella #1" = -5
+	"Lucina #0" = -1
+	"Lucrezzia #0" = -1
+	"Maria #0" = -1
 }
 leader_names = {
-	"Bagratuni-Jarabulus"
-	"Elesbaam"
-	"Hauteville-Kerak"
-	"Nuoto"
-	"Pantechnes"
-	"Qasr at-Tuba"
-	"Schidachi"
-	"Synadenos-Jundi"
-	"Valenti"
+	Batatzes
+	Beskond
+	Celko
+	Elesbaam
+	Hauteville-Kerak
+	Kabasilas-Jarabulus
+	Karling
+	Majerteen
+	Narseid
+	Nuoto
+	Pantechnes
+	Pelamedes
+	Pellegrinu
+	Pirovano
+	Synadenos
+	Valenti
+	"al-Atrash"
 	"d'Amalfi"
-	"di Bari"
-	"di Castiddubbuonu"
 	"d'Enna"
+	"de Albuquerque"
+	"de Pontchâteau"
+	"di Bari"
+	"di Caltanisetta"
+	"di Castiddubbuonu"
 	"di Foggia"
 	"di Nissa"
+	"di Qasr at-Tuba"
+	"di Schidachi"
+	"von Mansfeld"
 }
 ship_names = {
 	"Absolution"

@@ -28,62 +28,82 @@ historical_units = {
 	slavic_stradioti
 }
 monarch_names = {
-	"Alajos #0" = 0
-	"András #1" = 10
-	"Ardoino #0" = 0
-	"Bertók #0" = 0
-	"Bonuslo #0" = 0
-	"Béla #1" = 10
-	"Drzislav #0" = 0
-	"Dávid #1" = 10
-	"Erika #1" = -1
-	"Felip Dalmau #0" = 0
-	"Friedrich #0" = 0
-	"Fulöp #0" = 0
-	"Gijsbrecht #1" = 10
-	"Ginevra #0" = -1
-	"Giulio #0" = 0
-	"Györgyi #1" = -1
+	"István #3" = 40
+	"Laszlo #0" = 40
+	"Martin #2" = 40
+	"Meinhard #1" = 30
+	"András #0" = 25
+	"Emmerich #1" = 25
+	"Albert #0" = 20
+	"Frigyes #2" = 20
+	"János #0" = 20
+	"Lajos #0" = 20
+	"Mátyás #0" = 20
+	"Gellért #0" = 15
+	"Károly #0" = 15
+	"Dávid #2" = 10
 	"Géza #1" = 10
-	"Helga #0" = -1
-	"Heribert #0" = 0
-	"István #1" = 10
-	"Jenö #1" = 10
-	"Martin #2" = 10
-	"Meinhard #1" = 10
-	"Márton #0" = 0
-	"Natalia #0" = -1
-	"Olimpiu #0" = 0
-	"Péter #2" = 10
-	"Roberto #0" = 0
-	"Salamon #1" = 10
+	"Péter #1" = 10
 	"Sámuel #1" = 10
-	"Taksony #1" = 10
-	"Tibor #1" = 10
-	"Tétény #1" = 10
-	"Wigerich #1" = 10
-	"Wilhelm #0" = 0
-	"Wolfgang #0" = 0
-	"Zoltán #1" = 10
-	"Zsuzsa #1" = -1
-	"Álmos #1" = 10
-	"Árpád #1" = 10
+	"Zsigmond #0" = 10
+	"Béla #1" = 5
+	"Anasztáz #0" = 0
+	"Barnabás #0" = 0
+	"Bertalan #0" = 0
+	"Bertók #0" = 0
+	"Boldizsár #0" = 0
+	"Dömötör #0" = 0
+	"Edvárd #0" = 0
+	"Ernö #0" = 0
+	"Ferenc #0" = 0
+	"Friedrich #0" = 0
+	"Gábor #0" = 0
+	"György #0" = 0
+	"Izsák #0" = 0
+	"Jenö #0" = 0
+	"Jozsef" = 0
+	"Kálmán #0" = 0
+	"Kázmér #0" = 0
+	"Lörinc #0" = 0
+	"Lukács #0" = 0
+	"Márk #0" = 0
+	"Miklos #0" = 0
+	"Oszkár #0" = 0
+	"Otto #0" = 0
+	"Patrik #0" = 0
+	"Péter #0" = 0
+	"Simon #0" = 0
+	"Tamás #0" = 0
+	"Vencel #0" = 0
+	
+	"Anna #0" = -10
+	"Erzsébet #0" = -5
+	"Agnes #0" = -1
+	"Györgyi #1" = -1
+	"Katalin #0" = -1
 }
 leader_names = {
 	"Alvinczy"
 	"Andrássy"
+	"Balassa"
 	"Batthyány"
 	"Beleznay"
 	"Benovský"
 	"Bethlen"
+	"Blagai"
 	"Bocskay"
+	"Borkalán"
 	"Báthory"
-	"Csák"
-	"Dessewffy"
+	"Celko"
+	"Corvinus"
+	"Császár"
+	"Drugeth"
+	"Dózsa"
 	"Esterházy"
 	"Festetics"
 	"Frangepán"
-	"Garay"
+	"Giurgiuveni"
+	"Giurgiuveni-Iasi"
 	"Hadik"
 	"Horthy"
 	"Hunyadi"
@@ -92,21 +112,29 @@ leader_names = {
 	"Kán"
 	"Károlyi"
 	"Lackovic'"
-	"Losonci"
+	"Losonczi"
 	"Milványi"
-	"Mészáros"
+	"Mézesi"
 	"Nadasdy"
 	"Ozoray"
+	"Pálóczi"
 	"Rozgonyi"
 	"Rákóczi"
 	"Széchenyi"
 	"Teleki"
 	"Thököly"
+	"Turati"
 	"Zichy"
 	"Zrinski"
 	"Zápolya"
-	"de Kovats"
-	"Šubic'"
+	"Újlaki"
+	"von Eikenschild"
+	"von Glarus"
+	"von Habsburg"
+	"von Hachberg"
+	"von Landsberg"
+	"von Schwelz"
+	"von Stein"
 }
 ship_names = {
 	"Aranybulla"

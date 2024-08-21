@@ -29,36 +29,76 @@ historical_units = {
 	western_medieval_knights
 }
 monarch_names = {
-	"Art #0" = 0
-	"Artbran #0" = 0
-	"Artgal #1" = 10
-	"Beccán #1" = 10
-	"Blanche #0" = -1
-	"Brian #1" = 10
-	"Cathbad #0" = 0
-	"Crínóch #1" = -1
-	"Dúinsech #0" = -1
-	"Dúnlang #0" = 0
-	"Emma #0" = -1
-	"Faílenn #0" = -1
+	"Turlough #1" = 60
+	"Liber #2" = 60
+	"Beccán #1" = 40
+	"Cathaoir #0" = 40
+	"Conchobhar #0" = 40
+	"Donal #0" = 40
+	"Feidlimidh #0" = 40
+	"Muchadh #1" = 40
+	"Muireadhach #0" = 40
+	"Uilliam #1" = 40
+	"Áed #0" = 40
+	"Artgal #1" = 30
+	"Brian #0" = 30
+	"Gáethíne #1" = 30
+	"Art #0" = 20
+	"Cathal #0" = 20
+	"Conchenn #1" = 20
+	"Criomhthann #0" = 20
+	"Fonnchadh #0" = 20
+	"Muiris #0" = 20
+	"Seán #0" = 20
+	"Trengus #1" = 20
+	"Einrí #0" = 15
+	"Erc #0" = 15
+	"Niall #0" = 15
+	"Conn #0" = 10
+	"Dímmasach #0" = 10
+	"Eoghan #0" = 10
 	"Fingen #1" = 10
+	"Aonghus #0" = 5
+	"Comhghall #0" = 5
+	"Cú-Allaid #0" = 5
+	"Maeleachlain #0" = 5
+	"Diarmaid #0" = 5
+	"Dubáed #0" = 5
+	"Flann #0" = 5
+	"Gósacht #0" = 5
+	"Lochlann #0" = 5
+	"Máenach #0" = 5
+	"Áedán #0" = 5
+	"Aerdghal #0" = 0
+	"Artbran #0" = 0
+	"Bearach #0" = 0
+	"Caoímhin #0" = 0
+	"Cathbad #0" = 0
+	"Donnabhain #0" = 0
+	"Dúnlang #0" = 0
+	"Eíhmhín #0" = 0
+	"Fearghal #0" = 0
 	"Flannacán #0" = 0
-	"Fothud #0" = 0
 	"Gilbert #0" = 0
-	"Gáethíne #1" = 10
-	"Hawise #0" = -1
-	"Liber #1" = 10
-	"Lochlann #0" = 0
-	"Máel Sechnaill #1" = 10
-	"Máel-Sechnaill #2" = 10
+	"Iarfhlaith #0" = 0
+	"Lorccán #0" = 0
+	"Mathúin #0" = 0
+	"Naomhán #0" = 0
 	"Niallgus #0" = 0
 	"Oscar #0" = 0
-	"Richardis #0" = -1
+	"Oisín #0" = 0
+	"Pádraig #0" = 0
+	"Ríagáin #0" = 0
 	"Scolaige #0" = 0
-	"Suaibsech #0" = -1
-	"Trengus #1" = 10
-	"Ualan #1" = 10
-	"Uilliam #1" = 10
+	"Somhairle #0" = 0
+	"Suibne #0" = 0
+	
+	"Crínóch #1" = -1
+	"Emma #0" = -1
+	"Faílenn #0" = -1
+	"Fedelma #0" = -1
+	"Órfhlaith #0" = -1
+	"Saraid #0" = -1
 	"Éua #0" = -1
 }
 leader_names = {
@@ -69,7 +109,9 @@ leader_names = {
 	"Blayney"
 	"Bourke"
 	"Boyle"
-	"Browne"
+	"Briain"
+	"Briain-Athlone"
+	"Briain-Tralee"
 	"Burke"
 	"Butler"
 	"Caulfeild"
@@ -78,28 +120,30 @@ leader_names = {
 	"Coote"
 	"Digby"
 	"Dillon"
-	"Dongan"
-	"Duff"
+	"Donnchada"
+	"Dubgaill"
 	"Feilding"
-	"FitzGerald"
+	"Findláich"
 	"FitzMaurice"
 	"FitzOliver"
 	"FitzPatrick"
 	"FitzWilliam"
 	"Fortescue"
 	"Gardiner"
-	"Grimston"
+	"Gille-Fáelain"
 	"Guelph"
 	"Hamilton"
 	"Hare"
-	"Hervey"
+	"Hwicce-Wigton"
 	"Kavanagh"
 	"Keane"
 	"Keating"
 	"Lambart"
 	"Macartney"
-	"Martyn"
-	"McCarthy"
+	"Macalexandair"
+	"Macfindláich"
+	"Macgille-Fáelain"
+	"Maíl Sechlainn-Gabhrán"
 	"Meade"
 	"Moore"
 	"Nugent"
@@ -108,7 +152,7 @@ leader_names = {
 	"O'Connell"
 	"O'Donnell"
 	"O'Hara"
-	"O'Malley"
+	"O'Mhaoirne"
 	"O'Neill"
 	"Pakenham"
 	"Parsons"
@@ -121,8 +165,8 @@ leader_names = {
 	"Vaughan"
 	"Villiers"
 	"Wentworth"
-	"Wesley"
-	"de Burgh"
+	"de Macon"
+	"von Bucheck"
 }
 ship_names = {
 	"Aoife"

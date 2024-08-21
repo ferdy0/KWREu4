@@ -6,22 +6,44 @@ religion = catholic
 primary_culture = highland_scottish
 capital = 373
 add_accepted_culture = irish
-1444.11.11= {
+1372.1.28 = {
 	monarch = {
-		name = "Ualan"
-		dynasty = "Cétchathach-Athlone"
+		name = "Liber II"
+		dynasty = "Briain-Athlone"
 		adm = 3
 		dip = 3
 		mil = 3
-		birth_date = 1396.10.2
+		birth_date = 1335.3.17
 		religion = catholic
 		culture = highland_scottish
 	}
-	add_ruler_personality = intricate_web_weaver_personality
-	add_ruler_personality = tolerant_personality
+}
+1409.12.28 = {
+	monarch = {
+		name = "Muchadh I"
+		dynasty = "Briain-Athlone"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1369.9.16
+		religion = catholic
+		culture = highland_scottish
+	}
+}
+1431.2.20 = {
+	monarch = {
+		name = "Turlough"
+		dynasty = "Briain-Athlone"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1408.11.28
+		religion = catholic
+		culture = highland_scottish
+	}
 	queen = {
 		name = "Faílenn"
-		dynasty = "mac Donnchada"
+		dynasty = "Keating"
 		adm = 3
 		dip = 3
 		mil = 4
@@ -32,23 +54,21 @@ add_accepted_culture = irish
 		religion = catholic
 		culture = irish
 	}
-	add_queen_personality = intricate_web_weaver_personality
-	add_queen_personality = righteous_personality
+}
+1434.3.17 = {
 	heir = {
-		name = "Liber"
-		monarch_name = "Liber II"
-		dynasty = "Cétchathach-Athlone"
+		name = "Turlough"
+		monarch_name = "Turlough II"
+		dynasty = "Briain-Athlone"
 		adm = 4
 		dip = 6
 		mil = 4
-		birth_date = 1424.3.17
-		death_date = 1489.3.17
+		birth_date = 1434.3.17
+		death_date = 1499.3.17
 		claim = 89
 		religion = catholic
-		culture = scottish
+		culture = highland_scottish
 	}
-	add_heir_personality = intricate_web_weaver_personality
-	add_heir_personality = just_personality
 }
 1444.11.11= {
 	add_prestige = 88

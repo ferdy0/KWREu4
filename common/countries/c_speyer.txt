@@ -2,45 +2,79 @@ ck2_converter_generated = yes
 graphical_culture = westerngfx
 color = { 145 145 160 }
 monarch_names = {
-	"Andaberta #0" = -1
+	"Hermann #2" = 40
+	"Siegfried #3" = 30
+	"Eckhard #1" = 20
+	"Karl #2" = 20
+	"Arnulf #1" = 10
+	"Filibert #1" = 10
+	"Giselbert #1" = 10
+	"Heinrich #1" = 10
+	"Isanrich #0" = 10
+	"Konrad #0" = 10
+	"Lambert #3" = 10
+	"Ludwig #2" = 10
+	"Luther #0" = 10
+	"Otto #2" = 10
+	"Robert #3" = 10
+	"Stephan #1" = 10
+	"Walter #1" = 10
+	"Werner #1" = 10
 	"Andreas #0" = 0
 	"Anno #0" = 0
-	"Arnulf #1" = 10
-	"Bianca #1" = -1
-	"Cancor #1" = 10
-	"Charles #2" = 10
-	"Chrodbert #2" = 10
-	"Ekkehard #1" = 10
-	"Erenfried #1" = 10
-	"Filibert #1" = 10
-	"Folkhard #1" = 10
-	"Gerhild #0" = -1
-	"Giselbert #1" = 10
+	"Cancor #0" = 0
+	"Dietwin #0" = 0
+	"Erenfried #0" = 0
 	"Gottschalk #0" = 0
-	"Guntbert #1" = 10
-	"Guntram #1" = 10
-	"Heinrich #2" = 10
 	"Hereswind #0" = 0
-	"Heribert #0" = 0
-	"Herman #1" = 10
-	"Hermann #1" = 10
-	"Hildegarde #0" = -1
-	"Karl #1" = 10
-	"Konrad #1" = 10
-	"Lambert #2" = 10
-	"Lantpert #0" = 0
-	"Liutfrid #0" = 0
-	"Lodewijk #0" = 0
-	"Lothaire #1" = 10
-	"Ludwig #2" = 10
-	"Otto #2" = 10
+	"Herbert #0" = 0
 	"Radbot #0" = 0
-	"Robert #3" = 10
-	"Siegfried #2" = 10
-	"Stephan #1" = 10
-	"Thurimbert #1" = 10
-	"Udalschalk #0" = 0
-	"Uta #0" = -1
-	"Werner #1" = 10
-	"Zwentibold #1" = 10
+	
+	"Bianca #1" = -1
+	"Christine #0" = -1
+	"Hildegarde #0" = -1
+	"Richardis #0" = -1
+}
+leader_names = {
+	"Beich"
+	"Breitmayer"
+	"Buchner"
+	"Börner"
+	"Börrner"
+	"Danhauser"
+	"Gohl"
+	"Gute"
+	"Helber"
+	"Henke"
+	"Hildemar"
+	"Hummelberger"
+	"Humpis"
+	"Kircher"
+	"Klein"
+	"Knapp"
+	"Kopp"
+	"Kyrburg"
+	"Meck"
+	"Merkel"
+	"Ortlieb"
+	"Pfeilsticker"
+	"Raabs"
+	"Roether"
+	"Schupp"
+	"Stütz"
+	"Susenbrot"
+	"Sülzle"
+	"Veit"
+	"Vietz"
+	"Vogel"
+	"Weber"
+	"Wieland"
+	"Wurst"
+	"von Bogen"
+	"von Eberstein"
+	"von Eselsberg"
+	"von Magdeburg"
+	"von Meran"
+	"von Metz"
+	"von Ohningen"
 }

@@ -5,66 +5,78 @@ technology_group = western
 religion = catholic
 primary_culture = bavarian
 capital = 2955
-1392.1.1= {
+1355.5.19 = {
 	monarch = {
-		name = "Stephan III"
-		dynasty = "von Wittelsbach"
-		birth_date = 1337.1.1
+		name = "Leopold II"
+		dynasty = "von Nordheim"
+		birth_date = 1326.9.20
 		adm = 3
 		dip = 3
 		mil = 3
-	}
-	heir = {
-		name = "Ludwig"
-		dynasty = "von Wittelsbach"
-		monarch_name = "Ludwig VII"
-		birth_date = 1368.1.1
-		death_date = 1447.5.1
-		adm = 3
-		dip = 3
-		mil = 3
+		religion = catholic
+		culture = bavarian
 	}
 }
-1413.9.25= {
+1368.6.6 = {
 	monarch = {
-		name = "Ludwig VII"
-		dynasty = "von Wittelsbach"
-		birth_date = 1368.1.1
+		name = "Berengard I"
+		dynasty = "von Nordheim"
+		birth_date = 1351.8.18
 		adm = 3
 		dip = 3
 		mil = 3
-	}
-	heir = {
-		name = "Ludwig"
-		dynasty = "von Wittelsbach"
-		monarch_name = "Ludwig VIII"
-		birth_date = 1403.9.1
-		death_date = 1447.5.1 #actually 1445.4.13 but this is simpler
-		adm = 3
-		dip = 3
-		mil = 3
+		religion = catholic
+		culture = bavarian
 	}
 }
-1438.5.1= {
+1394.4.5 = {
 	monarch = {
-		name = "Ludwig VIII"
-		dynasty = "von Wittelsbach"
-		birth_date = 1403.9.1
+		name = "Albrecht I"
+		dynasty = "von Nordheim"
+		birth_date = 1383.7.13
 		adm = 3
 		dip = 3
 		mil = 3
+		religion = catholic
+		culture = bavarian
 	}
 }
-1441.7.20= {
+1431.9.1 = {
+	monarch = {
+		name = "Leopold Ferdinand I"
+		dynasty = "von Nordheim"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1411.5.31
+		religion = catholic
+		culture = bavarian
+	}
 	queen = {
 		name = "Margarete"
-		dynasty = "von Hohenzollern"
+		dynasty = "van Berthout"
 		country_of_origin = BRA
 		birth_date = 1410.1.1
 		death_date = 1465.7.21
 		adm = 3
 		dip = 3
 		mil = 3
+		religion = catholic
+		culture = saxon
 	}
-	add_queen_personality = infertile_personality
+}
+1437.4.15 = {
+	heir = {
+		name = "Albrecht
+		monarch_name = "Albrecht II"
+		dynasty = "von Nordheim"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1437.4.15
+		death_date = 1492.4.15
+		claim = 89
+		religion = catholic
+		culture = bavarian
+	}
 }
