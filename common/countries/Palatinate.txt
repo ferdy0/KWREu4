@@ -30,53 +30,58 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Albrecht #0" = 10
+	"Friedrich #2" = 100
+	"Ludwig #2" = 80
+	"Havel #2" = 30
+	"Ruprecht #4" = 30
+	"Johann Wilhelm #0" = 20
+	"Karl #0" = 20
+	"Otto Heinrich #0" = 20
+	"Philipp #0" = 20
+	"Philipp Wilhelm #0" = 20
 	"Alexander Siegmund #0" = 15
+	"Heinrich #1" = 15
+	"Johann Friedrich #0" = 15
+	"Ludwig Anton #0" = 15
+	"Ludwig Philipp #0" = 15
+	"Albrecht #0" = 10
+	"Christoph #0" = 10
+	"Eduard #0" = 10
+	"Franz Ludwig #0" = 10
+	"Georg #0" = 10
+	"Gustav Adolf #0" = 10
+	"Hermann #2" = 10
+	"Hubert #0" = 10
+	"Johann Kasimir #0" = 10
+	"Leopold #0" = 10
+	"Ludwig Wilhelm #0" = 10
+	"Moritz #0" = 10
+	"Moritz Christian #0" = 10
+	"Richard #0" = 10
+	"Wilhelm #0" = 10
+	"Wolfgang Georg #0" = 10
+	"Gottfried #0" = 5
+	"Ansgar #0" = 0
+	"Bruno #0" = 0
+	"Gottschalk #0" = 0
+	"Hieronymus #0" = 0
+	"Ignatz #0" = 0
+	"Markus #0" = 0
+	"Raphael #0" = 0
+	"Rüdiger #0" = 0
+	
 	"Amalie #0" = -1
 	"Anna Eleonore #0" = -1
 	"Anna Marie #0" = -1
 	"Barbara #0" = -1
-	"Bruno #0" = 0
 	"Christine #0" = -1
-	"Christoph #0" = 10
 	"Dorothea #0" = -1
-	"Eduard #0" = 10
 	"Elisabeth #0" = -1
-	"Franz Ludwig #0" = 10
-	"Friedrich #0" = 100
-	"Georg #0" = 10
-	"Gottfried #1" = 5
-	"Gottschalk #0" = 0
-	"Gustav Adolf #0" = 10
-	"Heinrich #6" = 15
 	"Helena #0" = -1
-	"Hermann #3" = 10
-	"Hieronymus #0" = 0
-	"Ignatz #0" = 0
-	"Johann Friedrich #0" = 15
-	"Johann Kasimir #0" = 10
-	"Johann Wilhelm #0" = 20
 	"Josepha #0" = -1
-	"Karl #0" = 20
 	"Katharina #0" = -1
 	"Klara #0" = -1
-	"Ludwig #2" = 80
-	"Ludwig Anton #0" = 15
-	"Ludwig Philipp #0" = 15
-	"Ludwig Wilhelm #0" = 10
 	"Luzia #0" = -1
-	"Markus #0" = 0
-	"Moritz #0" = 10
-	"Moritz Christian #0" = 10
-	"Otto Heinrich #0" = 20
-	"Philipp #0" = 20
-	"Philipp Wilhelm #0" = 20
-	"Raphael #0" = 0
-	"Richard #0" = 10
-	"Ruprecht #2" = 20
-	"R0diger #0" = 0
-	"Wilhelm #1" = 10
-	"Wolfgang Georg #0" = 10
 }
 leader_names = {
 	"Adenau"
@@ -88,17 +93,23 @@ leader_names = {
 	"Elmpt"
 	"Falkenberg"
 	"Gruithausen"
+	"Guerra"
 	"Hillensberg"
 	"Hohenfeld"
+	"Lodzia"
 	"Naxleden"
 	"Schaluyn"
 	"Zebnitsch"
+	"di Habsburg-Ravenna"
 	"von Clausbruch"
 	"von Dieblich"
-	"von Gelnhausen"
-	"von Leyen"
+	"von Geroldseck"
+	"von Luxemburg"
 	"von Namedy"
-	"von Schöneck"
+	"von Pfalz"
+	"von Rüssel"
+	"von Schrapelnau"
+	"von Wangen"
 }
 ship_names = {
 	"Deidesheim"
