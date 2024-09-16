@@ -29,48 +29,51 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
+	"Otto #3" = 60
+	"Ernst #1" = 40
+	"Heinrich #1" = 40
+	"August #0" = 20
+	"Bernhard #4" = 20
+	"Christian #0" = 20
+	"Christian Ludwig #0" = 20
+	"Ernst August #0" = 20
+	"Franz #0" = 20
+	"Friedrich #0" = 20
+	"Georg #0" = 20
+	"Georg Wilhelm #0" = 20
+	"Johann Friedrich #0" = 20
+	"Floribert #2" = 10
+	"Franz Otto #0" = 10
+	"Johann #0" = 10
+	"Magnus #3" = 10
 	"Alexander #0" = 0
 	"Alois #0" = 0
 	"Anton #0" = 0
-	"August #0" = 20
-	"Bernhard #1" = 20
 	"Bruno #0" = 0
-	"Christian #0" = 20
-	"Christian Ludwig #0" = 20
 	"Clemens #0" = 0
 	"Denis #0" = 0
-	"Ernst #0" = 40
-	"Ernst August #0" = 20
-	"Franz #0" = 20
-	"Franz Otto #0" = 10
-	"Friedrich #2" = 20
-	"Georg #0" = 20
 	"Gerfried #0" = 0
 	"Gottfried #0" = 0
-	"G0nther #0" = 0
-	"Heinrich #5" = 40
+	"Günther #0" = 0
 	"Helmut #0" = 0
 	"Herbert #0" = 0
 	"Ignatz #0" = 0
-	"Ingrid #0" = -1
 	"Isidor #0" = 0
 	"Jakob #0" = 0
-	"Johann #0" = 10
-	"Johann Friedrich #0" = 20
-	"Katinka #0" = -1
 	"Konstantin #0" = 0
 	"Kuno #0" = 0
-	"Magnus #2" = 10
 	"Markus #0" = 0
 	"Martin #0" = 0
-	"Martina #0" = -1
 	"Oskar #0" = 0
-	"Otto #0" = 60
 	"Reinhard #0" = 0
 	"Silvester #0" = 0
 	"Stefan #0" = 0
 	"Viktor #0" = 0
 	"Waldemar #0" = 0
+	
+	"Ingrid #0" = -1
+	"Katinka #0" = -1
+	"Martina #0" = -1
 }
 leader_names = {
 	"Ahlers"
@@ -85,12 +88,18 @@ leader_names = {
 	"Garbade"
 	"Gefken"
 	"Gehrken"
+	"Lüneburg"
 	"Martin"
 	"Pielken"
 	"Reinbeck"
 	"Sölter"
 	"Westermann"
+	"Wullenpund"
+	"von Are"
 	"von Hodenberg"
+	"von Kiel"
+	"von Rügen"
+	"von Seeburg"
 }
 ship_names = {
 	"Bischof Amelung"

@@ -30,64 +30,91 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Alfred #0" = 0
+	"Charles #2" = 80
+	"Gérard #6" = 50
+	"François #0" = 40
+	"René #0" = 40
 	"Antoine #0" = 20
-	"Bernard #0" = 0
-	"Charles #0" = 80
-	"Charles-Alexandre #1" = 15
-	"Charles-Ferdinand #1" = 10
-	"Charles-Henri #1" = 10
-	"Charles-Joseph #1" = 15
-	"Charles-L0opold #1" = 20
-	"Claude #0" = 15
-	"David #0" = 0
+	"Charles-Léopold #0" = 20
+	"François-Étienne #0" = 20
+	"Jean #0" = 20
+	"Louis #0" = 20
+	"Léopold-Joseph #0" = 20
+	"Nicolas #1" = 20
+	"Stanislas #0" = 20
+	"Ademar #2" = 15
+	"Bernard #1" = 15
+	"Charles-Alexandre #0" = 15
+	"Charles-Joseph #0" = 15
+	"Claude #1" = 15
 	"Ferdinand-Philippe #0" = 15
-	"Fernand #0" = 0
-	"Fran0ois #0" = 40
-	"Fran0ois-Antoine #1" = 10
-	"Fran0ois-0tienne #1" = 20
-	"Ga0tan #0" = 0
-	"G0rard #0" = 0
-	"Henri #0" = 0
-	"Isabelle #0" = -15
-	"Jacques #0" = 0
-	"Jean #1" = 20
+	"Léopold #0" = 15
+	"Léopold-Clément #0" = 15
+	"Rodolphe #0" = 15
+	"Siegmund #0" = 15
+	"Albert #2" = 10
+	"Charles-Ferdinand #0" = 10
+	"Charles-Henri #0" = 10
+	"Dietrich #1" = 10
+	"François-Antoine #0" = 10
+	"Friedrich #0" = 10
 	"Joseph #0" = 10
 	"Joseph-Innocent #0" = 10
-	"Louis #0" = 15
+	"Adolphe #0" = 0
+	"Alfred #0" = 0
+	"David #0" = 0
+	"Fernand #0" = 0
+	"Gaétan #0" = 0
+	"Henri #0" = 0
+	"Jacques #0" = 0
 	"Lucas #0" = 0
-	"L0opold #0" = 15
-	"L0opold-Cl0ment #0" = 15
-	"L0opold-Joseph #0" = 20
-	"Marguerite #0" = -5
-	"Marie #0" = -5
+	"Ludolf #0" = 0
 	"Martin #0" = 0
 	"Maximiliem #0" = 0
-	"Nicolas #0" = 20
 	"Olivier #0" = 0
 	"Raymond #0" = 0
-	"Ren0 #0" = 40
-	"Rodolphe #0" = 15
 	"Serge #0" = 0
-	"Stanislas #0" = 20
-	"Th0odore #0" = 0
-	"0ric #0" = 0
+	"Théodore #0" = 0
+	"Éric #0" = 0
+	
+	"Isabelle #0" = -15
+	"Margot #0" = -5
+	"Marie #0" = -5
+	"Beatrix #0" = -1
+	"Elisabeth #0" = -1
 }
 leader_names = {
 	"Bickling"
 	"Braun"
+	"Chatenois"
+	"Chatenois-Vaucouleurs"
 	"Detemple"
+	"Estouteville"
 	"Fent"
 	"Feyerabend"
 	"Forthober"
 	"Freymuth"
+	"Gerulfing-Lautern"
 	"Kathrein"
 	"Krogloth"
 	"Limburg"
 	"Neubert"
 	"Oberlothringen"
+	"Roes"
 	"Wolferseder"
+	"d'Éolienne"
+	"de Bolougne"
+	"de Montfaucon"
+	"de Rancon"
+	"de Saone"
+	"de Sully"
 	"von Elsass"
+	"von Hardegg"
+	"von Hessen"
+	"von Lausitz"
+	"von Luxemburg"
+	"von Lünstadt"
+	"von Treves"
 }
 ship_names = {
 	"Toul"

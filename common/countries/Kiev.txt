@@ -31,8 +31,8 @@ historical_units = {
 	slavic_stradioti
 }
 monarch_names = {
-	"Ivan #0" = 100
-	"Iliya #1" = 50
+	"Ivan #1" = 100
+	"Iliya #2" = 70
 	"Vyacheslav #2" = 50
 	"Vladislav #2" = 50
 	"Aleksandr #1" = 25
@@ -51,11 +51,11 @@ monarch_names = {
 	"Rostislav #0" = 10
 	"Vladimir #0" = 10
 	"Yaropolk #3" = 10
-	"Yaroslav #1" = 10
+	"Yaroslav #2" = 10
 	"Boris #0" = 5
 	"Carol #0" = 5
 	"Daniil #0" = 5
-	"Igor #0" = 5
+	"Igor #1" = 5
 	"Lev #0" = 5
 	"Mikhail #0" = 5
 	"Mstislav #0" = 5

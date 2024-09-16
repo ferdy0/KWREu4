@@ -25,64 +25,54 @@ historical_units = {
 	topchis_artillery
 }
 monarch_names = {
-	"Abdul-Azeem #0" = 0
-	"Abdul-Lateef #0" = 0
-	"Abdul-Razzaq #0" = 0
-	"Abdullah #0" = 0
-	"Ala'i #0" = 0
-	"Amir #0" = 0
-	"Ashraf #0" = 0
-	"Aziza #0" = -1
-	"Dankaran #0" = 0
-	"Delombira #0" = -1
-	"Farida #0" = -1
-	"Ghazi #0" = 0
-	"Halil #1" = 10
-	"Halima #0" = -1
-	"Hamdan #0" = 0
-	"Husam #0" = 0
-	"Hussayn #1" = 10
-	"Ibtisam #0" = -1
-	"Ismat #0" = 0
-	"Jibril #1" = 10
-	"Kamala #0" = -1
-	"Khaterah #0" = -1
-	"Lala #0" = -1
-	"Mahmud #2" = 10
-	"Mahwash #0" = -1
-	"Mina #0" = -1
-	"Muhsin #0" = 0
-	"Munawwar #0" = -1
-	"Musa #1" = 10
-	"Nasiba #0" = -1
-	"Nasraddin #0" = 0
-	"Nasteexo #0" = -1
-	"Nuraddin #0" = 0
+	"Abdallah #2" = 40
+	"Ahmad #0" = 40
+	"Hussayn #4" = 40
+	"'Abd al-Razzaq #1" = 10
+	"Amr #0" = 10
+	"Khalid #0" = 10
+	"Nasraddin #0" = 10
 	"Qawurd #3" = 10
-	"Rajiya #0" = -1
-	"Samir #1" = 10
-	"Seyfullah #0" = 0
-	"Sharaf #0" = 0
-	"Sirhan #0" = 0
-	"Uways #1" = 10
-	"Viire #0" = -1
+	"Saladin #0" = 10
 	"Wahid #1" = 10
 	"Yasar #1" = 10
-	"Youkhanna #1" = 10
-	"Zeyd #1" = 10
+	"Youkhanna #2" = 10
+	"Zeyd #2" = 10
+	"'Abd al-Azeem #0" = 0
+	"'Abd al-Hamid #0" = 0
+	"'Abd al-Lateef #0" = 0
+	"Ala'i #0" = 0
+	"Amir #0" = 0
+	"Ghazi #0" = 0
+	"Hamdan #0" = 0
+	"Jahan #0" = 0
+	"Sirhan #0" = 0
+	
+	"Fatimah #0" = -1
+	"Layla #0" = -1
+	"Nadiyya #0" = -1
+	"Noushin #0" = -1
 }
 leader_names = {
 	"Balhaf"
 	"Bannu Zanna"
 	"Barafit"
+	"Fatimid"
 	"Harawiz"
+	"Jibrilid"
+	"Jid'ati"
 	"Kalshat"
 	"Kamsit"
+	"Mait"
+	"Naeemi"
 	"Riyam"
 	"Samudat"
 	"Thuwar"
+	"Walashma"
 	"Zabanat"
 	"Ziyad"
+	"al-Yamin"
+	"el-Khattab"
 }
 ship_names = {
 	"Al-Akhdar"

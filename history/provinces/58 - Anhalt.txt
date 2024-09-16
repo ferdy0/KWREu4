@@ -1,5 +1,5 @@
-owner = SAX
-controller = SAX
+owner = ANH
+controller = ANH
 capital = "Dessau"
 is_city = yes
 culture = saxon

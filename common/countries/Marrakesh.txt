@@ -22,40 +22,81 @@ historical_units = {
 	muslim_mass_infantry
 }
 monarch_names = {
-	"Aamira #0" = -1
-	"Abu-Bakr #2" = 10
-	"Agdada #1" = 10
-	"Ameska #1" = 10
-	"Bachman #1" = 10
-	"Bernardo #0" = 0
-	"Blush #0" = 0
-	"Bonyak #0" = 0
-	"Borç #0" = 0
-	"Delaram #0" = -1
-	"Golpari #0" = -1
-	"Gzi #0" = 0
-	"Kella #0" = -1
-	"Kotyan #0" = 0
-	"Kubasar #0" = 0
-	"Shirin #0" = -1
-	"Songul #0" = -1
-	"Togli #0" = 0
-	"Trastemiro #1" = 10
-	"Umar #0" = 0
-	"Wenza #0" = -1
-	"Yusuf #1" = 10
+	"Muhammad #0" = 200
+	"Ahmad #0" = 80
+	"'Abdallâh #0" = 60
+	"'Abd al-Malik #0" = 40
+	"'Alî #1" = 40
+	"'Abd al-Haqq #0" = 20
+	"'al-Walîd #0" = 20
+	"'al-Mustadî #0" = 20
+	"'al-Rashîd #0" = 20
+	"'Uthmân #0" = 20
+	"Hishâm #0" = 20
+	"Idrîsid #0" = 20
+	"Isma'îl #0" = 20
+	"Sulaymân #0" = 20
+	"Yahyâ #0" = 20
+	"Zaydân #0" = 20
+	"Zayn #0" = 20
+	"'Abd ar-Rahmân #0" = 15
+	"al-Yazîd #0" = 15
+	"Mansur #0" = 15
+	"Muhraz #0" = 15
+	"Nasir #0" = 15
+	"Abbas #0" = 10
+	"Abû Bakr #3" = 10
+	"Abû Faris #0" = 10
+	"Abû Merwan #0" = 10
+	"al-Talib #0" = 10
+	"Hammada #0" = 10
+	"Hasam #0" = 10
+	"Hashim #0" = 10
+	"Ibrahim #0" = 10
+	"Ja'far #0" = 10
+	"Maimun #0" = 10
+	"Maslama #0" = 10
+	"Said #0" = 10
+	"Umar #0" = 10
+	"Yûsuf #1" = 10
+	"Ataullah #0" = 0
+	"Jabril #0" = 0
+	"Rasul #0" = 0
+	"Zulfiqar #0" = 0
+	
+	"Khnata #0" = -5
+	"Zaidana #0" = -5
+	"Aisha #0" = -1
+	"Alwa #0" = -1
+	"Bilqis #0" = -1
+	"Halima #0" = -1
+	"Thamina #0" = -1
+	"Widad #0" = -1
 }
+
 leader_names = {
-	"Alami"
-	"Arazi"
-	"Barek"
-	"Behar"
-	"Berui"
-	"Haida"
-	"Lahsini"
-	"Sahiri"
-	"Sellami"
-	"Skah"
+	Alami
+	Arazi
+	Baraqatid
+	Barek
+	Behar
+	Berui
+	Chisi
+	Haida
+	Lahsini
+	Sahiri
+	Sellami
+	Skah
+	Talalid
+	Tikanariyen
+	Tittawin
+	Zayanid
+	"al-Abid"
+	"al-Abbas"
+	"al-Ishaq"
+	"al-Mubaritun"
+	"al-Murad"
+	"al-Tariq"
 }
 ship_names = {
 	"Afuww"

@@ -28,37 +28,41 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
+	"Johann Jakob #0" = 60
+	"Friedrich #2" = 40
+	"Joseph #0" = 40
+	"Emanuel #0" = 20
+	"Heinrich #3" = 20
+	"Michael #0" = 20
+	"Georg #1" = 10
+	"Otto #2" = 10
 	"Anselm #0" = 0
 	"David #0" = 0
-	"Emanuel #0" = 20
 	"Ernst #0" = 0
-	"Ferdinand #0" = 0
 	"Franz #0" = 0
-	"Friedrich #0" = 0
+	"Ferdinand #0" = 0
 	"Gabriel #0" = 0
-	"Gabriella #0" = -1
-	"Georg #0" = 0
 	"Gottlieb #0" = 0
 	"Gustav #0" = 0
 	"Hans #0" = 0
-	"Henggi #0" = 0
 	"Joachim #0" = 0
-	"Johan Jacob #0" = 60
 	"Johann #0" = 0
 	"Johannes #0" = 0
-	"Joseph #0" = 40
-	"Juliane #0" = -1
 	"Konrad #0" = 0
-	"Michael #0" = 0
+	"Nikolaus #0" = 0
 	"Raphael #0" = 0
 	"Rudolf #0" = 0
-	"Thekla #0" = -1
 	"Wilhelm #0" = 0
+	
+	"Gabriella #0" = -1
+	"Thekla #0" = -1
+	"Juliane #0" = -1
 }
+
 leader_names = {
+	"Avogadro"
 	"Beich"
 	"Buchner"
-	"Börner"
 	"Börrner"
 	"Hummelberger"
 	"Humpis"
@@ -66,7 +70,12 @@ leader_names = {
 	"Ortlieb"
 	"Pfeilsticker"
 	"Susenbrot"
+	"von Assel"
+	"von Metz"
+	"von Wunstorf"
+	"von Zähringen"
 }
+
 ship_names = {
 	"Andechs"
 	"Augsburg"

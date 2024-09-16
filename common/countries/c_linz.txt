@@ -2,30 +2,128 @@ ck2_converter_generated = yes
 graphical_culture = westerngfx
 color = { 115 105 105 }
 monarch_names = {
-	"Adalwin #1" = 10
-	"Albero #0" = 0
-	"Azur #0" = 0
-	"Benedikt #1" = 10
-	"Berengar #0" = 0
-	"Biltrude #0" = -1
-	"Bona #0" = -1
-	"Constanza #0" = -1
-	"Eberhard #0" = 0
-	"Eugenia #1" = -1
-	"Fagulf #1" = 10
-	"Georg #1" = 10
+	"Friedrich #0" = 60
+	"Albrecht #0" = 40
+	"Franz #0" = 40
+	"Joseph #0" = 40
+	"Karl #0" = 40
+	"Maximilian #1" = 40
+	"Franz #0 Stefan" = 20
+	"Ferdinand #1" = 20
+	"Ladislav #0" = 20
+	"Leopold #0" = 20
+	"Matthias #0" = 20
+	"Richer #2"= 20
+	"Ernst #0" = 15
+	"Georg #2" = 15
+	"Philipp #0" = 15
+	"Johann Karl #0" = 15
+	"Johann Leopold #0" = 15
+	"Karl #0 Joseph" = 15
+	"Alexander #0" = 10
+	"Anton #0" = 10
+	"Franz Karl #0" = 10
 	"Gerhard #1" = 10
-	"Guglielmo #0" = 0
-	"Ingeltrude #1" = -1
-	"Jutta #0" = -1
-	"Meginhard #0" = 0
-	"Meinhard #0" = 0
-	"Pilgram #1" = 10
-	"Pilihilde #0" = -1
-	"Richer #2" = 10
-	"Thiemo #1" = 10
-	"Waldo #0" = 0
-	"Weickhard #1" = 10
-	"Werigand #2" = 10
-	"Wernhard #0" = 0
+	"Johann #0" = 10
+	"Leopold Wilhelm #0" = 10
+	"Ludwig #0" = 10
+	"Rainer #0" = 10
+	"Rudolf #0" = 10
+	"Wernher #0" = 5
+	"Adolf #0" = 0
+	"Alfred #0" = 0
+	"Benno #0" = 0
+	"Bruno #0" = 0
+	"Cristoph #0" = 0
+	"Clemens #0" = 0
+	"Dietrich #0" = 0
+	"Florian #0" = 0
+	"Günther #0" = 0
+	"Heinrich #0" = 0
+	"Jakob #0" = 0
+	"Joachim #0" = 0
+	"Jörg #0" = 0
+	"Michael #0" = 0
+	"Oskar #0" = 0
+	"Otto #0" = 0
+	"Siegfried #0" = 0
+	"Stefan #0" = 0
+	"Ulrich #0" = 0
+	"Viktor #0" = 0
+	"Wilhelm #0" = 0
+	"Wolfgang #0" = 0
+	
+	"Maria Theresia #0" = -15
+	"Maria Elisabeth #0" = -1
+	"Maria Anna #0" = -1
+	"Maria Carolina #0" = -1
+	"Maria Amalia #0" = -1
+	"Maria Josepha #0" = -1
+	"Maria Antonia #0" = -1
+	"Johanna #0" = -1
+	"Theresa Benedicta #0" = -1
+	"Walburga #0" = -1
+	"Maximiliane #0" = -1
+	"Maria Margaret #0" = -1
+	"Maria Magdalena #0" = -1
+	"Cecilia Renata  #0" = -1
+	"Anna #0" = -1
+	"Eleanor #0" = -1
+	"Barbara #0" = -1
+	"Helena #0" = -1
+	"Joanna #0" = -1
+	"Elisabeth #0" = -1
+	"Maria #0" = -1
+	"Kunigunde #0" = -1
+}
+
+leader_names = {
+	Arenberg
+	Bethmann
+	Buseck
+	Casper
+	Erlmayr
+	Frantsits
+	Freystadt
+	Gross
+	Haemrich
+	Hagedorn
+	Hildemar
+	Ketterer
+	Kolin
+	Meinl
+	Mittelbach
+	Poll
+	Sauerzapff
+	Schräder
+	Seyssel
+	Steiger
+	Stichsenstein
+	Tegethoff
+	Zwerger
+	"von Beetzen"
+	"von Esterhazy"
+	"von Guttenberg"
+	"von Habsburg"
+	"von Hatzfeldt"
+	"von Hohenberg"
+	"von Ihering"
+	"von Kapfenberg"
+	"von Landsberg"
+	"von Laudon"
+	"von Lechsgmünd"
+	"von Liebschau"
+	"von Neippberg"
+	"von Niederbayern"
+	"von Oberg"
+	"von Quadt"
+	"von Riedesel"
+	"von Schwarzenberg"
+	"von Schünbrunn"
+	"von Schünburg"
+	"von Stark"
+	"von Stauffenberg"
+	"von Stubenrauch"
+	"von Treven"
+	"von Waldstein"
 }

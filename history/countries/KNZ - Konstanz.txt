@@ -7,15 +7,123 @@ primary_culture = swabian
 capital = 4712
 fixed_capital = 4712
 mercantilism = 25
-1440.1.1= {
+1356.1.12 = {
 	monarch = {
-		name = "Patriziat"
+		name = "Heinrich II"
+		dynasty = "von Brandis"
 		adm = 3
 		dip = 3
-		mil = 3
-		regent = yes
+		mil = 1
+		birth_date = 1333.1.1
+		religion = catholic
+		culture = swabian
 	}
 }
+
+1383.11.22 = {
+	monarch = {
+		name = "Nikolaus I"
+		dynasty = "von Riesenburg"
+		adm = 0
+		dip = 2
+		mil = 4
+		birth_date = 1329.1.1
+		religion = catholic
+		culture = swabian
+	}
+}
+
+1387.1.1 = {
+	monarch = {
+		name = "Burkhard I"
+		dynasty = "von Hewen"
+		birth_date = 1324.1.1
+		adm = 2
+		dip = 4
+		mil = 3
+		religion = catholic
+		culture = swabian
+	}
+}
+
+1398.1.1 = {
+	monarch = {
+		name = "Friedrich I"
+		dynasty = "von Nellenburg"
+		birth_date = 1343.1.14
+		adm = 0
+		dip = 1
+		mil = 0
+		religion = catholic
+		culture = swabian
+	}
+}
+
+1398.6.1 = {
+	monarch = {
+		name = "Marquard I"
+		dynasty = "von Randegg"
+		birth_date = 1353.1.19
+		adm = 4
+		dip = 2
+		mil = 1
+		religion = catholic
+		culture = swabian
+	}
+}
+
+1406.12.28 = {
+	monarch = {
+		name = "Albrecht I"
+		dynasty = "Blarer"
+		birth_date = 1374.1.1
+		adm = 3
+		dip = 4
+		mil = 4
+		religion = catholic
+		culture = swabian
+	}
+}
+
+1410.1.1 = {
+	monarch = {
+		name = "Otto II"
+		dynasty = "von Hachberg"
+		birth_date = 1388.3.6
+		adm = 1
+		dip = 4
+		mil = 1
+		religion = catholic
+		culture = swabian
+	}
+}
+
+1434.1.1 = {
+	monarch = {
+		name = "Friedrich II"
+		dynasty = "von Zollern"
+		birth_date = 1380.1.1
+		adm = 0
+		dip = 4
+		mil = 0
+		religion = catholic
+		culture = swabian
+	}
+}
+
+1436.7.30 = {
+	monarch = {
+		name = "Heinrich III"
+		dynasty = "von Hewen"
+		birth_date = 1398.1.1
+		adm = 2
+		dip = 0
+		mil = 3
+		religion = catholic
+		culture = swabian
+	}
+}
+
 1525.1.1= {
 	religion = reformed
 }

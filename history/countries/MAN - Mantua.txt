@@ -3,341 +3,84 @@ add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
 religion = catholic
-primary_culture = romagnan
+primary_culture = lombard
 capital = 109
-1382.1.1= {
+1379.10.10 = {
 	monarch = {
-		name = "Francesco I"
-		dynasty = "Gonzaga"
-		birth_date = 1366.1.1
+		name = "Andaberta I"
+		dynasty = "von Luxemburg"
+		birth_date = 1335.1.28
 		adm = 3
 		dip = 3
 		mil = 1
+		female = yes
+		religion = catholic
+		culture = bavarian
 	}
 }
-1395.1.1= {
-	heir = {
-		name = "Gianfrancesco"
-		monarch_name = "Gianfrancesco I"
-		dynasty = "Gonzaga"
-		birth_date = 1395.1.1
-		death_date = 1444.9.23
-		claim = 95
+1385.9.4 = {
+	monarch = {
+		name = "Siegfried II"
+		dynasty = "von Luxemburg"
+		birth_date = 1353.3.20
 		adm = 1
 		dip = 1
 		mil = 2
+		religion = catholic
+		culture = bavarian
 	}
 }
-1407.1.1= {
+1417.7.25 = {
 	monarch = {
-		name = "Gianfrancesco I"
-		dynasty = "Gonzaga"
-		birth_date = 1395.1.1
-		adm = 1
-		dip = 1
-		mil = 2
-	}
-}
-1412.6.5= {
-	heir = {
-		name = "Ludovico"
-		monarch_name = "Ludovico III il Turco"
-		dynasty = "Gonzaga"
-		birth_date = 1412.6.5
-		death_date = 1478.6.12
-		claim = 95
+		name = "Giorgio II"
+		dynasty = "von Luxemburg"
+		birth_date = 1375.5.24
 		adm = 6
 		dip = 4
 		mil = 3
+		religion = catholic
+		culture = lombard
 	}
 }
-1444.9.23= {
+1436.4.9 = {
 	monarch = {
-		name = "Lodovico III il Turco"
-		dynasty = "Gonzaga"
-		birth_date = 1412.6.5
-		adm = 6
-		dip = 4
-		mil = 3
-	}
-}
-1444.9.23= {
-	heir = {
-		name = "Federico"
-		monarch_name = "Federico I"
-		dynasty = "Gonzaga"
-		birth_date = 1441.6.25
-		death_date = 1484.7.14
-		claim = 95
+		name = "Anselmo III"
+		dynasty = "von Luxemburg"
+		birth_date = 1404.3.21
 		adm = 4
 		dip = 6
 		mil = 1
+		religion = catholic
+		culture = lombard
 	}
-}
-1478.6.13= {
-	monarch = {
-		name = "Federico I"
-		dynasty = "Gonzaga"
-		birth_date = 1441.6.25
-		adm = 4
-		dip = 6
-		mil = 1
-	}
-}
-1478.6.13= {
-	heir = {
-		name = "Francesco"
-		monarch_name = "Francesco II"
-		dynasty = "Gonzaga"
-		birth_date = 1466.8.10
-		death_date = 1519.3.29
-		claim = 95
+	queen = {
+		name = "Ricciarda"
+		dynasty = "di Saluzzo"
 		adm = 4
 		dip = 3
-		mil = 1
+		mil = 5
+		country_of_origin = MLO
+		birth_date = 1400.6.26
+		death_date = 1460.6.26
+		female = yes
+		religion = catholic
+		culture = lombard
 	}
-}
-1484.7.15= {
-	monarch = {
-		name = "Francesco II"
-		dynasty = "Gonzaga"
-		birth_date = 1466.8.10
+	heir = {
+		name = "Mattias"
+		monarch_name = "Mattias I"
+		dynasty = "von Luxemburg"
+		birth_date = 1426.8.10
+		death_date = 1509.3.29
+		claim = 95
 		adm = 4
 		dip = 3
 		mil = 1
+		religion = catholic
+		culture = lombard
 	}
 }
-1500.5.17= {
-	heir = {
-		name = "Federico"
-		monarch_name = "Federico II"
-		dynasty = "Gonzago"
-		birth_date = 1500.5.17
-		death_date = 1540.8.28
-		claim = 95
-		adm = 3
-		dip = 3
-		mil = 3
-	}
-}
-1519.5.30= { government = monarchy
-add_government_reform = autocracy_reform }
-1519.5.30= {
-	monarch = {
-		name = "Federico II"
-		dynasty = "Gonzaga"
-		birth_date = 1500.5.17
-		adm = 3
-		dip = 5
-		mil = 3
-	}
-}
-1533.3.10= {
-	heir = {
-		name = "Francesco"
-		monarch_name = "Francesco III"
-		dynasty = "Gonzaga"
-		birth_date = 1533.3.10
-		death_date = 1550.2.22
-		claim = 95
-		adm = 2
-		dip = 2
-		mil = 1
-	}
-}
-1540.6.29= {
-	monarch = {
-		name = "Francesco III"
-		dynasty = "Gonzaga"
-		birth_date = 1533.3.10
-		adm = 2
-		dip = 2
-		mil = 1
-	}
-}
-1540.6.29= {
-	heir = {
-		name = "Guglielmo"
-		monarch_name = "Guglielmo"
-		dynasty = "Gonzaga"
-		birth_date = 1538.4.24
-		death_date = 1587.8.14
-		claim = 95
-		adm = 3
-		dip = 3
-		mil = 1
-	}
-}
-1550.2.21= {
-	monarch = {
-		name = "Guglielmo"
-		dynasty = "Gonzaga"
-		birth_date = 1538.4.24
-		adm = 3
-		dip = 3
-		mil = 1
-	}
-}
-1562.9.21= {
-	heir = {
-		name = "Vincenzo"
-		monarch_name = "Vincenzo I"
-		dynasty = "Gonzaga"
-		birth_date = 1562.9.21
-		death_date = 1612.2.9
-		claim = 95
-		adm = 5
-		dip = 5
-		mil = 1
-	}
-}
-1587.8.15= {
-	monarch = {
-		name = "Vincenzo I"
-		dynasty = "Gonzaga"
-		birth_date = 1562.9.21
-		adm = 5
-		dip = 5
-		mil = 1
-	}
-}
-1587.8.15= {
-	heir = {
-		name = "Francesco"
-		monarch_name = "Francesco IV"
-		dynasty = "Gonzaga"
-		birth_date = 1586.5.7
-		death_date = 1612.12.22
-		claim = 95
-		adm = 2
-		dip = 2
-		mil = 2
-	}
-}
-1612.2.17= {
-	monarch = {
-		name = "Francesco IV"
-		dynasty = "Gonzaga"
-		birth_date = 1586.5.7
-		adm = 2
-		dip = 2
-		mil = 2
-	}
-}
-1612.2.17= {
-	heir = {
-		name = "Ferdinando"
-		monarch_name = "Ferdinando"
-		dynasty = "Gonzaga"
-		birth_date = 1587.4.26
-		death_date = 1626.10.29
-		claim = 95
-		adm = 2
-		dip = 2
-		mil = 1
-	}
-}
-1612.12.23= {
-	monarch = {
-		name = "Ferdinando"
-		dynasty = "Gonzaga"
-		birth_date = 1587.4.26
-		adm = 2
-		dip = 2
-		mil = 1
-	}
-}
-1612.12.23= {
-	heir = {
-		name = "Vincenzo"
-		monarch_name = "Vincenzo II"
-		dynasty = "Gonzaga"
-		birth_date = 1594.1.7
-		death_date = 1627.12.25
-		claim = 95
-		adm = 3
-		dip = 3
-		mil = 2
-	}
-}
-1626.10.30= {
-	monarch = {
-		name = "Vincenzo II"
-		dynasty = "Gonzaga"
-		birth_date = 1594.1.7
-		adm = 3
-		dip = 3
-		mil = 2
-	}
-}
-1626.10.30= {
-	heir = {
-		name = "Carlo"
-		monarch_name = "Carlo I"
-		dynasty = "Gonzaga"
-		birth_date = 1580.5.6
-		death_date = 1637.9.22
-		claim = 95
-		adm = 0
-		dip = 0
-		mil = 1
-	}
-}
-1627.12.26= { government = monarchy
-add_government_reform = autocracy_reform }
-1627.12.26= {
-	monarch = {
-		name = "Carlo I"
-		dynasty = "Gonzaga"
-		birth_date = 1580.5.6
-		adm = 0
-		dip = 0
-		mil = 1
-	}
-}
-1629.10.3= {
-	heir = {
-		name = "Carlo"
-		monarch_name = "Carlo II"
-		dynasty = "Gonzaga"
-		birth_date = 1629.10.3
-		death_date = 1665.8.14
-		claim = 95
-		adm = 2
-		dip = 2
-		mil = 1
-	}
-}
-1637.9.22= {
-	monarch = {
-		name = "Carlo II"
-		dynasty = "Gonzaga"
-		birth_date = 1629.10.3
-		adm = 2
-		dip = 2
-		mil = 1
-	}
-}
-1652.8.31= {
-	heir = {
-		name = "Ferdinando Carlo"
-		monarch_name = "Ferdinando Carlo"
-		dynasty = "Gonzaga"
-		birth_date = 1652.8.31
-		death_date = 1708.7.5
-		claim = 95
-		adm = 0
-		dip = 0
-		mil = 0
-	}
-}
-1665.8.15= {
-	monarch = {
-		name = "Ferdinando Carlo"
-		dynasty = "Gonzaga"
-		birth_date = 1652.8.31
-		adm = 0
-		dip = 0
-		mil = 0
-	}
+1444.11.11= {
+	add_prestige = 61
+	add_treasury = 0
 }

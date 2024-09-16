@@ -1,5 +1,5 @@
-owner = SAX
-controller = SAX
+owner = ANH
+controller = ANH
 capital = "Magdeburg"
 is_city = yes
 culture = saxon
@@ -11,6 +11,7 @@ base_production = 4
 base_manpower = 2
 extra_cost = 16
 center_of_trade = 2
+add_core = ANH
 add_core = SAX
 discovered_by = east_african
 discovered_by = eastern

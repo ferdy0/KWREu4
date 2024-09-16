@@ -31,64 +31,82 @@ historical_units = {
 	slavic_stradioti
 }
 monarch_names = {
-	"Abd al-Aziz #1" = 10
-	"Adriane #0" = -1
-	"Ahmad #1" = 10
-	"Ali #2" = 10
-	"Andreas #0" = 0
-	"Athanasia #0" = -1
-	"Borivoj #0" = 0
-	"Chrysogone #0" = -1
-	"Davit #1" = 10
-	"Dragomira #0" = -1
-	"Emma #0" = -1
-	"Eudoxios #0" = 0
-	"Gautselin #0" = 0
-	"Germanos #0" = 0
-	"Gregoria #0" = -1
-	"Ioannes #1" = 10
-	"Ioulia #0" = -1
-	"Konstantios #0" = 0
-	"Kyriakos #0" = 0
-	"Leon #1" = 10
-	"Lise #0" = -1
-	"Lubomir #0" = 0
-	"Maurikios #0" = 0
-	"Michael #1" = 10
-	"Muhammad #1" = 10
-	"Musa #1" = 10
-	"Nikephoros #1" = 10
-	"Niketas #0" = 0
-	"Niphon #0" = 0
-	"Náinnas #0" = 0
-	"Orlando #0" = 0
-	"Pedro #1" = 10
-	"Romanos #1" = 10
-	"Shu'ayb #2" = 10
-	"Slobodan #0" = 0
-	"Sulayman #1" = 10
-	"Symmachos #0" = 0
-	"Theodora #0" = -1
-	"Theodoros #0" = 0
-	"Theophylaktos #2" = 10
-	"Umar #2" = 10
-	"Wiltrud #0" = -1
-	"Yusuf #1" = 10
+	"Pedro #4" = 140
+	"Theophylaktos #4" = 140
+	"Antonio #0" = 40
+	"Giacomo #0" = 40
+	"Giovanni #0" = 40
+	"Girolamo #0" = 40
+	"Francesco #0" = 40
+	"Benedetto #0" = 20
+	"Bernardo #0" = 20
+	"Domenico #0" = 20
+	"Donato #0" = 20
+	"Ferdinando #0" = 20
+	"Giuseppe #0" = 20
+	"Lazzaro #0" = 20
+	"Lodovico #0" = 20
+	"Marco #0" = 20
+	"Niketas #0" = 20
+	"Paolo Antonio #0" = 20
+	"Pasquale #0" = 20
+	"Pierluigi #0" = 20
+	"Symmachos #0" = 20
+	"Zaccaria #0" = 20
+	"Paolo #0" = 15
+	"Pietro #0" = 15
+	"Tomasso #0" = 15
+	"Andrea #0" = 10
+	"Leonardo #0" = 10
+	"Maurikios #0" = 10
+	"Theodoros #0" = 10
+	"Aiolos #0" = 0
+	"Bartholomaios #0" = 0
+	"Dionysios #0" = 0
+	"Eusebios #0" = 0
+	"Gregorios #0" = 0
+	"Hermogenes #0" = 0
+	"Ioannes #0" = 0
+	"Konstantinos #0" = 0
+	"Kreon #0" = 0
+	"Lavrentios #0" = 0
+	"Matthaios #0" = 0
+	"Nikolaos #0" = 0
+	"Nikomachos #0" = 0
+	"Nomiki #0" = 0
+	"Serafeim #0" = 0
+	"Spyridon #0" = 0
+	
+	"Elpida #0" = -1	
+	"Kyriake #0" = -1
+	"Rhodanthe #0" = -1
+	"Theodosia #0" = -1	
 }
 leader_names = {
 	"Argyrus"
 	"Artavasdus"
 	"Basileus"
+	"Chrysobalantites"
+	"Clavelli"
+	"Colonna"
 	"Diogenes"
 	"Ducas"
+	"Gryf"
+	"Hagiotheodorites"
 	"Monomachus"
 	"Morosini"
+	"Nalecz"
+	"Narsites"
+	"Pagomenos"
+	"Palaiologos"
 	"Romanus"
-	"Stauracius"
+	"Sinopites"
 	"Stratioticus"
+	"Tich"
 	"Vataces"
 	"Zimisces"
-	"de Vendôme"
+	"de Bragança"
+	"di Rienzo"
 }
 ship_names = {
 	"Dermoaros"

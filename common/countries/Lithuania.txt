@@ -30,55 +30,99 @@ historical_units = {
 	slavic_stradioti
 }
 monarch_names = {
-	"Alvydas #1" = 10
-	"Andreas #0" = 0
-	"Auctune #1" = 10
-	"Bajoras #0" = 0
-	"Betten #0" = -1
-	"Budo #1" = 10
-	"Dagonis #0" = 0
-	"Frederikke #0" = -1
-	"Galindas #1" = 10
-	"Gerdautas #0" = 0
-	"Golding #1" = 10
-	"Gulçiçek #0" = -1
-	"Karatas #0" = 0
+	"Galindas #2" = 40
+	"Golding #2" = 40
+	"Zygimantas #0" = 40
+	"Aleksandras #1" = 20
+	"Alvydas #1" = 20
+	"Auctune #1" = 20
+	"Jan #1" = 20
+	"Kazimieras #0" = 20
+	"Manfred #0" = 20
+	"Nomedas #1" = 20
+	"Vladislovas #0" = 20
+	"Vytautas #0" = 20
+	"Zygimantas Augustas #0" = 20
+	"Gerdautas #0" = 15
+	"Henrikas #0" = 15
+	"Sergonis #1" = 15
+	"Algirdas #0" = 10
+	"Dalimir #0" = 10
 	"Konrad #1" = 10
-	"Malthe #0" = 0
-	"Merkelis #0" = 0
-	"Mònica #0" = -1
-	"Nomedas #1" = 10
-	"Sergonis #0" = 0
-	"Siemomysl #0" = 0
-	"Ulitis #0" = 0
-	"Veledi #0" = 0
+	"Stanislovas #0" = 10
+	"Svitrigaila #0" = 10
+	"Andrius #0" = 5
+	"Mindaugas #0" = 5
+	"Albertas #0" = 0
+	"Antanas #0" = 0
+	"Aras #0" = 0
+	"Arturas #0" = 0
+	"Azuolas #0" = 0
+	"Bronislovas #0" = 0
+	"Darius #0" = 0
+	"Gediminas #0" = 0
+	"Giedrius #0" = 0
+	"Gintaras #0" = 0
+	"Jonas #0" = 0
+	"Jonusas #0" = 0
+	"Juozapas #0" = 0
+	"Jurgis #0" = 0
+	"Kaributas #0" = 0
+	"Karolis #0" = 0
+	"Kristupas #0" = 0
+	"Leonas #0" = 0
+	"Linas #0" = 0
+	"Liudvikas #0" = 0
+	"Marijus #0" = 0
+	"Mykolas #0" = 0
+	"Paulius #0" = 0
+	"Petras #0" = 0
+	"Pranciskus #0" = 0
+	"Raimondas #0" = 0
+	"Ramunas #0" = 0
+	"Steponas #0" = 0
+	"Tomas #0" = 0
+	"Viktoras #0" = 0
+	"Vincentas #0" = 0
+	"Vilhelmas #0" = 0
+	"Vytenis #0" = 0
+	
+	"Agné #0" = -1
+	"Morta #0" = -1
+	"Viltauté #0" = -1
 	"Weslikan #1" = -1
 	"Ziedas #0" = -1
 }
 leader_names = {
-	"Alseniskis"
+	"Alelkaitis"
 	"Astikas"
 	"Chodkevicius"
 	"Daukantas"
 	"Dauksa"
 	"Denhofas"
-	"Giedraitis"
+	"Dravantas"
+	"Gediminaitis"
 	"Gosevskis"
 	"Gostautas"
-	"Kesgaila"
+	"Giurgiuveni-Torun"
+	"Gualch"
+	"Isskalvia"
 	"Kiska"
 	"Kosakovskis"
-	"Kulvietis"
+	"Kujavski"
 	"Lietuvis"
-	"Masalskis"
+	"Mangirdaitis"
+	"Markonen"
 	"Mazvydas"
-	"Nemirovicius"
+	"Nemanas"
 	"Oginskis"
 	"Ostrogiskis"
 	"Pacas"
-	"Pociejus"
+	"Peckollas"
+	"Petrilov"
+	"Pomesania-Jurmala"
 	"Radvila"
-	"Rapolionis"
+	"Rickias"
 	"Rimsa"
 	"Sanguska"
 	"Sapiega"
@@ -88,11 +132,14 @@ leader_names = {
 	"Sluska"
 	"Sosnovskis"
 	"Svyriskis"
-	"Tiskevicius"
+	"Terebovl"
 	"Valancius"
 	"Valavicius"
 	"Visniovieckis"
-	"Zabiela"
+	"Vogelius"
+	"is Galinda"
+	"is Kulmas"
+	"is Pagude"
 }
 ship_names = {
 	"Alytus"

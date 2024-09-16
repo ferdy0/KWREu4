@@ -7,19 +7,113 @@ primary_culture = hessian
 capital = 78
 fixed_capital = 78
 elector = yes
-1444.11.11= {
+1364.11.2 = {
 	monarch = {
-		name = "Hartwig"
-		dynasty = "Orsini"
-		adm = 5
-		dip = 3
+		name = "Gerlach I"
+		dynasty = "von Nassau"
+		adm = 6
+		dip = 5
 		mil = 5
-		birth_date = 1393.4.22
+		birth_date = 1322.1.1
 		religion = catholic
 		culture = hessian
 	}
-	add_ruler_personality = pious_personality
-	add_ruler_personality = zealot_personality
+}
+1371.2.12 = {
+	monarch = {
+		name = "Johann I"
+		dynasty = "von Luxemburg"
+		adm = 6
+		dip = 5
+		mil = 5
+		birth_date = 1342.1.1
+		religion = catholic
+		culture = hessian
+	}
+}
+1373.4.4 = {
+	monarch = {
+		name = "Ludwig I"
+		dynasty = "von Meiﬂen"
+		adm = 6
+		dip = 5
+		mil = 5
+		birth_date = 1342.1.1
+		religion = catholic
+		culture = saxon
+	}
+}
+1382.2.17 = {
+	monarch = {
+		name = "Adolf I"
+		dynasty = "von Nassau"
+		adm = 6
+		dip = 5
+		mil = 5
+		birth_date = 1353.1.1
+		religion = catholic
+		culture = hessian
+	}
+}
+1390.2.6 = {
+	monarch = {
+		name = "Konrad I"
+		dynasty = "von Weinsberg"
+		adm = 6
+		dip = 5
+		mil = 5
+		birth_date = 1340.1.1
+		religion = catholic
+		culture = swabian
+	}
+}
+1390.2.6 = {
+	monarch = {
+		name = "Gottfried I"
+		dynasty = "von Leiningen"
+		adm = 6
+		dip = 5
+		mil = 5
+		birth_date = 1348.1.1
+		religion = catholic
+		culture = hessian
+	}
+}
+1397.1.1 = {
+	monarch = {
+		name = "Johann II"
+		dynasty = "von Nassau"
+		adm = 6
+		dip = 5
+		mil = 5
+		birth_date = 1360.1.1
+		religion = catholic
+		culture = hessian
+	}
+}
+1419.9.23 = {
+	monarch = {
+		name = "Konrad II"
+		dynasty = "von Dhaun"
+		adm = 6
+		dip = 5
+		mil = 5
+		birth_date = 1380.1.1
+		religion = catholic
+		culture = hessian
+	}
+}
+1434.1.1 = {
+	monarch = {
+		name = "Theoderich I"
+		dynasty = "von Erbach"
+		adm = 5
+		dip = 3
+		mil = 5
+		birth_date = 1390.3.23
+		religion = catholic
+		culture = hessian
+	}
 }
 1444.11.11= {
 	add_prestige = 87

@@ -1,1 +1,7 @@
-1444.11.11 = { emperor = BOH }
+1344.9.14 = { emperor = BOH }
+union = {
+	first = "LUX"
+	second = "MKL"
+	start_date = "1444.11.11"
+	end_date = "1836.1.1"
+}

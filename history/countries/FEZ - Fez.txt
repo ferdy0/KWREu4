@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = english_monarchy
 government_rank = 1
-technology_group = western
+technology_group = muslim
 religion = sunni
 primary_culture = moroccan
 capital = 342

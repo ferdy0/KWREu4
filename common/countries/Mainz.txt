@@ -30,31 +30,59 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Archembald #1" = 10
-	"Benedicta #0" = -1
-	"Charles #1" = 10
-	"Eudes #0" = 0
-	"Ezzo #1" = 10
-	"Folmar #1" = 10
-	"Frederik #1" = 10
-	"Gotthard #0" = 0
-	"Hardwin #0" = 0
-	"Hartwig #1" = 10
-	"Hendrik #1" = 10
-	"Hupold #0" = 0
-	"Jacco #1" = 10
-	"Liutbert #1" = 10
-	"Luitpold #1" = 10
-	"Lullus #1" = 10
-	"Manfred #0" = 0
-	"Rutger #0" = 0
+	"Albrecht #0" = 40
+	"Friedrich #1" = 40
+	"Karl Heinrich #0" = 40
+	"Adolf #1" = 20
+	"Anselm Franz #0" = 20
+	"Anselm Kasimir #0" = 20
+	"Berthold #0" = 20
+	"Damian Hartrad #0" = 20
+	"Daniel Brendel #0" = 20
+	"Dieter #0" = 20
+	"Dietrich #1" = 20
+	"Emmerich Joseph #0" = 20
+	"Franz Ludwig #0" = 20
+	"Georg Friedrich #0" = 20
+	"Heinrich #1" = 20
+	"Jakob #0" = 20
+	"Johann #2" = 20
+	"Johann Adam #0" = 20
+	"Johann Friedrich Karl #0" = 20
+	"Johann Philipp #0" = 20
+	"Johann Schweikhard #0" = 20
+	"Karl Theodor #0" = 20
+	"Konrad #2" = 20
+	"Lothar Franz #0" = 20
+	"Lothar Friedrich #0" = 20
+	"Philipp Karl #0" = 20
+	"Sebastian #0" = 20
+	"Werner #1" = 20
+	"Wolfgang #0" = 20
+	"Ludwig #1" = 15
+	"Matthias #0" = 15
+	"Peter #0" = 15
+	"Christian #0" = 10
+	"Gerhard #0" = 10
+	"Leopold #1" = 10
 	"Siegfried #1" = 10
-	"Stefan #0" = 0
-	"Thankulf #1" = 10
-	"Walther #1" = 10
-	"Werner #1" = 10
+	"Uriel #0" = 10
 	"Wilhelm #1" = 10
-	"Wiprecht #1" = 10
+	"Archembald #0" = 0
+	"Gottfried #0" = 0
+	"Gotthard #0" = 0
+	"Hieronymus #0" = 0
+	"Manfred #0" = 0
+	"Markus #0" = 0
+	"Raphael #0" = 0
+	"Rutger #0" = 0
+	"Stefan #0" = 0
+	"Walther #0" = 0
+	
+	"Alexis #0" = -1
+	"Benedicta #0" = -1
+	"Sylvia #0" = -1
+	"Wilhelmine #0" = -1
 }
 leader_names = {
 	"Alfter"
@@ -74,12 +102,25 @@ leader_names = {
 	"Haas"
 	"Heidelberger"
 	"Ickstadt"
+	"Katzenelnbogen"
 	"Lawall"
 	"Pittschaft"
 	"Schmitt"
 	"Schoeneberger"
 	"Storck"
 	"Volz"
+	"von Carenwall"
+	"von der Marck"
+	"von Egisheim"
+	"von Hanau"
+	"von Isenburg"
+	"von Leistenberg"
+	"von Pluyvoise"
+	"von Regenstein"
+	"von Rietberg"
+	"von Schrapelnau"
+	"von Schwanden"
+	"von Stolzenberg"
 }
 ship_names = {
 	"Hagenmünster"

@@ -25,3 +25,5 @@ historical_friend = DNZ #Danzig
 	add_prestige = 71
 	add_treasury = 69
 }
+
+1529.1.1 = { religion = protestant }

@@ -5,6 +5,7 @@ technology_group = western
 religion = catholic
 primary_culture = dynamic-franconian-culture-num1
 capital = 58
+elector = yes
 add_accepted_culture = sorbian
 1444.11.11= {
 	monarch = {

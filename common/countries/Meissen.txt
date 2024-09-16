@@ -29,39 +29,55 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Amalrich #0" = 0
-	"Andrzej #0" = 0
-	"Baldur #0" = 0
-	"Benno #1" = 10
-	"Berthold #1" = 10
-	"Burchard #0" = 0
-	"Czcibór #1" = 10
-	"Ekkehard #2" = 10
-	"Emmerich #0" = 0
-	"Engeltraud #0" = -1
-	"Estrid #1" = -1
-	"Ferdinand #1" = 10
-	"Gaitana #1" = -1
-	"Günther #1" = 10
-	"Günzelin #1" = 10
-	"Helferich #0" = 0
-	"Hermann #1" = 10
-	"Hildeburg #0" = -1
-	"Ida #0" = -1
-	"Ilsa #0" = -1
-	"Karlmann #1" = 10
-	"Lothar #0" = 0
-	"Michael #1" = 10
-	"Oda #1" = -1
-	"Otto #1" = 10
-	"Przemysl #1" = 10
-	"Radomil #1" = 10
-	"Ratibor #1" = 10
-	"Reinhard #0" = 0
-	"Theodorich #0" = 0
-	"Valirianu #1" = 10
-	"Wilhelm #1" = 10
-	"Wolfram #0" = 0
+	"Friedrich #0" = 30
+	"Ratibor #0" = 30
+	"Theodor #0" = 30
+	"Wilhelm #0" = 30
+	"Balthasar #0" = 15
+	"Georg #0" = 15
+	"Albrecht #0" = 10
+	"Eberhard #0" = 10
+	"Ernst #0" = 10
+	"Lucian #0" = 10
+	"Siegmund #0" = 10
+	"Simon #0" = 10
+	"Konrad #0" = 5
+	"Otto #0" = 5
+	"Alfred #0" = 0
+	"August #0" = 0
+	"Bernhard #0" = 0
+	"Berthold #0" = 0
+	"Burkhard #0" = 0
+	"Christian #0" = 0
+	"Christoph #0" = 0
+	"Dietrich #0" = 0
+	"Günther #0" = 0
+	"Andreas #0" = 0
+	"Gustav #0" = 0
+	"Heinrich #0" = 0
+	"Joachim #0" = 0
+	"Johann #0" = 0
+	"Karl #0" = 0
+	"Kasimir #0" = 0
+	"Leonhard #0" = 0
+	"Leopold #0" = 0
+	"Lorenz #0" = 0
+	"Ludwig #0" = 0
+	"Maximilian #0" = 0
+	"Michael #0" = 0
+	"Moritz #0" = 0
+	"Nicolaus #0" = 0
+	"Paul #0" = 0
+	"Reiner #0" = 0
+	"Rudolf #0" = 0
+	"Thomas #0" = 0
+	"Ulrich #0" = 0
+	"Viktor #0" = 0
+	"Waldemar #0" = 0
+	
+	"Annegret #0" = -1
+	"Beata #0" = -1
+	"Elise #0" = -1
 }
 leader_names = {
 	"Ackermann"
@@ -84,15 +100,26 @@ leader_names = {
 	"Hoppe"
 	"Isaack"
 	"Janeck"
-	"Jantke"
+	"Jastrzebiec"
 	"Kersten"
 	"Kleinau"
+	"Lodzia"
 	"März"
 	"Nehmiz"
+	"Obroditen"
 	"Rumpf"
-	"SChauseil"
 	"Scharfe"
+	"Schauseil"
 	"Schieck"
+	"von Bautzen"
+	"von der Marck"
+	"von Dinslaken"
+	"von Falkenstein"
+	"von Hohenstauf"
+	"von Hornes"
+	"von Köln"
+	"von Plauen"
+	"von Schoenecken"
 	"von Zerbst"
 }
 ship_names = {

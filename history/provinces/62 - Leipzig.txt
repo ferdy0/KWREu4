@@ -1,5 +1,5 @@
-owner = SAX
-controller = SAX
+owner = ANH
+controller = ANH
 capital = "Leipzig"
 is_city = yes
 culture = saxon
@@ -9,6 +9,7 @@ hre = yes
 base_tax = 4
 base_production = 4
 base_manpower = 2
+add_core = ANH
 add_core = SAX
 discovered_by = east_african
 discovered_by = eastern

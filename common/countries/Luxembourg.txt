@@ -29,53 +29,67 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Adalgod #0" = 0
-	"Agnes #0" = -1
-	"Alberich #1" = 10
-	"Andali #0" = -1
-	"Ansgar #0" = 0
-	"Arnulf #1" = 10
-	"Baldomar #1" = 10
-	"Beatrix #1" = -1
-	"Benedikt #2" = 10
-	"Dado #0" = 0
-	"Drogo #1" = 10
-	"Ekkehard #0" = 0
-	"Elianora #0" = -1
-	"Ermenegilda #0" = -1
-	"Ernst #0" = 0
-	"Filibert #0" = 0
-	"Folkhard #0" = 0
-	"Frida #0" = -1
+	"Benedikt #3" = 40
+	"Konrad #2" = 40
+	"Michael #3" = 40
+	"Anton #0" = 20
+	"Heinrich #2" = 20
+	"Johann #0" = 20
+	"Karl #1" = 20
+	"Sigmund #0" = 20
+	"Wenzel #1" = 20
+	"Wilhelm #0" = 20
+	"Albrecht #0" = 10
+	"Friedrich #0" = 10
 	"Giselbert #2" = 10
-	"Guntram #1" = 10
-	"Günther #0" = 0
-	"Hartwig #0" = 0
-	"Heinrich #2" = 10
-	"Helga #1" = -1
-	"Ilsa #0" = -1
-	"Jaroslav #1" = 10
-	"Jutta #0" = -1
-	"Karl #0" = 0
-	"Katharina #0" = -1
-	"Konrad #2" = 10
-	"Konstanze #0" = -1
-	"Lothar #0" = 0
-	"Michael #1" = 10
-	"Mourão #0" = 0
-	"Reinhard #0" = 0
-	"Romilda #1" = -1
-	"Sebastiaen #0" = 0
-	"Siegfried #1" = 10
-	"Stanislava #1" = -1
-	"Thietmar #0" = 0
-	"Ursula #0" = -1
+	"Mathias #0" = 10
+	"Eckehardt #0" = 5
+	"Ferdinand #0" = 5
+	"Adergazuz #0" = 0
+	"Albert #0" = 0
+	"Andreas #0" = 0
+	"Berengar #0" = 0
+	"Bernhard #0" = 0
+	"Claudius #0" = 0
+	"Diederik #0" = 0
+	"Ekbert #0" = 0
+	"Engelbert #0" = 0
+	"Folkhard #0" = 0
+	"Franz #0" = 0
+	"Georg #0" = 0
+	"Hans #0" = 0
+	"Isaak #0" = 0
+	"Jakob #0" = 0
+	"Joachim #0" = 0
+	"Joseph #0" = 0
+	"Klemens #0" = 0
+	"Konstantin #0" = 0
+	"Leopold #0" = 0
+	"Lothair #0" = 0
+	"Ludwig #0" = 0
+	"Maximiliam #0" = 0
+	"Pascal #0" = 0
+	"Peter #0" = 0
+	"Philipp #0" = 0
+	"Rudolf #0" = 0
+	"Ruprecht #0" = 0
+	"Rüdiger #0" = 0
+	"Sigismund #0" = 0
+	"Simon #0" = 0
 	"Viktor #0" = 0
-	"William #0" = 0
-	"Winfrida #0" = -1
+	
+	"Cäcilia #0" = -1
+	"Elizabeth #0" = -1
+	"Emma #0" = -1
+	"Isabelle #0" = -1
+	"Ingeltrude #0" = -1
+	"Jeanne #0" = -1
+	"Maria #0" = -1
+	"Mathilde #0" = -1
+	"Philippa #0" = -1
 }
 leader_names = {
-	"Biberen"
+	"Babenberg"
 	"Borchert"
 	"Bourscheidt"
 	"Bültel"
@@ -100,18 +114,31 @@ leader_names = {
 	"Voigt"
 	"Weiler"
 	"Winen"
+	"Zoagli"
+	"de Guilcer"
 	"du Carme"
 	"von Bettborn"
 	"von Bous"
 	"von Capellen"
 	"von Diekirch"
+	"von Dinslaken"
+	"von Feuchtwangen"
+	"von Geroldseck"
 	"von Grevenmach"
-	"von Grosbous"
+	"von Köln"
+	"von Lunen"
+	"von Luxemburg"
 	"von Pontpierre"
-	"von Redange"
+	"von Osterna"
 	"von Reisdorf"
 	"von Schuttrange"
+	"von Silesia-Glogau"
 	"von Sommerfeld"
+	"von Thüringen"
+	"von Trier"
+	"von Vinstingen"
+	"von Wangen"
+	"von Wüllersleben"
 }
 ship_names = {
 	"Capellen"

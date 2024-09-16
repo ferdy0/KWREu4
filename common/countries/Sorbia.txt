@@ -28,56 +28,67 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Aleksander #0" = 0
-	"Andrzej #1" = 10
-	"Antoni #0" = 0
-	"Banzleib #1" = 10
-	"Dedo #1" = 10
-	"Eva #0" = -1
-	"Ezzo #0" = 0
-	"Gerhard #0" = 0
-	"Gero #2" = 10
-	"Gertruda #0" = -1
-	"Isabelle #0" = -1
-	"Jacenty #0" = 0
-	"Jaromar #1" = 10
-	"Juliusz #0" = 0
-	"Kasper #0" = 0
-	"Katarina #0" = -1
+	"Otto #6" = 80
+	"Antoni #0" = 40
+	"Friedrich #0" = 40
+	"Petrus #1" = 40
+	"Andrzej #1" = 20
+	"Heinrich #0" = 20
+	"Jaromar #1" = 20
+	"Johann #0" = 20
+	"Juliusz #1" = 20
+	"Gotthard #0" = 10
+	"Joachim Friedrich #0" = 10
+	"Johann Christian #0" = 10
 	"Konrad #1" = 10
-	"Martin #0" = 0
+	"Ludwik #0" = 10
 	"Merten #1" = 10
-	"Mieszko #0" = 0
-	"Miroslava #0" = -1
-	"Odo #2" = 10
-	"Otakar #0" = 0
-	"Otto #2" = 10
-	"Petrus #1" = 10
-	"Radomil #1" = 10
-	"Ratibor #0" = 0
-	"Saragina #0" = -1
-	"Stefana #0" = -1
-	"Strasz #0" = 0
-	"Thietmar #2" = 10
-	"Thurgot #1" = 10
+	"Rudolf #0" = 10
+	"Kasimir #0" = 5
+	"Michael #0" = 5
+	"Miloslav #0" = 5
+	"Albrecht #0" = 0
+	"Alexander #0" = 0
+	"Arnold #0" = 0
+	"Cezar #0" = 0
+	"Dietrich #0" = 0
+	"Gerhard #0" = 0
+	"Helferich #0" = 0
+	"Joachim #0" = 0
+	"Kasper #0" = 0
+	"Markus #0" = 0
+	"Radomil #0" = 0
+	"Siegfried #0" = 0
 	"Wertislav #0" = 0
-	"Zdenek #0" = 0
-	"Swietopelk #0" = 0
+	"Wilhelm #0" = 0
+	
+	"Eva #0" = -1
+	"Heinrike #0" = -1
+	"Isabelle #0" = -1
+	"Stefana #0" = -1
 }
 leader_names = {
 	"Abeln"
 	"Greve"
 	"Gronau"
+	"Grzymala"
 	"Heintzel"
 	"Hergesell"
 	"Hoppe"
 	"Jauernik"
 	"Kahl"
 	"Liegnitz"
+	"Lodzia"
 	"Schwarz"
+	"Slupska"
 	"Sterner"
 	"Tilch"
 	"Wiehle"
+	"von Luxemburg"
+	"von Mansfeld"
+	"von Meran"
+	"von Storkow"
+	"von Susa"
 }
 ship_names = {
 	"Bautzen"
