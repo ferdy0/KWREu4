@@ -591,6 +591,8 @@ tyrhennian_ideas = {
 	}
 	tyrhennian_7 = {
 		allowed_marine_fraction = 0.25
+		global_sailors_modifier = -0.25
+		sailors_recovery_speed = 0.25
 	}
 }
 
