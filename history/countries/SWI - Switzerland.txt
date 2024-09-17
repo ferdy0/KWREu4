@@ -7,6 +7,7 @@ primary_culture = swiss
 capital = 165
 add_army_professionalism = 0.1
 elector = yes
+historical_friend = TYH
 1364.6.15 = {
 	monarch = {
 		name = "Oberto I"

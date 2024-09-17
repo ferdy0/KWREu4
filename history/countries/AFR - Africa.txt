@@ -6,6 +6,7 @@ religion = converted_dynamic_faith_113
 primary_culture = dynamic-berber-sardinian-culture-num1
 capital = 341
 mercantilism = 15
+historical_friend = TYH
 1368.11.14 = {
 	monarch = {
 		name = "Mastanabal II"

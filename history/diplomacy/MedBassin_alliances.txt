@@ -1,0 +1,14 @@
+#Pisa and Crete under Tyrehnnia
+vassal = {
+	first = TYH
+	second = PIS
+	start_date = 1444.1.1
+	end_date = 1493.1.1
+}
+
+vassal = {
+	first = TYH
+	second = CRT
+	start_date = 1444.1.1
+	end_date = 1493.1.1
+}

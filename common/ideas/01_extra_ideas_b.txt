@@ -528,6 +528,7 @@ african_christian_ideas = {
 			capital_scope = { region = maghreb_region }
 			culture_group = maghrebi
 		}
+		NOT = { tag = AFR }
 	}
 	free = yes
 
@@ -554,3 +555,127 @@ african_christian_ideas = {
 	}
 }
 ###################################################################
+tyrhennian_ideas = {
+	start = {
+		curia_powers_cost = -0.2
+		reform_progress_growth = -0.1
+		global_naval_engagement_modifier = 0.1
+	}
+
+	bonus = { own_coast_naval_combat_bonus = 1 }
+
+	trigger = {
+		primary_culture = sardinian
+	}
+	free = yes
+
+	tyrhennian_1 = {
+		ship_trade_power_modifier = 0.3
+	}
+	tyrhennian_2 = {
+		tolerance_own = 2
+	}
+	tyrhennian_3 = {
+		hostile_attrition = 1
+		max_hostile_attrition = 1
+	}
+	tyrhennian_4 = {
+		naval_forcelimit_modifier = 0.3
+	}
+	tyrhennian_5 = {
+		regiment_disembark_speed = 1
+		leader_naval_manuever = 1
+	}
+	tyrhennian_6 = {
+		defensiveness = 0.2
+	}
+	tyrhennian_7 = {
+		allowed_marine_fraction = 0.25
+	}
+}
+
+african_ideas = {
+	start = {
+		land_attrition = -0.2
+		female_advisor_chance = 0.25
+		global_manpower_modifier = 0.1
+	}
+
+	bonus = { leader_land_manuever = 2 }
+
+	trigger = {
+		primary_culture = dynamic-berber-sardinian-culture-num1
+	}
+	free = yes
+
+	african_1 = {
+		cavalry_power = 0.15
+		siege_ability = 0.1
+	}
+	african_2 = {
+		culture_conversion_cost = -0.15
+	}
+	african_3 = {
+		global_missionary_strength = -0.01
+		tolerance_heathen = 2
+	}
+	african_4 = {
+		trade_efficiency = 0.1
+	}
+	african_5 = {
+		global_supply_limit_modifier = 0.5
+		development_cost = -0.1
+	}
+	african_6 = {
+		naval_maintenance_modifier = -0.2
+		ship_durability = -0.05
+	}
+	african_7 = {
+		prestige = 1
+	}
+}
+
+canaania_ideas = {
+	start = {
+		land_attrition = -0.2
+		naval_attrition = -0.2
+		global_naval_engagement_modifier = 0.1
+	}
+
+	bonus = {
+	    female_advisor_chance = 0.25
+	    own_coast_naval_combat_bonus = 1
+	}
+
+	trigger = {
+		primary_culture = dynamic-berber-sardinian-culture-num1
+	}
+	free = yes
+
+	canaania_1 = {
+	    ship_trade_power_modifier = 0.3
+	}
+	canaania_2 = {
+	    tolerance_heathen = 2
+	    tolerance_own = 2
+	}
+	canaania_3 = {
+		trade_efficiency = 0.1
+	}
+	canaania_4 = {
+	    naval_forcelimit_modifier = 0.2
+		naval_maintenance_modifier = -0.1
+	}
+	canaania_5 = {
+		global_supply_limit_modifier = 0.5
+		development_cost = -0.05
+	}
+	canaania_6 = {
+		leader_land_manuever = 2
+		leader_naval_manuever = 2
+	}
+	canaania_7 = {
+		allowed_marine_fraction = 0.25
+        sailors_recovery_speed = 0.25
+	}
+}
