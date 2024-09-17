@@ -28,48 +28,52 @@ historical_units = {
 	western_medieval_knights
 	western_men_at_arms
 }
+
 monarch_names = {
-	"Adolf #1" = 15
+	"Erich #0" = 40
+	"Ferdinand #0" = 40
+	"Heinrich #1" = 40
+	"Johann #2" = 40
+	"Bernhard #0" = 20
+	"Bernhard Christoph #0" = 20
+	"Ernst #0" = 20
+	"Franz #0" = 20
+	"Franz Arnold #0" = 20
+	"Friedrich #1" = 20
+	"Friedrich Christian #0" = 20
+	"Johann Wilhelm #0" = 20
+	"Konrad #0" = 20
+	"Ludwig #0" = 20
+	"Otto #1" = 20
+	"Wilhelm #0" = 20
+	"Adolf #1" = 10
+	"Florenz #1" = 10
 	"Alexander #0" = 0
 	"Andreas #0" = 0
 	"Baldur #0" = 0
-	"Bernhard #0" = 20
-	"Bernhard Christoph #0" = 20
 	"Bruno #0" = 0
-	"Ciara #0" = -1
 	"Clemens #0" = 0
 	"Dedrick #0" = 0
 	"Denis #0" = 0
-	"Erich #0" = 40
-	"Ernst #0" = 20
-	"Ferdinand #0" = 40
 	"Florian #0" = 0
-	"Franz #0" = 20
-	"Franz Arnold #0" = 20
-	"Friedrich #2" = 20
-	"Friedrich Christian #0" = 20
 	"Gregor #0" = 0
 	"Guntram #0" = 0
-	"Heinrich #0" = 40
 	"Helmfried #0" = 0
 	"Helmut #0" = 0
 	"Isaak #0" = 0
 	"Jan #0" = 0
 	"Joachim #0" = 0
-	"Johann #2" = 40
-	"Johann Wilhelm #0" = 20
-	"Konrad #1" = 20
-	"Ludwig #2" = 15
-	"MONARCH_NAME_ONORA #0" = -1
 	"Martin #0" = 0
 	"Michael #0" = 0
-	"Otto #3" = 20
 	"Rainer #0" = 0
 	"Rudolf #0" = 0
 	"Siegmund #0" = 0
+	
+	"Ciara #0" = -1
+	"MONARCH_NAME_ONORA" = -1
 	"Treasa #0" = -1
-	"Wilhelm #1" = 20
 }
+
 leader_names = {
 	"Boelken"
 	"Dönhoff"
@@ -84,8 +88,19 @@ leader_names = {
 	"de Dornach"
 	"de Kircheim"
 	"de Turckheim"
+	"von Ahlen"
+	"von Arnsberg"
+	"von Beetzen"
+	"von Bibra"
 	"von Cossel"
+	"von Fürstenberg"
+	"von Naumburg"
+	"von Segeberg"
+	"von Wasserburg"
+	"von Weyhe"
+	"von Wittenberg"
 }
+
 ship_names = {
 	"Graf von Hoya"
 	"Greven"

@@ -30,89 +30,115 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Adalbert #0" = 10
-	"Albrecht #2" = 60
-	"Alois Johann #0" = 10
-	"Amalie #0" = -1
-	"Anton #0" = 15
-	"Christoph #0" = 15
-	"Clemens August #0" = 10
-	"Engelbert #0" = 0
-	"Ernst #0" = 20
-	"Ferdinand #0" = 15
+	"Albrecht #0" = 60
+	"Maximilian Joseph #0" = 40
+	"Otto #2" = 40
+	"Wilhelm #0" = 40
+	"Heinrich #10" = 30
+	"Hugo #2" = 30
+	"Johann #0" = 20
+	"Ernst #1" = 20
 	"Ferdinand Maria #0" = 20
-	"Friede #0" = -1
-	"Friedrich #0" = 10
-	"Gottfried #0" = 0
-	"Hieronymus #0" = 0
-	"Hiltraud #0" = -1
-	"Ignatz #0" = 0
-	"Johann #3" = 20
-	"Johann Theodor #0" = 10
-	"Joseph Clemens #0" = 15
-	"Joseph Ferdinand #0" = 15
-	"Joseph Ludwig #0" = 10
-	"Juliane #0" = -1
-	"Kajetan Maria #0" = 10
-	"Karl #0" = 15
 	"Karl Albrecht #0" = 20
 	"Karl Theodor #0" = 20
+	"Maximilian #0" = 20
+	"Maximilian Emanuel #0" = 20
+	"Siegmund #1" = 20
+	"Anton #0" = 15
+	"Christoph #0" = 15
+	"Ferdinand #0" = 15
+	"Joseph Clemens #0" = 15
+	"Joseph Ferdinand #0" = 15
+	"Karl #0" = 15
+	"Konrad #1" = 15
+	"Lambert #2" = 15
+	"Leopold #1" = 15
 	"Leopold Ferdinand #0" = 15
-	"Ludovika #0" = -1
-	"Ludwig #9" = 15
-	"Luise #0" = -1
+	"Ludwig #0" = 15
+	"Maximilian Philipp #0" = 15
+	"Philipp Wilhelm #0" = 15
+	"Richer #1" = 15
+	"Theodor #0" = 15
+	"Adalbert #0" = 10
+	"Alois Johann #0" = 10
+	"Clemens August #0" = 10
+	"Friedrich #0" = 10
+	"Johann Theodor #0" = 10
+	"Joseph Ludwig #0" = 10
 	"Luitpold #0" = 10
+	"Philipp #0" = 10
+	"Philipp Moritz #0" = 10
+	"Thietmar #0" = 10
+	"Wolfgang #0" = 10
+	"Dietrich #0" = 0
+	"Engelbert #0" = 0
+	"Gottfried #0" = 0
+	"Hieronymus #0" = 0
+	"Ignatz #0" = 0
+	"Markus #0" = 0
+	"Meinhard #0" = 0
+	"Raphael #0" = 0
+	"Siegfried #0" = 0
+	
+	"Gisela #0" = -10
+	"Mechthild #1" = -10
+	"Amalie #0" = -1
+	"Friede #0" = -1
+	"Gertrude #0" = -1
+	"Hedwig #1" = -1
+	"Ingelrade #0" = -1
+	"Juliane #0" = -1
+	"Luise #0" = -1
 	"Maria #0" = -1
 	"Maria Anna #0" = -1
 	"Maria Josepha #0" = -1
-	"Markus #0" = 0
-	"Maximilian #0" = 20
 	"Maximiliane #0" = -1
-	"Meinhard #0" = 0
-	"Otto #0" = 10
-	"Philipp Moritz #0" = 10
-	"Philipp Wilhelm #0" = 15
-	"Raphael #0" = 0
-	"Sibylle #0" = -1
-	"Siegmund #0" = 20
+	"Rodelinda #0" = -1
 	"Sophia #0" = -1
-	"Theodor #0" = 15
 	"Theresa #0" = -1
 	"Violante #0" = -1
-	"Wilhelm #3" = 40
-	"Wolfgang #0" = 10
+	"Wilhelmina #0" = -1
 }
 leader_names = {
-	"Asch"
-	"Chlingensperg"
-	"Dulac"
-	"Gumpenberg"
-	"Hafenbrädl"
-	"Hannet"
-	"Hugenpoet"
-	"Lechner"
-	"Livizzani"
-	"Maximillian"
-	"Morawitzky"
-	"Moshamm"
-	"Pfretschner"
-	"Rickauer"
-	"Riedesel"
-	"Satzenhofen"
-	"Scherer"
-	"Treuberg"
-	"Vieregg"
-	"Wilsenhütten"
-	"von Armansperg"
-	"von Dingolfing"
-	"von Freising"
-	"von Garching"
+	Asch
+	Brauchitsch
+	Chatenois-Vacouleurs
+	Dulac
+	Gumpenberg
+	Hafenbrädl
+	Hannet
+	Hugenpoet
+	Lechner
+	Livizzani
+	Maximillian
+	Morawitzky
+	Moshamm
+	Pfretschner
+	Riedesel
+	Runese
+	Satzenhofen
+	Scherer
+	Treuberg
+	Vieregg
+	Wolfratshausen
+	"von Andechs"
+	"von Attems"
+	"von Bamberg"
+	"von Burghausen"
+	"von Dachau"
+	"von Eberstein"
+	"von Frontenhausen"
+	"von Geroldseck"
+	"von Lechsgmünd"
+	"von Liebrechtskirchen"
+	"von Nürnberg"
 	"von Pappenheim"
 	"von Passau"
-	"von Rosenheim"
+	"von Raabs"
 	"von Seckendorf"
 	"von Starnberg"
 	"von Tegernsee"
+	"von Wickerode"
 	"von Zentner"
 }
 ship_names = {

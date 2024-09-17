@@ -29,37 +29,87 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Adalbert #0" = 0
-	"Agnes #0" = -1
-	"Alberich #1" = 10
-	"Berengar #0" = 0
-	"Emund #0" = 0
-	"Gerhard #1" = 10
-	"Gotthard #2" = 10
-	"Gotzelo #0" = 0
-	"Hadrad #1" = 10
-	"Hugo #1" = 10
-	"Ida #0" = -1
-	"Jakob #0" = 0
-	"Konstanze #1" = -1
-	"Leopold #0" = 0
-	"Liutfried #2" = 10
-	"Louis #3" = 10
-	"Luitgard #0" = -1
-	"Magnus #2" = 10
-	"Manegold #1" = 10
-	"Meginhard #0" = 0
-	"Radbot #0" = 0
-	"Rothard #1" = 10
-	"Sicco #0" = 0
-	"Thierry #2" = 10
-	"Ulrich #0" = 0
-	"Urz'ig #0" = 0
-	"Vladislava #0" = -1
-	"Vojslava #0" = -1
-	"Walther #0" = 0
-	"Welf #1" = 10
-	"Wenzel #0" = 0
+	"Rutger #7" = 160
+	"Georg #0" = 60
+	"Philipp #3" = 60
+	"Franz #0" = 30
+	"Johann Andreas #0" = 30
+	"Friedrich #0" = 25
+	"Jakob #0" = 25
+	"Karl #0" = 25
+	"Franz Eugen #1" = 20
+	"Heinrich #2" = 20
+	"Konrad #1" = 20
+	"Peter #1" = 20
+	"Wilhelm #0" = 20
+	"August #0" = 15
+	"Ademar #0" = 10
+	"Anno #0" = 10
+	"Gottschalk #0" = 10
+	"Kaspar #0" = 10
+	"Meinhard #0" = 10
+	"Nikolaus #0" = 10
+	"Achatius #0" = 0
+	"Albert #0" = 0
+	"Alfred #0" = 0
+	"Amadeus #0" = 0
+	"Ambrosius #0" = 0
+	"Andreas #0" = 0
+	"Anton #0" = 0
+	"Bruno #0" = 0
+	"Caspar #0" = 0
+	"Christoph #0" = 0
+	"Dagobert #0" = 0
+	"Daniel #0" = 0
+	"Diebold #0" = 0
+	"Dietrich #0" = 0
+	"Emmanuel #0" = 0
+	"Erasmus #0" = 0
+	"Erich #0" = 0
+	"Eugen #0" = 0
+	"Fritz #0" = 0
+	"Gabriel #0" = 0
+	"Godefroy #0" = 0
+	"Gottfriend #0" = 0
+	"Hans #0" = 0
+	"Hans-Joachim #0" = 0
+	"Hartmann #0" = 0
+	"Heinz #0" = 0
+	"Hermann #0" = 0
+	"Hieronymus #0" = 0
+	"Janus #0" = 0
+	"Jobus #0" = 0
+	"Johann #0" = 0
+	"Johann Heinrich #0" = 0
+	"Joseph #0" = 0
+	"Jürgen #0" = 0
+	"Julius #0" = 0
+	"Justus #0" = 0
+	"Konstantin #0" = 0
+	"Lorenz #0" = 0
+	"Lucas #0" = 0
+	"Ludwig #0" = 0
+	"Matthaeus #0" = 0
+	"Melchior #0" = 0
+	"Ottmar #0" = 0
+	"Otto #0" = 0
+	"Peter #0" = 0
+	"Paul #0" = 0
+	"Roman #0" = 0
+	"Rudolf #0" = 0
+	"Samuel #0" = 0
+	"Sebastian #0" = 0
+	"Sigmund #0" = 0
+	"Valentin #0" = 0
+	"Willibald #0" = 0
+	"Wolfmang #0" = 0
+	
+	"Anna #0" = -1
+	"Claudia #0" = -1
+	"Elisabeth #0" = -1
+	"Karlotte #0" = -1
+	"Maria #0" = -1
+	"Ursula #0" = -1
 }
 leader_names = {
 	"Ablitzer"
@@ -73,7 +123,7 @@ leader_names = {
 	"Bader"
 	"Bamberger"
 	"Baumgartner"
-	"Bilger"
+	"Beck"
 	"Birin"
 	"Blankenhorn"
 	"Blessig"
@@ -271,15 +321,19 @@ leader_names = {
 	"von Degenfeld"
 	"von Freyberg"
 	"von Friedeburg"
-	"von Fries"
+	"von Genf"
 	"von Iltzach"
 	"von Koch"
-	"von Lüttwitz"
-	"von Nicolay"
+	"von Lövenstein"
+	"von Niederbayern"
 	"von Rebay"
 	"von Regesheim"
 	"von Rittberg"
-	"von Wunnenberg"
+	"von Tübingen"
+	"von Venis"
+	"von Veringen"
+	"von Wasserburg"
+	"von Wittelsbach"
 	"von Wurmser"
 	"zu Rhein"
 }

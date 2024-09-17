@@ -29,62 +29,61 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Adalbert #0" = 0
-	"Adalberto #2" = 10
-	"Adam #0" = 0
-	"Adelia #1" = -1
-	"Ademar #0" = 0
-	"Adergazuz #2" = 10
-	"Adolf #0" = 0
-	"Alberto Azzo #3" = 10
-	"Amalie #0" = -1
-	"Anterio #0" = 0
-	"Ardicino #0" = 0
-	"Berta #1" = -1
-	"Berthold #0" = 0
-	"Bonconte #0" = 0
+	"Francesco #0" = 40
+	"Gian Galeazzo #0" = 40
+	"Filippo #0" = 20
+	"Galeazzo Maria #0" = 20
+	"Giancarlo #0" = 20
+	"Giovanni #0" = 20
+	"Lodovico Maria #0" = 20
+	"Massimiliano #0" = 20
+	"Ermes #1" = 15
+	"Goffredo #1" = 15
+	"Arcardo #2" = 10
+	"Ascanio Maria #0" = 10
+	"Azzone #0" = 10
+	"Carlo #0" = 10
+	"Guglielmo #0" = 10
+	"Ottaviano #0" = 10
+	"Rodolfo #0" = 10
+	"Sforza #0" = 10
+	"Stefano #0" = 10
+	"Galeazzo #0" = 5
+	"Gontrano #0" = 5
+	"Guido #0" = 5
+	"Luberto #1" = 5
+	"Luchino #0" = 5
+	"Matteo #0" = 5
+	"Achille #0" = 0
+	"Benedetto #0" = 0
+	"Bonifacio #0" = 0
+	"Camillo #0" = 0
+	"Claudio #0" = 0
+	"Demetrio #0" = 0
+	"Emanuele #0" = 0
+	"Fabrizio #0" = 0
+	"Felice #0" = 0
+	"Gaetano #0" = 0
+	"Geronimo #0" = 0
+	"Jacopo #0" = 0
+	"Leonardo #0" = 0
+	"Marcello #0" = 0
+	"Niccolò #0" = 0
+	"Paolo #0" = 0
+	"Raniero #0" = 0
+	"Salvatore #0" = 0
+	"Timoteo #0" = 0
+	"Uberto #0" = 0
+	"Vittorio #0" = 0
+	
 	"Caterina #0" = -1
-	"Claudia #0" = -1
-	"Dieter #0" = 0
-	"Dietpold #0" = 0
-	"Ekkehard #1" = 10
-	"Elisabetta #1" = -1
-	"Engelbert #0" = 0
-	"Enrico #0" = 0
-	"Everardo #0" = 0
-	"Filibert #0" = 0
-	"Folco #1" = 10
-	"Fresco #0" = 0
-	"Gebhard #0" = 0
-	"Georg #0" = 0
-	"Gertrude #0" = -1
-	"Gherardo #2" = 10
-	"Ginevra #0" = -1
-	"Gottfried #0" = 0
-	"Heribert #0" = 0
-	"Hildegard #0" = -1
-	"Ilariu #0" = 0
-	"Irmeltrud #0" = -1
-	"Isentrude #0" = -1
-	"Karlmann #0" = 0
-	"Lodovico #0" = 0
-	"Luigi #0" = 0
-	"Manfredo #3" = 10
-	"Massimiliano #0" = 0
-	"Michelangelo #0" = 0
-	"Misibsen #0" = 0
-	"Oberto #3" = 10
-	"Odoardo #0" = 0
-	"Ranieri #1" = 10
-	"Ricciarda #1" = -1
-	"Siegmund #0" = 0
-	"Tacfin #0" = 0
-	"Thaculf #1" = 10
-	"Ugo #2" = 10
-	"Ulrike #0" = -1
+	"Cornelia #0" = -1
+	"Emma #0" = -1
+	"Fioralba #0" = -1
+	"Fosca #1" = -1
 }
 leader_names = {
-	"Adelasio"
+	"Adorno"
 	"Aldini"
 	"Alessandri"
 	"Arborio Mella"
@@ -94,10 +93,10 @@ leader_names = {
 	"Birago"
 	"Borromeo"
 	"Brunetti"
-	"Caetani"
-	"Capitaneo"
+	"Caccianemici"
+	"Cambiano"
 	"Caracciolo"
-	"Carafa"
+	"Carrara"
 	"Containi"
 	"Franchi"
 	"Ghislieri"
@@ -115,8 +114,8 @@ leader_names = {
 	"Odescalchi"
 	"Paleologi Montferrato"
 	"Paradisi"
-	"Pico"
-	"Ruga"
+	"Ponzone"
+	"Runese"
 	"Sabbati"
 	"Savoldi"
 	"Serbelloni"
@@ -128,14 +127,18 @@ leader_names = {
 	"Testi"
 	"Tizzone"
 	"Visconti"
-	"de Guzman"
-	"de Leiva"
+	"d'Altena"
+	"de Chigi"
+	"de Grifai"
+	"de Monza"
+	"de Vigevano"
 	"del Carreto"
 	"del Monte"
-	"della Scalla"
-	"di Campofregoso"
-	"di Cardé"
-	"di Saluzzo"
+	"dell'Orto"
+	"di Brescia"
+	"di Castiglione"
+	"di Guercio"
+	"di Modena"
 }
 ship_names = {
 	"Alliata"

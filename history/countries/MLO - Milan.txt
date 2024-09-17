@@ -6,20 +6,57 @@ religion = catholic
 primary_culture = lombard
 capital = 104
 add_accepted_culture = romagnan
-1444.11.11= {
+1359.5.24 = {
 	monarch = {
-		name = "(Regency Council)"
-		adm = 6
+		name = "Gottfried I"
+		dynasty = "von Luxemburg"
+		adm = 4
 		dip = 4
 		mil = 4
-		birth_date = 1.1.1
-		regent = yes
+		birth_date = 1350.9.26
 		religion = catholic
 		culture = dynamic-franconian-culture-num1
 	}
+}
+1396.10.2 = {
+	monarch = {
+		name = "Ermes I"
+		dynasty = "von Luxemburg"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1370.12.29
+		religion = catholic
+		culture = lombard
+	}
+}
+1436.2.3 = {
+	monarch = {
+		name = "Luberto I"
+		dynasty = "von Luxemburg"
+		adm = 6
+		dip = 4
+		mil = 4
+		birth_date = 1393.2.21
+		religion = catholic
+		culture = lombard
+	}
+	queen = {
+		name = "Richènda"
+		dynasty = "Grimaldi"
+		adm = 4
+		dip = 3
+		mil = 5
+		country_of_origin = PRO
+		birth_date = 1400.6.26
+		death_date = 1460.6.26
+		female = yes
+		religion = catholic
+		culture = occitan
+	}
 	heir = {
-		name = "Adergazuz II"
-		dynasty = "Luxemburg-Parma"
+		name = "Francesco I"
+		dynasty = "von Luxemburg"
 		adm = 6
 		dip = 6
 		mil = 6
@@ -27,7 +64,7 @@ add_accepted_culture = romagnan
 		death_date = 1495.4.14
 		claim = 89
 		religion = catholic
-		culture = dynamic-franconian-culture-num1
+		culture = lombard
 	}
 }
 1444.11.11= {

@@ -67,7 +67,7 @@ capital = 2955
 }
 1437.4.15 = {
 	heir = {
-		name = "Albrecht
+		name = "Albrecht"
 		monarch_name = "Albrecht II"
 		dynasty = "von Nordheim"
 		adm = 6
