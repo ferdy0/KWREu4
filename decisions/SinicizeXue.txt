@@ -1,0 +1,329 @@
+country_decisions = {
+	sinicize_korean = {
+		potential = {
+			NOT = {
+				had_global_flag = {
+					flag = updated_korean_flag
+				}
+			}
+			culture_group = east_asian
+			is_emperor_of_china = yes
+		}
+		provinces_to_highlight = {
+			culture = korean
+			NOT = { continent = north_america }
+			NOT = { continent = south_america }
+			NOT = { continent = new_world }
+			NOT = { continent = oceania }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		allow = {
+			imperial_mandate = 80
+			stability = 1
+			OR = {
+				AND = {
+					accepted_culture = korean
+					empire_of_china_reform_passed = reform_land_tax_decision
+					NOT = {
+						any_province = {
+							culture = korean
+							NOT = { country_or_non_sovereign_subject_holds = ROOT }
+							NOT = { continent = north_america }
+							NOT = { continent = south_america }
+							NOT = { continent = new_world }
+							NOT = { continent = oceania }
+						}
+					}
+				
+					all_owned_province = {
+						OR = {
+							AND = {
+								culture = korean
+								NOT = { nationalism = 1 }
+								NOT = { unrest = 1 }
+							}
+							NOT = { culture = korean }
+						}
+					}
+				}
+				AND = {
+					KOR = {is_subject_of = ROOT}
+					empire_of_china_reform_passed = tributary_embassies_decision
+					empire_of_china_reform_passed = vassalize_tributaries_decision
+					reverse_has_opinion = {
+						who = KOR
+						value = 200
+					}
+				}
+			}
+		}
+		effect = {
+			update_entire_culture_foreign = {
+				culture = korean
+			}
+			custom_tooltip = sinicize_culture_ct
+			remove_accepted_culture = korean
+			add_mandate = -40
+		}
+	}
+	sinicize_vietnamese = {
+		potential = {
+			NOT = {
+				had_global_flag = {
+					flag = updated_vietnamese_flag
+				}
+			}
+			culture_group = east_asian
+			is_emperor_of_china = yes
+		}
+		provinces_to_highlight = {
+			culture = korean
+			NOT = { continent = north_america }
+			NOT = { continent = south_america }
+			NOT = { continent = new_world }
+			NOT = { continent = oceania }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		allow = {
+			imperial_mandate = 80
+			stability = 1
+			OR = {
+				AND = {
+					accepted_culture = vietnamese
+					empire_of_china_reform_passed = reform_land_tax_decision
+					NOT = {
+						any_province = {
+							culture = vietnamese
+							NOT = { country_or_non_sovereign_subject_holds = ROOT }
+							NOT = { continent = north_america }
+							NOT = { continent = south_america }
+							NOT = { continent = new_world }
+							NOT = { continent = oceania }
+						}
+					}
+				
+					all_owned_province = {
+						OR = {
+							AND = {
+								culture = vietnamese
+								NOT = { nationalism = 1 }
+								NOT = { unrest = 1 }
+							}
+							NOT = { culture = vietnamese }
+						}
+					}
+				}
+				AND = {
+					DAI = {is_subject_of = ROOT}
+					empire_of_china_reform_passed = tributary_embassies_decision
+					empire_of_china_reform_passed = vassalize_tributaries_decision
+					reverse_has_opinion = {
+						who = DAI
+						value = 200
+					}
+				}
+			}
+		}
+		effect = {
+			update_entire_culture_foreign = {
+				culture = vietnamese
+			}
+			custom_tooltip = sinicize_culture_ct
+			remove_accepted_culture = vietnamese
+			add_mandate = -40
+		}
+	}
+	sinicize_manchu = {
+		potential = {
+			NOT = {
+				had_global_flag = {
+					flag = updated_manchu_flag
+				}
+			}
+			culture_group = east_asian
+		}
+		provinces_to_highlight = {
+			culture = manchu
+			NOT = { continent = north_america }
+			NOT = { continent = south_america }
+			NOT = { continent = new_world }
+			NOT = { continent = oceania }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		allow = {
+			imperial_mandate = 80
+			stability = 1
+			empire_of_china_reform_passed = military_governors_decision
+			accepted_culture = manchu
+			NOT = {
+				any_province = {
+					culture = manchu
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { continent = north_america }
+					NOT = { continent = south_america }
+					NOT = { continent = new_world }
+					NOT = { continent = oceania }
+				}
+			}
+			all_owned_province = {
+				OR = {
+					AND = {
+						culture = manchu
+						NOT = { nationalism = 1 }
+						NOT = { unrest = 1 }
+					}
+					NOT = { culture = manchu }
+				}
+			}
+		}
+		effect = {
+			update_entire_culture_foreign = {
+				culture = manchu
+			}
+			custom_tooltip = sinicize_culture_ct
+			remove_accepted_culture = manchu
+			add_mandate = -40
+		}
+	}
+	sinicize_zhuang = {
+		potential = {
+			NOT = {
+				had_global_flag = {
+					flag = updated_zhuang_flag
+				}
+			}
+			culture_group = east_asian
+		}
+		provinces_to_highlight = {
+			culture = zhuang
+			NOT = { continent = north_america }
+			NOT = { continent = south_america }
+			NOT = { continent = new_world }
+			NOT = { continent = oceania }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		allow = {
+			imperial_mandate = 80
+			stability = 1
+			empire_of_china_reform_passed = establish_gaituguiliu_decision
+			accepted_culture = zhuang
+			NOT = {
+				any_province = {
+					culture = zhuang
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { continent = north_america }
+					NOT = { continent = south_america }
+					NOT = { continent = new_world }
+					NOT = { continent = oceania }
+				}
+			}
+			all_owned_province = {
+				OR = {
+					AND = {
+						culture = zhuang
+						NOT = { nationalism = 1 }
+						NOT = { unrest = 1 }
+					}
+					NOT = { culture = zhuang }
+				}
+			}
+		}
+		effect = {
+			update_entire_culture_foreign = {
+				culture = zhuang
+			}
+			custom_tooltip = sinicize_culture_ct
+			remove_accepted_culture = zhuang
+			add_mandate = -40
+		}
+	}
+	sinicize_mongols = {
+		potential = {
+			NOT = {
+				had_global_flag = {
+					flag = sinicized_altaic_flag
+				}
+			}
+			culture_group = east_asian
+		}
+		provinces_to_highlight = {
+			culture = mongols
+			culture = khalkha
+			culture = chahar
+			NOT = { continent = north_america }
+			NOT = { continent = south_america }
+			NOT = { continent = new_world }
+			NOT = { continent = oceania }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		allow = {
+			imperial_mandate = 80
+			stability = 1
+			empire_of_china_reform_passed = military_governors_decision
+			accepted_culture = mongol
+			accepted_culture = khalkha
+			accepted_culture = chahar
+			NOT = {
+				any_province = {
+					OR = {
+						culture = mongol
+						culture = khalkha
+						culture = chahar
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { continent = north_america }
+					NOT = { continent = south_america }
+					NOT = { continent = new_world }
+					NOT = { continent = oceania }
+				}
+			}
+			all_owned_province = {
+				OR = {
+					AND = {
+						accepted_culture = mongol
+						accepted_culture = khalkha
+						accepted_culture = chahar
+						NOT = { nationalism = 1 }
+						NOT = { unrest = 1 }
+					}
+					NOT = { 
+						accepted_culture = mongol
+						accepted_culture = khalkha
+						accepted_culture = chahar
+					}
+				}
+			}
+		}
+		effect = {
+			add_mandate = -40
+			every_province = {
+				limit = {
+					OR = {
+						culture = mongol
+						culture = oirats
+						culture = khalkha
+						culture = chahar
+					}
+				}
+						change_culture = altaic_new
+			}
+			every_country = {
+				limit = {
+					OR = {
+						primary_culture = mongol
+						primary_culture = oirats
+						primary_culture = khalkha
+						primary_culture = chahar
+					}
+				}
+				change_primary_culture = altaic_new
+			}
+			set_global_flag = sinicized_altaic_flag
+			custom_tooltip = sinicize_culture_ct
+			remove_accepted_culture = mongol
+			remove_accepted_culture = oirats
+			remove_accepted_culture = khalkha
+			remove_accepted_culture = chahar
+		}
+	}
+}
