@@ -51,6 +51,7 @@ autocracy_tyrhennia_reform = {
         naval_tradition_from_battle = 0.5
         allowed_marine_fraction = 0.1
         max_admiral_fire = 1
+        global_sailors_modifier = -0.1
 	}
 	factions = {
     	mr_aristocrats

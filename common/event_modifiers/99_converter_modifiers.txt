@@ -161,8 +161,9 @@ powerful_council_ten = {
     monthly_authority_power = 0.25
 }
 normal_council_ten = {
-    #legitimacy = 1
+    legitimacy = -1
 }
 weak_council_ten = {
+    legitimacy = -1
     monthly_authority_power = -0.1
 }
