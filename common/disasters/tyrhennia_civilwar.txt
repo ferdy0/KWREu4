@@ -1,0 +1,104 @@
+#Tyrhennia Civil War
+#A mix of the civil wars with outside intervention and noble families siding against the crown.
+
+tyrhennia_civil_war = {
+	potential = {
+		tag = TYH
+		NOT = { has_country_flag = had_tyh_civil_war }
+		is_free_or_tributary_trigger = yes
+		exists = AFR
+		government = monarchy
+		uses_doom = no
+	}
+
+
+	can_start = {
+		current_age = age_of_discovery
+		is_at_war = no
+		has_any_disaster = no
+		OR = {
+			has_regency = yes
+			NOT = { heir_claim = 80 }
+			has_female_heir = yes
+		}
+		is_lesser_in_union = no
+	}
+	
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			is_lesser_in_union = yes
+			NOT = { government = monarchy }
+		}
+	}
+	
+	
+	
+	
+	progress = {
+		modifier = {
+			factor = 3
+			NOT = { legitimacy = 90 }
+		}
+		modifier = {
+			factor = 5
+			has_heir = no
+		}
+		modifier = {
+			factor = 3
+			NOT = { months_of_ruling = 60 }
+		}
+		modifier = {
+			factor = 3
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { ADM = 3 }
+		}		
+		modifier = {
+			factor = 1
+			NOT = { DIP = 3 }
+		}		
+		modifier = {
+			factor = 1
+			NOT = { MIL = 3 }
+		}
+	}
+
+
+	
+	can_end = {
+		hidden_trigger = { has_country_flag = civil_war_in_tyrhennia }
+		stability = 1
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		NOT = {
+			has_spawned_rebels = pretender_rebels
+		}
+	}
+	
+
+
+	modifier = {
+		global_unrest = 7
+	}	
+	
+	
+	on_start = tyrhennia_civil_war.1
+	on_end = tyrhennia_civil_war.100
+	ended_by_country_breaking_to_rebels = no
+	
+	on_monthly = {
+		events = {
+		    tyrhennia_civil_war.9
+		    tyrhennia_civil_war.10
+		}
+		random_events = { 
+			120 = 0
+			1 = tyrhennia_civil_war.2 #Civil War Spreads to Province
+			#Events 3 - 8 related to foreign intervention
+		}
+	}
+}
+

@@ -69,5 +69,10 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		loadType = "INGAME"
 	}
-	
+	spriteType = {
+    	name = "GFX_disaster_tyrhennia_civil_war"
+    	texturefile = "gfx//interface//disasters//castilian_civil_war.dds"
+    	noOfFrames = 3
+    	loadType = "INGAME"
+    }
 }

@@ -1,0 +1,527 @@
+########################################
+# Civil War in Tyrhennia
+# Mix of Tyrhennia Civil Wars involving
+# nobles and outside intervention
+########################################
+
+namespace = tyrhennia_civil_war
+
+# Civil War in Tyrhennia
+country_event = {
+	id = tyrhennia_civil_war.1
+	title = "tyrhennia_civil_war.1.t"
+	desc = "tyrhennia_civil_war.1.d"
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_country_flag = had_tyh_civil_war
+		add_stability = -2
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_capital = yes
+				}
+				set_province_flag = tyh_civil_war_start
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					NOT = { has_province_flag = tyh_civil_war_start }
+				}
+				set_province_flag = tyh_civil_war_2
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					NOT = { has_province_flag = tyh_civil_war_start }
+					NOT = { has_province_flag = tyh_civil_war_2 }
+				}
+				set_province_flag = tyh_civil_war_3
+			}
+			random_owned_province = { #While primarily a pretender rebellion there are parts of the nobility that will makes use of this to further their own positions in general.
+				limit = {
+					is_capital = no
+					NOT = { has_province_flag = tyh_civil_war_start }
+					NOT = { has_province_flag = tyh_civil_war_2 }
+					NOT = { has_province_flag = tyh_civil_war_3 }
+					OR = {
+						has_building = fort_15th
+						has_building = fort_16th
+						AND = {
+							owner = {
+								NOT = {
+									any_owned_province = {
+										has_building = fort_15th
+									}
+								}
+							}
+							development = 10
+						}
+					}
+				}
+				spawn_rebels = {
+					type = noble_rebels
+					size = 1
+					win = yes
+				}
+			}
+		}
+	}
+	
+	option = {		# Support African Candidate (heir)
+		name = "tyrhennia_civil_war.1.a"
+		set_country_flag = civil_war_in_tyhrennia
+		add_legitimacy = -20
+		create_subject = {
+            subject_type = personal_union
+        	subject = AFR
+            keep_liberty_desire = no
+        }
+        define_ruler = {
+            name = "Martin I"
+            dynasty = "de Lacon-Gunale"
+            adm = 6
+            dip = 5
+            mil = 6
+            birth_date = 1395.11.17
+            religion = converted_dynamic_faith_113
+            culture = dynamic-berber-sardinian-culture-num1
+        }
+        define_heir = {
+            name = "Isidor"
+            monarch_name = "Isidor I"
+            dynasty = "de Lacon-Gunale"
+            adm = 6
+            dip = 4
+            mil = 6
+            birth_date = 1421.9.15
+            claim = 89
+            religion = converted_dynamic_faith_113
+            culture = dynamic-berber-sardinian-culture-num1
+        }
+		random_owned_province = {
+			limit = {
+				has_province_flag = tyh_civil_war_start
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				friend = NAP
+				size = 1
+				win = yes
+			}
+			clr_province_flag = tyh_civil_war_start
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					has_province_flag = tyh_civil_war_2
+					has_province_flag = tyh_civil_war_3
+				}
+			}
+			spawn_rebels = {
+				friend = NAP
+				type = pretender_rebels
+				size = 1
+				win = yes
+			}
+			clr_province_flag = tyh_civil_war_2
+			clr_province_flag = tyh_civil_war_3
+		}
+		NAP = {
+			country_event = { id = tyrhennia_civil_war.5 days = 30 }
+		}
+		PRO = {
+			country_event = { id = tyrhennia_civil_war.3 days = 40 }
+		}
+		SWI = {
+			country_event = { id = tyrhennia_civil_war.7 days = 50 }
+		}
+	}
+}
+
+# The Civil War Spreads to PROVINCE
+country_event = {
+	id = tyrhennia_civil_war.2
+	title = "tyrhennia_civil_war.2.t"
+	desc = "tyrhennia_civil_war.2.d"
+	picture = BORDER_TENSION_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			continent = europe
+			is_capital = no
+			controlled_by = owner
+			NOT = { has_province_flag = civil_war_spreads }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					continent = europe
+					is_capital = no
+					controlled_by = owner
+					NOT = { has_province_flag = civil_war_spreads }
+				}
+				random_list = {
+					85 = { set_province_flag = revolt_1 }
+					15 = { set_province_flag = revolt_2 }
+				}
+				area = { set_province_flag = civil_war_spreads }
+			}
+		}
+	}
+	
+	option = {		# Where is the loyalty...
+		name = "flavor_spa.EVTOPTA3560"
+		random_owned_province = {
+			limit = { has_province_flag = revolt_2 }
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+			}
+			clr_province_flag = revolt_2
+		}
+		random_owned_province = {
+			limit = { has_province_flag = revolt_1 }
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+			}
+			clr_province_flag = revolt_1
+		}
+	}
+}
+
+# Civil War in Tyrhennia - Naples
+country_event = {
+	id = tyrhennia_civil_war.3
+	title = "tyrhennia_civil_war.3.t"
+	desc = "tyrhennia_civil_war.3.d"
+	picture = ACCUSATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Support this claimant
+		name = "tyrhennia_civil_war.3.a"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				alliance_with = TYH
+				NOT = { is_rival = TYH }
+			}
+		}
+		TYH = {
+			country_event = { id = tyrhennia_civil_war.4 days = 15 }
+			add_opinion = {
+				who = NAP
+				modifier = cas_civil_war_interferance
+			}
+		}
+		add_manpower = -2
+	}
+	option = { #Let the Tyhrennians handle their own conflicts.
+		name = "castilian_civil_war.3.b"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_rival = TYH
+			}
+		}
+		add_opinion = {
+			who = TYH
+			modifier = cas_non_interferance
+		}
+	}
+}
+
+# Naples Support
+country_event = {
+	id = tyrhennia_civil_war.4
+	title = "tyrhennia_civil_war.4.t"
+	desc = "tyrhennia_civil_war.4.d"
+	picture = BORDER_TENSION_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_disaster = tyhrennia_civil_war
+	}
+
+	option = { #Despeakable!
+		name = "tyrhennia_civil_war.4.a"
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+				friend = POR
+			}
+		}
+		add_mil_power = 50
+	}
+}
+
+# Castilian Civil War - Provence
+country_event = {
+	id = tyrhennia_civil_war.5
+	title = "tyrhennia_civil_war.5.t"
+	desc = "tyrhennia_civil_war.5.d"
+	picture = ACCUSATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Support this claimant
+		name = "tyrhennia_civil_war.5.a"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				alliance_with = TYH
+				NOT = { is_rival = TYH }
+			}
+		}
+		TYH = {
+			country_event = {
+				id = castilian_civil_war.6
+				days = 15
+			}
+			add_opinion = {
+				who = TYH
+				modifier = cas_civil_war_interferance
+			}
+		}
+		add_manpower = -2
+	}
+	option = { #Let the Tyhrennians handle their own conflicts.
+		name = "tyrhennia_civil_war.5.b"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_rival = TYH
+			}
+		}
+		add_opinion = {
+			who = TYH
+			modifier = cas_non_interferance
+		}
+	}
+}
+
+# Provence Support
+country_event = {
+	id = tyrhennia_civil_war.6
+	title = "tyrhennia_civil_war.6.t"
+	desc = "tyrhennia_civil_war.6.d"
+	picture = BORDER_TENSION_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_disaster = tyrhennia_civil_war
+	}
+
+	option = { #Despicable!
+		name = "tyrhennia_civil_war.6.b"
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+				friend = ARA
+			}
+		}
+	}
+}
+
+# Castilian Civil War - Switzerland
+country_event = {
+	id = tyrhennia_civil_war.7
+	title = "tyrhennia_civil_war.7.t"
+	desc = "tyrhennia_civil_war.7.d"
+	picture = ACCUSATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		TYH = {
+			has_disaster = tyrhennia_civil_war
+		}
+	}
+	
+	option = { #Support this claimant
+		name = "tyrhennia_civil_war.7.a"
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 0.5
+				alliance_with = TYH
+			}
+		}
+		add_manpower = -2
+		TYH = {
+			country_event = {
+				id = tyrhennia_civil_war.8
+				days = 15
+			}
+			add_opinion = {
+				who = SWI
+				modifier = cas_civil_war_support
+			}
+		}
+	}
+	option = { #Let the Tyhrennia handle their own conflicts.
+		name = "tyrhennia_civil_war.7.b"
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 1
+				is_rival = TYH
+			}
+		}
+	}
+}
+
+# Swiss Meddling
+country_event = {
+	id = tyrhennia_civil_war.8
+	title = "tyrhennia_civil_war.8.t"
+	desc = "tyrhennia_civil_war.8.d"
+	picture = BORDER_TENSION_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_disaster = tyrhennia_civil_war
+	}
+	
+	option = { #Great!
+    	name = "tyrhennia_civil_war.8.a"
+    	add_manpower = 2
+    	add_mil_power = 50
+    	add_treasury = 100
+    }
+}
+
+# Wipe out Council Army
+country_event = {
+	id = tyrhennia_civil_war.9
+	title = "tyrhennia_civil_war.9.t"
+	desc = "tyrhennia_civil_war.9.d"
+	picture = BORDER_TENSION_eventPicture
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	trigger = {
+	    had_country_flag = {
+            flag = had_tyh_civil_war
+        	days = 365
+       	}
+	}
+
+	option = { #DEWIT
+    	name = "tyrhennia_civil_war.9.a"
+    	add_manpower = -2
+    	remove_country_modifier = powerful_council_ten
+    	add_country_modifier = {
+            name = normal_council_ten
+        	duration = -1
+        }
+    } #Too Expensive
+    option = {
+        name = "tyrhennia_civil_war.9.b"
+        add_manpower = 2
+    }
+}
+
+# Assassinate council members
+country_event = {
+	id = tyrhennia_civil_war.10
+	title = "tyrhennia_civil_war.10.t"
+	desc = "tyrhennia_civil_war.10.d"
+	picture = BORDER_TENSION_eventPicture
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	trigger = {
+	    had_country_flag = {
+            flag = had_tyh_civil_war
+        	days = 730
+       	}
+       	NOT = { has_country_modifier = powerful_council_ten }
+	}
+
+	option = { #DEWIT
+    	name = "tyrhennia_civil_war.10.a"
+    	add_treasury = -500
+    	remove_country_modifier = normal_council_ten
+    	add_country_modifier = {
+            name = weak_council_ten
+            duration = -1
+        }
+    } #Too Expensive
+    option = {
+        name = "tyrhennia_civil_war.10.b"
+        add_treasury = 100
+    }
+}
+
+# End of Tyrhennian Civil War
+country_event = {
+	id = tyrhennia_civil_war.100
+	title = "tyrhennia_civil_war.100.t"
+	desc = "tyrhennia_civil_war.100.d"
+	picture = CIVIL_WAR_eventPicture
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		on_non_estate_disaster_end = yes
+		hidden_effect = {
+			set_country_flag = tyh_ended_civil_war_flag
+		}
+	}
+
+	option = {
+		name = "tyrhennia_civil_war.100.a"
+		add_stability_or_adm_power = yes
+		add_opinion = {
+			who = AFR
+			modifier = cas_civil_war_winner
+		}
+		AFR = {
+			add_opinion = {
+				who = TYH
+				modifier = cas_civil_war_winner
+			}
+		}
+	}
+}
