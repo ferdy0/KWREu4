@@ -156,3 +156,13 @@ wonder_underground_city_petra = {
 	local_hostile_attrition = 2
 	local_core_creation = 1
 }
+powerful_council_ten = {
+    legitimacy = -1
+    monthly_authority_power = 0.25
+}
+normal_council_ten = {
+    #legitimacy = 1
+}
+weak_council_ten = {
+    monthly_authority_power = -0.1
+}
