@@ -1,11 +1,13 @@
-vassal = {
-	first =	HAH
-	second = KRY
-	start_date = 1444.1.1
-	end_date = 1836.1.1
+dependency = {
+	subject_type="cultural_sphere_of_influence_subject"
+	first="HAH"
+	second="KRY"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
 }
 
-vassal = {
+dependency = {
+	subject_type="cultural_sphere_of_influence_subject"
 	first =	HAH
 	second = ARL
 	start_date = 1444.1.1
@@ -19,21 +21,24 @@ march = {
 	end_date = 1836.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type="cultural_sphere_of_influence_subject"
 	first =	HAH
 	second = LRI
 	start_date = 1444.1.1
 	end_date = 1836.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type="cultural_sphere_of_influence_subject"
 	first =	HAH
 	second = TAB
 	start_date = 1444.1.1
 	end_date = 1836.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type="cultural_sphere_of_influence_subject"
 	first =	HAH
 	second = ARD
 	start_date = 1444.1.1
