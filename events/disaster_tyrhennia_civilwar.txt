@@ -90,7 +90,7 @@ country_event = {
             dip = 5
             mil = 6
             birth_date = 1395.11.17
-            religion = converted_dynamic_faith_113
+            religion = catholic
             culture = dynamic-berber-sardinian-culture-num1
         }
         define_heir = {
@@ -102,7 +102,7 @@ country_event = {
             mil = 6
             birth_date = 1421.9.15
             claim = 89
-            religion = converted_dynamic_faith_113
+            religion = catholic
             culture = dynamic-berber-sardinian-culture-num1
         }
 		random_owned_province = {
@@ -141,6 +141,9 @@ country_event = {
 		}
 		SWI = {
 			country_event = { id = tyrhennia_civil_war.7 days = 50 }
+		}
+		AFR = {
+		    country_event = { id = tyrhennia_civil_war.11 days = 1 }
 		}
 	}
 }
@@ -258,10 +261,6 @@ country_event = {
 	picture = BORDER_TENSION_eventPicture
 	
 	is_triggered_only = yes
-	
-	trigger = {
-		has_disaster = tyhrennia_civil_war
-	}
 
 	option = { #Despeakable!
 		name = "tyrhennia_civil_war.4.a"
@@ -279,7 +278,7 @@ country_event = {
 	}
 }
 
-# Castilian Civil War - Provence
+# Tyrhennia Civil War - Provence
 country_event = {
 	id = tyrhennia_civil_war.5
 	title = "tyrhennia_civil_war.5.t"
@@ -334,13 +333,9 @@ country_event = {
 	picture = BORDER_TENSION_eventPicture
 	
 	is_triggered_only = yes
-	
-	trigger = {
-		has_disaster = tyrhennia_civil_war
-	}
 
 	option = { #Despicable!
-		name = "tyrhennia_civil_war.6.b"
+		name = "tyrhennia_civil_war.6.a"
 		random_owned_province = {
 			limit = {
 				is_capital = no
@@ -354,7 +349,7 @@ country_event = {
 	}
 }
 
-# Castilian Civil War - Switzerland
+# Tyrhennia Civil War - Switzerland
 country_event = {
 	id = tyrhennia_civil_war.7
 	title = "tyrhennia_civil_war.7.t"
@@ -379,6 +374,7 @@ country_event = {
 			}
 		}
 		add_manpower = -2
+		add_treasury = -100
 		TYH = {
 			country_event = {
 				id = tyrhennia_civil_war.8
@@ -488,6 +484,27 @@ country_event = {
     }
 }
 
+# Tyrhennia Civil War - Africa
+country_event = {
+	id = tyrhennia_civil_war.11
+	title = "tyrhennia_civil_war.11.t"
+	desc = "tyrhennia_civil_war.11.d"
+	picture = ACCUSATION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		TYH = {
+			has_disaster = tyrhennia_civil_war
+		}
+	}
+
+	option = { #Good for us?
+		name = "tyrhennia_civil_war.11.a"
+		add_prestige = 25
+	}
+}
+
 # End of Tyrhennian Civil War
 country_event = {
 	id = tyrhennia_civil_war.100
@@ -515,13 +532,60 @@ country_event = {
 		add_stability_or_adm_power = yes
 		add_opinion = {
 			who = AFR
-			modifier = cas_civil_war_winner
+			modifier = tyh_civil_war_winner
 		}
 		AFR = {
 			add_opinion = {
 				who = TYH
-				modifier = cas_civil_war_winner
+				modifier = tyh_civil_war_winner
 			}
 		}
+	}
+}
+
+# Tyrhennia Civil War - Conversion
+country_event = {
+	id = tyrhennia_civil_war.12
+	title = "tyrhennia_civil_war.12.t"
+	desc = "tyrhennia_civil_war.12.d"
+	picture = ACCUSATION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		TYH = {
+			had_country_flag = {
+                flag = had_tyh_civil_war
+                days = 3650
+            }
+		}
+	}
+
+    mean_time_to_happen = {
+    	months = 1
+    }
+
+	option = { #wtf
+		name = "tyrhennia_civil_war.12.a"
+        change_religion = converted_dynamic_faith_113
+        2986 = {
+            change_religion = converted_dynamic_faith_113
+        }
+        4735 = {
+            change_religion = converted_dynamic_faith_113
+        }
+        127 = {
+            change_religion = converted_dynamic_faith_113
+        }
+        4736 = {
+            change_religion = converted_dynamic_faith_113
+        }
+        random_owned_province = {
+            spawn_rebels = {
+        	    type = pretender_rebels
+        		size = 2
+        	}
+        }
+        add_stability = -1
 	}
 }
