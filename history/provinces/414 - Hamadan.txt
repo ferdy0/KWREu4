@@ -1,5 +1,5 @@
-owner = KRY
-controller = KRY
+owner = LRI
+controller = LRI
 capital = "Hamedan"
 is_city = yes
 culture = luri
@@ -8,7 +8,6 @@ trade_goods = cloth
 base_tax = 2
 base_production = 3
 base_manpower = 1
-add_core = KRY
 add_core = LRI
 discovered_by = east_african
 discovered_by = eastern

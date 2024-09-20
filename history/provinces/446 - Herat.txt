@@ -1,5 +1,5 @@
-owner = KRY
-controller = KRY
+owner = KHO
+controller = KHO
 capital = "Herat"
 is_city = yes
 culture = tajik
@@ -12,7 +12,6 @@ base_manpower = 1
 extra_cost = 16
 center_of_trade = 2
 add_core = KHO
-add_core = KRY
 add_core = TRS
 discovered_by = east_african
 discovered_by = eastern

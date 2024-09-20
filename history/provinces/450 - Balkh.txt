@@ -1,5 +1,5 @@
-owner = KRY
-controller = KRY
+owner = KHO
+controller = KHO
 capital = "Balkh"
 is_city = yes
 culture = tajik
@@ -9,7 +9,6 @@ base_tax = 3
 base_production = 5
 base_manpower = 2
 add_core = KHO
-add_core = KRY
 add_core = TRS
 discovered_by = east_african
 discovered_by = eastern

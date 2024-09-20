@@ -1,0 +1,34 @@
+vassal = {
+	first =	HAH
+	second = KRY
+	start_date = 1444.1.1
+	end_date = 1836.1.1
+}
+
+vassal = {
+	first =	HAH
+	second = ARL
+	start_date = 1444.1.1
+	end_date = 1836.1.1
+}
+
+vassal = {
+	first =	HAH
+	second = KHO
+	start_date = 1444.1.1
+	end_date = 1836.1.1
+}
+
+vassal = {
+	first =	HAH
+	second = LRI
+	start_date = 1444.1.1
+	end_date = 1836.1.1
+}
+
+vassal = {
+	first =	HAH
+	second = TAB
+	start_date = 1444.1.1
+	end_date = 1836.1.1
+}

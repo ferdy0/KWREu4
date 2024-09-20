@@ -1,5 +1,5 @@
-owner = KRY
-controller = KRY
+owner = KHO
+controller = KHO
 capital = "Sarakhs"
 is_city = yes
 culture = tajik
@@ -8,7 +8,7 @@ trade_goods = wool
 base_tax = 1
 base_production = 4
 base_manpower = 1
-add_core = KRY
+add_core = KHO
 add_core = TRS
 discovered_by = east_african
 discovered_by = eastern

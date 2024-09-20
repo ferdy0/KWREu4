@@ -1,5 +1,5 @@
-owner = KRY
-controller = KRY
+owner = TAB
+controller = TAB
 capital = "Amol"
 is_city = yes
 culture = mazandarani
@@ -9,7 +9,6 @@ fort_15th = yes
 base_tax = 1
 base_production = 4
 base_manpower = 3
-add_core = KRY
 add_core = TAB
 discovered_by = east_african
 discovered_by = eastern

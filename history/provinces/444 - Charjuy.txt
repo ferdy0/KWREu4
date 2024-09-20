@@ -1,5 +1,5 @@
-owner = KRY
-controller = KRY
+owner = KHO
+controller = KHO
 capital = "Charjuy"
 is_city = yes
 culture = oghuz
@@ -9,7 +9,6 @@ base_tax = 1
 base_production = 3
 base_manpower = 1
 add_core = KHO
-add_core = KRY
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -1,5 +1,5 @@
-owner = KRY
-controller = KRY
+owner = ARL
+controller = ARL
 capital = "Shamakhi"
 is_city = yes
 culture = azerbaijani
@@ -9,7 +9,6 @@ base_tax = 2
 base_production = 4
 base_manpower = 2
 add_core = ARL
-add_core = KRY
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
