@@ -12,7 +12,7 @@ vassal = {
 	end_date = 1836.1.1
 }
 
-vassal = {
+march = {
 	first =	HAH
 	second = KHO
 	start_date = 1444.1.1
@@ -29,6 +29,13 @@ vassal = {
 vassal = {
 	first =	HAH
 	second = TAB
+	start_date = 1444.1.1
+	end_date = 1836.1.1
+}
+
+vassal = {
+	first =	HAH
+	second = ARD
 	start_date = 1444.1.1
 	end_date = 1836.1.1
 }
