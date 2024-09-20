@@ -1,13 +1,15 @@
 government = republic
 add_government_reform = free_city
 government_rank = 1
-technology_group = western
-religion = catholic
-primary_culture = franconian
-capital = 67
-fixed_capital = 67
 mercantilism = 25
-1440.1.1= {
+technology_group = western
+primary_culture = franconian
+religion = catholic
+capital = 67 # Nürnberg
+fixed_capital = 67 # Cannot move capital away from this province & no power cost to move to it
+
+#Ruled by a council of Patricians
+1440.1.1 = {
 	monarch = {
 		name = "Patriziat"
 		adm = 3

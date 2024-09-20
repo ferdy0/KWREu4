@@ -64,8 +64,6 @@ capital = 8
 		religion = catholic
 		culture = norwegian
 	}
-	add_ruler_personality = entrepreneur_personality
-	add_ruler_personality = scholar_personality
 	queen = {
 		name = "Mær"
 		dynasty = "av Freysey"
@@ -79,8 +77,6 @@ capital = 8
 		religion = catholic
 		culture = norwegian
 	}
-	add_queen_personality = bold_fighter_personality
-	add_queen_personality = fierce_negotiator_personality
 	heir = {
 		name = "Sven"
 		monarch_name = "Sven I"
@@ -94,8 +90,6 @@ capital = 8
 		religion = catholic
 		culture = norwegian
 	}
-	add_heir_personality = expansionist_personality
-	add_heir_personality = free_thinker_personality
 }
 1444.11.11= {
 	add_prestige = 115

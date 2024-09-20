@@ -29,34 +29,57 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Antso #4" = 10
-	"Armengol #1" = 10
-	"Costantino #0" = 0
-	"Daramani #0" = 0
-	"Dytryk #2" = 10
-	"Eneko #1" = 10
-	"Ermisenda #0" = -1
-	"Farquaad #1" = 10
-	"Gartzia #4" = 10
+	"Galindo #0" = 150
+	"Enrique #0" = 50
+	"Xanti #0" = 50
+	"Carlos #0" = 20
+	"Diniz #0" = 120
+	"Francisco #0" = 20
+	"Xoán #0" = 20
+	"Andrés #0" = 10
+	"Gastón #0" = 10
+	"Gomes #0" = 10
+	"Juan #0" = 10
+	"Luis #0" = 10
+	"Buenaventura #0" = 5
+	"Francisco #0" = 5
+	"Godofredo #0" = 5
+	"Jaime #0" = 5
+	"Lanzarote #0" = 5
+	"Leonel #0" = 5
+	"Martín #0" = 5
+	"Pedro #0" = 5
+	"Alfonso #0" = 1
+	"Felipe #0" = 1
+	"García #0" = 1
+	"Sancho #0" = 1
+	"Teobaldo #0" = 1
+	"Agustín #0" = 0
+	"Alejandro #0" = 0
+	"Andrés #0" = 0
+	"Antonio #0" = 0
+	"Bernardo #0" = 0
+	"Cristóbal #0" = 0
+	"César #0" = 0
+	"Diego #0" = 0
+	"Esteban #0" = 0
+	"Fernando #0" = 0
+	"Gaspar #0" = 0
 	"Gil #0" = 0
-	"Guiomar #0" = -1
-	"Henrique #1" = 10
-	"Hermenechildo #0" = 0
-	"Juan #1" = 10
-	"Juries #0" = 0
-	"Krystyna #0" = -1
-	"Lope #0" = 0
-	"Mirza #0" = 0
-	"Obeko #0" = 0
-	"Orti #1" = 10
-	"Pawel #3" = 10
-	"Pelaio #0" = 0
-	"Sancho #1" = 10
-	"Tièrri #0" = 0
-	"Toda #1" = -1
-	"Ximena #1" = -1
+	"José #0" = 0
+	"Melchor #0" = 0
+	"Nicolás #0" = 0
+	"Ximeno #0" = 0
+	"Álvaro #0" = 0
+	
+	"Katalin #0" = -10
+	"Blanca #0" = -1
+	"Juana #0" = -1
+	"Leonor #0" = -1
+	"Sancha #0" = -1
 }
 leader_names = {
+	"Aznárez"
 	"Bergera"
 	"Elizalde"
 	"Goyeneche"
@@ -65,6 +88,8 @@ leader_names = {
 	"Navarro"
 	"Palafox"
 	"Pérez de Zabalza"
+	"Tiefo"
+	"d'Ávalos"
 	"de Aguirre"
 	"de Albret"
 	"de Antillón"
@@ -72,21 +97,22 @@ leader_names = {
 	"de Armendariz"
 	"de Azagra"
 	"de Azpilcueta"
-	"de Beaumont"
+	"de Bazán"
 	"de Beortegui"
 	"de Borbón"
 	"de Carranza"
-	"de Garay"
+	"de Estíbaliz"
 	"de Goñi"
 	"de Heredia"
 	"de Hijar"
 	"de Jaso"
-	"de Landívar"
-	"de Salazar"
+	"de La Rioja"
+	"de Liw"
+	"de Montaner"
 	"de Uribe"
-	"de Ursúa"
+	"de Viguera"
 	"de Yanguas"
-	"de Zárate"
+	"de Zúñiga"
 }
 ship_names = {
 	"Atlántida"

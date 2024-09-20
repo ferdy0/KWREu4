@@ -1,5 +1,5 @@
-owner = CAS
-controller = CAS
+owner = Z05
+controller = Z05
 capital = "Santander"
 is_city = yes
 culture = castillian
@@ -10,6 +10,7 @@ base_production = 4
 base_manpower = 2
 extra_cost = 8
 center_of_trade = 1
+add_core = Z05
 add_core = CAS
 discovered_by = east_african
 discovered_by = eastern

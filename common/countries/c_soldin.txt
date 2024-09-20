@@ -2,23 +2,92 @@ ck2_converter_generated = yes
 graphical_culture = westerngfx
 color = { 65 130 30 }
 monarch_names = {
-	"Barnim #1" = 10
-	"Bogislaw #1" = 10
-	"Dobromil #0" = 0
-	"Edyta #0" = -1
-	"Giselbert #1" = 10
-	"Gwienomir #1" = 10
-	"Herman #2" = 10
-	"Lucjan #1" = 10
-	"Maria #1" = -1
-	"Nikolaus #0" = 0
-	"Odelt #1" = -1
-	"Przybyslaw #0" = 0
-	"Radoslava #0" = -1
-	"Stefana #0" = -1
-	"Svetlana #0" = -1
-	"Willem #2" = 10
-	"Wincenty #1" = 10
-	"Winfrida #0" = -1
-	"Zofia #0" = -1
+	"Wilhelm #4" = 60
+	"Barnim #1" = 20
+	"Eric #0" = 20
+	"Filip #0" = 20
+	"Franzis #1" = 20
+	"Jan Friedric #0" = 20
+	"Otto #0" = 20
+	"Georg #0" = 15
+	"Ulrich #1" = 15
+	"Ernest Ludwik #0" = 10
+	"Gerhard #1" = 10
+	"Jan Ernest #0" = 10
+	"Kasimier #0" = 10
+	"Walter #0" = 10
+	"Wartëslaw #0" = 5
+	"Albrecht #0" = 0
+	"Arnt #0" = 0
+	"August #0" = 0
+	"Bernhard #0" = 0
+	"Carl #0" = 0
+	"Emil #0" = 0
+	"Ernest #0" = 0
+	"Fritz #0" = 0
+	"Friedric #0" = 0
+	"Gustav #0" = 0
+	"Harald #0" = 0
+	"Hendrik #0" = 0
+	"Herbert #0" = 0
+	"Hermann #0" = 0
+	"Johann #0" = 0
+	"Jochem #0" = 0
+	"Martin #0" = 0
+	"Maximiliam #0" = 0
+	"Paul #0" = 0
+	"Reinhold #0" = 0
+	"Richard #0" = 0
+	"Siegfried #0" = 0
+	"Valentin #0" = 0
+	
+	"Elisabeth #0" = -1
+	"Gabriela #0" = -1
+	"Helena #0" = -1
+	"Janina #0" = -1
+	"Magdalena #0" = -1
+	"Sophia #0" = -1
+}
+leader_names = {
+	"Behm"
+	"Beyse"
+	"Grosch"
+	"Heidmann"
+	"Jürgens"
+	"Krumtum"
+	"Kurzmann"
+	"Meuseling"
+	"Miercke"
+	"Normann"
+	"Rähl"
+	"Stellmacher"
+	"Wessel"
+	"Witt"
+	"von Andernach"
+	"von Borcke"
+	"von Cammin"
+	"von Eickstedt"
+	"von Greifswald"
+	"von Kolberg"
+	"von Krockows"
+	"von Lettows"
+	"von Neubrandenburg"
+	"von Neustettin"
+	"von Neustreliz"
+	"von Nordheim-Orlamünde"
+	"von Peglows"
+	"von Prenzlau"
+	"von Ramin"
+	"von Rügen"
+	"von Schwerin"
+	"von Stettin"
+	"von Stolp"
+	"von Stralsund"
+	"von Strelows"
+	"von Szczecin"
+	"von Wolgast"
+	"von Wolgatz"
+	"von Wolin"
+	"von Zitzewitzes"
+	"von und zu Stargard"
 }
