@@ -1,0 +1,61 @@
+caa_canaanian_food = {
+	category = 3 		# same category = 90% less likely
+
+	allow = {
+		has_reform = canaania_reform
+        has_institution = global_trade
+        NOT = { has_country_modifier = canaanian_food }
+	}
+
+	effect = {
+        add_country_modifier = {
+            name = canaanian_food
+            duration = -1
+        }
+        add_years_of_trade_income = -1
+        every_owned_province = {
+            limit = {
+                OR = {
+                    trade_goods = fish
+                    trade_goods = grain
+                    trade_goods = livestock
+                }
+            }
+            add_province_modifier = {
+                name = canaanian_food_province
+                duration = -1
+            }
+        }
+	}
+
+	modifier = {
+	}
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			average_home_autonomy = 25
+		}
+		modifier = {
+			factor = 3
+			average_home_autonomy = 35
+		}
+		modifier = {
+			factor = 3
+			average_home_autonomy = 50
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			average_home_autonomy = 25
+		}
+		modifier = {
+			factor = 0
+			NOT = { average_home_autonomy = 10 }
+		}
+	}
+}

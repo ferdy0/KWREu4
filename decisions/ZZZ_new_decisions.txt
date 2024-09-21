@@ -1285,4 +1285,87 @@ country_decisions = {
 			}
 		}
 	}
+
+	form_canaania = {
+		major = yes
+		potential = {
+			tag = TYH
+		}
+
+		allow = {
+			government_rank = 2
+		    stability = 2
+			owns_core_province = 2986
+			owns_core_province = 4735
+			owns_core_province = 127
+			owns_core_province = 1247
+			current_age = age_of_absolutism
+			OR = {
+			    AFR = { junior_union_with = TYH }
+			    AND = {
+			        NOT = { exists = AFR }
+			        owns_core_province = 341
+			    }
+			}
+		}
+
+		effect = {
+			add_prestige = 100
+			2986 = {
+				add_base_tax = 1
+				add_base_production = 1
+			    add_base_manpower = 1
+			}
+			341 = {
+				add_base_tax = 1
+				add_base_production = 1
+			    add_base_manpower = 1
+			}
+			change_tag = CAA
+            remove_government_reform = autocracy_tyrhennia_reform
+            add_government_reform = canaania_reform
+            country_event = { id = ideagroups.1 } #Swap Ideas
+            set_government_rank = 1
+            if = {
+            	limit = { has_country_modifier = powerful_council_ten }
+            	remove_country_modifier = powerful_council_ten
+            }
+            if = {
+            	limit = { has_country_modifier = normal_council_ten }
+            	remove_country_modifier = normal_council_ten
+            }
+            if = {
+            	limit = { has_country_modifier = weak_council_ten }
+            	remove_country_modifier = weak_council_ten
+            }
+            if = {
+                limit = { AFR = { junior_union_with = TYH } }
+                inherit = AFR
+                add_mil_power = -100
+                add_dip_power = -100
+                add_adm_power = -100
+            }
+            if = {
+                limit = { NAP = { junior_union_with = TYH } }
+                inherit = NAP
+                add_mil_power = -100
+                add_dip_power = -100
+                add_adm_power = -100
+            }
+            if = {
+                limit = { Z04 = { junior_union_with = TYH } }
+                inherit = Z04
+                add_mil_power = -100
+                add_dip_power = -100
+                add_adm_power = -100
+            }
+            if = {
+                limit = { PRO = { junior_union_with = TYH } }
+                inherit = PRO
+                add_mil_power = -100
+                add_dip_power = -100
+                add_adm_power = -100
+            }
+		}
+	}
 }

@@ -1,0 +1,224 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 66 1 107 }
+revolutionary_colors = { 66 1 107 }
+historical_idea_groups = {
+	defensive_ideas
+	trade_ideas
+	religious_ideas
+	diplomatic_ideas
+	economic_ideas
+	innovativeness_ideas
+	offensive_ideas
+	spy_ideas
+}
+historical_units = {
+	anglofrench_line
+	french_bluecoat
+	french_caracolle
+	french_cuirassier
+	french_dragoon
+	french_impulse
+	italian_condotta
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Abisatu #0" = 0
+	"Agnese #0" = -5
+	"Alaverru #0" = 0
+	"Assunta #0" = -1
+	"Carule #3" = 15
+	"Constantza #0" = -1
+	"Constantìnu #1" = 5
+	"Corràdu #0" = 3
+	"Ferdinandu #1" = 3
+	"Frantzisca #1" = -5
+	"Frantziscu #0" = 0
+	"Gaetànu #0" = 1
+	"Giulia #0" = -3
+	"Giustu #0" = 0
+	"Goffredu #0" = 1
+	"Guantine #1" = 3
+	"Gublenu #0" = 0
+	"Guisiana #0" = -1
+	"Ippolita #0" = -1
+	"Ilariu #0" = 5
+	"Kipriana #0" = -1
+	"Lucia #0" = -3
+	"Luna #0" = -1
+	"Maura #0" = -1
+	"Munio #0" = 0
+	"Mònica #0" = -1
+	"Padulesa #0" = -1
+	"Pedru #2" = 5
+	"Rita #0" = -1
+	"Rossana #0" = -5
+	"Ruggiero #0" = 0
+	"Saltaru #2" = 10
+	"Saragina #0" = -3
+	"Sardinnia #0" = -1
+	"Sèrgiu #0" = 0
+	"Teresa #0" = -1
+	"Vissente #1" = 5
+	"Vittore #0" = 0
+	"Àgata #0" = -1
+	"Lussurgiu #1" = 40
+	"Mastanabal #2" = 40
+	"Dawud #1" = 20
+	"Ilariu #1" = 20
+	"Carule #0" = 10
+	"Farhan #0" = 10
+	"Guantine #0" = 10
+	"Isidor #0" = 10
+	"Martin #1" = 10
+	"Abisatu #0" = 0
+	"Ablarion #0" = 0
+	"Danyal #0" = 0
+	"Fabritziu #0" = 0
+	"Gaine #0" = 0
+	"Micheli #0" = 0
+	"Saraginu #0" = 0
+	"Sebustianu #0" = 0
+	"Sèrgiu #0" = 0
+	"Tedu #0" = 0
+	"Togli #0" = 0
+
+	"Lucia #1" = -10
+	"Rossana #0" = -10
+	"Agnese #0" = -1
+	"Alberade #0" = -1
+	"Alena #0" = -1
+	"Angioletta #1" = -1
+	"Branca #0" = -1
+	"Brigida #0" = -1
+	"Elianora #0" = -1
+	"Fidula #0" = -1
+	"Giulia #0" = -1
+	"Guantine #0" = 1
+	"Meghighda #0" = -1
+	"Menna #0" = -1
+	"Sirma #0" = -1
+	"Tawenza #0" = -1
+	"Tayyurt #0" = -1
+	"Tedora #0" = -1
+}
+leader_names = {
+	"Angeleri"
+	"Hauteville-Catanzaro"
+	"Hauteville-Lentini"
+	"Manon"
+	"Melis"
+	"Oppizzhingi"
+	"de Bosa"
+	"de Càlaris"
+	"de Grifai"
+	"de Guilcer"
+	"de Sagona"
+	"de Samassi"
+	"de Torres-Paleohora"
+	"di Montiloncu"
+	"Aznagid"
+	"Bari"
+	"Durgali"
+	"Lacon"
+	"Manca"
+	"Muhajir"
+	"Premyslid"
+	"Sanna"
+	"Thabitid"
+	"Tortoli"
+	"Yahyavid"
+	"al-Baloch"
+	"al-Idrisi"
+	"al-Kamal"
+	"al-Nadeer"
+	"al-Sharif"
+	"al-Umar"
+	"al-Zafar"
+	"de Bonàrcadu"
+	"de Gisarclu"
+	"de Sagona"
+	"de Sarrabus"
+	"del Habsburg-Xalón"
+	"di San Vitu"
+	"von Altenburg"
+	"von Plain"
+}
+ship_names = {
+	"Aria Marina"
+	"Attunante"
+	"Bucarone"
+	"Corsica"
+	"Corso Fieru"
+	"Galleotta"
+	"Gregale"
+	"Independenzia"
+	"Indumevule"
+	"Inflessibile"
+	"Intraprendente"
+	"Libecciu"
+	"Libertï¿½"
+	"Livante"
+	"Maistrale"
+	"Maria"
+	"Nazione"
+	"Orgugliosu"
+	"Patriota"
+	"Pruch'ella Duri"
+	"Punente"
+	"Sant'Abele"
+	"Sant'Apebe"
+	"Sant'Egidiu"
+	"Santa Brigita"
+	"Santa Prudenzia"
+	"Santa Tassiana"
+	"Santa Teresa"
+	"Santa Zita"
+	"Santissima Concezzione"
+	"Santu Briziu"
+	"Santu Ghjambattista"
+	"Santu Landericu"
+	"Santu Lanfrancu"
+	"Santu Mauru"
+	"Santu Prutasiu"
+	"Santu Tavianu"
+	"Sbuffulera"
+	"Scioru"
+	"Sciroccu"
+	"Sculapratu"
+	"St'Antonio di Padova"
+	"Stella"
+	"Terribile"
+	"Terrore"
+	"Timevule"
+	"Timpesta"
+	"Tramuntana"
+	"Tunizata"
+	"Ventizata"
+	"Alim"
+	"Aziz"
+	"Bari"
+	"Fattah"
+	"Ghaffar"
+	"Jabbar"
+	"Khaliq"
+	"Malik"
+	"Mu'min"
+	"Muhaymin"
+	"Musawwir"
+	"Mutakabbir"
+	"Qahhar"
+	"Quddus"
+	"Rahim"
+	"Rahman"
+	"Razzaq"
+	"Salam"
+	"Wahhab"
+}

@@ -167,3 +167,52 @@ weak_council_ten = {
     legitimacy = -1
     monthly_authority_power = -0.1
 }
+prefecture_system = {
+    governing_capacity_modifier = 0.25
+    parliament_backing_chance = 0.05
+}
+curtailed_council = {
+    burghers_loyalty_modifier = 0.3
+    burghers_influence_modifier = -0.3
+    nobles_loyalty_modifier = 0.3
+    nobles_influence_modifier = -0.3
+}
+office_arbiters = {
+    global_spy_defence = 0.15
+    yearly_corruption = -0.1
+}
+laws_succession = {
+    legitimacy = 1
+}
+canaanian_food = {
+    trade_efficiency = -0.1
+    tolerance_own = 1
+}
+canaanian_food_province = {
+    trade_goods_size_modifier = 0.15
+}
+canaanian_public_works = {
+    global_prosperity_growth = 0.25
+    tolerance_own = 1
+}
+domestic_legion = {
+    yearly_army_professionalism = 0.2
+    land_maintenance_modifier = -0.1
+}
+chemical_crown_company = {
+    artillery_power = 0.05
+    production_efficiency = 0.05
+}
+cagliari_two_capitals = {
+    legitimacy = 0.5
+}
+tunis_two_capitals = {
+    num_accepted_cultures = 1
+    	local_state_maintenance_modifier = -1
+}
+canaanian_constitution = {
+    max_absolutism = -50
+    yearly_absolutism = -1
+    global_unrest = -1
+    parliament_backing_chance = 0.05
+}

@@ -66,72 +66,30 @@ autocracy_tyrhennia_reform = {
 	}
 }
 
-plutocratic_africa_reform = {
-	icon = "asian_scripture"
+canaania_reform = {
+	icon = "crown"
 	allow_normal_conversion = yes
-	legacy_equivalent = despotic_monarchy
+	legacy_equivalent = elective_monarchy_reform
 	potential = {
-		OR = {
-			technology_group = indian
-			technology_group = muslim
-			technology_group = chinese
-			technology_group = east_african
-		}
-	}
-	nation_designer_trigger = {
-		OR = {
-			technology_group = indian
-			technology_group = muslim
-			technology_group = chinese
-			technology_group = east_african
-		}
+	    tag = CAA
 	}
 	valid_for_nation_designer = yes
-	nation_designer_cost = 10
+	lock_level_when_selected = yes
+	nation_designer_cost = 0
 	modifiers = {
-		merchants = 1
-		nobles_influence_modifier = -0.05
-		burghers_influence_modifier = 0.05
-		vaisyas_influence_modifier = 0.05
+	    legitimacy = -1
+	    burghers_loyalty_modifier = -0.2
+        burghers_influence_modifier = 0.2
+        nobles_loyalty_modifier = -0.2
+        nobles_influence_modifier = 0.2
+        tolerance_own = -1
+        max_absolutism = -40
+        governing_capacity_modifier = -0.2
 	}
+	maintain_dynasty = yes
+	has_parliament = yes
 	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
-        force_general_leader = yes
-	}
-	boost_income = yes
-	conditional = {
-		allow = {
-			has_dlc = "Leviathan"
-		}
-		allow_draft_transport_ships = yes
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Res Publica"
-			NOT = { has_dlc = "Mare Nostrum" }
-		}
-		can_use_trade_post = yes
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Mare Nostrum"
-			NOT = { has_dlc = "Res Publica" }
-		}
-		can_form_trade_league = yes
-		trade_city_reform = trading_city
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Res Publica"
-			has_dlc = "Mare Nostrum"
-		}
-		can_use_trade_post = yes
-		can_form_trade_league = yes
-		trade_city_reform = trading_city
-	}
-	ai = {
-		factor = 0.75 #generic
+		has_ruler_election = yes
 	}
 }
 
@@ -155,6 +113,7 @@ elective_monarchy_reform = {
 	icon = "ballot_box"
 	potential = {
 		has_dlc = "Domination"
+		not = { tag = CAA }
 	}
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes

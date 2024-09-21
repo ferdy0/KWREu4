@@ -650,7 +650,7 @@ canaania_ideas = {
 	}
 
 	trigger = {
-		primary_culture = dynamic-berber-sardinian-culture-num1
+		tag = CAA
 	}
 	free = yes
 
@@ -679,5 +679,6 @@ canaania_ideas = {
 	canaania_7 = {
 		allowed_marine_fraction = 0.25
         sailors_recovery_speed = 0.25
+        global_sailors_modifier = -0.25
 	}
 }
