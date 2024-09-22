@@ -1,25 +1,25 @@
-caa_office_arbiters = {
-	category = 1 		# same category = 90% less likely
+caa_domestic_legion = {
+	category = 3 		# same category = 90% less likely
 
 	allow = {
 		has_reform = canaania_reform
-        has_country_modifier = curtailed_council
-        NOT = { has_country_modifier = office_arbiters }
+        has_country_modifier = canaanian_public_works
+        NOT = { has_country_modifier = domestic_legion }
 	}
-
+	
 	effect = {
         add_country_modifier = {
-            name = office_arbiters
+            name = domestic_legion
             duration = -1
         }
-        add_mil_power = -100
+        add_manpower = -20
 	}
-
+	
 	modifier = {
 	}
-
+	
 	chance = {
-		factor = 1
+		factor = 10
 		modifier = {
 			factor = 2
 			average_home_autonomy = 25

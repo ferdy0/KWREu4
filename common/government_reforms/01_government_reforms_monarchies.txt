@@ -69,7 +69,7 @@ autocracy_tyrhennia_reform = {
 canaania_reform = {
 	icon = "crown"
 	allow_normal_conversion = yes
-	legacy_equivalent = elective_monarchy_reform
+	legacy_equivalent = despotic_monarchy
 	potential = {
 	    tag = CAA
 	}

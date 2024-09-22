@@ -158,7 +158,7 @@ prussian_monarchy = {
 		OR = {
 			uses_church_aspects = yes
 			uses_fervor = yes
-			has_unlocked_government_reform_tooltip = {
+			has_unlocked_government_reform = {
 				government_reform = prussian_monarchy
 			}
 		}
@@ -256,7 +256,7 @@ prussian_monarchy_base = {
 					have_had_reform = prussian_theocratic_reform
 				}
 			}
-			has_unlocked_government_reform_tooltip = {
+			has_unlocked_government_reform = {
 				government_reform = prussian_monarchy_base
 			}
 		}

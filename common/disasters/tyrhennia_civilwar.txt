@@ -94,7 +94,7 @@ tyrhennia_civil_war = {
 		    tyrhennia_civil_war.9
 		    tyrhennia_civil_war.10
 		}
-		random_events = { 
+		random_events = {
 			120 = 0
 			1 = tyrhennia_civil_war.2 #Civil War Spreads to Province
 			#Events 3 - 8 related to foreign intervention

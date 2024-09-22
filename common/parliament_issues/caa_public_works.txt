@@ -1,25 +1,27 @@
-caa_domestic_legion = {
+caa_public_works = {
 	category = 3 		# same category = 90% less likely
 
 	allow = {
 		has_reform = canaania_reform
-        has_country_modifier = canaanian_public_works
-        NOT = { has_country_modifier = domestic_legion }
+        has_institution = manufactories
+        has_country_modifier = prefecture_system
+        has_country_modifier = canaanian_food
+        NOT = { has_country_modifier = canaanian_public_works }
 	}
-
+	
 	effect = {
         add_country_modifier = {
-            name = domestic_legion
+            name = canaanian_public_works
             duration = -1
         }
-        add_manpower = -20
+        add_years_of_trade_income = -1²
 	}
-
+	
 	modifier = {
 	}
-
+	
 	chance = {
-		factor = 1
+		factor = 10
 		modifier = {
 			factor = 2
 			average_home_autonomy = 25

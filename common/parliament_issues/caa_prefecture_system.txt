@@ -1,29 +1,24 @@
-caa_canaanian_constitution = {
-	category = 1 		# same category = 90% less likely
+caa_prefecture_system = {
+	category = 3 		# same category = 90% less likely
 
 	allow = {
 		has_reform = canaania_reform
-        current_age = age_of_revolutions
-        NOT = { has_country_modifier = canaanian_constitution }
+		NOT = { has_country_modifier = prefecture_system }
 	}
-
+	
 	effect = {
         add_country_modifier = {
-            name = canaanian_constitution
+            name = prefecture_system
             duration = -1
         }
-        add_prestige = -50
-        add_legitimacy = -50
-        add_mil_power = -100
-        add_dip_power = -100
         add_adm_power = -100
 	}
-
+	
 	modifier = {
 	}
-
+	
 	chance = {
-		factor = 1
+		factor = 10
 		modifier = {
 			factor = 2
 			average_home_autonomy = 25

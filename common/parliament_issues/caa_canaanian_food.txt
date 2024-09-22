@@ -1,27 +1,38 @@
-caa_public_works = {
+caa_canaanian_food = {
 	category = 3 		# same category = 90% less likely
 
 	allow = {
 		has_reform = canaania_reform
-        has_institution = manufactories
-        has_country_modifier = prefecture_system
-        has_country_modifier = canaanian_food
-        NOT = { has_country_modifier = canaanian_public_works }
+        has_institution = global_trade
+        NOT = { has_country_modifier = canaanian_food }
 	}
-
+	
 	effect = {
         add_country_modifier = {
-            name = canaanian_public_works
+            name = canaanian_food
             duration = -1
         }
         add_years_of_trade_income = -1
+        every_owned_province = {
+            limit = {
+                OR = {
+                    trade_goods = fish
+                    trade_goods = grain
+                    trade_goods = livestock
+                }
+            }
+            add_province_modifier = {
+                name = canaanian_food_province
+                duration = -1
+            }
+        }
 	}
-
+	
 	modifier = {
 	}
-
+	
 	chance = {
-		factor = 1
+		factor = 10
 		modifier = {
 			factor = 2
 			average_home_autonomy = 25

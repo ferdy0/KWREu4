@@ -1321,11 +1321,6 @@ country_decisions = {
 				add_base_production = 1
 			    add_base_manpower = 1
 			}
-			change_tag = CAA
-            remove_government_reform = autocracy_tyrhennia_reform
-            add_government_reform = canaania_reform
-            country_event = { id = ideagroups.1 } #Swap Ideas
-            set_government_rank = 1
             if = {
             	limit = { has_country_modifier = powerful_council_ten }
             	remove_country_modifier = powerful_council_ten
@@ -1366,6 +1361,11 @@ country_decisions = {
                 add_dip_power = -100
                 add_adm_power = -100
             }
+			change_tag = CAA
+            remove_government_reform = autocracy_tyrhennia_reform
+            add_government_reform = canaania_reform
+            country_event = { id = ideagroups.1 } #Swap Ideas
+            set_government_rank = 4
 		}
 	}
 }

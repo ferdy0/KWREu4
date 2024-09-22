@@ -1,12 +1,12 @@
 caa_formalise_two_capitals = {
-	category = 1 		# same category = 90% less likely
+	category = 3 		# same category = 90% less likely
 
 	allow = {
 		has_reform = canaania_reform
         has_institution = enlightenment
         NOT = { has_country_flag = formalized_capitals }
 	}
-
+	
 	effect = {
 	    set_country_flag = formalized_capitals
         2986 = {
@@ -23,12 +23,12 @@ caa_formalise_two_capitals = {
         }
         add_years_of_trade_income = -2
 	}
-
+	
 	modifier = {
 	}
-
+	
 	chance = {
-		factor = 1
+		factor = 10
 		modifier = {
 			factor = 2
 			average_home_autonomy = 25
