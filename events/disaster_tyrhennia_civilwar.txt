@@ -557,9 +557,10 @@ country_event = {
 		TYH = {
 			had_country_flag = {
                 flag = had_tyh_civil_war
-                days = 3650
+                days = 10000
             }
 		}
+        current_age = age_of_reformation
 	}
 
     mean_time_to_happen = {
