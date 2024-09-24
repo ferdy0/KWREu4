@@ -238,7 +238,7 @@ country_event = {
 		add_manpower = -2
 	}
 	option = { #Let the Tyhrennians handle their own conflicts.
-		name = "castilian_civil_war.3.b"
+		name = "tyrhennia_civil_war.3.b"
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -299,7 +299,7 @@ country_event = {
 		}
 		TYH = {
 			country_event = {
-				id = castilian_civil_war.6
+				id = tyrhennia_civil_war.6
 				days = 15
 			}
 			add_opinion = {
@@ -363,7 +363,7 @@ country_event = {
 			has_disaster = tyrhennia_civil_war
 		}
 	}
-	
+
 	option = { #Support this claimant
 		name = "tyrhennia_civil_war.7.a"
 		ai_chance = {

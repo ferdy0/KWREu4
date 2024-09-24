@@ -172,10 +172,10 @@ prefecture_system = {
     parliament_backing_chance = 0.05
 }
 curtailed_council = {
-    burghers_loyalty_modifier = 0.3
-    burghers_influence_modifier = -0.3
-    nobles_loyalty_modifier = 0.3
-    nobles_influence_modifier = -0.3
+    burghers_loyalty_modifier = 0.25
+    burghers_influence_modifier = -0.25
+    nobles_loyalty_modifier = 0.25
+    nobles_influence_modifier = -0.25
 }
 office_arbiters = {
     global_spy_defence = 0.15

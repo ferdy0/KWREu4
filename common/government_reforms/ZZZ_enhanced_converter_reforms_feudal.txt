@@ -132,6 +132,63 @@ ottoman_government = {
 	}
 }
 
+autocracy_tyrhennia_reform = {
+	icon = "crown"
+	allow_normal_conversion = yes
+	legacy_equivalent = despotic_monarchy
+	potential = {
+	    tag = TYH
+	}
+	valid_for_nation_designer = yes
+	lock_level_when_selected = yes
+	nation_designer_cost = 0
+	modifiers = {
+	    leader_naval_fire = 1
+        naval_tradition_from_battle = 0.5
+        allowed_marine_fraction = 0.1
+        max_admiral_fire = 1
+        global_sailors_modifier = -0.1
+	}
+	factions = {
+    	mr_aristocrats
+    	mr_traders
+    	mr_guilds
+    }
+	government_abilities = {
+        council_of_ten
+    }
+	custom_attributes = {
+		force_admiral_leader = yes
+	}
+}
+
+canaania_reform = {
+	icon = "crown"
+	allow_normal_conversion = yes
+	legacy_equivalent = despotic_monarchy
+	potential = {
+	    tag = CAA
+	}
+	valid_for_nation_designer = yes
+	lock_level_when_selected = yes
+	nation_designer_cost = 0
+	modifiers = {
+	    legitimacy = -1
+	    burghers_loyalty_modifier = -0.2
+        burghers_influence_modifier = 0.2
+        nobles_loyalty_modifier = -0.2
+        nobles_influence_modifier = 0.2
+        tolerance_own = -1
+        max_absolutism = -40
+        governing_capacity_modifier = -0.2
+	}
+	maintain_dynasty = yes
+	has_parliament = yes
+	custom_attributes = {
+		has_ruler_election = yes
+	}
+}
+
 prussian_monarchy = {
 	icon = "prussian_monarchy"
 	allow_normal_conversion = yes
