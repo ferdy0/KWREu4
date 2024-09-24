@@ -1,0 +1,10 @@
+hansa_advisory_merchant = {
+	trade_efficiency = 0.1
+	production_efficiency = 0.5
+}
+merchant_advising = {
+	merchants = -1
+}
+HSA_test = {
+	modifier = -20
+} 

@@ -5353,3 +5353,11 @@ tyh_civil_war_winner = {
 	opinion = 75
 	yearly_decay = 1
 }
+
+ ###################
+ # Hansa modifiers #
+ ###################
+
+hansa_stealing_merchants = {
+	opinion = -20 
+} 
