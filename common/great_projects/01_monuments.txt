@@ -21283,7 +21283,7 @@ tunis_medina = {
 		}
 		country_modifiers = {
 		    improve_relation_modifier = 0.3
-		    prestige = 0.75
+		    prestige = 0.5
         }
 		on_upgraded = {
 		}
