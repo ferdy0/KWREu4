@@ -340,6 +340,7 @@ estate_burghers = {
 		estate_burghers_AZT_mexican_gold_mines
 		estate_burghers_fugger_family
 		estate_burghers_TIM_gulf_toll
+		estate_burghers_allow_advisory_merchants_privilege
 	}
 
 	agendas = {

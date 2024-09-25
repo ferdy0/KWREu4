@@ -226,3 +226,73 @@ estate_burghers_whaling_trips = {
 	benefits = { burghers_privilege_slots = 1 }
 	# Need to ask lot how to also make this apply to the company vassal provinces
 }
+
+
+estate_burghers_allow_advisory_merchants_privilege = {
+    icon = privilege_give_money
+    max_absolutism = -5        
+    loyalty = 0.1               
+    influence  = 0.1           
+	is_valid = { 
+		tag = HSA 
+		ai = no
+		has_government_attribute = is_merchant_republic
+	}	
+	can_select = { 
+		is_trade_league_leader = yes
+		full_idea_group = trade_ideas 
+		calc_true_if = {
+			all_known_country = { 
+				is_in_trade_league_with = ROOT
+			}
+			amount = 7
+		}
+	} 	
+	on_granted = { 
+		set_country_flag = allow_advisory_merchants
+		every_country = {
+			limit = { is_in_trade_league_with = HSA }
+			add_opinion = { 
+				who = HSA 
+				modifier = hansa_stealing_merchants 
+			}
+		}
+	} 	
+	can_revoke = { 
+		NOT = {
+			has_country_modifier = merchant_advising
+		}
+	} 	
+	on_revoked = {  
+		clr_country_flag = allow_advisory_merchants
+		every_country = {
+			limit = { is_in_trade_league_with = HSA }
+			remove_opinion = { 
+				who = HSA 
+				modifier = hansa_stealing_merchants 
+			}
+		}
+	} 	
+	on_invalid = { 
+	} 									#Effects executed upon the privilege being removed due to invalidity
+	penalties = { 
+	} 		
+	benefits = { 
+	}             
+	conditional_modifier = { 			#Modifier that are applied if the specified conditions are true.
+		# trigger = { <triggers> }
+		# modifier = { <modifiers> }
+		# is_bad = <bool>				#yes/no. Whether the modifier should be listed as positive or negative in the tooltips.
+	}
+	modifier_by_land_ownership = { 
+	} 									#Multiplies the modifier by the % of land owned by the estate.
+	mechanics = { 
+	} 									#Special mechanics the privilege enables
+	cooldown_years = 1 				
+	on_cooldown_expires = { 
+	}									#Effect executed once the specified cooldown_years timer has run down
+	ai_will_do = {						#If above ESTATE_PRIVILEGE_GRANT_THRESHOLD define, AI will try to apply. If below 
+		factor = 0                              
+		modifier = { }
+	}
+}
