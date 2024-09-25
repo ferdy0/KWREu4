@@ -77,6 +77,6 @@ spriteTypes = {
     }
     spriteType = {
         name = "GFX_great_project_tunis_medina"
-    	texturefile = "gfx//interface//great_projects//great_project_falun_copper_mine.dds"
+    	texturefile = "gfx//interface//great_projects//medina.dds"
     }
 }

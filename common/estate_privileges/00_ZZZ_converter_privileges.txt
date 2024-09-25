@@ -218,7 +218,9 @@ estate_burghers_whaling_trips = {
 	}
 	on_invalid_province = {
 		if = {
-			limit = has_province_modifier = nor_whaling_barons_poduction
+			limit = {
+			    has_province_modifier = nor_whaling_barons_poduction
+			}
 		}
 		remove_province_modifier = nor_whaling_barons_poduction
 	}

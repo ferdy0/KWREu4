@@ -85,7 +85,7 @@ venice_missions_slot_1_dummy = {
 	ven_dummy_mission_1 = {
 		icon = mission_locked_mission
 		position = 7
-		required_missions = { ven_army_republic }
+		required_missions = { tyh_army_republic }
 		provinces_to_highlight = {
 
 		}
@@ -110,7 +110,7 @@ venice_missions_slot_1_dummy = {
 }
 
 
-venice_missions_slot_1_standing_army = {
+tyh_missions_slot_1_standing_army = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -122,18 +122,18 @@ venice_missions_slot_1_standing_army = {
 		has_dlc = "Winds of Change"
 		tag = TYH
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = ven_standing_army_missions_flag
-		NOT = { has_country_flag = ven_mercenary_army_missions_flag }
-		NOT = { has_country_flag = ven_navy_missions_flag }
+		has_country_flag = tyh_standing_army_missions_flag
+		NOT = { has_country_flag = tyh_mercenary_army_missions_flag }
+		NOT = { has_country_flag = tyh_navy_missions_flag }
 	}
 	has_country_shield = yes
-	ven_standing_army_mission_1 = {
+	tyh_standing_army_mission_1 = {
 		icon = protect_against_austria
 		position = 7
 		provinces_to_highlight = {
 
 		}
-		required_missions = { ven_army_republic }
+		required_missions = { tyh_army_republic }
 		trigger = {
 			not_in_mission_preview_mode = { key = VEN }
 			custom_trigger_tooltip = {
@@ -218,10 +218,10 @@ venice_missions_slot_1_standing_army = {
 		}
 	}
 
-	ven_standing_army_mission_2 = {
+	tyh_standing_army_mission_2 = {
 		icon = ven_standing_army_mission_2 
 		position = 8
-		required_missions = { ven_standing_army_mission_1 }
+		required_missions = { tyh_standing_army_mission_1 }
 		provinces_to_highlight = {
 
 		}
@@ -254,14 +254,14 @@ venice_missions_slot_1_standing_army = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = ven_iron_wall_of_italy_modifier
+				name = tyh_iron_wall_of_italy_modifier
 				duration = -1
 			}
 		}
 	}
 }
 
-venice_missions_slot_1_mercenary_army = {
+tyh_missions_slot_1_mercenary_army = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -278,13 +278,13 @@ venice_missions_slot_1_mercenary_army = {
 		NOT = { has_country_flag = ven_navy_missions_flag }
 	}
 	has_country_shield = yes
-	ven_mercenary_army_mission_1 = {
+	tyh_mercenary_army_mission_1 = {
 		icon = venture_captains
 		position = 7
 		provinces_to_highlight = {
 
 		}
-		required_missions = { ven_army_republic }
+		required_missions = { tyh_army_republic }
 		trigger = {
 			not_in_mission_preview_mode = { key = VEN }
 			full_idea_group = mercenary_ideas
@@ -319,10 +319,10 @@ venice_missions_slot_1_mercenary_army = {
 		}
 	}
 
-	ven_mercenary_army_mission_2 = {
+	tyh_mercenary_army_mission_2 = {
 		icon = ven_mercenary_army_mission_2
 		position = 8
-		required_missions = { ven_mercenary_army_mission_1 }
+		required_missions = { tyh_mercenary_army_mission_1 }
 		provinces_to_highlight = {
 
 		}
@@ -343,14 +343,14 @@ venice_missions_slot_1_mercenary_army = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = ven_men_of_war_modifier
+				name = tyh_men_of_war_modifier
 				duration = -1
 			}
 		}
 	}
 }
 
-venice_missions_slot_1_navy = {
+tyh_missions_slot_1_navy = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -367,11 +367,11 @@ venice_missions_slot_1_navy = {
 		has_country_flag = ven_navy_missions_flag
 	}
 	has_country_shield = yes
-	ven_navy_mission_1 = {
+	tyh_navy_mission_1 = {
 		icon = mission_launch_a_flagship
 		position = 7
 		required_missions = {
-			ven_army_republic
+			tyh_army_republic
 		}
 		trigger = {
 			not_in_mission_preview_mode = { key = VEN }
@@ -396,13 +396,13 @@ venice_missions_slot_1_navy = {
 						}
 					}
 					add_country_modifier = {
-						name = ven_marine_drilling_modifier
+						name = tyh_marine_drilling_modifier
 						duration = -1
 					}
 				}
 				else = {
 					add_country_modifier = {
-						name = ven_marine_drilling_modifier2
+						name = tyh_marine_drilling_modifier2
 						duration = -1
 					}
 				}
@@ -419,13 +419,13 @@ venice_missions_slot_1_navy = {
 						}
 					}
 					add_country_modifier = {
-						name = ven_marine_drilling_modifier
+						name = tyh_marine_drilling_modifier
 						duration = -1
 					}
 				}
 				else = {
 					add_country_modifier = {
-						name = ven_marine_drilling_modifier2
+						name = tyh_marine_drilling_modifier2
 						duration = -1
 					}
 				}
@@ -461,13 +461,13 @@ venice_missions_slot_1_navy = {
 							}
 						}
 						add_country_modifier = {
-							name = ven_marine_drilling_modifier
+							name = tyh_marine_drilling_modifier
 							duration = -1
 						}
 					}
 					else = {
 						add_country_modifier = {
-							name = ven_marine_drilling_modifier2
+							name = tyh_marine_drilling_modifier2
 							duration = -1
 						}
 					}
@@ -501,10 +501,10 @@ venice_missions_slot_1_navy = {
 		}
 	}
 
-	ven_navy_mission_2 = {
+	tyh_navy_mission_2 = {
 		icon = ven_navy_mission_2
 		position = 8
-		required_missions = { ven_navy_mission_1 }
+		required_missions = { tyh_navy_mission_1 }
 		provinces_to_highlight = {
 			province_id = 112
 			NOT = { owned_by = ROOT }
@@ -531,37 +531,15 @@ venice_missions_slot_1_navy = {
 					has_shipyard_building_trigger = yes
 				}
 			}
-			owns = 112
+			owns = 2986
 		}
 		effect = {
 			add_country_modifier = {
-				name = ven_venetian_thalassocracy_modifier
+				name = tyh_venetian_thalassocracy_modifier
 				duration = -1
 			}
-			if = {
-				limit = { 
-					has_dlc = "Leviathan" 
-					112 = {
-						NOT = {
-							has_great_project = {
-								type = venetian_arsenal_gp
-								tier = 3
-							}
-						}
-					}
-				}
-				112 = {
-					add_great_project_tier = {
-						type = venetian_arsenal_gp
-						tier = 1
-					}
-				}
-			}
-			else = {
-				change_ruler_stat = {
-					type = dip
-					amount = 2
-				}
+			2986 = {
+                add_base_production = 1
 			}
 		}
 	}

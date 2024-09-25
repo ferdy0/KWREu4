@@ -216,3 +216,26 @@ canaanian_constitution = {
     global_unrest = -1
     parliament_backing_chance = 0.05
 }
+tyh_iron_wall_of_italy_modifier = {
+	force_march_free = yes
+	movement_speed = 0.05
+	fire_damage_received = -0.05
+}
+tyh_men_of_war_modifier = {
+	assault_fort_ability = 0.3
+	movement_speed = 0.10
+	is_mercenary_modifier = yes
+}
+tyh_marine_drilling_modifier = {
+	discipline = 0.05
+	drill_gain_modifier = 1
+	is_marine_modifier = yes
+}
+tyh_marine_drilling_modifier2 = {
+	navy_tradition = 1
+}
+tyh_venetian_thalassocracy_modifier = {
+	global_trade_power = 0.1
+	naval_tradition_from_battle = 1
+	global_ship_cost = -0.05
+}
