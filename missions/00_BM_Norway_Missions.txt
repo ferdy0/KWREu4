@@ -1225,14 +1225,19 @@ Norway_missions_s4 = {
         effect = {
             southeast_america_region = {
                 if = {
-                    limit = { #needs to be fixed, doesn't check for trade goods
-                        owned_by = ROOT
-                        has_trade_goods = grain
-                        has_trade_goods = coffee
-                        has_trade_goods = cotton
-                        has_trade_goods = sugar
-                        has_trade_goods = tobacco
-                        has_trade_goods = cocoa
+                    limit = {
+                        #needs to be fixed, doesn't check for trade goods
+                        AND = {
+                            owned_by = ROOT
+                            OR = {
+                                has_trade_goods = grain
+                                has_trade_goods = coffee
+                                has_trade_goods = cotton
+                                has_trade_goods = sugar
+                                has_trade_goods = tobacco
+                                has_trade_goods = cocoa
+                            }
+                        }
                     }
                     add_province_modifier = {
                         name = "nor_plantations_established"
