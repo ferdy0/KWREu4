@@ -1,4 +1,4 @@
-venice_missions_slot_1 = {
+tyhrennian_missions_slot_1 = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -14,28 +14,35 @@ venice_missions_slot_1 = {
 	
 	has_country_shield = yes
 	
-	ven_embrace_neoplatonism = {
+	tyh_embrace_neoplatonism = {
 		icon = ven_embrace_neoplatonism
-		required_missions = { ven_scales_of_power }
+		required_missions = { tyh_scales_of_power }
 		position = 2 
 		trigger = {
 			has_institution = renaissance
 		}
 		effect = {
-			country_event = {
-				id = flavor_ven.40 
-			}
-			custom_tooltip = event_insight_flavor_ven.40
+            define_advisor = {
+                name = "Guantine"
+                type = statesman
+                cost_multiplier = 0.25
+                skill = 3
+            }
+            if = {
+                limit = { has_dlc = "Rule Britannia" }
+                change_innovativeness = 2
+            }
+            else = { add_adm_power = 25 add_dip_power = 25 add_mil_power = 25 }
 		}
 	}
 
-	wof_ven_promote_the_carnevale = {
+	tyh_promote_the_carnevale = {
 		icon = promote_the_carnevale
 		position = 3
-		required_missions = { ven_embrace_neoplatonism }
+		required_missions = { tyh_embrace_neoplatonism }
 		
 		trigger = {
-			artist = 3
+			statesman = 3
 			if = {
 				limit = { has_dlc = "Mandate of Heaven" }
 				splendor = 800
@@ -43,16 +50,15 @@ venice_missions_slot_1 = {
 			else = { prestige = 50 }
 		}
 		effect = {
-			country_event = {
-				id = flavor_ven.42 #*
-			}
-			if = {
-				limit = { has_dlc = "Mandate of Heaven" }
-				custom_tooltip = event_insight_flavor_ven.42
-			}
-			else = {
-				custom_tooltip = event_insight_flavor_ven.42.b
-			}
+            if = {
+                limit = { has_dlc = "Mandate of Heaven" }
+                custom_tooltip = adm_advisors_will_generate_1_splendor_per_level
+            }
+            else = {
+                add_prestige_or_monarch_power = {
+                    amount = 20
+                }
+            }
 		}
 	}
 }
