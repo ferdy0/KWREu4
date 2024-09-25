@@ -1,6 +1,6 @@
 hansa_advisory_merchant = {
 	trade_efficiency = 0.1
-	production_efficiency = 0.5
+	production_efficiency = 0.05
 }
 merchant_advising = {
 	merchants = -1
