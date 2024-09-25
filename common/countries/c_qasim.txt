@@ -2,40 +2,93 @@ ck2_converter_generated = yes
 graphical_culture = muslimgfx
 color = { 166 206 16 }
 monarch_names = {
-	"Abdul-Wahab #0" = 0
-	"Abdullah #1" = 10
-	"Abu-Bakr #1" = 10
-	"Asli #0" = -1
-	"Azad #0" = 0
-	"Fadl #1" = 10
-	"Ghalib #1" = 10
-	"Hafiz #0" = 0
-	"Halil #1" = 10
-	"Humran #1" = 10
-	"Jalil #1" = 10
-	"Jibril #0" = 0
-	"Khaireddin #0" = 0
-	"Khaterah #0" = -1
-	"Langar #0" = 0
-	"Libin #0" = -1
-	"Mahmud #0" = 0
-	"Mubarak #0" = 0
-	"Muhammad #0" = 0
-	"Muzayna #1" = 10
-	"Rana #0" = -1
-	"Sadiq #0" = 0
-	"Safiya #0" = -1
-	"Sami #1" = 10
-	"Shahzadah #0" = -1
-	"Shujah #2" = 10
-	"Sulayman #1" = 10
-	"Talib #1" = 10
-	"Tayyi' #1" = 10
-	"Ubayd #0" = 0
-	"Usayd #1" = 10
-	"Yazid #1" = 10
-	"Youkhanna #0" = 0
-	"Yusuf #1" = 10
-	"Zubayd #1" = 10
-	"Zafir #1" = 10
+	"Ahmad #2" = 50
+	"Qânsawh #0" = 40
+	"Tûmân Bay #0" = 40
+	"Abû Bakr #1" = 30
+	"Sa'id #0" = 30
+	"'Abd al-'Aziz #0" = 20
+	"'Abd al-Ilah #0" = 20
+	"'Abdullah #0" = 20
+	"'Alî #0" = 20
+	"'Uthman #0" = 20
+	"al-Musta'in #0" = 20
+	"al-Nasr Faraj #0" = 20
+	"Inâl #0" = 20
+	"Jânbulât #0" = 20
+	"Khusqadam #0" = 20
+	"Qâyit Bay #0" = 20
+	"Yûsuf #1" = 20
+	"Barqûq #0" = 15
+	"'Abd al-Karim #0" = 10
+	"'Abul Muhsin #0" = 10
+	"Abu Talib #1" = 10
+	"Abu Aun Idris #0" = 10
+	"al-Hasan #0" = 10
+	"Hassan #0" = 10
+	"Hazza #0" = 10
+	"Humaida #0" = 10
+	"Hâlil #2" = 10
+	"Isma'îl #0" = 10
+	"Jafar #0" = 10
+	"Kûjûk #0" = 10
+	"Masa'id #0" = 10
+	"Mubarak #0" = 10 
+	"Mushin #0" = 10
+	"Nami #0" = 10
+	"Qa'it #0" = 10
+	"Sha'bân #0" = 10
+	"Sâlih #0" = 10
+	"Takaba #0" =  10
+	"Yahya #1" = 10
+	"'Abd al-Malik #0" = 0
+	"Basir #0" = 0
+	"Fadl #0" = 0
+	"Ghayth #0" = 0
+	"Hatim #0" = 0
+	"Ilyas #0" = 0
+	"Jabir #0" = 0
+	"Nadim #0" = 0
+	"Nizar #0" = 0
+	"Qasim #0" = 0
+	"Sa'di #0" = 0
+	"Sayyid #0" = 0
+	"Yunus #0" = 0
+	
+	"Rajya #0" = -1
+	"Shahira #0" = -1
+	"Yusra #0" = -1
+	"Asma #0" = -1
+}
+
+leader_names = {
+	Abbas
+	Androusid
+	Aybak
+	Baibars
+	Bay
+	Bey
+	Bugha
+	Chammas
+	Elesbaam
+	Falajid
+	Hammoud
+	Ibrahim
+	Jarwanid
+	Kansur
+	Khalil
+	Mansour
+	Narseid
+	Ramzan
+	Saleh
+	Sayfuddin
+	Tanukh
+	Youssef
+	Zangi
+	"al-Adid"
+	"al-Hakam"
+	"al-Mihran"
+	"al-Munir"
+	"al-Zawayhi"
+	"as-Sa'di"
 }

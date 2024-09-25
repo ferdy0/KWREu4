@@ -26,49 +26,80 @@ historical_units = {
 	topchis_artillery
 }
 monarch_names = {
-	"Ahu #0" = -1
-	"Akbar #1" = 10
-	"Alp Arslan #1" = 10
-	"Ayaz #1" = 10
-	"Azarmidokht #0" = -1
-	"Beybîn #0" = -1
-	"Darab #0" = 0
-	"Davud #1" = 10
-	"Ebu-Memsûr #1" = 10
-	"Farida #0" = -1
-	"Farrukhzad #0" = 0
-	"Iskender #1" = 10
-	"Kharmandar #0" = 0
-	"Leyla #0" = -1
-	"Manuchihr #0" = 0
-	"Mariam #0" = -1
-	"Merzuban #1" = 10
-	"Sulayman #0" = 0
-	"Touran #0" = -1
-	"Tughril-Beg #1" = 10
-	"Vishtasb #1" = 10
-	"Wahid #1" = 10
-	"Yalle #0" = 0
-	"Yasaman #0" = -1
-	"Yildiz #0" = -1
-	"Zahak #0" = 0
-	"Zahir #1" = 10
-	"Zand #0" = 0
-	"Zarrindokht #0" = -1
-	"Çagri #1" = 10
+	"'Abbâs #0" = 30
+	"Eskander #2" = 30
+	"Haidar #0" = 30
+	"Ismâ'îl #0" = 30
+	"Solaymân #0" = 20
+	"Tamâshp #0" = 20
+	"Safi #1" = 15
+	"'Ali Morâd #0" = 10
+	"'Âdel Shâh #0" = 10
+	"Abu'l Fath #0" = 10
+	"Aga Muhammad #0" = 10
+	"Ebrâhim #0" = 10
+	"Fath Alî #0" = 10
+	"Hosayn #0" = 10
+	"Ja'far #0" = 10
+	"Karim Khân #0" = 10
+	"Loft Ali #0" = 10
+	"Mohammad Ali #0" = 10
+	"Mohammad Kodabânda #0" = 10
+	"Mohammad Sâdiq #0" = 10
+	"Nâder Shâh #0" = 10
+	"Shâh Rukh #0" = 10
+	"Nâder Mirza #1" = 5
+	"Abdol #0" = 0
+	"Ahmad #0" = 0
+	"Ali #0" = 0
+	"Allahyar #0" = 0
+	"Amanollah #0" = 0
+	"Ebrahim #0" = 0
+	"Farajollah #0" = 0
+	"Farid #0" = 0
+	"Hamid #0" = 0
+	"Hatem #0" = 0
+	"Najm-e #0" = 0
+	"Rajab Ali #0" = 0
+	"Shahqoli #0" = 0
+	
+	"Atiya #0" = -1
+	"Dilaram #0" = -1
+	"Khayr al-Nisa #0" = -1
+	"Maryam #0" = -1
+	"Pari #0" = -1
+	"Razia #0" = -1
+	"Shahbanu #0" = -1
+	"Tajlu #0" = -1
 }
 leader_names = {
-	"Ahrari"
+	"Ahvazí"
 	"Ansari"
+	"Ashkan"
 	"Azizi"
+	"Bayoumid"
+	"Compaore"
 	"Daei"
 	"Dalwand"
+	"Dariu"
 	"Fatemi"
 	"Jalili"
+	"Jid'ati"
+	"Juwayni"
+	"Ka'usiya"
+	"Khayyám"
+	"Naqshband"
+	"Oliha"
 	"Qazai"
 	"Sabet"
+	"Shabankarai"
 	"Sabiri"
+	"Saffari"
 	"Shahy"
+	"Tahmasbid"
+	"Yagma"
+	"al-Abbas"
+	"al-Ishaq"
 }
 ship_names = {
 	"Abathur"

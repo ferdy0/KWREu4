@@ -5,19 +5,43 @@ technology_group = muslim
 religion = shiite
 primary_culture = persian
 capital = 429
-1444.11.11= {
+1354.12.21 = {
 	monarch = {
-		name = "(Regency Council)"
+		name = "Vishtasb I"
+		dynasty = "i-Sabbah"
+		birth_date = 1340.3.19
+		adm = 1
+		dip = 3
+		mil = 0
+		religion = shiite
+		culture = persian
+	}
+}
+1370.1.15 = {
+	monarch = {
+		name = "Safi I"
+		dynasty = "i-Sabbah"
+		birth_date = 1366.4.26
+		adm = 1
+		dip = 3
+		mil = 0
+		religion = shiite
+		culture = persian
+	}
+}
+1439.3.24 = {
+	monarch = {
+		name = "Nâder Mirza I"
 		adm = 3
 		dip = 3
 		mil = 3
-		birth_date = 1.1.1
-		regent = yes
+		birth_date = 1404.6.12
 		religion = shiite
 		culture = persian
 	}
 	heir = {
-		name = "Vishtasb"
+		name = "'Abbâs"
+		monarch_name = "'Abbâs I"
 		dynasty = "i-Sabbah"
 		adm = 5
 		dip = 5

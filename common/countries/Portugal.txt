@@ -28,38 +28,22 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Abril #0" = 1
-	"Aldonça #0" = -1
-	"Aragunta #0" = -1
-	"Arualdo #1" = 5
-	"Beatriz #0" = -1
+	"Diegu #3" = 80
+	"Xoán #5" = 80
+	"Arualdo #1" = 20
+	"Gerardo #0" = 10
+	"Nuno #0" = 10
+	"Abril #0" = 5
+	"Dinis #0" = 5
+	"Farquaad #1" = 5
+	"Gil #0" = 5
+	"Mendo #0" = 5
 	"Berengário #0" = 0
-	"Branca #0" = -1
-	"Corexía #0" = -3
-	"Diegu #3" = 10
-	"Dinis #0" = 1
-	"Dórdia #0" = -1
-	"Eulalia #0" = -1
-	"Farquaad #1" = 3
-	"Fruilhe #0" = -1
 	"Gatón #0" = 0
-	"Gerardo #0" = 1
-	"Gil #0" = 1
-	"Goina #0" = -3
-	"Ilduara #1" = -3
-	"Isabel #0" = -1
-	"Leonor #0" = -1
-	"Lúcia #0" = -1
-	"Margarida #0" = -1
-	"Marina #0" = -1
-	"Marquesa #0" = -1
-	"Mendo #0" = 1
-	"Mécia #0" = -1
-	"Nuno #0" = 1
-	"Salomea #0" = -1
-	"Toda #0" = -1
-	"Vivili #0" = -1
-	"Xoán #4" = 10
+	
+	"Corexía #0" = -1
+	"Goina #0" = -1
+	"Ilduara #1" = -1
 }
 leader_names = {
 	"Aitiyat"

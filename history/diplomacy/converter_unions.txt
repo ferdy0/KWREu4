@@ -56,14 +56,6 @@ union=
 
 union=
 {
-	first="Z1J"
-	second="Z2Y"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
 	first="Z2A"
 	second="Z2W"
 	start_date="1444.11.11"

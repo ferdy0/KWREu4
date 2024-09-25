@@ -28,29 +28,55 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Albino #0" = 0
-	"Aleardo #1" = 10
-	"Alessandro #1" = 10
+	"Carolu #5" = 60
+	"Gabriele #1" = 20
+	"Gherardo Leonardo #0" = 20
+	"Giovanni #0" = 20
+	"Vissente #0" = 20
+	"Jacopo #0" = 15
+	"Emanuele #0" = 15
+	"Alessandro #1" = 5
+	"Alvaro #0" = 5
+	"Belisario #0" = 5
+	"Vittorio #1" = 5
+	"Adriano #0" = 0
+	"Alessio #0" = 0
 	"Ambrogio #0" = 0
-	"Anna #0" = -1
-	"Arnolfo #1" = 10
-	"Arrigo #1" = 10
-	"Assunta #0" = -1
-	"Benvenuto #1" = 10
-	"Bosone #0" = 0
-	"Cristolu #0" = 0
-	"Daimbert #1" = 10
-	"Emma #0" = -1
-	"Gaetànu #0" = 0
-	"Gerolamo #1" = 10
-	"Grabielle #0" = 0
-	"Mauru #0" = 0
-	"Obizzino #0" = 0
-	"Onorio #1" = 10
-	"Orzocor #0" = 0
-	"Tedice #1" = 10
-	"Tàntalu #0" = 0
-	"Ugone #1" = 10
+	"Baldovino #0" = 0
+	"Beniamino #0" = 0
+	"Biagio #0" = 0
+	"Bonaventura #0" = 0
+	"Celio #0" = 0
+	"Constantino #0" = 0
+	"Damiano #0" = 0
+	"Danilo #0" = 0
+	"Eros #0" = 0
+	"Eustachio #0" = 0
+	"Evangelista #0" = 0
+	"Fortunato #0" = 0
+	"Gaitano #0" = 0
+	"Gennaro #0" = 0
+	"Giancarlo #0" = 0
+	"Giustino #0" = 0
+	"Innocenzo #0" = 0
+	"Leonardo #0" = 0
+	"Leone #0" = 0
+	"Marco #0" = 0
+	"Mauro #0" = 0
+	"Orfeo #0" = 0
+	"Pasquale #0" = 0
+	"Pietro #0" = 0
+	"Roberto #0" = 0
+	"Sergio #0" = 0
+	"Severino #0" = 0
+	"Ugo #0" = 0
+	"Valerio #0" = 0
+	"Vincenzo #0" = 0
+	"Vitale #0" = 0
+	
+	"Ludovica #0" = -1
+	"Mariangela #0" = -1
+	"Petronilla #0" = -1
 }
 leader_names = {
 	"Amelia"
@@ -83,7 +109,7 @@ leader_names = {
 	"Marianelli"
 	"Notaro"
 	"Oddo"
-	"Pacinotti"
+	"Pannocchieschi"
 	"Pesce"
 	"Pini"
 	"Pisano"
@@ -97,8 +123,10 @@ leader_names = {
 	"Ulivelli"
 	"Ventura"
 	"Zaccardo"
-	"d'Appiani d'Aragona"
-	"de Rossi"
+	"d'Arboree"
+	"de Salanis"
+	"de Terranoa"
+	"de Torres"
 	"del Piero"
 	"dell Agnello"
 	"della Gherardesca"

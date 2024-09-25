@@ -30,49 +30,68 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Aliç #0" = -1
-	"Alphonse #1" = 10
-	"Amalberga #1" = -1
-	"Amaneus #0" = 0
-	"André #0" = 0
-	"Bertrand #3" = 10
-	"Boson #3" = 10
-	"Centolh #0" = 0
-	"Charles #2" = 10
-	"Elena #0" = -1
-	"Frederi #0" = 0
-	"Girvais #0" = 0
-	"Guilhèm #4" = 10
-	"Hildegarde #0" = -1
-	"Hugues #2" = 10
-	"Isabeau #1" = -1
-	"Jaufret #2" = 10
-	"Loui #1" = 10
-	"Louis #3" = 10
-	"Lutbert #0" = 0
-	"Magnus #0" = 0
-	"Margarida #0" = -1
-	"Markwart #0" = 0
-	"Péire-Raimon #0" = 0
-	"Raimon-Berenguié #1" = 10
-	"Richènda #1" = -1
-	"Rotbald #2" = 10
-	"Rudolf #1" = 10
-	"Thomas #1" = 10
-	"Ubert #0" = 0
-	"Uc #1" = 10
-	"Wido #2" = 10
+	"Louis #4" = 60
+	"Charles #4" = 60
+	"Guy #2" = 20
+	"René #0" = 20
+	"Florènç #1" = 15
+	"Jaufret #3" = 15
+	"Audoïn #0" = 10
+	"Hugues #3" = 10
+	"Jean #0" = 10
+	"Nicolas #0" = 10
+	"Savaric #0" = 10
+	"Alphonse #1" = 5
+	"Robert #0" = 5
+	"Adhémar #0" = 0
+	"Aloïs #0" = 0
+	"Aymeric #0" = 0
+	"Barral #0" = 0
+	"Bartomiu #0" = 0
+	"Benedit #0" = 0
+	"Bernat #0" = 0
+	"Bertran #0" = 0
+	"Damián #0" = 0
+	"Emeric #0" = 0
+	"Enric #0" = 0
+	"Estève #0" = 0
+	"Ferrán #0" = 0
+	"Folquet #0" = 0
+	"Frances #0" = 0
+	"Guilhèm #0" = 0
+	"Huc #0" = 0
+	"Jacme #0" = 0
+	"Jordan #0" = 0
+	"Julian #0" = 0
+	"Loys #0" = 0
+	"Lucas #0" = 0
+	"Martí #0" = 0
+	"Matheu #0" = 0
+	"Miles #0" = 0
+	"Miqueu #0" = 0
+	"Per #0" = 0
+	"Pol #0" = 0
+	"Pons #0" = 0
+	"Sanc #0" = 0
+	"Thibaud #0" = 0
+	"Vicentz #0" = 0
+	"Victor #0" = 0
+	"Xavier #0" = 0
+	
+	"Osanne #0" = -1
+	"Violent #0" = -1
+	"Yolande #0" = -1
 }
 leader_names = {
 	"Coquerel"
 	"Esparron"
 	"Fauque de Jonquières"
 	"Ferré de la Grange"
-	"Grimaldi"
-	"Pene de la Borde"
+	"Guillén"
+	"Spanu"
 	"d'Abeille"
 	"d'Adhémar"
-	"d'Agoult"
+	"d'Agen"
 	"d'Aiglun"
 	"d'Aiguières"
 	"d'Allemagne"
@@ -80,7 +99,7 @@ leader_names = {
 	"d'Audiffredi"
 	"d'Entrecasteaux"
 	"d'Espagnet"
-	"d'Espinouze"
+	"d'Uzès"
 	"de Bagnols"
 	"de Barberin"
 	"de Barcillon"
@@ -99,10 +118,10 @@ leader_names = {
 	"de Fargis"
 	"de Gassendi"
 	"de Gombert"
-	"de Gordes"
-	"de Grignan"
+	"de Got"
+	"de Gourdon"
 	"de Grimaud"
-	"de Guast"
+	"de Guyenne"
 	"de Gévaudan"
 	"de Lauris"
 	"de Libertat"
@@ -111,17 +130,17 @@ leader_names = {
 	"de Montpezat"
 	"de Paule"
 	"de Pena"
-	"de Pontevès"
-	"de Raimondis"
-	"de Revest"
-	"de Riquetti"
+	"de Poitiers-Valentinois"
+	"de Ramla"
+	"de Rodez"
+	"de Rovignan"
 	"de Sabran"
 	"de Sade"
 	"de Saint Victoret"
 	"de Simiane"
-	"de Séguiran"
-	"de Valbelle"
-	"de la Pérusse"
+	"de Toulouse"
+	"de Vaison"
+	"de la Valette"
 	"des Baux"
 	"des Isnards"
 }

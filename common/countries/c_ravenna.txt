@@ -2,34 +2,99 @@ ck2_converter_generated = yes
 graphical_culture = westerngfx
 color = { 229 165 115 }
 monarch_names = {
-	"Adone #0" = 0
-	"Adrir #0" = 0
-	"Albu #1" = 10
-	"Ausonio #0" = 0
-	"Berardo #0" = 0
-	"Berengario #0" = 0
-	"Caterina #0" = -1
-	"Cecco #1" = 10
-	"Cornelia #0" = -1
-	"Dušan #0" = 0
-	"Emmanuele #0" = 0
-	"Folmar #1" = 10
-	"Gabriele #0" = 0
-	"Gabrino #0" = 0
-	"Gerolamo #0" = 0
-	"Giovanni-Enrico #1" = 10
-	"Guy #1" = 10
-	"Hilderic #1" = 10
-	"Inga #1" = -1
-	"Kezhay #0" = 0
-	"Lambert #1" = 10
-	"Lazzarino #0" = 0
-	"Liutfrid #1" = 10
-	"Martino #1" = 10
-	"Mastino #1" = 10
+	"Guidobaldo #1" = 40
+	"Francesco Maria #0" = 40
+	"Federico #0" = 40
+	"Antonio #0" = 20
+	"Francesco #1" = 20
+	"Francesco Ubaldo #0" = 20
+	"Guidantonio #0" = 20
+	"Lorenzo #1" = 20
+	"Michelangelo #1" = 20
+	"Cesare #0" = 15
+	"Giovanni Maria #1" = 15
+	"Giulio #0" = 15
+	"Federigo Ubaldo #0" = 15
+	"Alessandro #0" = 10
+	"Giovanni Pietro #0" = 10
+	"Girolamo #0" = 10
+	"Oddone #1" = 10
+	"Silvestro #0" = 10
+	"Achille #0" = 5
+	"Guido #0" = 5
+	"Aldo #0" = 0
+	"Alfonso #0" = 0
+	"Baldovino #0" = 0
+	"Cirillo #0" = 0
+	"Cosimo #0" = 0
+	"Damiano #0" = 0
+	"Egidio #0" = 0
+	"Franco #0" = 0
+	"Giambattista #0" = 0
+	"Giuseppe #0" = 0
+	"Ippolito #0" = 0
+	"Leandro #0" = 0
+	"Marzio #0" = 0
+	"Ovidio #0" = 0
+	"Paolo #0" = 0
+	"Pietro #0" = 0
+	"Prospero #0" = 0
+	"Rafaello #0" = 0
+	"Scipione #0" = 0
+	"Teodosio #0" = 0
+	"Vittorio #0" = 0
+	
+	"Caterina #0" = -10
+	"Aurelia #0" = -1
+	"Lucrezia #0" = -1
 	"Micaela #1" = -1
-	"Rainulfu #1" = 10
-	"Silvestru #0" = 0
-	"Teuderic #1" = 10
-	"Wahid #0" = 0
+}
+
+leader_names = {
+	Albani
+	Aldobrandini
+	Altieri
+	Barberini
+	Barbo
+	Bobone
+	Borghese
+	Botticelli
+	Braschi
+	Carafa
+	Castagna
+	Cervini
+	Chiaramonti
+	Colonna
+	Concini
+	Conti
+	Corsini
+	Cybo
+	Doria-Landi
+	Doria-Pamphili
+	"Gaetani dell'Aquila"
+	Gangagnelli
+	Ghislieri
+	Gonzaga
+	Lambertini
+	Lante
+	Ludovisi
+	Melzi
+	Odescalchi
+	Ossoli
+	Ottoboni
+	Pallavicino
+	Pamphili
+	Parentucelli
+	Pescatore
+	Piccolomini
+	Pignatelli
+	Prignano
+	Rossi
+	Ubaldini
+	"d'Ancona"
+	"del Zotto"
+	"della Rovere"
+	"di Campofregoso"
+	"di Farnese"
+	"di Mandelli"
 }

@@ -1,13 +1,14 @@
 government = republic
 add_government_reform = free_city
 government_rank = 1
-technology_group = western
-religion = catholic
-primary_culture = bavarian
-capital = 2957
-fixed_capital = 2957
 mercantilism = 25
-1440.1.1= {
+technology_group = western
+primary_culture = bavarian
+religion = catholic
+capital = 2957 # Regensburg
+fixed_capital = 2957 # Cannot move capital away from this province & no power cost to move to it
+
+1440.1.1 = {
 	monarch = {
 		name = "Stadtrat"
 		adm = 3
@@ -16,10 +17,12 @@ mercantilism = 25
 		regent = yes
 	}
 }
-1542.10.15= {
+
+1542.10.15 = {
 	religion = protestant
 }
-1803.4.27= {
+
+1803.4.27 = {
 	elector = yes
 	religion = catholic
 	government = theocracy
@@ -32,5 +35,5 @@ mercantilism = 25
 		dip = 2
 		mil = 1
 	}
-}
-1806.7.12= { elector = no }
+} # Reichsdeputationshauptschluss is ratified by Emperor Francis II, Regensburg gains the electoral dignity as an Archbishopric
+1806.7.12 = { elector = no } # the HRE is dissolved
