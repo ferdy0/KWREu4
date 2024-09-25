@@ -100,4 +100,14 @@ nor_mountain_paths = { #still needs localisation
 nor_plantations_established = { #still needs localisation
     local_tax_modifier = 0.2
     trade_goods_size = 1.5
-}   
+}
+
+nor_explorers_society = { #still needs localisation
+    envoy_travel_time = -0.2
+    local_institution_spread = 0.2
+}
+
+nor_mines_suported = { #still needs localisation
+    local_prosperity_growth = 0.1
+    local_development_cost_modifier = -0.25
+}

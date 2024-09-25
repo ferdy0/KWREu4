@@ -497,6 +497,37 @@ Norway_missions_s2 = {
             }
         }
     }
+
+    Explorers_society_mission = {
+        icon = mission_mnd_dai_universities
+        required_missions = { Whaling_5_mission Explore_asia_mission }
+        position = 10
+        provinces_to_highlight = {
+            province_id = 20
+        }
+
+        trigger = {
+            OR = {
+                has_country_flag = circumnavigation_first 
+                has_country_flag = circumnavigation_done
+            }
+            20 = {
+                AND = {
+                    has_building = impressment_offices
+                    has_building = shipyard
+                }
+            }
+        }
+
+        effect = {
+            20 = {
+                add_province_modifier = {
+                    name = "nor_explorers_society"
+                    duration = -1
+                }
+            }
+        }
+    }
 }
 Norway_missions_s3 = {
     slot = 3
@@ -828,6 +859,15 @@ Norway_missions_s3 = {
         icon = mission_iron_and_copper
         required_missions = { Mountains_just_like_home_mission }
         position = 9
+        provinces_to_highlight = {
+            OR = {
+                area = susquehanna_area
+                area = great_valley_area
+                province_id = 2553
+                area = south_appalachia_area
+                area = appalachia_area
+            }
+        }
 
         trigger = {
             susquehanna_area = {
@@ -914,6 +954,212 @@ Norway_missions_s3 = {
                     }
                     40 = {
                         change_trade_goods = copper
+                    }
+                }
+            }
+        }
+    }
+
+    Iron_and_copper_mining_mission = {
+        icon = mission_nah_ravine_dwellers
+        required_missions = { Metals_in_they_them_hills_mission }
+        position = 10
+        provinces_to_highlight = {
+            OR = {
+                area = susquehanna_area
+                area = great_valley_area
+                province_id = 2553
+                area = south_appalachia_area
+                area = appalachia_area
+            }
+        }
+
+        trigger = {
+            susquehanna_area = {
+                if = {
+                    limit = {
+                        owner = {
+                            OR = {
+                                tag = NOR
+                                tag = ICE #change into NWC later
+                            }
+                        }
+                        OR = {
+                            trade_goods = iron
+                            trade_goods = copper
+                        }
+                    }
+                    has_building = weapons
+                }
+            }
+            great_valley_area = {
+                if = {
+                    limit = {
+                        owner = {
+                            OR = {
+                                tag = NOR
+                                tag = ICE #change into NWC later
+                            }
+                        }
+                        OR = {
+                            trade_goods = iron
+                            trade_goods = copper
+                        }
+                    }
+                    has_building = weapons
+                }
+            }
+            2553 = {
+                if = {
+                    limit = {
+                        owner = {
+                            OR = {
+                                tag = NOR
+                                tag = ICE #change into NWC later
+                            }
+                        }
+                        OR = {
+                            trade_goods = iron
+                            trade_goods = copper
+                        }
+                    }
+                    has_building = weapons
+                }
+            }
+            south_appalachia_area = {
+                if = {
+                    limit = {
+                        owner = {
+                            OR = {
+                                tag = NOR
+                                tag = ICE #change into NWC later
+                            }
+                        }
+                        OR = {
+                            trade_goods = iron
+                            trade_goods = copper
+                        }
+                    }
+                    has_building = weapons
+                }
+            }
+            appalachia_area = {
+                if = {
+                    limit = {
+                        owner = {
+                            OR = {
+                                tag = NOR
+                                tag = ICE #change into NWC later
+                            }
+                        }
+                        OR = {
+                            trade_goods = iron
+                            trade_goods = copper
+                        }
+                    }
+                    has_building = weapons
+                }
+            }
+        }
+
+        effect = {
+            susquehanna_area = {
+                if = {
+                    limit = {
+                        owner = {
+                            OR = {
+                                tag = NOR
+                                tag = ICE #change into NWC later
+                            }
+                        }
+                        OR = {
+                            trade_goods = iron
+                            trade_goods = copper
+                        }
+                    }
+                    add_province_modifier = {
+                        name = "nor_mines_suported"
+                        duration = 18250
+                    }
+                }
+            }
+            great_valley_area = {
+                if = {
+                    limit = {
+                        owner = {
+                            OR = {
+                                tag = NOR
+                                tag = ICE #change into NWC later
+                            }
+                        }
+                        OR = {
+                            trade_goods = iron
+                            trade_goods = copper
+                        }
+                    }
+                    add_province_modifier = {
+                        name = "nor_mines_suported"
+                        duration = 18250
+                    }
+                }
+            }
+            2553 = {
+                if = {
+                    limit = {
+                        owner = {
+                            OR = {
+                                tag = NOR
+                                tag = ICE #change into NWC later
+                            }
+                        }
+                        OR = {
+                            trade_goods = iron
+                            trade_goods = copper
+                        }
+                    }
+                    add_province_modifier = {
+                        name = "nor_mines_suported"
+                        duration = 18250
+                    }
+                }
+            }
+            south_appalachia_area = {
+                if = {
+                    limit = {
+                        owner = {
+                            OR = {
+                                tag = NOR
+                                tag = ICE #change into NWC later
+                            }
+                        }
+                        OR = {
+                            trade_goods = iron
+                            trade_goods = copper
+                        }
+                    }
+                    add_province_modifier = {
+                        name = "nor_mines_suported"
+                        duration = 18250
+                    }
+                }
+            }
+            appalachia_area = {
+                if = {
+                    limit = {
+                        owner = {
+                            OR = {
+                                tag = NOR
+                                tag = ICE #change into NWC later
+                            }
+                        }
+                        OR = {
+                            trade_goods = iron
+                            trade_goods = copper
+                        }
+                    }
+                    add_province_modifier = {
+                        name = "nor_mines_suported"
+                        duration = 18250
                     }
                 }
             }
@@ -1224,37 +1470,47 @@ Norway_missions_s4 = {
 
         effect = {
             southeast_america_region = {
-                if = {
-                    limit = { #needs to be fixed, doesn't check for trade goods
-                        owned_by = ROOT
-                        has_trade_goods = grain
-                        has_trade_goods = coffee
-                        has_trade_goods = cotton
-                        has_trade_goods = sugar
-                        has_trade_goods = tobacco
-                        has_trade_goods = cocoa
+                limit = {
+                    owner = {
+                        OR = {
+                            tag = NOR
+                            tag = ICE #Chagne to NWC later
+                        }
                     }
-                    add_province_modifier = {
-                        name = "nor_plantations_established"
-                        duration = 18250
+                    OR = {
+                        trade_goods = grain
+                        trade_goods = coffee
+                        trade_goods = cotton
+                        trade_goods = sugar
+                        trade_goods = tobacco
+                        trade_goods = cocoa
                     }
+                }
+                add_province_modifier = {
+                    name = nor_plantations_established
+                    duration = 18250
                 }
             }
             northeast_america_region = {
-                if = {
-                    limit = { #needs to be fixed, doesn't check for trade goods
-                        owned_by = ROOT
-                        has_trade_goods = grain
-                        has_trade_goods = coffee
-                        has_trade_goods = cotton
-                        has_trade_goods = sugar
-                        has_trade_goods = tobacco
-                        has_trade_goods = cocoa
+                limit = {
+                    owner = {
+                        OR = {
+                            tag = NOR
+                            tag = ICE #Chagne to NWC later
+                        }
                     }
-                    add_province_modifier = {
-                        name = "nor_plantations_established"
-                        duration = 18250
+                    OR = {
+                        trade_goods = grain
+                        trade_goods = coffee
+                        trade_goods = cotton
+                        trade_goods = sugar
+                        trade_goods = tobacco
+                        trade_goods = cocoa
                     }
+                }
+                add_province_modifier = {
+                    name = nor_plantations_established
+                    duration = 18250
                 }
             }
         }
