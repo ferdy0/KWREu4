@@ -5,6 +5,3 @@ hansa_advisory_merchant = {
 merchant_advising = {
 	merchants = -1
 }
-HSA_test = {
-	modifier = -20
-}
