@@ -189,3 +189,40 @@ estate_church_clerical_ministers = {
 		}
 	}
 }
+
+estate_burghers_whaling_trips = {
+	icon = privilege_technology
+	max_absolutism = -10
+	influence = 0.10
+	is_valid = {
+		tag = NOR
+		has_global_flag = nor_whaling_barons_active
+	}
+	on_granted = {
+		custom_tooltip = nor_whaling_monopoly_granted #still needs localisation
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				trade_goods = fish
+			}
+			add_province_modifier = {
+				name = nor_whaling_barons_poduction
+				duration = -1
+			}
+		}
+	}
+	can_revoke = { NOT = { has_global_flag = nor_whaling_barons_active } }
+	on_invalid = {
+		custom_tooltip = nor_whaling_monopoly_invalid #still needs localisation
+	}
+	on_invalid_province = {
+		if = {
+			limit = has_province_modifier = nor_whaling_barons_poduction
+		}
+		remove_province_modifier = nor_whaling_barons_poduction
+	}
+	penalties = {}
+	benefits = { burghers_privilege_slots = 1 }
+	# Need to ask lot how to also make this apply to the company vassal provinces
+}

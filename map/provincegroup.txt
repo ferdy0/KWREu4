@@ -1,0 +1,5 @@
+#
+
+nor_whaling_provinces = {
+    20 1978 369 1979 371 370
+}

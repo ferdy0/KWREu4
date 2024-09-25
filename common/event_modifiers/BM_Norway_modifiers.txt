@@ -1,0 +1,103 @@
+nor_robust_trade_routes = { #still needs localisation
+    trade_efficiency = 0.15
+}
+
+nor_baltic_trade_secured = { #still needs localisation
+    global_ship_trade_power = 0.2
+}
+
+nor_whaling_boom = { #still needs localisation
+    trade_value = 1	 
+    trade_value_modifier = 0.5
+}
+
+nor_greenland_infrastructure = { #still needs localisation
+    local_colony_cost_modifier = -0.5
+    local_colonial_growth = 10
+}
+
+nor_falun_mines_suported = { #still needs localisation
+    local_great_project_upgrade_cost = -0.25
+}
+
+nor_forrestry_industry = { #still needs localisation
+    local_production_efficiency = 0.15
+    local_development_cost_modifier = -0.25
+}
+
+nor_shipbuilding_boom = { #still needs localisation
+    dip_cost_modifier = -0.1
+    global_ship_cost = -0.2
+    sailor_maintenance_modifer = 0.1 #shortage in sailors leads to them being paid more
+}
+
+nor_whaling_barons_poduction = { #still needs localisation
+    local_production_efficiency = 0.10
+}
+
+nor_mountain_palace = { #still needs localisation
+    local_build_cost = -0.25
+    development_cost_modifier = -0.10
+}
+
+nwc_developing_new_world_port = { #still needs localisation
+    development_cost_modifier = -0.20
+    local_build_cost = -0.15
+}
+
+nor_atlantic_trade_secured = { #still needs localisation
+    trade_steering = 0.2
+    global_ship_trade_power = 0.2
+}
+
+nor_american_staple_port = { #still needs localisation
+    local_center_of_trade_upgrade_cost = -0.33	
+}
+
+nor_american_trade_secured = { #still needs localisation
+    trade_range_modifier = 0.30
+    global_tariffs = 0.25	
+    colonists = 1	
+}
+
+nor_vinland_reclaimed = { #still needs localisation
+    stability_cost_modifier = -0.1
+    global_autonomy = -0.05	
+    legitimacy = 1
+}
+
+nwc_vinland_reclaimed = { #still needs localisation
+    colonists = 1
+    colony_cost_modifier = 0.5	
+}
+
+nwc_no_expansion = { #still needs localisation
+    can_not_build_colonies = yes
+}
+
+nor_american_imports = { #still needs localisation
+    expand_infrastructure_cost_modifier = -0.25
+    production_efficiency = 0.10
+}
+
+ec_colonisation_fever = { #still needs localisation
+    colonist_placement_chance = 0.05
+    native_assimilation = 0.25 # Natives are recruited, this will also lead to natives estate for skuddo
+}
+
+nor_mountain_paths_construction = { #still needs localisation
+    local_state_maintenance_modifier = 0.50
+    local_build_cost = 0.25
+    local_build_time = 0.25
+}
+
+nor_mountain_paths = { #still needs localisation
+    local_state_maintenance_modifier = -0.25
+    local_build_cost = -0.10
+    local_build_time = -0.10
+}
+
+nor_plantations_established = { #still needs localisation
+    local_tax_modifier = 0.2
+    trade_goods_size = 1.5
+}   

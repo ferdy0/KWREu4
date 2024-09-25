@@ -1,0 +1,98 @@
+namespace = mission_nor
+namespace = flavor_nor
+
+# Event for giving ships to NWC
+country_event = { #still needs localisation
+    id = mission_nor.1
+    title = mission_nor.1.t
+    desc = mission_nor.1.d
+    picture = SHIP_SAILING_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = mission_nor.1.a
+        370 = {
+            while = {
+                limit = {
+                    NOT = {
+                        check_variable = {
+                            which = nor_transfer_total_light_ships
+                            value = 1
+                        }
+                    }
+                }
+                light_ship = ICE #change into NWC later
+                ROOT = {
+                    subtract_variable = {
+                        which = nor_transfer_total_light_ships
+                        value = 1
+                    }
+                }
+            }
+        }
+    }
+}
+
+# Event for officialising the colonial charter for NWC
+country_event = { #still needs localisation
+    id = flavor_nor.1
+    title = flavor_nor.1.t
+    desc = flavor_nor.1.d
+    picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_nor.1.a
+        #nothing hapens, this is just flavour
+    }
+}
+
+# Event for finishing mountain paths norway
+country_event = { #still needs localisation
+    id = mission_nor.2
+    title = mission_nor.2.t
+    desc = mission_nor.2.d
+    picture = USA_COLONIZATION_eventPicture
+
+    is_triggered_only = yes
+
+    immidiate = {
+        event_target:nor_road = {
+            remove_province_modifier = nor_mountain_paths_construction
+            add_province_modifier = {
+                name = "nor_mountain_paths"
+                duration = -1
+            }
+        }
+    }
+
+    option = {
+        name = mission_nor.2.a
+        clear_global_event_target = nor_road
+    }
+}
+
+# Event for exploring Asia and coming up with the idea for the explorers guild
+country_event = {
+    id = flavor_nor.2
+    title = flavor_nor.2.t
+    desc = flavor_nor.2.d
+    picture = CORSAIR_eventPicture
+
+    is_triggered_only = yes
+
+    immidiate = {
+        add_estate_influence_modifier = {
+            estate = estate_burghers
+            desc = EST_VAL_EXPLORATION_INTREST_BURGHERS
+            influence = 10
+            duration = 7300
+        }
+        add_estate_loyalty = {
+            estate = estate_burghers
+            loyalty = 20
+        }
+    }
+}
