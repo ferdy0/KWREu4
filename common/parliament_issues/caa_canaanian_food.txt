@@ -12,7 +12,9 @@ caa_canaanian_food = {
             name = canaanian_food
             duration = -1
         }
-        add_years_of_trade_income = -1
+        add_years_of_trade_income = {
+            years = -2
+        }
         every_owned_province = {
             limit = {
                 OR = {

@@ -239,3 +239,18 @@ tyh_venetian_thalassocracy_modifier = {
 	naval_tradition_from_battle = 1
 	global_ship_cost = -0.05
 }
+tyh_wealth_of_the_new_world_modifier = {
+	innovativeness_gain = 0.25
+	trade_efficiency = 0.05
+	advisor_pool = 1
+	dip_tech_cost_modifier = -0.1
+}
+tyh_autonomous_venetian_patriarchate = {
+	tolerance_own = 1
+	tolerance_heretic = 1
+}
+tyh_united_italy_modifier = {
+	centralize_state_cost = -0.25
+	country_admin_power = 1
+	reform_progress_growth = 0.1
+}

@@ -21,7 +21,9 @@ caa_formalise_two_capitals = {
                 duration = -1
             }
         }
-        add_years_of_trade_income = -2
+        add_years_of_trade_income = {
+            years = -2
+        }
 	}
 	
 	modifier = {

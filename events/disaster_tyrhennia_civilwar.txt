@@ -591,3 +591,59 @@ country_event = {
         add_stability = -1
 	}
 }
+
+country_event = {
+	id = tyrhennia_civil_war.54
+	title = tyrhennia_civil_war.54.t
+	desc = tyrhennia_civil_war.54.d
+	picture = ARTWORK_eventPicture
+
+	major_trigger = {
+		has_discovered = 4316
+		OR = {
+			is_rival = TYH
+			is_enemy = TYH
+			alliance_with = TYH
+			is_rival = MAM
+			is_enemy = MAM
+			alliance_with = MAM
+			is_rival = EGY
+			is_enemy = EGY
+			alliance_with = EGY
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = tyrhennia_civil_war.54.a
+		ai_chance = { factor = 0.2 }
+		4316 = {
+			remove_core = ROOT
+			add_core = TYH
+			cede_province = TYH
+		}
+		2315 = {
+			remove_core = ROOT
+			add_core = TYH
+			cede_province = TYH
+		}
+		TYH = {
+			country_event = { id = flavor_mam.115 days = 32 }
+		}
+		add_years_of_income = 2
+		add_adm_power = 100
+	}
+
+	option = {
+		name = tyrhennia_civil_war.54.b
+		ai_chance = { factor = 0.8 }
+		remove_historical_friend = TYH
+		TYH = {
+			remove_historical_friend = ROOT
+			4316 = { add_permanent_claim = TYH }
+			2315 = { add_permanent_claim = TYH }
+			add_mil_power = 100
+		}
+	}
+}

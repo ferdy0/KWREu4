@@ -14,7 +14,9 @@ caa_public_works = {
             name = canaanian_public_works
             duration = -1
         }
-        add_years_of_trade_income = -1
+        add_years_of_trade_income = {
+            years = -1
+        }
 	}
 	
 	modifier = {
