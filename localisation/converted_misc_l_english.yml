@@ -147,6 +147,7 @@
  canaanian_public_works:0 "Canaanian Public Works"
  canaanian_food_province:0 "Enhanced Food Production Thanks to Protectionism"
  tunis_medina:0 "The Tunis Medina"
+ harbor_cagliari:0 "The Pearl of the Mediterranean"
 
  #Missions
  #Slot 1
@@ -170,7 +171,7 @@
  #Slot 2
  tyh_capital_of_europe_title:0 "Capital of the Mediterranean"
  tyh_capital_of_europe_desc:0 "Our sea has seen the birth of tremendous history. To that end, we must seek to have the most illustrious city within it, and write our name in the books of history with golden letters."
- tyh_conquer_italy_title:0 "Unify Baleo Tyrhennia"
+ tyh_conquer_italy_title:0 "Unify Canaania"
  tyh_conquer_italy_desc:0 "Our region is one with amazing history and resilient people. It has been through a multitude of trials and tribulations. The rise of tyrants, republics, external conquerors, and great scientists are but the footnotes to our glorious history. It is time for this wonderful archipelago to unite!"
  tyh_exploration_missions_title:0 "Charter the Far Seas"
  tyh_exploration_missions_desc:0 "The seas beyond our coasts are said to hold tremendous wealth and knowledge. We must map and explore them to the best of our ability."
@@ -250,7 +251,7 @@
   tyh_new_pilings_title:0 "Architectural Renewal"
   tyh_new_pilings_desc:0 "Cagliari is a city with more than 500 years of history at this point. We must renovate the city center to make it fit for the years to come."
   
-  tyh_the_francocracy_title:0 "The Lost Dynasty"
+  tyh_the_francocracy_title:0 "The Lost Dynasty" #TODO
   tyh_the_francocracy_desc:0 "Following the last true Crusade, Constantinople was reclaimed, and our dynasty, through Africa, was put on its throne. After centuries of Byzantine interference, our dynasty has been pushed around and ended up ruling Greece before being ousted. We must correct that mistake, and reconquer our past."
   
   tyh_contest_genoese_trade_title:0 "Contest Genoese Trade"
@@ -278,6 +279,9 @@
 
  tyh_establish_scuola_effect_tt:0 "Establishing a Knights Hospitalier monastery will grant §G1§! Innovativeness"
  tyh_academy_of_the_unknowns_reward_dlc_tt:0 "Embracing a new §YTechnology§! will grant us §G1§! Innovativeness and §G1§! Legitimacy"
+ TYH_ISLAND_STATIONS_KEY:0 "Tyhrennian Island Station"
+ TYH_PRESENCE_IN_INDIA_KEY:0 "Tyhrennian Merchants in India"
+ TYH_ADEN_GOODS_KEY:0 "Tyhrennian Exchanges in Aden"
   
   #Modifiers 
  tyh_iron_wall_of_italy_modifier:0 "Iron Wall of Cagliari"
@@ -288,10 +292,10 @@
  desc_tyh_marine_drilling_modifier:0 "Our marines come second to none!"
  tyh_marine_drilling_modifier2:0 "Navy Exercises"
  desc_tyh_marine_drilling_modifier2:0 "Our navy comes second to none!"
- tyh_venetian_thalassocracy_modifier:0 "Venetian Thalassocracy"
+ tyh_venetian_thalassocracy_modifier:0 "Tyhrennian Thalassocracy"
  desc_tyh_venetian_thalassocracy_modifier:0 "No other country can boast such control and dominance over the maritime domain of the Mediterranean Sea and beyond!"
- tyh_united_italy_modifier:0 "Baleo-Tyhrennian Unification"
- desc_tyh_united_italy_modifier:0 "For far too long has this beautiful home of ours, Baleo-Tyrhennia, been ravaged by disunity and outside influence. The time for unification has come!"
+ tyh_united_italy_modifier:0 "Canaanian Unification"
+ desc_tyh_united_italy_modifier:0 "For far too long has this beautiful home of ours, Canaanian, been ravaged by disunity and outside influence. The time for unification has come!"
  tyh_wealth_of_the_new_world_modifier:0 "Wealth of the New World"
  desc_tyh_wealth_of_the_new_world_modifier:0 "The goods and knowledge we have amassed from our voyages have reaped great rewards for our people back home."
  tyh_autonomous_venetian_patriarchate:0 "Autonomous Tyrhennian Patriarchate"
@@ -304,6 +308,10 @@
  tyh_first_printshops_of_italy_modifier:0 "First Printshop of Tyrhennia"
  tyh_arsenal_marines:0 "Expanded Marines Corps"
  tyh_global_presence_modifier:0 "Global Presence"
+ cagliari_harbor_buff_1:0 "Our Twin City Prospers"
+ cagliari_harbor_buff_2:0 "Our Twin City Prospers More"
+ cagliari_harbor_buff_3:0 "Our Twin City Prospers Really Well"
+ mortars_tyh:0 "Tyhrennian Naval Siege Mastery"
  
   #Local Organizations
  knights_hospitalier:0 "Knights Hospitalier"

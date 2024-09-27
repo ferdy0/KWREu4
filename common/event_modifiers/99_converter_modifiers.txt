@@ -255,7 +255,7 @@ tyh_united_italy_modifier = {
 	reform_progress_growth = 0.1
 }
 tyh_standardized_relazioni = {
-	reform_progress_growth = 0.2
+	reform_progress_growth = 0.1
 }
 tyh_political_monopolist = {
 	unjustified_demands = -0.1
@@ -287,4 +287,13 @@ tyh_global_presence_modifier = {
 	global_ship_cost = -0.05
 	naval_tradition_from_trade = 0.5
 	max_flagships = 1
+}
+cagliari_harbor_buff_1 = {
+    local_development_cost = -0.1
+}
+cagliari_harbor_buff_2 = {
+    local_development_cost = -0.15
+}
+cagliari_harbor_buff_3 = {
+    local_development_cost = -0.25
 }

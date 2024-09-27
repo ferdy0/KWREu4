@@ -1119,7 +1119,7 @@ knights_hospitalier = {
         add_base_production = -1
     }
     modifier = {
-		local_development_cost = -0.1
+		local_manpower_modifier = 0.1
         local_institution_spread = 0.25
     }
     ai_priority = {

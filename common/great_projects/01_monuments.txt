@@ -21289,3 +21289,149 @@ tunis_medina = {
 		}
 	}
 }
+
+harbor_cagliari = {
+	start = 2986 #Cagliari
+	date = 1300.01.01
+	time = { months = 0	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 0
+	type = monument
+
+	build_trigger = {
+	    owner = {
+	        OR = {
+                tag = CAA
+                tag = TYH
+                tag = AFR
+	        }
+	    }
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+	    owner = {
+	        OR = {
+                tag = CAA
+                tag = TYH
+                tag = AFR
+	        }
+	    }
+	}
+
+	can_upgrade_trigger = {
+	    owner = {
+	        OR = {
+                tag = CAA
+                tag = TYH
+                tag = AFR
+	        }
+	    }
+	}
+
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 500
+		}
+		province_modifiers = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+        }
+		area_modifier = {
+		}
+		on_upgraded = {
+			341 = {
+			    add_province_modifier = {
+            	    name = cagliari_harbor_buff_1
+            		duration = -1
+                }
+			}
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			local_development_cost = -0.15
+			local_ship_repair = 0.25
+		}
+		country_modifiers = {
+        }
+		on_upgraded = {
+			341 = {
+			    add_province_modifier = {
+            	    name = cagliari_harbor_buff_2
+            		duration = -1
+                }
+			}
+			341 = {
+			    remove_province_modifier = cagliari_harbor_buff_1
+			}
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			local_development_cost = -0.25
+			local_ship_repair = 0.5
+		}
+		country_modifiers = {
+        }
+		on_upgraded = {
+		    TYH = {
+		        set_country_flag = has_harbor_t3
+		    }
+			341 = {
+			    add_province_modifier = {
+            	    name = cagliari_harbor_buff_3
+            		duration = -1
+                }
+			}
+			341 = {
+			    remove_province_modifier = cagliari_harbor_buff_2
+			}
+		}
+	}
+}

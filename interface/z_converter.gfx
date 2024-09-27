@@ -79,4 +79,8 @@ spriteTypes = {
         name = "GFX_great_project_tunis_medina"
     	texturefile = "gfx//interface//great_projects//medina.dds"
     }
+    spriteType = {
+        name = "GFX_great_project_harbor_cagliari"
+    	texturefile = "gfx//interface//great_projects//cagliariHarbor.dds"
+    }
 }

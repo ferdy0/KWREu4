@@ -52,7 +52,7 @@ tyhrennian_missions_slot_1 = {
 		effect = {
             if = {
                 limit = { has_dlc = "Mandate of Heaven" }
-                custom_tooltip = adm_advisors_will_generate_1_splendor_per_level
+                custom_tooltip = adm_advisors_will_generate_1_splendor_per_level #TODO
             }
             else = {
                 add_prestige_or_monarch_power = {
@@ -335,10 +335,13 @@ venice_missions_slot_1_continued = {
             }
 		}
 		effect = { #TODO add event to buy province from toledo
-            add_casus_belli = {
-                type = cb_vassalize_mission
-            	months = 360
-            	target = Z0H
+		    if = {
+		        limit = { CAN = exists }
+                add_casus_belli = {
+                    type = cb_vassalize_mission
+                    months = 360
+                    target = Z0H
+                }
             }
 		}
 	}
@@ -551,6 +554,12 @@ venice_missions_slot_2 = {
 			OR = {
 				is_papal_controller = yes
 				PAP = { is_subject_of = ROOT }
+				PAP = {
+				    has_opinion = {
+                        who = ROOT
+                        value = 190
+                    }
+                }
 				owns = 118
 			}
 		}
@@ -1022,7 +1031,7 @@ venice_missions_slot_3 = {
 					who = ROOT
 					duration = 7300
 					power = 100
-					key = VEN_ADEN_GOODS_KEY
+					key = TYH_ADEN_GOODS_KEY
 				}
 			}
 
@@ -1666,6 +1675,15 @@ venice_missions_slot_5 = {
 		}
 		trigger = {
 			2986 = {
+				OR = {
+					has_great_project = {
+					type = harbor_cagliari
+					tier = 1
+			    }
+			    has_dock_building_trigger = yes
+			    }
+			}
+			2986 = {
 				num_of_times_improved = 4
 				has_dock_building_trigger = yes
 			}
@@ -1791,7 +1809,7 @@ venice_missions_slot_5 = {
 					who = ROOT
 					duration = 5475
 					power = 100
-					key = VENETIAN_ISLAND_STATIONS_KEY
+					key = TYH_ISLAND_STATIONS_KEY
 				}
 			}
 		}
@@ -1897,7 +1915,7 @@ venice_missions_slot_5 = {
 			358 = {
 				trade_share = {
 					country = ROOT
-					share = 50
+					share = 25
 				}
 			}
 			AND = {
@@ -1912,7 +1930,7 @@ venice_missions_slot_5 = {
 					1516 = {
 						trade_share = {
 							country = ROOT
-							share = 50
+							share = 25
 						}
 					}
 				}
@@ -2099,7 +2117,7 @@ venice_missions_slot_5 = {
 					who = ROOT
 					duration = 5475
 					power = 125
-					key = VEN_PRESENCE_IN_INDIA_KEY
+					key = TYH_PRESENCE_IN_INDIA_KEY
 				}
 			}
 			1343 = {
@@ -2107,7 +2125,7 @@ venice_missions_slot_5 = {
 					who = ROOT
 					duration = 5475
 					power = 125
-					key = VEN_PRESENCE_IN_INDIA_KEY
+					key = TYH_PRESENCE_IN_INDIA_KEY
 				}
 			}
 			add_country_modifier = {
