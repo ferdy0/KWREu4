@@ -703,53 +703,18 @@ Norway_missions_s3 = {
         }
 
         trigger = {
-            labrador_area = {
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 OR = {
-                    owned_by = NOR
-                    owned_by = ICE #change into NWC later
+                    area = labrador_area
+                    area = cote_nord_area
+                    area = notre_dame_mountains_area
+                    area = upper_acadia_area
+                    area = st_john_valley_area
+                    area = lower_acadia_area
+                    area = trois_rivieres_area
+                    area = lower_canada_area
                 }
-            }
-            cote_nord_area = {
-                OR = {
-                    owned_by = NOR
-                    owned_by = ICE #change into NWC later
-                }
-            }
-            notre_dame_mountains_area = {
-                OR = {
-                    owned_by = NOR
-                    owned_by = ICE #change into NWC later
-                }
-            }
-            upper_acadia_area = {
-                OR = {
-                    owned_by = NOR
-                    owned_by = ICE #change into NWC later
-                }
-            }
-            st_john_valley_area = {
-                OR = {
-                    owned_by = NOR
-                    owned_by = ICE #change into NWC later
-                }
-            }
-            lower_acadia_area = {
-                OR = {
-                    owned_by = NOR
-                    owned_by = ICE #change into NWC later
-                }
-            }
-            trois_rivieres_area = {
-                OR = {
-                    owned_by = NOR
-                    owned_by = ICE #change into NWC later
-                }
-            }
-            lower_canada_area = {
-                OR = {
-                    owned_by = NOR
-                    owned_by = ICE #change into NWC later
-                }
+                value = 25
             }
         }
 
@@ -786,59 +751,19 @@ Norway_missions_s3 = {
         }
 
         trigger = {
-            south_iroquoisia_area = {
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 OR = {
-                    owned_by = NOR
-                    owned_by = ICE #change into NWC later
+                    area = south_iroquoisia_area
+                    area = hudson_valley_area
+                    area = iroquoisia_area
+                    area = westsylvania_area 
+                    province_id = 2553
+                    area = great_valley_area
+                    area = susquehanna_area
+                    area = appalachia_area
+                    area = south_appalachia_area
                 }
-            }
-            hudson_valley_area = {
-                OR = {
-                    owned_by = NOR
-                    owned_by = ICE #change into NWC later
-                }
-            }
-            iroquoisia_area = {
-                OR = {
-                    owned_by = NOR
-                    owned_by = ICE #change into NWC later
-                }
-            }
-            westsylvania_area = {
-                OR = {
-                    owned_by = NOR
-                    owned_by = ICE #change into NWC later
-                }
-            }
-            2553 = {
-                OR = {
-                    owned_by = NOR
-                    owned_by = ICE #change into NWC later
-                }
-            }
-            great_valley_area = {
-                OR = {
-                    owned_by = NOR
-                    owned_by = ICE #change into NWC later
-                }
-            }
-            susquehanna_area = {
-                OR = {
-                    owned_by = NOR
-                    owned_by = ICE #change into NWC later
-                }
-            }
-            appalachia_area = {
-                OR = {
-                    owned_by = NOR
-                    owned_by = ICE #change into NWC later
-                }
-            }
-            south_appalachia_area = {
-                OR = {
-                    owned_by = NOR
-                    owned_by = ICE #change into NWC later
-                }
+                value = 16
             }
         }
 
@@ -976,192 +901,348 @@ Norway_missions_s3 = {
         }
 
         trigger = {
-            susquehanna_area = {
-                if = {
-                    limit = {
-                        owner = {
-                            OR = {
-                                tag = NOR
-                                tag = ICE #change into NWC later
-                            }
-                        }
-                        OR = {
-                            trade_goods = iron
-                            trade_goods = copper
-                        }
+            calc_true_if = {
+                all_owned_province = {
+                    OR = {
+                        area = susquehanna_area
+                        area = great_valley_area
+                        area = south_appalachia_area
+                        area = appalachia_area
+                        province_id = 2305
                     }
-                    has_building = weapons
-                }
-            }
-            great_valley_area = {
-                if = {
-                    limit = {
-                        owner = {
-                            OR = {
-                                tag = NOR
-                                tag = ICE #change into NWC later
-                            }
-                        }
-                        OR = {
-                            trade_goods = iron
-                            trade_goods = copper
-                        }
+                    OR = {
+                        trade_goods = iron
+                        trade_goods = copper
                     }
-                    has_building = weapons
                 }
-            }
-            2553 = {
-                if = {
-                    limit = {
-                        owner = {
-                            OR = {
-                                tag = NOR
-                                tag = ICE #change into NWC later
-                            }
-                        }
-                        OR = {
-                            trade_goods = iron
-                            trade_goods = copper
-                        }
-                    }
-                    has_building = weapons
-                }
-            }
-            south_appalachia_area = {
-                if = {
-                    limit = {
-                        owner = {
-                            OR = {
-                                tag = NOR
-                                tag = ICE #change into NWC later
-                            }
-                        }
-                        OR = {
-                            trade_goods = iron
-                            trade_goods = copper
-                        }
-                    }
-                    has_building = weapons
-                }
-            }
-            appalachia_area = {
-                if = {
-                    limit = {
-                        owner = {
-                            OR = {
-                                tag = NOR
-                                tag = ICE #change into NWC later
-                            }
-                        }
-                        OR = {
-                            trade_goods = iron
-                            trade_goods = copper
-                        }
-                    }
-                    has_building = weapons
-                }
+                has_building = weapons
             }
         }
 
         effect = {
             susquehanna_area = {
-                if = {
-                    limit = {
-                        owner = {
-                            OR = {
-                                tag = NOR
-                                tag = ICE #change into NWC later
-                            }
-                        }
+                limit = {
+                    owner = {
                         OR = {
-                            trade_goods = iron
-                            trade_goods = copper
+                            tag = NOR
+                            tag = ICE #Chagne to NWC later
                         }
                     }
-                    add_province_modifier = {
-                        name = "nor_mines_suported"
-                        duration = 18250
+                    OR = {
+                        trade_goods = iron
+                        trade_goods = copper
                     }
+                }
+                add_province_modifier = {
+                    name = "nor_mines_suported"
+                    duration = 18250
                 }
             }
             great_valley_area = {
-                if = {
-                    limit = {
-                        owner = {
-                            OR = {
-                                tag = NOR
-                                tag = ICE #change into NWC later
-                            }
-                        }
+                limit = {
+                    owner = {
                         OR = {
-                            trade_goods = iron
-                            trade_goods = copper
+                            tag = NOR
+                            tag = ICE #Chagne to NWC later
                         }
                     }
-                    add_province_modifier = {
-                        name = "nor_mines_suported"
-                        duration = 18250
+                    OR = {
+                        trade_goods = iron
+                        trade_goods = copper
                     }
+                }
+                add_province_modifier = {
+                    name = "nor_mines_suported"
+                    duration = 18250
                 }
             }
             2553 = {
-                if = {
-                    limit = {
-                        owner = {
-                            OR = {
-                                tag = NOR
-                                tag = ICE #change into NWC later
-                            }
-                        }
+                limit = {
+                    owner = {
                         OR = {
-                            trade_goods = iron
-                            trade_goods = copper
+                            tag = NOR
+                            tag = ICE #Chagne to NWC later
                         }
                     }
-                    add_province_modifier = {
-                        name = "nor_mines_suported"
-                        duration = 18250
+                    OR = {
+                        trade_goods = iron
+                        trade_goods = copper
                     }
+                }
+                add_province_modifier = {
+                    name = "nor_mines_suported"
+                    duration = 18250
                 }
             }
             south_appalachia_area = {
-                if = {
-                    limit = {
-                        owner = {
-                            OR = {
-                                tag = NOR
-                                tag = ICE #change into NWC later
-                            }
-                        }
+                limit = {
+                    owner = {
                         OR = {
-                            trade_goods = iron
-                            trade_goods = copper
+                            tag = NOR
+                            tag = ICE #Chagne to NWC later
                         }
                     }
-                    add_province_modifier = {
-                        name = "nor_mines_suported"
-                        duration = 18250
+                    OR = {
+                        trade_goods = iron
+                        trade_goods = copper
                     }
+                }
+                add_province_modifier = {
+                    name = "nor_mines_suported"
+                    duration = 18250
                 }
             }
             appalachia_area = {
-                if = {
-                    limit = {
-                        owner = {
-                            OR = {
-                                tag = NOR
-                                tag = ICE #change into NWC later
-                            }
-                        }
+                limit = {
+                    owner = {
                         OR = {
-                            trade_goods = iron
-                            trade_goods = copper
+                            tag = NOR
+                            tag = ICE #Chagne to NWC later
                         }
                     }
-                    add_province_modifier = {
-                        name = "nor_mines_suported"
-                        duration = 18250
+                    OR = {
+                        trade_goods = iron
+                        trade_goods = copper
                     }
+                }
+                add_province_modifier = {
+                    name = "nor_mines_suported"
+                    duration = 18250
+                }
+            }
+        }
+    }
+
+    The_workshops_of_norway_mission = {
+        icon = mission_have_manufactories
+        required_missions = { Iron_and_copper_mining_mission }
+        position = 11
+        provinces_to_highlight = {
+            OR = {
+                area = eastern_norway
+                area = western_norway
+                area = northern_norway 
+                province_id = 18
+                province_id = 8
+                province_id = 5
+                province_id = 4164
+                province_id = 16
+            }
+        }
+
+        trigger = {
+            eastern_norway = {
+                type = all
+                OR = {
+                    has_building = weapons
+                    has_building = wharf
+                    has_building = textile
+                    has_building = tradecompany
+                    has_building = farm_estate
+                    has_building = mills
+                }
+            }
+            western_norway = {
+                type = all
+                OR = {
+                    has_building = weapons
+                    has_building = wharf
+                    has_building = textile
+                    has_building = tradecompany
+                    has_building = farm_estate
+                    has_building = mills
+                }
+            }
+            northern_norway = {
+                type = all
+                OR = {
+                    has_building = weapons
+                    has_building = wharf
+                    has_building = textile
+                    has_building = tradecompany
+                    has_building = farm_estate
+                    has_building = mills
+                }
+            }
+            18 = {
+                OR = {
+                    has_building = weapons
+                    has_building = wharf
+                    has_building = textile
+                    has_building = tradecompany
+                    has_building = farm_estate
+                    has_building = mills
+                }
+            }
+            8 = {
+                OR = {
+                    has_building = weapons
+                    has_building = wharf
+                    has_building = textile
+                    has_building = tradecompany
+                    has_building = farm_estate
+                    has_building = mills
+                }
+            }
+            5 = {
+                OR = {
+                    has_building = weapons
+                    has_building = wharf
+                    has_building = textile
+                    has_building = tradecompany
+                    has_building = farm_estate
+                    has_building = mills
+                }
+            }
+            4164 = {
+                OR = {
+                    has_building = weapons
+                    has_building = wharf
+                    has_building = textile
+                    has_building = tradecompany
+                    has_building = farm_estate
+                    has_building = mills
+                }
+            }
+            16 = {
+                OR = {
+                    has_building = weapons
+                    has_building = wharf
+                    has_building = textile
+                    has_building = tradecompany
+                    has_building = farm_estate
+                    has_building = mills
+                }
+            }
+        }
+
+        effect = {
+            eastern_norway = {
+                limit = {
+                    OR = {
+                        has_building = weapons
+                        has_building = wharf
+                        has_building = textile
+                        has_building = tradecompany
+                        has_building = farm_estate
+                        has_building = mills
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_manufactoring_sector"
+                    duration = 18250
+                }
+            }
+            western_norway = {
+                limit = {
+                    OR = {
+                        has_building = weapons
+                        has_building = wharf
+                        has_building = textile
+                        has_building = tradecompany
+                        has_building = farm_estate
+                        has_building = mills
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_manufactoring_sector"
+                    duration = 18250
+                }
+            }
+            northern_norway = {
+                limit = {
+                    OR = {
+                        has_building = weapons
+                        has_building = wharf
+                        has_building = textile
+                        has_building = tradecompany
+                        has_building = farm_estate
+                        has_building = mills
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_manufactoring_sector"
+                    duration = 18250
+                }
+            }
+            18 = {
+                limit = {
+                    OR = {
+                        has_building = weapons
+                        has_building = wharf
+                        has_building = textile
+                        has_building = tradecompany
+                        has_building = farm_estate
+                        has_building = mills
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_manufactoring_sector"
+                    duration = 18250
+                }
+            }
+            8 = {
+                limit = {
+                    OR = {
+                        has_building = weapons
+                        has_building = wharf
+                        has_building = textile
+                        has_building = tradecompany
+                        has_building = farm_estate
+                        has_building = mills
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_manufactoring_sector"
+                    duration = 18250
+                }
+            }
+            5 = {
+                limit = {
+                    OR = {
+                        has_building = weapons
+                        has_building = wharf
+                        has_building = textile
+                        has_building = tradecompany
+                        has_building = farm_estate
+                        has_building = mills
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_manufactoring_sector"
+                    duration = 18250
+                }
+            }
+            4164 = {
+                limit = {
+                    OR = {
+                        has_building = weapons
+                        has_building = wharf
+                        has_building = textile
+                        has_building = tradecompany
+                        has_building = farm_estate
+                        has_building = mills
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_manufactoring_sector"
+                    duration = 18250
+                }
+            }
+            16 = {
+                limit = {
+                    OR = {
+                        has_building = weapons
+                        has_building = wharf
+                        has_building = textile
+                        has_building = tradecompany
+                        has_building = farm_estate
+                        has_building = mills
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_manufactoring_sector"
+                    duration = 18250
                 }
             }
         }
@@ -1512,6 +1593,64 @@ Norway_missions_s4 = {
                 add_province_modifier = {
                     name = nor_plantations_established
                     duration = 18250
+                }
+            }
+        }
+    }
+
+    Crown_port_mission = { #still needs localisation
+        icon = mission_develop_nevas_port
+        required_missions = { Colonise_east_coast_mission }
+        position = 10
+        provinces_to_highlight = {
+            province_id = 20
+        }
+
+        trigger = {
+            OR = {
+                treasury = 600
+                20 = {
+                    province_has_center_of_trade_of_level = 3
+                }
+            }
+            20 = {
+                development = 25
+                has_building = trade_depot
+                province_has_center_of_trade_of_level = 2
+            }
+        }
+
+        effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        20 = {
+                            province_has_center_of_trade_of_level = 3
+                        }   
+                    }
+                    treasury = 600
+                }
+                20 = {
+                    add_center_of_trade_level = 1
+                    add_province_modifier = {
+                        name = "nor_crown_port"
+                        duration = -1
+                    }
+                }
+                add_treasury = -600
+            }
+            else_if = {
+                limit = {
+                    20 = {
+                            province_has_center_of_trade_of_level = 3
+                    } 
+                }
+                add_treasury = 400
+                20 = {
+                    add_province_modifier = {
+                        name = "nor_crown_port"
+                        duration = -1
+                    }
                 }
             }
         }

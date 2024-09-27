@@ -111,3 +111,15 @@ nor_mines_suported = { #still needs localisation
     local_prosperity_growth = 0.1
     local_development_cost_modifier = -0.25
 }
+
+nor_crown_port = { #still needs localisation
+    local_ship_repair = 0.2
+    hostile_fleet_attrition = 5
+    local_tax_modifier = 0.1
+}
+
+nor_manufactoring_sector = { #still needs localisation
+    local_institution_spread = 0.15
+    local_development_cost = -0.2
+    local_production_efficiency = 0.1
+}
