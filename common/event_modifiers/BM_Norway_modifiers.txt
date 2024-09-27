@@ -26,7 +26,7 @@ nor_forrestry_industry = { #still needs localisation
 }
 
 nor_shipbuilding_boom = { #still needs localisation
-    dip_cost_modifier = -0.1
+    dip_tech_cost_modifier = -0.1
     global_ship_cost = -0.2
     sailor_maintenance_modifer = 0.1 #shortage in sailors leads to them being paid more
 }

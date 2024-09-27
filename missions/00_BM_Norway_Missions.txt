@@ -62,16 +62,14 @@ Norway_missions_s1 = {
         effect = {
             if = {
                 limit = { alliance_with = HSA }
-                AND = {
+                add_country_modifier = {
+                    name = "nor_baltic_trade_secured"
+                    duration = 7300
+                }
+                HSA = {
                     add_country_modifier = {
-                        name = "nor_baltic_trade_secured"
-                        duration = 7300
-                    }
-                    HSA = {
-                        add_country_modifier = {
-                        name = "nor_baltic_trade_secured"
-                        duration = 7300
-                        }
+                    name = "nor_baltic_trade_secured"
+                    duration = 7300
                     }
                 }
             }
@@ -397,7 +395,7 @@ Norway_missions_s2 = {
         }
 
         effect = {
-            adm_power = -200
+            add_adm_power = -200
             ICE = { #change into NWC later
                 remove_country_modifier = "nwc_no_expansion"
             }
@@ -454,8 +452,9 @@ Norway_missions_s2 = {
                     region = kongo_region
                     region = south_africa_region
                 }
-                NOT = { has_trade_goods = gems }
-                NOT = { has_trade_goods = ivory }
+                NOT = { trade_goods = gems }
+                NOT = { trade_goods = ivory }
+                NOT = { trade_goods = gold }
                 has_port = yes
                 has_building = dock
                 value = 10
@@ -469,8 +468,9 @@ Norway_missions_s2 = {
                         has_port = yes
                         has_building = dock
                         owned_by = ROOT
-                        NOT = { has_trade_goods = gems }
-                        NOT = { has_trade_goods = ivory }
+                        NOT = { trade_goods = gems }
+                        NOT = { trade_goods = ivory }
+                        NOT = { trade_goods = gold }
                     }
                     change_trade_goods = fish
                     add_province_modifier = {
@@ -485,8 +485,9 @@ Norway_missions_s2 = {
                         has_port = yes
                         has_building = dock
                         owned_by = ROOT
-                        NOT = { has_trade_goods = gems }
-                        NOT = { has_trade_goods = ivory }
+                        NOT = { trade_goods = gems }
+                        NOT = { trade_goods = ivory }
+                        NOT = { trade_goods = gold }
                     }
                     change_trade_goods = fish
                     add_province_modifier = {
@@ -576,7 +577,7 @@ Norway_missions_s3 = {
                     duration = 7300
                 }
             }
-            denmark_straight_area = {
+            denmark_strait_area = { #It is spelled "strait" in the files, not "straight". Don't ask me why
                 discover_country = NOR
             }
             1804 = {
@@ -1566,9 +1567,7 @@ Norway_missions_s5 = {
 
         effect = {
             SWE = {
-                effect = {
-                    add_liberty_desire = -20
-                }
+                add_liberty_desire = -20
             }
         }
     }

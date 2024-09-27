@@ -58,7 +58,7 @@ country_event = { #still needs localisation
 
     is_triggered_only = yes
 
-    immidiate = {
+    immediate = {
         event_target:nor_road = {
             remove_province_modifier = nor_mountain_paths_construction
             add_province_modifier = {
@@ -83,7 +83,7 @@ country_event = {
 
     is_triggered_only = yes
 
-    immidiate = {
+    immediate = {
         add_estate_influence_modifier = {
             estate = estate_burghers
             desc = EST_VAL_EXPLORATION_INTREST_BURGHERS
