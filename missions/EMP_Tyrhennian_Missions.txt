@@ -599,365 +599,39 @@ venice_missions_slot_1_continued = {
 	tyh_mamluk_suez = {
 		icon = mission_diplomatic_relation
 		position = 12
-		provinces_to_highlight = {
-			OR = {
-				province_id = 4316
-				province_id = 2315
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
 		trigger = {
-			358 = {
-				trade_share = {
-					country = ROOT
-					share = 25
-				}
-			}
-			if = {
-				limit = {
-					MAM = {
-						owns_core_province = 4316
-						owns_core_province = 2315
-					}
-				}
-				OR = {
-					AND = {
-						4316 = { 
-							country_or_non_sovereign_subject_holds = ROOT 
-							num_of_times_improved = 8
-						}
-						2315 = { 
-							country_or_non_sovereign_subject_holds = ROOT 
-							num_of_times_improved = 3
-						}
-					}
-					AND = {
-						MAM = {
-							has_opinion = {
-								who = ROOT
-								value = 150
-							}
-						}
-						MAM = {
-							OR = {
-								alliance_with = ROOT
-								is_subject_of = ROOT
-							}
-						}
-						if = {
-							limit = { ai = no }
-							years_of_income = 2
-						}
-						else = { years_of_income = 0.5 }
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					EGY = {
-						owns_core_province = 4316
-						owns_core_province = 2315
-					}
-				}
-				OR = {
-					AND = {
-						4316 = { 
-							country_or_non_sovereign_subject_holds = ROOT 
-							num_of_times_improved = 8
-						}
-						2315 = { 
-							country_or_non_sovereign_subject_holds = ROOT 
-							num_of_times_improved = 3
-						}
-					}
-					AND = {
-						EGY = {
-							has_opinion = {
-								who = ROOT
-								value = 150
-							}
-						}
-						EGY = {
-							OR = {
-								alliance_with = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-			}
-			else = {
-				4316 = { 
-					country_or_non_sovereign_subject_holds = ROOT 
-					num_of_times_improved = 8
-				}
-				2315 = { 
-					country_or_non_sovereign_subject_holds = ROOT 
-					num_of_times_improved = 3
-				}
-			}
+		    OR = {
+                Z05 = {
+                    has_opinion = {
+                        who = root
+                        value = 150
+                    }
+                }
+                SPA = {
+                    has_opinion = {
+                        who = root
+                        value = 150
+                    }
+                }
+            }
+            OR = {
+                exists = Z0H
+                OR = {
+                    367 = {
+                        owned_by = Z05
+                    }
+                    367 = {
+                        owned_by = SPA
+                    }
+                }
+            }
 		}
-		effect = {
-			if = {
-				limit = {
-					MAM = {
-						has_opinion = {
-							who = ROOT
-							value = 150
-						}
-					}
-					MAM = {
-						OR = {
-							alliance_with = ROOT
-							is_subject_of = ROOT
-						}
-					}
-					years_of_income = 2
-				}
-				custom_tooltip = ven_mamluk_friendship_yes_tt
-			}
-			else = { custom_tooltip = ven_mamluk_friendship_no_tt }
-			tooltip = {
-				if = {
-					limit = {
-						alliance_with = EGY
-						EGY = { exists = yes }
-					}
-					add_historical_friend = EGY
-					if = {
-						limit = { 
-							ai = no 
-						}
-						if = {
-							limit = {
-								EGY = {
-									NOT = { mission_completed = mam_highway_empire }
-								}
-							}
-							add_years_of_income = -2
-						}
-						else = { add_years_of_income = -0.25 }
-					}
-					else = {
-						add_years_of_income = -0.25
-					}
-					EGY = { 
-						add_historical_friend = ROOT 
-						if = {
-							limit = { 
-								has_dlc = "King of Kings" 
-								NOT = { mission_completed = mam_highway_empire }
-							}
-							complete_mission = mam_highway_empire
-						}
-						if = {
-							limit = { 
-								has_dlc = "Leviathan"  
-								4316 = {
-									NOT = {
-										has_great_project = { 
-											type = suez_canal 
-											tier = 3 
-										}
-									}
-								}
-								NOT = { adm_tech = 22 }
-							}
-							country_event = { id = flavor_tyh.54  }
-						}
-						else = {
-							4316 = { add_base_production = 3 }
-						}
-					}
-				}
-				else = {
-					add_historical_friend = MAM
-					if = {
-						limit = { 
-							ai = no 
-						}
-						if = {
-							limit = {
-								MAM = {
-									NOT = { mission_completed = mam_highway_empire }
-								}
-							}
-							add_years_of_income = -2
-						}
-						else = { add_years_of_income = -0.25 }
-					}
-					else = {
-						add_years_of_income = -0.25
-					}
-					MAM = { 
-						add_historical_friend = ROOT 
-						if = {
-							limit = { 
-								has_dlc = "King of Kings" 
-								NOT = { mission_completed = mam_highway_empire }
-							}
-							complete_mission = mam_highway_empire
-						}
-						if = {
-							limit = { 
-								has_dlc = "Leviathan"  
-								4316 = {
-									NOT = {
-										has_great_project = { 
-											type = suez_canal 
-											tier = 3 
-										}
-									}
-								}
-								NOT = { adm_tech = 22 }
-							}
-							country_event = { id = flavor_ven.54  }
-						}
-						else = {
-							4316 = { add_base_production = 3 }
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					4316 = { 
-						country_or_non_sovereign_subject_holds = ROOT 
-						num_of_times_improved = 8
-					}
-					2315 = { 
-						country_or_non_sovereign_subject_holds = ROOT 
-						num_of_times_improved = 3
-					}
-				}
-				custom_tooltip = ven_conquest_reward_yes_tt
-			}
-			else = { custom_tooltip = ven_conquest_reward_no_tt }
-			tooltip = {
-				2315 = {
-					create_units_of_type_in_province = {
-						custom_tooltip = spawn_10_lights_for_root
-						who = ROOT
-						amount = 10
-						unit_type = light_ship
-					}
-				}
-				red_sea_coast_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						4316 = { 
-							country_or_non_sovereign_subject_holds = ROOT 
-							num_of_times_improved = 8
-						}
-						2315 = { 
-							country_or_non_sovereign_subject_holds = ROOT 
-							num_of_times_improved = 3
-						}
-					}
-					2315 = {
-						create_units_of_type_in_province = {
-							custom_tooltip = spawn_10_lights_for_root
-							who = ROOT
-							amount = 10
-							unit_type = light_ship
-						}
-					}
-					red_sea_coast_area = {
-						limit = {
-							NOT = { is_permanent_claim = ROOT }
-							NOT = { is_core = ROOT	}
-						}
-						add_permanent_claim = ROOT
-					}
-				}
-				else = {
-					if = {
-						limit = {
-							alliance_with = MAM 
-						}
-						add_historical_friend = MAM
-						if = {
-							limit = { 
-								has_dlc = "King of Kings" 
-								MAM = {
-									NOT = { mission_completed = mam_highway_empire }
-								}
-							}
-							MAM = { complete_mission = mam_highway_empire }
-						}
-						MAM = { add_historical_friend = ROOT }
-						if = {
-							limit = { 
-								has_dlc = "Leviathan"  
-								4316 = {
-									NOT = {
-										has_great_project = { 
-											type = suez_canal 
-											tier = 3 
-										}
-									}
-								}
-								NOT = { adm_tech = 22 }
-							}
-							MAM = { country_event = { id = flavor_ven.54  } }
-							if = {
-								limit = { ai = no }
-								add_years_of_income = -2
-							}
-							else = { add_years_of_income = -1 }
-						}
-						else = {
-							4316 = { add_base_production = 3 }
-							add_years_of_income = -0.25
-						}
-					}
-					else = {
-						add_historical_friend = EGY
-						EGY = { add_historical_friend = ROOT }
-						if = {
-							limit = { 
-								has_dlc = "King of Kings" 
-								EGY = {
-									NOT = { mission_completed = mam_highway_empire }
-								}
-							}
-							EGY = { complete_mission = mam_highway_empire }
-						}
-						if = {
-							limit = { 
-								has_dlc = "Leviathan"  
-								4316 = {
-									NOT = {
-										has_great_project = { 
-											type = suez_canal 
-											tier = 3 
-										}
-									}
-								}
-								NOT = { adm_tech = 22 }
-							}
-							EGY = { country_event = { id = flavor_ven.54  } }
-							if = {
-								limit = { ai = no }
-								add_years_of_income = -2
-							}
-							else = { add_years_of_income = -1 }
-						}
-						else = {
-							4316 = { add_base_production = 3 }
-							add_years_of_income = -0.25
-						}
-					}
-				}
-			}
+		effect = { #TODO add event to buy province from toledo
+            add_casus_belli = {
+                type = cb_vassalize_mission
+            	months = 360
+            	target = Z0H
+            }
 		}
 	}
 
@@ -1374,32 +1048,36 @@ venice_missions_slot_3 = {
 	
 	has_country_shield = yes
 
-	ven_san_zanipolo = {
+	tyh_san_zanipolo = {
 		icon = ven_san_zanipolo
 		position = 2
-		required_missions = { wof_ven_new_pilings }
+		required_missions = { tyh_new_pilings }
 		
 		provinces_to_highlight = {
-			province_id = 112
+			province_id = 2986
 		}
 
 		trigger = {
-			112 = { has_tax_building_trigger = yes }
-			owns_core_province = 112
+			2986 = { has_tax_building_trigger = yes }
+			owns_core_province = 2986
 		}
 
 		effect = {
-			country_event = {
-				id = flavor_ven.51
-			}
-			custom_tooltip = event_insight_flavor_ven.51
+			2986 = {
+                upgrade_building = { tax = yes }
+            }
+            add_prestige_or_monarch_power = { amount = 5 }
+            if = {
+                limit = { religion = catholic }
+            	add_papal_influence = 10
+            }
 		}
 	}
 
-	wof_ven_nuova_promissione_ducale = {
+	tyh_nuova_promissione_ducale = {
 		icon = nuova_promissione_ducale
 		position = 3
-		required_missions = { ven_capital_of_europe }
+		required_missions = { tyh_capital_of_europe }
 		
 		trigger = {
 			stability = 3
@@ -1408,69 +1086,17 @@ venice_missions_slot_3 = {
 			reform_level = 3
 		}
 		effect = {
-			if = {
-				limit = {
-					OR = {
-						has_reform = venice_merchants_reform
-						has_reform = lottery_reform
-					}
-				}
-				change_ruler_stat = {
-					type = dip
-					amount = 1
-				}
-			}
-			else_if = {
-				limit = {
-					OR = {
-						current_age = age_of_absolutism
-						current_age = age_of_revolutions
-					}
-					NOT = { absolutism = 80 }
-					is_revolutionary = no
-				}
-				add_absolutism = 20
-			}
-			else = {
-				add_mil_power = 200
-			}
-			if = {
-				limit = {
-					OR = {
-						has_reform = venice_merchants_reform
-						has_reform = lottery_reform
-					}
-				}
-				unlock_government_reform = {
-					government_reform = ven_promissione_ducale_reform
-				}
-			}
+			change_ruler_stat = {
+                type = mil
+            	amount = 1
+            }
 		}
 	}
 
-	wof_ven_standardize_relazioni = {
+	tyh_standardize_relazioni = {
 		icon = standardize_relazioni
 		position = 4
-		required_missions = { wof_ven_nuova_promissione_ducale }
-		provinces_to_highlight = {
-			is_capital = yes 
-			owner = {
-				NOT = { tag = ROOT }
-				has_spy_network_in = {
-					who = ROOT
-					value = 25
-				}
-				NOT = {
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
-				}
-				NOT = {
-					truce_with = ROOT
-				}
-			}
-		}
+		required_missions = { tyh_nuova_promissione_ducale }
 		trigger = {
 			all_neighbor_country = {
 				OR = {
@@ -1491,42 +1117,20 @@ venice_missions_slot_3 = {
 				diplomat = 3
 				spymaster = 3
 			}
-			if = {
-				limit = {
-					tag = TYH
-					NOT = { has_country_flag = LNS_ideas_flag }
-				}
-				has_idea = state_inquisition
-			}
 			
 		}
 		effect = {
-			if = {
-				limit = { tag = TYH	}
-				custom_tooltip = ven_upgrade_state_inuisition_idea_tt
-				hidden_effect = {
-					set_country_flag = ven_upgrade_state_inuisition_idea_flag
-					swap_free_idea_group = yes
-				}
-			}
-			else = {
-				add_country_modifier = {
-					name = ven_standardized_relazioni
-					duration = 7300
-				}
+			add_country_modifier = {
+				name = tyh_standardized_relazioni
+				duration = 7300
 			}
 		}
 	}
 
-	ven_of_wealth_and_power = {
+	tyh_of_wealth_and_power = {
 		icon = ven_of_wealth_and_power
 		position = 5
-		required_missions = { wof_ven_plague_doctor_training wof_ven_standardize_relazioni ven_academy_of_the_unknowns wof_ven_expand_the_doges_palace }
-		provinces_to_highlight = {
-			ROOT = {
-				home_trade_node = { province_id = PREV_PREV }
-			}
-		}
+		required_missions = { tyh_plague_doctor_training tyh_standardize_relazioni tyh_academy_of_the_unknowns tyh_expand_the_doges_palace }
 		trigger = {
 			home_trade_node = { highest_value_trade_node = yes }
 			num_of_trading_bonuses = 6
@@ -1534,17 +1138,13 @@ venice_missions_slot_3 = {
 		effect = {
 			add_power_projection = {
 				type = ven_cradle_of_opulence
-				amount = 20
+				amount = 25
 			}
-			custom_tooltip = zim_amongst_the_great_powers_tt
-			country_event = {
-				id = flavor_ven.48
-			}
-			custom_tooltip = event_insight_flavor_ven.48
+            add_prestige_or_monarch_power = { amount = 200 }
 		}
 	}
 
-	ven_army_republic = {
+	tyh_army_republic = {
 		icon = ven_army_republic
 		position = 6
 		provinces_to_highlight = {
@@ -1567,77 +1167,57 @@ venice_missions_slot_3 = {
 					10 = { set_country_flag = ven_navy_missions_flag }
 				}
 			}
-			lombardy_area = {
+			calabria_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
-			po_valley_area = {
+			naples_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
-			emilia_romagna_area = {
+			apulia_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
-			}
-			if = {
-				limit = {
-					151 = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
-					}
-				}
-				151 = { add_permanent_claim = ROOT }
 			}
 		}
 	}
 
-	wof_ven_destroy_austria = {
+	tyh_destroy_austria = {
 		icon = conquer_austria
 		position = 8
-		required_missions = { wof_ven_expand_the_terraferma }
+		required_missions = { tyh_army_republic }
 		provinces_to_highlight = {
 			OR = {
-				owned_by = HAB
-				owned_by = AUH
+				owned_by = NAP
 			}
 		}
 		trigger = {
 			OR = {
-				AND = {
-					NOT = { exists = HAB }
-					NOT = { exists = AUH }
-				}
-				AND = {
-					HAB = { is_subject_of = ROOT }
-					NOT = { exists = AUH }
-				}
-				AND = {
-					AUH = { is_subject_of = ROOT }
-					NOT = { exists = HAB }
-				}
+			    NOT = { exists = NAP }
+		        NAP = { is_subject_of = ROOT }
 			}
 		}
 		effect = {
 			add_country_modifier = {
-				name = "ven_political_monopolist"
+				name = tyh_political_monopolist
 				duration = -1
 			}
 		}
 	}
 
-	ven_genoa = {
+	tyh_genoa = {
 		icon = mission_dominate_genoa
 		position = 9
-		required_missions = { wof_ven_north_italian_rivals }
+		required_missions = { tyh_north_italian_rivals }
 		provinces_to_highlight = {
 			province_id = 101
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1646,28 +1226,19 @@ venice_missions_slot_3 = {
 			101 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
-			if = {
-				limit = { is_trade_league_leader = yes }
-				custom_tooltip = ven_easier_to_invite_trade_league_members_yes_tt
-				set_country_flag = ven_easier_to_invite_trade_league_members_yes_flag
-			}
-			else_if = {
-				limit = { has_dlc = "Mare Nostrum" }
-				custom_tooltip = ven_easier_to_invite_trade_league_members_no_tt
-			}
-			unlock_government_reform = {
-				government_reform = merchant_representation_reform
-			}
 			define_admiral = {
 				name = "Andrea Doria"
 				shock = 4
 				fire = 4
 				manuever = 5
 			}
+            2986 = {
+                set_center_level_3_center_of_trade = yes
+            }
 		}
 	}
 
-	ven_exploration_missions = {
+	tyh_exploration_missions = {
 		icon = mission_look_west
 		position = 11
 		trigger = {
@@ -1715,10 +1286,10 @@ venice_missions_slot_3 = {
 		}
 	}
 
-	ven_aden_trade = {
+	tyh_aden_trade = {
 		icon = mission_dominate_trade_in_aden
 		position = 12
-		required_missions = { ven_exploration_missions }
+		required_missions = { tyh_exploration_missions }
 		provinces_to_highlight = {
 			OR = {
 				area = tihama_al_yemen_area
@@ -1766,7 +1337,7 @@ venice_missions_slot_3 = {
 					1099 = { 
 						center_of_trade = 1
 						add_province_modifier = {
-							name = ven_colonial_outpost_modifier
+							name = tyh_colonial_outpost_modifier
 							duration = -1
 						}
 					}
@@ -1778,7 +1349,7 @@ venice_missions_slot_3 = {
 					1099 = { 
 						center_of_trade = 1
 						add_province_modifier = {
-							name = ven_colonial_outpost_modifier
+							name = tyh_colonial_outpost_modifier
 							duration = -1
 						}
 					}
@@ -1792,7 +1363,7 @@ venice_missions_slot_3 = {
 					1099 = { 
 						center_of_trade = 1
 						add_province_modifier = {
-							name = ven_colonial_outpost_modifier
+							name = tyh_colonial_outpost_modifier
 							duration = -1
 						}
 					}
@@ -1801,10 +1372,10 @@ venice_missions_slot_3 = {
 		}
 	}
 
-	wof_ven_this_mythical_realm = {
+	tyh_this_mythical_realm = {
 		icon = sources_of_trade
 		position = 13
-		required_missions = { ven_aden_trade }
+		required_missions = { tyh_aden_trade }
 		
 		provinces_to_highlight = {
 			OR = {
@@ -1863,10 +1434,10 @@ venice_missions_slot_3 = {
 		}
 	}
 
-	ven_reach_malacca = {
+	tyh_reach_malacca = {
 		icon = mission_portuguese_malacca
 		position = 14
-		required_missions = { wof_ven_this_mythical_realm }
+		required_missions = { tyh_this_mythical_realm }
 		
 		provinces_to_highlight = {
 			OR = {
@@ -1902,10 +1473,10 @@ venice_missions_slot_3 = {
 		}
 	}
 
-	ven_spice_islands = {
+	tyh_spice_islands = {
 		icon = mam_harness_spice_trade
 		position = 15
-		required_missions = { ven_reach_malacca }
+		required_missions = { tyh_reach_malacca }
 		provinces_to_highlight = {
 			OR = {
 				province_id = 649

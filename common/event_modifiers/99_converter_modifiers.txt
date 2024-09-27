@@ -254,3 +254,13 @@ tyh_united_italy_modifier = {
 	country_admin_power = 1
 	reform_progress_growth = 0.1
 }
+tyh_standardized_relazioni = {
+	reform_progress_growth = 0.2
+}
+tyh_political_monopolist = {
+	unjustified_demands = -0.1
+	diplomatic_upkeep = 1
+}
+tyh_colonial_outpost_modifier = {
+	trade_value = 3
+}

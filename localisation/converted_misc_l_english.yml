@@ -150,7 +150,7 @@
 
  #Missions
  #Slot 1
- tyh_embrace_neoplatonism_title:0 "End the Numerus Closus"
+ tyh_embrace_neoplatonism_title:0 "The Numerus Closus"
  tyh_embrace_neoplatonism_desc:0 "The Numerus Closus, that has for so long privileged our own intellectuals and priests other foreign ones, has greatly helped us preserve our culture and traditions. But with Renaissance starting in Italy, we must open up to the world in order to surpass it."
  tyh_scales_of_power_title:0 "The Scales of Power"
  tyh_scales_of_power_desc:0 "Since the 13th century, the power of the Grand Archon of Tyrhennia is relatively limited. The governmental structure has shifted towards a more decentralized system, with significant influence held by the Corona de Lugo and various noble families. The Archon primarily serves as a ceremonial figurehead, representing Tyrhennia on formal occasions and performing symbolic duties. If we are to seize control of internal affairs, this status quo must change."
@@ -172,38 +172,38 @@
  ven_dummy_mission_2_desc:0 "[Root.GetSelectableMissionDescription]"
  tyh_savoy_title:0 "Reclaim Tahert"
  tyh_savoy_desc:0 "To the south lies a crusader kingdom that safeguards the gateways to our region. Their rule is meager and their strength wanes in the face of a powerful outside force. Their land must be confiscated posthaste!"
- ven_aden_trade_title:0 "Markets of Aden"
- ven_aden_trade_desc:0 "Famed for their central position within the spice and coffee trade, the markets of Aden are home to some of the world's most sought-after goods."
+ tyh_aden_trade_title:0 "Markets of Aden"
+ tyh_aden_trade_desc:0 "Famed for their central position within the spice and coffee trade, the markets of Aden are home to some of the world's most sought-after goods."
  tyh_zanzibar_title:0 "Madagascar Land"
  tyh_zanzibar_desc:0 "The strip of islands across Southeastern Africa is rich with gold and valuables. Should we wish to extend our wealth and influence abroad, we must look to seize it."
- tyh_mamluk_suez_title:0 "Into the Red Sea"
- tyh_mamluk_suez_desc:0 "The uncharted seas south of [2315.GetName] are home to tales of glory, coin and honorable death. As we strive to conquer wealth and write our names in history, we must be brave and step into the unknown seas beyond our domain!"
-  
+ tyh_mamluk_suez_title:0 "Into the Great Pond"
+ tyh_mamluk_suez_desc:0 "The uncharted seas to the West of Mediterranean could be full with opportunity and treasure. As we strive to conquer wealth and write our names in history, we must be brave and step into the unknown seas beyond our domain!"
+ 
  #Slot 2
  tyh_capital_of_europe_title:0 "Capital of the Mediterranean"
  tyh_capital_of_europe_desc:0 "Our sea has seen the birth of tremendous history. To that end, we must seek to have the most illustrious city within it, and write our name in the books of history with golden letters."
  tyh_conquer_italy_title:0 "Unify Baleo Tyrhennia"
  tyh_conquer_italy_desc:0 "Our region is one with amazing history and resilient people. It has been through a multitude of trials and tribulations. The rise of tyrants, republics, external conquerors, and great scientists are but the footnotes to our glorious history. It is time for this wonderful archipelago to unite!"
- ven_exploration_missions_title:0 "Charter the Far Seas"
- ven_exploration_missions_desc:0 "The seas beyond our coasts are said to hold tremendous wealth and knowledge. We must map and explore them to the best of our ability."
+ tyh_exploration_missions_title:0 "Charter the Far Seas"
+ tyh_exploration_missions_desc:0 "The seas beyond our coasts are said to hold tremendous wealth and knowledge. We must map and explore them to the best of our ability."
  ven_triangle_trade_title:0 "Carve New Routes"
  ven_triangle_trade_desc:0 "We must position ourselves as those in charge of determining the flow of exotic goods into European markets. That position would certainly see much wealth amass within our treasuries."
  tyh_global_trade_title:0 "Global Trade"
  tyh_global_trade_desc:0 "As trade evolves into the global bounds that hold our markets together, we must take charge to ensure that we are at the forefront of production and innovation."
   
   #Slot 3
- ven_san_zanipolo_title:0 "San Zanipolo"
- ven_san_zanipolo_desc:0 "No city in all of Italy can be allowed to have as illustrious and captivating architectural marvels as our capital. To that end, we must construct great monuments to our faith and piety, as a testament of our power and wealth."
- ven_of_wealth_and_power_title:0 "Of Wealth & Power"
- ven_of_wealth_and_power_desc:0 "Few have attained our level of wealth, opulence, and power throughout the history of our domain. We will proudly stand at the top of the food chain and wield the power to determine the fate of an entire continent."
- ven_army_republic_title:0 "Army of the Republic"
- ven_army_republic_desc:0 "The last century and the century before, have seen our peninsula fall victim to many conquerors and tyrants. We must safeguard our ideals and our people!"
- ven_genoa_title:0 "Old Rivalries"
- ven_genoa_desc:0 "The Genoese have long been thorns to our side, usurping our wealth and trade for their enrichment. We must put a stop to this!"
- ven_reach_malacca_title:0 "Reach Malacca"
- ven_reach_malacca_desc:0 "The distant ports of Malacca are said to hold untold riches and immeasurable opportunities for our merchants to get even more affluent."
- ven_spice_islands_title:0 "In Search of Spice"
- ven_spice_islands_desc:0 "The legendary sought-after spices that originate from the Far East have propped up generations of merchants and warlords. We must seek their source and through it we shall control the world."
+ tyh_san_zanipolo_title:0 "The Tuvixeddu Necropolis"
+ tyh_san_zanipolo_desc:0 "As a testament to our inheritance, artifacts of ancient times have been discovered. We will build a magnificent church next to the site, dedicated to displaying and improving our legacy, and the glory of old will once again be visible by all."
+ tyh_of_wealth_and_power_title:0 "Of Wealth & Power"
+ tyh_of_wealth_and_power_desc:0 "Few have attained our level of wealth, opulence, and power throughout the history of our domain. We will proudly stand at the top of the food chain and wield the power to determine the fate of an entire continent."
+ tyh_army_republic_title:0 "Army of the Crown"
+ tyh_army_republic_desc:0 "The last century and the century before, have seen our peninsula fall victim to many conquerors and tyrants. We must safeguard our ideals and our people!"
+ tyh_genoa_title:0 "Old Rivalries"
+ tyh_genoa_desc:0 "The Genoese have long been thorns to our side, usurping our wealth and trade for their enrichment. We must put a stop to this!"
+ tyh_reach_malacca_title:0 "Reach Malacca"
+ tyh_reach_malacca_desc:0 "The distant ports of Malacca are said to hold untold riches and immeasurable opportunities for our merchants to get even more affluent."
+ tyh_spice_islands_title:0 "In Search of Spice"
+ tyh_spice_islands_desc:0 "The legendary sought-after spices that originate from the Far East have propped up generations of merchants and warlords. We must seek their source and through it we shall control the world."
   
   #Slot 4
  ven_sempiterni_compagnie_title:0 "Sempiterni Compagnie"
@@ -232,32 +232,32 @@
  ven_coromandel_title:0 "Cholamandalam"
  ven_coromandel_desc:0 "The Coast of the once-powerful Chola maritime empire is rich in exotic goods and bountiful harvests of the most eclectic goods. This wealth would surely propel our opulence to new heights."
  
- tyh_promote_the_carnevale_title:0 "Reinvigorate the Great Tournaments"
+ tyh_promote_the_carnevale_title:0 "The Grand Tournaments"
  tyh_promote_the_carnevale_desc:0 "Our famous Grand tournaments dates back to 1200 and the end of the Crusades. Since then, the festivities have become even grander, the costumes more ornate, and the challenges over the top. Quite frankly, its magnificence is all out of proportion, but we can use that to our advantage. The more we expose foreign diplomats and nobility to the grandeur of our tournaments, the faster word of our opulence shall spread."
  
- wof_ven_this_mythical_realm_title:0 "This Mythical Realm"
- wof_ven_this_mythical_realm_desc:1 "Levantine trade has long been a source of wealth for us, but discoveries have revealed an even richer land to us: India. If we could secure a toehold in this rich land to the east, our merchants could become wealthy beyond imagination."
+ tyh_this_mythical_realm_title:0 "This Mythical Realm"
+ tyh_this_mythical_realm_desc:0 "Levantine trade has long been a source of wealth for us, but discoveries have revealed an even richer land to us, India. If we could secure a toehold in this rich land to the east, our merchants could become wealthy beyond imagination."
   
   tyh_expand_the_doges_palace_title:0 "Expand The Archon's Palace"
   tyh_expand_the_doges_palace_desc:0 "The Archon's Palace has been built, renovated, and rebuilt many times over the centuries. A further expansion, more ornate than any other in our realm's history, would do much to bolster the standing of the office and our nation as a whole."
   
-  tyh_expand_the_terraferma_title:0 "Reign in the Trading Enclaves"
+  tyh_expand_the_terraferma_title:0 "The Trading Enclaves"
   tyh_expand_the_terraferma_desc:0 "In the last centuries of relative peace, our trading vassals have taken more and more independance and now threaten our stability. Before any further expansion is done, we must reign them in and ensure their loyalty."
   
   tyh_north_italian_rivals_title:0 "Italian Rivals"
   tyh_north_italian_rivals_desc:0 "Our nation will never be secure as long as our envious rivals have the strength and the reach to strike us at any moment. We must be proactive, and smash our enemies in Italy before they can smash us!"
   
-  tyh_challenge_papal_supremacy_title:0 "Normalize relations with the Pope"
+  tyh_challenge_papal_supremacy_title:0 "Relations with the Pope"
   tyh_challenge_papal_supremacy_desc:0 "We have long maintained a certain understanding with the Papacy. The Pope would not meddle in the affairs of our churchmen, and we would not meddle in the affairs of the Pope. These days, however, the Papacy has grown more assertive, even as our own power grows, and has begun involving itself in Church affairs across Europe. It is time for us to remind the Pope of our old arrangement, and check the Papacy's grasps at power."
   
-  wof_ven_nuova_promissione_ducale_title:0 "Promissione Ducale"
-  wof_ven_nuova_promissione_ducale_desc:0 "The Promissione Ducale is the oath of office all candidates must swear by to become the new Doge of Venice. It outlines the duties of the Doge, and states the limits on the Doge's powers. Over the years, however, some of the checks have... waned, a little. If we were to draft a new primissione ducale, one that more firmly restates our values and the roles envisioned for the Doge, not only would our government be strengthened, but more virtuous candidates for office might step forward as well."
+  tyh_nuova_promissione_ducale_title:0 "Admiral of the Mediteranean"
+  tyh_nuova_promissione_ducale_desc:0 "Our Grand Archons are also the head of our military and navies. While it has mostly been an honorary title in the past, one important step to ensure their strength will be thorough tests and challenges to ensure our leaders will be the most capable."
   
-  wof_ven_standardize_relazioni_title:0 "Standardize Relazioni"
-  wof_ven_standardize_relazioni_desc:0 "The 'Relazioni' are the reports our ambassadors send to the government, detailing the political, financial, and social state of the countries they serve in. These documents are essential for both our own diplomatic efforts and for maintaining the competitive advantage of our merchants abroad, but it is an increasingly common practice for copies of relazioni to be published and made available to anybody willing to pay a high price for them. This is a threat to our own diplomacy and security. We must crack down on these publications, and establish a common, secure system for the writing and dissemination of relazioni."
+  tyh_standardize_relazioni_title:0 "World Overture"
+  tyh_standardize_relazioni_desc:0 "Despite centuries of trade in the Mediterranean, our people are still rather closed and hostile to change. We must turn to other countries and find there innovations in the ways of governance."
   
-  wof_ven_destroy_austria_title:0 "Destroy Austria"
-  wof_ven_destroy_austria_desc:0 "Austria has been a perennial problem for us over the centuries. Their rulers have threatened us, cajoled us, and tried to dictate terms to us on numerous occasions. There is only one way the Austrian threat will stop, and that is with the utter defeat of Austria itself. If Austria ceased to be a problem, then there would be one less challenge to our political and diplomatic mastery in Europe."
+  tyh_destroy_austria_title:0 "Destroy Naples"
+  tyh_destroy_austria_desc:0 "Naples has been a friend over the centuries. Their rulers have helped us on numerous occasions, and we helped them back. Sadly, our families have recently been estranged, and they have opposed our peaceful attempts to resolve the situation. We must deal with them in other ways before things get worse for us."
   
   wof_ven_new_pilings_title:0 "New Pilings"
   wof_ven_new_pilings_desc:0 "Venice is build atop countless wooden pilings, some dating back centuries. Some renovation is long overdue."
@@ -295,26 +295,12 @@
  flavor_ven.47.t:0 "The Loredanian Academy"
  flavor_ven.47.d:0 "In [GetYear], the Academy, known as the 'Incogniti,' has drawn influential literary figures both within and beyond Venice who align with a libertine agenda and advocate for the city's political and cultural independence. Figures like Girolamo Brusoni and Ferrante Pallavicino, among others, are associated with this covert group, marked by its use of subterfuges like paradox and allegory to avoid criticism. Operating discreetly, members often employ secret language and publish anonymously, with their philosophy influenced by Trajano Boccalini, embracing Aristotelian naturalism from the University of Padua.\n This clandestine academy, despite facing censorship and finding its works on the Index, boldly challenges societal norms through satirical compositions and hybrid genres. Shaped by the ideologies of Machiavelli, Paolo Sarpi, and others, they critique tyranny in historical writings. Surprisingly, the Accademia degli Incogniti becomes a key force in advancing musical theatre in Venice, establishing the Teatro Novissimo."
  flavor_ven.47.a:0 "Let there be culture and light!"
- flavor_ven.48.t:0 "The Golden Republic"
- flavor_ven.48.d:0 "Our successes in the field of politics, trade, and scholarly studies have led to many proclaim our current era as the 'Era of the Golden Republic'. This of course references the zenith of our wealth, a culmination of our efforts as a people and the celebration of our culture and art, as a means to immortalize our legacy in the books of history."
- flavor_ven.48.a:0 "Well worth our efforts!"
- flavor_ven.48.b:0 "Let us don the new colors only."
- flavor_ven.48.c:0 "A new title will suffice."
- flavor_ven.48.e:0 "We will accept the influx of new ideas and traditions."
- flavor_ven.48.f:0 "Our people are happy as they are!"
  flavor_ven.50.t:0 "The Venetian Arsenal"
  flavor_ven.50.d:0 "Our maritime endeavors and legendary ship-building skills have earned our shipwrights a name in the field. The heart of our vessel-related operations is none other than the Arsenal, situated in Venice. Boasting a strategic location, this maritime complex plays a vital role in the city's maritime prowess. From thriving shipbuilding activities to the innovation and pioneering of vessel armaments, this is the backbone that ensures our dominance at sea."
  flavor_ven.50.a:0 "A celebrated part of our naval heritage!"
- flavor_ven.51.t:0 "The Basilica dei Santi Giovanni e Paolo"
- flavor_ven.51.d:0 "Our city is decorated with many architectural marvels across its urban domain. From frescos to statues and a myriad of upcoming artists who wish to stand on the shoulders of giants and make a name for themselves. The latest such jewel to adorn our capital is none other than the minor basilica of San Zanipolo.\n\nIts large brick edifice is designed in Italian gothic style and the grounds serve as the primary Dominican church of our great people. The work is dedicated to John and Paul, two legendary martyrs whose presence was first cataloged around the 4th century."
- flavor_ven.51.a:0 "A marvel of architecture and strength of faith!"
  flavor_ven.53.t:0 "The Venetian Navy"
  flavor_ven.53.d:0 "Few countries can attest or even match our level of expertise when it comes to maritime affairs. Our affinity in trade and the matters of the sea has constituted us as one of the greatest dominators of the Mediterranean. Our tradition spurs from a love and adoration of the water which serves as both our path to greatness and the primary defense of our great capital, in [Root.Capital.GetCapitalName]."
  flavor_ven.53.a:1 "We espouse thee, O sea, as a sign of true and perpetual dominion."
- tyrhennia_civil_war.54.t:0 "Joint Engineering Effort"
- tyrhennia_civil_war.54.d:0 "Recently, dignitaries from Tyhrennia have approached us with a lucrative proposal. According to their engineering plans and measurements of the land between the Red Sea and the Mediterranean, it may be possible to dig a canal long and wide enough to facilitate maritime travel between the two bodies of water. In exchange for their efforts, we would give them sovereignty over the lands surrounding the new canal as a sign of friendship, cooperation, and continued prosperity."
- tyrhennia_civil_war.54.a:0 "Deal!"
- tyrhennia_civil_war.54.b:0 "We care not for such endeavors."
   
   #Tooltips
 
@@ -434,8 +420,10 @@
  desc_ven_source_of_spice_modifier:0 "This island is one of the largest sources of cloves in the entire world."
  ven_wealth_of_india_modifier:0 "Wealth of India"
  desc_ven_wealth_of_india_modifier:0 "The domain East of Aden is home to some of the most affluent and powerful empires in the history of humankind. To partake in their riches is a great privilege."
- tyh_autonomous_venetian_patriarchate:0 "Autonomous Tyrhennian Patriarchate" 
-  
+ tyh_autonomous_venetian_patriarchate:0 "Autonomous Tyrhennian Patriarchate"
+ tyh_standardized_relazioni:0 "Governement Innovations from Abroad"
+ tyh_political_monopolist:0 "Political Monopolist"
+ tyh_colonial_outpost_modifier:0 "Tyrhennian Colonial Outpost"
   
   #Local Organizations
  scuola_grande:0 "Scuola Grande"
