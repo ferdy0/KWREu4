@@ -1140,7 +1140,7 @@ venice_missions_slot_3 = {
 				type = ven_cradle_of_opulence
 				amount = 25
 			}
-            add_prestige_or_monarch_power = { amount = 200 }
+            add_prestige_or_monarch_power = { amount = 50 }
 		}
 	}
 
@@ -1531,56 +1531,60 @@ venice_missions_slot_4 = {
 	
 	has_country_shield = yes
 
-	wof_ven_new_pilings = {
+	tyh_new_pilings = {
 		icon = new_pilings
 		position = 1
 		required_missions = {  }
 		
 		provinces_to_highlight = {
-			province_id = 112
+			province_id = 2986
 		}
 		
 		trigger = {
-			112 = {
+			2986 = {
 				owned_by = ROOT
 				grown_by_development = 8
 			}
 		}
 		effect = {
-			112 = {
+			2986 = {
 				add_province_modifier = {
 					name = urban_expansion_modifier
 					duration = 7300
 				}
 			}
+			add_treasury = -150
 		}
 	}
 
-	ven_sempiterni_compagnie = {
+	tyh_sempiterni_compagnie = {
 		icon = ven_sempiterni_compagnie
 		position = 2
-		required_missions = { wof_ven_new_pilings }
+		required_missions = { tyh_new_pilings }
 		provinces_to_highlight = {
-			province_id = 112 
+			province_id = 2986
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			112 = {
+			2986 = {
 				num_of_buildings_in_province = 4
 				owned_by = ROOT
 			}
 		}
 		effect = {
-			country_event = { id = flavor_ven.46 }
-			custom_tooltip = event_insight_flavor_ven.46
-			
+            define_advisor = {
+                type = artist
+                cost_multiplier = 0.1
+                skill = 3
+            }
+            add_adm_power = 100
 		}
 	}
 
-	ven_modern_banking_system = {
+	tyh_modern_banking_system = {
 		icon = medici_bank_ledgers 
 		position = 3
-		required_missions = { ven_sempiterni_compagnie }
+		required_missions = { tyh_sempiterni_compagnie }
 		trigger = {
 			OR = {
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -1603,15 +1607,8 @@ venice_missions_slot_4 = {
 			}
 		}
 		effect = {
-			if = {
-				limit = { has_reform = venice_merchants_reform }
-				custom_tooltip = ven_reduce_cost_of_guild_interactions_tt
-				custom_tooltip = empty_line_tt
-			}
-			else = {
-				add_inflation = -3
-				add_years_of_income = 1
-			}
+			add_inflation = -3
+			add_years_of_income = 1
 			add_years_of_owned_provinces_production_income = {
 				years = 5
 				trigger = {
@@ -1622,10 +1619,10 @@ venice_missions_slot_4 = {
 		}
 	}
 
-	ven_academy_of_the_unknowns = {
+	tyh_academy_of_the_unknowns = {
 		icon = ven_academy_of_the_unknowns
 		position = 4
-		required_missions = { ven_modern_banking_system }
+		required_missions = { tyh_modern_banking_system }
 		provinces_to_highlight = {
 			NOT = { has_building = university }
 			owned_by = ROOT
@@ -1635,65 +1632,51 @@ venice_missions_slot_4 = {
 				has_building = university 
 				value = 10
 			}
-			112 = {
+			2986 = {
 				owned_by = ROOT 
 				has_building = university
 			}
 		}
 		effect = {
 			set_country_flag = ven_academy_of_the_unknowns_reward_flag
-			country_event = {
-				id = flavor_ven.47
-			}
-			custom_tooltip = event_insight_flavor_ven.47
+			change_ruler_stat = {
+                type = adm
+            	amount = 1
+            }
+            custom_tooltip = ven_academy_of_the_unknowns_reward_dlc_tt
 		}
 	}
 
-	wof_ven_the_francocracy = {
+	tyh_the_francocracy = {
 		icon = la_latinocrazia
 		position = 7
-		required_missions = { ven_army_republic wof_ven_expand_the_arsenal }
+		required_missions = { tyh_army_republic tyh_expand_the_arsenal }
 		
 		provinces_to_highlight = {
-			province_id = 151
+			province_id = 146
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			151 = { country_or_non_sovereign_subject_holds = ROOT }
+			146 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
 			add_country_modifier = {
-				name = ven_conquest_of_constantinople_modifier
+				name = tyh_conquest_of_athens_modifier
 				duration = 5475
 			}
-			if = {
-				limit = {
-					151 = { 
-						owned_by = ROOT 
-						NOT = { religion = ROOT }
-						NOT = { culture = ROOT }
-					}
-				}
-				151 = {
-					change_culture = ROOT 
-					change_religion = ROOT
-				}
-			}
-			else = {
-				151 = {
-					add_base_tax = 1
-					add_base_tax = 1
-					add_base_manpower = 1
-				}
+			146 = {
+				add_base_tax = 1
+				add_base_tax = 1
+				add_base_manpower = 1
 			}
 			
 		}
 	}
 
-	ven_flagship = {
+	tyh_flagship = {
 		icon = mission_rb_grow_the_channel
 		position = 8
-		required_missions = { wof_ven_expand_the_terraferma }
+		required_missions = { tyh_expand_the_terraferma }
 		trigger = {
 			if = {
 				limit = { has_dlc = "Golden Century" }
@@ -1707,17 +1690,18 @@ venice_missions_slot_4 = {
 			capital_scope = { base_production = 15 }
 		}
 		effect = {
-			country_event = {
-				id = flavor_ven.53
-			}
-			custom_tooltip = event_insight_flavor_ven.53
+			add_navy_tradition = 20
+            add_mercantilism_or_monarch_power = { amount = 3 }
+            capital_scope = {
+            	add_base_production = 1
+            }
 		}
 	}
 
-	ven_med_power = {
+	tyh_med_power = {
 		icon = mission_dominate_the_mediterranean
 		position = 9
-		required_missions = { ven_flagship }
+		required_missions = { tyh_flagship }
 		trigger = {
 			navy_size = 200
 			OR = {
@@ -1727,16 +1711,16 @@ venice_missions_slot_4 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = ven_meditteranean_patrols_modifier
+				name = tyh_meditteranean_patrols_modifier
 				duration = 9125
 			}
 		}
 	}
 
-	wof_ven_contest_genoese_trade = {
+	tyh_contest_genoese_trade = {
 		icon = mission_sea_battles
 		position = 10
-		required_missions = {ven_genoa }
+		required_missions = { tyh_genoa }
 		
 		provinces_to_highlight = {
 			province_id = 1298
@@ -1764,9 +1748,9 @@ venice_missions_slot_4 = {
 		}
 	}
 
-	ven_discover_north_america = {
+	tyh_discover_north_america = {
 		icon = mission_establish_high_seas_navy
-		required_missions = { ven_exploration_missions }
+		required_missions = { tyh_exploration_missions }
 		position = 12
 		provinces_to_highlight = {
 			if = {
@@ -1807,20 +1791,20 @@ venice_missions_slot_4 = {
 			}
 			else = { add_adm_power = 50 add_dip_power = 50 add_mil_power = 50 }
 			add_country_modifier = {
-				name = ven_venetian_new_world_charters
+				name = tyh_venetian_new_world_charters
 				duration = 7300
 			}
 		}
 	}
 
-	ven_china = {
+	tyh_china = {
 		icon = mission_open_up_china
 		position = 14
-		required_missions = { wof_ven_this_mythical_realm }
+		required_missions = { tyh_this_mythical_realm }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 667
-				province_id = 668
+				province_id = 2160
+				province_id = 666
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -1828,8 +1812,8 @@ venice_missions_slot_4 = {
 			}
 		}
 		trigger = {
-			owns_core_province = 667
-			owns_core_province = 668
+			owns_core_province = 2160
+			owns_core_province = 666
 		}
 		effect = {
 			if = {
@@ -1841,26 +1825,7 @@ venice_missions_slot_4 = {
 				}
 			}
 			add_mercantilism_or_monarch_power = { amount = 2 }
-			custom_tooltip = ven_claims_on_every_coastal_cot_china_tt
 			hidden_effect = {
-				south_china_region = {
-					limit = {
-						has_port = yes 
-						province_has_center_of_trade_of_level = 1
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				north_china_region = {
-					limit = {
-						has_port = yes 
-						province_has_center_of_trade_of_level = 1
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
 				japan_region = {
 					limit = {
 						has_port = yes 

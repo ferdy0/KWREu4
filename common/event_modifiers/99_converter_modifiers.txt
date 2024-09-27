@@ -264,3 +264,15 @@ tyh_political_monopolist = {
 tyh_colonial_outpost_modifier = {
 	trade_value = 3
 }
+tyh_conquest_of_athens_modifier = {
+	country_diplomatic_power = 1
+	tolerance_own = 1
+}
+tyh_meditteranean_patrols_modifier = {
+	navy_tradition_decay = -0.01
+	galley_power = 0.2
+}
+tyh_venetian_new_world_charters = {
+	colony_cost_modifier = -0.25
+	colony_development_boost = 1
+}

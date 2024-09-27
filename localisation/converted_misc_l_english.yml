@@ -206,20 +206,20 @@
  tyh_spice_islands_desc:0 "The legendary sought-after spices that originate from the Far East have propped up generations of merchants and warlords. We must seek their source and through it we shall control the world."
   
   #Slot 4
- ven_sempiterni_compagnie_title:0 "Sempiterni Compagnie"
- ven_sempiterni_compagnie_desc:0 "The Compagnie della Calza, thriving in the enchanting ambiance of Venice, draws its name from distinctive hosiery worn by members. Established in the mid-15th century, they organize lavish feasts, captivating games, and renowned spectacles for the Venetian nobility. These associations, with names inspired by virtues or guilds, distinguish themselves through stocking hues and embroidered initials. Grand events, including masked processions, boat races, and theatrical productions, unfold amidst the splendor of Venice. Notably, the Festa della Sensa celebrates the city's union with the sea, featuring intricate rituals in the presence of foreign ambassadors and dignitaries."
- ven_modern_banking_system_title:0 "A Modern Banking System"
- ven_modern_banking_system_desc:0 "The exchange of loans, the proper bookkeeping of our finances, and the flow of coin in our markets must be regulated for the betterment and enrichment of our citizens and merchants, at home and abroad!"
- ven_academy_of_the_unknowns_title:1 "Halls of Knowledge"
- ven_academy_of_the_unknowns_desc:0 "We must work tirelessly to captivate knowledge and grow our understanding of the world around us by erecting halls of knowledge, a sign of our continued prosperity."
- ven_flagship_title:0 "Develop the Galea Sottile"
- ven_flagship_desc:0 "Whilst we seem to have a dominant position in the Adriatic and the Mediterranean in general, we must not rest easy on the fruits of our labor. The continued innovation of our maritime vessels is vital for our continued stability."
- ven_med_power_title:0 "Sea Between Lands"
- ven_med_power_desc:0 "The sea that engulfs our domain and protects our people from hostile threats, often requires mastery and strength to tame. Our resilience to master navigation and overseas trade will give us unparalleled knowledge and experience."
- ven_discover_north_america_title:0 "The Western Horizon"
- ven_discover_north_america_desc:0 "To the West lies a large ocean that stands guard between us and untold wealth. We must cross and charter the great seas in an effort to understand the world around us."
- ven_china_title:0 "Ports in Canton"
- ven_china_desc:0 "Our reports are clear as to the wealth stored in the domain of the Chinese Emperor. A deal with him and access to his people's wealth will certainly give us an edge back across our markets back home."
+ tyh_sempiterni_compagnie_title:0 "African Influences"
+ tyh_sempiterni_compagnie_desc:0 "Our close ties with Africa have not only guaranteed our safety. The Berber culture they bring has slowly permeated our society, and brought new arts and techniques that we would not have discovered otherwise. Their people are improving our society as a whole."
+ tyh_modern_banking_system_title:0 "A Modern Banking System"
+ tyh_modern_banking_system_desc:0 "The exchange of loans, the proper bookkeeping of our finances, and the flow of coin in our markets must be regulated for the betterment and enrichment of our citizens and merchants, at home and abroad!"
+ tyh_academy_of_the_unknowns_title:1 "Halls of Knowledge"
+ tyh_academy_of_the_unknowns_desc:0 "We must work tirelessly to captivate knowledge and grow our understanding of the world around us by erecting halls of knowledge, a sign of our continued prosperity."
+ tyh_flagship_title:0 "Develop the Galea Significato"
+ tyh_flagship_desc:0 "Whilst we seem to have a dominant position in the Mediterranean, we must not rest easy on the fruits of our labor. The continued innovation of our maritime vessels is vital for our continued stability."
+ tyh_med_power_title:0 "Sea Between Lands"
+ tyh_med_power_desc:0 "The sea that engulfs our domain and protects our people from hostile threats, often requires mastery and strength to tame. Our resilience to master navigation and overseas trade will give us unparalleled knowledge and experience."
+ tyh_discover_north_america_title:0 "The Western Horizon"
+ tyh_discover_north_america_desc:0 "To the West lies a large ocean that stands guard between us and untold wealth. We must cross and charter the great seas in an effort to understand the world around us."
+ tyh_china_title:0 "Ports in the Far East"
+ tyh_china_desc:0 "Our reports are clear as to the wealth stored in the domain of the Chinese Emperor. A deal with him and access to his people's wealth will certainly give us an edge back across our markets back home."
   
   #Slot 5
  
@@ -259,14 +259,14 @@
   tyh_destroy_austria_title:0 "Destroy Naples"
   tyh_destroy_austria_desc:0 "Naples has been a friend over the centuries. Their rulers have helped us on numerous occasions, and we helped them back. Sadly, our families have recently been estranged, and they have opposed our peaceful attempts to resolve the situation. We must deal with them in other ways before things get worse for us."
   
-  wof_ven_new_pilings_title:0 "New Pilings"
-  wof_ven_new_pilings_desc:0 "Venice is build atop countless wooden pilings, some dating back centuries. Some renovation is long overdue."
+  tyh_new_pilings_title:0 "Architectural Renewal"
+  tyh_new_pilings_desc:0 "Cagliari is a city with more than 500 years of history at this point. We must renovate the city center to make it fit for the years to come."
   
-  wof_ven_the_francocracy_title:0 "The Francocracy"
-  wof_ven_the_francocracy_desc:0 "Following the Fourth Crusade, we established several lordships in former Byzantine lands, and for a while helped maintain their presence in the region. The Greeks denigrated these realms as the 'Frankokratia', the rule of the 'Franks', but for us, they were useful tools for extending our power. It was a grand time to be a Venetian. The time is ripe to re-establish our presence in Constantinople, the real center of power in the area, but this time we should play a more active role in the region's administration."
+  tyh_the_francocracy_title:0 "The Lost Dynasty"
+  tyh_the_francocracy_desc:0 "Following the last true Crusade, Constantinople was reclaimed, and our dynasty, through Africa, was put on its throne. After centuries of Byzantine interference, our dynasty has been pushed around and ended up ruling Greece before being ousted. We must correct that mistake, and reconquer our past."
   
-  wof_ven_contest_genoese_trade_title:0 "Contest Genoese Trade"
-  wof_ven_contest_genoese_trade_desc:0 "Genoa has long been a thorn in our side, and the growing power of Western Mediterranean trade is simply strengthening their hand and making them more of a threat to us. We must do something about their sources of trade- if we can cut into their income, they won't be nearly wealthy enough to seriously contest our power, and that will enable us to humiliate them further."
+  tyh_contest_genoese_trade_title:0 "Contest Genoese Trade"
+  tyh_contest_genoese_trade_desc:0 "Genoa has long been a thorn in our side, and the growing power of Western Mediterranean trade is simply strengthening their hand and making them more of a threat to us. We must do something about their sources of trade- if we can cut into their income, they won't be nearly wealthy enough to seriously contest our power, and that will enable us to humiliate them further."
   
   wof_ven_plague_doctor_training_title:0 "Plague Doctor Training"
   wof_ven_plague_doctor_training_desc:0 "Plague doctors are, for the most part, amateurs. Professional physicians and surgeons tend after the most well-off, while second-rate plague doctors roam the land, tending after people who cannot afford the best treatments. Their quality varies greatly, but if we instituted a training program to provide a standard knowledge base for plague doctors, the health of people in the provinces would increase dramatically."
@@ -424,6 +424,9 @@
  tyh_standardized_relazioni:0 "Governement Innovations from Abroad"
  tyh_political_monopolist:0 "Political Monopolist"
  tyh_colonial_outpost_modifier:0 "Tyrhennian Colonial Outpost"
+ tyh_conquest_of_athens_modifier:0 "Tyrhennian Conquest of Greece"
+ tyh_meditteranean_patrols_modifier:0 "Mediterranean Patrols"
+ tyh_venetian_new_world_charters:0 "Tyhrennian New World Charters"
   
   #Local Organizations
  scuola_grande:0 "Scuola Grande"
