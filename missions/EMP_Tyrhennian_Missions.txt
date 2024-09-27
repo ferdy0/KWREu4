@@ -63,293 +63,6 @@ tyhrennian_missions_slot_1 = {
 	}
 }
 
-venice_missions_slot_1_dummy = {
-	slot = 1
-	generic = no
-	ai = yes
-	potential_on_load = {
-		has_dlc = "Winds of Change"
-	}
-	
-	potential = {
-		has_dlc = "Winds of Change"
-		tag = TYH
-		NOT = { map_setup = map_setup_random }
-		NOT = { has_country_flag = ven_standing_army_missions_flag }
-		NOT = { has_country_flag = ven_mercenary_army_missions_flag }
-		NOT = { has_country_flag = ven_navy_missions_flag }
-	}
-
-	has_country_shield = yes
-
-	ven_dummy_mission_1 = {
-		icon = mission_locked_mission
-		position = 7
-		required_missions = { tyh_army_republic }
-		provinces_to_highlight = {
-
-		}
-		trigger = { always = no }
-		effect = {
-			custom_tooltip = complete_army_republic_to_preview_this_mission_tt
-		}
-	}
-
-	ven_dummy_mission_2 = {
-		icon = mission_locked_mission
-		position = 8
-		required_missions = { ven_dummy_mission_1 }
-		provinces_to_highlight = {
-
-		}
-		trigger = { always = no }
-		effect = {
-			custom_tooltip = complete_army_republic_to_preview_this_mission_tt
-		}
-	}
-}
-
-
-tyh_missions_slot_1_standing_army = {
-	slot = 1
-	generic = no
-	ai = yes
-	potential_on_load = {
-		has_dlc = "Winds of Change"
-	}
-	
-	potential = {
-		has_dlc = "Winds of Change"
-		tag = TYH
-		NOT = { map_setup = map_setup_random }
-		has_country_flag = tyh_standing_army_missions_flag
-		NOT = { has_country_flag = tyh_mercenary_army_missions_flag }
-		NOT = { has_country_flag = tyh_navy_missions_flag }
-	}
-	has_country_shield = yes
-	tyh_standing_army_mission_1 = {
-		icon = protect_against_austria
-		position = 7
-		provinces_to_highlight = {
-
-		}
-		required_missions = { tyh_army_republic }
-		trigger = {
-			not_in_mission_preview_mode = { key = VEN }
-			custom_trigger_tooltip = {
-				tooltip = has_completed_either_idea_group_tt
-				OR = {
-					full_idea_group = offensive_ideas
-					full_idea_group = defensive_ideas
-					full_idea_group = quality_ideas
-					full_idea_group = quantity_ideas
-				}
-			}
-			if = {
-				limit = { has_dlc = "Cradle of Civilization" }
-				army_professionalism = 0.2
-			}
-			else = {
-				OR = {
-					army_tradition = 50
-					army_size = 50
-				}
-			}
-			has_mil_advisor_3 = yes
-		}
-		effect = {
-			if = {
-				limit = { full_idea_group = offensive_ideas }
-				custom_tooltip = ven_offensive_ideas_yes_tt
-			}
-			else = {
-				custom_tooltip = ven_offensive_ideas_no_tt
-			}
-			if = {
-				limit = { full_idea_group = defensive_ideas }
-				custom_tooltip = ven_defensive_ideas_yes_tt
-			}
-			else = {
-				custom_tooltip = ven_defensive_ideas_no_tt
-			}
-			if = {
-				limit = { full_idea_group = quality_ideas }
-				custom_tooltip = ven_quality_ideas_yes_tt
-			}
-			else = {
-				custom_tooltip = ven_quality_ideas_no_tt
-			}
-			if = {
-				limit = { full_idea_group = quantity_ideas }
-				custom_tooltip = ven_quantity_ideas_yes_tt
-			}
-			else = {
-				custom_tooltip = ven_quantity_ideas_no_tt
-			}
-			hidden_effect = {
-				if = { 
-					limit = { full_idea_group = offensive_ideas }
-					set_country_flag = ven_offensive_reward_flag
-				}
-				if = { 
-					limit = { full_idea_group = defensive_ideas }
-					set_country_flag = ven_defensive_reward_flag
-					every_owned_province = {
-						limit = {
-							has_fort_building_trigger = yes
-							NOT = { has_province_modifier = ven_defensive_stance_modifier } 
-						}
-						add_province_modifier = {
-							name = ven_defensive_stance_modifier
-							duration = -1
-							hidden = yes
-						}
-					}
-				}
-				if = { 
-					limit = { full_idea_group = quality_ideas }
-					set_country_flag = ven_quality_reward_flag
-				}
-				if = { 
-					limit = { full_idea_group = quantity_ideas }
-					set_country_flag = ven_quantity_reward_flag
-				}
-			}
-		}
-	}
-
-	tyh_standing_army_mission_2 = {
-		icon = ven_standing_army_mission_2 
-		position = 8
-		required_missions = { tyh_standing_army_mission_1 }
-		provinces_to_highlight = {
-
-		}
-		trigger = {
-			not_in_mission_preview_mode = { key = VEN }
-			num_of_owned_provinces_with = {
-				value = 10
-				has_building = soldier_households
-			}
-			num_of_owned_provinces_with = {
-				value = 25
-				has_manpower_building_trigger = yes
-			}
-			num_of_owned_provinces_with = {
-				value = 25
-				has_forcelimit_building_trigger = yes
-			}
-			OR = {
-				army_size = 200
-				has_global_modifier_value = {
-					which = discipline
-					value = 0.15
-				}
-				if = {
-					limit = { has_dlc = "Cradle of Civilization" }
-					army_professionalism = 0.5
-				}
-				else = { army_tradition = 70 }
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = tyh_iron_wall_of_italy_modifier
-				duration = -1
-			}
-		}
-	}
-}
-
-tyh_missions_slot_1_mercenary_army = {
-	slot = 1
-	generic = no
-	ai = yes
-	potential_on_load = {
-		has_dlc = "Winds of Change"
-	}
-	
-	potential = {
-		has_dlc = "Winds of Change"
-		tag = TYH
-		NOT = { map_setup = map_setup_random }
-		NOT = { has_country_flag = ven_standing_army_missions_flag }
-		has_country_flag = ven_mercenary_army_missions_flag
-		NOT = { has_country_flag = ven_navy_missions_flag }
-	}
-	has_country_shield = yes
-	tyh_mercenary_army_mission_1 = {
-		icon = venture_captains
-		position = 7
-		provinces_to_highlight = {
-
-		}
-		required_missions = { tyh_army_republic }
-		trigger = {
-			not_in_mission_preview_mode = { key = VEN }
-			full_idea_group = mercenary_ideas
-			if = {
-				limit = {
-					has_dlc = "Domination"
-					NOT = { primary_culture = swiss }
-				}
-				has_reform = doppelsoldner_reform
-			}
-			else = { reform_level = 5 }
-		}
-		effect = {
-			if = {
-				limit = {
-					has_dlc = "Domination"
-					NOT = { primary_culture = swiss }
-				}
-				custom_tooltip = ven_elite_mercenaries_evolved_tt
-			}
-			else = {
-				add_army_tradition_or_mil_power = {
-					amount = 20
-				}
-			}
-			if = {
-				limit = { ai = no }
-				custom_tooltip = ven_allow_replenishment_of_mercs_tt
-				set_country_flag = ven_condottieri_flag
-			}
-			else = { add_mil_power = 100 }
-		}
-	}
-
-	tyh_mercenary_army_mission_2 = {
-		icon = ven_mercenary_army_mission_2
-		position = 8
-		required_missions = { tyh_mercenary_army_mission_1 }
-		provinces_to_highlight = {
-
-		}
-		trigger = {
-			not_in_mission_preview_mode = { key = VEN }
-			num_of_mercenaries = 5
-			if = {
-				limit = {
-					OR = {
-						has_dlc = "Emperor"
-						has_dlc = "Rights of Man"
-					}
-				}
-				is_great_power = yes
-				total_development = 700
-			}
-			else = { total_development = 700 }
-		}
-		effect = {
-			add_country_modifier = {
-				name = tyh_men_of_war_modifier
-				duration = -1
-			}
-		}
-	}
-}
-
 tyh_missions_slot_1_navy = {
 	slot = 1
 	generic = no
@@ -361,10 +74,6 @@ tyh_missions_slot_1_navy = {
 	potential = {
 		has_dlc = "Winds of Change"
 		tag = TYH
-		NOT = { map_setup = map_setup_random }
-		NOT = { has_country_flag = ven_standing_army_missions_flag }
-		NOT = { has_country_flag = ven_mercenary_army_missions_flag }
-		has_country_flag = ven_navy_missions_flag
 	}
 	has_country_shield = yes
 	tyh_navy_mission_1 = {
@@ -374,7 +83,6 @@ tyh_missions_slot_1_navy = {
 			tyh_army_republic
 		}
 		trigger = {
-			not_in_mission_preview_mode = { key = VEN }
 			OR = {
 				full_idea_group = naval_ideas
 				full_idea_group = maritime_ideas
@@ -506,11 +214,10 @@ tyh_missions_slot_1_navy = {
 		position = 8
 		required_missions = { tyh_navy_mission_1 }
 		provinces_to_highlight = {
-			province_id = 112
+			province_id = 2986
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			not_in_mission_preview_mode = { key = VEN }
 			navy_tradition = 85
 			navy_size = 250
 			if = {
@@ -600,6 +307,7 @@ venice_missions_slot_1_continued = {
 		icon = mission_diplomatic_relation
 		position = 12
 		trigger = {
+		    north_america = { has_discovered = NOR }
 		    OR = {
                 Z05 = {
                     has_opinion = {
@@ -1156,17 +864,6 @@ venice_missions_slot_3 = {
 			num_of_galley = 10
 		}
 		effect = {
-			if = {
-				limit = { ai = no }
-				enable_branching_mission_review_without_ai = { key = VEN }
-			}
-			else = {
-				random_list = {
-					10 = { set_country_flag = ven_standing_army_missions_flag }
-					10 = { set_country_flag = ven_mercenary_army_missions_flag }
-					10 = { set_country_flag = ven_navy_missions_flag }
-				}
-			}
 			calabria_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
@@ -1242,6 +939,7 @@ venice_missions_slot_3 = {
 		icon = mission_look_west
 		position = 11
 		trigger = {
+		    north_america = { has_discovered = NOR }
 			OR = {
 				exploration_ideas = 1 
 				num_of_colonists = 1 
@@ -1638,12 +1336,12 @@ venice_missions_slot_4 = {
 			}
 		}
 		effect = {
-			set_country_flag = ven_academy_of_the_unknowns_reward_flag
+			set_country_flag = tyh_academy_of_the_unknowns_reward_flag
 			change_ruler_stat = {
                 type = adm
             	amount = 1
             }
-            custom_tooltip = ven_academy_of_the_unknowns_reward_dlc_tt
+            custom_tooltip = tyh_academy_of_the_unknowns_reward_dlc_tt
 		}
 	}
 
@@ -1856,14 +1554,14 @@ venice_missions_slot_5 = {
 	
 	has_country_shield = yes
 
-	ven_patronize_the_scuole_grandi = {
+	tyh_patronize_the_scuole_grandi = {
 		icon = ven_patronize_the_scuole_grandi
 		position = 1
 		required_missions = {  }
 		provinces_to_highlight = {
 			if = {
 				limit = { has_dlc = "Golden Century" }
-				NOT = { holy_order = scuola_grande }
+				NOT = { holy_order = knights_hospitalier }
 			}
 			else = {
 				OR = {
@@ -1876,11 +1574,8 @@ venice_missions_slot_5 = {
 		trigger = {
 			if = {
 				limit = { has_dlc = "Golden Century" }
-				custom_trigger_tooltip = {
-					tooltip = capital_scuola_grande_tt
-					capital_scope = {
-						holy_order = scuola_grande
-					}
+				capital_scope = {
+					holy_order = knights_hospitalier
 				}
 			}
 			else = {
@@ -1897,7 +1592,7 @@ venice_missions_slot_5 = {
 					has_dlc = "Golden Century"
 					has_dlc = "Rule Britannia"
 				}
-				custom_tooltip = ven_establish_scuola_effect_tt
+				custom_tooltip = tyh_establish_scuola_effect_tt
 				change_innovativeness = 1
 			}
 			else = {
@@ -1910,10 +1605,10 @@ venice_missions_slot_5 = {
 		}
 	}
 
-	ven_movable_printing = {
+	tyh_movable_printing = {
 		icon = aldine_press
 		position = 2
-		required_missions = { ven_patronize_the_scuole_grandi wof_ven_new_pilings }		
+		required_missions = { tyh_patronize_the_scuole_grandi tyh_new_pilings }
 		trigger = {
 			OR = {
 				has_institution = printing_press
@@ -1934,25 +1629,23 @@ venice_missions_slot_5 = {
 		}
 		effect = {
 			define_advisor = {
-				name = "Ottaviano Petrucci"
 				type = natural_scientist
 				cost_multiplier = 0.25
 				skill = 3
 			}
-			custom_tooltip = empty_line_tt
 			capital_scope = {
 				add_province_modifier = {
-					name = ven_first_printshops_of_italy_modifier
+					name = tyh_first_printshops_of_italy_modifier
 					duration = 3650
 				}
 			}
 		}
 	}
 
-	wof_ven_plague_doctor_training = {
+	tyh_plague_doctor_training = {
 		icon = plague_doctor_training
 		position = 4
-		required_missions = { ven_movable_printing }
+		required_missions = { tyh_movable_printing }
 		
 		trigger = {
 			development_in_provinces = {
@@ -1962,47 +1655,21 @@ venice_missions_slot_5 = {
 		}
 		effect = {
 			remove_plague_events = yes
-			if = {
-				limit = { government = republic }
-				custom_tooltip = ven_lichking_rulers_tt
-				set_country_flag = ven_lichking_rulers_flag
-				hidden_effect = {
-					add_ruler_modifier = {
-						name = ven_plague_doctors_modifier
-						duration = -1
-						hidden = yes
-					}
-				}
-			}
 		}
 	}
 
-	wof_ven_expand_the_arsenal = {
+	tyh_expand_the_arsenal = {
 		icon = expand_the_arsenal
 		position = 6
 		provinces_to_highlight = {
-			province_id = 112
+			province_id = 2986
 		}
 		trigger = {
-			if = {
-				limit = { has_dlc = "Leviathan" }
-				112 = { 
-					OR = {
-						has_great_project = {
-							type = venetian_arsenal_gp
-							tier = 2
-						}
-						has_dock_building_trigger = yes
-					}
-				}
+			2986 = {
+				num_of_times_improved = 4
+				has_dock_building_trigger = yes
 			}
-			else = {
-				112 = { 
-					num_of_times_improved = 4 
-					has_dock_building_trigger = yes 
-				}
-			}
-			112 = { has_any_ongoing_construction = no }
+			2986 = { has_any_ongoing_construction = no }
 		}
 		effect = {
 			morea_area = {
@@ -2022,32 +1689,35 @@ venice_missions_slot_5 = {
 					}
 				}
 				add_permanent_claim = ROOT
-			}
-			151 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			country_event = {
-				id = flavor_ven.50 
-			}
-			custom_tooltip = event_insight_flavor_ven.50
+            }
+            2986 = {
+                if = {
+                    limit = { has_building = shipyard }
+                    remove_building = shipyard
+                    add_building_construction = {
+                        building = grand_shipyard
+                    }
+                }
+                else_if = {
+                    limit = { has_building = grand_shipyard }
+                    add_base_production = 3
+                }
+                else = { add_building = shipyard }
+            }
+            add_country_modifier = {
+                name = tyh_arsenal_marines
+                duration = -1
+            }
 		}
 	}
 
-	wof_ven_monopolize_adriatic_trade = {
+	tyh_monopolize_adriatic_trade = {
 		icon = mission_galleys_in_port
 		position = 7
-		required_missions = { wof_ven_expand_the_arsenal }
+		required_missions = { tyh_expand_the_arsenal }
 		
 		provinces_to_highlight = {
-			province_id = 137
+			province_id = 333
 			NOT = {
 				trade_share = {
 					country = ROOT
@@ -2056,7 +1726,7 @@ venice_missions_slot_5 = {
 			}
 		}
 		trigger = {
-			137 = {
+			333 = {
 				trade_share = {
 					country = ROOT
 					share = 25
@@ -2069,10 +1739,10 @@ venice_missions_slot_5 = {
 		}
 	}
 
-	wof_ven_reclaim_the_aegean = {
+	tyh_reclaim_the_aegean = {
 		icon = reclaim_the_aegean
 		position = 8
-		required_missions = { wof_ven_monopolize_adriatic_trade }
+		required_missions = { tyh_monopolize_adriatic_trade }
 		
 		provinces_to_highlight = {
 			area = aegean_archipelago_area
@@ -2127,10 +1797,10 @@ venice_missions_slot_5 = {
 		}
 	}
 
-	wof_ven_annex_cyprus = {
+	tyh_annex_cyprus = {
 		icon = kingdom_of_cyprus
 		position = 9
-		required_missions = { wof_ven_reclaim_the_aegean }
+		required_missions = { tyh_reclaim_the_aegean }
 		
 		provinces_to_highlight = {
 			province_id = 321
@@ -2171,10 +1841,10 @@ venice_missions_slot_5 = {
 		}
 	}
 
-	wof_ven_control_the_means_of_transaction = {
+	tyh_control_the_means_of_transaction = {
 		icon = control_the_means_of_transaction
 		position = 10
-		required_missions = { wof_ven_annex_cyprus }
+		required_missions = { tyh_annex_cyprus }
 		
 		provinces_to_highlight = {
 			OR = {
@@ -2219,58 +1889,10 @@ venice_missions_slot_5 = {
 		}
 	}
 
-	ven_triangle_trade = {
+	tyh_triangle_trade = {
 		icon = mission_the_triangle_trade
 		position = 12
-		required_missions = { ven_exploration_missions }
-		provinces_to_highlight = {
-			OR = {
-				AND = {
-					OR = {
-						if = {
-							limit = { is_random_new_world = no }
-							province_id = 1516
-						}
-						province_id = 1466
-						province_id = 358
-						province_id = 1320
-						province_id = 137
-					}
-					NOT = {
-						trade_share = {
-							country = ROOT
-							share = 50
-						}
-					}
-				}
-				AND = {
-					OR = {
-						province_id = 1293
-						province_id = 1295
-						province_id = 4346
-						province_id = 1322
-					}
-					NOT = {
-						trade_share = {
-							country = ROOT
-							share = 25
-						}
-					}
-				}
-				AND = {
-					OR = {
-						province_id = 1308
-						province_id = 1298
-					}
-					NOT = {
-						trade_share = {
-							country = ROOT
-							share = 85
-						}
-					}
-				}
-			}
-		}
+		required_missions = { tyh_exploration_missions }
 		trigger = {
 			358 = {
 				trade_share = {
@@ -2278,79 +1900,39 @@ venice_missions_slot_5 = {
 					share = 50
 				}
 			}
-			OR = {
-				AND = {
-					1298 = {
-						trade_share = {
-							country = ROOT
-							share = 85
-						}
+			AND = {
+				1298 = {
+					trade_share = {
+						country = ROOT
+						share = 50
 					}
-					if = {
-						limit = { is_random_new_world = no }
-						1516 = {
-							trade_share = {
-								country = ROOT
-								share = 50
-							}
-						}
-					}
-					1466 = {
+				}
+				if = {
+					limit = { is_random_new_world = no }
+					1516 = {
 						trade_share = {
 							country = ROOT
 							share = 50
-						}
-					}
-					1293 = {
-						trade_share = {
-							country = ROOT
-							share = 25
-						}
-					}
-					1295 = {
-						trade_share = {
-							country = ROOT
-							share = 25
 						}
 					}
 				}
-				AND = {
-					1308 = {
-						trade_share = {
-							country = ROOT
-							share = 85
-						}
+				1293 = {
+					trade_share = {
+						country = ROOT
+						share = 25
 					}
-					1320 = {
-						trade_share = {
-							country = ROOT
-							share = 50
-						}
-					}
-					137 = {
-						trade_share = {
-							country = ROOT
-							share = 50
-						}
-					}
-					1322 = {
-						trade_share = {
-							country = ROOT
-							share = 25
-						}
-					}
-					4346 = {
-						trade_share = {
-							country = ROOT
-							share = 25
-						}
+				}
+				1295 = {
+					trade_share = {
+						country = ROOT
+						share = 25
 					}
 				}
 			}
 		}
 		effect = {
 			add_country_modifier = {
-				name = ven_global_presence_modifier
+				name = tyh_global_presence_modifier
 				duration = -1
 			}
 			if = {
@@ -2496,10 +2078,10 @@ venice_missions_slot_5 = {
 		}
 	}
 
-	ven_coromandel = {
+	tyh_coromandel = {
 		icon = mission_coromandel_trade
 		position = 13
-		required_missions = { ven_aden_trade }
+		required_missions = { tyh_aden_trade }
 		provinces_to_highlight = {
 			province_id = 1340
 		}

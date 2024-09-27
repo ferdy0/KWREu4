@@ -276,3 +276,15 @@ tyh_venetian_new_world_charters = {
 	colony_cost_modifier = -0.25
 	colony_development_boost = 1
 }
+tyh_first_printshops_of_italy_modifier = {
+	technology_cost = -0.05
+	yearly_innovativeness = 0.2
+}
+tyh_arsenal_marines = {
+	allowed_marine_fraction = 0.25
+}
+tyh_global_presence_modifier = {
+	global_ship_cost = -0.05
+	naval_tradition_from_trade = 0.5
+	max_flagships = 1
+}
