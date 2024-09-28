@@ -334,15 +334,10 @@ venice_missions_slot_1_continued = {
                 }
             }
 		}
-		effect = { #TODO add event to buy province from toledo
-		    if = {
-		        limit = { CAN = exists }
-                add_casus_belli = {
-                    type = cb_vassalize_mission
-                    months = 360
-                    target = Z0H
-                }
-            }
+		effect = {
+		    367 = {
+		        owner = { country_event = { id = tyrhennia_civil_war.55 days = 10 } }
+		    }
 		}
 	}
 

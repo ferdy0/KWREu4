@@ -297,3 +297,12 @@ cagliari_harbor_buff_2 = {
 cagliari_harbor_buff_3 = {
     local_development_cost = -0.25
 }
+tunis_medina_buff_1 = {
+    trade_goods_size = 0.5
+}
+tunis_medina_buff_2 = {
+    trade_goods_size = 1
+}
+tunis_medina_buff_3 = {
+    trade_goods_size = 1.5
+}

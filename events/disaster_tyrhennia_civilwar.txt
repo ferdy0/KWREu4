@@ -647,3 +647,67 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = tyrhennia_civil_war.55
+	title = tyrhennia_civil_war.55.t
+	desc = tyrhennia_civil_war.55.d
+	picture = ARTWORK_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = tyrhennia_civil_war.55.a
+		ai_chance = { factor = 0.5 }
+		367 = {
+			remove_core = ROOT
+			add_core = TYH
+			cede_province = TYH
+		}
+		set_global_flag = has_sold_azores
+		TYH = {
+			country_event = { id = tyrhennia_civil_war.56 days = 10 }
+		}
+		add_treasury = 250
+	}
+
+	option = {
+		name = tyrhennia_civil_war.55.b
+		ai_chance = { factor = 0.5 }
+		367 = {
+            add_permanent_claim = TYH
+        }
+		set_global_flag = has_not_sold_azores
+		TYH = {
+			country_event = { id = tyrhennia_civil_war.56 days = 10 }
+		}
+	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.56
+	title = tyrhennia_civil_war.56.t
+	desc = tyrhennia_civil_war.56.d
+	picture = ARTWORK_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = tyrhennia_civil_war.56.a
+
+		trigger = {
+            has_global_flag = has_sold_azores
+       	}
+       	clr_global_flag = has_sold_azores
+		add_treasury = -250
+	}
+
+	option = {
+		name = tyrhennia_civil_war.56.b
+
+		trigger = {
+            has_global_flag = has_not_sold_azores
+       	}
+       	clr_global_flag = has_not_sold_azores
+	}
+}

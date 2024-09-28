@@ -21175,7 +21175,7 @@ tunis_medina = {
 	build_cost = 0
 	can_be_moved = no
 	move_days_per_unit_distance = 10
-	starting_tier = 1
+	starting_tier = 0
 	type = monument
 
 	build_trigger = {
@@ -21239,10 +21239,11 @@ tunis_medina = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 500
 		}
 		province_modifiers = {
 			province_trade_power_modifier = 0.25
+			trade_goods_size = 0.5
 		}
 		country_modifiers = {
 		    improve_relation_modifier = 0.1
@@ -21250,6 +21251,12 @@ tunis_medina = {
 		area_modifier = {
 		}
 		on_upgraded = {
+			2986 = {
+			    add_province_modifier = {
+            	    name = tunis_medina_buff_1
+            		duration = -1
+                }
+			}
 		}
 	}
 
@@ -21262,12 +21269,19 @@ tunis_medina = {
 		}
 		province_modifiers = {
 			province_trade_power_modifier = 0.5
+			trade_goods_size = 1
 		}
 		country_modifiers = {
 		    improve_relation_modifier = 0.2
 		    prestige = 0.25
         }
 		on_upgraded = {
+			2986 = {
+			    add_province_modifier = {
+            	    name = tunis_medina_buff_2
+            		duration = -1
+                }
+			}
 		}
 	}
 
@@ -21280,12 +21294,19 @@ tunis_medina = {
 		}
 		province_modifiers = {
 			province_trade_power_modifier = 0.75
+			trade_goods_size = 1.5
 		}
 		country_modifiers = {
 		    improve_relation_modifier = 0.3
 		    prestige = 0.5
         }
 		on_upgraded = {
+			2986 = {
+			    add_province_modifier = {
+            	    name = tunis_medina_buff_3
+            		duration = -1
+                }
+			}
 		}
 	}
 }
