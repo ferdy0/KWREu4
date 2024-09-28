@@ -1029,6 +1029,12 @@ venice_missions_slot_3 = {
 					key = TYH_ADEN_GOODS_KEY
 				}
 			}
+            4028 = {
+                add_permanent_claim = TYH
+            }
+            572 = {
+                add_permanent_claim = TYH
+            }
 
 			if = {
 				limit = {
