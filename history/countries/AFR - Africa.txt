@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = plutocratic_reform
 government_rank = 2
-technology_group = muslim
+technology_group = western
 religion = converted_dynamic_faith_113
 primary_culture = dynamic-berber-sardinian-culture-num1
 capital = 341

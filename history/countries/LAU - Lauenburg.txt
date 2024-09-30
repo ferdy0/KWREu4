@@ -2,11 +2,13 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
-religion = catholic
 primary_culture = lower_saxon
-capital = 1857
-fixed_capital = 1857
-1368.1.1= {
+religion = catholic
+capital = 1857	# Lauenburg
+fixed_capital = 1857 # Cannot move capital away from this province & no power cost to move to it
+
+# Lüneburg (Dukes of Braunschweig-Lüneburg)
+1368.1.1 = {
 	monarch = {
 		name = "Erich IV"
 		dynasty = "Askanier"
@@ -16,7 +18,8 @@ fixed_capital = 1857
 		mil = 2
 	}
 }
-1375.1.1= {
+
+1375.1.1 = {
 	heir = {
 		name = "Erich"
 		monarch_name = "Erich V"
@@ -29,7 +32,8 @@ fixed_capital = 1857
 		mil = 3
 	}
 }
-1411.1.1= {
+
+1411.1.1 = {
 	monarch = {
 		name = "Erich V"
 		dynasty = "Askanier"
@@ -39,7 +43,8 @@ fixed_capital = 1857
 		adm = 3
 	}
 }
-1411.1.1= {
+
+1411.1.1 = {
 	heir = {
 		name = "Bernhard"
 		monarch_name = "Bernhard II"
@@ -52,7 +57,8 @@ fixed_capital = 1857
 		mil = 3
 	}
 }
-1426.1.1= {
+
+1426.1.1 = {
 	monarch = {
 		name = "Bernhard II"
 		dynasty = "Askanier"
@@ -65,7 +71,8 @@ fixed_capital = 1857
 	add_ruler_personality = inspiring_leader_personality
 	add_ruler_personality = benevolent_personality
 }
-1439.7.18= {
+
+1439.7.18 = {
 	heir = {
 		name = "Johann"
 		monarch_name = "Johann V"
@@ -78,7 +85,8 @@ fixed_capital = 1857
 		mil = 1
 	}
 }
-1463.7.16= {
+
+1463.7.16 = {
 	monarch = {
 		name = "Johann V"
 		dynasty = "Askanier"
@@ -88,7 +96,8 @@ fixed_capital = 1857
 		adm = 1
 	}
 }
-1488.1.1= {
+
+1488.1.1 = {
 	heir = {
 		name = "Magnus"
 		monarch_name = "Magnus I"
@@ -101,7 +110,8 @@ fixed_capital = 1857
 		mil = 2
 	}
 }
-1507.8.15= {
+
+1507.8.15 = {
 	monarch = {
 		name = "Magnus I"
 		dynasty = "Askanier"
@@ -111,7 +121,8 @@ fixed_capital = 1857
 		adm = 2
 	}
 }
-1510.1.1= {
+
+1510.1.1 = {
 	heir = {
 		name = "Franz"
 		monarch_name = "Franz I"
@@ -124,7 +135,8 @@ fixed_capital = 1857
 		mil = 3
 	}
 }
-1543.8.1= {
+
+1543.8.1 = {
 	monarch = {
 		name = "Franz I"
 		dynasty = "Askanier"
@@ -134,7 +146,8 @@ fixed_capital = 1857
 		adm = 3
 	}
 }
-1547.8.10= {
+
+1547.8.10 = {
 	heir = {
 		name = "Franz"
 		monarch_name = "Franz II"
@@ -147,7 +160,8 @@ fixed_capital = 1857
 		mil = 2
 	}
 }
-1581.3.19= {
+
+1581.3.19 = {
 	monarch = {
 		name = "Franz II"
 		dynasty = "Askanier"
@@ -157,7 +171,8 @@ fixed_capital = 1857
 		adm = 2
 	}
 }
-1581.3.19= {
+	
+1581.3.19 = {
 	heir = {
 		name = "August"
 		monarch_name = "August"
@@ -170,7 +185,8 @@ fixed_capital = 1857
 		mil = 0
 	}
 }
-1619.7.2= {
+
+1619.7.2 = {
 	monarch = {
 		name = "August"
 		dynasty = "Askanier"
@@ -180,7 +196,8 @@ fixed_capital = 1857
 		adm = 0
 	}
 }
-1619.7.2= {
+
+1619.7.2 = {
 	heir = {
 		name = "Julius Heinrich"
 		monarch_name = "Julius Heinrich"
@@ -193,7 +210,8 @@ fixed_capital = 1857
 		mil = 0
 	}
 }
-1656.1.18= {
+
+1656.1.18 = {
 	monarch = {
 		name = "Julius Heinrich"
 		dynasty = "Askanier"
@@ -203,7 +221,8 @@ fixed_capital = 1857
 		adm = 0
 	}
 }
-1656.1.18= {
+
+1656.1.18 = {
 	heir = {
 		name = "Francis Erdmann"
 		monarch_name = "Francis Erdmann"
@@ -216,7 +235,8 @@ fixed_capital = 1857
 		mil = 0
 	}
 }
-1665.11.2= {
+
+1665.11.2 = {
 	monarch = {
 		name = "Francis Erdmann"
 		dynasty = "Askanier"
@@ -226,7 +246,8 @@ fixed_capital = 1857
 		adm = 0
 	}
 }
-1665.11.2= {
+
+1665.11.2 = {
 	heir = {
 		name = "Julius Franz"
 		monarch_name = "Julius Franz"
@@ -239,7 +260,8 @@ fixed_capital = 1857
 		mil = 0
 	}
 }
-1666.7.30= {
+
+1666.7.30 = {
 	monarch = {
 		name = "Julius Franz"
 		dynasty = "Askanier"

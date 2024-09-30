@@ -1,7 +1,11 @@
-ck2_converter_generated = yes
+#Country Name: Please see filename.
+
 graphical_culture = westerngfx
-color = { 203 93 124 }
+
+color = { 203  93  124 }
+
 revolutionary_colors = { 5 10 0 }
+
 historical_idea_groups = {
 	religious_ideas
 	economic_ideas
@@ -12,94 +16,123 @@ historical_idea_groups = {
 	diplomatic_ideas
 	trade_ideas
 }
+
 historical_units = {
-	austrian_grenzer
-	austrian_hussar
-	austrian_jaeger
-	austrian_tercio
-	austrian_white_coat
-	dutch_maurician
-	mixed_order_infantry
-	napoleonic_lancers
-	napoleonic_square
-	open_order_cavalry
-	swiss_landsknechten
 	western_medieval_infantry
 	western_medieval_knights
 	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
 }
+
 monarch_names = {
-	"Adriaen #1" = 10
+	"Albrecht #1" = 40
+	"Karl #2" = 40
+	"Georg #0" = 20
+	"Jakob Ernst #0" = 20
+	"Joachim Ernst #0" = 20
+	"Johann Georg #0" = 20
+	"Johann Kasimir #0" = 20
+	"Leopold Friedrich #0" = 20
+	"Leopold Maximilian #0" = 20
+	"Ernst #0" = 20
+	"Siegmund #0" = 20
+	"Bernhard #0" = 15
+	"Friedrich #0" = 15
+	"Friedrich Kasimir #0" = 15
+	"Georg Aribert #0" = 15
+	"Johann #0" = 15
+	"Leopold #0" = 15
+	"Meinhard #1" = 15
+	"Moritz #0" = 15
+	"Rudolf #0" = 15
+	"Thomas #0" = 15
+	"Waldemar #0" = 15
+	"Wilhelm Gustav #0" = 15
+	"Albrecht Friedrich #0" = 10
+	"August #0" = 10
+	"Christian #0" = 10
+	"Dietrich #0" = 10
+	"Friedrich Heinrich #0" = 10
+	"Friedrich Moritz #0" = 10
+	"Heinrich #0" = 10
+	"Heinrich Waldemar #0" = 10
+	"Joachim #0" = 10
+	"Joachim Christoph #0" = 10
+	"Johann Ernst #0" = 10
+	"Lorenz #0" = 10
+	"Ludwig #0" = 10
+	"Paul #0" = 10
+	"Wilhelm #1" = 10
 	"Andreas #0" = 0
-	"Anna #0" = -1
-	"Bruno #0" = 0
-	"Budimír #0" = 0
-	"Centule #0" = 0
-	"Damaes #1" = 10
-	"Eva #0" = -1
-	"Kasimir #2" = 10
-	"Milena #1" = -1
-	"Miloslav #2" = 10
-	"Milosz #1" = 10
-	"Ondrej #1" = 10
-	"Robrecht #1" = 10
-	"Siegmund #0" = 0
-	"Václava #0" = -1
-	"Wawrzyniec #1" = 10
-	"Wulff #0" = 0
+	"David #0" = 0
+	"Günther #0" = 0
+	"Michael #0" = 0
+	"Ulrich #0" = 0
+	
+	"Helmine #0" = -1
+	"Johanna #0" = -1
+	"Leonore #0" = -1
 }
+
 leader_names = {
-	"Ackermann"
-	"Alberti"
-	"Albrecht"
-	"Alvensleben"
-	"Amman"
-	"Annecke"
-	"Anthe"
-	"Bauer"
-	"Bause"
-	"Ehrenberg"
-	"Erxleben"
-	"Feuerstack"
-	"Flachsbart"
-	"Genthe"
-	"Gerstung"
-	"Held"
-	"Herzburg"
-	"Hoppe"
-	"Isaack"
-	"Janeck"
-	"Jantke"
-	"Kersten"
-	"Kleinau"
-	"März"
-	"Nehmiz"
-	"Rumpf"
-	"Scharfe"
-	"Schauseil"
-	"Schieck"
-	"von Zerbst"
+	Ackermann
+	Alberti
+	Albrecht
+	Alvensleben
+	Amman
+	Annecke
+	Anthe
+	Bauer
+	Bause
+	Ehrenberg
+	Erxleben
+	Feuerstack 
+	Flachsbart
+	Genthe
+	Gerstung
+	Gryfita
+	Held
+	Herzburg
+	Hoppe
+	Isaack
+	Janeck
+	Jantke
+	Kersten
+	Kleinau
+	März
+	Nehmiz
+	Rumpf
+	Scharfe
+	Schauseil
+	Schieck
+	"von Bocksberg"
+	"von der Lippe"
+	"von Diest"
+	"von Hagen"
+	"von Hohenstein"
+	"von Kirchberg"
+	"von Luxemburg"
+	"von Mansfeld"
+	"von Mockern"
 }
+
 ship_names = {
-	"Albrecht Ballenstedt"
-	"Albrecht der Bär"
-	"Aschersleben"
-	"Bernburg"
-	"Bernhard Wittenberg"
-	"Bischof Siegfried"
-	"Brocken"
-	"Coswig"
-	"Dessau"
-	"Dietrich Werben"
-	"Hartz"
-	"Heinrich I"
-	"Hermann Orlamünde"
-	"Köthen"
-	"Plötzkau"
-	"Ramberg"
-	"Rosslau"
-	"Zerbst"
+	"Albrecht der Bär" Aschersleben "Hermann Orlamünde"
+	"Bischof Siegfried" "Dietrich Werben" "Albrecht Ballenstedt"
+	"Bernhard Wittenberg" "Heinrich I" Zerbst Coswig Dessau Köthen
+	Bernburg Brocken Hartz Plötzkau Ramberg Rosslau
 }
+
 army_names = {
-	"Armee von $PROVINCE$"
+	"Armee von $PROVINCE$" 
 }

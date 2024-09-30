@@ -30,61 +30,60 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
+	"Carule #3" = 80
+	"Saltaru #2" = 60
+	"Constantìnu #1" = 20
+	"Ilariu #0" = 20
+	"Pedru #2" = 20
+	"Vissente #1" = 20
+	"Corràdu #0" = 15
+	"Ferdinandu #1" = 10
+	"Guantine #1" = 10
+	"Gaetànu #0" = 5
+	"Goffredu #0" = 5
 	"Abisatu #0" = 0
-	"Agnese #0" = -5
 	"Alaverru #0" = 0
-	"Assunta #0" = -1
-	"Carule #3" = 15
-	"Constantza #0" = -1
-	"Constantìnu #1" = 5
-	"Corràdu #0" = 3
-	"Ferdinandu #1" = 3
-	"Frantzisca #1" = -5
 	"Frantziscu #0" = 0
-	"Gaetànu #0" = 1
-	"Giulia #0" = -3
 	"Giustu #0" = 0
-	"Goffredu #0" = 1
-	"Guantine #1" = 3
+	"Grigòriu #0" = 0
 	"Gublenu #0" = 0
-	"Guisiana #0" = -1
-	"Ippolita #0" = -1
-	"Ilariu #0" = 5
-	"Kipriana #0" = -1
-	"Lucia #0" = -3
-	"Luna #0" = -1
-	"Maura #0" = -1
+	"Laurentu #0" = 0
+	"Luciu #0" = 0
 	"Munio #0" = 0
-	"Mònica #0" = -1
-	"Padulesa #0" = -1
-	"Pedru #2" = 5
-	"Rita #0" = -1
-	"Rossana #0" = -5
+	"Riccardu #0" = 0
+	"Rudolfu #0" = 0
 	"Ruggiero #0" = 0
-	"Saltaru #2" = 10
-	"Saragina #0" = -3
-	"Sardinnia #0" = -1
+	"Samaritanu #0" = 0
 	"Sèrgiu #0" = 0
-	"Teresa #0" = -1
-	"Vissente #1" = 5
+	"Tiodoru #0" = 0
 	"Vittore #0" = 0
-	"Àgata #0" = -1
+	
+	"Agnese #0" = -1
+	"Frantzisca #1" = -1
+	"Rossana #0" = -1
 }
 leader_names = {
 	"Angeleri"
+	"Avogadro"
+	"Cossa"
+	"Dauferiu"
 	"Hauteville-Catanzaro"
+	"Hauteville-Gerusalemme"
 	"Hauteville-Lentini"
 	"Manon"
 	"Melis"
 	"Oppizzhingi"
+	"Wettin"
 	"de Bosa"
 	"de Càlaris"
 	"de Grifai"
 	"de Guilcer"
 	"de Sagona"
 	"de Samassi"
-	"de Torres-Paleohora"
+	"di Capua"
 	"di Montiloncu"
+	"di Palermu"
+	"di Rotellu"
 }
 ship_names = {
 	"Aria Marina"

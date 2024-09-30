@@ -29,37 +29,58 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Adalbero #1" = 10
-	"Adalbert #1" = 10
-	"Adelheid #1" = -1
-	"Amelrich #1" = 10
-	"Anno #0" = 0
-	"Bernát #0" = 0
-	"Bonifacio #1" = 10
+	"Bonifaz #2" = 40
+	"Ferdinand #0" = 40
+	"Konrad #3" = 40
+	"Ernst #2" = 20
+	"Friedrich #1" = 20
+	"Karl #0" = 20
+	"Leopold #1" = 20
+	"Wilhelm #0" = 20
+	"Cristoph #0" = 15
+	"Johann Karl #0" = 15
+	"Lambert #1" = 15
+	"Maximilian Ernst #0" = 15
+	"Oskar #0" = 15
+	"Albrecht #0" = 10
+	"Alexander #0" = 10
+	"Johann #0" = 10
+	"Leopold Wilhelm #0" = 10
+	"Rudolf #0" = 10
+	"Vinzent #0" = 10
+	"Herold #0" = 5
+	"Lothar #1" = 5
+	"Odalschalk #0" = 5
+	"Otto #0" = 5
+	"Ulrich #0" = 5
+	"Adalbert #0" = 0
+	"Benedikt #0" = 0
+	"Benno #0" = 0
 	"Bruno #0" = 0
-	"Danuta #0" = -1
-	"Dietmar #0" = 0
-	"Ernst #1" = 10
-	"Folmar #0" = 0
-	"Gerberga #0" = -1
-	"Gheertrude #0" = -1
-	"Guntbald #0" = 0
-	"Hedwig #1" = -1
-	"Heilwich #0" = 0
-	"Heinrich #1" = 10
-	"Katarina #0" = -1
-	"Kuno #3" = 10
-	"Lambert #0" = 0
-	"Lantpert #0" = 0
-	"Leopold #1" = 10
-	"Lothar #1" = 10
-	"Otakar #1" = 10
-	"Rizzo #0" = 0
-	"Theodelinda #0" = -1
-	"Tuta #0" = -1
-	"Udalschalk #0" = 0
-	"Wernher #0" = 0
-	"Wolfgang #1" = 10
+	"Christian #0" = 0
+	"Clemens #0" = 0
+	"Florian #0" = 0
+	"Gerhard #0" = 0
+	"Gregor #0" = 0
+	"Günther #0" = 0
+	"Heinrich #0" = 0
+	"Hermann #0" = 0
+	"Humbert #0" = 0
+	"Immanuel #0" = 0
+	"Isidor #0" = 0
+	"Jakob #0" = 0
+	"Joachim #0" = 0
+	"Michael #0" = 0
+	"Siegfried #0" = 0
+	"Stefan #0" = 0
+	"Ulrich #0" = 0
+	"Viktor #0" = 0
+	"Wilfried #0" = 0
+	"Wolfgang #0" = 0
+	
+	"Albina #0" = -1
+	"Ida #0" = -1
+	"Karolina #0" = -1
 }
 leader_names = {
 	"Absenger"
@@ -84,6 +105,18 @@ leader_names = {
 	"Trenkler"
 	"Wergals"
 	"Zingl"
+	"von Bamberg"
+	"von Bibra"
+	"von Bogen"
+	"von Dachau"
+	"von Dinslaken"
+	"von Eurasburg"
+	"von Fürstenfeld"
+	"von Komburg"
+	"von Marpurch"
+	"von Niederbayern"
+	"von Nordheim"
+	"von Schweipünt"
 }
 ship_names = {
 	"Bruck"

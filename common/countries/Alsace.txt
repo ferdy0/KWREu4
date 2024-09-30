@@ -30,55 +30,54 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Adolf #0" = 0
+	"Hugo #0" = 80
+	"Hermann #1" = 40
+	"Wilhelm #1" = 40
 	"Albrecht #0" = 20
-	"Alexandra #0" = -1
-	"Alfred #0" = 0
-	"Armand #0" = 40
-	"Balduin #1" = 5
-	"Baldur #0" = 0
-	"Berthold #2" = 10
-	"Bruno #1" = 5
-	"Burkhard #2" = 10
-	"Christiane #0" = -1
-	"Eberhard #1" = 5
-	"Emma #0" = -1
 	"Erasmus #0" = 20
+	"Franz Egon #0" = 20
+	"Johann #0" = 20
+	"Johann Georg #0" = 20
+	"Karl #0" = 20
+	"Konrad #0" = 20
+	"Leopold #0" = 20
+	"Leopold Wilhelm #1" = 20
+	"Ludwig Constantin #0" = 20		
+	"Ludwig René #0" = 20
+	"Ruprecht #0" = 20
+	"Wilhelm Egon #0" = 20
+	"Berthold #0" = 10
+	"Burkhard #0" = 10
+	"Friedrich #1" = 10
+	"Ludwig #0" = 10
+	"Rudolf #0" = 10
+	"Simon #2" = 10
+	"Balduin #0" = 5
+	"Heinrich #0" = 5
+	"Werner #0" = 5
+	"Balduin #0" = 5
+	"Bruno #0" = 5
+	"Eberhard #3" = 5
+	"Gebhard #0" = 5
+	"Gottfried #0" = 5
+	"Lambert #0" = 5
+	"Otto #1" = 5
+	"Walter #0" = 5
+	"Adolf #0" = 0
+	"Alfred #0" = 0
+	"Baldur #0" = 0
 	"Erich #0" = 0
 	"Ferdinand #0" = 0
 	"Franz #0" = 0
-	"Franz Egon #0" = 20
-	"Friedrich #2" = 10
-	"Gebhard #1" = 5
-	"Gottfried #1" = 5
-	"G0nther #0" = 0
-	"Heinrich #4" = 5
-	"Johann #3" = 20
-	"Johann Georg #0" = 20
-	"Karl #0" = 20
-	"Konrad #3" = 20
-	"Kuno #1" = 5
-	"Lambert #1" = 5
-	"Leopold #0" = 20
-	"Leopold Wilhelm #0" = 20
-	"Louis Constantine #0" = 20
-	"Louis Ren0 #0" = 20
-	"Ludwig #1" = 10
-	"Otto #1" = 5
+	"Günther #0" = 0
 	"Rainer #0" = 0
-	"Rudolf #2" = 10
-	"Rupprecht #0" = 20
 	"Stefan #0" = 0
-	"Walter #1" = 5
-	"Werner #2" = 5
-	"Wilhelm #1" = 40
-	"Wilhelm Egon #0" = 20
+	
+	"Alexandra #0" = -1
+	"Christiane #0" = -1
+	"Emma #0" = -1
 }
 leader_names = {
-	"Bock de Blasheim"
-	"Bock de Erlenburg"
-	"Gailing d'Altheim"
-	"Linange-Westerburg"
 	"Wolff"
 	"d'Andleau"
 	"d'Arnsberg"
@@ -129,6 +128,11 @@ leader_names = {
 	"de Winterbescher"
 	"de Wormser"
 	"de Zurlauben"
+	"von Altenbaumberg"
+	"von Eschenloch"
+	"von Genf"
+	"von Scharfenberg"
+	"von Urslingen"
 	"zu Rhein"
 }
 ship_names = {

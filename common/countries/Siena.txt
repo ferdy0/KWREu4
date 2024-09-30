@@ -1,7 +1,10 @@
-ck2_converter_generated = yes
+#Country Name: Please see filename.
+
 graphical_culture = westerngfx
-color = { 165 171 115 }
+
+color = { 165  171  115 }
 revolutionary_colors = { 13 8 13 }
+
 historical_idea_groups = {
 	trade_ideas
 	economic_ideas
@@ -12,143 +15,146 @@ historical_idea_groups = {
 	religious_ideas
 	diplomatic_ideas
 }
+
 historical_units = {
-	austrian_grenzer
-	austrian_hussar
-	austrian_jaeger
-	austrian_tercio
-	austrian_white_coat
-	italian_condotta
-	mixed_order_infantry
-	napoleonic_lancers
-	napoleonic_square
-	open_order_cavalry
-	spanish_tercio
 	western_medieval_infantry
 	western_medieval_knights
 	western_men_at_arms
+	italian_condotta
+	spanish_tercio
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
 }
+
 monarch_names = {
-	"Amonius #1" = 10
-	"Anselmo #1" = 10
-	"Ardicino #0" = 0
-	"Arsenio #1" = 10
-	"Bassiano #1" = 10
-	"Basso #1" = 10
-	"Berta #0" = -1
-	"Carla #0" = -1
-	"Carlo #1" = 10
-	"Dietwin #0" = 0
-	"Elio #0" = 0
-	"Francesco #1" = 10
-	"Giustu #0" = 0
-	"Goffredo #1" = 10
-	"Gregorio #1" = 10
-	"Kaspar #0" = 0
-	"Rosso #0" = 0
-	"Ruggiero #0" = 0
-	"Sebastiaen #0" = 0
-	"Sieghard #1" = 10
-	"Teobaldo #0" = 0
-	"Ugolino #0" = 0
-	"Vissente #1" = 10
+	"Borghese #0" = 20
+	"Cesare #0" = 20
+	"Pandolfo #0" = 20
+	"Rafaello #0" = 20
+	"Francesco #0" = 20
+	"Fabio #0" = 20
+	"Gian Galeazzo #0" = 20
+	"Giovanni Maria #0" = 20
+	"Carlo #2" = 15
+	"Azzone #0" = 15
+	"Filippo Maria #0" = 15
+	"Gaspare #0" = 15
+	"Adriano #0" = 0
+	"Alessio #0" = 0
+	"Baldovino #0" = 0
+	"Beniamino #0" = 0
+	"Biagio #0" = 0
+	"Constantino #0" = 0
+	"Damiano #0" = 0
+	"Danilo #0" = 0
+	"Eustachio #0" = 0
+	"Evangelista #0" = 0
+	"Fortunato #0" = 0
+	"Gennaro #0" = 0
+	"Gianpaolo #0" = 0
+	"Giovanni #0" = 0
+	"Giustino #0" = 0
+	"Innocenzo #0" = 0
+	"Marco #0" = 0
+	"Mauro #0" = 0
+	"Orfeo #0" = 0
+	"Pasquale #0" = 0
+	"Rinaldo #0" = 0
+	"Roberto #0" = 0
+	"Sergio #0" = 0
+	"Severino #0" = 0
+	"Ugo #0" = 0
+	"Valerio #0" = 0
+	"Vincenzo #0" = 0
+	"Vitale #0" = 0
+	
+	"Elsa #0" = -1
+	"Giulia #0" = -1
+	"Lucrezia #0" = -1
 }
+
 leader_names = {
-	"Accarigi"
-	"Alighieri"
-	"Amelia"
-	"Bardi"
-	"Barone"
-	"Barzagli"
-	"Borghese"
-	"Borgia"
-	"Castro"
-	"Cecchereni"
-	"Compagnoni"
-	"Damiani"
-	"Di Stefano"
-	"Fossombroni"
-	"Galilei"
-	"Gallo"
-	"Gentile"
+	Accarigi
+	Alighieri
+	Amelia
+	Bardi
+	Barone
+	Barzagli
+	Borghese
+	Borgia
+	Castro
+	Cecchereni
+	Compagnoni
+	Damiani
+	Fossombroni
+	Galilei
+	Gallo
+	Gentile
 	"Golia di Siena"
-	"Griccioli"
-	"Grosso"
-	"Guerra"
-	"Idoni"
-	"Labriola"
-	"Marescotti"
-	"Nardi"
-	"Neri"
-	"Oddo"
-	"Orlando"
-	"Palumbo"
-	"Pannocchieschi"
-	"Pazzi"
-	"Peruzzi"
-	"Petrucci"
-	"Pianella"
-	"Piccolomini"
-	"Pirlo"
-	"Quercegrossa"
-	"Riario"
-	"Salimbeni"
-	"Segni"
-	"Testa"
-	"Torricelli"
-	"Uccello"
-	"Vagliagli"
-	"Visconti"
-	"Vitali"
-	"Viviani"
-	"Zaccardo"
-	"Zeti"
+	Griccioli
+	Grosso
+	Guerra
+	Idoni
+	Labriola
+	Marescotti
+	Nardi
+	Neri
+	Oddo
+	Orlando
+	Palumbo
+	Pannocchieschi
+	Pazzi
+	Peruzzi
+	Petrucci
+	Pianella
+	Piccolomini
+	Pirlo
+	Quercegrossa
+	Riario
+	Salimbeni
+	Segni
+	Testa
+	Torricelli
+	Uccello
+	Vagliagli
+	Visconti
+	Vitali
+	Viviani
+	Zaccardo
+	Zeti
 	"da Porcari"
 	"da Sangallo"
 	"da Staggia"
 	"de Rossi"
 	"del Piero"
+	"di Stefano"
 }
+
 ship_names = {
-	"Ambrogio Lorenzetti"
-	"Asciano"
-	"Bartolomeo Guidi"
-	"Bonaguida Lucari"
-	"Carlo IV"
-	"Castelnuovo Berardenga"
-	"Chianti"
-	"Costalpino"
-	"Crete Senesi"
-	"Donatello"
-	"Duccio di Buoninsegna"
-	"Elsa"
-	"Francesco di Rinaldo"
-	"Ghibellini"
-	"Giovanni di Balduccio"
-	"Isola d'Arbia"
-	"Merse"
-	"Minuccio di Rinaldo"
-	"Misser santo Micchele arcangelo"
-	"Montagnola"
-	"Montaperti"
-	"Monteriggioni"
-	"Monteroni d'Arbia"
+	"Ambrogio Lorenzetti" Asciano
+	"Bartolomeo Guidi" "Bonaguida Lucari"
+	"Carlo IV" "Castelnuovo Berardenga" Chianti  Costalpino "Crete Senesi"
+	Donatello "Duccio di Buoninsegna" 
+	Elsa
+	"fiumi Arbia" "Francesco di Rinaldo"
+	"Ghibellini" "Giovanni di Balduccio"
+	"Isola d'Arbia" 
+	Merse "Minuccio di Rinaldo" "Misser santo Micchele arcangelo" Montagnola
+	Montaperti Monteriggioni "Monteroni d'Arbia"
 	"Orlando Bonsignori"
-	"San Bernardino"
-	"San Domenico"
-	"San Francesco"
-	"San Galgano"
-	"San Giovanni"
-	"San Miniato"
-	"Sant'Ansano"
-	"Santa Caterina"
-	"Santa Maria dei Servi"
-	"Santissima Annunziata"
-	"Senius"
-	"Sovicille"
-	"Taverne d'Arbia"
-	"fiumi Arbia"
+	"San Bernardino" "San Domenico" "San Francesco" "San Galgano"
+	"San Giovanni" "San Miniato" "Sant'Ansano" "Santa Caterina"
+	"Santa Maria dei Servi" "Santissima Annunziata" Senius Sovicille 
+	"Taverne d'Arbia" 
 }
+
 army_names = {
 	"Armata di $PROVINCE$"
 }

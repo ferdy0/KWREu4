@@ -1,0 +1,6 @@
+royal_marriage = {
+	first = TUN
+	second = ARA
+	start_date = 1434.12.13
+	end_date = 1473.10.28
+}

@@ -1,5 +1,5 @@
-owner = Z04
-controller = Z04
+owner = TUN
+controller = TUN
 capital = "Ouargla"
 is_city = yes
 culture = berber
@@ -8,7 +8,7 @@ trade_goods = slaves
 base_tax = 1
 base_production = 3
 base_manpower = 1
-add_core = Z04
+add_core = TUN
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

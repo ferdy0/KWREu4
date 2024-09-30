@@ -30,56 +30,74 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Alphonse #3" = 20
-	"Andiru #0" = 0
+	"Raymond #1" = 60
+	"Ogier #2" = 30
+	"Archambaud #3" = 20
+	"François #1" = 20
+	"Guillaume #5" = 20
+	"Simon #2" = 20
+	"Bertrand #0" = 15
+	"Alphonse #0" = 10
+	"Bernard #1" = 10
+	"Eudes #0" = 10
+	"Thibault #0" = 10
+	"Amédée #0" = 5
+	"Jaspert #1" = 5
+	"Philippe #0" = 5
+	"Pons #0" = 5
+	"Rorgues #1" = 5
+	"André #0" = 0
 	"Antoine #0" = 0
-	"Bernard #2" = 10
-	"Bertrand #1" = 15
 	"Borel #0" = 0
+	"Bouchard #0" = 0
 	"Charles #0" = 0
 	"Claude #0" = 0
+	"Clemence #0" = 0
 	"Danis #0" = 0
 	"Emmanuel #0" = 0
-	"Eug0ne #0" = 0
+	"Eugène #0" = 0
 	"Evrard #0" = 0
 	"Foilan #0" = 0
-	"Fran0ois #0" = 0
-	"Fr0d0ric #0" = 0
+	"Frédéric #0" = 0
+	"Gauthier #0" = 0
 	"Gilles #0" = 0
 	"Godefroi #0" = 0
-	"Guillaume #4" = 15
-	"Guiraud #0" = 0
+	"Guiges #0" = 0
 	"Henri #0" = 0
 	"Huc #0" = 0
 	"Ignace #0" = 0
 	"Jacques #0" = 0
-	"Jeanne #0" = -15
+	"Jean #0" = 0
 	"Jules #0" = 0
 	"Louis #0" = 0
-	"L0opold #0" = 0
+	"Léon #0" = 0
+	"Léopold #0" = 0
 	"Mamert #0" = 0
-	"Marie #0" = -1
 	"Maurice #0" = 0
-	"Odo #1" = 10
 	"Olivier #0" = 0
+	"Onfroy #0" = 0
+	"Othon #0" = 0
 	"Patrici #0" = 0
-	"Philippa #0" = -1
-	"Pons #2" = 10
-	"Raymond #7" = 80
+	"Raoul #0" = 0
 	"Richartz #0" = 0
 	"Roger #0" = 0
 	"Sauson #0" = 0
-	"Simon #1" = 20
 	"Valeray #0" = 0
 	"Xavier #0" = 0
+	"Yves #0" = 0
+	
+	"Adalaïda #0" = -1
+	"Alix #0" = -1
+	"Flòra #1" = -1
+	"Madalena #0" = -1
 }
 leader_names = {
 	"Assézat"
 	"Delguy"
 	"Delpuech"
 	"Fabre"
-	"Faure"
-	"Imbert"
+	"Guillén"
+	"Hwicce-Évreux"
 	"Malvin de Montazet"
 	"Martin de Viviès"
 	"Noguès"
@@ -88,8 +106,8 @@ leader_names = {
 	"Pons"
 	"Sabatier"
 	"Teyssier"
-	"d'Arnal"
-	"d'Espagne"
+	"Le Tellier"
+	"d'Avaugour"
 	"d'Estadens"
 	"d'Estissac"
 	"d'Ouvrier"
@@ -97,31 +115,31 @@ leader_names = {
 	"de Barbasan"
 	"de Bernuy"
 	"de Bezons"
-	"de Boulbène"
-	"de Casteras"
+	"de Bordeaux"
+	"de Castelsarrasin"
 	"de Caussade"
-	"de Corneillan"
+	"de Foix"
 	"de Galard"
 	"de Goth"
 	"de Grossoles"
-	"de La Broue de Gandelon"
+	"de la Rochelambert"
 	"de Lacaze"
-	"de Ladevèze"
+	"de Langeac"
 	"de Loupiac"
-	"de Madaillan"
-	"de Nogaret"
+	"de Mende"
+	"de Menou"
 	"de Nogarède"
 	"de Pelamourgues"
 	"de Perricard"
-	"de Pradines"
+	"de Pontchâteau"
 	"de Puechgarric"
-	"de Rabastens"
-	"de Roux d'Alzonne"
+	"de Roselló"
+	"de Roussillon"
 	"de Saint Félix"
-	"de Tholozany"
+	"de Thercy"
 	"de Toulouse-Foissac"
 	"de Toulouse-Lautrec"
-	"de Villemur"
+	"de Vexin-Amiens-Aurillac"
 	"de Xaintrailles"
 	"de l'Isle-Jourdain"
 }

@@ -30,43 +30,58 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Aelle #0" = 0
-	"Anna #0" = -1
-	"Baderic #1" = 10
+	"Johann Friedrich #1" = 40
+	"Theodwin #2" = 40
+	"Balthasar #0" = 20
+	"Ernst #1" = 20
+	"Friedrich #0" = 20
+	"Johann #0" = 20
+	"Johann Ernst #0" = 20
+	"Wilhelm #0" = 20
+	"Friedrich Wilhelm #0" = 15
+	"Albrecht #0" = 10
+	"Dietwin #0" = 10
+	"Heinrich #0" = 10
+	"Lambert #0" = 10
+	"Wilhelm Ernst #0" = 10
+	"Wolfgang #0" = 10
+	"Adolf #0" = 0
+	"Alfred #0" = 0
+	"Andreas #0" = 0
+	"Anton #0" = 0
 	"Baldewin #0" = 0
-	"Baldur #1" = 10
-	"Basinus #1" = 10
-	"Berthar #2" = 10
-	"Bertold #1" = 10
-	"Carlo #0" = 0
-	"Chamar #3" = 10
-	"Dietwin #0" = 0
-	"Drosuk #0" = 0
-	"Egino #1" = 10
-	"Engelmar #0" = 0
-	"Farabert #0" = 0
-	"Fisud #1" = 10
-	"Frida #0" = -1
+	"Bruno #0" = 0
+	"Burkhard #0" = 0
+	"Christian #0" = 0
+	"Christoph #0" = 0
+	"Dietrich #0" = 0
+	"Ekkehardt #0" = 0
 	"Gebhard #0" = 0
-	"Hadulf #1" = 10
-	"Hermanfred #1" = 10
+	"Günther #0" = 0
+	"Harmann #0" = 0
+	"Helmfried #0" = 0
 	"Hermann #0" = 0
-	"Humbert #0" = 0
-	"Hupold #0" = 0
-	"Konrad #1" = 10
-	"Köpke #1" = 10
-	"Magnus #0" = 0
-	"Mateusz #1" = 10
-	"Poppo #2" = 10
-	"Radulf #3" = 10
-	"Ratibor #2" = 10
-	"Siegfried #1" = 10
-	"Thankulf #2" = 10
-	"Theodwin #1" = 10
-	"Udalrich #0" = 0
-	"Wilhelm #0" = 0
-	"Willemine #0" = -1
-	"Zofia #0" = -1
+	"Joachim #0" = 0
+	"Kajetan #0" = 0
+	"Konrad #0" = 0
+	"Lambert #0" = 0
+	"Lukas #0" = 0
+	"Marius #0" = 0
+	"Michael #0" = 0
+	"Otto #0" = 0
+	"Reimund #0" = 0
+	"Rudolf #0" = 0
+	"Tagin #0" = 0
+	"Thomas #0" = 0
+	"Ulrich #0" = 0
+	"Walter #0" = 0
+	"Wenzel #0" = 0
+	"Wilfried #0" = 0
+	"Wolfram #0" = 0
+	
+	"Adelinde #0" = -1
+	"Frida #0" = -1
+	"Klementia #0" = -1
 }
 leader_names = {
 	"Becher"
@@ -88,16 +103,28 @@ leader_names = {
 	"Meier"
 	"Meisgeier"
 	"Möser"
-	"Oswald"
+	"Obroditen"
 	"Rank"
 	"Rauh"
-	"Ritter"
+	"Ryning"
 	"Schilling"
 	"Schmidt"
 	"Schreuser"
 	"Söll"
 	"Taut"
 	"Trögel"
+	"von Franken"
+	"von Habsburg"
+	"von Henneberg"
+	"von Hohenlohe"
+	"von Jülich"
+	"von Mansfeld"
+	"von Nordheim-Orlamünde"
+	"von Pernstein"
+	"von Schrapelnau"
+	"von Tecklenburg"
+	"von Weimer"
+	"von Wittenberg"
 }
 ship_names = {
 	"Heinrich Raspe"

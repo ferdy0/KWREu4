@@ -2,40 +2,41 @@ ck2_converter_generated = yes
 graphical_culture = muslimgfx
 color = { 218 228 28 }
 monarch_names = {
-	"Abdul-Qadir #1" = 10
-	"Abdul-Wahab #0" = 0
-	"Ad-Da'i Yusuf #1" = 10
-	"Akbar #0" = 0
-	"Ali #3" = 10
-	"Alim #1" = 10
-	"An-Nasir Ahmad #1" = 10
-	"Fadl #1" = 10
-	"Hasan #0" = 0
-	"Ibrahim #0" = 0
-	"Ibrahim #1" = 10
-	"Isa #2" = 10
-	"Jalil #0" = 0
-	"Jibril #1" = 10
-	"Mahmud #1" = 10
-	"Muhammad #1" = 10
-	"Murad #1" = 10
-	"Musa #0" = 0
-	"Màura #0" = -1
-	"Najib #1" = 10
-	"Nizam #0" = 0
-	"Sadiq #0" = 0
-	"Semeah #0" = -1
-	"Shameem #0" = -1
-	"Shola #0" = -1
-	"Sholah #0" = -1
-	"Souzan #0" = -1
-	"Talib #2" = 10
-	"Tawaret #0" = -1
-	"Youkhanna #1" = 10
-	"Yu'fir #1" = 10
-	"Zulfiqar #0" = 0
-	"al-Hadi ila'l-Haqq Yahya #1" = 10
-	"al-Mahdi al-Husayn #1" = 10
-	"al-Mansur al-Qasim al-Iyyani #1" = 10
-	"al-Murtada Muhammad #1" = 10
+	"'Abd al-Qadir #3" = 10
+	"'Abd al-Wahhâb #0" = 10
+	"'Abdallah #0" = 10
+	"'Alî #4" = 10
+	"'Umar #0" = 10
+	"Ahmad #0" = 10
+	"al-'Abbâs #0" = 10
+	"al-Husayn #2" = 10
+	"al-Mutahhar #0" = 10
+	"al-Qâsim #1" = 10
+	"Isma'il #0" = 10
+	"Muhammad #0" = 10
+	"Saladin Ahmad #0" = 10
+	"Salâh ad-Din 'Amir #0" = 10
+	"Yahya #1" = 10
+	"Yusuf #1" = 10
+	"Shujah #0" = 0
+	
+	"Layla #0" = -1
+	"Qismah #0" = -1
+	"Safaa #0" = -1
+}
+
+leader_names = {
+	Ali
+	Ibrahim
+	Issa
+	Jomaa
+	Khalil
+	Mansour
+	Saab
+	Saad
+	Saleh
+	Shammas
+	"al-Kaab"
+	"al-Riyahdid"
+	"al-Zuray"
 }

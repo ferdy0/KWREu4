@@ -2,40 +2,67 @@ ck2_converter_generated = yes
 graphical_culture = westerngfx
 color = { 210 200 220 }
 monarch_names = {
+	"Ludwig #4" = 40
+	"Theoderich #2" = 40
+	"Gerhard #1" = 20
+	"Gotthard #2" = 20
+	"Karl #0" = 20
+	"Magnus #2" = 20
+	"Edmund #0" = 15
+	"Lambert #0" = 15
+	"Arnulf #0" = 10
+	"Ehrenfried #0" = 10
+	"Gilbert #0" = 10
+	"Heinrich #0" = 10
+	"Hermann #0" = 10
+	"Jakob #0" = 10
+	"Konrad #0" = 10
+	"Otto #0" = 10
+	"Peter #0" = 10
+	"Robert #0" = 10
+	"Ulrich #1" = 10
+	"Walther #0" = 10
+	"Alberich #1" = 5
+	"André #0" = 5
+	"Friedrik #0" = 5
+	"Herbert #0" = 5
+	"Manegold #1" = 5
+	"Wenzel #0" = 5
 	"Albrecht #0" = 0
-	"Arnulf #1" = 10
+	"Amadée #0" = 0
+	"Berengar #0" = 0
 	"Bernhard #0" = 0
-	"Cancor #1" = 10
-	"Charles #2" = 10
-	"Chrodbert #2" = 10
-	"Emich #0" = 0
+	"Cancor #0" = 0
+	"Emmerich #0" = 0
 	"Engelbert #0" = 0
-	"Erenfried #1" = 10
-	"Giselbert #1" = 10
-	"Gui #0" = 0
-	"Guntram #1" = 10
-	"Heinrich #2" = 10
-	"Herman #1" = 10
-	"Hermann #1" = 10
-	"Irene #0" = -1
-	"Karl #1" = 10
-	"Karlotte #0" = -1
-	"Klementia #0" = -1
-	"Konrad #1" = 10
-	"Lambert #2" = 10
-	"Landolf #0" = 0
-	"Liutfried #1" = 10
-	"Lothaire #1" = 10
-	"Ludwig #2" = 10
+	"Gautselin #0" = 0
+	"Hugo #0" = 0
+	"Humbert #0" = 0
+	"Leopold #0" = 0
 	"Manfred #0" = 0
-	"Mechthild #1" = -1
-	"Otto #2" = 10
-	"Peter #1" = 10
-	"Philipp #3" = 10
-	"Robert #3" = 10
-	"Rutger #6" = 10
-	"Sieghard #0" = 0
-	"Thurimbert #1" = 10
-	"Waldo #0" = 0
-	"Zwentibold #1" = 10
+	"Meinhard #0" = 0
+	"Wilhelm #0" = 0
+	
+	"Ida #0" = -1
+	"Karlotte #0" = -1
+	"Sophie #0" = -1
+	"Winfride #0" = -1
+}
+leader_names = {
+	"Bloch"
+	"Otakar"
+	"Walter"
+	"Wettin-Sommerfeld"
+	"Wolff"
+	"von Altenbaumberg"
+	"von Breisgau"
+	"von Eikenschild"
+	"von Genf"
+	"von Hohenstauf"
+	"von Landau"
+	"von Mühlhausen"
+	"von Scharfenberg"
+	"von Schwelz"
+	"von Urslingen"
+	"zu Rhein"
 }

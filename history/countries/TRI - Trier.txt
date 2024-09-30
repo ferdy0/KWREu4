@@ -6,19 +6,89 @@ religion = catholic
 primary_culture = hessian
 capital = 80
 fixed_capital = 80
-1444.11.11= {
+1355.1.1 = {
 	monarch = {
-		name = "Wolfgang"
+		name = "Wolfgang I"
 		dynasty = "di Maltraversi"
 		adm = 5
 		dip = 4
 		mil = 5
 		birth_date = 1381.7.24
 		religion = catholic
+		culture = franconian
+	}
+}
+1358.1.6 = {
+	monarch = {
+		name = "Bohemond II"
+		dynasty = "von Ettendorf-Warnesberg"
+		adm = 5
+		dip = 4
+		mil = 5
+		birth_date = 1290.1.1
+		religion = catholic
+		culture = alsatian
+	}
+}
+1362.4.4 = {
+	monarch = {
+		name = "Kuno II"
+		dynasty = "von Falkenstein"
+		adm = 5
+		dip = 4
+		mil = 5
+		birth_date = 1320.1.1
+		religion = catholic
 		culture = hessian
 	}
-	add_ruler_personality = martial_educator_personality
-	add_ruler_personality = scholar_personality
+}
+1388.5.21 = {
+	monarch = {
+		name = "Werner I"
+		dynasty = "von Falkenstein"
+		adm = 5
+		dip = 4
+		mil = 5
+		birth_date = 1355.1.1
+		religion = catholic
+		culture = hessian
+	}
+}
+1418.10.4 = {
+	monarch = {
+		name = "Otto I"
+		dynasty = "von Ziegenhain"
+		adm = 5
+		dip = 4
+		mil = 5
+		birth_date = 1380.1.1
+		religion = catholic
+		culture = hessian
+	}
+}
+1430.2.13 = {
+	monarch = {
+		name = "Rhaban I"
+		dynasty = "von Helmstatt"
+		adm = 5
+		dip = 4
+		mil = 5
+		birth_date = 1362.1.1
+		religion = catholic
+		culture = hessian
+	}
+}
+1439.11.4 = {
+	monarch = {
+		name = "Jakob I"
+		dynasty = "von Sierck"
+		adm = 5
+		dip = 4
+		mil = 5
+		birth_date = 1398.7.19
+		religion = catholic
+		culture = burgundian
+	}
 }
 1444.11.11= {
 	add_prestige = 84

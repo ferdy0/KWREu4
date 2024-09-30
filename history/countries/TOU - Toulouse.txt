@@ -6,10 +6,96 @@ religion = catholic
 primary_culture = occitain
 capital = 196
 fixed_capital = 196
-add_accepted_culture = occitain
-1515.1.1= { government = monarchy
-add_government_reform = autocracy_reform }
-1560.1.1= { religion = reformed }
-1589.8.3= { set_legacy_government = administrative_monarchy }
-1661.3.9= { government = monarchy
-add_government_reform = autocracy_reform }
+add_accepted_culture = gascon
+1370.10.28 = {
+	monarch = {
+		name = "Archambaud II"
+		dynasty = "de Charolais"
+		adm = 3
+		dip = 3
+		mil = 4
+		birth_date = 1327.3.27
+		religion = catholic
+		culture = occitain
+	}
+}
+1379.12.19 = {
+	monarch = {
+		name = "Archambaud III"
+		dynasty = "de Charolais"
+		adm = 3
+		dip = 3
+		mil = 4
+		birth_date = 1352.5.26
+		religion = catholic
+		culture = occitain
+	}
+}
+1389.9.16 = {
+	monarch = {
+		name = "Simon I"
+		dynasty = "de Charolais"
+		adm = 3
+		dip = 3
+		mil = 4
+		birth_date = 1364.5.4
+		religion = catholic
+		culture = occitain
+	}
+}
+1402.12.13 = {
+	monarch = {
+		name = "Raymond I"
+		dynasty = "de Charolais"
+		adm = 3
+		dip = 3
+		mil = 4
+		birth_date = 1387.1.7
+		religion = catholic
+		culture = occitain
+	}
+}
+1423.2.10 = {
+	monarch = {
+		name = "Simon II"
+		dynasty = "de Charolais"
+		adm = 1
+		dip = 1
+		mil = 5
+		birth_date = 1418.7.31
+		religion = catholic
+		culture = occitain
+	}
+	queen = {
+		name = "Esclarmonde"
+		dynasty = "de Rieu"
+		adm = 4
+		dip = 3
+		mil = 4
+		country_of_origin = FRA
+		birth_date = 1417.11.28
+		death_date = 1489.5.7
+		female = yes
+		religion = catholic
+		culture = cosmopolitan_french
+	}
+}
+1437.2.20 = {
+	heir = {
+		name = "Raymond"
+		monarch_name = "Raymond II"
+		dynasty = "de Charolais"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1437.2.20
+		death_date = 1483.11.13
+		claim = 89
+		religion = catholic
+		culture = occitain
+	}
+}
+1444.11.11= {
+	add_prestige = 84
+	add_treasury = 70
+}

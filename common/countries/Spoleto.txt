@@ -1,6 +1,9 @@
-ck2_converter_generated = yes
+#Country Name: Please see filename.
+
 graphical_culture = westerngfx
+
 color = { 169 26 5 }
+
 historical_idea_groups = {
 	trade_ideas
 	defensive_ideas
@@ -11,149 +14,168 @@ historical_idea_groups = {
 	religious_ideas
 	offensive_ideas
 }
+
 historical_units = {
-	austrian_grenzer
-	austrian_hussar
-	austrian_jaeger
-	austrian_tercio
-	austrian_white_coat
-	dutch_maurician
-	mixed_order_infantry
-	napoleonic_lancers
-	napoleonic_square
-	open_order_cavalry
-	prussian_uhlan
-	swiss_landsknechten
 	western_medieval_infantry
 	western_medieval_knights
 	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	prussian_uhlan
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
 }
+
 monarch_names = {
-	"Adrianu #0" = 0
-	"Alberic #2" = 10
-	"Alcide #0" = 0
-	"Berta #1" = -1
-	"Bonifacio #1" = 10
-	"Burchard #0" = 0
-	"Catone #0" = 0
-	"Czcibór #0" = 0
-	"Eduardo #0" = 0
-	"Federico #1" = 10
-	"Gaetano #0" = 0
-	"Germano #1" = 10
-	"Giuditta #1" = -1
-	"Guy #4" = 10
-	"Hemma #0" = -1
-	"Hildeprand #1" = 10
-	"Kruto #1" = 10
-	"Kuno #0" = 0
-	"Lambert #3" = 10
-	"Mariana #1" = -1
-	"Matilda #1" = -1
-	"Micaela #0" = -1
-	"Nikolaus #0" = 0
-	"Oberto #1" = 10
-	"Pagano #1" = 10
-	"Rambaldo #0" = 0
-	"Ruggiero #1" = 10
-	"Semil #1" = 10
-	"Strasz #0" = 0
-	"Theodicus #1" = 10
-	"Tocode #1" = 10
-	"Ubert #1" = 10
-	"Uc #1" = 10
-	"Waldemar #0" = 0
+	"Corrado #2" = 40
+	"Enrico #0" = 40
+	"Rainaldo #0" = 30
+	"Bonifacio #1" = 20
+	"Guelfo #0" = 20
+	"Ugo #1" = 20
+	"Goffredo #1" = 15
+	"Ranieri #0" = 15
+	"Bertoldo #1" = 10
+	"Diopoldo #0" = 10
+	"Niccolò #1" = 10
+	"Teobaldo #0" = 5
+	"Uberto #2" = 5
+	"Achille #0" = 0
+	"Alberto #0" = 0
+	"Alessandro #0" = 0
+	"Angelo #0" = 0
+	"Basilio #0" = 0
+	"Battista #0" = 0
+	"Bernardino #0" = 0
+	"Carlo #0" = 0
+	"Cesare #0" = 0
+	"Cosimo #0" = 0
+	"Domenico #0" = 0
+	"Egidio #0" = 0
+	"Ferdinando #0" = 0
+	"Filippo #0" = 0
+	"Filippino #0" = 0
+	"Flavio #0" = 0
+	"Fortunato #0" = 0
+	"Francesco #0" = 0
+	"Fulvio #0" = 0
+	"Giacinto #0" = 0
+	"Giacomo #0" = 0
+	"Giovanni #0" = 0
+	"Giuseppi #0" = 0
+	"Innocenzo #0" = 0
+	"Leoncillo #0" = 0
+	"Lorenzo #0" = 0
+	"Loreto #0" = 0
+	"Ludovico #0" = 0
+	"Maffeo #0" = 0
+	"Marcello #0" = 0
+	"Marco #0" = 0
+	"Massimiliano #0" = 0
+	"Paolo #0" = 0
+	"Pierleone #0" = 0
+	"Pierluigi #0" = 0
+	"Pietro #0" = 0
+	"Pompeo #0" = 0
+	"Riccardo #0" = 0
+	"Roberto #0" = 0
+	"Stefano #0" = 0
+	"Vincenzo #0" = 0
+	"Virgilio #0" = 0
+
+	"Beatrice #0" = -1
+	"Caterina #0" = -1
+	"Lucrezia #0" = -1
+	"Marina #0" = -1
+	"Matilde #1" = -5
 }
+
 leader_names = {
-	"Accoramboni"
-	"Acqua"
-	"Albertini"
-	"Ancaiani"
-	"Arnaldi"
-	"Benedetti"
-	"Bianconi"
-	"Bonavisa"
-	"Bucci di Cave"
-	"Cacciaguerra"
-	"Cadolini"
-	"Campilius"
-	"Canali"
-	"Castrucci"
-	"Claudi"
-	"Collicola"
-	"Corvini"
-	"Croci"
-	"Cybo"
-	"Di Campello"
-	"Eroli"
-	"Facchinetti"
-	"Fantini"
-	"Gaddi"
-	"Gattapone"
-	"Gherardi"
-	"Lanfranco"
-	"Leonio"
-	"Lippi"
-	"Locaetlli"
-	"Maculari"
-	"Marignoli"
-	"Menotti"
-	"Merlini"
-	"Muti"
-	"Paladini"
-	"Pandolfini"
-	"Petruccini"
-	"Pianciani"
-	"Pontano"
-	"Rosario"
-	"Sabbioni"
-	"Sansi"
-	"Sanvitale"
-	"Sardi"
-	"Sbarretti"
-	"Scelli"
-	"Sciamanna"
-	"Sordini"
-	"Vincioli"
-	"Vittori"
-	"Viviari"
-	"Zabolino"
+	Accoramboni
+	Acqua
+	Albertini
+	Ancaiani
+	Arnaldi
+	Bianconi
+	Benedetti
+	Bobone
+	Bonavisa
+	Cacciaguerra
+	Cadolini
+	Campilius
+	Canali
+	Castrucci
+	Claudi
+	Collicola
+	Corvini
+	Croci
+	Cybo
+	Engo
+	Facchinetti
+	Fantini
+	Gaddi
+	Gattapone
+	Gherardi
+	Lanfranco
+	Leonio
+	Lippi
+	Locaetlli
+	Maculari
+	Marignoli
+	Menotti
+	Merlini
+	Muti
+	Paladini
+	Pandolfini
+	Petruccini
+	Pianciani
+	Pontano
+	Rosario
+	Sabbioni
+	Sansi
+	Sanvitale
+	Sardi
+	Sbarretti
+	Scelli
+	Sciamanna
+	Sordini
+	Vintimiglia
+	Vittori
+	Viviari
+	Zabolino
 	"da Teramo"
-	"de Pomis"
-	"de Vigili"
 	"de' Bardi"
 	"de' Bonneval"
 	"de' Conti"
+	"de' Pomis"
+	"de' Vigili"
+	"di Campello"
 	"di Campli"
 	"di Lese"
 	"di Montichiello"
 	"di Preneste"
+	"di Tàranto"
 }
+
 ship_names = {
-	"Azzano"
+	Azzano
 	"Duca Faroaldo"
 	"Egidio Albornoz"
-	"Maddalena"
-	"Monteluco"
-	"Paoluccio"
-	"Ponte Sanguinario"
-	"San Bonaventura"
-	"San Domenico"
-	"San Filippo Neri"
-	"San Gregorio Maggiore"
-	"San Paolo"
-	"San Ponziano"
-	"San Salvatore"
-	"Sant'Ansano"
-	"Sant'Eufemia"
-	"Santa Maria Assunta"
-	"Santa Maria della Manna d'Oro"
-	"Spoletum"
-	"Suor Marina"
-	"Vespasiano"
-	"Zottone"
 	"gaio Melisso"
+	Maddalena Monteluco
+	Paoluccio "Ponte Sanguinario"
+	Spoletum "Santa Maria Assunta" "San Salvatore" "Santa Maria della Manna d'Oro" "San Ponziano" "San Domenico" "San Gregorio Maggiore" "Sant'Eufemia" "San Paolo" "Sant'Ansano" "San Filippo Neri" "San Bonaventura" "Suor Marina"
+	Vespasiano
+	Zottone
 }
+
 army_names = {
-	"Armee von $PROVINCE$"
+	"Armee von $PROVINCE$" 
 }

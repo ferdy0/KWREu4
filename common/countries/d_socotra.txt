@@ -1,39 +1,95 @@
-ck2_converter_generated = yes
+#Country Name: Please see filename.
+
 graphical_culture = muslimgfx
-color = { 142 255 85 }
+
+color = { 16 142 49 }
+
+historical_idea_groups = {
+	defensive_ideas
+	maritime_ideas
+	religious_ideas
+	offensive_ideas
+	trade_ideas
+	economic_ideas
+	spy_ideas
+	diplomatic_ideas
+}
+
+historical_units = {
+	persian_footsoldier
+	persian_cavalry_charge
+	persian_shamshir
+	qizilbash_cavalry_unit
+	tofongchis_musketeer
+	topchis_artillery
+	afsharid_reformed
+	afsharid_reformed_infantry
+	muslim_mass_infantry
+	muslim_dragoon
+	persian_rifle
+}
+
 monarch_names = {
-	"'Iise #1" = 10
-	"Abdul-Aziz #0" = 0
-	"Abdul-Gafur #0" = 0
-	"Abdullah #0" = 0
-	"Abraham #2" = 10
-	"Akin #0" = 0
-	"Aram #0" = 0
-	"Athanasios #1" = 10
-	"Denha #1" = 10
-	"Epiphanios #1" = 10
+	"Jafar #2" = 40
+	"Ibrahim #3" = 30
+	"Amr #0" = 20
+	"Ali #0" = 10
+	"al-Mansur #0" = 10
 	"Fadl #1" = 10
-	"Hasan #0" = 0
-	"Hussayn #1" = 10
-	"Irandokht #0" = -1
+	"Ghalib #0" = 10
+	"Husayn #1" = 10
 	"Is'mail #2" = 10
-	"Isa #0" = 0
-	"Jahaira #0" = -1
-	"Kamala #1" = -1
-	"Khandan #0" = -1
-	"Mansur #0" = 0
-	"Marwa #0" = -1
-	"Mirza #0" = 0
-	"Najib #1" = 10
-	"Nikolas #1" = 10
-	"Philemon #1" = 10
-	"Qawurd #0" = 0
-	"Sa'adaddin #0" = 0
-	"Sadiq #0" = 0
-	"Shaiban #0" = 0
-	"Sheeva #0" = -1
-	"Sholah #0" = -1
-	"Talha #0" = 0
-	"Taneen #0" = -1
-	"Uways #1" = 10
+	"Muhsin #0" = 10
+	
+	"Amirah #0" = -1
+	"Daliyah #0" = -1
+	"Fadwa #0" = -1
+	"Fahda #0" = -1
+	"Fatimah #0" = -1
+	"Jabirah #0" = -1
+	"Kamilah #1" = -1
+	"Layla #0" = -1
+	"Maram #0" = -1
+	"Nadirah #0" = -1
+	"Nadiyya #0" = -1
+	"Norah #0" = -1
+	"Qismah #0" = -1
+	"Randa #0" = -1
+	"Safaa  #0" = -1
+	"Tahani #0" = -1
+	"Walida #0" = -1
+}
+
+leader_names = {
+	Azim
+	Dumali
+	Hanaya
+	Ibrahim
+	Izzid
+	Jomaa
+	Khalil
+	Mansour
+	Nadjafid
+	Qadir
+	Reewin
+	Saab
+	Saad
+	Saleh
+	Shammas
+	Toubou
+	"al-Abbas"
+	"al-Arish"
+	"al-Dinn"
+	"al-Jalal"
+	"al-Nasr"
+	"al-Umar"
+	"al-Zoghbadid"
+}
+
+ship_names = {
+	"Ali ibn Rasul" "Mansur Umar" Zaizz Zabid
+	"Muzaffar Yusuf" "Malik al-Mujahid" 
+	"Shaykh Uthman" "Al-Kawd" Whaqra "Wadi Bana"
+	Ta'izz "At-Tubah" Dhubab "Jabal Kharaz" Musaymir
+	Mawiyah "Jabal al-Hasha" Ibb Qa'tabah "Jabal Thamar"
 }

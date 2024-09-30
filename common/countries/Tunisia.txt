@@ -1,7 +1,7 @@
 ck2_converter_generated = yes
 graphical_culture = muslimgfx
-color = { 146 134 57 }
-revolutionary_colors = { 8 5 9 }
+color = { 146  134  57 }
+revolutionary_colors = { 8  5  9 }
 historical_idea_groups = {
 	trade_ideas
 	defensive_ideas
@@ -22,64 +22,64 @@ historical_units = {
 	muslim_mass_infantry
 }
 monarch_names = {
-	"'Abd al-'Aziz #0" = 20
-	"'Abd al-Mu'min #0" = 20
-	"'Al0 #0" = 40
-	"'Usman #0" = 20
-	"Ab0 Bakr #0" = 0
-	"Ahmad #2" = 20
-	"Aisha #0" = -1
-	"Ala ad-Din #0" = 0
-	"Butrus #0" = 0
-	"Fakhri #0" = 0
-	"Fatima #0" = -1
-	"Fayiz #0" = 0
-	"Hadj #0" = 0
-	"Hafiz #0" = 0
-	"Hafsia #0" = -1
-	"Ham0da #0" = 20
-	"Harun #0" = 0
-	"Hasan #0" = 0
-	"Hashim #0" = 0
-	"Hikmat #0" = -1
-	"Husayn #0" = 20
-	"Ibrahim #0" = 0
-	"Inas #0" = -1
-	"Isma'0l #0" = 10
-	"Ja'far #0" = 0
-	"Jalila #0" = -1
-	"Jannat #0" = -1
-	"Khadija #0" = -1
-	"Khalil #0" = 0
-	"Mahir #0" = 0
-	"Mas'ud #0" = 0
-	"Muhammad #3" = 100
-	"Murad #0" = 10
-	"Mustafa #0" = 0
-	"Qadir #0" = 0
-	"Rasim #0" = 0
-	"Salah #0" = 0
-	"Salih #0" = 15
-	"Shadi #0" = 0
-	"Sulaiman #0" = 15
-	"Tahir #0" = 0
-	"Torgud #0" = 0
-	"Yahy0 #2" = 20
-	"Yunus #0" = 15
-	"Y0suf #0" = 10
-	"Zkariy0' #1" = 20
+	"Corr‡du #3" = 60
+	"Dionisi #3" = 60
+	"Guantine #0" = 20
+	"Pedru #0" = 20
+	"Arnaut #0" = 10
+	"Dawud #0" = 10
+	"Ilariu #0" = 10
+	"Malik #1" = 10
+	"Carule #0" = 5
+	"Isidor #0" = 5
+	"Martinu #0" = 5
+	"SËrgiu #0" = 5
+	"Adam #0" = 0
+	"Fabritziu #0" = 0
+	"Firhun #0" = 0
+	"Gabriele #0" = 0
+	"Geoffroi #0" = 0
+	"Guido #0" = 0
+	"Lussurgiu #0" = 0
+	"Micheli #0" = 0
+	"Renard #0" = 0
+	"Sebustianu #0" = 0
+	"»ric #0" = 0
+	
+	"Rossana #0" = -10
+	"Agnese #0" = -1
+	"Luna #0" = -1
+	"Pascalina #0" = -1
 }
 leader_names = {
-	"Adhoum"
-	"Akimi"
-	"Badra"
-	"Bassir"
-	"Dali"
-	"Hakimi"
-	"Naybet"
-	"Saber"
-	"Sassi"
-	"Taher"
+	"Amde"
+	"Butler"
+	"Davides"
+	"Fatamid"
+	"Juanne"
+	"Melis"
+	"Muhajir"
+	"Premyslid"
+	"Sanna"
+	"Tlemcen"
+	"Tortoli"
+	"Yahyavid"
+	"al-Bakkal"
+	"al-Idrisi"
+	"al-Mansur"
+	"al-Mu'min"
+	"al-Najid"
+	"al-Sabr"
+	"al-Tudjin"
+	"al-Wahid"
+	"d'Ivrea"
+	"de Lacon-Gunale"
+	"de su Burgu"
+	"de Wargla"
+	"del Habsburg-Xal√≥n"
+	"di San Vitu"
+	"von Altenburg"
+	"von Friesack"
 }
 ship_names = {
 	"Alim"

@@ -30,52 +30,54 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
+	"Heinrich #1" = 70
+	"Konrad #4" = 40
+	"Albrecht #0" = 20
+	"Friedrich #0" = 20
+	"Johann #0" = 20
+	"Johann Kaspar #0" = 20
+	"Karl #0" = 20
+	"Ludwig #0" = 20
+	"Martin #0" = 20
+	"Michael #1" = 20
+	"Paul #1" = 20
+	"Ulrich #1" = 20
+	"Walter #0" = 20
+	"Wolfgang #0" = 20
+	"Clemens August #0" = 15
+	"Georg #0" = 15
+	"Johann Eustach #0" = 15
+	"Karl Alexander #0" = 15
+	"Karl Joseph #0" = 15
+	"Leopold Wilhelm #0" = 15
+	"Ludwig Anton #0" = 15
+	"Ludwig Franz #0" = 15
+	"Maximilian #0" = 15
+	"Maximilian Franz #0" = 15
 	"Adalbert #0" = 0
 	"Adam #0" = 0
-	"Albrecht #0" = 20
 	"Arnold #0" = 0
 	"Bernhard #0" = 0
-	"Clemens August #0" = 15
 	"Dietrich #0" = 0
 	"Egon #0" = 0
-	"Eva #0" = -1
-	"Friedrich #0" = 20
-	"Georg #0" = 15
 	"Gregor #0" = 0
-	"Heinrich #4" = 70
 	"Humbert #0" = 0
 	"Immanuel #0" = 0
 	"Isidor #0" = 0
-	"Johann #0" = 20
-	"Johann Eustach #0" = 15
-	"Johann Kaspar #0" = 20
-	"Karl #0" = 20
-	"Karl Alexander #0" = 15
-	"Karl Joseph #0" = 15
-	"Konrad #4" = 40
-	"Leopold Wilhelm #0" = 15
 	"Lothar #0" = 0
-	"Ludwig #0" = 20
-	"Ludwig Anton #0" = 15
-	"Ludwig Franz #0" = 15
-	"Magdalena #0" = -1
-	"Maria #0" = -1
 	"Markus #0" = 0
-	"Martin #0" = 20
 	"Matthias #0" = 0
-	"Maximilian #0" = 15
-	"Maximilian Franz #0" = 15
-	"Michael #0" = 20
 	"Pankraz #0" = 0
-	"Paul #0" = 20
 	"Rudolf #0" = 0
 	"Theodor #0" = 0
-	"Ulrich #0" = 20
-	"Walter #0" = 20
-	"Wolfgang #0" = 20
+	
+	"Eva #0" = -1
+	"Magdalena #0" = -1
+	"Maria #0" = -1
 }
 leader_names = {
-	"Freytag von Loringhoven"
+	"Gualch"
+	"Togliatti"
 	"von Aderkas"
 	"von Albedyll"
 	"von Altenburg"
@@ -107,7 +109,7 @@ leader_names = {
 	"von Koskull"
 	"von Krusenstiern"
 	"von Lilienfeld"
-	"von Patkul"
+	"von Ohningen"
 	"von Poll"
 	"von Rennenkampff"
 	"von Richtenberg"
@@ -121,7 +123,7 @@ leader_names = {
 	"von Tieffen"
 	"von Uexküll"
 	"von Ungern-Sternberg"
-	"von Urenbach"
+	"von Venis"
 	"von Wallenrode"
 	"von Wattzau"
 	"von Wistinghausen"

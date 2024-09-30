@@ -29,77 +29,70 @@ historical_units = {
 	western_medieval_knights
 }
 monarch_names = {
-	"Agnes #0" = -1
-	"Amlaíb #1" = 10
-	"Argentocoxos #1" = 10
-	"Arnault #0" = 0
-	"Birgitta #0" = -1
-	"Breth #1" = 10
-	"Bridei #7" = 10
-	"Buthut #1" = 10
-	"Cailean #1" = 10
-	"Caltram #1" = 10
-	"Canuall #1" = 10
-	"Canutulachama #1" = 10
-	"Castantin #1" = 10
-	"Causantín #3" = 10
-	"Ciniod #3" = 10
-	"Cináed #4" = 10
-	"Domnall #2" = 10
-	"Donald #1" = 10
-	"Donnchad #1" = 10
-	"Donnucán #1" = 10
-	"Doriend #0" = -1
-	"Drest #10" = 10
-	"Duib #1" = 10
-	"Duncan #1" = 10
-	"Edwin #1" = 10
-	"Elpin #2" = 10
-	"Emund #0" = 0
-	"Eustathios #0" = 0
-	"Fingen #1" = 10
-	"Fothud #1" = 10
-	"Galam #2" = 10
-	"Ganant #6" = 10
-	"Gormgus #1" = 10
-	"Heilwich #0" = 0
-	"Hugh #0" = 0
-	"Ildulb #1" = 10
-	"Karoline #0" = -1
-	"Lulach #1" = 10
-	"Macbethad #1" = 10
-	"Malcolm #2" = 10
-	"Malise #1" = 10
-	"Matthew #0" = 0
+	"James #0" = 60
+	"Henry #0" = 30
+	"Robert #0" = 30
+	"Alexander #0" = 20
+	"Armengol #0" = 20
+	"Arthur #0" = 20
+	"Charles #0" = 20
+	"Edwin #0" = 20
+	"John #0" = 20
+	"Matthew #0" = 20
+	"Walter #0" = 20
+	"David #0" = 10
+	"Donald #0" = 10
+	"Duncan #0" = 10
+	"Malcolm #0" = 10
+	"Malise #0" = 10
+	"Morgan #0" = 5
+	"Murdoch #0" = 5
+	"Ross #0" = 5
+	"Andrea #0" = 0
+	"Alan #0" = 0
+	"Ailpein #0" = 0
+	"Archibald #0" = 0
+	"Barclay #0" = 0
+	"Beathan #0" = 0
+	"Bruce #0" = 0
+	"Cameron #0" = 0
+	"Cináed #0" = 0
+	"Conall #0" = 0
+	"Douglas #0" = 0
+	"Duff #0" = 0
+	"Edan #0" = 0
+	"Evander #0" = 0
+	"Fraser #0" = 0
+	"Garry #0" = 0
+	"Glen #0" = 0
+	"Ian #0" = 0
+	"Keir #0" = 0
+	"Kennedy #0" = 0
+	"Lennox #0" = 0
+	"Logan #0" = 0
+	"Micheil #0" = 0
 	"Mungo #0" = 0
-	"Máel-Coluim #2" = 10
-	"Naiton #4" = 10
-	"Olcán #1" = 10
-	"Paul #0" = 0
-	"Pilib #3" = 10
-	"Ru #1" = 10
-	"Taran #1" = 10
-	"Telurg #7" = 10
-	"Telurgan #2" = 10
-	"Uipoig #1" = 10
-	"Unuist #3" = 10
-	"Uuen #1" = 10
-	"Uurad #1" = 10
-	"Uuredach #1" = 10
-	"Áed #1" = 10
-	"Éibhleann #0" = -1
+	"Munroe #0" = 0
+	"Scott #0" = 0
+	"Wallace #0" = 0
+	
+	"Mary #0" = -10
+	"Anna  #0" = -1
+	"Elizabeth #0" = -1
+	"Euphemia #0" = -1
+	"Margaret  #0" = -1
 }
 leader_names = {
 	"Adam"
 	"Alexander"
 	"Beaton"
 	"Boyd"
-	"Bruce"
+	"Briain-Athlone"
 	"Cameron"
 	"Campbell"
 	"Carnegie"
 	"Cochrane"
-	"Colyear"
+	"Cockburn"
 	"Crawford"
 	"Crichton"
 	"Cunynghame"
@@ -112,20 +105,21 @@ leader_names = {
 	"Fleming"
 	"Fletcher"
 	"Forbes"
-	"Gilchrist"
-	"Gordon"
+	"Gabráin"
 	"Graham"
+	"Grannd"
 	"Hamilton"
 	"Hepburn"
-	"Hume"
-	"Johnstone"
+	"Hwicce-Wigton"
+	"Ivaring-Glasgow"
 	"Keith"
 	"Kerr"
 	"Knox"
 	"Law"
 	"Leslie"
 	"Lindsay"
-	"Livingston"
+	"Lochore"
+	"Lorc"
 	"MacDonald"
 	"MacGregor"
 	"MacKenzie"
@@ -146,11 +140,13 @@ leader_names = {
 	"Seton"
 	"Sinclair"
 	"Stewart"
-	"Strathbogie"
-	"Wemyss"
+	"Strathearn"
+	"Wallace"
 	"Wilkie"
 	"Wishart"
-	"de Dunbar"
+	"de Pontchâteau"
+	"de Stratford"
+	"de Tourraine"
 }
 ship_names = {
 	"Alexander Gaily"

@@ -29,32 +29,50 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Arnulf #1" = 10
-	"Berengar #1" = 10
-	"Berthold #1" = 10
-	"Eberhard #1" = 10
-	"Ekbert #1" = 10
-	"Eticho #0" = 0
-	"Friedrich #1" = 10
-	"Gebhard #1" = 10
-	"Gottfried #0" = 0
-	"Gottschalk #1" = 10
-	"Hartwig #1" = 10
-	"Heinrich #11" = 10
+	"Sigmund #0" = 60
+	"Eberhard #2" = 40
+	"Friedrich #2" = 40
+	"Johann #1" = 40
+	"Andreas Jakob #0" = 20
+	"Bernhard #0" = 20
+	"Burkhard #0" = 20
+	"Ferdinand #0" = 20
+	"Franz Anton #0" = 20
+	"Georg #0" = 20
+	"Gregor #1" = 20
+	"Guidobald #0" = 20
+	"Jakob Ernst #0" = 20
+	"Johann Ernst #0" = 20
+	"Johann Jakob #0" = 20
+	"Leonhard #0" = 20
+	"Leopold Anton #0" = 20
+	"Marcus Sittikus #0" = 20
+	"Matthäus #0" = 20
+	"Maximilian Gandolf #0" = 20
+	"Michael #0" = 20
+	"Paris #0" = 20
+	"Hyeronimus Franz Josef #0" = 20
+	"Wolf Dietrich #0" = 20
+	"Berthold #0" = 15
+	"Heinrich #0" = 15
+	"Ernst #0" = 15
+	"Leopold #0" = 15
+	"Benedikt #0" = 0
+	"Christian #0" = 0
+	"Clemens #0" = 0
+	"Gerhard #0" = 0
+	"Heinrich #0" = 0
+	"Hermann #0" = 0
 	"Jakob #0" = 0
-	"Kuno #1" = 10
-	"Lantfrid #0" = 0
-	"Luitpold #1" = 10
-	"Odilo #1" = 10
-	"Otto #1" = 10
-	"Pilihilde #0" = -1
-	"Reinaerd #1" = 10
-	"Reinoud #1" = 10
-	"Rizzo #0" = 0
-	"Sieghart #1" = 10
-	"Simone #0" = 0
-	"Willa #0" = -1
-	"Willem #1" = 10
+	"Oskar #0" = 0
+	"Otto #0" = 0
+	"Stefan #0" = 0
+	"Ulrich #0" = 0
+	"Wolfgang #0" = 0
+	
+	"Aleida #0" = -1
+	"Christa #0" = -1
+	"Heilwig #0" = -1
 }
 leader_names = {
 	"Aigner"
@@ -72,9 +90,14 @@ leader_names = {
 	"Rohracher"
 	"Scharl"
 	"Schönswetter"
+	"Stein"
 	"Trakl"
 	"Waggerl"
 	"Witzigmann"
+	"von Lechsgmünd"
+	"von Raabs"
+	"von Ried"
+	"von Schweipünt"
 }
 ship_names = {
 	"Dachstein"

@@ -1,5 +1,5 @@
-owner = Z04
-controller = Z04
+owner = TUN
+controller = TUN
 capital = "Al-Djazair"
 is_city = yes
 culture = algerian
@@ -11,7 +11,7 @@ base_manpower = 1
 extra_cost = 8
 center_of_trade = 1
 add_core = ALG
-add_core = Z04
+add_core = TUN
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

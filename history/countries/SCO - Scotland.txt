@@ -6,49 +6,69 @@ religion = catholic
 primary_culture = scottish
 capital = 250
 add_accepted_culture = highland_scottish
-1444.11.11= {
+1368.5.7 = {
 	monarch = {
-		name = "Edwin"
+		name = "Matthew I"
+		dynasty = "Rivera"
+		adm = 3
+		dip = 5
+		mil = 2
+		birth_date = 1338.12.8
+		religion = catholic
+		culture = scottish
+	}
+}
+1383.8.11 = {
+	monarch = {
+		name = "James I"
+		dynasty = "Rivera"
+		adm = 3
+		dip = 5
+		mil = 2
+		birth_date = 1366.11.17
+		religion = catholic
+		culture = scottish
+	}
+}
+1417.7.21 = {
+	monarch = {
+		name = "Arthur I"
 		dynasty = "Rivera"
 		adm = 3
 		dip = 3
 		mil = 3
-		birth_date = 1406.4.28
+		birth_date = 1385.4.4
 		religion = catholic
 		culture = scottish
 	}
-	add_ruler_personality = silver_tongue_personality
-	add_ruler_personality = strict_personality
 	queen = {
-		name = "Karoline"
-		dynasty = "Gerulfing"
+		name = "Elizabeth"
+		dynasty = "Hwicce-Wigton"
 		adm = 3
 		dip = 4
 		mil = 3
 		country_of_origin = SCO
-		birth_date = 1399.8.16
-		death_date = 1459.8.16
+		birth_date = 1389.8.16
+		death_date = 1449.8.16
 		female = yes
 		religion = catholic
 		culture = scottish
 	}
-	add_queen_personality = fertile_personality
-	add_queen_personality = zealot_personality
+}
+1417.12.8 = {
 	heir = {
-		name = "Matthew"
-		monarch_name = "Matthew"
+		name = "James"
+		monarch_name = "James II"
 		dynasty = "Rivera"
 		adm = 4
 		dip = 5
 		mil = 6
-		birth_date = 1427.12.8
-		death_date = 1492.12.8
+		birth_date = 1417.12.8
+		death_date = 1482.12.8
 		claim = 89
 		religion = catholic
 		culture = scottish
 	}
-	add_heir_personality = lawgiver_personality
-	add_heir_personality = tolerant_personality
 }
 1444.11.11= {
 	add_prestige = 89

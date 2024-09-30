@@ -1,7 +1,11 @@
-ck2_converter_generated = yes
+#Country Name: Please see filename.
+
 graphical_culture = muslimgfx
+
 color = { 143 222 169 }
+
 revolutionary_colors = { 1 0 10 }
+
 historical_idea_groups = {
 	religious_ideas
 	defensive_ideas
@@ -12,75 +16,73 @@ historical_idea_groups = {
 	economic_ideas
 	quality_ideas
 }
+
 historical_units = {
-	afsharid_reformed
-	afsharid_reformed_infantry
-	muslim_dragoon
-	muslim_mass_infantry
-	persian_cavalry_charge
 	persian_footsoldier
-	persian_rifle
+	persian_cavalry_charge
 	persian_shamshir
 	qizilbash_cavalry_unit
 	tofongchis_musketeer
 	topchis_artillery
+	afsharid_reformed
+	afsharid_reformed_infantry
+	muslim_mass_infantry
+	muslim_dragoon
+	persian_rifle
 }
+
 monarch_names = {
-	"Ablarion #1" = 10
-	"Adhid #0" = 0
-	"Adil #1" = 10
-	"Ali #1" = 10
-	"Aras #0" = 0
-	"Ayten #0" = -1
-	"Bönek #0" = 0
-	"Farida #0" = -1
-	"Fayiz #0" = 0
-	"Huma #0" = -1
-	"Husam #1" = 10
-	"Ibrahim #1" = 10
-	"Ja'far #1" = 10
-	"Jamil #0" = 0
-	"Mahdokht #0" = -1
-	"Muaddam #0" = 0
-	"Muhammad #1" = 10
-	"Murad #1" = 10
-	"Muzaffar #0" = 0
-	"Najela #0" = -1
-	"Nasiba #0" = -1
-	"Nuraddin #0" = 0
-	"Seyfullah #0" = 0
-	"Shogofa #0" = -1
-	"Songul #0" = -1
-	"Sabiq #1" = 10
-	"Taimur #0" = 0
-	"Tawaret #0" = -1
-	"Tawfiq #0" = 0
-	"Ubayd #1" = 10
-	"Waththab #1" = 10
-	"Zafir #1" = 10
+	"Shamir #1" = 20
+	"'Abd Allah #2" = 10
+	"'Abd al-Aziz #0" = 10
+	"'Abd al-Rahman #0" = 10
+	"Abdullah #0" = 10
+	"Fahd #0" = 10
+	"Faisal #1" = 10
+	"Ibrahim #0" = 10
+	"Idris #0" = 10
+	"Khalid #0" = 10
+	"Muhammad #0" = 10
+	"Mani #0" = 10
+	"Markhan #0" = 10
+	"Musa #0" = 10
+	"Nasir #0" = 10
+	"Rabi'a #0" = 10
+	"Sa'ud #0" = 10
+	"Turki #0" = 10
+	"Watban #0" = 10
+	"Zayid #0" = 10
+	
+	"Fahda #0" = -1
+	"Nadiyya #0" = -1
+	"Norah #0" = -1
+	"Nura #0" = -1
+	"Seeta #0" = -1
 }
+
 leader_names = {
-	"Al-Wa'ili"
-	"Al-doughman"
-	"Al-frrejah"
-	"Al-ga' 'a' 'gaah"
-	"Al-kwakbah"
-	"Al-murre"
+	"Alid"
+	"Aqilid"
 	"Banu Bakr"
 	"Banu Hanifa"
+	"Mahdi"
+	"Naeemi"
 	"Rabi`ah"
 	"Ruwallah"
+	"Suri"
+	"al-Allaw"
+	"al-Bayoum"
+	"al-Doughman"
+	"al-Kwakbah"
+	"al-Murre"
+	"al-Sabr"
+	"al-Shenuod"
+	"al-Wa'ili"
 }
+
 ship_names = {
-	"Ad-Dahna"
-	"Ad-Dilam"
-	"Al-Armah"
-	"Al-Bayad"
-	"Ar-Riyad"
-	"Jabal Tuwayo"
-	"Nafüd Ad-Dahy"
-	"Nafüd As-Sirrah"
-	"Nafüd Qunayfidahah"
-	"Nafüd Shuqayyiqah"
-	"Shaqra"
+	"Al-Armah" "Ad-Dahna" "Jabal Tuwayo"
+	"Nafüd Qunayfidahah" "Nafüd Shuqayyiqah"
+	"Al-Bayad" "Nafüd Ad-Dahy" "Nafüd As-Sirrah"
+	"Ar-Riyad" "Ad-Dilam" Shaqra
 }

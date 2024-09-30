@@ -5,3 +5,9 @@ dependency = {
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
+royal_marriage = {
+	first = SWE
+	second = SMI
+	start_date = 1426.3.28
+	end_date = 1468.3.18
+}

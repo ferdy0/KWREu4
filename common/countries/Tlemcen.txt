@@ -22,24 +22,43 @@ historical_units = {
 	muslim_mass_infantry
 }
 monarch_names = {
-	"Abu Qurra #1" = 10
-	"Domingo #0" = 0
-	"Estefania #1" = -1
-	"Estefanía #0" = -1
-	"Fella #0" = 0
-	"Gómez #1" = 10
+	"Abu Sa'man #3" = 60
+	"Abu 'Abd Allah #0" = 30
+	"Abu Hammu #0" = 30
+	"Abu Tashufin #3" = 30
+	"Abu Zayyan #0" = 30
+	"Abu Abbas Ahmad #1" = 20
+	"Abu Muh #0" = 20
+	"Abu Lewnis #1" = 5
+	"Abu Malek #0" = 5
+	"Abu Said #0" = 5
+	"Abu Thabid #0" = 5
+	"Abu Osorio #0" = 5
+	"Abu Yusuf #2" = 5
+	"'Abd al-Karim #0" = 0
+	"Barakat #0" = 0
+	"Basir #0" = 0
+	"Berenquel #0" = 0
+	"Dawud #0" = 0
+	"Faris #0" = 0
+	"Haidar #0" = 0
 	"Hashim #0" = 0
-	"Lewnis #1" = 10
-	"Manuel #0" = 0
-	"Maziba #0" = 0
-	"Sekla #0" = 0
-	"Silu #0" = 0
-	"Simón #0" = 0
-	"Sisso #0" = 0
-	"Tashfin #3" = 10
-	"Wattas #1" = 10
-	"Yusuf #2" = 10
-	"al-'Abbas #1" = 10
+	"Jabbar #0" = 0
+	"Jamal #0" = 0
+	"Junayd #0" = 0
+	"Najib #0" = 0
+	"Qasim #0" = 0
+	"Rahim #0" = 0
+	"Rashîd #0" = 0
+	"Safi #0" = 0
+	"Sakhr #0" = 0
+	"Wahid #0" = 0
+	"Wiqila #0" = 0
+	"Zahir #0" = 0
+	
+	"Daïkra #0" = -1
+	"Randa #0" = -1
+	"Tabassum #0" = -1
 }
 leader_names = {
 	"Amara"
@@ -52,6 +71,8 @@ leader_names = {
 	"Kelkal"
 	"Merah"
 	"Selmi"
+	"de Astorga"
+	"de Saragún"
 }
 ship_names = {
 	"Akhir"

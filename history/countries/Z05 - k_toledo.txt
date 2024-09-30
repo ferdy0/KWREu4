@@ -42,8 +42,6 @@ set_country_flag = ZZZ_generated_converter_nation
 		religion = catholic
 		culture = castillian
 	}
-	add_ruler_personality = kind_hearted_personality
-	add_ruler_personality = righteous_personality
 	queen = {
 		name = "Najiba"
 		dynasty = "Magsen"
@@ -57,8 +55,6 @@ set_country_flag = ZZZ_generated_converter_nation
 		religion = catholic
 		culture = castillian
 	}
-	add_queen_personality = naive_personality
-	add_queen_personality = righteous_personality
 	heir = {
 		name = "Enrique"
 		monarch_name = "Enrique I"
@@ -72,8 +68,6 @@ set_country_flag = ZZZ_generated_converter_nation
 		religion = catholic
 		culture = castillian
 	}
-	add_heir_personality = silver_tongue_personality
-	add_heir_personality = zealot_personality
 }
 1444.11.11= {
 	add_prestige = 109

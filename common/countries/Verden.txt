@@ -29,43 +29,57 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Adalbert #1" = 10
-	"Adalgod #0" = 0
-	"Adelheid #1" = -1
-	"Andrzej #0" = 0
-	"Balthasar #0" = 0
-	"Bertrand #0" = 0
-	"Branislava #0" = -1
-	"Damaes #1" = 10
-	"Dobromir #0" = 0
-	"Gisela #0" = -1
-	"Guglielmo #0" = 0
-	"Helena #0" = -1
-	"Henneke #0" = 0
-	"Herberd #0" = 0
-	"Jaroslav #0" = 0
-	"Jelka #0" = -1
-	"Jolanta #0" = -1
-	"Judith #0" = -1
-	"Kasper #0" = 0
-	"Kersten #0" = 0
-	"Krzysztof #0" = 0
-	"Liudolf #0" = 0
-	"Lothar-Udo #1" = 10
-	"Maertijn #1" = 10
-	"Mateusz #0" = 0
-	"Olivier #2" = 10
-	"Onna #1" = -1
-	"Reginlint #0" = -1
-	"Richfrid #1" = 10
-	"Rimbert #1" = 10
-	"Robrecht #2" = 10
+	"Heinrich #2" = 40
+	"Ruprecht #3" = 40
+	"Baldwin #0" = 20
+	"Christoph #0" = 20
+	"Friedrich #0" = 20
+	"Georg #0" = 20
+	"Gerhard #0" = 20
+	"Johann #0" = 20
+	"Johann Adolf #0" = 20
+	"Johann Friedrich #0" = 20
+	"Nicolaus #0" = 20
+	"Oliver #2" = 20
+	"Otto #0" = 20
+	"Albrecht #1" = 15
+	"Bernhard #0" = 15
+	"Burkhard #0" = 15
+	"Gottfried #0" = 15
+	"Florent #0" = 10
+	"Mathias #1" = 10
+	"Wolfram #1" = 10
+	"Adrian #0" = 5
+	"Ambroos #1" = 5
+	"Eduard #0" = 5
+	"Adam #0" = 0
+	"Alexander #0" = 0
+	"Andreas #0" = 0
+	"Baldur #0" = 0
+	"Bruno #0" = 0
+	"Clemens #0" = 0
+	"Denis #0" = 0
+	"Eckhard #0" = 0
+	"Ernst #0" = 0
+	"Florian #0" = 0
+	"Gregor #0" = 0
+	"Helmfried #0" = 0
+	"Helmut #0" = 0
+	"Isaak #0" = 0
+	"Joachim #0" = 0
+	"Jürgen #0" = 0
+	"Klaus #0" = 0
+	"Martin #0" = 0
+	"Maximilian #0" = 0
+	"Michael #0" = 0
+	"Rainer #0" = 0
 	"Rudolf #0" = 0
-	"Svetlana #0" = -1
-	"Volkwin #0" = 0
-	"Withgils #0" = 0
-	"Wulff #0" = 0
-	"Smiechna #0" = -1
+	"Siegert #0" = 0
+	"Siegmund #0" = 0
+	
+	"Alexia #0" = -1
+	"Beatrix #0" = -1
+	"Verena #0" = -1
 }
 leader_names = {
 	"Adler"
@@ -94,7 +108,7 @@ leader_names = {
 	"Laporte"
 	"Löning"
 	"Meyer"
-	"Oelrichs"
+	"Niklotid"
 	"Ordemann"
 	"Reiners"
 	"Rohde"
@@ -103,11 +117,19 @@ leader_names = {
 	"Steinwachs"
 	"Stucken"
 	"Truernitt"
-	"von Bobert"
+	"von Altena"
+	"von Ascania"
+	"von Badewide"
+	"von Bucheck"
 	"von Cappeln"
+	"von Dachau"
+	"von der Lippe"
 	"von Holten"
 	"von Horn"
 	"von Meinertzhagen"
+	"von Plauen"
+	"von Segeberg"
+	"von Wunstorf"
 }
 ship_names = {
 	"Bremer Schlüssel"

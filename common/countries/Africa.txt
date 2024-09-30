@@ -43,24 +43,9 @@ monarch_names = {
 	"Tedu #0" = 0
 	"Togli #0" = 0
 	
-	"Lucia #1" = -10
-	"Rossana #0" = -10
-	"Agnese #0" = -1
-	"Alberade #0" = -1
-	"Alena #0" = -1
-	"Angioletta #1" = -1
-	"Branca #0" = -1
-	"Brigida #0" = -1
 	"Elianora #0" = -1
-	"Fidula #0" = -1
-	"Giulia #0" = -1
-	"Guantine #0" = 1
-	"Meghighda #0" = -1
-	"Menna #0" = -1
-	"Sirma #0" = -1
-	"Tawenza #0" = -1
-	"Tayyurt #0" = -1
-	"Tedora #0" = -1
+	"Lucia #1" = -1
+	"Rossana #0" = -1
 }
 leader_names = {
 	"Aznagid"

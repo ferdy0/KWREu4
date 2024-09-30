@@ -30,32 +30,54 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Adalhard #1" = 10
-	"Arnulf #0" = 0
+	"Johann #0" = 100
+	"Jakob #1" = 60
+	"Clemens Wenzel #0" = 20
+	"Franz Georg #0" = 20
+	"Franz Ludwig #0" = 20
+	"Johann Hugo #0" = 20
+	"Johann Ludwig #0" = 20
+	"Johann Philipp #0" = 20
+	"Karl Joseph #0" = 20
+	"Karl Kaspar #0" = 20
+	"Lothar #0" = 20
+	"Otto #1" = 20
+	"Philipp Christoph #0" = 20
+	"Rhaban #1" = 20
+	"Richard #0" = 20
+	"Werner #1" = 20
+	"Bohemond #2" = 15
+	"Kuno #2" = 15
+	"Arnold #2" = 10
+	"Dieter #1" = 10
+	"Heinrich #2" = 10
+	"Wolgang #1" = 10
+	"Alexander #0" = 0
+	"Andreas #0" = 0
 	"Baldur #0" = 0
-	"Bartolomeo #0" = 0
-	"Bohemond #0" = 0
-	"Bouvin #1" = 10
-	"Caracosa #0" = -1
-	"Costantino #1" = 10
-	"Dietrich #3" = 10
-	"Emmerich #0" = 0
-	"Eustache #0" = 0
-	"Ferdinand #0" = 0
-	"Foulques #0" = 0
+	"Bruno #0" = 0
+	"Clemens #0" = 0
+	"Denis #0" = 0
+	"Eckhard #0" = 0
+	"Edmund #0" = 0
+	"Ernst #0" = 0
+	"Florian #0" = 0
 	"Friedrich #0" = 0
-	"Gunhilda #1" = -1
-	"Hartmann #1" = 10
-	"Havel #1" = 10
-	"Lothaire #1" = 10
-	"Lothar #0" = 0
-	"Poppo #1" = 10
-	"Robert #1" = 10
-	"Savary #0" = 0
-	"Sigifredo #0" = 0
-	"Simon #0" = 0
-	"Udo #1" = 10
-	"Wido #1" = 10
+	"Georg #0" = 0
+	"Gregor #0" = 0
+	"Guntram #0" = 0
+	"Helmfried #0" = 0
+	"Jürgen #0" = 0
+	"Martin #0" = 0
+	"Maximilian #0" = 0
+	"Michael #0" = 0
+	"Rainer #0" = 0
+	"Siegert #0" = 0
+	"Siegmund #0" = 0
+	
+	"Kasimira #0" = -1
+	"Lydia #0" = -1
+	"Nicola #0" = -1
 }
 leader_names = {
 	"Backes"
@@ -73,6 +95,14 @@ leader_names = {
 	"Tristant"
 	"Wellner"
 	"Zimmer"
+	"de Marly"
+	"de Ruvigny"
+	"von Arnstein"
+	"von Baumberg"
+	"von Daun"
+	"von Dolen"
+	"von Salm"
+	"van Rheden"
 }
 ship_names = {
 	"Aach"

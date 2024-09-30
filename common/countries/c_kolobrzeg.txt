@@ -1,27 +1,131 @@
-ck2_converter_generated = yes
+#Country Name: Please see filename.
+
 graphical_culture = westerngfx
-color = { 121 163 58 }
+
+color = { 33  119  58 }
+
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	innovativeness_ideas
+	offensive_ideas
+	economic_ideas
+	maritime_ideas
+	quality_ideas
+	administrative_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	dutch_maurician
+	swedish_gallop
+	swedish_gustavian
+	swedish_caroline
+	swedish_arme_blanche
+	prussian_frederickian
+	prussian_uhlan
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
 monarch_names = {
-	"Aleramo #0" = 0
-	"Ambrogio #0" = 0
-	"Bartolomeus #1" = 10
-	"Berta #0" = -1
-	"Bertoldo #0" = 0
-	"Bogislaw #1" = 10
-	"Bonifacio #0" = 0
-	"Bretislav #1" = 10
-	"Giselbert #1" = 10
-	"Herman #1" = 10
-	"Krešimir #1" = 10
-	"Ludolf #0" = 0
-	"Maria #1" = -1
-	"Montefeltrano #0" = 0
-	"Pio #0" = 0
-	"Ranieri #0" = 0
-	"Siemomysl #2" = 10
-	"Stefano #0" = 0
-	"Swietibor #1" = 10
-	"Thietmar #0" = 0
-	"Willem #1" = 10
-	"Zdislav #1" = 10
+	"Wilhelm #3" = 80
+	"Barnim #1" = 20
+	"Otto #0" = 20
+	"Erik #0" = 20
+	"Filip #0" = 20
+	"Franciszek #0" = 20
+	"Jan Friederik #0" = 20
+	"Georg #0" = 15
+	"Ulrich #0" = 15
+	"Ernest Ludwik #0" = 10
+	"Jan Ernest #0" = 10
+	"Kazimierz #0" = 10
+	"Albrecht #0" = 0
+	"Arnt #0" = 0
+	"August #0" = 0
+	"Bernhard #0" = 0
+	"Bodo #0" = 0
+	"Carl #0" = 0
+	"Emil #0" = 0
+	"Ernest #0" = 0
+	"Fritz #0" = 0
+	"Friederik #0" = 0
+	"Gerhard #0" = 0
+	"Gustav #0" = 0
+	"Harald #0" = 0
+	"Hendrick #0" = 0
+	"Herbert #0" = 0
+	"Hermann #0" = 0
+	"Jan #0" = 0
+	"Janusz #0" = 0
+	"Jochem #0" = 0
+	"Martin #0" = 0
+	"Maximiliam #0" = 0
+	"Paul #0" = 0
+	"Reinhold #0" = 0
+	"Richard #0" = 0
+	"Siegfried #0" = 0
+	"Walter #0" = 0
+	"Valentin #0" = 0
+	
+	"Gabriela #0" = -1
+	"Helena #0" = -1
+	"Janina #0" = -1
+	"Elisabeth #0" = -1
+	"Magdalena #0" = -1
+	"Sophia #0" = -1
+}
+
+leader_names = {
+	Behm
+	Beyse
+	Grosch
+	Heidmann
+	Jürgens
+	Krumtum
+	Kurzmann
+	Meuseling
+	Miercke
+	Normann
+	Rähl
+	Stellmacher
+	Wessel
+	Witt
+	"von Borcke"
+	"von Cammin"
+	"von Eickstedt"
+	"von Greifswald"
+	"von Kolberg"
+	"von Krockows"
+	"von Lettows"
+	"von Neubrandenburg"
+	"von Neustettin"
+	"von Neustreliz"
+	"von Peglows"
+	"von Prenzlau"
+	"von Ramin"
+	"von Rügen"
+	"von Schwerin"
+	"von Stettin"
+	"von Stolp"
+	"von Stralsund"
+	"von Strelows"
+	"von Szczecin"
+	"von und zu Stargard"
+	"von Wolgast"
+	"von Wolgatz"
+	"von Wolin"
+	"von Zitzewitzes"
+}
+
+ship_names = {
+	Pommern "Herzog Kasimir" "Herzog Bogislaw"
+	"Stettin Herzog Barnim" Wismar Rostock
+	Stralsund Greifswald Demmin Anklam "Herzog Otto"
+	Wolgast Cammin Neustettin "Fräulein von Rügen"
 }
