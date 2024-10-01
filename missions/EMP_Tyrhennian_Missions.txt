@@ -268,9 +268,9 @@ venice_missions_slot_1_continued = {
 		required_missions = { tyh_north_italian_rivals }
 		trigger = {
 			OR = {
-			    Z04 = { junior_union_with = TYH }
+			    TUN = { junior_union_with = TYH }
 			    AND = {
-			        NOT = { exists = Z04 }
+			        NOT = { exists = TUN }
 			        owns_core_province = 338
 			    }
 			}
@@ -533,7 +533,7 @@ venice_missions_slot_2 = {
             every_province = {
                 limit = {
             	    has_port = yes
-                    owned_by = Z04
+                    owned_by = TUN
             	}
             	add_claim = ROOT
             }

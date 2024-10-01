@@ -1348,8 +1348,8 @@ country_decisions = {
                 add_adm_power = -100
             }
             if = {
-                limit = { Z04 = { junior_union_with = TYH } }
-                inherit = Z04
+                limit = { TUN = { junior_union_with = TYH } }
+                inherit = TUN
                 add_mil_power = -100
                 add_dip_power = -100
                 add_adm_power = -100
