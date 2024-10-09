@@ -123,3 +123,8 @@ nor_manufactoring_sector = { #still needs localisation
     local_development_cost = -0.2
     local_production_efficiency = 0.1
 }
+
+nor_explorers_society_suported = {
+    admiral_cost = -0.1
+    exploration_mission_range_in_fleet_modifier = 100
+}

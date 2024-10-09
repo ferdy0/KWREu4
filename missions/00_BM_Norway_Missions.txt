@@ -529,6 +529,41 @@ Norway_missions_s2 = {
             }
         }
     }
+
+    Better_ships_explorers_mission = { #still needs localisation
+        icon = mission_sea_battles
+        required_missions = { Mission_sea_battles }
+        position = 12
+        provinces_to_highlight = {
+            province_id = 20
+        }
+        
+        trigger = {
+            AND = {
+                province_id = 20
+                light_ships_in_province = 10
+            }
+            20 = {
+                has_building = drydock
+            }
+        }
+
+        effect = {
+            ROOT = {
+                add_country_modifier = {
+                    name = "nor_explorers_society_suported"
+                    duration = 3650
+                }
+            }
+            20 = {
+                kill_units = {
+                    who = ROOT
+                    type = light_ship
+                    amount = 10
+                }
+            }
+        }
+    }
 }
 Norway_missions_s3 = {
     slot = 3
@@ -577,7 +612,7 @@ Norway_missions_s3 = {
                     duration = 7300
                 }
             }
-            denmark_strait_area = { #It is spelled "strait" in the files, not "straight". Don't ask me why
+            denmark_strait_area = {
                 discover_country = NOR
             }
             1804 = {
@@ -1608,15 +1643,17 @@ Norway_missions_s4 = {
 
         trigger = {
             OR = {
-                treasury = 600
+                AND = {
+                    treasury = 600
+                    20 = {
+                        development = 25
+                        has_building = trade_depot
+                        province_has_center_of_trade_of_level = 2
+                    }
+                }
                 20 = {
                     province_has_center_of_trade_of_level = 3
                 }
-            }
-            20 = {
-                development = 25
-                has_building = trade_depot
-                province_has_center_of_trade_of_level = 2
             }
         }
 
@@ -1628,7 +1665,6 @@ Norway_missions_s4 = {
                             province_has_center_of_trade_of_level = 3
                         }   
                     }
-                    treasury = 600
                 }
                 20 = {
                     add_center_of_trade_level = 1
@@ -1642,7 +1678,7 @@ Norway_missions_s4 = {
             else_if = {
                 limit = {
                     20 = {
-                            province_has_center_of_trade_of_level = 3
+                        province_has_center_of_trade_of_level = 3
                     } 
                 }
                 add_treasury = 400
@@ -1652,6 +1688,23 @@ Norway_missions_s4 = {
                         duration = -1
                     }
                 }
+            }
+        }
+    }
+
+    Extracting_the_resources_mission = { #still needs localisation, also needs to be changed province wise to align with the new area
+        icon = mission_african_gold
+        required_missions = { The_workshops_of_norway_mission }
+        position = 12
+
+        trigger = {
+            development_in_provinces = {
+                value = 200
+                area = susquehanna_area
+                area = great_valley_area
+                province_id = 2553
+                area = south_appalachia_area
+                area = appalachia_area
             }
         }
     }  
