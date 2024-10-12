@@ -1,0 +1,64 @@
+overhunting_greenland = {
+    potential = {
+        OR = {
+            1104 = { is_city = yes }
+            1105 = { is_city = yes }
+        }
+        tag = NOR
+        NOT = { has_country_flag = overhunting_crisis_completed }
+    }
+
+    can_start = {
+        has_any_disaster = no
+        tag = NOR
+        AND = {
+            1104 = { 
+                AND = {
+                    is_city = yes
+                    owned_by = NOR
+                }
+            }
+            1105 = {
+                AND = {
+                    is_city = yes
+                    owned_by = NOR
+                }
+            }
+        }
+    }
+
+    can_stop = {
+        has_any_disaster = yes
+    }
+
+    progress = {
+        modifier = {
+            factor = 1
+            1104 = { owned_by = NOR }
+        }
+        modifier = {
+            factor = 1
+            1104 = { owned_by = NOR }
+        }
+    }
+
+    can_end = {
+        AND = {
+            1104 = { trade_goods = fish }
+            1105 = { trade_goods = fish }
+        }
+    }
+
+    on_start = greenlandic_overhunting.1
+    on_end = greenlandic_overhunting.2
+
+    on_monthly = {
+        events = {
+        }
+        random_events = {
+
+            10000 = 0
+            
+        }
+    }
+}

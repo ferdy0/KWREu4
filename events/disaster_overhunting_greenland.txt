@@ -1,0 +1,51 @@
+namespace = greenlandic_overhunting
+
+country_event = {
+    id = greenlandic_overhunting.1
+    title = greenlandic_overhunting.1.t
+    desc = greenlandic_overhunting.1.d
+    picture = COLONIZATION_eventPicture
+
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            1104 = { change_trade_goods = ivory }
+            1105 = { change_trade_goods = ivory }
+            set_country_flag = overhunting_crisis_fired
+        }
+    }
+
+    option = {
+        name = greenlandic_overhunting.1.a
+        greenland_area = {
+            add_province_modifier = {
+                name = "overhunting_walruses"
+                duration = -1
+            }
+
+            add_province_modifier = {
+                name = "overhunting_2"
+                duration = -1
+            }
+        }
+    }
+}
+
+country_event = {
+    id = greenlandic_overhunting.2
+    title = greenlandic_overhunting.2.t
+    desc = greenlandic_overhunting.2.d
+    picture = COLONIZATION_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = greenlandic_overhunting.2.a
+
+        greenland_area = {
+            remove_province_modifier = overhunting_walruses
+            remove_province_modifier = overhunting_0   
+        }
+    }
+}

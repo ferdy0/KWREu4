@@ -1,0 +1,33 @@
+overhunting_walruses = { # 1 ivory costs 2 ducats
+   trade_value_modifier = -0.4
+   local_monthly_devastation = 0.08 # Negates natural devastation loss
+   local_development_cost = 20.0 # Prevents deving, mostly to prevent removal of devastation, this system will be done through a system of random events based on what level of overhunting the colonies have, higher overhunting means more goods produce but the events will be worse 
+}
+
+overhunting_0 = { # Low amount of hunting
+   trade_goods_size = 1.0
+   picture = "trade_good_size_modifier"
+}
+
+overhunting_1 = {
+   trade_goods_size = 1.1
+   picture = "trade_good_size_modifier"
+}
+
+overhunting_2 = {
+   trade_goods_size = 1.2
+   picture = "trade_good_size_modifier"
+}
+
+overhunting_3 = {
+   trade_goods_size = 1.35
+   local_monthly_devastation = 0.05
+   picture = "trade_good_size_modifier"
+}
+
+overhunting_4 = { # High amount of hunting
+   trade_goods_size = 1.5
+   local_monthly_devastation = 0.1
+   picture = "trade_good_size_modifier"
+}
+

@@ -1,0 +1,8 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_disaster_overhunting_greenland"
+        texturefile = "gfx//interface//disasters//overhunting_greenland.dds"
+        noOfFrames = 3
+        loadType = "INGAME"
+    }
+}
