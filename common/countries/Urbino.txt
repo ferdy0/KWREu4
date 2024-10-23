@@ -28,38 +28,36 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Aldo #0" = 0
-	"Alessandro #0" = 10
-	"Alfonso #0" = 0
+	"Guidobaldo #2" = 40
+	"Francesco Maria #0" = 40
+	"Federico #0" = 40
 	"Antonio #0" = 20
-	"Baldovino #0" = 0
-	"Caterina #0" = -15
+	"Francesco Ubaldo #0" = 20
+	"Guidantonio #0" = 20
+	"Lorenzo #0" = 20
+	"Oddantonio #0" = 20
 	"Cesare #0" = 15
+	"Giovanni Maria #1" = 15
+	"Giulio #0" = 15
+	"Federigo Ubaldo #0" = 15
+	"Alessandro #1" = 10
+	"Giovanni Pietro #0" = 10
+	"Girolamo #0" = 10
+	"Ordelaffo #3" = 10
+	"Guido #0" = 5
+	"Aldo #0" = 0
+	"Alfonso #0" = 0
+	"Baldovino #0" = 0
 	"Cirillo #0" = 0
 	"Cosimo #0" = 0
 	"Damiano #0" = 0
 	"Egidio #0" = 0
-	"Federico #1" = 40
-	"Federigo Ubaldo #0" = 15
-	"Francesco Maria #0" = 40
-	"Francesco Ubaldo #0" = 20
 	"Franco #0" = 0
 	"Giambattista #0" = 0
-	"Giovanna #0" = -15
-	"Giovanni Maria #0" = 15
-	"Giovanni Pietro #0" = 10
-	"Girolamo #0" = 10
-	"Giulio #0" = 15
 	"Giuseppe #0" = 0
-	"Guidantonio #0" = 20
-	"Guido #1" = 5
-	"Guidobaldo #0" = 40
 	"Ippolito #0" = 0
 	"Leandro #0" = 0
-	"Lorenzo #0" = 20
-	"Lucrezia #0" = -10
 	"Marzio #0" = 0
-	"Oddantonio #0" = 20
 	"Ovidio #0" = 0
 	"Paolo #0" = 0
 	"Pietro #0" = 0
@@ -68,6 +66,10 @@ monarch_names = {
 	"Scipione #0" = 0
 	"Teodosio #0" = 0
 	"Vittorio #0" = 0
+	
+	"Caterina #0" = -1
+	"Giovanna #0" = -1
+	"Lucrezia #0" = -1
 }
 leader_names = {
 	"Albani"
@@ -79,7 +81,7 @@ leader_names = {
 	"Borghese"
 	"Borgia"
 	"Braschi"
-	"Carafa"
+	"Campofregoso"
 	"Castagna"
 	"Cervini"
 	"Chiaramonti"
@@ -89,7 +91,7 @@ leader_names = {
 	"Conti"
 	"Corsini"
 	"Cybo"
-	"Doria-Landi"
+	"Defuseh"
 	"Doria-Pamphili"
 	"Gaetani dell'Aquila"
 	"Gangagnelli"
@@ -109,16 +111,17 @@ leader_names = {
 	"Peretti"
 	"Piccolomini"
 	"Pignatelli"
-	"Prignano"
+	"Polentano"
 	"Rezzonico"
 	"Rospigliosi"
-	"Sfondrati"
-	"da Varano"
-	"de' Medici"
-	"del Monte"
+	"Togliatti"
+	"d'Orvieto"
+	"de' Larsa"
+	"de' Mele"
 	"della Rovere"
-	"di Campofregoso"
-	"di Farnese"
+	"di Cagli"
+	"di Barbiano"
+	"di Fermo"
 	"di Montefeltro"
 }
 ship_names = {

@@ -30,49 +30,57 @@ historical_units = {
 	slavic_stradioti
 }
 monarch_names = {
-	"Adrian #0" = 0
-	"Anastasia #0" = -1
-	"Anbazuk #0" = 0
-	"Arina #0" = -1
-	"Aul #0" = 0
-	"Bajan #0" = 0
-	"Balgor #1" = 10
-	"Basarab #0" = 0
-	"Björn #0" = 0
-	"Bojana #0" = -1
-	"Dionysia #0" = -1
-	"Elena #0" = -1
-	"Emerik #0" = 0
-	"Emilia #0" = -1
-	"Floarea #0" = -1
-	"Gheorghe #0" = 0
-	"Grigore #1" = 10
-	"Iacob #4" = 10
-	"Iancu #0" = 0
-	"Ieremia #0" = 0
-	"Iliya #0" = 0
-	"Irina #0" = -1
-	"Krsto #0" = 0
-	"Ladislau #0" = 0
-	"Laurentiu #0" = 0
+	"Alexandru #0" = 120
+	"Grigore #0" = 120
+	"Iacob #0" = 100
+	"Mihail #0" = 100
+	"Constantin #0" = 60
+	"George #0" = 60
+	"Ioan #0" = 60
+	"Nicolae #0" = 60
+	"Simeon #0" = 60
+	"Vlad #0" = 60
+	"Besarab #0" = 40
+	"Mattia #0" = 40
+	"Petru #0" = 40
+	"Radu Ilias #0" = 40
+	"Scarlat #0" = 40
+	"Stefan #0" = 40
+	"Vladislav #0" = 40
+	"Alexandru Ilias #0" = 20
+	"Dan #0" = 20
+	"Francisc #0" = 20
+	"Gavril #0" = 20
+	"Ieremia #0" = 20
+	"Ioan George #0" = 20
+	"Ladislau #0" = 20
+	"Leon #0" = 20
+	"Moise #0" = 20
+	"Neagoie Besarab #0" = 20
+	"Petrascu #0" = 20
+	"Radu Leon #0" = 20
+	"Serban #0" = 20
+	"Sergiu #0" = 20
+	"Teodosiu #0" = 20
+	"Vintila #0" = 20
+	"Vladut #0" = 20
+	"Milos #0" = 10
+	"Corneliu #0" = 0
+	"Flaviu #0" = 0
+	"Iuliu #0" = 0
 	"Lucian #0" = 0
-	"Mariankouda #0" = 0
-	"Mihai #0" = 0
+	"Octavian #0" = 0
+	"Radovan #0" = 0
+	"Roman #0" = 0
+	"Stan #0" = 0
+	"Teodor #0" = 0
+	"Valeriu #0" = 0
+	
+	"Alexandra #0" = -1
+	"Monica #0" = -1
 	"Olimpia #0" = -1
-	"Paraschiva #0" = -1
-	"Pelagia #0" = -1
-	"Radu #0" = 0
-	"Romane #0" = -1
-	"Roxana #0" = -1
-	"Sas #0" = 0
-	"Sergiu #0" = 0
-	"Simion #0" = 0
-	"Tibor #0" = 0
-	"Tihomir #0" = 0
-	"Timotei #0" = 0
-	"Vladislav #1" = 10
-	"Yevpraxia #0" = -1
-	"Zvenislava #0" = -1
+	"Stefana #0" = -1
+	"Tereza #0" = -1
 }
 leader_names = {
 	"Basarab"
@@ -80,21 +88,38 @@ leader_names = {
 	"Cantacuzino"
 	"Caragea"
 	"Craiovescu"
+	"Crasnaru"
+	"Danestilor"
+	"Diamandy"
 	"Dracul"
+	"Draculestilor"
 	"Duca"
+	"Fundateni"
 	"Ghica"
+	"Giurgiuveni-Alba"
+	"Giurgiuveni-Calafat"
+	"Giurgiuveni-Iasi"
 	"Golescu"
 	"Ilias"
 	"Ipsilanti"
+	"Jianu"
+	"Litovoi"
 	"Mavrocordat"
 	"Mircea"
 	"Moruzi"
+	"Niculescu-Dorobantu"
+	"Nikoulitzes"
+	"Odescalci"
+	"Osli"
 	"Racovita"
-	"Sutu"
+	"Rusanesti"
+	"Synadenos"
 	"Tepelus"
 	"Tolmay"
 	"Vacarescu"
+	"Vidrascu"
 	"Voda"
+	"z Hradce"
 }
 ship_names = {
 	"Atacul de noapte"

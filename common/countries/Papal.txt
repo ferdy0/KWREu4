@@ -28,55 +28,51 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Amelie #0" = -1
-	"Andreas #1" = 10
-	"Anselmo #1" = 10
-	"Arsenio #1" = 10
-	"Basso #1" = 10
-	"Benedictus #1" = 10
-	"Bruno #2" = 10
-	"Carlo #1" = 10
-	"Dieter #1" = 10
-	"Eugenius #1" = 10
-	"Fasanius #1" = 10
-	"Francesco #1" = 10
-	"Friedrich #1" = 10
-	"Geghard #1" = 10
-	"Gerard #1" = 10
-	"Gilert #1" = 10
-	"Giovanni #2" = 10
-	"Gregorio #1" = 10
-	"Hadrianus #1" = 10
-	"Hildebrand #1" = 10
-	"Johannes #5" = 10
-	"John #13" = 10
-	"John Sicco #1" = 10
-	"Katharina #0" = -1
-	"Klara #0" = -1
-	"Leo #1" = 10
-	"Lope #0" = 0
-	"Lothar #1" = 10
-	"Lucius #1" = 10
-	"Mammalus #2" = 10
-	"Markwart #1" = 10
-	"Martin #8" = 10
-	"Octavianus #1" = 10
-	"Pascal #1" = 10
-	"Paulus #1" = 10
-	"Peitro #1" = 10
-	"Pietro #1" = 10
-	"Poppo #1" = 10
-	"Sergius #1" = 10
-	"Sieghard #1" = 10
-	"Stephanus #5" = 10
-	"Suidger #1" = 10
-	"Theodorus #2" = 10
-	"Theophylact #2" = 10
-	"Theophylactus #3" = 10
-	"Walbert #0" = 0
-	"Weichart #0" = 0
-	"Wernhard #0" = 0
-	"Šayan #0" = 0
+	"Clemens #2" = 160
+	"Innocentius #2" = 140
+	"Pius #1" = 120
+	"Gregorius #8" = 80
+	"Paulus #1" = 80
+	"Alexander #2" = 60
+	"Benedictus #10" = 40
+	"Leo #9" = 40
+	"Urbanus #3" = 40
+	"Sixtus #3" = 40
+	"Iulius #1" = 40
+	"Bonifacius #7" = 20
+	"Hadrianus #3" = 20
+	"Martinus #3" = 20
+	"Nicolaus #2" = 20
+	"Eugenius #5" = 20
+	"Callistus #1" = 20
+	"Marcellus #1" = 20
+	"Iohannes #21" = 15
+	"Celestinus #0" = 15
+	"Honorius #3" = 10
+	"Aldo #0" = 0
+	"Alfonso #0" = 0
+	"Baldovino #0" = 0
+	"Cirillo #0" = 0
+	"Cosimo #0" = 0
+	"Damiano #0" = 0
+	"Egidio #0" = 0
+	"Franco #0" = 0
+	"Giambattista #0" = 0
+	"Ippolito #0" = 0
+	"Leandro #0" = 0
+	"Marzio #0" = 0
+	"Ovidio #0" = 0
+	"Pietro #0" = 0
+	"Prospero #0" = 0
+	"Rafaello #0" = 0
+	"Scipione #0" = 0
+	"Teodosio #0" = 0
+	"Vittorio #3" = 0
+	
+	"Magdalena #0" = -1
+	"Maria #0" = -1
+	"Eva #0" = -1
+	"Antonia #0" = -1
 }
 leader_names = {
 	"Abano"
@@ -92,7 +88,7 @@ leader_names = {
 	"Belluno"
 	"Bembo"
 	"Brenta"
-	"Brescia"
+	"Buzzacavani"
 	"Casanova"
 	"Cassandro"
 	"Castiglione"
@@ -179,6 +175,7 @@ leader_names = {
 	"Vittorio"
 	"Zara"
 	"Zustiniani"
+	"di Celano"
 }
 ship_names = {
 	"Abraham"

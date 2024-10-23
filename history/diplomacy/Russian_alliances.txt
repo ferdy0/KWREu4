@@ -1,0 +1,41 @@
+#Novgorodian Trade League Members
+
+alliance = {
+	first = NOV
+	second = RIG
+	trade_league = 1
+	start_date = 1291.3.23
+	end_date = 1581.1.1
+}
+
+alliance = {
+	first = NOV
+	second = NZH
+	trade_league = 1
+	start_date = 1361.8.28
+	end_date = 1581.1.1
+}
+
+alliance = {
+	first = NOV
+	second = RSO
+	trade_league = 1
+	start_date = 1361.8.28
+	end_date = 1581.1.1
+}
+
+alliance = {
+	first = NOV
+	second = TVE
+	trade_league = 1
+	start_date = 1066.1.1
+	end_date = 1581.1.1
+}
+
+alliance = {
+	first = NOV
+	second = BRY
+	trade_league = 1
+	start_date = 1413.8.6
+	end_date = 1581.1.1
+}

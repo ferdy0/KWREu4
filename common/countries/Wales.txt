@@ -29,82 +29,110 @@ historical_units = {
 	western_medieval_knights
 }
 monarch_names = {
-	"Adda #0" = 0
-	"Alisander #0" = 0
-	"Annes #0" = -1
-	"Arod #0" = 0
-	"Arthws #0" = 0
-	"Blanche #0" = -1
-	"Bronwen #0" = -1
-	"Cadwgan #1" = 10
-	"Cadwr #0" = 0
-	"Caradog #0" = 0
-	"Coel #0" = 0
-	"Cynan #0" = 0
-	"Cynwyd #1" = 10
-	"Dogfael #3" = 10
-	"Elaine #0" = -1
-	"Elísabet #0" = -1
-	"Guðrún #0" = -1
-	"Gwen #0" = -1
-	"Heledd #0" = -1
-	"Hunydd #0" = -1
-	"Iestyn #0" = 0
-	"Ketill #0" = 0
-	"Lann #0" = -1
-	"Llecci #0" = -1
-	"Llywelyn #2" = 10
-	"Mael #0" = 0
-	"Maelgwn #0" = 0
-	"Margred #0" = -1
-	"Melisant #0" = -1
-	"Otto #0" = 0
-	"Pawl #0" = 0
-	"Raoul #0" = 0
-	"Rhydderch #3" = 10
-	"Simon #0" = 0
-	"Sior #0" = 0
-	"Trahaearn #0" = 0
-	"Tydy #0" = 0
-	"Ysfael #0" = 0
+	"Llywelyn #4" = 50
+	"Meddyn #0" = 50
+	"Rhydderch #4" = 30
+	"Bleddyn #1" = 20
+	"Dogfael #4" = 20
+	"Owain #0" = 20
+	"Rhobert #0" = 20
+	"Cadwgawn #1" = 10
+	"Cynan #2" = 10
+	"Dafydd #0" = 10
+	"Elystan #0" = 10
+	"Garmon #2" = 10
+	"Gruffydd #1" = 10
+	"Iorwerth #0" = 10
+	"Madog #0" = 10
+	"Maredudd #0" = 10
+	"Mihangel #0" = 10
+	"Rhodri #2" = 10
+	"Alisander #0" = 5
+	"Cadwaladr #1" = 5
+	"Cynddylan #0" = 5
+	"Cynfyn #0" = 5
+	"Edern #0" = 5
+	"Einion #1" = 5
+	"Iago #3" = 5
+	"Idwal #2" = 5
+	"Maelgwyn #1" = 5
+	"Morgan #0" = 5
+	"Trahaearn #0" = 5
+	"Aeron #0" = 0
+	"Aled #0" = 0
+	"Aneirin #0" = 0
+	"Arvel #0" = 0
+	"Beli #0" = 0
+	"Berwyn #0" = 0
+	"Brynmor #0" = 0
+	"Cadfael #0" = 0
+	"Cadoc #0" = 0
+	"Celyn #0" = 0
+	"Cledwyn #0" = 0
+	"Colwyn #0" = 0
+	"Dai #0" = 0
+	"Deheweint #0" = 0
+	"Dilwyn #0" = 0
+	"Emyr #0" = 0
+	"Gawain #0" = 0
+	"Geraint #0" = 0
+	"Glynn #0" = 0
+	"Gwyn #0" = 0
+	"Heddwyn #0" = 0
+	"Heilyn #0" = 0
+	"Hywel #0" = 0
+	"Nefydd #0" = 0
+	"Oswallt #0" = 0
+	"Rhian #0" = 0
+	"Tristan #0" = 0
+	"Tudor #0" = 0
+	"Urien #0" = 0
+	"Vaughan #0" = 0
+	
+	"Ceindrych #0" = -1
+	"Cerian #0" = -1
+	"Elinion #0" = -1
+	"Marwenna #0" = -1
 }
 leader_names = {
-	"Bennett"
-	"Bevan"
+	"Aldersparre"
+	"Anwyl"
+	"Arfon"
+	"Becket"
 	"Bowen"
-	"Cadell"
-	"Cadwallader"
+	"Caerloyw"
+	"Conwy"
 	"Daniels"
 	"Davies"
-	"Davis"
+	"Dunoding"
 	"Edwards"
-	"Ellis"
+	"Emlyn"
 	"Evans"
 	"Gough"
-	"Griffiths"
+	"Glastenning"
 	"Gwyn"
 	"Harris"
 	"Hopkins"
 	"Howells"
 	"Hughes"
 	"Humphries"
-	"James"
+	"Ivaring-Glasgow"
 	"Jenkins"
 	"John"
 	"Jones"
 	"Lewis"
 	"Llewellyn"
 	"Lloyd"
-	"Madog"
-	"Matthews"
-	"Meredith"
+	"Mathrafal-Caerfyrddin"
+	"Mathrafal-Dinbych"
+	"Mathrafal-Norhamptone"
 	"Merrick"
 	"Morgan"
 	"Morris"
 	"Mostyn"
 	"Owen"
 	"Parry"
-	"Phillips"
+	"Penweddig"
 	"Powell"
 	"Prees"
 	"Price"
@@ -115,10 +143,13 @@ leader_names = {
 	"Richards"
 	"Roberts"
 	"Rogers"
-	"Thomas"
-	"Vaughan"
-	"Watkins"
-	"Williams"
+	"Talgarth"
+	"Tewdwr"
+	"Warwick"
+	"Ystrad Tywi"
+	"de la Pole"
+	"de Puylaurens"
+	"de St John"
 }
 ship_names = {
 	"Bedwyr"

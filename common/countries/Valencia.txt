@@ -28,44 +28,56 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Adelàsia #0" = -1
-	"Agnès #0" = -1
+	"Raymundo #2" = 50
+	"Roderic #1" = 50
+	"Isteban #1" = 30
+	"Lope #3" = 30
+	"Pedro #0" = 30
+	"Alfons #0" = 15
+	"Àlvar #0" = 15
+	"Juan #0" = 15
+	"Carles #0 " = 10
+	"Chaime #0" = 10
+	"Enric #0" = 10
+	"Felip #0" = 10
+	"Lluís #0" = 10	
+	"Nicolau #0" = 10
+	"Renato #1" = 10	
+	"Fernando #0" = 5
+	"Gerard #0" = 5
+	"Guillem #0" = 5
+	"Martín #0" = 5
+	"Andreu #0" = 0
+	"Antoni #0" = 0
+	"Arnau #0" = 0
 	"Artal #0" = 0
-	"Basiliu #0" = 0
-	"Bertrand #0" = 0
-	"Biaggiu #0" = 0
-	"Castimir #0" = 0
-	"Chaime #0" = 0
-	"Chuana #0" = -1
-	"Crabiele #0" = 0
-	"Dulzis #0" = -1
-	"Eupraxia #0" = -1
-	"Ferran #0" = 0
-	"Ferrando #0" = 0
-	"Gerard #0" = 0
-	"Gonzalo #0" = 0
-	"Grettir #0" = 0
-	"Guiral #0" = 0
-	"Hermenechildo #1" = 10
-	"Ingimar #0" = 0
-	"Isteban #1" = 10
-	"Katalina #0" = -1
-	"Laweye #0" = 0
-	"Lope #1" = 10
-	"Manrique #0" = 0
-	"Markéta #0" = -1
-	"Marquesa #0" = -1
-	"Muniadona #0" = -1
-	"Muza #1" = 10
-	"Nabil #0" = 0
-	"Ordonho #0" = 0
-	"Pellegrinu #0" = 0
-	"Ponz #0" = 0
-	"Ramundu #1" = 10
-	"Salinguerra #0" = 0
-	"Signý #0" = -1
-	"Tegama #0" = 0
-	"Xenia #0" = -1
+	"Bernat #0" = 0
+	"Climent #0" = 0
+	"Domènec #0" = 0
+	"Eduard #0" = 0
+	"Esteve #0" = 0
+	"Francesc #0" = 0
+	"Gonçal #0" = 0
+	"Hèctor #0" = 0
+	"Hug #0" = 0
+	"Ignasi #0" = 0
+	"Joaquim #0" = 0
+	"Jordi #0" = 0
+	"Josep #0" = 0
+	"Josep Antoni #0" = 0
+	"Llorenç #0" = 0
+	"Lluc #0" = 0
+	"Manel #0" = 0
+	"Miquel #0" = 0
+	"Pau #0" = 0
+	"Rafel #0" = 0
+	"Ramon #0" = 0
+	"Roderic #0" = 0
+	"Xavier #0" = 0
+	
+	"Agnès #0" = -1
+	"Dolça #0" = -1
+	"Eva #1" = -1
 }
 leader_names = {
 	"Alemany"
@@ -77,40 +89,44 @@ leader_names = {
 	"Casanovas"
 	"Casaus"
 	"Dalmau"
-	"Desplà"
+	"Despuig"
 	"Destorrent"
 	"Domènec"
 	"Ferrer"
 	"Folc de Cardona"
 	"Fontana"
-	"Gallart"
+	"Galíndez"
 	"Gassol"
 	"Gisbert"
-	"Graner"
-	"Guimet"
+	"González"
+	"Gómez"
 	"Lleixà"
 	"Llull"
 	"Moragues"
 	"Muntaner"
-	"Nadal"
-	"Pallarès"
+	"Núñez"
+	"Orsini"
 	"Pinós"
 	"Piquer"
-	"Pons"
+	"Pérez"
 	"Rasquí"
 	"Ribalta"
 	"Rifós"
 	"Ripio"
 	"Salavert"
 	"Tamarit"
-	"Vallès"
+	"Varela"
 	"Vergós"
 	"Vilamarí"
-	"Vilaplana"
-	"de Balaguer"
-	"de Grau"
-	"de Guimerà"
-	"de Margarit"
+	"d'Anduze"
+	"d'Aracena"
+	"d'Avis"
+	"d'Àger"
+	"de Cabrenys"
+	"de Chaca"
+	"de Guilcer"
+	"de Lacon-Gunale"
+	"de Lacon-Murcia"
 	"de Montcada"
 	"de Mur"
 	"de Ripoll"
@@ -118,7 +134,7 @@ leader_names = {
 	"de Vivar"
 	"de la Riba"
 	"d’Espés"
-	"d’Oms"
+	"von Habsburg"
 }
 ship_names = {
 	"Alerta"

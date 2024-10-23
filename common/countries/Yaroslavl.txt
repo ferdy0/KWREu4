@@ -31,63 +31,77 @@ historical_units = {
 	slavic_stradioti
 }
 monarch_names = {
-	"Alexandr #1" = 10
-	"Alexandra #0" = -1
-	"Andrei #0" = 0
-	"Anna #0" = -1
-	"Athanasios #0" = 0
-	"Dmitar #0" = 0
-	"Dobrava #0" = -1
-	"Gavril #0" = 0
-	"Geralda #0" = -1
-	"Hilaria #0" = -1
-	"Iliya #1" = 10
-	"Jougi #1" = -1
-	"Kapitolina #0" = -1
-	"Maertijn #1" = 10
-	"Maria #0" = -1
-	"Matfei #0" = 0
-	"Matjoi #0" = -1
-	"Mikhail #0" = 0
-	"Mitfora #1" = 10
-	"Nalka #0" = 0
-	"Ofonja #0" = 0
-	"Pankraatei #0" = 0
-	"Pavel #0" = 0
-	"Putiata #0" = 0
-	"Suero #0" = 0
-	"Varaka #0" = 0
+	"Aleksandr #2" = 20
+	"Dmitriy #0" = 20
+	"Ivan #1" = 20
+	"Iliya #1" = 15
+	"Semen #0" = 15
+	"David #0" = 10
+	"Fyodor #1" = 10
 	"Vasiliy #1" = 10
-	"Vasilko #1" = 10
-	"Viacheslav #1" = 10
-	"Yekaterina #0" = -1
-	"Yelizaveta #1" = -1
-	"Yevdokia #0" = -1
-	"Yuriy #0" = 0
+	"Adrian #0" = 0
+	"Afanasiy #0" = 0
+	"Anatoliy #0" = 0
+	"Arseniy #0" = 0
+	"Daniil #0" = 0
+	"Dorofey #0" = 0
+	"Eduard #0" = 0
+	"Faddey #0" = 0
+	"Feodosiy #0" = 0
+	"Feofil #0" = 0
+	"Ferapont #0" = 0
+	"Foka #0" = 0
+	"Foma #0" = 0
+	"Gavriil #0" = 0
+	"Grigoriy #0" = 0
+	"Igor #0" = 0
+	"Kliment #0" = 0
+	"Mefodiy #0" = 0
+	"Mikhail #0" = 0
+	"Naum #0" = 0
+	"Nikita #0" = 0
+	"Nikolai #0" = 0
+	"Pankrati #0" = 0
+	"Prokhor #0" = 0
+	"Radoslav #0" = 0
+	"Ruslan #0" = 0
+	"Serafim #0" = 0
+	"Sevastian #0" = 0
+	"Stanislav #0" = 0
+	"Timofeiy #0" = 0
+	"Varfolomeiy #0" = 0
+	"Vikentiy #0" = 0
+	"Viktor #0" = 0
+	
+	"Tevdokiya #0" = -1
+	"Uliana #0" = -1
+	"Varvara #0" = -1
 }
 leader_names = {
 	"Alabyshe"
-	"Alenkin"
-	"Belsky"
-	"Deyev"
-	"Dulov"
+	"Balashov"
+	"Borisov"
+	"Dalessenos"
+	"Davidovich"
+	"Dmitrievich"
+	"Fedorovich"
 	"Golygin"
 	"Kubensky"
-	"Kurbsky"
-	"Mortkin"
-	"Mulozhsky"
-	"Okhlyabinin"
+	"Kurees"
+	"Matveev"
+	"Nikissima"
+	"Opolyesky"
 	"Pnekov"
-	"Shchetinin"
+	"Rumyantsev"
 	"Siseev"
 	"Sitsky"
-	"Sontsov"
-	"Sudsky"
-	"Temnosiny"
-	"Troekurov"
-	"Ukhorsky"
+	"Sviatoslavich"
+	"Synadenos"
+	"Trubetskoy"
+	"Turgenev"
+	"Turunt"
 	"Ushaty"
-	"Velikogagin"
+	"Vsevolodovich"
 	"Yukhotsky"
 	"Zaozersky"
 	"Zasekin"

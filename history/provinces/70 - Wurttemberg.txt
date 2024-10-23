@@ -1,5 +1,5 @@
-owner = WBG
-controller = WBG
+owner = WUR
+controller = WUR
 capital = "Stuttgart"
 is_city = yes
 culture = swabian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 3
 base_production = 4
 base_manpower = 2
-add_core = WBG
+add_core = WUR
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

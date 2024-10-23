@@ -39,7 +39,7 @@ historical_friend = TYH
 		dip = 5
 		mil = 5
 		religion = catholic
-		culture = aragonese
+		culture = swiss
 	}
 	queen = {
 		name = "Joan"

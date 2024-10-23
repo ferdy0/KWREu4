@@ -29,76 +29,108 @@ historical_units = {
 	slavic_stradioti
 }
 monarch_names = {
-	"Adalbert #0" = 0
-	"Adam #0" = 0
-	"Albrecht #2" = 10
-	"Arnold #0" = 0
-	"Bernhard #0" = 0
-	"Bonifaz #0" = 0
-	"Brigita #0" = -1
-	"Cornelius #0" = 0
-	"Dietrich #0" = 0
-	"Egon #0" = 0
-	"Engelbert #1" = 10
-	"Ferdinand #0" = 0
-	"Friedrich #1" = 10
-	"Fromhold #1" = 15
-	"Gregor #0" = 0
-	"G0nther #0" = 0
-	"Henning #0" = 20
-	"Humbert #0" = 0
-	"Isidor #0" = 0
-	"Johann #4" = 60
-	"Joseph #0" = 0
-	"Kaspar #0" = 20
-	"Konstantin #0" = 0
-	"Laima #0" = -1
-	"Lothar #0" = 0
-	"Marcel #0" = 0
-	"Markus #0" = 0
-	"Matthias #0" = 0
-	"Michael #0" = 20
-	"Nikolaus #1" = 10
-	"Oskar #0" = 0
-	"Pankraz #0" = 0
-	"Rudolf #0" = 0
-	"Siegbert #0" = 0
-	"Siegfried #1" = 15
-	"Silvester #0" = 20
-	"Stefan #0" = 20
-	"Theodor #0" = 0
-	"Thomas #0" = 20
-	"Valda #0" = -1
-	"Wilhelm #0" = 20
-	"Xaver #0" = 0
+	"Mitfora #0" = 50
+	"Mstislav #0" = 50
+	"Yuri #0" = 50
+	"Konstantin #0" = 30
+	"Rostislav #0" = 30
+	"Timmofei #0" = 30
+	"Viacheslav #0" = 30
+	"Alexei #0" = 20
+	"Andrei #0" = 20
+	"Dmitrii #0" = 20
+	"Feodor #0" = 20
+	"Mikhail #0" = 20
+	"Rotislav #0" = 20
+	"Sviatoslav #0" = 20
+	"Vasili #1" = 20
+	"Vsevolod #0" = 20
+	"Yaroslav #0" = 20
+	"Iziaslav #0" = 15
+	"Kibroi #0" = 15
+	"Lev #0" = 15
+	"Nikita #0" = 15
+	"Roman #0" = 15
+	"Yaropolk #0" = 15
+	"Daniil #0" = 10
+	"David #0" = 10
+	"Fedot #0" = 10
+	"Gavriil #0" = 10
+	"Lemetti #2" = 10
+	"Sviatopolk #0" = 10
+	"Voislav #0" = 10
+	"Johora #0" = 5
+	"Rurik #0" = 5
+	"Ruslan #0" = 5
+	"Afanasiy #0" = 0
+	"Akim #0" = 0
+	"Anatoli #0" = 0
+	"Antippa #0" = 0
+	"Arkadi #0" = 0
+	"Boris #0" = 0
+	"Dorofei #0" = 0
+	"Feodosi #0" = 0
+	"Iosif #0" = 0
+	"Ivan #0" = 0
+	"Kahar #0" = 0
+	"Matvei #0" = 0
+	"Nazari #0" = 0
+	"Nikifor #0" = 0
+	"Oleg #1" = 0
+	"Prokopi #0" = 0
+	"Radomir #0" = 0
+	"Rorgon #0" = 0
+	"Saveli #0" = 0
+	"Semen #0" = 0
+	"Sergei #0" = 0
+	"Valeri #0" = 0
+	"Visheslav #0" = 0
+	"Yevgeni #0" = 0
+	"Yusuf #0" = 0
+	
+	"Yevpraxia #0" = -10
+	"Alexandra #0" = -1
+	"Anastasia #0" = -1
+	"Feodosia #1" = -1
+	"Gorislava #0" = -1
+	"Marfa #0" = -1
+	"Zabava #0" = -1
+	"Zlata #0" = -1
 }
 leader_names = {
-	"Ambundi"
-	"Balderis"
-	"Blomberg"
-	"Eisenstein"
-	"Elkins"
-	"Finkelstein"
-	"Herder"
-	"Kanter"
-	"Levin"
-	"Neiman"
-	"Saper"
-	"Scharpenberg"
-	"Stayn"
-	"Strok"
-	"Suerbeer"
-	"Takkon"
-	"Tal"
-	"Von Sinten"
-	"Zander"
-	"von Dolen"
-	"von Lune"
-	"von Nauen"
-	"von Pernstein"
-	"von Schwerin"
-	"von Vechten"
-	"von Wallenrodt"
+	"Barashev"
+	"Baryatinsky"
+	"Belevsky"
+	"Dolgorukov"
+	"Gorchakov"
+	"Gorensky"
+	"Kashin"
+	"Khotetovsky"
+	"Koninsky"
+	"Kozelsky"
+	"Kurlyatev"
+	"Lykov"
+	"Massalski"
+	"Mikula"
+	"Nagiye"
+	"Nozdrevaty"
+	"Obolensky"
+	"Posenya"
+	"Ryumin"
+	"Shestov"
+	"Spashsky"
+	"Spyachy"
+	"Strigin"
+	"Tokmakov"
+	"Torussky"
+	"Trostensky"
+	"Tufyakin"
+	"Turenin"
+	"Volkonsky"
+	"Vorotynsky"
+	"Yeletsky"
+	"Zhiznomir"
+	"Zventsov"
 }
 ship_names = {
 	"Barbara"

@@ -2,43 +2,114 @@ ck2_converter_generated = yes
 graphical_culture = westerngfx
 color = { 195 70 95 }
 monarch_names = {
-	"Acfred #1" = 10
-	"Alias #0" = 0
-	"Almòdis #0" = -1
-	"Amaury #2" = 10
-	"Anfòs #0" = 0
-	"Artau #0" = 0
+	"Guigues #4" = 40
+	"Humbert #2" = 40
+	"Jean #1" = 40
+	"Huges #1" = 10
+	"Pierre #1" = 10
+	"Amaury #2" = 5
+	"Aznar #1" = 5
+	"Bérenger #0" = 5
+	"Élia #0" = 5
+	"Adhémar #0" = 0
+	"Arnaud #0" = 0
 	"Audoïn #0" = 0
-	"Aznar #0" = 0
-	"Beneset #0" = 0
-	"Berenguié #0" = 0
-	"Bermond #0" = 0
-	"Bernat #0" = 0
-	"Bertrand #0" = 0
-	"Blanca #0" = -1
-	"Ermessentz #1" = -1
-	"Estefania #0" = -1
-	"Eugenia #0" = -1
-	"Gerhard #1" = 10
-	"Gerhild #0" = -1
-	"Girard #0" = 0
-	"Guichard #0" = 0
-	"Guigone #0" = -1
-	"Guigues #2" = 10
-	"Géraud #1" = 10
-	"Hildegarde #0" = -1
-	"Hugues #1" = 10
-	"Humbert #1" = 10
-	"Julian #0" = 0
-	"Julienne #0" = -1
-	"Laura #0" = -1
+	"Aymeric #0" = 0
+	"Bartomiu #0" = 0
+	"Bertran #0" = 0		
+	"Charles #0" = 0
+	"Damián #0" = 0
+	"Enric #0" = 0
+	"Estève #0" = 0
+	"Ferrán #0" = 0
+	"Folquet #0" = 0
+	"Frances #0" = 0
+	"Gaufré #0" = 0
+	"Guilhem #0" = 0
+	"Ignaci #0" = 0
+	"Jacme #0" = 0
+	"Jordan #0" = 0
+	"Loys #0" = 0
+	"Martí #0" = 0
+	"Matheu #0" = 0
+	"Miqueu #0" = 0
+	"Nicolau #0" = 0
+	"Per #0" = 0
+	"Pol #0" = 0
+	"Pons #0" = 0
+	"Ramond #0" = 0
+	"Ricard #0" = 0
+	"Sanc #0" = 0
+	"Simos #0" = 0
+	"Vicentz #0" = 0
+	"Xavier #0" = 0
+	"Victor #0" = 0
+	
+	"Anne #0" = -1
+	"Charlotte #0" = -1
 	"Marie #1" = -1
-	"Martin #0" = 0
-	"Otton #0" = 0
-	"Patricia #0" = -1
-	"Sybille #0" = -1
-	"Tiziana #0" = -1
-	"Ubert #1" = 10
-	"Ugues #0" = 0
-	"Vulfard #1" = 10
+}
+
+leader_names = {
+		"Agrain des Ubaz"
+		Alleman
+		Capraia
+		Lesdiguières
+		"Pape de Saint Auban"
+		d'Abon
+		d'Agoult
+		d'Alande-Mirabel
+		d'Alauzon
+		d'Albon
+		d'Andrevet
+		d'Angerès
+		d'Arbalestier
+		d'Arcilay
+		d'Aspremont
+		"de Balathier"
+		"de Bardonnenche"
+		"de Beaumont"
+		"de Belmont"
+		"de Bernard"
+		"de Bocsozel"
+		"de Bompart"
+		"de Bonlieu"
+		"de Boulieu"
+		"de Bressieu"
+		"de Calignon"
+		"de Chalendar"
+		"de Chambarlhac"
+		"de Chambly"
+		"de Champiney"
+		"de Cheilus"
+		"de Clérieux"
+		"de Dié"
+		"de Domaine"
+		"de Forcalquier"
+		"de Gandil"
+		"de Genève"
+		"de Granges"
+		"de l'Isle Jourdain"
+		"de la Balme"
+		"de la Chambre"
+		"de la Farge"
+		"de la Porte"
+		"de la Tour du Pin"
+		"de Lacon-Gunale"
+		"de Miribel"
+		"de Mollin"
+		"de Montchenu"
+		"de Montferrat"
+		"de Nanteuil"
+		"de Peccat"
+		"de Peloux"
+		"de Périssol"
+		"de Perdrix"
+		"de Poissy"
+		"de Révilasc"
+		"de Sabran"
+		"de Seyssel"
+		"de Toulouse"
+		"von Kleve"
+		"von Rüssel"
 }

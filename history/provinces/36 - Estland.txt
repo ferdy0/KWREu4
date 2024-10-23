@@ -1,5 +1,5 @@
-owner = NOV
-controller = NOV
+owner = EST
+controller = EST
 capital = "Reval"
 is_city = yes
 culture = estonian
@@ -9,7 +9,7 @@ base_tax = 3
 base_production = 2
 base_manpower = 1
 center_of_trade = 1
-add_core = NOV
+add_core = EST
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

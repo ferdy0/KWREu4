@@ -1,16 +1,63 @@
-government = monarchy
-add_government_reform = principality
+government = republic
+add_government_reform = merchants_reform
 government_rank = 1
 technology_group = eastern
 religion = orthodox
-primary_culture = russian
+primary_culture = novgorodian
 capital = 306
-1350.1.1= {
+historical_friend = NOV
+historical_friend = TVE
+historical_friend = RSO
+historical_friend = BRY
+1361.8.28 = {
 	monarch = {
-		name = "Dmitry I"
-		dynasty = "Rurikovich"
+		name = "Harle"
+		dynasty = "Poluektovich"
+		adm = 4
+		dip = 3
+		mil = 4
+		birth_date = 1334.3.8
+		religion = orthodox
+		culture = novgorodian
+	}
+}
+1384.4.15 = {
+	monarch = {
+		name = "Daniil"
+		dynasty = "Ivanov"
+		adm = 4
+		dip = 3
+		mil = 4
+		birth_date = 1362.2.12
+		religion = orthodox
+		culture = novgorodian
+	}
+}
+1407.1.30 = {
+	monarch = {
+		name = "Oleg"
+		dynasty = "Vorotynsky"
+		adm = 4
+		dip = 3
+		mil = 4
+		birth_date = 1381.1.2
+		religion = orthodox
+		culture = novgorodian
+	}
+}
+1439.3.24 = {
+	monarch = {
+		name = "Iosef"
+		dynasty = "Turenin"
 		adm = 4
 		dip = 2
 		mil = 4
+		birth_date = 1400.1.3
+		religion = orthodox
+		culture = novgorodian
 	}
+}
+1444.11.11= {
+	add_prestige = 112
+	add_treasury = 109
 }

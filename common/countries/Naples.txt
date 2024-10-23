@@ -28,40 +28,71 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Agnesa #0" = -1
-	"Alarich #0" = 0
-	"Amalrich #0" = 0
-	"Ancel #0" = 0
-	"Anscario #0" = 0
-	"Ascanio #0" = 0
-	"Augustin #0" = 0
-	"Aureliu #0" = 0
-	"Boson #0" = 0
-	"Brunilde #0" = -1
-	"Celestìnu #1" = 10
-	"Christine #0" = -1
-	"Christopher #0" = 0
-	"Dragomira #0" = -1
-	"Eleonora #0" = -1
-	"Guochang #0" = 0
-	"Helene #0" = -1
-	"Hermann #0" = 0
-	"Humbert #1" = 10
-	"Kristof #0" = 0
-	"Lambert #0" = 0
-	"Lucian #0" = 0
-	"Mayor #0" = -1
-	"Pallodino #0" = 0
-	"Pierre #0" = 0
-	"Radomira #0" = -1
-	"Radoslava #0" = -1
-	"Rutger #0" = 0
-	"Simon #4" = 10
-	"Virginia #0" = -1
-	"Wudubu #0" = 0
+	"Simon #8" = 120
+	"Alfonso #0" = 40
+	"Carlo #0" = 40
+	"Celestino #1" = 40
+	"Ferdinando #0" = 40
+	"Filippo #0" = 40
+	"Umberto #1" = 40
+	"Alberto #1" = 20
+	"Federigo #0" = 20
+	"Gabriele #0" = 20
+	"Gioachino #0" = 20
+	"Guido #1" = 20
+	"Leopoldo #0" = 20
+	"Raimondo #0" = 20
+	"Achille #0" = 10
+	"Antonio #0" = 10
+	"Cesare #0" = 10
+	"Enzo #0" = 10
+	"Francesco #0" = 10
+	"Giovanni #0" = 10
+	"Giuseppe #0" = 10
+	"Lucio #0" = 10
+	"Adriano #0" = 0
+	"Aleramo #0" = 0
+	"Alessandro #0" = 0
+	"Alfredo #0" = 0
+	"Bacco #0" = 0
+	"Bartolomeo #0" = 0
+	"Benedetto #0" = 0
+	"Bernardo #0" = 0
+	"Biagio #0" = 0
+	"Caio #0" = 0
+	"Claudio #0" = 0
+	"Cristoforo #0" = 0
+	"Enzo #0" = 0
+	"Fabio #0" = 0
+	"Fabrizio #0" = 0
+	"Gaspare #0" = 0
+	"Gerolamo #0" = 0
+	"Ilario #0" = 0
+	"Leandro #0" = 0
+	"Luigi #0" = 0
+	"Manfredo #0" = 0
+	"Marco #0" = 0
+	"Martino #0" = 0
+	"Nestore #0" = 0
+	"Paolo #0" = 0
+	"Pietro #0" = 0
+	"Raniero #0" = 0
+	"Roberto #0" = 0
+	"Rodolfo #0" = 0
+	"Salvatore #0" = 0
+	"Ubaldo #0" = 0
+	"Ugo #0" = 0
+	"Vicenzo #0" = 0
+	"Walfredo #0" = 0
+	
+	"Adele #0" = -1
+	"Christina #0" = -1
+	"Emma #0" = -1
+	"Ines #0" = -1
 }
 leader_names = {
 	"Acquaviva"
+	"Angeleri"
 	"Caracciolo"
 	"Carafa"
 	"Coscia"
@@ -69,6 +100,7 @@ leader_names = {
 	"Marzano"
 	"Mazzaccara"
 	"Mazziotti"
+	"Oppizzhingi"
 	"Orsini"
 	"Paladini"
 	"Pignatelli"
@@ -77,6 +109,9 @@ leader_names = {
 	"Sanseverino"
 	"Tocco"
 	"d'Avalos"
+	"di Crivelli"
+	"van Berthout-Pyritz"
+	"von Breisgau"
 }
 ship_names = {
 	"Achille"

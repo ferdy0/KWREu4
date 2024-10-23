@@ -3,15 +3,74 @@ add_government_reform = principality
 government_rank = 1
 technology_group = eastern
 religion = orthodox
-primary_culture = russian
+primary_culture = novgorodian
 capital = 4147
 fixed_capital = 4147
-1444.1.1= {
+historical_friend = NOV
+historical_friend = TVE
+historical_friend = NZH
+historical_friend = BRY
+1380.8.23 = {
 	monarch = {
-		name = "Vladimir" #Co-Ruler with Ivan
+		name = "Mikittä I"
 		dynasty = "Rurikovich"
-		dip = 2
-		adm = 2
+		birth_date = 1339.4.13
+		adm = 1
+		dip = 3
 		mil = 2
+		religion = orthodox
+		culture = novgorodian
+	}
+}
+1401.5.25 = {
+	monarch = {
+		name = "Konstantin I"
+		dynasty = "Rurikovich"
+		adm = 1
+		dip = 3
+		mil = 2
+		birth_date = 1375.5.22
+		religion = orthodox
+		culture = novgorodian
+	}
+}
+1403.5.31 = {
+	monarch = {
+		name = "Ivan I"
+		dynasty = "Rurikovich"
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 1401.6.3
+		religion = orthodox
+		culture = novgorodian
+	}
+	queen = {
+		name = "Natasha"
+		dynasty = "Pankeyev"
+		adm = 2
+		dip = 2
+		mil = 2
+		female = yes
+		country_of_origin = RSO
+		birth_date = 1406.1.1
+		death_date = 1474.10.13
+		religion = orthodox
+		culture = uralic
+	}
+}
+1428.10.30 = {
+	heir = {
+		name = "Andrei"
+		monarch_name = "Andrei I"
+		dynasty = "Rurikovich"
+		adm = 4
+		dip = 6
+		mil = 4
+		birth_date = 1428.10.30
+		death_date = 1497.9.22
+		claim = 89
+		religion = orthodox
+		culture = novgorodian
 	}
 }

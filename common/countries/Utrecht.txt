@@ -1,7 +1,10 @@
-ck2_converter_generated = yes
+#Country Name: Please see filename.
+
 graphical_culture = westerngfx
-color = { 223 198 64 }
+
+color = { 223  198  64 }
 revolutionary_colors = { 5 0 5 }
+
 historical_idea_groups = {
 	trade_ideas
 	defensive_ideas
@@ -12,6 +15,7 @@ historical_idea_groups = {
 	spy_ideas
 	religious_ideas
 }
+
 historical_units = {
 	austrian_grenzer
 	austrian_tercio
@@ -27,25 +31,54 @@ historical_units = {
 	western_medieval_knights
 	western_men_at_arms
 }
+
 monarch_names = {
-	"Adalgod #0" = 0
-	"Arnulf #0" = 0
-	"Benedetto #1" = 10
-	"Drogo #0" = 0
-	"Ferdinand #1" = 10
-	"Fresco #1" = 10
-	"Hesso #0" = 0
-	"Hugbert #0" = 0
-	"Iwo #0" = 0
-	"Lambert #1" = 10
-	"Leopold #1" = 10
-	"Manegold #0" = 0
-	"Meginhard #0" = 0
-	"Reginar #1" = 10
-	"Steyn #1" = 10
-	"Viktor #1" = 10
-	"Wilbert #0" = 0
+	"Frederik #3" = 40
+	"David #0" = 20
+	"Filips #0" = 20
+	"Gijsbert #0" = 20
+	"Hendrik #0" = 20
+	"Rudolf #1" = 20
+	"Engelbert #1" = 10
+	"Andries #0" = 5
+	"Arnoud #1" = 5
+	"Boudewijn #1" = 5
+	"Diederick #0" = 5
+	"Floris #1" = 5
+	"Godfried #0" = 5
+	"Jakob #0" = 5
+	"Johan #2" = 5
+	"Koenraad #0" = 5
+	"Nikolaas #0" = 5
+	"Willem #1" = 5
+	"Adriaan #0" = 0
+	"Alexander #0" = 0
+	"Augustijn #0" = 0
+	"Bartholomeus #0" = 0
+	"Christiaan #0" = 0
+	"Constantijn #0" = 0
+	"Daniël #0" = 0
+	"Dominicus #0" = 0
+	"Fabian #0" = 0
+	"Frans #0" = 0
+	"Gillis #0" = 0
+	"Herman #0" = 0
+	"Ignaas #0" = 0
+	"Ivo #0" = 0
+	"Jurriaan #0" = 0
+	"Luuk #0" = 0
+	"Martijn #0" = 0
+	"Matthijs #0" = 0
+	"Michaël #0" = 0
+	"Sieuwed #0" = 0
+	"Thomas #0" = 0
+	"Valentijn #0" = 0
+	
+	"Angelique #0" = -1
+	"Sofie #0" = -1
+	"Yvonne #0" = -1
 }
+
 leader_names = {
 	"Agterberg"
 	"Bailly"
@@ -67,7 +100,7 @@ leader_names = {
 	"Makkink"
 	"Osti"
 	"Pylsweert"
-	"Rekkae"
+	"Randerath"
 	"Rijke"
 	"de Arthuysen"
 	"de Geer"
@@ -77,7 +110,7 @@ leader_names = {
 	"van Carnbee"
 	"van Coehoorn"
 	"van Giessenburg"
-	"van Grovestins"
+	"van Heemskerk"
 	"van Pelt"
 	"van Schoonheten"
 	"van Selmont"
@@ -86,6 +119,7 @@ leader_names = {
 	"van Zoelen"
 	"van der Oije"
 }
+
 ship_names = {
 	"Alberik I"
 	"Amersfoort"
@@ -100,9 +134,11 @@ ship_names = {
 	"Wijk bij Duurstede"
 	"Willibrord"
 }
+
 army_names = {
 	"Leger van $PROVINCE$"
 }
+
 fleet_names = {
 	"Vloot van $PROVINCE$"
 }

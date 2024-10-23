@@ -30,102 +30,129 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Abdul-Salaam #1" = 10
-	"Aldebert #0" = 0
-	"Amédée #1" = 10
-	"Angelbert #0" = 0
-	"Bourgogne #0" = -1
-	"Burhanaddin #0" = 0
-	"Carloman #1" = 10
-	"Charles #2" = 10
-	"Childébert #1" = 10
-	"Childéric #2" = 10
-	"Chilpéric #3" = 10
-	"Clotaire #8" = 10
-	"Clovis #3" = 10
-	"Dagobert #2" = 10
-	"Dedo #0" = 0
-	"Enguerrand #1" = 10
-	"Erp #0" = 0
-	"Esclarmonde #0" = -1
-	"Eudes #1" = 10
-	"Filipa #0" = -1
-	"Ghert #1" = 10
-	"Gontroda #0" = -1
-	"Gouremor #1" = 10
-	"Hatto #1" = 10
-	"Henri #2" = 10
-	"Hezilo #0" = 0
-	"Hugues #3" = 10
-	"Isabeau #0" = -1
-	"Karl #2" = 10
-	"Karloman #1" = 10
-	"Lothaire #1" = 10
+	"Charles #5" = 90
+	"Jean #0" = 50
+	"Antoine #0" = 20
+	"Geoffroy #0" = 20
+	"Géraud #1" = 20
+	"Pierre #0" = 20
+	"François #0" = 15
+	"Henri #2" = 15
+	"Thibault #0" = 15
+	"Benoît #0" = 10
+	"Boson #1" = 10
+	"Gilbert #0" = 10
+	"Guillaume #0" = 10
 	"Louis #5" = 10
-	"Montefeltrano #0" = 0
-	"Musa #0" = 0
-	"Payen #1" = 10
-	"Pepin #1" = 10
-	"Peredyr #0" = 0
-	"Philippe #1" = 10
-	"Raoul #2" = 10
-	"Robert #2" = 10
-	"Roland #1" = 10
-	"Rudolf #1" = 10
-	"Styrbjörn #0" = 0
-	"Tanci #0" = 0
-	"Théoderic #3" = 10
+	"Simon #2" = 10
+	"Alebrand #0" = 5
+	"Aubert #0" = 5
+	"Foulques #1" = 5
+	"Hugues #3" = 5
+	"Philippe #1" = 5
+	"Richard #0" = 5
+	"Archambaud #0" = 1
+	"Adhémar #0" = 1		
+	"Guy #0" = 1
+	"Léonard #0" = 1
+	"Robert #3" = 1
+	"Alexandre #0" = 0
+	"Ambroise #0" = 0
+	"Amédée #1" = 0
+	"André #0" = 0
+	"Armand #0" = 0
+	"Barthélemy #0" = 0
+	"Baudouin #0" = 0
+	"Bertrand #0" = 0
+	"Blaise #0" = 0
+	"Bérengar #0" = 0
+	"Centule #0" = 0
+	"Claude #0" = 0
+	"Clément #0" = 0
+	"Gaspard #0" = 0
+	"Gelduin #0" = 0
+	"Georges #0" = 0
+	"Ignace #0" = 0
+	"Jacques #0" = 0
+	"Jean-Baptiste #0" = 0
+	"Joseph #0" = 0
+	"Jules #0" = 0
+	"Loup #0" = 0
+	"Martin #0" = 0
+	"Matthieu #0" = 0
+	"Maurice #0" = 0
+	"Maximilien #0" = 0
+	"Michel #0" = 0
+	"Nicolas #0" = 0
+	"Payen #1" = 0
+	"Raoul #2" = 0
+	"Renaud #0" = 0
+	"Roland #1" = 0
+	"Serge #0" = 0
+	"Sigismond #0" = 0
+	"Sylvain #0" = 0
+	"Sébastien #0" = 0
+	"Vincent #0" = 0
+	"Étienne #0" = 0
+	
+	"Bonne #0" = -1
+	"Bourgogne #0" = -1
+	"Ermengarde #0" = -1
+	"Isabeau #0" = -1
 }
 leader_names = {
-	"Desgouttes"
-	"Duquesne"
-	"Le Tellier"
+	"Gaveston"
+	"Briain-Beaumont"
+	"Gladius Christi"
+	"Milly"
+	"Steinfurt"
 	"d'Ambleteuse"
 	"d'Aulnay"
 	"d'Entraigues"
-	"d'Estrées"
-	"d'Ornano"
-	"d'Usson"
+	"d'Euse"
+	"d'Ivrea"
+	"d'Uzès"
 	"de Beauharnais"
 	"de Bercy"
-	"de Boissieu"
+	"de Blaison"
 	"de Bonnefoy"
 	"de Bonneuil"
 	"de Broglie"
 	"de Béthune"
-	"de Castaing"
-	"de Caumartin"
+	"de Caumont"
+	"de Caylus"
 	"de Chambly"
 	"de Chambronne"
-	"de Champmartin"
-	"de Chevigny"
-	"de Crussol"
+	"de Charolais"
+	"de Châtellerault"
+	"de Crecy"
 	"de Crèvecœur"
 	"de Dampierre"
-	"de Galard"
+	"de Fournier"
 	"de La Barthe"
 	"de La Ferrandie"
 	"de La Galissonière"
 	"de La Mothe"
 	"de La Motte d'Airan"
 	"de La Porte"
-	"de La Tour d'Auvergne"
+	"de La Trémoille"
 	"de Lhéry"
 	"de Luynes"
-	"de Marguerye"
-	"de Maurepas"
-	"de Neufchâtel"
-	"de Pellefort"
-	"de Richemont"
+	"de Malveisin"
+	"de Montacute-Saintonge"
+	"de Mostuejouls"
+	"de Poissy"
+	"de Ponthieu"
+	"de Provence-Rochelle"
 	"de Rieu"
-	"de Rochechouart"
-	"de Rochemaure"
+	"de Rohan"
+	"de Rouergue"
 	"de Saint-Chamond"
 	"de Saint-Esprit"
 	"de Saint-Germain"
 	"de Saint-Omer"
 	"de Siorac"
-	"de Tocqueville"
+	"de Tarentaise"
 	"de Tréville"
 	"de Vergennes"
 	"de Vibien"

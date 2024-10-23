@@ -3,58 +3,74 @@ add_government_reform = principality
 government_rank = 1
 technology_group = eastern
 religion = orthodox
-primary_culture = russian
+primary_culture = novgorodian
 capital = 294
 fixed_capital = 294
-1398.11.1= {
+historical_friend = NOV
+historical_friend = TVE
+historical_friend = PSK
+historical_friend = BRY
+1384.3.25 = {
 	monarch = {
-		name = "Mikhail II"
+		name = "Mikhail I"
 		dynasty = "Rurikovich"
-		birth_date = 1333.1.1
+		birth_date = 1357.2.17
 		adm = 2
 		dip = 0
 		mil = 1
+		religion = orthodox
+		culture = novgorodian
 	}
 }
-1399.8.26= {
+1389.4.23 = {
 	monarch = {
-		name = "Ivan"
+		name = "Boris I"
 		dynasty = "Rurikovich"
-		birth_date = 1357.1.1
+		birth_date = 1380.6.16
 		adm = 0
 		dip = 1
 		mil = 0
+		religion = orthodox
+		culture = novgorodian
 	}
 }
-1425.11.1= {
+1441.8.17 = {
 	monarch = {
-		name = "Boris"
+		name = "Mikhail II"
 		dynasty = "Rurikovich"
-		birth_date = 1399.1.1
+		birth_date = 1404.10.20
 		adm = 2
 		dip = 3
 		mil = 2
+		religion = orthodox
+		culture = novgorodian
 	}
-	clear_scripted_personalities = yes
-	add_ruler_personality = well_connected_personality
-	add_ruler_personality = well_advised_personality
-}
-1461.2.10= {
-	monarch = {
-		name = "Mikhail III"
-		dynasty = "Rurikovich"
-		birth_date = 1453.1.1
-		adm = 0
-		dip = 0
-		mil = 0
-	}
-}
-1485.9.13= {
-	monarch = {
-		name = "Ivan II"
-		dynasty = "Rurikovich"
+	queen = {
+		name = "Maria"
+		dynasty = "Andomsky"
 		adm = 2
 		dip = 2
-		mil = 1
+		mil = 2
+		female = yes
+		country_of_origin = TVE
+		birth_date = 1406.1.1
+		death_date = 1474.10.13
+		religion = orthodox
+		culture = novgorodian
+	}
+}
+1428.8.22 = {
+	heir = {
+		name = "Mikhail"
+		monarch_name = "Mikhail III"
+		dynasty = "Rurikovich"
+		adm = 4
+		dip = 6
+		mil = 4
+		birth_date = 1428.8.22
+		death_date = 1497.8.22
+		claim = 89
+		religion = orthodox
+		culture = novgorodian
 	}
 }

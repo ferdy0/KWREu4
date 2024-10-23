@@ -1,43 +1,90 @@
-ck2_converter_generated = yes
+#Country Name: Please see filename.
+
 graphical_culture = muslimgfx
-color = { 150 180 0 }
+
+color = { 33 92 143 }
+
+historical_idea_groups = {
+	religious_ideas
+	defensive_ideas
+	trade_ideas
+	administrative_ideas
+	offensive_ideas
+	diplomatic_ideas
+	economic_ideas
+	quality_ideas
+}
+
+historical_units = {
+	persian_footsoldier
+	persian_cavalry_charge
+	persian_shamshir
+	qizilbash_cavalry_unit
+	tofongchis_musketeer
+	topchis_artillery
+	afsharid_reformed
+	afsharid_reformed_infantry
+	muslim_mass_infantry
+	muslim_dragoon
+	persian_rifle
+}
+
 monarch_names = {
-	"Abdul-Qadir #0" = 0
-	"Abu-Bakr #0" = 0
-	"Akin #0" = 0
-	"Ali #1" = 10
-	"Alim #0" = 0
-	"Azam #0" = 0
-	"Cena #0" = -1
-	"Fadil #0" = 0
+	"'Abd al-Aziz #0" = 10
+	"'Abd al-Rahman #1" = 10
+	"'Abd Allah #0" = 10
+	"Fahd #0" = 10
+	"Faisal #0" = 10
+	"Ibrahim #0" = 10
+	"Idris #0" = 10
+	"Khalid #0" = 10
+	"Markhan #0" = 10
+	"Muhammad #0" = 10
+	"Musa #0" = 10
+	"Nasir #0" = 10
+	"Rabi'a #0" = 10
+	"Sa'ud #0" = 10
+	"Watban #0" = 10
+	"Zahid #1" = 10
+	"Zayid #2" = 10
+	
+	"Nadiyya #0" = -1
+	"Jawhara #0" = -1
+	"Noura #0" = -1
+	"Wadhah #0" = -1
+	"Munira #0" = -1
+	"Hessah #0" = -1
 	"Fatima #0" = -1
-	"Ghalib #1" = 10
-	"Husam #0" = 0
-	"Hussayn #0" = 0
-	"Ja'far #2" = 10
-	"Jabir #0" = 0
-	"Khaireddin #1" = 10
-	"Latif #0" = 0
-	"Mahidevi #0" = -1
-	"Muslihiddin #1" = 10
-	"Muzaffaraddin #0" = 0
-	"Mani' #1" = 10
-	"Nu'aym #1" = 10
-	"Numayr #2" = 10
-	"Nyawela #0" = -1
-	"Parween #0" = -1
-	"Rajiya #0" = -1
-	"Ramadan #0" = 0
-	"Sadiq #0" = 0
-	"Saghar #0" = -1
-	"Semeah #0" = -1
-	"Shabib #1" = 10
-	"Sheeftah #0" = -1
-	"Tanaz #0" = -1
-	"Tawaret #0" = -1
-	"Waththab #2" = 10
-	"Ya'qub #0" = 0
-	"Yasmin #0" = -1
-	"Youkhanna #1" = 10
-	"Zeyd #2" = 10
+	"Aisha #0" = -1
+}
+
+leader_names = {
+	Bishoi
+	Bistami
+	Elesbaam
+	Ghiyadhat
+	Hallaj
+	Khiyalat
+	Makharim
+	Masari
+	Mashawiya
+	Mehta
+	Ridjban
+	Sharaf
+	Umur
+	Wada
+	"al-Hasan"
+	"al-Hukban"
+	"al-Muazzam"
+	"al-Numayr"
+	"al-Quraish"
+	"as-Sa'di"
+	"Banu Hatim"
+}
+
+ship_names = {
+	"Al-Armah" "Ad-Dahna" "Jabal Tuwayo"
+	"Nafüd Qunayfidahah" "Nafüd Shuqayyiqah"
+	"Al-Bayad" "Nafüd Ad-Dahy" "Nafüd As-Sirrah"
+	"Ar-Riyad" "Ad-Dilam" Shaqra
 }

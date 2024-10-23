@@ -1,0 +1,52 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 1
+technology_group = western
+religion = orthodox
+primary_culture = novgorodian
+capital = 297
+fixed_capital = 297
+historical_friend = NOV
+historical_friend = TVE
+historical_friend = PSK
+historical_friend = RIG
+1413.8.6 = {
+	monarch = {
+		name = "Nikifor"
+		dynasty = "Kurlyatev"
+		adm = 2
+		dip = 2
+		mil = 4
+		birth_date = 1381.7.10
+		religion = orthodox
+		culture = novgorodian
+	}
+}
+1430.8.9 = {
+	monarch = {
+		name = "Antippa"
+		dynasty = "Trostensky"
+		adm = 1
+		dip = 3
+		mil = 2
+		birth_date = 1400.4.11
+		religion = orthodox
+		culture = novgorodian
+	}
+}
+1438.10.4 = {
+	monarch = {
+		name = "Vasili"
+		dynasty = "Trostensky"
+		adm = 1
+		dip = 3
+		mil = 2
+		birth_date = 1404.3.15
+		religion = orthodox
+		culture = novgorodian
+	}
+}
+1444.11.11 = {
+	add_prestige = 63
+	add_treasury = 58
+}

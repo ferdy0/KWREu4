@@ -29,46 +29,54 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Adolf #0" = 0
-	"August #0" = 10
-	"Bruno #0" = 0
-	"Christian Eberhard #0" = 10
-	"Christoph #0" = 20
-	"Dieter #0" = 0
-	"Eberhard #2" = 100
-	"Emanuel #0" = 0
-	"Florian #0" = 0
 	"Friedrich #0" = 40
-	"Friedrich Achilles #0" = 10
+	"Ludwig #0" = 40
+	"Ulrich #0" = 40
+	"Christoph #0" = 20
 	"Friedrich Eugen #0" = 20
-	"Friedrich Ludwig #0" = 15
-	"Georg #0" = 15
-	"Georg Friedrich #0" = 10
-	"Hartmann #0" = 0
-	"Heinrich #0" = 15
-	"Joachim #0" = 0
-	"Joachim Friedrich #0" = 10
 	"Johann Friedrich #0" = 20
-	"Julius Friedrich #0" = 10
-	"Karl #0" = 20
+	"Karl Alexander #0" = 20
 	"Karl Eugen #0" = 20
-	"Kreszenz #0" = 0
-	"Ludwig #0" = 50
 	"Ludwig Eugen #0" = 20
-	"Magnus #0" = 10
-	"Manfred #0" = 0
-	"Maximilian #0" = 10
-	"Paul #0" = 10
-	"Philipp Friedrich #0" = 10
-	"Raimund #0" = 0
-	"Renata #0" = -1
-	"Siegbert #0" = 0
-	"Sieglinde #0" = -1
-	"Tobias #0" = 0
-	"Ulrich #4" = 60
-	"Ulrike #0" = -1
 	"Wilhelm #0" = 20
 	"Wilhelm Ludwig #0" = 20
+	"Friedrich Ludwig #0" = 15
+	"Georg #1" = 15
+	"Heinrich #0" = 15
+	"Ludwig Friedrich #0" = 15
+	"Thomas #1" = 15
+	"Walter #1" = 15
+	"August #0" = 10
+	"Christian Eberhard #0" = 10
+	"Eberhard Friedrich #0" = 10
+	"Friedrich Achilles #0" = 10
+	"Georg Friedrich #0" = 10
+	"Joachim Friedrich #0" = 10
+	"Julius Friedrich #1" = 10
+	"Magnus #0" = 10
+	"Maximilian #0" = 10
+	"Otto #4" = 10
+	"Paul #0" = 10
+	"Philipp Friedrich #0" = 10
+	"Thomas Friedrich #0" = 10
+	"Adolf #0" = 0
+	"Bruno #0" = 0
+	"Dieter #0" = 0
+	"Emanuel #0" = 0
+	"Florian #0" = 0
+	"Hartmann #0" = 0
+	"Joachim #0" = 0
+	"Jürgen #0" = 0
+	"Kreszenz #0" = 0
+	"Manfred #0" = 0
+	"Raimund #0" = 0
+	"Siegbert #0" = 0
+	"Tobias #0" = 0
+	"Viktor #0" = 0
+	
+	"Renata #0" = -1
+	"Sieglinde #0" = -1
+	"Ulrike #0" = -1
 }
 leader_names = {
 	"Breitmayer"
@@ -77,6 +85,7 @@ leader_names = {
 	"Gute"
 	"Helber"
 	"Henke"
+	"Kaunitz"
 	"Kircher"
 	"Klein"
 	"Knapp"
@@ -92,6 +101,14 @@ leader_names = {
 	"Weber"
 	"Wieland"
 	"Wurst"
+	"von Arbon"
+	"von Baumberg"
+	"von Breisgau"
+	"von Bucheck"
+	"von Lichtenberg"
+	"von Ohningen"
+	"von Ohningen-Teck"
+	"von Scharfenberg"
 }
 ship_names = {
 	"Balingen"
