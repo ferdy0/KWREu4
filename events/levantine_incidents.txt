@@ -8,7 +8,7 @@ country_event = {
 	desc = levantine.1.d
 	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
 	
-	tigger = {
+	trigger = {
 		religion = converted_dynamic_faith_113
 		NOT = { has_country_flag = levantine_isolationism_set }
 	}
