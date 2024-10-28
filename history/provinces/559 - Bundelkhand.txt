@@ -1,5 +1,5 @@
-owner = RJP
-controller = RJP
+owner = MLW
+controller = MLW
 capital = "Jhansi"
 is_city = yes
 culture = vindhyan
@@ -8,8 +8,8 @@ trade_goods = iron
 base_tax = 10
 base_production = 3
 base_manpower = 2
+add_core = MLW
 add_core = BND
-add_core = RJP
 discovered_by = chinese
 discovered_by = east_african
 discovered_by = eastern

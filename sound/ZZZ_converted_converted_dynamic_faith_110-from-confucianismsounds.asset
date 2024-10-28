@@ -1,8 +1,0 @@
-sound = {
-	name = religion_converted_dynamic_faith_110
-	file = "tab_religion_eastern.wav"
-}
-sound = {
-	name = start_convert_converted_dynamic_faith_110
-	file = "start_conversion_eastern_confucianism.wav"
-}

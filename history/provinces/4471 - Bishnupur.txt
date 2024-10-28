@@ -1,5 +1,5 @@
-owner = AVA
-controller = AVA
+owner = ORI
+controller = ORI
 capital = "Bishnupur"
 is_city = yes
 culture = oriya
@@ -8,7 +8,6 @@ trade_goods = naval_supplies
 base_tax = 6
 base_production = 1
 base_manpower = 2
-add_core = AVA
 add_core = ORI
 discovered_by = chinese
 discovered_by = east_african

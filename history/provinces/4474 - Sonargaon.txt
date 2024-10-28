@@ -1,5 +1,5 @@
-owner = KHA
-controller = KHA
+owner = BNG
+controller = BNG
 capital = "Sonargaon"
 is_city = yes
 culture = bengali
@@ -9,7 +9,7 @@ base_tax = 13
 base_production = 5
 base_manpower = 2
 add_core = BNG
-add_core = KHA
+add_core = BNG
 discovered_by = chinese
 discovered_by = east_african
 discovered_by = eastern

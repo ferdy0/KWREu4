@@ -1,5 +1,5 @@
-owner = Z12
-controller = Z12
+owner = TRS
+controller = TRS
 capital = "Bukhara"
 is_city = yes
 culture = tajik

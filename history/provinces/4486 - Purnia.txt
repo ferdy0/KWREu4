@@ -1,5 +1,5 @@
-owner = NPL
-controller = NPL
+owner = BNG
+controller = BNG
 capital = "Purnia"
 is_city = yes
 culture = nepali
@@ -8,7 +8,7 @@ trade_goods = silk
 base_tax = 4
 base_production = 4
 base_manpower = 2
-add_core = NPL
+add_core = BNG
 discovered_by = chinese
 discovered_by = east_african
 discovered_by = eastern

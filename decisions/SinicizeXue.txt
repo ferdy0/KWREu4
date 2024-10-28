@@ -141,6 +141,7 @@ country_decisions = {
 				}
 			}
 			culture_group = east_asian
+			is_emperor_of_china = yes
 		}
 		provinces_to_highlight = {
 			culture = manchu
@@ -193,6 +194,7 @@ country_decisions = {
 				}
 			}
 			culture_group = east_asian
+			is_emperor_of_china = yes
 		}
 		provinces_to_highlight = {
 			culture = zhuang
@@ -245,6 +247,7 @@ country_decisions = {
 				}
 			}
 			culture_group = east_asian
+			is_emperor_of_china = yes
 		}
 		provinces_to_highlight = {
 			culture = mongols

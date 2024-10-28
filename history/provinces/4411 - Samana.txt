@@ -1,5 +1,3 @@
-owner = MLW
-controller = MLW
 capital = "Samana"
 is_city = yes
 culture = kanauji
@@ -9,8 +7,10 @@ fort_15th = yes
 base_tax = 6
 base_production = 4
 base_manpower = 4
+add_core = PUN
+controller = PUN
+owner = PUN
 add_core = DLH
-add_core = MLW
 discovered_by = chinese
 discovered_by = east_african
 discovered_by = eastern

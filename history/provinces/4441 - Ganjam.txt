@@ -1,5 +1,5 @@
-owner = MLW
-controller = MLW
+owner = ORI
+controller = ORI
 capital = "Ganjam"
 is_city = yes
 culture = oriya
@@ -8,7 +8,6 @@ trade_goods = salt
 base_tax = 4
 base_production = 4
 base_manpower = 2
-add_core = MLW
 add_core = ORI
 discovered_by = chinese
 discovered_by = east_african

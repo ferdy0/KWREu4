@@ -1,5 +1,5 @@
-owner = MLW
-controller = MLW
+owner = ASS
+controller = ASS
 capital = "Maibang"
 is_city = yes
 culture = assamese
@@ -10,7 +10,6 @@ base_tax = 6
 base_production = 2
 base_manpower = 3
 add_core = ASS
-add_core = MLW
 discovered_by = chinese
 discovered_by = east_african
 discovered_by = eastern

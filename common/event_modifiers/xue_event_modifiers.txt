@@ -1,0 +1,3 @@
+kaifeng_jews = {
+	local_production_efficiency = 0.2
+}

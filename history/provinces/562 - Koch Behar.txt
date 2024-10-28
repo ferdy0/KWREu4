@@ -1,5 +1,5 @@
-owner = KHA
-controller = KHA
+owner = BNG
+controller = BNG
 capital = "Kamatapur"
 is_city = yes
 culture = kochi
@@ -8,7 +8,7 @@ trade_goods = grain
 base_tax = 2
 base_production = 4
 base_manpower = 2
-add_core = KHA
+add_core = BNG
 add_core = KMT
 discovered_by = chinese
 discovered_by = east_african

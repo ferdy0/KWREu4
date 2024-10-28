@@ -1,5 +1,5 @@
-owner = Z06
-controller = Z06
+owner = PRM
+controller = PRM
 capital = "Kudymkar"
 is_city = yes
 culture = uralic
@@ -8,7 +8,7 @@ trade_goods = fur
 base_tax = 3
 base_production = 2
 base_manpower = 2
-add_core = Z06
+add_core = PRM
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

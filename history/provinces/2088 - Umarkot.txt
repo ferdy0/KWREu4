@@ -8,6 +8,7 @@ trade_goods = wool
 base_tax = 4
 base_production = 4
 base_manpower = 3
+add_core = SND
 add_core = BAL
 discovered_by = chinese
 discovered_by = east_african

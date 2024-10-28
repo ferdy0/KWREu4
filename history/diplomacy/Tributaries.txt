@@ -1,0 +1,34 @@
+dependency=
+{
+    subject_type="tributary_state"
+    first="MNG"
+    second="KRC"
+    start_date="769.1.1"
+    end_date="1836.1.1"
+}
+
+dependency=
+{
+    subject_type="tributary_state"
+    first="TIB"
+    second="NPL"
+    start_date="769.1.1"
+    end_date="1836.1.1"
+}
+
+dependency=
+{
+    subject_type="tributary_state"
+    first="OIR"
+    second="KAS"
+    start_date="769.1.1"
+    end_date="1836.1.1"
+}
+
+vassal=
+{
+    first="OIR"
+    second="KHA"
+    start_date="769.1.1"
+    end_date="1836.1.1"
+}

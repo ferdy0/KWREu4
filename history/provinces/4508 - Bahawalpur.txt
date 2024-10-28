@@ -1,5 +1,5 @@
-owner = SND
-controller = SND
+owner = PUN
+controller = PUN
 capital = "Bahawalpur"
 is_city = yes
 culture = panjabi
@@ -10,7 +10,6 @@ base_tax = 5
 base_production = 5
 base_manpower = 2
 add_core = PUN
-add_core = SND
 discovered_by = chinese
 discovered_by = east_african
 discovered_by = eastern

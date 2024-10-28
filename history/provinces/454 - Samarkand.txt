@@ -1,5 +1,5 @@
-owner = Z1V
-controller = Z1V
+owner = TRS
+controller = TRS
 capital = "Samarkand"
 is_city = yes
 culture = tajik

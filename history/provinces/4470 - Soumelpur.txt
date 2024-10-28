@@ -1,5 +1,5 @@
-owner = MLW
-controller = MLW
+owner = ORI
+controller = ORI
 capital = "Soumelpur"
 is_city = yes
 culture = oriya
@@ -8,7 +8,6 @@ trade_goods = iron
 base_tax = 1
 base_production = 3
 base_manpower = 2
-add_core = MLW
 add_core = ORI
 add_core = TRT
 discovered_by = chinese

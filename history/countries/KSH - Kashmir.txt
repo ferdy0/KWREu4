@@ -1,11 +1,10 @@
 government = monarchy
-add_government_reform = uparaja_reform
+add_government_reform = autocracy_reform
 government_rank = 2
-technology_group = nomad_group
+technology_group = indian
 religion = mahayana
-primary_culture = khitan
+primary_culture = kashmiri
 capital = 4210
-add_accepted_culture = tajik
 1444.11.11= {
 	monarch = {
 		name = "Bei"
@@ -15,7 +14,7 @@ add_accepted_culture = tajik
 		mil = 5
 		birth_date = 1401.9.19
 		religion = mahayana
-		culture = khitan
+		culture = kashmiri
 	}
 	add_ruler_personality = drunkard_personality
 	add_ruler_personality = tactical_genius_personality
@@ -45,7 +44,7 @@ add_accepted_culture = tajik
 		death_date = 1492.6.10
 		claim = 89
 		religion = mahayana
-		culture = khitan
+		culture = kashmiri
 	}
 	add_heir_personality = calm_personality
 	add_heir_personality = careful_personality

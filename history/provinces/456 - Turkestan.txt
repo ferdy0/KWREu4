@@ -1,5 +1,5 @@
-owner = Z13
-controller = Z13
+owner = CHG
+controller = CHG
 capital = "Yasi"
 is_city = yes
 culture = kirgiz

@@ -1,8 +1,5 @@
-owner = BSH
-controller = BSH
 capital = "Pelym"
-is_city = yes
-culture = ostyaki
+culture = samoyed
 religion = manichean
 trade_goods = unknown
 fort_15th = yes

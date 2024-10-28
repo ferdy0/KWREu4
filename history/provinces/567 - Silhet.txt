@@ -1,5 +1,5 @@
-owner = KHA
-controller = KHA
+owner = BNG
+controller = BNG
 capital = "Sylhet"
 is_city = yes
 culture = assamese
@@ -8,8 +8,8 @@ trade_goods = cotton
 base_tax = 8
 base_production = 1
 base_manpower = 2
+add_core = BNG
 add_core = ASS
-add_core = KHA
 discovered_by = chinese
 discovered_by = east_african
 discovered_by = eastern

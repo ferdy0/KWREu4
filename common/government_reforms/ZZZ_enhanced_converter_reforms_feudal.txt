@@ -977,3 +977,183 @@ mossi_federal_kingdom = {
 		factor = 1
 	}
 }
+
+chinese_warlord = {
+	icon = "samurai"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			primary_culture = tibetan
+			primary_culture = bai
+			primary_culture = miao
+			primary_culture = yi
+			culture_group = east_asian
+		}
+		OR = {
+			AND = {
+				OR = {
+					primary_culture = miao
+					primary_culture = yi
+				}
+				religion = animism
+			}
+			AND = {
+				primary_culture = bai
+				religion = buddhism
+			}
+			religion = confucianism
+		}
+		technology_group = chinese
+		capital_scope = {
+			OR = {
+				region = north_china_region
+				region = xinan_region
+				region = south_china_region
+				region = tibet_region
+			}
+		}
+		if = {
+			limit = { is_subject = yes }
+			overlord = { has_reform = celestial_empire }
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = tibetan
+			primary_culture = bai
+			primary_culture = miao
+			primary_culture = yi
+			culture_group = east_asian
+		}
+		OR = {
+			AND = {
+				OR = {
+					primary_culture = miao
+					primary_culture = yi
+				}
+				religion = animism
+			}
+			AND = {
+				primary_culture = bai
+				religion = buddhism
+			}
+			religion = confucianism
+		}
+		technology_group = chinese
+		capital_scope = {
+			OR = {
+				region = north_china_region
+				region = xinan_region
+				region = south_china_region
+				region = tibet_region
+			}
+		}
+		if = {
+			limit = { is_subject = yes }
+			overlord = { has_reform = celestial_empire }
+		}
+	}
+	maintain_dynasty = yes
+	allow_force_tributary = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		OR = {
+			primary_culture = tibetan
+			primary_culture = bai
+			primary_culture = miao
+			primary_culture = yi
+			culture_group = east_asian
+		}
+		technology_group = chinese
+		OR = {
+			AND = {
+				OR = {
+					primary_culture = miao
+					primary_culture = yi
+				}
+				religion = animism
+			}
+			AND = {
+				primary_culture = bai
+				religion = buddhism
+			}
+			religion = confucianism
+		}
+		capital_scope = {
+			OR = {
+				region = north_china_region
+				region = xinan_region
+				region = south_china_region
+				region = tibet_region
+			}
+		}
+	}
+	fixed_rank = 2
+
+	modifiers = {
+		manpower_recovery_speed = 0.25
+		governing_capacity = 500
+		liberty_desire = 50
+	}
+	
+	ai = {
+		factor = 1000
+	}
+
+	custom_attributes = {
+		has_unify_china_cb = yes
+	}
+}
+
+grand_council_reform = {
+	icon = "royal_court"
+	allow_normal_conversion = yes
+	potential = {
+		OR = { 
+			mission_completed = xue_imperial_3_4
+			has_reform = grand_council_reform
+		}
+	}
+	modifiers = {
+		governing_capacity_modifier = 0.1
+	}
+
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+		custom_attributes = {
+			halved_parliament_bribes = yes
+		}
+	}
+}
+
+xue_seal_of_the_emperor_reform = {
+	icon = "mng_seal_of_the_emperor_reform"
+	allow_normal_conversion = yes
+	potential = {
+		OR = { 
+			has_reform = xue_seal_of_the_emperor_reform
+			mission_completed = xue_crisis_dynasty
+		}
+	}
+	trigger = {
+		OR = { 
+			has_reform = xue_seal_of_the_emperor_reform
+			mission_completed = xue_crisis_dynasty
+		}
+	}
+	modifiers = {
+		allow_free_estate_privilege_revocation = yes 
+		governing_capacity = 200 
+		max_absolutism = 10 
+	}
+	ai = {
+		factor = 10
+	}
+}

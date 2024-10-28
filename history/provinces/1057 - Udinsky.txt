@@ -1,16 +1,11 @@
-owner = KHA
-controller = KHA
 capital = "Udinskoye"
-is_city = yes
-culture = khalkha
+culture = buryat
 religion = vajrayana
 trade_goods = unknown
 base_tax = 3
 base_production = 2
 base_manpower = 2
-add_core = KHA
 add_core = KLK
-discovered_by = chinese
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

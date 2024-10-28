@@ -1,5 +1,5 @@
-owner = BSH
-controller = BSH
+owner = Z06
+controller = Z06
 capital = "Ar-Chally"
 is_city = yes
 culture = kazani
@@ -8,7 +8,7 @@ trade_goods = grain
 base_tax = 1
 base_production = 3
 base_manpower = 1
-add_core = BSH
+add_core = Z06
 add_core = KAZ
 discovered_by = east_african
 discovered_by = eastern

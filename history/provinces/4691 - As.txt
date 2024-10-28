@@ -1,14 +1,10 @@
-owner = CMN
-controller = CMN
 capital = "As"
-is_city = yes
-culture = ostyaki
-religion = vajrayana
+culture = samoyed
+religion = tengri_pagan
 trade_goods = unknown
 base_tax = 2
 base_production = 2
 base_manpower = 1
-add_core = CMN
 add_core = YUG
 discovered_by = east_african
 discovered_by = eastern

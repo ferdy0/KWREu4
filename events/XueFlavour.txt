@@ -1,0 +1,58 @@
+#Jewish Community in Kaifeng
+country_event = {
+	id = xue_events.1
+	title = "xue_events.1.t"
+	desc = "xue_events.1.d"
+	picture = RELIGIOUS_MIGRANTS_eventPicture
+	goto = 688
+
+    fire_only_once = yes
+
+	trigger = {
+		religion = confucianism
+		tag = XUE
+        is_emperor_of_china = yes
+        is_year = 1465
+        owns = 688
+	}
+	
+	mean_time_to_happen = {
+		months = 180
+    }
+	
+	option = {
+		name = "xue_events.1.a"
+        688 = {
+            add_treasury = -250
+            add_base_production = 4
+            change_religion = jewish
+            add_province_modifier = {
+                 name = "kaifeng_jews"
+                 duration = -1
+            }
+		}	
+    }
+    option = {
+        name = "xue_events.1.b"
+        688 = {
+            add_unrest = 5
+        }
+        add_mandate = -5
+    }
+}
+
+country_event = {
+	id = xue_events.2
+	title = xue_events.2.t
+	desc = xue_events.2.d
+	picture = IMPORTANT_STATUE_eventPicture
+	is_triggered_only = yes 
+	
+	option = {
+		name = xue_events.2.a
+		
+		add_mandate = 10
+		
+		add_government_reform = xue_seal_of_the_emperor_reform
+	}
+}

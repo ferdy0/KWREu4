@@ -1,0 +1,131 @@
+country_decisions = {
+
+	form_xue_dynasty = {
+		major = yes
+		potential = {
+			tag = TIB
+			was_never_end_game_tag_trigger = yes
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			NOT = { exists = XUE }
+			NOT = { has_country_flag = xue_dynasty_formed }
+
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 5
+				}
+			}
+
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 679		# Chengdu
+				province_id = 662		# Yunnan
+				province_id = 680		# Chongqing
+				province_id = 700		# Xian
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			owns = 679		# Chengdu
+			owns = 662		# Yunnan
+			owns = 680		# Chongqing
+			owns = 700		# Xian
+			679 = {		# Chengdu
+				is_state = yes
+			}
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			if = {
+				limit = {
+					has_dlc = "Mandate of Heaven"
+					any_country = {
+						is_emperor_of_china = yes
+					}
+				}
+				is_emperor_of_china = yes
+			}
+			else_if = {
+				limit = {
+					has_dlc = "Common Sense"
+				}
+				government_rank = 3
+			}
+			else = {
+				total_development = 1000
+			}
+		}
+		effect = {
+			679 = {
+				move_capital_effect = yes
+				change_culture = ROOT
+				add_core = XUE
+			}
+			change_tag = XUE
+			swap_non_generic_missions = yes
+			on_change_tag_effect = yes
+			set_government_rank = 3
+			south_china_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = XUE
+			}
+			xinan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = XUE
+			}
+			north_china_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = XUE
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+			if = {
+				limit = {
+					has_reform = steppe_horde
+				}
+				change_government = monarchy
+				#set_legacy_government = despotic_monarchy
+			}
+			if = {
+				limit = {
+					technology_group = nomad_group
+				}
+				change_technology_group = chinese
+				change_unit_type = chinese
+			}
+			if = {
+				limit = {
+					NOT = { religion = confucianism }
+				}
+				change_religion = confucianism
+				add_harmonized_religion = tengri_pagan_reformed
+			}
+			add_prestige = 10
+			set_country_flag = xue_dynasty_formed
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

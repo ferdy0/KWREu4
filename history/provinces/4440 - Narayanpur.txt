@@ -1,5 +1,5 @@
-owner = TIB
-controller = TIB
+owner = ASS
+controller = ASS
 capital = "Narayanpur"
 is_city = yes
 culture = nepali
@@ -8,7 +8,7 @@ trade_goods = tea
 base_tax = 4
 base_production = 3
 base_manpower = 2
-add_core = TIB
+add_core = ASS
 discovered_by = chinese
 discovered_by = east_african
 discovered_by = eastern

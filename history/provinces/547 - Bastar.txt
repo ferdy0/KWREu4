@@ -1,5 +1,5 @@
-owner = MLW
-controller = MLW
+owner = ORI
+controller = ORI
 capital = "Jagdalpur"
 is_city = yes
 culture = oriya
@@ -9,7 +9,6 @@ fort_15th = yes
 base_tax = 4
 base_production = 3
 base_manpower = 1
-add_core = MLW
 add_core = ORI
 discovered_by = chinese
 discovered_by = east_african

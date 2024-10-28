@@ -1,5 +1,3 @@
-owner = RJP
-controller = RJP
 capital = "Sialkot"
 is_city = yes
 culture = panjabi
@@ -10,7 +8,9 @@ base_tax = 5
 base_production = 5
 base_manpower = 3
 add_core = PUN
-add_core = RJP
+controller = PUN
+owner = PUN
+add_core = PUN
 discovered_by = chinese
 discovered_by = east_african
 discovered_by = eastern

@@ -1,5 +1,5 @@
-owner = MLW
-controller = MLW
+owner = ORI
+controller = ORI
 capital = "Vizianagaram"
 is_city = yes
 culture = oriya
@@ -10,7 +10,6 @@ base_production = 4
 base_manpower = 2
 extra_cost = 8
 center_of_trade = 1
-add_core = MLW
 add_core = ORI
 discovered_by = chinese
 discovered_by = east_african

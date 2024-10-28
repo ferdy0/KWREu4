@@ -1,5 +1,5 @@
-owner = BSH
-controller = BSH
+owner = CMN
+controller = CMN
 capital = "Zhakeikin"
 is_city = yes
 culture = cuman
@@ -8,7 +8,7 @@ trade_goods = iron
 base_tax = 2
 base_production = 2
 base_manpower = 1
-add_core = BSH
+add_core = CMN
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

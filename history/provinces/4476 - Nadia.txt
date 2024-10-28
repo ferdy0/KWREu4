@@ -1,5 +1,5 @@
-owner = MLW
-controller = MLW
+owner = BNG
+controller = BNG
 capital = "Nadia"
 is_city = yes
 culture = bengali
@@ -9,7 +9,7 @@ base_tax = 6
 base_production = 5
 base_manpower = 3
 add_core = BNG
-add_core = MLW
+add_core = BNG
 discovered_by = chinese
 discovered_by = east_african
 discovered_by = eastern

@@ -5,6 +5,7 @@ trade_goods = unknown
 base_tax = 2
 base_production = 2
 base_manpower = 1
+discovered_by = chinese
 discovered_by = KHA
 discovered_by = MCH
 discovered_by = OIR

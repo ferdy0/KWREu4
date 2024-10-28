@@ -1,5 +1,5 @@
-owner = AVA
-controller = AVA
+owner = ORI
+controller = ORI
 capital = "Balasore"
 is_city = yes
 culture = oriya
@@ -8,7 +8,6 @@ trade_goods = cloth
 base_tax = 6
 base_production = 5
 base_manpower = 3
-add_core = AVA
 add_core = ORI
 discovered_by = chinese
 discovered_by = east_african

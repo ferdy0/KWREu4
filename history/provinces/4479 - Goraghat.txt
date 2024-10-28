@@ -1,5 +1,5 @@
-owner = MLW
-controller = MLW
+owner = BNG
+controller = BNG
 capital = "Goraghat"
 is_city = yes
 culture = bengali
@@ -10,7 +10,7 @@ base_tax = 7
 base_production = 2
 base_manpower = 6
 add_core = BNG
-add_core = MLW
+add_core = BNG
 discovered_by = chinese
 discovered_by = east_african
 discovered_by = eastern

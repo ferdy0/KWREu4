@@ -7,7 +7,7 @@ monarchy = {
 				autocracy_reform
 				elective_monarchy_reform
 				autocracy_tyrhennia_reform
-                canaania_reform
+                		canaania_reform
 				plutocratic_reform
 				indian_sultanate_reform
 				nayankara_reform
@@ -388,6 +388,7 @@ monarchy = {
 				legacy_of_eranshahr_reform
 				superiority_of_the_state_reform
 				divided_aristocracy_reform
+				grand_council_reform
 			}
 		}
 		economical_matters = {
@@ -440,6 +441,7 @@ monarchy = {
 				#1.35 Addition
 				mng_seal_of_the_emperor_reform
 				strengthen_bakuhan_system_reform
+				xue_seal_of_the_emperor_reform
 			}
 		}
 		separation_of_power = {

@@ -1,5 +1,5 @@
-owner = Z2D
-controller = Z2D
+owner = TRS
+controller = TRS
 capital = "Shahrisabz"
 is_city = yes
 culture = tajik

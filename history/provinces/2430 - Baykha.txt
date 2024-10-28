@@ -1,5 +1,5 @@
 capital = "Troitskiy"
-culture = samoyed
+culture = khitan
 religion = tengri_pagan
 trade_goods = unknown
 base_tax = 1

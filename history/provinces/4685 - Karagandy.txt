@@ -1,5 +1,5 @@
-owner = CMN
-controller = CMN
+owner = CHG
+controller = CHG
 capital = "Karagandy"
 is_city = yes
 culture = kirgiz
@@ -9,7 +9,6 @@ base_tax = 2
 base_production = 1
 base_manpower = 1
 add_core = CHG
-add_core = CMN
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

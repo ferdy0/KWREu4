@@ -1,12 +1,12 @@
 tibetan_empire_local = {
 	rank = {
-		3 = EMPIRE
+		2 = EMPIRE
 	}
 	ruler_male = {
-		3 = PENDEN
+		2 = PENDEN
 	}
 	ruler_female = {
-		3 = PENDEN_fem
+		2 = PENDEN_fem
 	}
 	trigger = {
 		tag = TIB

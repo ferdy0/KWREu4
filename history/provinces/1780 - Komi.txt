@@ -1,14 +1,10 @@
-owner = CMN
-controller = CMN
 capital = "Yarensk"
-is_city = yes
-culture = ostyaki
+culture = samoyed
 religion = manichean
 trade_goods = fur
 base_tax = 2
 base_production = 2
 base_manpower = 1
-add_core = CMN
 add_core = YUG
 discovered_by = east_african
 discovered_by = eastern

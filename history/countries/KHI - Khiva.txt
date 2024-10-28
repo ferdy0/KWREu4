@@ -3,7 +3,7 @@ add_government_reform = feudal_theocracy
 government_rank = 1
 technology_group = muslim
 religion = sunni
-primary_culture = tajik
+primary_culture = oghuz
 capital = 2362
 religious_school = hanafi_school
 1444.11.11= {
@@ -15,7 +15,7 @@ religious_school = hanafi_school
 		mil = 4
 		birth_date = 1424.9.14
 		religion = sunni
-		culture = tajik
+		culture = oghuz
 	}
 	add_ruler_personality = careful_personality
 	add_ruler_personality = tolerant_personality
@@ -30,7 +30,7 @@ religious_school = hanafi_school
 		death_date = 1479.10.4
 		female = yes
 		religion = sunni
-		culture = tajik
+		culture = oghuz
 	}
 	add_queen_personality = secretive_personality
 	add_queen_personality = silver_tongue_personality
