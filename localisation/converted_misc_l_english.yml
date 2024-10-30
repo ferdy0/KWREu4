@@ -194,7 +194,7 @@
  tyh_of_wealth_and_power_title:0 "Of Wealth & Power"
  tyh_of_wealth_and_power_desc:0 "Few have attained our level of wealth, opulence, and power throughout the history of our domain. We will proudly stand at the top of the food chain and wield the power to determine the fate of an entire continent."
  tyh_army_republic_title:0 "Army of the Crown"
- tyh_army_republic_desc:0 "The last century and the century before, have seen our peninsula fall victim to many conquerors and tyrants. We must safeguard our ideals and our people!"
+ tyh_army_republic_desc:0 "The last centuries have seen our islands fall victim to many conquerors and tyrants. We must safeguard our ideals and our people!"
  tyh_genoa_title:0 "Old Rivalries"
  tyh_genoa_desc:0 "The Genoese have long been thorns to our side, usurping our wealth and trade for their enrichment. We must put a stop to this!"
  tyh_reach_malacca_title:0 "Reach Malacca"
@@ -221,7 +221,7 @@
   #Slot 5
  
  tyh_patronize_the_scuole_grandi_title:0 "Patronize the Knights Hospitalier"
- tyh_patronize_the_scuole_grandi_desc:0 "The basics of education that pertain to the preservation of vital knowledge, are some of the defining features of our society. To cultivate the next generation is to ensure our future."
+ tyh_patronize_the_scuole_grandi_desc:0 "To cultivate the next generation is to ensure our future. The Knights Hospitaliers have been a staple of our society for many centuries, and the talents in care taking and healing are renowned even outside our borders. We shall support them and reap the benefits."
  tyh_movable_printing_title:0 "The Printing Press"
  tyh_movable_printing_desc:0 "We will reinforce our position as a hub of culture, trade, and science. This new printing press will strength our ability to organise and improve production."
  tyh_circumnavigate_the_globe_title:0 "Around the World"
@@ -259,8 +259,8 @@
   tyh_new_pilings_title:0 "Architectural Renewal"
   tyh_new_pilings_desc:0 "Cagliari is a city with more than 500 years of history at this point. We must renovate the city center to make it fit for the years to come."
   
-  tyh_the_francocracy_title:0 "The Lost Dynasty" #TODO
-  tyh_the_francocracy_desc:0 "Following the last true Crusade, Constantinople was reclaimed, and our dynasty, through Africa, was put on its throne. After centuries of Byzantine interference, our dynasty has been pushed around and ended up ruling Greece before being ousted. We must correct that mistake, and reconquer our past."
+  tyh_the_francocracy_title:0 "Protecting the Greek Catholics"
+  tyh_the_francocracy_desc:0 "Following the last true Crusade, Constantinople was reclaimed, and our dynasty, through Africa, was put on its throne. We have not held lands there in a long time, but the Catholics living in Greece are now threatened by the collapse of the Byzantine Empire. We must justify our title of Steward of the Mediterranean, and come to their rescue."
   
   tyh_contest_genoese_trade_title:0 "Contest Genoese Trade"
   tyh_contest_genoese_trade_desc:0 "Genoa has long been a thorn in our side, and the growing power of Western Mediterranean trade is simply strengthening their hand and making them more of a threat to us. We must do something about their sources of trade- if we can cut into their income, they won't be nearly wealthy enough to seriously contest our power, and that will enable us to humiliate them further."
