@@ -1,128 +1,3 @@
-# Idea sets created specifically for the mega
-
-FRA_ideas = {
-	start = {
-		global_manpower_modifier  = 0.25
-		cavalry_power = 0.2
-	}
-
-	bonus = {
-		land_morale  = 0.15
-	}
-
-	trigger = {
-		tag = FRA
-	}
-	free = yes
-
- 	FRA_discipline = {
-		discipline = 0.05
-	}
-	FRA_army_tradition_decay = {
-		army_tradition_decay = -0.01
-	}
-	FRA_state_governing_cost = {
-		governing_cost = -0.1
-	}
-	FRA_trade_and_native = {
-		trade_efficiency = 0.1
-		native_uprising_chance = -0.5
-	}
-	FRA_missionary_strength_vs_heretics = {
-		global_heretic_missionary_strength = 0.03
-	}
-	FRA_admin_and_advisor_cost = {
-		administrative_efficiency = 0.025
-		same_culture_advisor_cost = -0.15
-	}
-	FRA_absolutism = {
-		max_absolutism = 20
-	}
-}
-
-BOH_ideas = {
-	start = {
-		advisor_cost = -0.1
-		imperial_authority = 0.1
-	}
-
-	bonus = {
-		leader_land_fire = 1
-	}
-
-	trigger = {
-		tag = BOH
-	}
-	free = yes
-
- 	BOH_tolerance_heretics = {
-		tolerance_heretic = 3
-	}
-	BOH_devotion_legitimacy_horde_unity = {
-		legitimacy = 1
-		devotion = 1
-		republican_tradition = 0.3
-		meritocracy = 1	
-		horde_unity = 1
-	}
-	BOH_infantry_combat_and_shock_reduced = {
-		shock_damage_received = -0.05
-		infantry_power = 0.1
-	}
-	BOH_global_unrest = {
-		global_unrest = -1
-	}
-	BOH_technology_cost = {
-		technology_cost = -0.1
-	}
-	BOH_production_efficiency = {
-		production_efficiency = 0.1
-	}
-	BOH_goods_produced_and_gold_inflation = {
-		global_trade_goods_size_modifier = 0.1
-		monthly_gold_inflation_modifier = -0.1
-	}
-}
-
-ARM_ideas = {
-	start = {
-		hostile_attrition = 1
-		max_hostile_attrition = 1
-		infantry_power = 0.1
-	}
-
-	bonus = {
-		no_loyalty_loss_kwr = yes
-	}
-
-	trigger = {
-		tag = ARM
-	}
-	free = yes
-
- 	ARM_dev_cost = {
-		development_cost = -0.1
-	}
-	ARM_tolerance_true_faith= {
-		tolerance_own = 2
-	}
-	ARM_regiment_cost = {
-		global_regiment_cost = -0.1
-	}
-	ARM_fort_defense = {
-		defensiveness = 0.25
-	}
-	ARM_goods_produced = {
-		global_trade_goods_size_modifier = 0.1
-	}
-	ARM_national_tax = {
-		global_tax_modifier = 0.1
-	}
-	ARM_national_manpower = {
-		global_manpower_modifier = 0.2
-	}
-}
-
 tyrhennian_ideas = {
 	start = {
 		curia_powers_cost = -0.2
@@ -329,5 +204,128 @@ xue_ideas = {
 	}
 	xue_7 = {
 		land_morale = 0.1
+	}
+}
+
+bohemia_ideas = {
+	start = {
+		advisor_cost = -0.1
+		imperial_authority = 0.1
+	}
+
+	bonus = {
+		leader_land_fire = 1
+	}
+
+	trigger = {
+		tag = BOH
+	}
+	free = yes
+
+ 	bohemia_tolerance_heretics = {
+		tolerance_heretic = 3
+	}
+	bohemia_devotion_legitimacy_horde_unity = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+	}
+	bohemia_infantry_combat_and_shock_reduced = {
+		shock_damage_received = -0.05
+		infantry_power = 0.1
+	}
+	bohemia_global_unrest = {
+		global_unrest = -1
+	}
+	bohemia_technology_cost = {
+		technology_cost = -0.1
+	}
+	bohemia_production_efficiency = {
+		production_efficiency = 0.1
+	}
+	bohemia_goods_produced_and_gold_inflation = {
+		global_trade_goods_size_modifier = 0.1
+		monthly_gold_inflation_modifier = -0.1
+	}
+}
+
+armenia_ideas = {
+	start = {
+		hostile_attrition = 1
+		max_hostile_attrition = 1
+		infantry_power = 0.1
+	}
+
+	bonus = {
+		no_loyalty_loss = yes
+	}
+
+	trigger = {
+		tag = ARM
+	}
+	free = yes
+
+ 	armenia_dev_cost = {
+		development_cost = -0.1
+	}
+	armenia_tolerance_true_faith= {
+		tolerance_own = 2
+	}
+	armenia_regiment_cost = {
+		global_regiment_cost = -0.1
+	}
+	armenia_fort_defense = {
+		defensiveness = 0.25
+	}
+	armenia_goods_produced = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	armenia_national_tax = {
+		global_tax_modifier = 0.1
+	}
+	armenia_national_manpower = {
+		global_manpower_modifier = 0.2
+	}
+}
+
+france_ideas = {
+	start = {
+		global_manpower_modifier  = 0.25
+		cavalry_power = 0.2
+	}
+
+	bonus = {
+		land_morale  = 0.15
+	}
+
+	trigger = {
+		tag = FRA
+	}
+	free = yes
+
+ 	france_discipline = {
+		discipline = 0.05
+	}
+	france_army_tradition_decay = {
+		army_tradition_decay = -0.01
+	}
+	france_state_governing_cost = {
+		governing_cost = -0.1
+	}
+	france_trade_and_native = {
+		trade_efficiency = 0.1
+		native_uprising_chance = -0.5
+	}
+	france_missionary_strength_vs_heretics = {
+		global_heretic_missionary_strength = 0.03
+	}
+	france_admin_and_advisor_cost = {
+		administrative_efficiency = 0.025
+		same_culture_advisor_cost = -0.15
+	}
+	france_absolutism = {
+		max_absolutism = 20
 	}
 }
