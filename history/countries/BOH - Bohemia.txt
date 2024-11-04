@@ -50,6 +50,7 @@ elector = yes
 		religion = catholic
 		culture = saxon
 	}
+	set_ruler_flag = he_who_hath_made_compromise
 }
 1433.10.16 = {
 	heir = {

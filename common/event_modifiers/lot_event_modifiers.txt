@@ -1,0 +1,3 @@
+boh_lothars_legacy = {
+	core_creation = -0.1
+}
