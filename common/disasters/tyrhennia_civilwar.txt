@@ -38,11 +38,11 @@ tyrhennia_civil_war = {
 	
 	progress = {
 		modifier = {
-			factor = 3
+			factor = 5
 			NOT = { legitimacy = 90 }
 		}
 		modifier = {
-			factor = 5
+			factor = 8
 			has_heir = no
 		}
 		modifier = {
@@ -51,19 +51,19 @@ tyrhennia_civil_war = {
 		}
 		modifier = {
 			factor = 3
-			NOT = { stability = 1 }
+			NOT = { stability = 2 }
 		}
 		modifier = {
 			factor = 1
-			NOT = { ADM = 3 }
+			NOT = { ADM = 4 }
 		}		
 		modifier = {
 			factor = 1
-			NOT = { DIP = 3 }
+			NOT = { DIP = 4 }
 		}		
 		modifier = {
 			factor = 1
-			NOT = { MIL = 3 }
+			NOT = { MIL = 4 }
 		}
 	}
 

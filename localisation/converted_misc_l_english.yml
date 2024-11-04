@@ -130,6 +130,10 @@
  tyrhennia_civil_war.56.d:0 "We have received the answer from the owner of The Azores."
  tyrhennia_civil_war.56.a:0 "Very nice."
  tyrhennia_civil_war.56.b:0 "We'll have to acquire it by different means."
+ tyrhennia_civil_war.57.t:0 "The Knights Hospitaliers"
+ tyrhennia_civil_war.57.d:0 "Since times immemorial, the Knights Hospitaliers have found residence on our islands, treating the pilgrims on their way to the Holy Land. They have been very important to our cultural and economic developpement, and it has been tradition that at least one of the Archon's sons would join them and serve their Grandmaster. Our first son wishes to perpetuate that tradition, but that is also our only son, and this move would leave our Grand Archonate without a direct heir."
+ tyrhennia_civil_war.57.a:0 "So be it, God wills it"
+ tyrhennia_civil_war.57.b:0 "We cannot risk the stability of the kingdom"
  canaania_reform:0 "Canaanian Republic"
  canaania_reform_desc:0 "Canaanian republic is a semi-constitutional monarchy, with the most important powers being the Monarch and the Canaanian senate. Canaanian senate consists of the representatives of the prefectures. The Monarch is allowed to write decrees which cannot be revoked for at least 5 years and the Monarch has the rights to veto the senate unless the senate has 4/5 majority. The new monarch is elected by the senate through 2/3 rds majority by the rules established in the Canaanian laws of succession, if not elected for a year, the rules of primogeniture is used instead, however this scenario is evoked extremely rarely. All the laws are collected into a Canaanian book of laws, which is signed by the Monarch upon the inauguration."
  caa_canaanian_constitution:0 "Pass the Canaanian Consitution"
@@ -196,7 +200,7 @@
  tyh_army_republic_title:0 "Army of the Crown"
  tyh_army_republic_desc:0 "The last centuries have seen our islands fall victim to many conquerors and tyrants. We must safeguard our ideals and our people!"
  tyh_genoa_title:0 "Old Rivalries"
- tyh_genoa_desc:0 "The Genoese have long been thorns to our side, usurping our wealth and trade for their enrichment. We must put a stop to this!"
+ tyh_genoa_desc:0 "The Genoese have long been thorns to our side, and even in their weakened state, they still hold the lands they once used to invade us, and still steal some of our trade and wealth. We must put a stop to this!"
  tyh_reach_malacca_title:0 "Reach Malacca"
  tyh_reach_malacca_desc:0 "The distant ports of Malacca are said to hold untold riches and immeasurable opportunities for our merchants to get even more affluent."
  tyh_spice_islands_title:0 "In Search of Spice"
@@ -242,12 +246,12 @@
   tyh_expand_the_terraferma_desc:0 "In the last centuries of relative peace, our trading vassals have taken more and more independance and now threaten our stability. Before any further expansion is done, we must reign them in and ensure their loyalty."
   
   tyh_north_italian_rivals_title:0 "Italian Rivals"
-  tyh_north_italian_rivals_desc:0 "Our nation will never be secure as long as our envious rivals have the strength and the reach to strike us at any moment. We must be proactive, and smash our enemies in Italy before they can smash us!"
+  tyh_north_italian_rivals_desc:0 "Our nation will never be secure as long as our envious rivals exist and can strike us at any moment. We must be proactive, and smash our enemies in Italy before they can smash us!"
   
   tyh_challenge_papal_supremacy_title:0 "Relations with the Pope"
   tyh_challenge_papal_supremacy_desc:0 "We have long maintained a certain understanding with the Papacy. The Pope would not meddle in the affairs of our churchmen, and we would not meddle in the affairs of the Pope. These days, however, the Papacy has grown more assertive, even as our own power grows, and has begun involving itself in Church affairs across Europe. It is time for us to remind the Pope of our old arrangement, and check the Papacy's grasps at power."
   
-  tyh_nuova_promissione_ducale_title:0 "Admiral of the Mediteranean"
+  tyh_nuova_promissione_ducale_title:0 "Admiral of the Mediterranean"
   tyh_nuova_promissione_ducale_desc:0 "Our Grand Archons are also the head of our military and navies. While it has mostly been an honorary title in the past, one important step to ensure their strength will be thorough tests and challenges to ensure our leaders will be the most capable."
   
   tyh_standardize_relazioni_title:0 "World Overture"
@@ -260,10 +264,10 @@
   tyh_new_pilings_desc:0 "Cagliari is a city with more than 500 years of history at this point. We must renovate the city center to make it fit for the years to come."
   
   tyh_the_francocracy_title:0 "Protecting the Greek Catholics"
-  tyh_the_francocracy_desc:0 "Following the last true Crusade, Constantinople was reclaimed, and our dynasty, through Africa, was put on its throne. We have not held lands there in a long time, but the Catholics living in Greece are now threatened by the collapse of the Byzantine Empire. We must justify our title of Steward of the Mediterranean, and come to their rescue."
+  tyh_the_francocracy_desc:0 "Following the last true Crusade, Constantinople was reclaimed, and our dynasty, through Africa, was put on its throne. We have not held lands there in a long time, but the Catholics living in Greece have once prospered and are now threatened by the collapse of the Byzantine Empire. We must justify our title of Steward of the Mediterranean, and come to their rescue."
   
   tyh_contest_genoese_trade_title:0 "Contest Genoese Trade"
-  tyh_contest_genoese_trade_desc:0 "Genoa has long been a thorn in our side, and the growing power of Western Mediterranean trade is simply strengthening their hand and making them more of a threat to us. We must do something about their sources of trade- if we can cut into their income, they won't be nearly wealthy enough to seriously contest our power, and that will enable us to humiliate them further."
+  tyh_contest_genoese_trade_desc:0 "Genoa has long been a thorn in our side, and while they're weak, the growing power of Western Mediterranean trade is once again strengthening their hand and making them more of a threat to us. We must do something about their sources of trade- if we can cut into their income, they won't be nearly wealthy enough to seriously contest our power, and that will enable us to humiliate them further."
   
   tyh_plague_doctor_training_title:0 "Plague Doctor Training"
   tyh_plague_doctor_training_desc:0 "Plague doctors are, for the most part, amateurs. Professional physicians and surgeons tend after the most well-off, while second-rate plague doctors roam the land, tending after people who cannot afford the best treatments. Their quality varies greatly, but if we instituted a training program to provide a standard knowledge base for plague doctors, the health of people in the provinces would increase dramatically."

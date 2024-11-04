@@ -539,12 +539,9 @@ Norway_missions_s2 = {
         }
         
         trigger = {
-            AND = {
-                province_id = 20
-                light_ships_in_province = 10
-            }
             20 = {
                 has_building = drydock
+                light_ships_in_province = 10
             }
         }
 
@@ -656,8 +653,8 @@ Norway_missions_s3 = {
                 province_id = 20
                 light_ships_in_province = 1
             }
-            20 = { 
-                AND = { 
+            20 = {
+                AND = {
                     has_building = dock
                     has_building = shipyard
                 }
@@ -949,8 +946,8 @@ Norway_missions_s3 = {
                         trade_goods = iron
                         trade_goods = copper
                     }
+                    has_building = weapons
                 }
-                has_building = weapons
             }
         }
 
@@ -991,22 +988,26 @@ Norway_missions_s3 = {
                     duration = 18250
                 }
             }
-            2553 = {
+            if = {
                 limit = {
-                    owner = {
+                    2553 = {
+                        owner = {
+                            OR = {
+                                tag = NOR
+                                tag = ICE #Chagne to NWC later
+                            }
+                        }
                         OR = {
-                            tag = NOR
-                            tag = ICE #Chagne to NWC later
+                            trade_goods = iron
+                            trade_goods = copper
                         }
                     }
-                    OR = {
-                        trade_goods = iron
-                        trade_goods = copper
-                    }
                 }
-                add_province_modifier = {
-                    name = "nor_mines_suported"
-                    duration = 18250
+                2553 = {
+                    add_province_modifier = {
+                        name = "nor_mines_suported"
+                        duration = 18250
+                    }
                 }
             }
             south_appalachia_area = {
@@ -1200,84 +1201,104 @@ Norway_missions_s3 = {
                     duration = 18250
                 }
             }
-            18 = {
+            if = {
                 limit = {
-                    OR = {
-                        has_building = weapons
-                        has_building = wharf
-                        has_building = textile
-                        has_building = tradecompany
-                        has_building = farm_estate
-                        has_building = mills
+                    18 = {
+                        OR = {
+                            has_building = weapons
+                            has_building = wharf
+                            has_building = textile
+                            has_building = tradecompany
+                            has_building = farm_estate
+                            has_building = mills
+                        }
                     }
                 }
-                add_province_modifier = {
-                    name = "nor_manufactoring_sector"
-                    duration = 18250
+                18 = {
+                    add_province_modifier = {
+                        name = "nor_manufactoring_sector"
+                        duration = 18250
+                    }
                 }
             }
-            8 = {
+            if = {
                 limit = {
-                    OR = {
-                        has_building = weapons
-                        has_building = wharf
-                        has_building = textile
-                        has_building = tradecompany
-                        has_building = farm_estate
-                        has_building = mills
+                    8 = {
+                        OR = {
+                            has_building = weapons
+                            has_building = wharf
+                            has_building = textile
+                            has_building = tradecompany
+                            has_building = farm_estate
+                            has_building = mills
+                        }
                     }
                 }
-                add_province_modifier = {
-                    name = "nor_manufactoring_sector"
-                    duration = 18250
+                8 = {
+                    add_province_modifier = {
+                        name = "nor_manufactoring_sector"
+                        duration = 18250
+                    }
                 }
             }
-            5 = {
+            if = {
                 limit = {
-                    OR = {
-                        has_building = weapons
-                        has_building = wharf
-                        has_building = textile
-                        has_building = tradecompany
-                        has_building = farm_estate
-                        has_building = mills
+                    5 = {
+                        OR = {
+                            has_building = weapons
+                            has_building = wharf
+                            has_building = textile
+                            has_building = tradecompany
+                            has_building = farm_estate
+                            has_building = mills
+                        }
                     }
                 }
-                add_province_modifier = {
-                    name = "nor_manufactoring_sector"
-                    duration = 18250
+                5 = {
+                    add_province_modifier = {
+                        name = "nor_manufactoring_sector"
+                        duration = 18250
+                    }
                 }
             }
-            4164 = {
+            if = {
                 limit = {
-                    OR = {
-                        has_building = weapons
-                        has_building = wharf
-                        has_building = textile
-                        has_building = tradecompany
-                        has_building = farm_estate
-                        has_building = mills
+                    4164 = {
+                        OR = {
+                            has_building = weapons
+                            has_building = wharf
+                            has_building = textile
+                            has_building = tradecompany
+                            has_building = farm_estate
+                            has_building = mills
+                        }
                     }
                 }
-                add_province_modifier = {
-                    name = "nor_manufactoring_sector"
-                    duration = 18250
+                4164 = {
+                    add_province_modifier = {
+                        name = "nor_manufactoring_sector"
+                        duration = 18250
+                    }
                 }
             }
-            16 = {
+            if = {
                 limit = {
-                    OR = {
-                        has_building = weapons
-                        has_building = wharf
-                        has_building = textile
-                        has_building = tradecompany
-                        has_building = farm_estate
-                        has_building = mills
+                    16 = {
+                        OR = {
+                            has_building = weapons
+                            has_building = wharf
+                            has_building = textile
+                            has_building = tradecompany
+                            has_building = farm_estate
+                            has_building = mills
+                        }
                     }
                 }
-                add_province_modifier = {
-                    name = "nor_manufactoring_sector"
-                    duration = 18250
+                16 = {
+                    add_province_modifier = {
+                        name = "nor_manufactoring_sector"
+                        duration = 18250
+                    }
                 }
             }
         }

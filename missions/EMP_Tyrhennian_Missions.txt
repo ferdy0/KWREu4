@@ -252,7 +252,7 @@ tyh_missions_slot_1_navy = {
 	}
 }
 
-venice_missions_slot_1_continued = {
+tyhrennian_missions_slot_1_continued = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -361,7 +361,7 @@ venice_missions_slot_1_continued = {
 	}
 }
 
-venice_missions_slot_2 = {
+tyhrennian_missions_slot_2 = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -744,7 +744,7 @@ venice_missions_slot_2 = {
 	}
 }
 
-venice_missions_slot_3 = {
+tyhrennian_missions_slot_3 = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -1223,7 +1223,7 @@ venice_missions_slot_3 = {
 	}
 }
 
-venice_missions_slot_4 = {
+tyhrennian_missions_slot_4 = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -1548,7 +1548,7 @@ venice_missions_slot_4 = {
 	}
 }
 
-venice_missions_slot_5 = {
+tyhrennian_missions_slot_5 = {
 	slot = 5
 	generic = no
 	ai = yes
@@ -1604,6 +1604,7 @@ venice_missions_slot_5 = {
 				}
 				custom_tooltip = tyh_establish_scuola_effect_tt
 				change_innovativeness = 1
+				country_event = { id = tyrhennia_civil_war.57 }
 			}
 			else = {
 				capital_scope = {

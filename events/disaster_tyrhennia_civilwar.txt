@@ -89,7 +89,7 @@ country_event = {
             adm = 6
             dip = 5
             mil = 6
-            age = 60
+            age = 55
             religion = catholic
             culture = dynamic-berber-sardinian-culture-num1
         }
@@ -100,7 +100,7 @@ country_event = {
             adm = 6
             dip = 4
             mil = 6
-            age = 30
+            age = 25
             claim = 89
             religion = catholic
             culture = dynamic-berber-sardinian-culture-num1
@@ -710,4 +710,25 @@ country_event = {
        	}
        	clr_global_flag = has_not_sold_azores
 	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.57
+	title = tyrhennia_civil_war.57.t
+	desc = tyrhennia_civil_war.57.d
+	picture = ARTWORK_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = tyrhennia_civil_war.57.a
+        remove_heir = { allow_new_heir = no }
+        add_papal_influence = 50
+   	}
+
+	option = {
+		name = tyrhennia_civil_war.57.b
+        add_papal_influence = -50
+        add_stability = -1
+   	}
 }
