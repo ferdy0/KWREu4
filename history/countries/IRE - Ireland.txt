@@ -32,7 +32,7 @@ add_accepted_culture = irish
 }
 1431.2.20 = {
 	monarch = {
-		name = "Turlough"
+		name = "Turlough I"
 		dynasty = "Briain-Athlone"
 		adm = 3
 		dip = 3
