@@ -420,7 +420,7 @@ tyhrennian_missions_slot_2 = {
 				limit = {
 					2986 = { has_trade_building_trigger = no }
 				}
-				custom_tooltip = 112_gets_trade_upgrade_tt
+				custom_tooltip = 2986_gets_trade_upgrade_tt
 			}
 			else = {
 				2986 = {
@@ -1536,7 +1536,7 @@ tyhrennian_missions_slot_4 = {
 			hidden_effect = {
 				japan_region = {
 					limit = {
-						has_port = yes 
+						has_port = yes
 						province_has_center_of_trade_of_level = 1
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
@@ -1544,6 +1544,7 @@ tyhrennian_missions_slot_4 = {
 					add_permanent_claim = ROOT
 				}
 			}
+			custom_tooltip = tyh_japan_claims_effect_tt
 		}
 	}
 }

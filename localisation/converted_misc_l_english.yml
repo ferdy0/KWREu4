@@ -294,6 +294,8 @@
  TYH_ISLAND_STATIONS_KEY:0 "Tyhrennian Island Station"
  TYH_PRESENCE_IN_INDIA_KEY:0 "Tyhrennian Merchants in India"
  TYH_ADEN_GOODS_KEY:0 "Tyhrennian Exchanges in Aden"
+ 2986_gets_trade_upgrade_tt:0 "[2986.GetName] will have its §YTrade§! building upgraded."
+ tyh_japan_claims_effect_tt:0 "Tyrhennia will get claims on all Japanese coastal trading ports."
   
   #Modifiers 
  tyh_iron_wall_of_italy_modifier:0 "Iron Wall of Cagliari"
