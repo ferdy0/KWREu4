@@ -329,3 +329,51 @@ france_ideas = {
 		max_absolutism = 20
 	}
 }
+
+KOJ_ideas = {
+	start = {
+		cavalry_flanking = 0.5
+		idea_cost = -0.1
+		can_not_build_missionaries = yes	
+	}
+
+	bonus = {
+		trade_steering = 0.2
+	}
+
+	trigger = {
+		tag = KOJ
+	}
+
+	free = yes
+
+	jerusalemite_canonmaking = {
+		artillery_levels_available_vs_fort = 1
+	}
+
+	legacy_of_the_levantine_rite = {
+		tolerance_heathen = 1
+		tolerance_heretic = 1
+	}
+
+	the_three_chasseurs = {
+		land_morale = 0.1
+		cavalry_power = 0.1
+	}
+
+	frontier_state = {
+		discipline = 0.05
+	}
+
+	marina_mercantile = {
+		ship_trade_power_modifier = 0.2
+	}
+
+	jerusalemite_cavalry_charge = { # I'll probably come up with a better name, feel free to suggest a name if you have an idea
+		cav_to_inf_ratio = 0.25
+	}
+
+	italian_factoria = {
+		trade_efficiency = 0.15
+	}
+}
