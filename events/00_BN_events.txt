@@ -1,5 +1,7 @@
 namespace = mission_nor
 namespace = flavor_nor
+namespace = nor_great_expidition
+namespace = nor_sami_exploration
 
 # Event for giving ships to NWC
 country_event = { #still needs localisation
@@ -75,7 +77,7 @@ country_event = { #still needs localisation
 }
 
 # Event for exploring Asia and coming up with the idea for the explorers guild
-country_event = {
+country_event = { #still needs localisation
     id = flavor_nor.2
     title = flavor_nor.2.t
     desc = flavor_nor.2.d
@@ -94,5 +96,38 @@ country_event = {
             estate = estate_burghers
             loyalty = 20
         }
+    }
+}
+
+# Event for triggering the Finnmörk expidition
+country_event = { #still needs localisation and be finished
+    id = nor_sami_exploration.1
+    title = nor_sami_exploration.1.t
+    desc = nor_sami_exploration.1.d
+    picture =
+
+    is_triggered_only = yes
+
+    option = {
+        name = nor_sami_exploration.1.a
+        #finish this
+    }
+}
+
+#################################
+# The great expidition missions #
+#################################
+
+# Event for starting the great expidition
+country_event = { #Needs to be continued and localised
+    id = nor_great_expidition.1
+    title = nor_great_expidition.1.t
+    desc = nor_great_expidition.1.d
+    picture = 
+
+    is_triggered_only = yes
+
+    option = {
+        
     }
 }

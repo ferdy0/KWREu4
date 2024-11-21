@@ -143,6 +143,34 @@ Norway_missions_s1 = {
             }
         }
     }
+
+    Mysteries_of_home = { #still needs localisation
+        icon = mission_european_politics
+        required_missions = { Better_ships_explorers_mission }
+        position = 13
+
+        trigger = {
+            #Exploring Lappland
+            OR = {
+                has_spy_network_in = {
+                    who = SMI
+                    value = 50
+                }
+                SMI = {
+                    has_opinion = {
+                        who = NOR
+                        value = 100
+                    }
+                }
+            }
+        }
+
+        effect = {
+            country_event = {
+                id = nor_sami_exploration.1
+            }
+        }
+    }
 }
 Norway_missions_s2 = {
     slot = 2
@@ -558,6 +586,64 @@ Norway_missions_s2 = {
                     type = light_ship
                     amount = 10
                 }
+            }
+        }
+    }
+
+    To_lands_far_away = {
+        icon = mission_plc_lifetime_of_war
+        required_missions = { Better_ships_explorers_mission }
+        position = 13
+        provinces_to_highlight = {
+            AND = {
+               province_id = 1816
+               province_id = 2745
+               province_id = 1087
+               province_id = 782
+               province_id = 1177 
+               province_id = 845
+               province_id = 4637
+            }
+        }
+        
+        trigger = {
+            1816 = {
+                has_discovered = ROOT
+            }
+            2745 = {
+                has_discovered = ROOT
+            }
+            1087 = {
+                has_discovered = ROOT
+            }
+            782 = {
+                has_discovered = ROOT
+            }
+            1177 = {
+                has_discovered = ROOT
+            }
+            845 = {
+                has_discovered = ROOT
+            }
+            4637 = {
+                has_discovered = ROOT
+            }
+            OR = {
+                has_country_flag = circumnavigation_first
+                has_country_flag = circumnavigation_done
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "nor_exploring_the_world"
+                duration = 18250
+            }
+            add_prestige = 25
+            add_splendor = 50
+            add_power_projection = { 
+	            type = 25_permanent_power_projection
+	            amount = 25 
             }
         }
     }
@@ -1726,6 +1812,39 @@ Norway_missions_s4 = {
                 province_id = 2553
                 area = south_appalachia_area
                 area = appalachia_area
+            }
+        }
+
+        effect = {
+            susquehanna_area = {
+                add_province_modifier = {
+                    name = "nor_extraction_sector"
+                    duration = -1
+                }
+            }
+            great_valley_area = {
+                add_province_modifier = {
+                    name = "nor_extraction_sector"
+                    duration = -1
+                }
+            }
+            2553 = {
+                add_province_modifier = {
+                    name = "nor_extraction_sector"
+                    duration = -1
+                }
+            }
+            south_appalachia_area = {
+                add_province_modifier = {
+                    name = "nor_extraction_sector"
+                    duration = -1
+                }
+            }
+            appalachia_area = {
+                add_province_modifier = {
+                    name = "nor_extraction_sector"
+                    duration = -1
+                }
             }
         }
     }  

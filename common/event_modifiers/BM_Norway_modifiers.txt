@@ -128,3 +128,17 @@ nor_explorers_society_suported = {
     admiral_cost = -0.1
     exploration_mission_range_in_fleet_modifier = 100
 }
+
+nor_extraction_sector = {
+    local_state_maintenance_modifier = -0.25
+    local_build_cost = -0.15
+    local_monthly_devastation = 0.1
+}
+
+nor_exploring_the_world = {
+    global_institution_spread = 0.1
+    idea_cost = -0.1
+    technology_cost = -0.1
+    innovativeness_gain = 0.25
+    burghers_influence_modifier = 0.1
+}
