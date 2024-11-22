@@ -144,7 +144,7 @@ Norway_missions_s1 = {
         }
     }
 
-    Mysteries_of_home = { #still needs localisation
+    Mysteries_of_home_mission = { #still needs localisation
         icon = mission_european_politics
         required_missions = { Better_ships_explorers_mission }
         position = 13
@@ -560,7 +560,7 @@ Norway_missions_s2 = {
 
     Better_ships_explorers_mission = { #still needs localisation
         icon = mission_sea_battles
-        required_missions = { Mission_sea_battles }
+        required_missions = { The_workshops_of_norway_mission }
         position = 12
         provinces_to_highlight = {
             province_id = 20
@@ -590,12 +590,12 @@ Norway_missions_s2 = {
         }
     }
 
-    To_lands_far_away = {
+    To_lands_far_away_mission = {
         icon = mission_plc_lifetime_of_war
         required_missions = { Better_ships_explorers_mission }
         position = 13
         provinces_to_highlight = {
-            AND = {
+            OR = {
                province_id = 1816
                province_id = 2745
                province_id = 1087
@@ -1803,6 +1803,15 @@ Norway_missions_s4 = {
         icon = mission_african_gold
         required_missions = { The_workshops_of_norway_mission }
         position = 12
+        provinces_to_highlight = {
+            OR = {
+                area = susquehanna_area
+                area = great_valley_area
+                province_id = 2553
+                area = south_appalachia_area
+                area = appalachia_area
+            }
+        }
 
         trigger = {
             development_in_provinces = {
@@ -1843,6 +1852,205 @@ Norway_missions_s4 = {
             appalachia_area = {
                 add_province_modifier = {
                     name = "nor_extraction_sector"
+                    duration = -1
+                }
+            }
+        }
+    }
+
+    Processing_goods_mission = {
+        icon = claim_tirol
+        required_missions = { Extracting_the_resources_mission }
+        position = 13
+        provinces_to_highlight = {
+            OR = {
+                area = hudson_valley_area
+                area = iroquoisia_area
+                area = upper_canada_area
+                area = huronia_area
+                area = ottawa_valley_area
+            }
+            NOT = {
+                AND = {
+                    has_building = workshop
+                    OR = {
+                        has_building = weapons
+                        has_building = wharf
+                        has_building = textile
+                        has_building = tradecompany
+                        has_building = farm_estate
+                        has_building = mills
+                    }
+                }
+            }
+        }
+
+        trigger = {
+            hudson_valley_area = {
+                type = all
+                AND = {
+                    has_building = workshop
+                    OR = {
+                        has_building = weapons
+                        has_building = wharf
+                        has_building = textile
+                        has_building = tradecompany
+                        has_building = farm_estate
+                        has_building = mills
+                    }
+                }
+            }
+            iroquoisia_area = {
+                type = all
+                AND = {
+                    has_building = workshop
+                    OR = {
+                        has_building = weapons
+                        has_building = wharf
+                        has_building = textile
+                        has_building = tradecompany
+                        has_building = farm_estate
+                        has_building = mills
+                    }
+                }
+            }
+            upper_canada_area = {
+                type = all
+                AND = {
+                    has_building = workshop
+                    OR = {
+                        has_building = weapons
+                        has_building = wharf
+                        has_building = textile
+                        has_building = tradecompany
+                        has_building = farm_estate
+                        has_building = mills
+                    }
+                }
+            }
+            huronia_area = {
+                type = all
+                AND = {
+                    has_building = workshop
+                    OR = {
+                        has_building = weapons
+                        has_building = wharf
+                        has_building = textile
+                        has_building = tradecompany
+                        has_building = farm_estate
+                        has_building = mills
+                    }
+                }
+            }
+            ottawa_valley_area = {
+                type = all
+                AND = {
+                    has_building = workshop
+                    OR = {
+                        has_building = weapons
+                        has_building = wharf
+                        has_building = textile
+                        has_building = tradecompany
+                        has_building = farm_estate
+                        has_building = mills
+                    }
+                }
+            }
+        }
+
+        effect = {
+            hudson_valley_area = {
+                limit = {
+                    AND = {
+                        has_building = workshop
+                        OR = {
+                            has_building = weapons
+                            has_building = wharf
+                            has_building = textile
+                            has_building = tradecompany
+                            has_building = farm_estate
+                            has_building = mills
+                        }
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_processing_sector"
+                    duration = -1
+                }
+            }
+            iroquoisia_area = {
+                limit = {
+                    AND = {
+                        has_building = workshop
+                        OR = {
+                            has_building = weapons
+                            has_building = wharf
+                            has_building = textile
+                            has_building = tradecompany
+                            has_building = farm_estate
+                            has_building = mills
+                        }
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_processing_sector"
+                    duration = -1
+                }
+            }
+            upper_canada_area = {
+                limit = {
+                    AND = {
+                        has_building = workshop
+                        OR = {
+                            has_building = weapons
+                            has_building = wharf
+                            has_building = textile
+                            has_building = tradecompany
+                            has_building = farm_estate
+                            has_building = mills
+                        }
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_processing_sector"
+                    duration = -1
+                }
+            }
+            huronia_area = {
+                limit = {
+                    AND = {
+                        has_building = workshop
+                        OR = {
+                            has_building = weapons
+                            has_building = wharf
+                            has_building = textile
+                            has_building = tradecompany
+                            has_building = farm_estate
+                            has_building = mills
+                        }
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_processing_sector"
+                    duration = -1
+                }
+            }
+            ottawa_valley_area = {
+                limit = {
+                    AND = {
+                        has_building = workshop
+                        OR = {
+                            has_building = weapons
+                            has_building = wharf
+                            has_building = textile
+                            has_building = tradecompany
+                            has_building = farm_estate
+                            has_building = mills
+                        }
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_processing_sector"
                     duration = -1
                 }
             }
