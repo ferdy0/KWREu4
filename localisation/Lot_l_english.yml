@@ -1,4 +1,5 @@
 ﻿l_english:
+ ###### Bohemia #####################################
  lot_boh_consolidate_silesia_title:0 "March of the Empire"
  lot_boh_consolidate_silesia_desc:0 "The Kingdom of Poland has been an unknown and uncontrolled entity to the east of the empire. If we establish a pair of marches in Silesia we can secure the eastern frontier of our Holy Roman Empire."
  lot_boh_humiliate_schweiz_title:0 "Humiliate Switzerland"
@@ -28,3 +29,7 @@
  lot_flavor_boh.2.d:0 "Despite the Golden Bull of 1207 granting us freedom of religion in our kingdom, and our kingdom only, several prominent Hussites have come forward wanting to spread the word of Hus outside of the borders of Bohemia. Perhaps his words can inspire the Slavic people of Poland, Meissen, and Jilobor."
  lot_flavor_boh.2.a:0 "Let us spread the True Word of God!"
  lot_flavor_boh.2.b:0 "We will remain loyal to the Emperor and the Golden Bull of 1207."
+ ###### Portugal ####################################
+ lot_gc_por_intervene_in_castile_title:0 "Intervene in Toledo"
+ lot_gc_por_intervene_in_castile_desc:0 "The Kingdom of Toledo has always been a sister kingdom to our proud nation. At first we were the older sister but now we find ourselves the smaller part of this sisterhood. Perhaps it is time that we looked to our own interests first."
+ 
