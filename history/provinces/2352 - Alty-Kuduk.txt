@@ -1,6 +1,6 @@
 capital = "Alty-Kuduk"
 is_city = yes
-culture = cuman
+culture = khazak
 religion = sunni
 trade_goods = fish
 base_tax = 2
