@@ -1,5 +1,10 @@
 ﻿l_english:
  #Ranks
+ PENDEN:0 "Penden"
+ PENDEN_fem:0 "Penden"
+ ARCHON:0 "Archon"
+ GRAND_ARCHON:0 "Grand Archon"
+ PRIME_ARCHON:0 "Prime Archon"
  SUFFET:0 "Suffet"
  SUFFET_fem:0 "Suffet"
  PHARAOH:0 "Pharaoh"
@@ -9,9 +14,9 @@
  DAUPHIN_fem:0 "Dauphine"
  ECUMENICAL_PATRIARCH:0 "Ecumenical Patriarch"
  ECUMENICAL_MATRIARCH:0 "Ecumenical Matriarch"
- PENDEN:0 "Penden"
- PENDEN_fem:0 "Penden"
 
  #Governments
+ ARCHONATE:0 "Archonate"
+ GRAND_ARCHONATE:0 "Grand Archonate"
  NOME:0 "Nome"
  FARA:0 "Fara"

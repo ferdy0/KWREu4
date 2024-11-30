@@ -13,6 +13,39 @@ tibetan_empire_local = {
 		government = monarchy
 	}
 }
+tyrrhenian_archonate = {
+	rank = {
+		1 = GRAND_ARCHONATE
+	}
+	ruler_male = {
+		1 = GRAND_ARCHON
+	}
+	ruler_female = {
+		1 = GRAND_ARCHON
+	}
+	trigger = {
+		culture = sardinian
+		government = monarchy
+	}
+}
+african_archonate = {
+	rank = {
+		1 = ARCHONATE
+		2 = KINGDOM
+	}
+	ruler_male = {
+		1 = ARCHON
+		2 = PRIME_ARCHON
+	}
+	ruler_female = {
+		1 = ARCHON
+		2 = PRIME_ARCHON
+	}
+	trigger = {
+		culture = dynamic-berber-sardinian-culture-num1
+		government = monarchy
+	}
+}
 grand_duchy_monarchy = {
 	rank = {
 		1 = GRAND_DUCHY
