@@ -12,7 +12,7 @@ woc_boh_first_branch = {
 	}
 	has_country_shield = yes
 	
-	boh_hussite_regency = {
+	lot_boh_hussite_regency = {
 		icon = mission_crown_of_wenceslas
 		required_missions = { }
 		position = 1
@@ -147,7 +147,7 @@ boh_first_locked = {
 	
 	boh_branching1 = {
 		icon = mission_unknown_mission
-		required_missions = { boh_hussite_regency }
+		required_missions = { lot_boh_hussite_regency }
 		position = 2
 		
 		trigger = { custom_trigger_tooltip = { tooltip = BOH_RELIGION_BRANCHING always = no } }
@@ -203,7 +203,7 @@ boh_first_unlocked_catholic = {
 	
 	boh_purge_hussite_heresy = {
 		icon = hussite_regency
-		required_missions = { boh_hussite_regency }
+		required_missions = { lot_boh_hussite_regency }
 		position = 2
 		
 		trigger = {
@@ -598,7 +598,7 @@ boh_first_unlocked_hussite = {
 	
 	boh_hussite_resurgence = {
 		icon = hussite_regency
-		required_missions = { boh_hussite_regency }
+		required_missions = { lot_boh_hussite_regency }
 		position = 2
 		
 		trigger = {
@@ -915,7 +915,7 @@ woc_boh_second_branch = {
 		}
 	}
 	
-	lot_boh_electorate_of_saxony = {
+	boh_electorate_of_saxony = {
 		icon = electorate_of_saxony
 		required_missions = { boh_lion_of_the_empire }
 		position = 5
@@ -950,26 +950,10 @@ woc_boh_second_branch = {
 			add_adm_power = 100
 			if = {
 				limit = {
-					exists = ANH
-					ANH = {
-						is_elector = yes
-						is_subject_of = ROOT 
-					}
-				}
-				tooltip = {
-					custom_tooltip = boh_saxony_elector_subject_tt_yes
-					tooltip = {
-						country_event = { id = emp_mission_events.9 }
-						custom_tooltip = boh_saxony_event_tooltip
-					}
-				}
-			}
-			else_if = {
-				limit = {
 					exists = SAX
 					SAX = {
 						is_elector = yes
-						is_subject_of = ROOT
+						is_subject_of = ROOT 
 					}
 				}
 				tooltip = {
@@ -992,23 +976,13 @@ woc_boh_second_branch = {
 			hidden_effect = {
 				if = {
 					limit = {
-						exists = ANH
-						ANH = {
+						exists = SAX
+						SAX = {
 							is_elector = yes
 							is_subject_of = ROOT 
 						}
 					}
 					country_event = { id = emp_mission_events.9 }
-				}
-				else_if = {
-					limit = {
-						exists = SAX
-						SAX = {
-							is_elector = yes
-							is_subject_of = ROOT
-						}
-					}
-					country_event = { od = emp_mission_events.9 }
 				}
 			}
 		}
@@ -1409,19 +1383,6 @@ woc_boh_third_branch = {
 			}
 			if = {
 				limit = {
-					exists = ANH
-				}
-				custom_tooltip = boh_anhalt_exists_tt_yes
-				tooltip = {
-					add_casus_belli = {
-						type = cb_vassalize_mission
-						months = 360
-						target = ANH
-					}
-				}
-			}
-			else_if = {
-				limit = {
 					exists = SAX
 				}
 				custom_tooltip = boh_saxony_exists_tt_yes
@@ -1434,13 +1395,8 @@ woc_boh_third_branch = {
 				}
 			}
 			else = {
-				custom_tooltip = boh_anhalt_exists_tt_no
+				custom_tooltip = boh_saxony_exists_tt_no
 				tooltip = {
-					add_casus_belli = {
-						type = cb_vassalize_mission
-						months = 360
-						target = ANH
-					}
 					add_casus_belli = {
 						type = cb_vassalize_mission
 						months = 360
@@ -1451,13 +1407,33 @@ woc_boh_third_branch = {
 			if = {
 				limit = {
 					NOT = {
-						exists = ANH
 						exists = SAX
 					}
 				}
-				custom_tooltip = boh_anhalt_doesnt_exist_tt_yes
+				custom_tooltip = boh_saxony_doesnt_exist_tt_yes
 				tooltip = {
-					northern_saxony_area = {
+					52 = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					58 = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					4741 = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					62 = {
 						limit = {
 							NOT = { is_core = ROOT }
 							NOT = { is_permanent_claim = ROOT }
@@ -1467,9 +1443,30 @@ woc_boh_third_branch = {
 				}
 			}
 			else = {
-				custom_tooltip = boh_anhalt_doesnt_exist_tt_no
+				custom_tooltip = boh_saxony_doesnt_exist_tt_no
 				tooltip = {
-					northern_saxony_area = {
+					52 = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					58 = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					4741 = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					62 = {
 						limit = {
 							NOT = { is_core = ROOT }
 							NOT = { is_permanent_claim = ROOT }
@@ -1533,16 +1530,37 @@ woc_boh_third_branch = {
 			hidden_effect = {
 				if = {
 					limit = {
-						exists = ANH
+						exists = SAX
 					}
 					add_casus_belli = {
 						type = cb_vassalize_mission
 						months = 360
-						target = ANH
+						target = SAX
 					}
 				}
 				else = {
-					northern_saxony_area = {
+					52 = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					58 = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					4741 = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					62 = {
 						limit = {
 							NOT = { is_core = ROOT }
 							NOT = { is_permanent_claim = ROOT }
@@ -1596,7 +1614,7 @@ woc_boh_third_branch = {
 	
 	boh_bohemian_commonwealth = {
 		icon = bohemian_commonwealth
-		required_missions = { lot_boh_electorate_of_saxony lot_boh_electorate_of_salzburg boh_pomerelian_reconquest }
+		required_missions = { boh_electorate_of_saxony lot_boh_electorate_of_salzburg boh_pomerelian_reconquest }
 		position = 6
 		
 		provinces_to_highlight = {
@@ -2150,31 +2168,6 @@ woc_boh_fourth_branch = {
 		
 		effect = {
 			custom_tooltip = boh_10_ae_hre_tt
-			if = {
-				limit = {
-					exists = SLZ
-					SLZ = {
-						is_elector = yes
-						is_subject_of = ROOT 
-					}
-				}
-				tooltip = {
-					custom_tooltip = boh_brandenburg_elector_subject_tt_yes
-					tooltip = {
-						country_event = { id = emp_mission_events.8 }
-						custom_tooltip = boh_brandenburg_event_tooltip
-					}
-				}
-			}
-			else = {
-				tooltip = {
-					custom_tooltip = boh_brandenburg_elector_subject_tt_no
-					tooltip = {
-						country_event = { id = emp_mission_events.8 }
-						custom_tooltip = boh_brandenburg_event_tooltip
-					}
-				}
-			}
 			hidden_effect = {
 				every_country = {
 					limit = {
@@ -2185,16 +2178,6 @@ woc_boh_fourth_branch = {
 						value = -10
 						apply_calc = no
 					}
-				}
-				if = {
-					limit = {
-						exists = SLZ
-						SLZ = {
-							is_elector = yes
-							is_subject_of = ROOT 
-						}
-					}
-					country_event = { id = emp_mission_events.8 }
 				}
 			}
 		}

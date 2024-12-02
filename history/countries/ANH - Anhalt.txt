@@ -5,7 +5,6 @@ technology_group = western
 religion = catholic
 primary_culture = saxon
 capital = 58
-elector = yes
 1368.8.22 = {
 	monarch = {
 		name = "Meinhard I"

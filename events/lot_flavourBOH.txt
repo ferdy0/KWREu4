@@ -33,12 +33,7 @@ country_event = {
 			was_tag = BOH
 		}
 		owns = 266
-		NOT = {
-			AND = {
-				is_year = 1500
-				has_ruler_flag = he_who_hath_made_compromise
-			}
-		}
+		has_ruler_flag = he_after_the_compromise
 		is_at_war = no
 		OR = {
 			religion = catholic
@@ -116,7 +111,7 @@ country_event = {
 	}
 	
 	option = { # Convert to Hussite
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 50 }
 		name = lot_flavor_boh.1.b
 		set_country_flag = hussite_regency_mission_flag
 		change_religion = hussite
@@ -146,7 +141,7 @@ country_event = {
 	}
 	
 	option = { # Hussite King, Catholic nation - tolerance option
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 50 }
 		set_country_flag = hussite_regency_mission_flag
 		name = lot_flavor_boh.1.c
 		add_papal_influence = -100
@@ -169,8 +164,9 @@ country_event = {
 	}
 	
 	option = { # Fight them
-		name = flavor_boh.1.e
+		name = lot_flavor_boh.1.e
 		set_country_flag = hussite_regency_mission_flag
+		ai_chance = { factor = 10 }
 		266 = {
 			spawn_rebels = {
 				type = pretender_rebels
@@ -234,6 +230,6 @@ country_event = {
 	
 	option = {
 		name = lot_flavor_boh.2.b
-		add_church_power = 10
+		add_church_power = 20
 	}
 }
