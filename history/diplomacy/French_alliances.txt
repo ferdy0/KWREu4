@@ -1,7 +1,42 @@
+dependency = {
+	subject_type = appanage
+	first = FRA
+	second = AMG
+	start_date = 1386.5.18
+	end_date = 1532.8.3
+}
+dependency = {
+	subject_type = appanage
+	first = FRA
+	second = GUY
+	start_date = 1283.12.18
+	end_date = 1532.8.3
+}
+dependency = {
+	subject_type = appanage
+	first = FRA
+	second = NRM
+	start_date = 1284.1.27
+	end_date = 1532.8.3
+}
+dependency = {
+	subject_type = appanage
+	first = FRA
+	second = ORL
+	start_date = 1392.1.1
+	end_date = 1532.8.3
+}
+dependency = {
+	subject_type = appanage
+	first = FRA
+	second = TOU
+	start_date = 1284.1.11
+	end_date = 1532.8.3
+}
 vassal = {
 	first = BUR
 	second = NEV
-	start_date = 1444.11.11
+	start_date = 1351.3.27
 	end_date = 1836.1.1
 }
 vassal = {
