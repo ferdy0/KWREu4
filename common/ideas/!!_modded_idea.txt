@@ -135,7 +135,7 @@ tibet_ideas = {
 
 	bonus = {
 		harmonization_speed = 0.25
-		yearly_harmony = 1
+		yearly_harmony = 0.5
 	}
 
 	trigger = {
