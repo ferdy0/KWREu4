@@ -8,6 +8,23 @@ dependency = {
 
 dependency = {
 	subject_type="cultural_sphere_of_influence_subject"
+	first="HAH"
+	second="QOM"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency = {
+	subject_type="cultural_sphere_of_influence_subject"
+	first="HAH"
+	second="BPI"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+
+dependency = {
+	subject_type="cultural_sphere_of_influence_subject"
 	first =	HAH
 	second = ARL
 	start_date = 1444.1.1

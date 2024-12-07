@@ -1,5 +1,5 @@
-owner = TAB
-controller = TAB
+owner = QOM
+controller = QOM
 capital = "Astara"
 is_city = yes
 culture = mazandarani

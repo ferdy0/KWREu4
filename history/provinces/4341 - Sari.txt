@@ -1,5 +1,5 @@
-owner = TAB
-controller = TAB
+owner = BPI
+controller = BPI
 capital = "Sari"
 is_city = yes
 culture = mazandarani
