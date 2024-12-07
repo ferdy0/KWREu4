@@ -354,6 +354,8 @@ KOJ_ideas = {
 	legacy_of_the_levantine_rite = {
 		tolerance_heathen = 1
 		tolerance_heretic = 1
+		tolerance_of_heretics_capacity = 1
+		tolerance_of_heathens_capacity = 1
 	}
 
 	the_three_chasseurs = {
@@ -375,5 +377,188 @@ KOJ_ideas = {
 
 	italian_factoria = {
 		trade_efficiency = 0.15
+	}
+}
+
+HAH_ideas = {
+	start = {
+		spy_offence = 0.25
+		liberty_desire_from_subject_development = -0.33	
+	}
+
+	bonus = {
+		max_absolutism = 20
+	}
+
+	trigger = {
+		tag = HAH
+	}
+
+	free = yes
+
+	persian_merchant_power = {
+		placed_merchant_power_modifier = 0.1
+	}
+
+	silk_road_traders = {
+		merchants = 1
+	}
+
+	secrets_of_the_sabbah = {
+		global_spy_defence = 0.33
+		yearly_corruption = -0.1
+	}
+
+	persian_vassal_contribution_one = {
+		vassal_forcelimit_bonus = 1
+	}
+
+	persian_vassal_contribution_two = {
+		vassal_income = 0.33
+		legitimacy = 1
+	}
+
+	persian_vassal_contribution_three = {
+		can_fabricate_for_vassals = yes
+	}
+
+	persian_trade_steering = {
+		trade_steering = 0.3
+	}
+}
+
+MAD_ideas = {
+	start = {
+		production_efficiency = 0.1
+		stability_cost_modifier = -0.1	
+	}
+
+	bonus = {
+		diplomats = 1
+	}
+
+	trigger = {
+		tag = MAD
+	}
+
+	free = yes
+
+	cholan_corruption = {
+		yearly_corruption = -0.1
+	}
+
+	cholan_ship_tpp = {
+		ship_power_propagation = 0.15
+	}
+
+	cholan_trade_efficiency = {
+		trade_efficiency = 0.1
+	}
+
+	cholan_trade_n_all = {
+		global_ship_trade_power = 0.1
+		trade_steering = 0.1
+	}
+
+	cholan_goods_produced = {
+		global_trade_goods_size_modifier = 0.1
+	}
+
+	cholan_naval_engagement = {
+		global_naval_engagement_modifier = 0.1
+	}
+
+	cholan_navy_moment = {
+		heavy_ship_power = 0.1
+		ship_durability = 0.05
+	}
+}
+
+norwegian_ideas = {
+	start = {
+		global_sailors_modifier = 0.25
+		ship_durability = 0.1	
+	}
+
+	bonus = {
+		trade_steering = 0.2
+	}
+
+	trigger = {
+		tag = NOR
+	}
+
+	free = yes
+
+	call_of_our_forefathers = {
+		range = 0.33
+		may_explore = yes
+	}
+
+	pioneer_spirit = {
+		colonists = 1
+	}
+
+	natural_seamanship = {
+		naval_morale = 0.2
+	}
+
+	norwegian_woodworking = {
+		global_ship_cost = -0.1
+	}
+
+	norwegian_tech_and_ideas = {
+		idea_cost = -0.1
+		innovativeness_gain = 0.25
+	}
+
+	norwegian_whaling = {
+		production_efficiency = 0.1
+	}
+
+	icelandic_steam_barons = {
+		burghers_influence_modifier = 0.1
+		production_efficiency = 0.05
+	}
+}
+
+swiss_ideas = {
+	start = {
+		merc_maintenance_modifier = -0.15
+		infantry_power = 0.1
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = SWI
+	}
+	free = yes  #will be triggered at load
+	
+	swiss_mercenaries = {
+		mercenary_discipline = 0.05
+		mercenary_manpower = 0.5
+	}
+	swiss_tolerance = {
+		tolerance_heretic = 2
+	}
+	maritime_mercantilism = {
+		naval_forcelimit = 6
+		global_sailors = 7500
+	}
+	alpine_defensiveness = {
+		fort_maintenance_modifier = -0.2
+		defensiveness = 0.25
+	}
+	oasis_of_peace_and_prosperity = {
+		development_cost = -0.1
+	}
+	haven_for_refugees = {
+		prestige = 1
+	}
+	clockwork = {
+		production_efficiency = 0.1
 	}
 }
