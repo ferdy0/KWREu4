@@ -1,5 +1,5 @@
-owner = QOM
-controller = QOM
+owner = ARL
+controller = ARL
 capital = "Ardabil"
 is_city = yes
 culture = mazandarani

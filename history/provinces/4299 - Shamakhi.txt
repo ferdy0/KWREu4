@@ -1,5 +1,5 @@
-owner = ARL
-controller = ARL
+owner = SRV
+controller = SRV
 capital = "Shamakhi"
 is_city = yes
 culture = azerbaijani

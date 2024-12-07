@@ -1,5 +1,5 @@
-owner = TAB
-controller = TAB
+owner = AVR
+controller = AVR
 capital = "Rasht"
 is_city = yes
 culture = mazandarani
