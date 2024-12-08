@@ -2873,7 +2873,7 @@ merc_swiss_royal_guard = {
 		    tag = AFR
 		    tag = CAA
 		}
-		has_global_flag = afr_swi_royal_guard
+		has_country_flag = afr_swi_royal_guard
 	}
     modifier = {
 		discipline = 0.05

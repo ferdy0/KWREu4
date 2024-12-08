@@ -599,7 +599,7 @@ africa_missions_slot_4 = {
 		    add_adm_power = -100
             define_advisor = {
                 type = theologian
-                cost_multiplier = 0.75
+                cost_multiplier = 0.25
                 skill = 2
             }
 		}

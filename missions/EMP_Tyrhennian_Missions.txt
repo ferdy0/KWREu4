@@ -463,7 +463,7 @@ tyhrennian_missions_slot_2 = {
 				has_courthouse_building_trigger = yes
 			}
 			owns_core_province = 2986
-			treasury = 500
+			treasury = 250
 		}
 		effect = {
             add_government_power = {
@@ -476,7 +476,7 @@ tyhrennian_missions_slot_2 = {
                 share = -5
             }
             add_dip_power = 100
-            add_treasury = -500
+            add_treasury = -250
 		}
 	}
 
@@ -1318,6 +1318,10 @@ tyhrennian_missions_slot_4 = {
                 add_base_tax = 1
                 add_base_production = 1
                 add_base_manpower = 1
+		    }
+		    add_treasury = -200
+		    AFR = {
+		      add_treasury = 200
 		    }
 		}
 	}

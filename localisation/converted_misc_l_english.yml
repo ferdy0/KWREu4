@@ -337,7 +337,7 @@
  knights_hospitalier_loc_short:0 "Knights"
  knights_hospitalier_loc_full:0 "Knights Hospitalier"
 
- AFR2:0 "Elytheragi"
+ AFR2:0 "Elytheria"
  AFR2_ADJ:0 "Elytheran"
 
  king_elytherans:0 "King of the Elytherans"
@@ -369,7 +369,7 @@
  merc_elytheran_reavers:0 "Elytheran Reavers"
  
  tyrhennia_civil_war.58.t:0 "Farouk Moretti and King Martin"
- tyrhennia_civil_war.58.d:0 "King Martin was practicing in his garden with a sword, sparring with a burly sergeant that had previously beaten all fellow men in a swordfight. Parry, repose and then another parry, and yet, both of them seem a perfect match to each other, neither managing to land a single hit on eachother. However, as Martin was about to land a hit, the fight is interrupted by a private:\n 'My lord, a visitor is at the gate'\n 'Who is it?'\n 'He said he is a friend of yours'\n 'Let him in'\n\n After a few minutes, a knight enters in armor, covered in desert cloak, his face hidden with a turban. As he takes off the turban, the King recognizes the man as his old friend, Farouk. He kneels before the King. To the surprise of the soldiers, the King comes close, raises him from the ground and embraces him into a hug.\n 'That’s not how you greet a servant' said Farouk\n 'It is, however, how you meet a friend' answered Martin, 'Now come, your reavers have their work cut out for them'\n
+ tyrhennia_civil_war.58.d:0 "King Martin was practicing in his garden with a sword, sparring with a burly sergeant that had previously beaten all fellow men in a swordfight. Parry, repose and then another parry, and yet, both of them seem a perfect match to each other, neither managing to land a single hit on eachother. However, as Martin was about to land a hit, the fight is interrupted by a private.\n 'My lord, a visitor is at the gate'\n 'Who is it?'\n 'He said he is a friend of yours'\n 'Let him in'\n\n After a few minutes, a knight enters in armor, covered in desert cloak, his face hidden with a turban. As he takes off the turban, the King recognizes the man as his old friend, Farouk. He kneels before the King. To the surprise of the soldiers, the King comes close, raises him from the ground and embraces him into a hug.\n 'That’s not how you greet a servant' said Farouk\n 'It is, however, how you meet a friend' answered Martin, 'Now come, your Reavers have their work cut out for them'.\n"
  tyrhennia_civil_war.58.a:0 "What are the orders my lord?"
  tyrhennia_civil_war.59.t:0 "Levantines spreading in the Balearics"
  tyrhennia_civil_war.59.d:0 "It seems like our loyal ally in Tunis is plotting against us and trying to convert our honest subjects of the Balearics to their foul heresy! We have an option of deploying our own mission to counteract their influence or just letting it go, however it would definitely draw the eyes of the Holy See."
