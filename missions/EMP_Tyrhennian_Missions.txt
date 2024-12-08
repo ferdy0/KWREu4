@@ -8,7 +8,10 @@ tyhrennian_missions_slot_1 = {
 	
 	potential = {
 		has_dlc = "Winds of Change"
-		tag = TYH
+		OR = {
+		    tag = TYH
+		    tag = CAA
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	
@@ -73,7 +76,10 @@ tyh_missions_slot_1_navy = {
 	
 	potential = {
 		has_dlc = "Winds of Change"
-		tag = TYH
+		OR = {
+		    tag = TYH
+		    tag = CAA
+		}
 	}
 	has_country_shield = yes
 	tyh_navy_mission_1 = {
@@ -258,7 +264,10 @@ tyhrennian_missions_slot_1_continued = {
 	ai = yes
 	potential = {
 		has_dlc = "Winds of Change"
-		tag = TYH
+		OR = {
+		    tag = TYH
+		    tag = CAA
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -268,7 +277,7 @@ tyhrennian_missions_slot_1_continued = {
 		required_missions = { tyh_north_italian_rivals }
 		trigger = {
 			OR = {
-			    TUN = { junior_union_with = TYH }
+			    TUN = { junior_union_with = ROOT }
 			    AND = {
 			        NOT = { exists = TUN }
 			        owns_core_province = 338
@@ -371,7 +380,10 @@ tyhrennian_missions_slot_2 = {
 	
 	potential = {
 		has_dlc = "Winds of Change"
-		tag = TYH
+		OR = {
+		    tag = TYH
+		    tag = CAA
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	
@@ -509,7 +521,7 @@ tyhrennian_missions_slot_2 = {
 		required_missions = { tyh_expand_the_terraferma }
 		trigger = {
 			OR = {
-			    PRO = { junior_union_with = TYH }
+			    PRO = { junior_union_with = ROOT }
 			    AND = {
 			        NOT = { exists = PRO }
 			        owns_core_province = 201
@@ -754,7 +766,10 @@ tyhrennian_missions_slot_3 = {
 	
 	potential = {
 		has_dlc = "Winds of Change"
-		tag = TYH
+		OR = {
+		    tag = TYH
+		    tag = CAA
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	
@@ -777,7 +792,8 @@ tyhrennian_missions_slot_3 = {
 		effect = {
 			2986 = {
                 upgrade_building = { tax = yes }
-            }
+		        add_base_tax = 2
+		    }
             add_prestige_or_monarch_power = { amount = 5 }
             if = {
                 limit = { religion = catholic }
@@ -1030,10 +1046,10 @@ tyhrennian_missions_slot_3 = {
 				}
 			}
             4028 = {
-                add_permanent_claim = TYH
+                add_permanent_claim = ROOT
             }
             572 = {
-                add_permanent_claim = TYH
+                add_permanent_claim = ROOT
             }
 
 			if = {
@@ -1233,7 +1249,10 @@ tyhrennian_missions_slot_4 = {
 	
 	potential = {
 		has_dlc = "Winds of Change"
-		tag = TYH
+		OR = {
+		    tag = TYH
+		    tag = CAA
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	
@@ -1251,17 +1270,27 @@ tyhrennian_missions_slot_4 = {
 		trigger = {
 			2986 = {
 				owned_by = ROOT
-				grown_by_development = 8
+				grown_by_development = 6
 			}
 		}
 		effect = {
 			2986 = {
 				add_province_modifier = {
-					name = urban_expansion_modifier
+					name = wonder_construction
+					duration = 7300
+				}
+                add_great_project_tier = {
+                    type = harbor_cagliari
+                    tier = 1
+                }
+			}
+			341 = {
+				add_province_modifier = {
+					name = wonder_construction
 					duration = 7300
 				}
 			}
-			add_treasury = -150
+			add_treasury = -250
 		}
 	}
 
@@ -1285,7 +1314,11 @@ tyhrennian_missions_slot_4 = {
                 cost_multiplier = 0.1
                 skill = 3
             }
-            add_adm_power = 100
+            2986 = {
+                add_base_tax = 1
+                add_base_production = 1
+                add_base_manpower = 1
+		    }
 		}
 	}
 
@@ -1559,7 +1592,10 @@ tyhrennian_missions_slot_5 = {
 	
 	potential = {
 		has_dlc = "Winds of Change"
-		tag = TYH
+		OR = {
+		    tag = TYH
+		    tag = CAA
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	

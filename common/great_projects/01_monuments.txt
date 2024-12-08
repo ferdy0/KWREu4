@@ -21243,7 +21243,7 @@ tunis_medina = {
 		}
 		province_modifiers = {
 			province_trade_power_modifier = 0.25
-			trade_goods_size = 0.5
+			trade_goods_size = 1
 		}
 		country_modifiers = {
 		    improve_relation_modifier = 0.1
@@ -21269,7 +21269,7 @@ tunis_medina = {
 		}
 		province_modifiers = {
 			province_trade_power_modifier = 0.5
-			trade_goods_size = 1
+			trade_goods_size = 2
 		}
 		country_modifiers = {
 		    improve_relation_modifier = 0.2
@@ -21294,7 +21294,7 @@ tunis_medina = {
 		}
 		province_modifiers = {
 			province_trade_power_modifier = 0.75
-			trade_goods_size = 1.5
+			trade_goods_size = 3
 		}
 		country_modifiers = {
 		    improve_relation_modifier = 0.3
@@ -21385,7 +21385,7 @@ harbor_cagliari = {
 			factor = 500
 		}
 		province_modifiers = {
-			local_development_cost = -0.1
+			development_cost_modifier = -0.1
 		}
 		country_modifiers = {
         }
@@ -21409,7 +21409,7 @@ harbor_cagliari = {
 			factor = 2500
 		}
 		province_modifiers = {
-			local_development_cost = -0.15
+			development_cost_modifier = -0.15
 			local_ship_repair = 0.25
 		}
 		country_modifiers = {
@@ -21435,7 +21435,7 @@ harbor_cagliari = {
 			factor = 5000
 		}
 		province_modifiers = {
-			local_development_cost = -0.25
+			development_cost_modifier = -0.25
 			local_ship_repair = 0.5
 		}
 		country_modifiers = {

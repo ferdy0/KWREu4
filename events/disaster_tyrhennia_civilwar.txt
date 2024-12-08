@@ -732,3 +732,442 @@ country_event = {
         add_stability = -1
    	}
 }
+
+country_event = {
+	id = tyrhennia_civil_war.58
+	title = tyrhennia_civil_war.58.t
+	desc = tyrhennia_civil_war.58.d
+	picture = QIZILBASH_ESTATE_DEMANDS_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = tyrhennia_civil_war.58.a
+        define_general = {
+            shock = 4
+            fire = 1
+            manuever = 6
+            siege = 2
+            name = "Farouk Moretti"
+        }
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.59
+	title = tyrhennia_civil_war.59.t
+	desc = tyrhennia_civil_war.59.d
+	picture = CATHOLIC_RULERS_PRAYING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = tyrhennia_civil_war.59.a
+		add_adm_power = -100
+		PAP = { add_opinion = { who = ROOT modifier = tyh_good_boi } }
+		AFR = { add_opinion = { who = ROOT modifier = tyh_bad_boi } }
+   	}
+
+	option = {
+		name = tyrhennia_civil_war.59.b
+		PAP = { add_opinion = { who = ROOT modifier = tyh_bad_boi } }
+		AFR = { add_opinion = { who = ROOT modifier = tyh_good_boi } }
+		add_papal_influence = -25
+		333 = {
+		    change_religion = converted_dynamic_faith_113
+		}
+		4559 = {
+		    change_religion = converted_dynamic_faith_113
+		}
+		4560 = {
+		    change_religion = converted_dynamic_faith_113
+		}
+   	}
+
+	option = {
+		name = tyrhennia_civil_war.59.c
+		trigger = {
+		    religion = converted_dynamic_faith_113
+		}
+		AFR = { add_opinion = { who = ROOT modifier = tyh_good_boi } }
+		333 = {
+		    change_religion = converted_dynamic_faith_113
+		}
+		4559 = {
+		    change_religion = converted_dynamic_faith_113
+		}
+		4560 = {
+		    change_religion = converted_dynamic_faith_113
+		}
+		add_adm_power = 50
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.60
+	title = tyrhennia_civil_war.60.t
+	desc = tyrhennia_civil_war.60.d
+	picture = CATHOLIC_RULERS_PRAYING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = tyrhennia_civil_war.60.a
+		add_adm_power = -100
+		add_manpower = -5
+		PAP = { add_opinion = { who = ROOT modifier = tyh_good_boi } }
+		AFR = { add_opinion = { who = ROOT modifier = tyh_bad_boi } }
+   	}
+
+	option = {
+		name = tyrhennia_civil_war.60.b
+		PAP = { add_opinion = { who = ROOT modifier = tyh_bad_boi } }
+		AFR = { add_opinion = { who = ROOT modifier = tyh_good_boi } }
+		add_papal_influence = -50
+		4737 = {
+		    change_religion = converted_dynamic_faith_113
+		}
+		2982 = {
+		    change_religion = converted_dynamic_faith_113
+		}
+		124 = {
+		    change_religion = converted_dynamic_faith_113
+		}
+   	}
+
+	option = {
+		name = tyrhennia_civil_war.60.c
+		trigger = {
+		    religion = converted_dynamic_faith_113
+		}
+		AFR = { add_opinion = { who = ROOT modifier = tyh_good_boi } }
+		333 = {
+		    change_religion = converted_dynamic_faith_113
+		}
+		4559 = {
+		    change_religion = converted_dynamic_faith_113
+		}
+		4560 = {
+		    change_religion = converted_dynamic_faith_113
+		}
+		add_adm_power = 50
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.61
+	title = tyrhennia_civil_war.61.t
+	desc = tyrhennia_civil_war.61.d
+	picture = CATHOLIC_RULERS_PRAYING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = tyrhennia_civil_war.61.a
+		add_prestige = -10
+        AFR = { add_core = 163 }
+        if = {
+            limit = {
+                TYH = { owns = 163 }
+            }
+            TYH = {
+                remove_core = 163
+                cede_province = AFR
+            }
+        }
+        else = {
+            AFR = { vassalize = CRT }
+        }
+
+   	}
+
+	option = {
+		name = tyrhennia_civil_war.61.b
+        AFR = {
+            add_liberty_desire = 50
+        }
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.62
+	title = tyrhennia_civil_war.62.t
+	desc = tyrhennia_civil_war.62.d
+	picture = CATHOLIC_RULERS_PRAYING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = tyrhennia_civil_war.62.a
+		add_adm_power = -100
+		PAP = { add_opinion = { who = ROOT modifier = tyh_good_boi } }
+		AFR = { add_opinion = { who = ROOT modifier = tyh_bad_boi } }
+   	}
+
+	option = {
+		name = tyrhennia_civil_war.62.b
+		PAP = { add_opinion = { who = ROOT modifier = tyh_bad_boi } }
+		AFR = { add_opinion = { who = ROOT modifier = tyh_good_boi } }
+		add_papal_influence = -25
+		163 = {
+		    change_religion = converted_dynamic_faith_113
+		}
+   	}
+
+	option = {
+		name = tyrhennia_civil_war.62.c
+		trigger = {
+		    religion = converted_dynamic_faith_113
+		}
+		AFR = { add_opinion = { who = ROOT modifier = tyh_good_boi } }
+		163 = {
+		    change_religion = converted_dynamic_faith_113
+		}
+		add_adm_power = 50
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.63
+	title = tyrhennia_civil_war.63.t
+	desc = tyrhennia_civil_war.63.d
+	picture = SCOTTISH_MERCENARIES_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = tyrhennia_civil_war.63.a
+        add_historical_friend = AFR
+        add_manpower = -6
+        set_country_flag = afr_swi_elytheran_reavers
+        AFR = { country_event = { id = tyrhennia_civil_war.64 } }
+   	}
+
+	option = {
+		name = tyrhennia_civil_war.63.b
+		AFR = { country_event = { id = tyrhennia_civil_war.65 } }
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.64
+	title = tyrhennia_civil_war.64.t
+	desc = tyrhennia_civil_war.64.d
+	picture = SCOTTISH_MERCENARIES_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = tyrhennia_civil_war.64.a
+        add_historical_friend = SWI
+        341 = {
+            kill_units = {
+                who = ROOT
+                type = cavalry
+                amount = 6
+            }
+        }
+        set_country_flag = afr_swi_royal_guard
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.65
+	title = tyrhennia_civil_war.65.t
+	desc = tyrhennia_civil_war.65.d
+	picture = SCOTTISH_MERCENARIES_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = tyrhennia_civil_war.65.a
+        add_prestige = -1
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.66
+	title = tyrhennia_civil_war.66.t
+	desc = tyrhennia_civil_war.66.d
+	picture = MERCHANTS_TALKING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = tyrhennia_civil_war.66.a
+        add_dip_power = -50
+        add_historical_friend = AFR
+        1771 = {
+		    add_province_modifier = {
+		        name = ivory_tradepost
+				duration = -1
+			}
+		}
+		add_country_modifier = {
+		    name = elytheran_ivory
+		    duration = 36500
+		}
+		AFR = { country_event = { id = tyrhennia_civil_war.67 } }
+   	}
+
+	option = {
+		name = tyrhennia_civil_war.66.b
+        add_prestige = 15
+        AFR = { country_event = { id = tyrhennia_civil_war.68 } }
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.67
+	title = tyrhennia_civil_war.67.t
+	desc = tyrhennia_civil_war.67.d
+	picture = MERCHANTS_TALKING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = tyrhennia_civil_war.67.a
+        add_dip_power = -50
+        add_historical_friend = BOH
+        2448 = {
+		    add_province_modifier = {
+		        name = glass_tradepost
+				duration = -1
+			}
+		}
+		add_country_modifier = {
+		    name = bohemian_glass
+		    duration = 36500
+		}
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.68
+	title = tyrhennia_civil_war.68.t
+	desc = tyrhennia_civil_war.68.d
+	picture = MERCHANTS_TALKING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = tyrhennia_civil_war.68.a
+        add_prestige = -1
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.69
+	title = tyrhennia_civil_war.69.t
+	desc = tyrhennia_civil_war.69.d
+	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = tyrhennia_civil_war.69.a
+        379 = {
+            add_base_production = 1
+            add_building = temple
+        }
+        2313 = {
+            add_base_production = 1
+            add_building = temple
+        }
+        add_historical_friend = AFR
+        AFR = { country_event = { id = tyrhennia_civil_war.70 } }
+   	}
+
+	option = {
+		name = tyrhennia_civil_war.69.b
+        AFR = { country_event = { id = tyrhennia_civil_war.71 } }
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.70
+	title = tyrhennia_civil_war.70.t
+	desc = tyrhennia_civil_war.70.d
+	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = tyrhennia_civil_war.70.a
+        add_dip_power = -100
+        add_treasury = -200
+        add_historical_friend = KOJ
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.71
+	title = tyrhennia_civil_war.71.t
+	desc = tyrhennia_civil_war.71.d
+	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = tyrhennia_civil_war.71.a
+        add_prestige = -1
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.72
+	title = tyrhennia_civil_war.72.t
+	desc = tyrhennia_civil_war.72.d
+	picture = RELIGIOUS_WARS_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = tyrhennia_civil_war.72.a
+        add_country_modifier = {
+            name = levantine_hood
+            duration = -1
+        }
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.73
+	title = tyrhennia_civil_war.73.t
+	desc = tyrhennia_civil_war.73.d
+	picture = RELIGIOUS_WARS_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = tyrhennia_civil_war.73.a
+        add_country_modifier = {
+            name = levantine_hood
+            duration = -1
+        }
+        add_historical_friend = TYH
+        TYH = { country_event = { id = tyrhennia_civil_war.74 } }
+   	}
+
+	option = {
+		name = tyrhennia_civil_war.73.b
+        add_country_modifier = {
+            name = levantine_hood
+            duration = -1
+        }
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.74
+	title = tyrhennia_civil_war.74.t
+	desc = tyrhennia_civil_war.74.d
+	picture = RELIGIOUS_WARS_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = tyrhennia_civil_war.74.a
+        add_historical_friend = KOJ
+   	}
+}

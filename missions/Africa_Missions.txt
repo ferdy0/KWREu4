@@ -1,0 +1,827 @@
+africa_missions_slot_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+
+	potential = {
+		has_dlc = "Winds of Change"
+		OR = {
+		    tag = AFR
+		    tag = AFR
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	has_country_shield = yes
+
+	afr_1 = {
+		icon = mission_hanseatic_city
+		required_missions = { }
+		position = 1
+		trigger = {
+		    adm_power = 100
+		    dip_power = 100
+		    mil_power = 100
+		    treasury = 200
+		    341 = {
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+				OR = {
+				    has_building = workshop
+				    has_building = counting_house
+				}
+                OR = {
+                    has_building = marketplace
+                    has_building = trade_depot
+                    has_building = stock_exchange
+                }
+                development = 30
+                num_of_times_expanded_infrastructure = 1
+		    }
+		}
+		effect = {
+		    341 = {
+		        add_base_tax = 2
+		        add_base_production = 2
+		        add_base_manpower = 2
+				add_great_project_tier = {
+					type = tunis_medina
+					tier = 1
+			    }
+		    }
+		    add_treasury = -200
+            add_mil_power = -100
+            add_dip_power = -100
+            add_adm_power = -100
+		}
+	}
+
+	afr_2 = {
+		icon = mission_venus
+		required_missions = { afr_1 }
+		position = 2
+		trigger = {
+			has_institution = renaissance
+			prestige = 50
+			accepted_culture = tunisian
+		}
+		effect = {
+            ROOT = {
+                add_country_modifier = {
+                    name = king_elytherans
+                    duration = 18250
+                }
+            }
+            override_country_name = AFR2
+		}
+	}
+
+	afr_3 = {
+		icon = mission_rb_cod_wars
+		required_missions = { afr_2 }
+		position = 3
+		trigger = {
+            djerba_area = {
+                type = all
+                development = 15
+                OR = {
+                    has_building = temple
+                    has_building = cathedral
+                }
+                OR = {
+                    has_building = workshop
+                    has_building = counting_house
+                }
+                OR = {
+                    has_building = marketplace
+                    has_building = trade_depot
+                    has_building = stock_exchange
+                }
+            }
+            tripolitania_area = {
+                type = all
+                development = 15
+                OR = {
+                    has_building = temple
+                    has_building = cathedral
+                }
+                OR = {
+                    has_building = workshop
+                    has_building = counting_house
+                }
+                OR = {
+                    has_building = marketplace
+                    has_building = trade_depot
+                    has_building = stock_exchange
+                }
+            }
+        }
+		effect = {
+		    2452 = {
+				add_province_modifier = {
+					name = revitalised_coastline
+					duration = -1
+				}
+				add_base_production = 1
+		    }
+		    2451 = {
+				add_province_modifier = {
+					name = revitalised_coastline
+					duration = -1
+				}
+				add_base_production = 1
+		    }
+		    355 = {
+				add_province_modifier = {
+					name = revitalised_coastline
+					duration = -1
+				}
+				add_base_production = 1
+		    }
+		    djerba_area = {
+				add_province_modifier = {
+					name = revitalised_coastline
+					duration = -1
+				}
+				add_base_production = 1
+		    }
+		    354 = {
+				add_province_modifier = {
+					name = rising_trade_center
+					duration = -1
+				}
+		        add_base_tax = 1
+		        add_base_production = 1
+		        add_base_manpower = 1
+		    }
+		}
+	}
+
+	afr_4 = {
+		icon = mission_arabian_fort
+		required_missions = { afr_3 afr_8 }
+		position = 5
+		trigger = {
+		    352 = {
+		        development = 10
+		        has_building = fort_15th
+		        has_building = ramparts
+		        has_supply_depot = ROOT
+		    }
+		    2448 = {
+		        development = 10
+		        has_building = fort_15th
+		        has_building = ramparts
+		        has_supply_depot = ROOT
+		    }
+		}
+		effect = {
+		    352 = {
+				add_province_modifier = {
+					name = caravanserai
+					duration = -1
+				}
+		    }
+		    2448 = {
+				add_province_modifier = {
+					name = caravanserai
+					duration = -1
+				}
+		    }
+		}
+	}
+}
+
+africa_missions_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+
+	potential = {
+		has_dlc = "Winds of Change"
+		OR = {
+		    tag = AFR
+		    tag = AFR
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	has_country_shield = yes
+
+	afr_5 = {
+		icon = mission_bedouins
+		required_missions = { }
+		position = 1
+		trigger = {
+		    2450 = {
+		        base_manpower = 3
+		    }
+		    352 = {
+                base_manpower = 3
+            }
+		    2449 = {
+                base_manpower = 3
+            }
+		    north_saharan_area = {
+		        has_state_edict = edict_promote_military_recruitment
+		    }
+		    fezzan_area = {
+                has_state_edict = edict_promote_military_recruitment
+		    }
+		}
+		effect = {
+		    2450 = {
+				add_province_modifier = {
+					name = recruiting_local_tribes
+					duration = -1
+				}
+		    }
+		    352 = {
+				add_province_modifier = {
+					name = recruiting_local_tribes
+					duration = -1
+				}
+            }
+		    2449 = {
+				add_province_modifier = {
+					name = recruiting_local_tribes
+					duration = -1
+				}
+            }
+			add_country_modifier = {
+				name = recruiting_tribes
+				duration = 9125
+			}
+		}
+	}
+
+	afr_7 = {
+		icon = mission_conquer_air
+		required_missions = { afr_5 afr_6 }
+		position = 2
+		trigger = {
+            army_size_percentage = 0.8
+            OR = {
+                alliance_with = TYH
+                junior_union_with = TYH
+            }
+            341 = {
+                transports_in_province = 5
+            }
+		}
+		effect = {
+            north_saharan_area = {
+                add_permanent_claim = ROOT
+            }
+            kabylia_area = {
+                add_permanent_claim = ROOT
+            }
+            fezzan_area = {
+                add_permanent_claim = ROOT
+            }
+            ouled_nail_area = {
+                add_permanent_claim = ROOT
+            }
+            341 = {
+                kill_units = {
+                    who = ROOT
+                    type = transport
+                    amount = 5
+                }
+            }
+            2986 = {
+                add_unit_construction = {
+                    type = transport
+                    amount = 4
+                    speed = 0
+                    cost = 0
+                }
+            }
+			add_country_modifier = {
+				name = quick_march
+				duration = 3650
+			}
+			TYH = {
+                add_country_modifier = {
+                    name = invasion_plans
+                    duration = 3650
+                }
+			}
+		}
+	}
+
+	afr_8 = {
+		icon = mission_rb_import_potatoes
+		required_missions = { afr_7 }
+		position = 4
+		trigger = {
+		    mil_power = 200
+		    army_professionalism = 0.2
+		    is_at_war = no
+		    owns = 2448
+		    quantity_ideas = 4
+		    has_idea = african_5
+		}
+		effect = {
+		    add_mil_power = -200
+			add_country_modifier = {
+				name = supply_caravans
+				duration = -1
+			}
+		}
+	}
+
+	afr_9 = {
+		icon = mission_traverse_the_sahara
+		required_missions = { afr_7 }
+		position = 5
+		trigger = {
+		    owns_core_province = 2448
+            army_size = 40
+            manpower = 5
+		}
+		effect = {
+		    add_manpower = -5
+            cyrenaica_area = {
+                add_permanent_claim = ROOT
+            }
+            358 = {
+                add_permanent_claim = ROOT
+            }
+            2474 = {
+                add_siberian_construction = 100
+            }
+            2475 = {
+                add_siberian_construction = 100
+            }
+		}
+	}
+}
+
+africa_missions_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+
+	potential = {
+		has_dlc = "Winds of Change"
+		OR = {
+		    tag = AFR
+		    tag = AFR
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	has_country_shield = yes
+
+	afr_6 = {
+		icon = mission_cossack_cavalry
+		required_missions = { }
+		position = 1
+		trigger = {
+		    num_of_cavalry = 10
+		}
+		effect = {
+            country_event = { id = tyrhennia_civil_war.58 }
+		}
+	}
+
+	afr_12 = {
+		icon = invest_in_the_rich_trades
+		required_missions = { afr_10 }
+		position = 2
+		trigger = {
+		    treasury = 100
+		    adm_power = 100
+		    advisor = theologian
+		    OR = {
+		        NOT = { has_country_modifier = busy_missionary }
+		        333 = {
+		            religion = converted_dynamic_faith_113
+		        }
+		    }
+		}
+		effect = {
+			if = {
+			    limit = {
+                    333 = {
+                        religion = converted_dynamic_faith_113
+                    }
+			    }
+			    add_prestige = 10
+			}
+			else = {
+                province_event = {
+                    id = tyrhennia_civil_war.59
+                    days = 3650
+                    random = 1
+                }
+                333 = {
+                    add_base_tax = 1
+                    upgrade_building = { tax = yes }
+                    add_building = temple
+                }
+                4559 = {
+                    add_base_tax = 1
+                }
+                4560 = {
+                    add_base_tax = 1
+                }
+                add_treasury = -100
+                add_adm_power = -100
+                add_country_modifier = {
+                    name = busy_missionary
+                    duration = 3650
+                }
+			}
+		}
+	}
+
+	afr_13 = {
+		icon = king_of_naples
+		required_missions = { afr_11 afr_12 }
+		position = 3
+		trigger = {
+		    treasury = 200
+		    adm_power = 100
+		    advisor = theologian
+		    OR = {
+		        NOT = { has_country_modifier = busy_missionary }
+		        4737 = {
+		            religion = converted_dynamic_faith_113
+		        }
+		    }
+		}
+		effect = {
+			if = {
+			    limit = {
+                    4737 = {
+                        religion = converted_dynamic_faith_113
+                    }
+			    }
+			    add_prestige = 20
+			}
+			else = {
+                province_event = {
+                    id = tyrhennia_civil_war.60
+                    days = 3650
+                    random = 1
+                }
+                4737 = {
+                    add_base_tax = 1
+                    upgrade_building = { tax = yes }
+                    add_building = temple
+                }
+                2982 = {
+                    add_base_tax = 1
+                }
+                124 = {
+                    add_base_tax = 1
+                }
+                add_treasury = -200
+                add_adm_power = -100
+                add_country_modifier = {
+                    name = busy_missionary
+                    duration = 3650
+                }
+			}
+		}
+	}
+
+	afr_14 = {
+		icon = immaculate_government
+		required_missions = { afr_13 }
+		position = 4
+		trigger = {
+		    treasury = 100
+		    adm_power = 100
+		    advisor = theologian
+		    NOT = { has_country_modifier = busy_missionary }
+		    TYH = { religion = converted_dynamic_faith_113 }
+		}
+		effect = {
+            add_treasury = -100
+            add_adm_power = -100
+            add_country_modifier = {
+                name = busy_missionary
+                duration = 7300
+            }
+            add_country_modifier = {
+                name = knights_st_meleanos
+                duration = -1
+            }
+            TYH = {
+                add_country_modifier = {
+                    name = african_missionaries
+                    duration = 7300
+                }
+                add_country_modifier = {
+                    name = knights_st_meleanos
+                    duration = -1
+                }
+            }
+		}
+	}
+
+	afr_21 = {
+		icon = mission_restore_faith_in_the_throne
+		required_missions = { afr_4 afr_9 afr_14 afr_20 }
+		position = 6
+		trigger = {
+		    total_development = 400
+		    owns = 358
+		    army_size = 60
+		    has_great_project = {
+            	type = tunis_medina
+            	tier = 3
+            }
+		}
+		effect = {
+            add_country_modifier = {
+                name = elytheran_goes_up
+                duration = -1
+            }
+            163 = {
+                add_permanent_claim = AFR
+            }
+            if = {
+                limit = {
+                    OR = {
+                        TYH = { owns = 163 }
+                        CRT = { vassal_of = TYH }
+                    }
+                }
+                TYH = { country_event = { id = tyrhennia_civil_war.61 } }
+            }
+		}
+	}
+}
+
+africa_missions_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+
+	potential = {
+		has_dlc = "Winds of Change"
+		OR = {
+		    tag = AFR
+		    tag = AFR
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	has_country_shield = yes
+
+	afr_10 = {
+		icon = mission_hands_praying
+		required_missions = { }
+		position = 1
+		trigger = {
+		    adm_power = 100
+            has_estate_privilege = estate_church_expand_the_theology
+		}
+		effect = {
+		    add_adm_power = -100
+            define_advisor = {
+                type = theologian
+                cost_multiplier = 0.75
+                skill = 2
+            }
+		}
+	}
+
+	afr_11 = {
+		icon = mission_retake_ceuta
+		required_missions = { afr_10 }
+		position = 2
+		trigger = {
+		    adm_power = 100
+		    treasury = 100
+		    advisor = theologian
+		    OR = {
+		        NOT = { has_country_modifier = busy_missionary }
+		        163 = {
+		            religion = converted_dynamic_faith_113
+		        }
+		    }
+		}
+		effect = {
+			if = {
+			    limit = {
+                    163 = {
+                        religion = converted_dynamic_faith_113
+                    }
+			    }
+			    add_prestige = 20
+			}
+			else = {
+                province_event = {
+                    id = tyrhennia_civil_war.62
+                    days = 3650
+                    random = 1
+                }
+                163 = {
+                    add_base_tax = 1
+                    upgrade_building = { tax = yes }
+                    add_building = temple
+                }
+                add_treasury = -100
+                add_adm_power = -100
+                add_country_modifier = {
+                    name = busy_missionary
+                    duration = 3650
+                }
+			}
+		}
+	}
+
+	afr_16 = {
+		icon = alpine_fortifications
+		required_missions = { afr_15 }
+		position = 3
+		trigger = {
+            SWI = {
+                has_opinion = {
+                    who = ROOT
+                    value = 100
+                }
+				has_opinion_modifier = {
+				    who = ROOT
+				    modifier = sent_gift
+				}
+            }
+            341 = {
+                cavalry_in_province = 6
+            }
+		}
+		effect = {
+		    SWI = { country_event = { id = tyrhennia_civil_war.63 } }
+		}
+	}
+
+	afr_17 = {
+		icon = bohemian_crystal
+		required_missions = { afr_16 }
+		position = 4
+		trigger = {
+		    dip_power = 50
+		    BOH = {
+                has_opinion = {
+                    who = ROOT
+                    value = 100
+                }
+				has_opinion_modifier = {
+				    who = ROOT
+				    modifier = sent_gift
+				}
+            }
+            owns = 2448
+		}
+		effect = {
+		    BOH = { country_event = { id = tyrhennia_civil_war.66 } }
+		}
+	}
+}
+
+africa_missions_slot_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+
+	potential = {
+		has_dlc = "Winds of Change"
+		OR = {
+		    tag = AFR
+		    tag = AFR
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	has_country_shield = yes
+
+	afr_15 = {
+		icon = "mission_mal_jihad_upon_own_population"
+		required_missions = { }
+		position = 2
+		trigger = {
+		    dip_power = 100
+		    treasury = 200
+            PAP = {
+			    has_opinion_modifier = {
+				    who = ROOT
+				    modifier = scornfully_insulted
+				}
+            }
+		}
+		effect = {
+		    PAP = { add_opinion = { who = ROOT modifier = afr_bad_boi } }
+            add_power_projection = {
+                type = mission_rewards_power_projection
+                amount = 25
+            }
+            KOJ = { country_event = { id = tyrhennia_civil_war.69 } }
+		}
+	}
+
+	afr_18 = {
+		icon = army_reforms
+		required_missions = { afr_15 }
+		position = 3
+		trigger = {
+		    TYH = { religion = converted_dynamic_faith_113 }
+            advisor = quartermaster
+            has_idea = african_6
+            junior_union_with = TYH
+		}
+		effect = {
+		    add_manpower = -10
+		    TYH = {
+                add_country_modifier = {
+                    name = african_supplies
+                    duration = 18250
+                }
+		    }
+            add_country_modifier = {
+                name = proper_ship_designs
+                duration = -1
+            }
+		}
+	}
+
+	afr_19 = {
+		icon = mission_reclaim_morocco
+		required_missions = { afr_18 }
+		position = 4
+		trigger = {
+            TYH = {
+                alliance_with = KOJ
+				has_opinion_modifier = {
+				    who = ROOT
+				    modifier = sent_gift
+				}
+            }
+            KOJ = {
+                owns_core_province = 2313
+                owns_core_province = 379
+				has_opinion_modifier = {
+				    who = ROOT
+				    modifier = sent_gift
+				}
+            }
+            advisor = theologian
+            dip_power = 200
+            has_estate_privilege = estate_church_religious_diplomats
+		}
+		effect = {
+            add_country_modifier = {
+                name = levantine_hood
+                duration = -1
+            }
+            KOJ = { country_event = { id = tyrhennia_civil_war.73 } }
+            TYH = { country_event = { id = tyrhennia_civil_war.72 } }
+		}
+	}
+
+	afr_20 = {
+		icon = mission_book_of_royal_degrees
+		required_missions = { afr_17 afr_19 }
+		position = 5
+		trigger = {
+		    diplomatic_reputation = 3
+			calc_true_if = {
+			    all_known_country = {
+                    has_opinion = {
+                        who = FROM
+                        value = 100
+                    }
+				}
+				amount = 10
+			}
+		}
+		effect = {
+		    add_dip_power = 200
+            add_country_modifier = {
+                name = elytheran_dipl_corps
+                duration = -1
+            }
+		}
+	}
+}

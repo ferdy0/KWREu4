@@ -2839,4 +2839,46 @@ merc_hamburgian_powder_monkeys = {
 			backrow_artillery_damage = 0.1	
 		}
 		min_size = 10
+}
+
+merc_elytheran_reavers = {
+    regiments_per_development = 0.4
+    home_province = 166
+    mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	cost_modifier = 1
+	cavalry_weight = 1
+	sprites = { dlc098_nav_sprite_pack dlc020_ara_sprite_pack dlc029_spa_sprite_pack dlc049_SPA_sprite_pack dlc053_spa_sprite_pack westerngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		tag = SWI
+		has_country_flag = afr_swi_elytheran_reavers
 	}
+    modifier = {
+		siege_ability = 0.2
+		cavalry_power = 0.2
+	}
+	min_size = 6
+	max_size = 12
+}
+
+merc_swiss_royal_guard = {
+    regiments_per_development = 0.4
+    home_province = 2455
+    mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	cost_modifier = 1
+	sprites = { dlc098_nav_sprite_pack dlc020_ara_sprite_pack dlc029_spa_sprite_pack dlc049_SPA_sprite_pack dlc053_spa_sprite_pack westerngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		OR = {
+		    tag = AFR
+		    tag = CAA
+		}
+		has_global_flag = afr_swi_royal_guard
+	}
+    modifier = {
+		discipline = 0.05
+		shock_damage_received = -0.2
+	}
+	min_size = 6
+	max_size = 12
+}
