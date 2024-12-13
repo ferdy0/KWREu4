@@ -1171,3 +1171,84 @@ country_event = {
         add_historical_friend = KOJ
    	}
 }
+
+country_event = {
+	id = tyrhennia_civil_war.75
+	title = tyrhennia_civil_war.75.t
+	desc = tyrhennia_civil_war.75.d
+	picture = RELIGIOUS_WARS_eventPicture
+
+	mean_time_to_happen = {
+        months = 6
+    }
+
+	trigger = {
+		tag = AFR
+		OR = {
+		    TYH = { war_with = AFR }
+		    KOJ = { war_with = AFR }
+		    TYH = { war_with = KOJ }
+		}
+		has_country_modifier = levantine_hood
+	}
+
+	option = {
+		name = tyrhennia_civil_war.75.a
+		remove_country_modifier = levantine_hood
+        add_manpower = -5
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.76
+	title = tyrhennia_civil_war.75.t
+	desc = tyrhennia_civil_war.75.d
+	picture = RELIGIOUS_WARS_eventPicture
+
+	mean_time_to_happen = {
+        months = 6
+    }
+
+	trigger = {
+		tag = TYH
+		OR = {
+		    TYH = { war_with = AFR }
+		    KOJ = { war_with = AFR }
+		    TYH = { war_with = KOJ }
+		}
+		has_country_modifier = levantine_hood
+	}
+
+	option = {
+		name = tyrhennia_civil_war.75.a
+		remove_country_modifier = levantine_hood
+        add_manpower = -5
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.77
+	title = tyrhennia_civil_war.75.t
+	desc = tyrhennia_civil_war.75.d
+	picture = RELIGIOUS_WARS_eventPicture
+
+	mean_time_to_happen = {
+        months = 6
+    }
+
+	trigger = {
+		tag = KOJ
+		OR = {
+		    TYH = { war_with = AFR }
+		    KOJ = { war_with = AFR }
+		    TYH = { war_with = KOJ }
+		}
+		has_country_modifier = levantine_hood
+	}
+
+	option = {
+		name = tyrhennia_civil_war.75.a
+		remove_country_modifier = levantine_hood
+        add_manpower = -5
+   	}
+}

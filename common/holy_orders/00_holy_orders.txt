@@ -1127,3 +1127,30 @@ knights_hospitalier = {
     }
     localization = knights_hospitalier_loc
 }
+
+knights_meleanos = {
+    icon = GFX_holy_order_scuola_grande
+    trigger = {
+		is_or_was_tag = { tag = AFR }
+		has_country_flag = afr_allowed_meleanos
+    }
+    color = { 173 216 230 }
+    cost = 50
+    cost_type = mil_power
+    per_province_effect = {
+        owner = { add_splendor = 10 }
+        add_base_manpower = 1
+    }
+    per_province_abandon_effect = {
+        owner = { add_splendor = -10 }
+        add_base_manpower = -1
+    }
+    modifier = {
+		local_manpower_modifier = 0.1
+        local_hostile_attrition = 1
+    }
+    ai_priority = {
+        factor = 10
+    }
+    localization = knights_hospitalier_loc
+}

@@ -396,9 +396,9 @@ tyhrennian_missions_slot_2 = {
 			OR = {
 				num_of_estate_privileges = {
 					estate = estate_nobles
-					value = 4
+					value = 3
 				}
-			    crown_land_share = 40
+			    crown_land_share = 33
 			}
 			estate_loyalty = {
 				estate = estate_nobles
@@ -850,7 +850,7 @@ tyhrennian_missions_slot_3 = {
 		effect = {
 			add_country_modifier = {
 				name = tyh_standardized_relazioni
-				duration = 7300
+				duration = -1
 			}
 		}
 	}

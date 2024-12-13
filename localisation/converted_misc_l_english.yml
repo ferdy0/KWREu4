@@ -336,6 +336,12 @@
  knights_hospitalier_loc:0 "Knights Hospitalier"
  knights_hospitalier_loc_short:0 "Knights"
  knights_hospitalier_loc_full:0 "Knights Hospitalier"
+ 
+ knights_meleanos:0 "Knights of St Meleanos"
+ knights_meleanos_desc:1 "The Knights of St Meleanos have been a staple of life in Africa for a long time, shaping our great future and paving the way for our people."
+ knights_meleanos_loc:0 "Knights of St Meleanos"
+ knights_meleanos_loc_short:0 "Knights"
+ knights_meleanos_loc_full:0 "Knights of St Meleanos"
 
  AFR2:0 "Elytheria"
  AFR2_ADJ:0 "Elytheran"
@@ -430,6 +436,9 @@
  tyrhennia_civil_war.74.t:0 "Friends in Jerusalem."
  tyrhennia_civil_war.74.d:0 "While pursuing the Levantine Brotherhood, Jerusalem recognised not only as brothers in faith, but also worthy of being called a friend. This is a great day for Levantine unity."
  tyrhennia_civil_war.74.a:0 "Cheers for our new Brothers!"
+ tyrhennia_civil_war.75.t:0 "War in da Hood."
+ tyrhennia_civil_war.75.d:0 "Despite having established a Levantine Brotherhood, despite our declarations of friendship and promises of peace, war has broken out between the Sister Nations. This has had dramatic effects on our population, mobilisation is at an all times low."
+ tyrhennia_civil_war.75.a:0 "Nothing ever lasts..."
 
  afr_1_title:0 "Develop Tunis"
  afr_1_desc:0 "The city of Tunis, a jewel of the Mediterranean, while already prospering, can always do better - we will initiate a reconstruction of the Tunisian Medina, which will host traders from all across the world, as well as our esteemed foreign guests. Soon the city we grew to love will shine even brighter, laughter will fill the streets and riches will flow out of every doorstep."
