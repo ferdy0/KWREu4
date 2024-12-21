@@ -1,0 +1,186 @@
+########################################
+# All Potestate Related events
+# Including Gov form stuff
+########################################
+
+namespace = potestate_events
+
+country_event = {
+	id = potestate_events.1
+	title = potestate_events.1.t
+	desc = potestate_events.1.d
+	picture = RELIGIOUS_WARS_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #vote for current potestate
+		name = potestate_events.1.a
+		ai_chance = {
+		    factor = 50
+			modifier = {
+				factor = 2
+				has_opinion = {
+                    who = overlord
+                    value = 100
+               }
+			}
+			modifier = {
+				factor = 10
+				has_opinion = {
+                    who = overlord
+                    value = 200
+               }
+			}
+			modifier = {
+				factor = 0
+				has_opinion = {
+                    who = overlord
+                    value = -100
+               }
+			}
+		}
+		change_variable = {
+            which = potestate_votes
+            value = 1
+        }
+   	}
+
+	option = { #vote for ourselves
+		name = potestate_events.1.b
+		ai_chance = { factor = 50 }
+        add_prestige = 5
+   	}
+}
+
+country_event = {
+	id = potestate_events.2
+	title = potestate_events.2.t
+	desc = potestate_events.2.d
+	picture = RELIGIOUS_WARS_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #we got reelected
+		name = potestate_events.2.a
+		trigger = {
+            check_variable = {
+                which = potestate_votes
+                value = half_potestate_members
+            }
+       	}
+       	add_prestige = 10
+   	}
+
+	option = { #shit
+		name = potestate_events.2.b
+		trigger = {
+            NOT = {
+                check_variable = {
+                    which = potestate_votes
+                    value = half_potestate_members
+                }
+            }
+       	}
+        add_prestige = -20
+        every_subject_country = {
+            limit = {
+                has_country_flag = potestate_vassal
+            }
+            free_vassal = PREV
+        }
+        random_known_country = {
+            limit = {
+                has_country_flag = potestate_vassal
+            }
+            set_country_flag = potestate_leader
+            clr_country_flag = potestate_vassal
+            PREV = {
+                set_country_flag = potestate_vassal
+                clr_country_flag = potestate_leader
+            }
+            vassalize = {
+                every_known_country = {
+                    limit = {
+                        has_country_flag = potestate_vassal
+                    }
+                }
+            }
+        }
+   	}
+}
+
+country_event = {
+	id = potestate_events.3
+	title = potestate_events.3.t
+	desc = potestate_events.3.d
+	picture = RELIGIOUS_WARS_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = HOL
+		not = { is_year = 1445 }
+	}
+
+	option = { #interesting
+		name = potestate_events.3.b
+        add_treasury = 5
+        set_variable = {
+            which = count_potestate_members
+            value = 7
+        }
+        set_country_flag = potestate_leader
+        UTR = { set_country_flag = potestate_vassal }
+        GEL = { set_country_flag = potestate_vassal }
+        LUX = { set_country_flag = potestate_vassal }
+        KLE = { set_country_flag = potestate_vassal }
+        Z0N = { set_country_flag = potestate_vassal }
+        FRI = { set_country_flag = potestate_vassal }
+   	}
+}
+
+country_event = {
+	id = potestate_events.4
+	title = potestate_events.4.t
+	desc = potestate_events.4.d
+	picture = RELIGIOUS_WARS_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		has_country_flag = potestate_leader
+	}
+
+	immediate = {
+        set_variable = {
+            which = potestate_votes
+            value = 1
+        }
+        set_variable = {
+            which = half_potestate_members
+            value = count_potestate_members
+        }
+        divide_variable = {
+            which = half_potestate_members
+            value = 2
+        }
+        subtract_variable = {
+            which = half_potestate_members
+            value = 1
+        }
+	}
+
+	option = { #interesting
+		name = potestate_events.4.b
+        every_subject_country = {
+            limit = {
+                has_country_flag = potestate_vassal
+            }
+            country_event = { id = potestate_events.1 }
+        }
+        country_event = {
+            id = potestate_events.2
+            days = 90
+            random = 15
+        }
+   	}
+}
+

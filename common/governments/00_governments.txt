@@ -7,7 +7,7 @@ monarchy = {
 				autocracy_reform
 				elective_monarchy_reform
 				autocracy_tyrhennia_reform
-                		canaania_reform
+				canaania_reform
 				plutocratic_reform
 				indian_sultanate_reform
 				nayankara_reform
