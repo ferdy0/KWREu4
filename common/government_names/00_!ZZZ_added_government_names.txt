@@ -46,6 +46,54 @@ african_archonate = {
 		government = monarchy
 	}
 }
+march_in_hre_monarchy = {
+	rank = {
+		1 = MARCH
+		2 = VICEROYALTY
+		3 = EMPIRE
+	}
+	
+	ruler_male = {
+		1 = MARGRAVE
+		2 = VICEROY
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = MARGRAVINE
+		2 = VICEREINE	
+		3 = EMPRESS
+	}
+	
+	consort_male = {
+		1 = MARGRAVE_CONSORT
+		2 = VICEROY_CONSORT
+		3 = EMPEROR_CONSORT
+	}
+
+	consort_female = {
+		1 = MARGRAVINE
+		2 = VICEREINE
+		3 = EMPRESS
+	}
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		government = monarchy
+		religion_group = christian
+		has_reform = margraviate_reform
+	}
+}
 grand_duchy_monarchy = {
 	rank = {
 		1 = GRAND_DUCHY
@@ -118,7 +166,10 @@ pharaoh = {
 	}
 	trigger = {
 		religion = kemetism
-		OR = { government = monarchy government = theocracy }
+		OR = {
+			government = monarchy
+			government = theocracy
+		}
 	}
 }
 ecumenical_patriarch = {
@@ -137,7 +188,10 @@ ecumenical_patriarch = {
 		2 = ECUMENICAL_MATRIARCH
 		3 = ECUMENICAL_MATRIARCH
 	}
-	trigger = { government = theocracy religion = orthodox }
+	trigger = {
+		government = theocracy
+		religion = orthodox
+	}
 }
 ruling_prince = {
 	rank = {
@@ -165,7 +219,14 @@ ruling_prince = {
 		2 = PRINCESS
 		3 = GREAT_PRINCESS
 	}
-	trigger = { OR = { tag = SWI tag = ARM primary_culture = swiss } government = monarchy }
+	trigger = {
+		OR = {
+			tag = SWI
+			tag = ARM
+			primary_culture = swiss
+		}
+		government = monarchy
+	}
 }
 dauphin = {
 	rank = {
@@ -196,7 +257,10 @@ dauphin = {
 		2 = DAUPHIN_fem
 		3 = DAUPHIN_fem
 	}
-	trigger = { culture_group = french government = monarchy }
+	trigger = {
+		culture_group = french
+		government = monarchy
+	}
 }
 fara = {
 	rank = { 1 = FARA }

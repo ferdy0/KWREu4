@@ -1406,7 +1406,7 @@ palatine_electorate = {
 	trigger = {
 		government = monarchy
 		is_elector = yes
-		tag = PAL
+		tag = HOL
 	}
 }
 
@@ -1454,7 +1454,7 @@ palatine_monarchy = {
 	
 	trigger = {
 		government = monarchy
-		tag = PAL
+		tag = HOL
 	}
 }
 
