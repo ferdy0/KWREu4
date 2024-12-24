@@ -1,12 +1,12 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = byzantine_autocracy_reform
 government_rank = 3
 technology_group = eastern
 religion = orthodox
 primary_culture = serbian
 historical_friend = KOJ
 capital = 1827
-add_accepted_culture = anatolian
+add_accepted_culture = greek
 1362.6.14 = {
 	monarch = {
 		name = "Martin III"

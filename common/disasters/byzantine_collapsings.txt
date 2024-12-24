@@ -1,0 +1,115 @@
+#Byzantine Collapse
+#A succession struggle mixed with nationalistic, imperialistic and religious struggles. As a whole generally a bit of a fuckfest.
+
+byzantine_collapsings = {
+	potential = {
+		tag = BYZ
+		NOT = { has_country_flag = had_byz_collapse }
+		is_free_or_tributary_trigger = yes
+		government = monarchy
+	}
+
+
+	can_start = {
+		current_age = age_of_discovery
+		is_at_war = no
+		has_any_disaster = no
+		OR = {
+			has_regency = yes
+			has_female_heir = yes
+			has_heir = no
+		}
+	}
+	
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			NOT = { government = monarchy }
+			AND = {
+				has_heir = yes
+				heir_claim = 90
+			}
+		}
+	}
+	
+	
+	
+	
+	progress = {
+		modifier = {
+			factor = 5
+			ruler_age = 40
+		}
+		modifier = {
+			factor = 5
+			has_heir = no
+		}
+		modifier = {
+			factor = 5
+			AND = {
+				ruler_age = 55
+				has_heir = no
+			}
+		}
+		modifier = {
+			factor = 7
+			has_regency = yes
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = 2 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = 1 }
+		}
+	}
+
+
+	
+	can_end = {
+		hidden_trigger = { has_country_flag = byz_collapsed_end }
+		stability = 1
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		NOT = {
+			has_spawned_rebels = pretender_rebels
+		}
+	}
+	
+
+
+	modifier = {
+		global_unrest = 5
+		all_power_cost = 0.10
+		yearly_corruption = 0.05
+	}	
+	
+	
+	on_start = byzantine_collapsings.1
+	on_end = byzantine_collapsings.100
+	ended_by_country_breaking_to_rebels = no
+	
+	on_monthly = {
+		events = {
+		    byzantine_collapsings.9
+		    byzantine_collapsings.10
+		}
+		random_events = {
+			100 = 0
+			5 = byzantine_collapsings.11 #Lose Morale in Armies for a Year
+			2 = purple_phoenix.12 #Lose 25 MIL power
+			1 = purple_phoenix.11 #Gain 50 MIL power
+			1 = purple_phoenix.14 #Lose 25 DIP power
+			1 = purple_phoenix.16 #Lose 25 ADM power
+			1 = byzantine_collapsings.4 #Unrest in Germiyan
+			1 = byzantine_collapsings.5 #Unrest in Eretna
+			1 = byzantine_collapsings.6 #Unrest in Karaman
+			1 = byzantine_collapsings.7 #Unrest in Albania
+			1 = byzantine_collapsings.8 #Unrest in Bulgaria
+			1 = byzantine_collapsings.9 #Unrest in Latin Empire
+			1 = byzantine_collapsings.10 #Unrest in Trebizond
+		}
+	}
+}
+

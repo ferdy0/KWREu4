@@ -31,21 +31,28 @@ historical_units = {
 	slavic_stradioti
 }
 monarch_names = {
+	"Antonios #0" = 40
+	"Iakob #0" = 20
+	"Michael #0" = 20
+	"Bartolomeo #0" = 10
+	"Folkmar #1" = 10
+	"Lotarios #0" = 10
+	"Theodoric #0" = 10
+	"Ferdinand #0" = 5
+	"Leolin #1" = 5
+	"Loukas #0" = 5
+	"Siegmund #1" = 5
 	"Agapios #0" = 0
 	"Akakios #0" = 0
-	"Alexandra #0" = -1
 	"Alexandros #0" = 0
 	"Anargyros #0" = 0
-	"Anastasia #0" = -1
 	"Anastasios #0" = 0
 	"Andreas #0" = 0
 	"Angelos #0" = 0
 	"Aniketos #0" = 0
-	"Antonio #0" = 40
 	"Apostolos #0" = 0
 	"Argyros #0" = 0
 	"Athanasios #0" = 0
-	"Bartolomeo #0" = 10
 	"Charalampos #0" = 0
 	"Chrysanthos #0" = 0
 	"Demetrios #0" = 0
@@ -57,39 +64,54 @@ monarch_names = {
 	"Elias #0" = 0
 	"Emmanouil #0" = 0
 	"Evangelos #0" = 0
-	"Francesca #1" = -10
-	"Francesco #0" = 40
-	"Gabrielia #0" = -1
 	"Georgios #0" = 0
 	"Gregorios #0" = 0
+	"Helias #0" = 0
+	"Hypatios #0" = 0
 	"Ioannes #0" = 0
-	"Ioustina #0" = -1
 	"Konstantinos #0" = 0
-	"Maria #0" = -1
-	"Nero #1" = 20
 	"Nikodemos #0" = 0
+	"Markos #0" = 0
+	"Megistos #0" = 0
+	"Meletios #0" = 0
 	"Pavlos #0" = 0
 	"Petros #0" = 0
 	"Philippos #0" = 0
 	"Photios #0" = 0
+	"Sergios #0" = 0
 	"Stephanos #0" = 0
 	"Theophylaktos #0" = 0
 	"Vasilis #0" = 0
 	"Vlasis #0" = 0
+	
+	"Rossana #1" = -10
+	"Alexandra #0" = -1
+	"Eufemia #0" = -1
+	"Maria #0" = -1
 }
 leader_names = {
-	"Acciajuoli"
-	"Contarini"
-	"Crispo"
-	"Doria"
-	"Fadrigue"
-	"Melissinos"
-	"Palaeologus"
-	"Plethon"
-	"Rendis"
-	"Saraceno"
-	"Tocco"
-	"Zorzi"
+	Angoures
+	Blangas
+	Crispo
+	Doria
+	Eudaimon
+	Hagiochrisophorites
+	Kalekas
+	Kaisar
+	Loules
+	Mesarites
+	Paxenos
+	Plethon
+	Rendis
+	Spondyles
+	Styppes
+	Triblattites
+	Zápolya
+	"de Bolougne"
+	"de Ruszka"
+	"de Sá"
+	"von Bamberg"
+	"von Habsburg"
 }
 ship_names = {
 	"Agios Thomas"

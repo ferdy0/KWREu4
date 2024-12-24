@@ -1,0 +1,801 @@
+########################################
+# Collapse of the Byzantine Empire
+# A mix of greek-nationalist, noble, and
+# independence factions vying for each their own goals
+########################################
+
+namespace = byzantine_collapsings
+
+# Collapse of the Byzantine Empire
+country_event = {
+	id = byzantine_collapsings.1
+	title = "byzantine_collapsings.1.t"
+	desc = "byzantine_collapsings.1.d"
+	picture = BYZ_CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = had_byz_collapse
+			add_stability = -2
+		}
+	}
+	
+	option = { #Greek restorationists rise up
+		name = byzantine_collapsings.1.a
+		set_saved_name = {
+			key = byzantine_predenter_contestant
+			type = simple
+			name = "Theodoros"
+		}
+		1848 = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 4
+				leader = byzantine_predenter_contestant
+				leader_dynasty = "Mauros"
+				culture = anatolian
+				religion = orthodox
+				win = yes
+			}
+		}
+		318 = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 3
+				win = yes
+			}
+		}
+		326 = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 3
+				win = yes
+				
+			}
+		}
+		327 = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+				win = yes
+				
+			}
+		}
+		330 = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+				win = yes
+				
+			}
+		}
+	}
+}
+
+#Constantinople has fallen Trigger
+province_event = {
+	id = byzantine_collapsings.2
+	title = "byzantine_collapsings.2.t"
+	desc = "byzantine_collapsings.2.d"
+	picture = CONSTANTINOPLE_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		151 = {
+			controlled_by = REB
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		BYZ = {
+			country_event = {
+				id = byzantine_collapsings.3
+				days = 5
+			}
+		}
+	}
+	
+	option = {
+		name = "byzantine_collapsings.2.a"
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = byzantine_collapsings.3
+	title = "byzantine_collapsings.3.t"
+	desc = "byzantine_collapsings.3.d"
+	picture = CONSTANTINOPLE_eventPicture
+
+	trigger = {
+		151 = {
+			controlled_by = REB
+		}
+		tag = BYZ
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			bosnia_area = {
+				add_core = SER
+			}
+			slavonia_area = {
+				add_core = SER
+			}
+			croatia_area = {
+				add_core = SER
+			}
+			4754 = {
+				add_core = SER
+			}
+			138 = {
+				add_core = SER
+			}
+			1827 = {
+				add_core = SER
+			}
+			4239 = {
+				add_core = SER
+			}
+			4757 = {
+				add_core = SER
+			}
+			141 = {
+				add_core = SER
+			}
+			east_adriatic_coast_area = {
+				add_core = SER
+				add_core = DAL
+			}
+			1826 = {
+				add_core = DAL
+			}
+			4752 = {
+				add_core = DAL
+			}
+			1766 = {
+				remove_core = SER
+			}
+		}
+	}
+	
+	option = { #Stick it out.
+		name = byzantine_collapsings.3.a
+		add_manpower = 5
+		add_army_professionalism = 0.1
+		1828 = {
+			infantry = BYZ
+			infantry = BYZ
+			infantry = BYZ
+			infantry = BYZ
+			infantry = BYZ
+			infantry = BYZ
+			infantry = BYZ
+			infantry = BYZ
+			cavalry = BYZ
+			cavalry = BYZ
+			artillery = BYZ
+			artillery = BYZ
+			artillery = BYZ
+			artillery = BYZ
+		}
+	}
+	
+	option = { #Flee to Illyria
+		name = byzantine_collapsings.3.b
+		kill_ruler = yes
+		define_ruler = {
+			name = "Theodoros I"
+			dynasty = Mauros"
+			min_age = 20
+			max_age = 30
+			adm = 3
+			dip = 3
+			mil = 5
+			male = yes
+			culture = anatolian
+			religion = orthodox
+		}
+		disband_rebels = pretender_rebels
+		change_primary_culture = greek
+		add_accepted_culture = anatolian
+		remove_historical_friend = KOJ
+		add_historical_rival = SER
+		KOJ = {
+			remove_historical_friend = BYZ
+		}
+		SER = {
+			override_country_name = ILLYRIA_TWO
+			add_historical_rival = BYZ
+		}
+		release = SER
+		every_country = {
+			limit = {
+				alliance_with = BYZ
+			}
+			remove_alliance = BYZ
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					marriage_with = BYZ
+				}
+				break_marriage = BYZ
+			}
+			SER = {
+				define_ruler = {
+					name = "Mattheos I"
+					dynasty = "Synadenos"
+					age = 55
+					male = yes
+					culture = serbian
+					religion = orthodox
+				}
+				define_consort = {
+					name = "Jovana"
+					dynasty = "Cesnegic"
+					age = 52
+					female = yes
+					culture = croatian
+					religion = orthodox
+				}
+				define_heir = {
+					name = "Theodoulos"
+					dynasty = "Synadenos"
+					age = 28
+					claim = 80
+					male = yes
+					culture = serbian
+					religion = orthodox
+				}
+				change_country_color = {
+					color = { 125 239 250 }
+				}
+				add_government_reform = serbian_despotate_reform
+				change_primary_culture = serbian
+				add_accepted_culture = croatian
+				change_religion = orthodox
+				set_capital = 4239
+				4239 = {
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					cavalry = SER
+					cavalry = SER
+					artillery = SER
+					artillery = SER
+					artillery = SER
+					artillery = SER
+				}
+				1827 = {
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					cavalry = SER
+					cavalry = SER
+				}
+			}
+			1766 = {
+				add_core = SER
+			}
+		}
+	}
+	
+	option = { #Flee to Illyria as a player
+		name = byzantine_collapsings.3.c
+		kill_ruler = yes
+		define_ruler = {
+			name = "Theodoros I"
+			dynasty = Mauros"
+			min_age = 20
+			max_age = 30
+			adm = 3
+			dip = 3
+			mil = 5
+			male = yes
+			culture = anatolian
+			religion = orthodox
+		}
+		disband_rebels = pretender_rebels
+		change_primary_culture = greek
+		add_accepted_culture = anatolian
+		remove_historical_friend = KOJ
+		KOJ = {
+			remove_historical_friend = BYZ
+		}
+		SER = {
+			override_country_name = ILLYRIA_TWO
+		}
+		release = SER
+		every_country = {
+			limit = {
+				alliance_with = BYZ
+			}
+			remove_alliance = BYZ
+			create_alliance = SER
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					marriage_with = BYZ
+				}
+				break_marriage = BYZ
+				create_marriage = SER
+			}
+			SER = {
+				define_ruler = {
+					name = "Mattheos I"
+					dynasty = "Synadenos"
+					age = 55
+					male = yes
+					culture = serbian
+					religion = orthodox
+				}
+				define_consort = {
+					name = "Jovana"
+					dynasty = "Cesnegic"
+					age = 52
+					female = yes
+					culture = croatian
+					religion = orthodox
+				}
+				define_heir = {
+					name = "Theodoulos"
+					dynasty = "Synadenos"
+					age = 28
+					claim = 80
+					male = yes
+					culture = serbian
+					religion = orthodox
+				}
+				change_country_color = {
+					color = { 125 239 250 }
+				}
+				add_government_reform = serbian_despotate_reform
+				change_primary_culture = serbian
+				add_accepted_culture = croatian
+				change_religion = orthodox
+				set_capital = 4239
+				4239 = {
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					cavalry = SER
+					cavalry = SER
+					artillery = SER
+					artillery = SER
+					artillery = SER
+					artillery = SER
+				}
+				1827 = {
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					cavalry = SER
+					cavalry = SER
+				}
+			}
+			1766 = {
+				add_core = SER
+			}
+		}
+		switch_tag = SER
+	}
+}
+
+#Unrest in Germiyan
+country_event = {
+	id = byzantine_collapsings.4
+	title = "byzantine_collapsings.4.t"
+	desc = "byzantine_collapsings.4.d"
+	picture = muslimgfx_ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			326 = {
+				add_core = GRM
+			}
+			4311 = {
+				add_core = GRM
+			}
+			4312 = {
+				add_core = GRM
+			}
+		}
+	}
+	
+	option = { #Drats!
+		name = byzantine_collapsings.4.a
+		326 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		4311 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		4312 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+	}
+}
+
+#Unrest in Eretna
+country_event = {
+	id = byzantine_collapsings.5
+	title = "byzantine_collapsings.5.t"
+	desc = "byzantine_collapsings.5.d"
+	picture = muslimgfx_ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			329 = {
+				add_core = ERE
+			}
+			1846 = {
+				add_core = ERE
+			}
+			2300 = {
+				add_core = ERE
+			}
+			4310 = {
+				add_core = ERE
+			}
+			4313 = {
+				add_core = ERE
+			}
+			4314 = {
+				add_core = ERE
+			}
+			4315 = {
+				add_core = ERE
+			}
+		}
+	}
+	
+	option = { #Drats!
+		name = byzantine_collapsings.5.a
+		329 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		1846 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		2300 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		4310 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		4313 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		4314 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		4315 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+	}
+}
+
+#Unrest in Karaman
+country_event = {
+	id = byzantine_collapsings.6
+	title = "byzantine_collapsings.6.t"
+	desc = "byzantine_collapsings.6.d"
+	picture = muslimgfx_ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			323 = {
+				add_core = KAR
+			}
+			324 = {
+				add_core = KAR
+			}
+			1848 = {
+				add_core = KAR
+			}
+			2298 = {
+				add_core = KAR
+			}
+			2301 = {
+				add_core = KAR
+			}
+			2302 = {
+				add_core = KAR
+			}
+			4307 = {
+				add_core = KAR
+			}
+		}
+	}
+	
+	option = { #Drats!
+		name = byzantine_collapsings.6.a
+		323 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		324 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		1848 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		2298 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		2301 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		2302 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		4307 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+	}
+}
+
+#Unrest in Albania
+country_event = {
+	id = byzantine_collapsings.7
+	title = "byzantine_collapsings.7.t"
+	desc = "byzantine_collapsings.7.d"
+	picture = BYZ_BAD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			143 = {
+				add_core = ALB
+			}
+			4174 = {
+				add_core = ALB
+			}
+			4175 = {
+				add_core = ALB
+			}
+			4750 = {
+				add_core = ALB
+			}
+		}
+	}
+	
+	option = { #Drats!
+		name = byzantine_collapsings.6.a
+		143 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		4174 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		4175 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		4750 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+	}
+}
+
+#Unrest in Bulgaria
+country_event = {
+	id = byzantine_collapsings.8
+	title = "byzantine_collapsings.8.t"
+	desc = "byzantine_collapsings.8.d"
+	picture = MARCHING_PEASANTS_eventPicture
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			150 = {
+				add_core = BUL
+			}
+			159 = {
+				add_core = BUL
+			}
+			1765 = {
+				add_core = BUL
+			}
+			2746 = {
+				add_core = BUL
+			}
+			3000 = {
+				add_core = BUL
+			}
+			4704 = {
+				add_core = BUL
+			}
+			4706 = {
+				add_core = BUL
+			}
+			4176 = {
+				add_core = BUL
+			}
+		}
+	}
+	
+	option = { #Drats!
+		name = byzantine_collapsings.6.a
+		150 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		159 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		1765 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		2746 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		300 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		4704 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		4706 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+		4176 = {
+			add_unrest = 10
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+	}
+}

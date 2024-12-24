@@ -31,93 +31,128 @@ historical_units = {
 	slavic_stradioti
 }
 monarch_names = {
-	"Martin #5" = 120
-	"Ioannes #5" = 50
-	"Borna #0" = 15
-	"Constantius #3" = 15
-	"Petar #0"= 15
-	"Tihomir #0" = 15
-	"Vuk #0" = 15
-	"Alexandr #1" = 10
-	"Artavasdos #1" = 10
-	"Basiliskos #1" = 10
-	"Carinus #1" = 10
-	"Carus #1" = 10
-	"Constans #1" = 10
-	"Domitian #1" = 10
-	"Gratian #1" = 10
-	"Grgur #0" = 10
-	"Kosmin #0" = 10
-	"Lazar #0" = 10
-	"Meletios #0" = 10
-	"Phokas #1" = 10
-	"Romanos #3" = 10
-	"Simeon #0"= 10
-	"Slobodan #0" = 10
-	"Alessandro #0" = 0
-	"Arthmael #0" = 0
-	"Augustus #0" = 0
-	"Branimir #0" = 0
-	"Dmitriy #0" = 0
-	"Ignatios #0" = 0
-	"Kopulch #0" = 0
-	"Mihovil #0" = 0
-	"Porin #0" = 0
-	"Vlastimir #0" = 0
-	"Yitzchak #0" = 0
+	"Ioannes #5" = 40
+	"Alexios #0" = 30
+	"Andronikos #0" = 20
+	"Konstantinos #9" = 20
+	"Romanos #3" = 20
+	"Demetrios #0" = 15
+	"Theodoros #0" = 15
+	"Andreas #0" = 10
+	"Basileios #2" = 10
+	"Isaakios #1" = 10
+	"Leon #6" = 10
+	"Michael #9" = 10
+	"Nikolaos #1" = 10
+	"Thomas #0" = 10
+	"Adrianos #1" = 5
+	"Alexandros #3" = 5
+	"Anastasios #2" = 5
+	"Herakleios #1" = 5
+	"Ioulianos #2" = 5
+	"Ioustinianos #1"= 5
+	"Ioustinos #1" = 5
+	"Konstantios #3" = 5
+	"Markos #1" = 5
+	"Nikephoros #3" = 5
+	"Philippos #1" = 5
+	"Theodosios #3" = 5
+	"Theophilos #1" = 5
+	"Tiberios #3" = 5
+	"Traianos #1" = 5
+	"Antonios #0" = 0
+	"Athanasios #0" = 0
+	"Bartholomaios #0" = 0
+	"Christophoros #0" = 0
+	"Diogenes #0" = 0
+	"Dionysios #0" = 0
+	"Eirenaios #0" = 0
+	"Elpidios #0" = 0
+	"Georgios #0" = 0
+	"Gregorios #0" = 0
+	"Hektorios #0" = 0
+	"Iason #0" = 0
+	"Kyrillos #0" = 0
+	"Matthaios #0" = 0
+	"Niketas #0" = 0
+	"Nikodemos #0" = 0
+	"Pavlos #0" = 0
+	"Panagiotis #0" = 0
+	"Petros #0" = 0
+	"Philemon #0" = 0
+	"Porphyrios #0" = 0
+	"Prokopios #0" = 0
+	"Sergios #0" = 0
+	"Stephanos #0" = 0
 	
-	"Anastasios #2" = -10
-	"Eufemia #0" = -10
-	"Bistrina #1" = -1
-	"Chasna #0" = -1
-	"Desislava #1" = -1
-	"Eirene #1" = -1
-	"Severina #1" = -1
-	"Zoe #1" = -1
+	"Eirene #1" = -20
+	"Theodora #1" = -20
+	"Helene #0" = -10
+	"Zoe #1" = -10
 }
 leader_names = {
-	"Antiochites"
-	"Bagratuni"
-	"Balin"
-	"Blagai"
-	"Botaneiates"
-	"Chandrenos"
-	"Czobor"
-	"Diogenes"
+	Akropolites
+	Angelos
+	Antiochites
+	Aoinos
+	Apokaukos
+	Argyros
+	Bagratuni
+	Basileous
+	Batatzes
+	Botaneiates
+	Boumbalis
+	Chandrenos
+	Choniates
+	Choumnos
+	Diasorenos
+	Diogenes
 	"Diogenes-Tyana"
-	"Doukas-Tarnovgrad"
-	"Gojnikovic"
-	"Gurielov"
-	"Hauteville-Gerusalemme"
-	"Hlapen"
-	"Igorevich"
-	"Kamateros"
-	"Kaprielian"
-	"Kegenes"
-	"Kopsenos"
-	"Mamalos"
-	"Mauros"
-	"Mrnjavcevic"
-	"Muzaka"
-	"Nemanjic"
-	"Palaiologos"
+	Doukas
+	"Doukas-Tranev"
+	Gabras
+	Iagaris
+	Kamateros
+	Kantakuzenos
+	Kaprielian
+	Kaukadenos
+	Kegenes
+	Komnenos
+	Kopsenos
+	Laskaris
+	Mamalos
+	Mauros
+	Melissinos
+	Melisurgos
+	Mikrulakes
+	Monomakos
+	Mouzalon
+	Mouzaka
+	Nestongos
+	Palaiologos
 	"Palaiologos-Euchaita"
 	"Palaiologos-Tabia"
-	"Pegonites"
-	"Petrosian"
-	"Polovtsy"
-	"Pribisavljevic"
-	"Radomiros"
-	"Sasudo"
-	"Soimirovich"
-	"Strabomytes"
-	"Synadenos"
-	"Synadenos-Branicevo"
+	Paraspondylos
+	Pegonites
+	Petrosian
+	Phocas
+	Phouskarnaki
+	Phrangopoulos
+	Psellos
+	Radomiros
+	Rhadinos
+	Rhangabe
+	Rhodocanakis
+	Romanos
+	Sasudo
+	Strabomytes
+	Syropoulos
 	"Taronites-Satala"
-	"Tich"
-	"Traphines"
-	"Tvrtkovic"
-	"Vojislavljevic"
+	Tich
+	Tornikes
+	Traphines
+	Zarides
+	Zimisces
 	"de Boulogne"
 	"de Bragança"
 	"von Habsburg"

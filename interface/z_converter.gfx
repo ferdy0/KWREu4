@@ -69,6 +69,8 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		loadType = "INGAME"
 	}
+	
+	#Tyrrhenia
 	spriteType = {
     	name = "GFX_disaster_tyrhennia_civil_war"
     	texturefile = "gfx//interface//disasters//castilian_civil_war.dds"
@@ -83,4 +85,12 @@ spriteTypes = {
         name = "GFX_great_project_harbor_cagliari"
     	texturefile = "gfx//interface//great_projects//cagliariHarbor.dds"
     }
+	
+	#Byzantium
+	spriteType = {
+		name = "GFX_disaster_byzantine_collapsings"
+		texturefile = "gfx//interface//disasters//coup_attempt.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
 }

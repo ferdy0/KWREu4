@@ -1,3 +1,6 @@
 boh_lothars_legacy = {
 	core_creation = -0.1
 }
+disgruntled_recruitment = {
+	local_manpower_modifier = -0.1
+}
