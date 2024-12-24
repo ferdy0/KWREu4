@@ -91,13 +91,9 @@ byzantine_collapsings = {
 	ended_by_country_breaking_to_rebels = no
 	
 	on_monthly = {
-		events = {
-		    byzantine_collapsings.9
-		    byzantine_collapsings.10
-		}
 		random_events = {
 			100 = 0
-			5 = byzantine_collapsings.11 #Lose Morale in Armies for a Year
+			5 = byzantine_collapsings.12 #Lose Morale in Armies for a Year
 			2 = purple_phoenix.12 #Lose 25 MIL power
 			1 = purple_phoenix.11 #Gain 50 MIL power
 			1 = purple_phoenix.14 #Lose 25 DIP power
@@ -108,7 +104,7 @@ byzantine_collapsings = {
 			1 = byzantine_collapsings.7 #Unrest in Albania
 			1 = byzantine_collapsings.8 #Unrest in Bulgaria
 			1 = byzantine_collapsings.9 #Unrest in Latin Empire
-			1 = byzantine_collapsings.10 #Unrest in Trebizond
+			1 = byzantine_collapsings.11 #Unrest in Trebizond
 		}
 	}
 }

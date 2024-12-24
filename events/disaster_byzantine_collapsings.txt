@@ -208,6 +208,8 @@ country_event = {
 			culture = anatolian
 			religion = orthodox
 		}
+		remove_consort = yes
+		remove_heir = yes
 		disband_rebels = pretender_rebels
 		change_primary_culture = greek
 		add_accepted_culture = anatolian
@@ -769,7 +771,7 @@ country_event = {
 				duration = 365
 			}
 		}
-		300 = {
+		3000 = {
 			add_unrest = 10
 			add_province_modifier = {
 				name = disgruntled_recruitment
@@ -794,6 +796,205 @@ country_event = {
 			add_unrest = 10
 			add_province_modifier = {
 				name = disgruntled_recruitment
+				duration = 365
+			}
+		}
+	}
+}
+
+#Unrest in the Latin Empire
+country_event = {
+	id = byzantine_collapsings.9
+	title = "byzantine_collapsings.9.t"
+	desc = "byzantine_collapsings.9.d"
+	picture = {
+		trigger = {
+			NOT = {
+				catholic = 0.5
+			}
+		}
+		picture = CATHOLICS_PERSECUTION_eventPicture
+	}
+	picture = {
+		trigger = {
+			catholic = 0.5
+		}
+		picture = ANGLICAN_SERMON_eventPicture
+	}
+
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			dynasty = "Synadenos"
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			macedonia_area = {
+				add_core = LAE
+			}
+			northern_greece_area = {
+				add_core = EPI
+			}
+			147 = {
+				add_core = LAE
+			}
+			164 = {
+				add_core = LAE
+			}
+			320 = {
+				add_core = KNI
+			}
+			2348 = {
+				add_core = LAE
+			}
+			3003 = {
+				add_core = LAE
+			}
+			4700 = {
+				add_core = LAE
+			}
+			145 = {
+				add_core = LAE
+			}
+			146 = {
+				add_core = LAE
+			}
+			1773 = {
+				add_core = LAE
+			}
+			4701 = {
+				add_core = LAE
+			}
+		}
+	}
+	
+	option = { #Drats!
+		name = byzantine_collapsings.9.a
+		if = {
+			limit = {
+				NOT = catholic = 0.5
+			}
+			every_owned_province = {
+				limit = {
+					religion = catholic
+				}
+				add_unrest = 10
+				add_province_modifier = {
+					name = disgruntled_recruitment
+					duration = 730
+				}
+				add_province_modifier = {
+					name = catholic_greeks_lot
+					duration = 3650
+				}
+			}
+		}
+		else = {
+			every_owned_province = {
+				limit = {
+					religion = catholic
+				}
+				add_unrest = 5
+				add_province_modifier = {
+					name = disgruntled_recruitment
+					duration = 365
+				}
+				add_province_modifier = {
+					name = catholic_greeks_lot
+					duration = 1825
+				}
+			}
+		}
+		146 = {
+			add_unrest = 5
+			add_province_modifier = {
+				name = catholic_minorities
+				duration = 365
+			}
+		}
+		164 = {
+			add_unrest = 5
+			add_province_modifier = {
+				name = catholic_minorities
+				duration = 365
+			}
+		}
+		1853 = {
+			add_unrest = 5
+			add_province_modifier = {
+				name = catholic_minorities
+				duration = 365
+			}
+		}
+		3001 = {
+			add_unrest = 5
+			add_province_modifier = {
+				name = catholic_minorities
+				duration = 365
+			}
+		}
+		3003 = {
+			add_unrest = 5
+			add_province_modifier = {
+				name = catholic_minorities
+				duration = 365
+			}
+		}
+		4780 = {
+			add_unrest = 5
+			add_province_modifier = {
+				name = catholic
+				duration = 365
+			}
+		}
+	}
+}
+
+#Unrest in Chaldia
+country_event = {
+	id = byzantine_collapsings.10
+	title = "byzantine_collapsings.10.t"
+	desc = "byzantine_collapsings.10.d"
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			328 = {
+				add_core = TRE
+			}
+			330 = {
+				add_core = TRE
+			}
+			2304 = {
+				add_core = TRE
+			}
+		}
+	}
+	
+	option = { #Drats!
+		name = byzantine_collapsings.10.a
+		every_owned_province = {
+			limit = {
+				religion = coptic
+			}
+			add_unrest = 5
+			add_province_modifier = {
+				name = disgruntled_recruitment
+				duration = 365
+			}
+			add_province_modifier = {
+				name = apostolic_greeks_lot
+				duration = 1825
+			}
+		}
+		328 = {
+			add_unrest = 5
+			add_province_modifier = {
+				name = apostolic_minorities
 				duration = 365
 			}
 		}

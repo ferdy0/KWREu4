@@ -4,3 +4,17 @@ boh_lothars_legacy = {
 disgruntled_recruitment = {
 	local_manpower_modifier = -0.1
 }
+catholic_greeks_lot = {
+	local_religious_unity_contribution = 0.2
+	local_missionary_strength = -0.02
+}
+catholic_minorities = {
+	local_manpower_modifier = -0.05
+}
+apostolic_greeks_lot = {
+	local_religious_unity_contribution = 0.2
+	local_missionary_strength = -0.02
+}
+apostolic_minorities = {
+	local_manpower_modifier = -0.05
+}
