@@ -196,9 +196,10 @@ country_event = {
 	option = { #Flee to Illyria
 		name = byzantine_collapsings.3.b
 		kill_ruler = yes
+		disband_rebels = pretender_rebels
 		define_ruler = {
 			name = "Theodoros I"
-			dynasty = Mauros"
+			dynasty = "Mauros"
 			min_age = 20
 			max_age = 30
 			adm = 3
@@ -209,8 +210,7 @@ country_event = {
 			religion = orthodox
 		}
 		remove_consort = yes
-		remove_heir = yes
-		disband_rebels = pretender_rebels
+		remove_heir = { allow_new_heir = no }
 		change_primary_culture = greek
 		add_accepted_culture = anatolian
 		remove_historical_friend = KOJ
@@ -223,14 +223,9 @@ country_event = {
 			add_historical_rival = BYZ
 		}
 		release = SER
-		every_country = {
-			limit = {
-				alliance_with = BYZ
-			}
-			remove_alliance = BYZ
-		}
+		every_ally = { break_alliance = BYZ }
 		hidden_effect = {
-			every_country = {
+			every_known_country = {
 				limit = {
 					marriage_with = BYZ
 				}
@@ -310,7 +305,7 @@ country_event = {
 		kill_ruler = yes
 		define_ruler = {
 			name = "Theodoros I"
-			dynasty = Mauros"
+			dynasty = "Mauros"
 			min_age = 20
 			max_age = 30
 			adm = 3
@@ -331,13 +326,10 @@ country_event = {
 			override_country_name = ILLYRIA_TWO
 		}
 		release = SER
-		every_country = {
-			limit = {
-				alliance_with = BYZ
-			}
-			remove_alliance = BYZ
-			create_alliance = SER
-		}
+		every_ally = {
+		    break_alliance = BYZ
+            create_alliance = SER
+        }
 		hidden_effect = {
 			every_country = {
 				limit = {
@@ -874,7 +866,9 @@ country_event = {
 		name = byzantine_collapsings.9.a
 		if = {
 			limit = {
-				NOT = catholic = 0.5
+				NOT = {
+				    catholic = 0.5
+				}
 			}
 			every_owned_province = {
 				limit = {

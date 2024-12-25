@@ -98,12 +98,16 @@ country_event = {
                 set_country_flag = potestate_vassal
                 clr_country_flag = potestate_leader
             }
-            vassalize = {
-                every_known_country = {
-                    limit = {
-                        has_country_flag = potestate_vassal
-                    }
+        }
+        every_known_country = {
+            limit = {
+                has_country_flag = potestate_vassal
+            }
+            random_known_country = {
+                limit = {
+                    has_country_flag = potestate_leader
                 }
+                vassalize = PREV
             }
         }
    	}
@@ -127,6 +131,18 @@ country_event = {
         set_variable = {
             which = count_potestate_members
             value = 7
+        }
+        set_variable = {
+            which = half_potestate_members
+            value = 7
+        }
+        divide_variable = {
+            which = half_potestate_members
+            value = 2
+        }
+        subtract_variable = {
+            which = half_potestate_members
+            value = 1
         }
         set_country_flag = potestate_leader
         UTR = { set_country_flag = potestate_vassal }
@@ -154,18 +170,6 @@ country_event = {
             which = potestate_votes
             value = 1
         }
-        set_variable = {
-            which = half_potestate_members
-            value = count_potestate_members
-        }
-        divide_variable = {
-            which = half_potestate_members
-            value = 2
-        }
-        subtract_variable = {
-            which = half_potestate_members
-            value = 1
-        }
 	}
 
 	option = { #interesting
@@ -176,6 +180,7 @@ country_event = {
             }
             country_event = { id = potestate_events.1 }
         }
+        country_event = { id = potestate_events.1 }
         country_event = {
             id = potestate_events.2
             days = 90
