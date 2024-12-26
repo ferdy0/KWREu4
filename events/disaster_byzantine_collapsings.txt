@@ -19,6 +19,11 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = had_byz_collapse
 			add_stability = -2
+			country_event = {
+				id = byzantine_collapsings.11
+				days = 30
+				random = 7
+			}
 		}
 	}
 	
@@ -63,6 +68,27 @@ country_event = {
 				
 			}
 		}
+		322 = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+				
+			}
+		}
+		4308 = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+				
+			}
+		}
+		4311 = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+				
+			}
+		}
 		330 = {
 			spawn_rebels = {
 				type = pretender_rebels
@@ -71,10 +97,24 @@ country_event = {
 				
 			}
 		}
+		4312 = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+				
+			}
+		}
+		4313 = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+				
+			}
+		}
 	}
 }
 
-#Constantinople has fallen Trigger
+#Constantinople has fallen trigger
 province_event = {
 	id = byzantine_collapsings.2
 	title = "byzantine_collapsings.2.t"
@@ -109,22 +149,14 @@ province_event = {
 	}
 }
 
+#Constantinople has fallen
 country_event = {
 	id = byzantine_collapsings.3
 	title = "byzantine_collapsings.3.t"
 	desc = "byzantine_collapsings.3.d"
 	picture = CONSTANTINOPLE_eventPicture
 
-	trigger = {
-		151 = {
-			controlled_by = REB
-		}
-		tag = BYZ
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
+	is_triggered_only = yes
 	
 	immediate = {
 		hidden_effect = {
@@ -200,7 +232,7 @@ country_event = {
 		define_ruler = {
 			name = "Theodoros I"
 			dynasty = "Mauros"
-			min_age = 20
+			min_age = 25
 			max_age = 30
 			adm = 3
 			dip = 3
@@ -209,8 +241,18 @@ country_event = {
 			culture = anatolian
 			religion = orthodox
 		}
+		define_heir = {
+			name = "Philippos"
+			monarch_name = "Philippos II"
+			dynasty = "Mauros"
+			min_age = 0
+			max_age = 7
+			male = yes
+			culture = anatolian
+			religion = orthodox
+		}
 		remove_consort = yes
-		remove_heir = { allow_new_heir = no }
+		set_capital = 151
 		change_primary_culture = greek
 		add_accepted_culture = anatolian
 		remove_historical_friend = KOJ
@@ -250,6 +292,7 @@ country_event = {
 				}
 				define_heir = {
 					name = "Theodoulos"
+					monarch_name = "Theodoulos I"
 					dynasty = "Synadenos"
 					age = 28
 					claim = 80
@@ -274,12 +317,12 @@ country_event = {
 					infantry = SER
 					infantry = SER
 					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
 					cavalry = SER
 					cavalry = SER
-					artillery = SER
-					artillery = SER
-					artillery = SER
-					artillery = SER
 				}
 				1827 = {
 					infantry = SER
@@ -293,20 +336,56 @@ country_event = {
 					cavalry = SER
 					cavalry = SER
 				}
+				country_event = {
+					id = byzantine_collapsings.14
+					days = 365
+				}
+			}
+			bosnia_area = {
+				remove_core = BYZ
+			}
+			slavonia_area = {
+				remove_core = BYZ
+			}
+			croatia_area = {
+				remove_core = BYZ
+			}
+			east_adriatic_coast_area = {
+				remove_core = BYZ
+			}
+			138 = {
+				remove_core = BYZ
+			}
+			141 = {
+				remove_core = BYZ
+			}
+			1827 = {
+				remove_core = BYZ
+			}
+			4239 = {
+				remove_core = BYZ
+			}
+			4754 = {
+				remove_core = BYZ
+			}
+			4757 = {
+				remove_core = BYZ
 			}
 			1766 = {
 				add_core = SER
 			}
+			set_global_flag = illyria_has_seceded
 		}
 	}
 	
 	option = { #Flee to Illyria as a player
 		name = byzantine_collapsings.3.c
 		kill_ruler = yes
+		disband_rebels = pretender_rebels
 		define_ruler = {
 			name = "Theodoros I"
 			dynasty = "Mauros"
-			min_age = 20
+			min_age = 25
 			max_age = 30
 			adm = 3
 			dip = 3
@@ -315,7 +394,18 @@ country_event = {
 			culture = anatolian
 			religion = orthodox
 		}
-		disband_rebels = pretender_rebels
+		define_heir = {
+			name = "Philippos"
+			monarch_name = "Philippos II"
+			dynasty = "Mauros"
+			min_age = 0
+			max_age = 7
+			male = yes
+			culture = anatolian
+			religion = orthodox
+		}
+		remove_consort = yes
+		set_capital = 151
 		change_primary_culture = greek
 		add_accepted_culture = anatolian
 		remove_historical_friend = KOJ
@@ -327,11 +417,11 @@ country_event = {
 		}
 		release = SER
 		every_ally = {
-		    break_alliance = BYZ
-            create_alliance = SER
+			break_alliance = BYZ
+			create_alliance = SER
         }
 		hidden_effect = {
-			every_country = {
+			every_known_country = {
 				limit = {
 					marriage_with = BYZ
 				}
@@ -357,6 +447,7 @@ country_event = {
 				}
 				define_heir = {
 					name = "Theodoulos"
+					monarch_name = "Theodoulos I"
 					dynasty = "Synadenos"
 					age = 28
 					claim = 80
@@ -381,12 +472,12 @@ country_event = {
 					infantry = SER
 					infantry = SER
 					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
 					cavalry = SER
 					cavalry = SER
-					artillery = SER
-					artillery = SER
-					artillery = SER
-					artillery = SER
 				}
 				1827 = {
 					infantry = SER
@@ -400,10 +491,45 @@ country_event = {
 					cavalry = SER
 					cavalry = SER
 				}
+				country_event = {
+					id = byzantine_collapsings.14
+					days = 365
+				}
+			}
+			bosnia_area = {
+				remove_core = BYZ
+			}
+			slavonia_area = {
+				remove_core = BYZ
+			}
+			croatia_area = {
+				remove_core = BYZ
+			}
+			east_adriatic_coast_area = {
+				remove_core = BYZ
+			}
+			138 = {
+				remove_core = BYZ
+			}
+			141 = {
+				remove_core = BYZ
+			}
+			1827 = {
+				remove_core = BYZ
+			}
+			4239 = {
+				remove_core = BYZ
+			}
+			4754 = {
+				remove_core = BYZ
+			}
+			4757 = {
+				remove_core = BYZ
 			}
 			1766 = {
 				add_core = SER
 			}
+			set_global_flag = illyria_has_seceded
 		}
 		switch_tag = SER
 	}
@@ -867,7 +993,7 @@ country_event = {
 		if = {
 			limit = {
 				NOT = {
-				    catholic = 0.5
+					catholic = 0.5
 				}
 			}
 			every_owned_province = {
@@ -992,5 +1118,1240 @@ country_event = {
 				duration = 365
 			}
 		}
+	}
+}
+
+#Army lost Morale
+country_event = {
+	id = byzantine_collapsings.11
+	title = "byzantine_collapsings.11.t"
+	desc = "byzantine_collapsings.11.d"
+	picture = BYZ_BATTLE_eventPicture
+
+	is_triggered_only = yes
+	
+	option = { #Drats!
+		name = byzantine_collapsings.11.a
+		add_country_modifier = {
+			name = bro_fights_bro
+			duration = 365
+		}
+	}
+}
+
+#Illyria Secession trigger
+country_event = {
+	id = byzantine_collapsings.12
+	title = "byzantine_collapsings.12.t"
+	desc = "byzantine_collapsings.12.d"
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		NOT = {
+			has_global_flag = illyria_has_seceded
+		}
+		BYZ = {
+			NOT = {
+				dynasty = "Synadenos"
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		BYZ = {
+			country_event = {
+				id = byzantine_collapsings.13
+				days = 5
+			}
+		}
+	}
+	
+	option = {
+		name = byzantine_collapsings.12.a
+	}
+}
+
+#Illyria Secession
+country_event = {
+	id = byzantine_collapsings.13
+	title = "byzantine_collapsings.13.t"
+	desc = "byzantine_collapsings.13.d"
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Synadenos secede in Illyria
+		name = byzantine_collapsings.13.a
+		set_capital = 151
+		change_primary_culture = greek
+		add_accepted_culture = anatolian
+		remove_historical_friend = KOJ
+		add_historical_rival = SER
+		KOJ = {
+			remove_historical_friend = BYZ
+		}
+		SER = {
+			override_country_name = ILLYRIA_TWO
+			add_historical_rival = BYZ
+		}
+		release = SER
+		every_ally = { break_alliance = BYZ }
+		hidden_effect = {
+			every_known_country = {
+				limit = {
+					marriage_with = BYZ
+				}
+				break_marriage = BYZ
+			}
+			SER = {
+				define_ruler = {
+					name = "Mattheos I"
+					dynasty = "Synadenos"
+					age = 55
+					male = yes
+					culture = serbian
+					religion = orthodox
+				}
+				define_consort = {
+					name = "Jovana"
+					dynasty = "Cesnegic"
+					age = 52
+					female = yes
+					culture = croatian
+					religion = orthodox
+				}
+				define_heir = {
+					name = "Theodoulos"
+					monarch_name = "Theodoulos I"
+					dynasty = "Synadenos"
+					age = 28
+					claim = 80
+					male = yes
+					culture = serbian
+					religion = orthodox
+				}
+				change_country_color = {
+					color = { 125 239 250 }
+				}
+				add_government_reform = serbian_despotate_reform
+				change_primary_culture = serbian
+				add_accepted_culture = croatian
+				change_religion = orthodox
+				set_capital = 4239
+				4239 = {
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					cavalry = SER
+					cavalry = SER
+				}
+				1827 = {
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					infantry = SER
+					cavalry = SER
+					cavalry = SER
+				}
+				country_event = {
+					id = byzantine_collapsings.14
+					days = 365
+				}
+			}
+			bosnia_area = {
+				remove_core = BYZ
+			}
+			slavonia_area = {
+				remove_core = BYZ
+			}
+			croatia_area = {
+				remove_core = BYZ
+			}
+			east_adriatic_coast_area = {
+				remove_core = BYZ
+			}
+			138 = {
+				remove_core = BYZ
+			}
+			141 = {
+				remove_core = BYZ
+			}
+			1827 = {
+				remove_core = BYZ
+			}
+			4239 = {
+				remove_core = BYZ
+			}
+			4754 = {
+				remove_core = BYZ
+			}
+			4757 = {
+				remove_core = BYZ
+			}
+			1766 = {
+				add_core = SER
+			}
+			set_global_flag = illyria_has_seceded
+		}
+	}
+}
+
+#Dalmatia Splits from Illyria
+country_event = {
+	id = byzantine_collapsings.14
+	title = "byzantine_collapsings.14.t"
+	desc = "byzantine_collapsings.14.d"
+	picture = SHIP_SAILING_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			east_adriatic_coast_area = {
+				remove_core = SER
+			}
+			1826 = {
+				remove_core = SER
+			}
+			4752 = {
+				remove_core = SER
+			}
+		}
+	}
+	
+	option = {
+		name = byzantine_collapsings.14.a
+		create_vassal = DAL
+		hidden_effect = {
+			DAL = {
+				define_ruler = {
+					name = "Stjepan IV"
+					dynasty = "Blagaj"
+					age = 35
+					male = yes
+					culture = croatian
+					religion = orthodox
+				}
+				define_consort = {
+					name = "Miriti"
+					dynasty = "Jesovic"
+					age = 32
+					female = yes
+					culture = croatian
+					religion = orthodox
+				}
+				define_heir = {
+					name = "Mutimir"
+					monarch_name = "Mutimir I"
+					dynasty = "Blagaj"
+					age = 7
+					claim = 83
+					male = yes
+					culture = croatian
+					religion = orthodox
+				}
+				add_government_reform = feudalism_reform
+				change_primary_culture = croatian
+				change_religion = orthodox
+				set_capital = 4753
+			}
+			4753 = {
+				infantry = DAL
+				infantry = DAL
+				infantry = DAL
+				infantry = DAL
+				infantry = DAL
+				infantry = DAL
+				infantry = DAL
+				infantry = DAL
+				infantry = DAL
+				infantry = DAL
+				infantry = DAL
+				infantry = DAL
+				cavalry = DAL
+				cavalry = DAL
+			}
+			137 = {
+				infantry = DAL
+				infantry = DAL
+				infantry = DAL
+				infantry = DAL
+				infantry = DAL
+			}
+		}
+	}
+}
+
+#Eretnan Secession trigger
+country_event = {
+	id = byzantine_collapsings.15
+	title = "byzantine_collapsings.15.t"
+	desc = "byzantine_collapsings.15.d"
+	picture = JANISSARY_REVOLT_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = illyria_has_seceded
+		AND = {
+			329 = {
+				unrest = 20
+			}
+			1846 = {
+				unrest = 20
+			}
+			2300 = {
+				unrest = 20
+			}
+			4310 = {
+				unrest = 20
+			}
+			4313 = {
+				unrest = 20
+			}
+			4314 = {
+				unrest = 20
+			}
+			4315 = {
+				unrest = 20
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		BYZ = {
+			country_event = {
+				id = byzantine_collapsings.16
+				days = 5
+			}
+		}
+	}
+	
+	option = {
+		name = "byzantine_collapsings.15.a"
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Eretnan Secession
+country_event = {
+	id = byzantine_collapsings.16
+	title = "byzantine_collapsings.16.t"
+	desc = "byzantine_collapsings.16.d"
+	picture = JANISSARY_REVOLT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			rum_area = {
+				remove_core = BYZ
+			}
+			4310 = {
+				remove_core = BYZ
+			}
+			4313 = {
+				remove_core = BYZ
+			}
+		}
+	}
+	
+	option = {
+		name = byzantine_collapsings.16.a
+		release = ERE
+		hidden_effect = {
+			ERE = {
+				define_ruler = {
+					name = "Sahsuvar I"
+					dynasty = "Haciemiroglu"
+					min_age = 20
+					max_age = 30
+					male = yes
+					culture = turkish
+					religion = coptic
+				}
+				add_government_reform = beylik_government
+				change_primary_culture = turkish
+				change_religion = coptic
+				set_capital = 329
+			}
+			329 = {
+				infantry = ERE
+				infantry = ERE
+				infantry = ERE
+				infantry = ERE
+				infantry = ERE
+				infantry = ERE
+				infantry = ERE
+				infantry = ERE
+				infantry = ERE
+				infantry = ERE
+				infantry = ERE
+				infantry = ERE
+				cavalry = ERE
+				cavalry = ERE
+			}
+			4314 = {
+				infantry = ERE
+				infantry = ERE
+				infantry = ERE
+				infantry = ERE
+				infantry = ERE
+			}
+		}
+	}
+	
+	option = {
+		name = byzantine_collapsings.16.b
+		329 = {
+			spawn_rebels = {
+				type = independence_rebels
+				size = 3
+				win = yes
+				friend = ERE
+			}
+		}
+		4310 = {
+			spawn_rebels = {
+				type = independence_rebels
+				size = 1
+				win = yes
+				friend = ERE
+			}
+		}
+		4314 = {
+			spawn_rebels = {
+				type = independence_rebels
+				size = 1
+				win = yes
+				friend = ERE
+			}
+		}
+	}
+}
+
+#Eretnan Secession flag-trigger
+country_event = {
+	id = byzantine_collapsings.17
+	title = "byzantine_collapsings.17.t"
+	desc = "byzantine_collapsings.17.d"
+	picture = JANISSARY_REVOLT_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = illyria_has_seceded
+		exists = ERE
+		ERE = {
+			NOT = {
+				is_subject = yes
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "byzantine_collapsings.17.a"
+		ai_chance = { factor = 1 }
+		set_global_flag = eretna_has_seceded
+	}
+}
+
+#Karamani Secession trigger
+country_event = {
+	id = byzantine_collapsings.18
+	title = "byzantine_collapsings.18.t"
+	desc = "byzantine_collapsings.18.d"
+	picture = JANISSARY_REVOLT_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = illyria_has_seceded
+		AND = {
+			323 = {
+				unrest = 20
+			}
+			324 = {
+				unrest = 20
+			}
+			1848 = {
+				unrest = 20
+			}
+			2298 = {
+				unrest = 20
+			}
+			2301 = {
+				unrest = 20
+			}
+			2302 = {
+				unrest = 20
+			}
+			4307 = {
+				unrest = 20
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		BYZ = {
+			country_event = {
+				id = byzantine_collapsings.19
+				days = 5
+			}
+		}
+	}
+	
+	option = {
+		name = "byzantine_collapsings.18.a"
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Karamani Secession
+country_event = {
+	id = byzantine_collapsings.19
+	title = "byzantine_collapsings.19.t"
+	desc = "byzantine_collapsings.19.d"
+	picture = JANISSARY_REVOLT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			karaman_area = {
+				remove_core = BYZ
+			}
+			1848 = {
+				remove_core = BYZ
+				add_permanent_claim = BYZ
+			}
+			2298 = {
+				remove_core = BYZ
+				add_permanent_claim = BYZ
+			}
+			2302 = {
+				remove_core = BYZ
+			}
+		}
+	}
+	
+	option = {
+		name = byzantine_collapsings.19.a
+		release = KAR
+		hidden_effect = {
+			KAR = {
+				define_ruler = {
+					name = "Mehmed I"
+					dynasty = "Karamanoglu"
+					min_age = 20
+					max_age = 30
+					male = yes
+					culture = turkish
+					religion = orthodox
+				}
+				add_government_reform = beylik_government
+				change_primary_culture = turkish
+				change_religion = orthodox
+				set_capital = 324
+			}
+			324 = {
+				infantry = KAR
+				infantry = KAR
+				infantry = KAR
+				infantry = KAR
+				infantry = KAR
+				infantry = KAR
+				infantry = KAR
+				infantry = KAR
+				infantry = KAR
+				infantry = KAR
+				infantry = KAR
+				infantry = KAR
+				cavalry = KAR
+				cavalry = KAR
+			}
+			2302 = {
+				infantry = KAR
+				infantry = KAR
+				infantry = KAR
+				infantry = KAR
+				infantry = KAR
+			}
+		}
+	}
+	
+	option = {
+		name = byzantine_collapsings.19.b
+		324 = {
+			spawn_rebels = {
+				type = independence_rebels
+				size = 3
+				win = yes
+				friend = KAR
+			}
+		}
+		1848 = {
+			spawn_rebels = {
+				type = independence_rebels
+				size = 1
+				win = yes
+				friend = KAR
+			}
+		}
+		2302 = {
+			spawn_rebels = {
+				type = independence_rebels
+				size = 1
+				win = yes
+				friend = KAR
+			}
+		}
+	}
+}
+
+#Karamani Secession flag-trigger
+country_event = {
+	id = byzantine_collapsings.20
+	title = "byzantine_collapsings.20.t"
+	desc = "byzantine_collapsings.20.d"
+	picture = JANISSARY_REVOLT_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = illyria_has_seceded
+		exists = KAR
+		KAR = {
+			NOT = {
+				is_subject = yes
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "byzantine_collapsings.20.a"
+		ai_chance = { factor = 1 }
+		set_global_flag = karaman_has_seceded
+	}
+}
+
+#Albanian Secession trigger
+country_event = {
+	id = byzantine_collapsings.21
+	title = "byzantine_collapsings.21.t"
+	desc = "byzantine_collapsings.21.d"
+	picture = BYZ_REVOLUTION_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = illyria_has_seceded
+		AND = {
+			143 = {
+				unrest = 20
+			}
+			4174 = {
+				unrest = 20
+			}
+			4175 = {
+				unrest = 20
+			}
+			4750 = {
+				unrest = 20
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		BYZ = {
+			country_event = {
+				id = byzantine_collapsings.22
+				days = 5
+			}
+		}
+	}
+	
+	option = {
+		name = "byzantine_collapsings.21.a"
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Albanian Secession
+country_event = {
+	id = byzantine_collapsings.22
+	title = "byzantine_collapsings.22.t"
+	desc = "byzantine_collapsings.22.d"
+	picture = BYZ_REVOLUTION_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			albania_area = {
+				remove_core = BYZ
+			}
+			1766 = {
+				remove_core = BYZ
+				add_core = ALB
+			}
+		}
+	}
+	
+	option = {
+		name = byzantine_collapsings.22.a
+		release = ALB
+		hidden_effect = {
+			ALB = {
+				define_ruler = {
+					name = "Gjergj Skanderbeg"
+					dynasty = "Kastrioti"
+					min_age = 20
+					max_age = 30
+					male = yes
+					culture = albanian
+					religion = orthodox
+				}
+				add_government_reform = league_of_lezhe_reform
+				change_primary_culture = albanian
+				change_religion = orthodox
+				set_capital = 4175
+				define_ruler_to_general = {
+					fire = 5
+					shock = 5
+					manuever = 5
+					siege = 1
+				}
+			}
+			4175 = {
+				infantry = ALB
+				infantry = ALB
+				infantry = ALB
+				infantry = ALB
+				infantry = ALB
+				infantry = ALB
+				infantry = ALB
+				infantry = ALB
+				infantry = ALB
+				infantry = ALB
+				infantry = ALB
+				infantry = ALB
+				cavalry = ALB
+				cavalry = ALB
+			}
+			143 = {
+				infantry = ALB
+				infantry = ALB
+				infantry = ALB
+				infantry = ALB
+				infantry = ALB
+			}
+		}
+	}
+	
+	option = {
+		name = byzantine_collapsings.22.b
+		4175 = {
+			spawn_rebels = {
+				type = independence_rebels
+				size = 3
+				win = yes
+				leader = "Skanderbeg"
+				friend = ALB
+			}
+		}
+		143 = {
+			spawn_rebels = {
+				type = independence_rebels
+				size = 1
+				win = yes
+				friend = ALB
+			}
+		}
+		4174 = {
+			spawn_rebels = {
+				type = independence_rebels
+				size = 1
+				win = yes
+				friend = ALB
+			}
+		}
+	}
+}
+
+#Albanian Secession flag-trigger
+country_event = {
+	id = byzantine_collapsings.23
+	title = "byzantine_collapsings.23.t"
+	desc = "byzantine_collapsings.23.d"
+	picture = BYZ_REVOLUTION_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = illyria_has_seceded
+		exists = ALB
+		ALB = {
+			NOT = {
+				is_subject = yes
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "byzantine_collapsings.23.a"
+		ai_chance = { factor = 1 }
+		set_global_flag = albania_has_seceded
+	}
+}
+
+#Germiyani Secession trigger
+country_event = {
+	id = byzantine_collapsings.24
+	title = "byzantine_collapsings.24.t"
+	desc = "byzantine_collapsings.24.d"
+	picture = JANISSARY_REVOLT_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			has_global_flag = albania_has_seceded
+			has_global_flag = eretna_has_seceded
+			has_global_flag = karaman_has_seceded
+		}
+		AND = {
+			326 = {
+				unrest = 20
+			}
+			4311 = {
+				unrest = 20
+			}
+			4312 = {
+				unrest = 20
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		BYZ = {
+			country_event = {
+				id = byzantine_collapsings.25
+				days = 5
+			}
+		}
+	}
+	
+	option = {
+		name = "byzantine_collapsings.24.a"
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Germiyani Secession
+country_event = {
+	id = byzantine_collapsings.25
+	title = "byzantine_collapsings.25.t"
+	desc = "byzantine_collapsings.25.d"
+	picture = JANISSARY_REVOLT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			326 = {
+				remove_core = BYZ
+			}
+			4311 = {
+				remove_core = BYZ
+			}
+			4312 = {
+				remove_core = BYZ
+			}
+		}
+	}
+	
+	option = {
+		name = byzantine_collapsings.25.a
+		release = GRM
+		hidden_effect = {
+			GRM = {
+				define_ruler = {
+					name = "Yakub I"
+					dynasty = "Germiyan"
+					min_age = 20
+					max_age = 30
+					male = yes
+					culture = turkish
+					religion = orthodox
+				}
+				add_government_reform = beylik_government
+				change_primary_culture = turkish
+				change_religion = orthodox
+				set_capital = 326
+			}
+			326 = {
+				infantry = GRM
+				infantry = GRM
+				infantry = GRM
+				infantry = GRM
+				infantry = GRM
+				infantry = GRM
+				infantry = GRM
+				infantry = GRM
+				infantry = GRM
+				infantry = GRM
+				infantry = GRM
+				infantry = GRM
+				cavalry = GRM
+				cavalry = GRM
+			}
+		}
+	}
+	
+	option = {
+		name = byzantine_collapsings.25.b
+		326 = {
+			spawn_rebels = {
+				type = independence_rebels
+				size = 3
+				win = yes
+				friend = GRM
+			}
+		}
+		4312 = {
+			spawn_rebels = {
+				type = independence_rebels
+				size = 1
+				win = yes
+				friend = GRM
+			}
+		}
+	}
+}
+
+#Germiyani Secession flag-trigger
+country_event = {
+	id = byzantine_collapsings.26
+	title = "byzantine_collapsings.26.t"
+	desc = "byzantine_collapsings.26.d"
+	picture = JANISSARY_REVOLT_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = illyria_has_seceded
+		exists = GRM
+		GRM = {
+			NOT = {
+				is_subject = yes
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "byzantine_collapsings.26.a"
+		ai_chance = { factor = 1 }
+		set_global_flag = germiyan_has_seceded
+	}
+}
+
+#Bulgarian Secession trigger
+country_event = {
+	id = byzantine_collapsings.27
+	title = "byzantine_collapsings.27.t"
+	desc = "byzantine_collapsings.27.d"
+	picture = REVOLT_HUNGARIAN_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			has_global_flag = albania_has_seceded
+			has_global_flag = eretna_has_seceded
+			has_global_flag = karaman_has_seceded
+		}
+		AND = {
+			150 = {
+				unrest = 20
+			}
+			159 = {
+				unrest = 20
+			}
+			1765 = {
+				unrest = 20
+			}
+			2746 = {
+				unrest = 20
+			}
+			3000 = {
+				unrest = 20
+			}
+			4176 = {
+				unrest = 20
+			}
+			4704 = {
+				unrest = 20
+			}
+			4706 = {
+				unrest = 20
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		BYZ = {
+			country_event = {
+				id = byzantine_collapsings.28
+				days = 5
+			}
+		}
+	}
+	
+	option = {
+		name = "byzantine_collapsings.27.a"
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Bulgarian Secession
+country_event = {
+	id = byzantine_collapsings.28
+	title = "byzantine_collapsings.28.t"
+	desc = "byzantine_collapsings.28.d"
+	picture = REVOLT_HUNGARIAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			bulgaria_area = {
+				remove_core = BYZ
+			}
+			silistria_area = {
+				remove_core = BYZ
+			}
+			3000 = {
+				remove_core = BYZ
+			}
+			4176 = {
+				remove_core = BYZ
+			}
+			2750 = {
+				add_permanent_claim = BYZ
+				add_core = BUL
+			}
+			4703 = {
+				add_permanent_claim = BYZ
+				add_core = BUL
+			}
+			3001 = {
+				remove_core = BUL
+			}
+			4780 = {
+				remove_core = BUL
+			}
+		}
+	}
+	
+	option = {
+		name = byzantine_collapsings.28.a
+		release = BUL
+		hidden_effect = {
+			BUL = {
+				define_ruler = {
+					name = "Petar III"
+					dynasty = "Tvrtkovic"
+					age = 62
+					male = yes
+					culture = bulgarian
+					religion = orthodox
+				}
+				define_consort = {
+					name = "Sofija"
+					dynasty = "Marinov"
+					age = 50
+					female = yes
+					culture = bulgarian
+					religion = orthodox
+				}
+				define_heir = {
+					name = "Konstantin"
+					monarch_name = "Konstantin I"
+					dynasty = "Tvrtkovic"
+					age = 31
+					claim = 50
+					male = yes
+					culture = bulgarian
+					religion = orthodox
+				}
+				add_government_reform = bulgarian_tsardom_reform
+				change_primary_culture = bulgarian
+				change_religion = orthodox
+				set_capital = 150
+			}
+			150 = {
+				infantry = BUL
+				infantry = BUL
+				infantry = BUL
+				infantry = BUL
+				infantry = BUL
+				infantry = BUL
+				infantry = BUL
+				infantry = BUL
+				infantry = BUL
+				infantry = BUL
+				infantry = BUL
+				infantry = BUL
+				cavalry = BUL
+				cavalry = BUL
+			}
+			159 = {
+				infantry = BUL
+				infantry = BUL
+				infantry = BUL
+				infantry = BUL
+				infantry = BUL
+			}
+			1765 = {
+				infantry = BUL
+				infantry = BUL
+				infantry = BUL
+				infantry = BUL
+				infantry = BUL
+			}
+		}
+	}
+	
+	option = {
+		name = byzantine_collapsings.28.b
+		150 = {
+			spawn_rebels = {
+				type = independence_rebels
+				size = 3
+				win = yes
+				friend = BUL
+			}
+		}
+		159 = {
+			spawn_rebels = {
+				type = independence_rebels
+				size = 2
+				win = yes
+				friend = BUL
+			}
+		}
+		1765 = {
+			spawn_rebels = {
+				type = independence_rebels
+				size = 1
+				win = yes
+				friend = BUL
+			}
+		}
+		3000 = {
+			spawn_rebels = {
+				type = independence_rebels
+				size = 1
+				win = yes
+				friend = BUL
+			}
+		}
+	}
+}
+
+#Bulgarian Secession flag-trigger
+country_event = {
+	id = byzantine_collapsings.29
+	title = "byzantine_collapsings.29.t"
+	desc = "byzantine_collapsings.29.d"
+	picture = REVOLT_HUNGARIAN_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = illyria_has_seceded
+		exists = BUL
+		BUL = {
+			NOT = {
+				is_subject = yes
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "byzantine_collapsings.29.a"
+		ai_chance = { factor = 1 }
+		set_global_flag = bulgarian_has_seceded
 	}
 }

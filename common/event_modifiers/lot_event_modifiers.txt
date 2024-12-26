@@ -18,3 +18,6 @@ apostolic_greeks_lot = {
 apostolic_minorities = {
 	local_manpower_modifier = -0.05
 }
+bro_fights_bro = {
+	land_morale = -0.10
+}
