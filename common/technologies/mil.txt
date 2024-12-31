@@ -629,10 +629,11 @@ technology = {
 	military_tactics 	= 	0.25
 	maneuver_value 		= 	0.5
 
-	enable = swedish_arme_blanche	
-	enable = french_dragoon		
-	enable = austrian_hussar	
-	enable = ottoman_toprakli_hit_and_run			
+	enable = swedish_arme_blanche
+	enable = french_dragoon
+	enable = austrian_hussar
+	enable = jerusalemite_chasseur
+	enable = ottoman_toprakli_hit_and_run
 	enable = sioux_dragoon
 	enable = central_american_dragoon
 	enable = south_american_dragoon

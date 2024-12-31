@@ -29,7 +29,7 @@ on_startup = {
 		flavor_fra.206 # Setup the general for missions
 		flavor_geo.1 # Disaster info
 		flavor_mam.111 # Mamluks-Syria relations
-		potestate_events.3 # Potestate setting up variables
+		potestate_events.1 # Potestate setting up variables
 	}
 	on_startup_effect = yes
 	on_startup_dlc_cleanup_effect = yes
@@ -1227,7 +1227,7 @@ on_monarch_death = {
 		flavor_mal.47 # Pilgrimage ends prematurely
 		government_events.3	# Election of a new Ruler
 		flavor_inc.27 # Mummification of the Dead
-		potestate_events.4 # potestate elections
+		potestate_events.2 # potestate elections
 	}
 }
 
@@ -1300,7 +1300,7 @@ on_death_election = {
 		elections.721		# Dutch Republic
 		elections.800	# Lottery election
 		flavor_tus.16 #Savonarola Leaves This World
-		potestate_events.4 #potestate elections
+		potestate_events.2 #potestate elections
 	}
 	if = {
 		limit = { has_country_flag = ven_lichking_rulers_flag }
@@ -5489,6 +5489,18 @@ on_create_vassal = {
 		limit = { NOT = { is_year = 1445 } }
 		set_country_flag = released_in_1444
 	}
+	if = {
+	    limit = {
+            FROM = {
+                has_country_flag = potestate_leader
+            }
+	    }
+	    set_country_flag = potestate_vassal
+        change_variable = {
+            which = count_potestate_members
+            value = ´1
+        }
+	}
 }
 
 # ROOT = Country establishing it
@@ -5653,6 +5665,18 @@ on_country_released = {
 	if = {
 		limit = { NOT = { is_year = 1445 } }
 		set_country_flag = released_in_1444
+	}
+	if = {
+	    limit = {
+            FROM = {
+                has_country_flag = potestate_leader
+            }
+	    }
+	    clr_country_flag = potestate_vassal
+        subtract_variable = {
+            which = count_potestate_members
+            value = ´1
+        }
 	}
 }
 
