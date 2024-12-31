@@ -224,6 +224,7 @@ technology = {
 
 	
 	regimental_camp = yes
+	enable = jerusalemite_chasseur1
 }
 
 technology = {
@@ -239,7 +240,7 @@ technology = {
 	
 	enable = south_indian_musketeer	
 	enable = mughal_musketeer		
-	enable = ottoman_janissary	
+	enable = ottoman_janissary
 	enable = persian_shamshir	
 	enable = italian_condotta
 	enable = swiss_landsknechten
@@ -308,6 +309,7 @@ technology = {
 	weapons = yes
 	
 	combat_width = 2
+	enable = jerusalemite_chasseur2
 }
 	
 technology = {
@@ -327,7 +329,7 @@ technology = {
 
 	enable = tofongchis_musketeer		
 	enable = ottoman_sekban		
-	enable = rajput_musketeer	
+	enable = rajput_musketeer
 	enable = spanish_tercio	
 	enable = gaelic_free_shooter	
 	enable = han_banner	
@@ -376,7 +378,8 @@ technology = {
 	
 	enable = african_hussar
 	enable = french_caracolle 
-	enable = huron_arquebusier	 
+	enable = huron_arquebusier
+	enable = jerusalemite_chasseur3
 	enable = creek_arquebusier	
 	enable = aztec_gunpowder_warfare		
 	enable = maya_gunpowder_warfare	
@@ -605,7 +608,8 @@ technology = {
 
 	
 	enable = polish_winged_hussar	
-	enable = muscovite_cossack	
+	enable = muscovite_cossack
+	enable = jerusalemite_chasseur4
 
 	enable = horse_artillery_unit
 	enable = coehorn_mortar
@@ -632,7 +636,6 @@ technology = {
 	enable = swedish_arme_blanche
 	enable = french_dragoon
 	enable = austrian_hussar
-	enable = jerusalemite_chasseur
 	enable = ottoman_toprakli_hit_and_run
 	enable = sioux_dragoon
 	enable = central_american_dragoon
@@ -723,7 +726,8 @@ technology = {
 	enable = british_redcoat	
 	enable = prussian_frederickian    
 	enable = russian_green_coat		
-	enable = muslim_mass_infantry		
+	enable = muslim_mass_infantry
+	enable = jerusalemite_chasseur5
 	enable = eastern_carabinier	 		
 	enable = indian_rifle
 	enable = reformed_asian_musketeer	
@@ -794,7 +798,8 @@ technology = {
 	enable = ottoman_lancer 
 	enable = reformed_manchu_rifle	
 	enable = open_order_cavalry
-	enable = napoleonic_lancers	
+	enable = napoleonic_lancers
+	enable = jerusalemite_chasseur6
 	enable = french_cuirassier
 	enable = durrani_dragoon 
 	enable = durrani_swivel	

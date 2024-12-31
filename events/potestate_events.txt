@@ -65,7 +65,7 @@ country_event = {
         }
         country_event = {
             id = potestate_events.4
-            days = 90
+            days = 60
             random = 15
         }
    	}
@@ -91,10 +91,24 @@ country_event = {
                }
 			}
 			modifier = {
-				factor = 10
+				factor = 5
 				has_opinion = {
                     who = overlord
                     value = 200
+               }
+			}
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+                    who = overlord
+                    value = 50
+               }
+			}
+			modifier = {
+				factor = 0.2
+				has_opinion = {
+                    who = overlord
+                    value = 0
                }
 			}
 			modifier = {
@@ -131,7 +145,7 @@ country_event = {
 		trigger = {
             check_variable = {
                 which = potestate_votes
-                value = half_potestate_members
+                which = half_potestate_members
             }
        	}
        	add_prestige = 10
@@ -143,7 +157,7 @@ country_event = {
             NOT = {
                 check_variable = {
                     which = potestate_votes
-                    value = half_potestate_members
+                    which = half_potestate_members
                 }
             }
        	}
@@ -152,7 +166,9 @@ country_event = {
             limit = {
                 has_country_flag = potestate_vassal
             }
-            free_vassal = PREV
+            HOL = {
+                free_vassal = PREV
+            }
         }
         random_known_country = {
             limit = {
@@ -160,10 +176,10 @@ country_event = {
             }
             set_country_flag = potestate_leader
             clr_country_flag = potestate_vassal
-            PREV = {
-                set_country_flag = potestate_vassal
-                clr_country_flag = potestate_leader
-            }
+        }
+        HOL = {
+            set_country_flag = potestate_vassal
+            clr_country_flag = potestate_leader
         }
         every_known_country = {
             limit = {
@@ -175,6 +191,12 @@ country_event = {
                 }
                 vassalize = PREV
             }
+        }
+        random_known_country = {
+            limit = {
+                has_country_flag = potestate_leader
+            }
+            vassalize = PREV
         }
    	}
 }
