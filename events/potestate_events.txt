@@ -25,7 +25,7 @@ country_event = {
 	}
 
 	option = { #interesting
-		name = potestate_events.1.b
+		name = potestate_events.1.a
         add_treasury = 5
         set_country_flag = potestate_leader
         UTR = { set_country_flag = potestate_vassal }
@@ -56,7 +56,7 @@ country_event = {
 	}
 
 	option = { #interesting
-		name = potestate_events.2.b
+		name = potestate_events.2.a
         every_subject_country = {
             limit = {
                 has_country_flag = potestate_vassal
