@@ -31,6 +31,19 @@ historical_units = {
 	slavic_stradioti
 }
 monarch_names = {
+	"David #0" = 30
+	"Ioannis #0" = 30
+	"Nikolas #0" = 30
+	"Georgios #0" = 20
+	"Nikephoros #0" = 20
+	"Thomas #0" = 20
+	"Antiochos #0" = 10
+	"Artemios #0" = 10
+	"Himeros #0" = 10
+	"Michael #0" = 10
+	"Pamfilos #0" = 5
+	"Samuel #0" = 5
+	"Simeon #0" = 5
 	"Agapios #0" = 0
 	"Akakios #0" = 0
 	"Alexandros #0" = 0
@@ -52,45 +65,50 @@ monarch_names = {
 	"Elias #0" = 0
 	"Emmanouil #0" = 0
 	"Evangelos #0" = 0
-	"Georgios #0" = 0
-	"Giovanni #1" = 10
 	"Gregorios #0" = 0
-	"Ioannes #0" = 0
+	"Kallinikos #0" = 0
 	"Konstantinos #0" = 0
-	"Maria #1" = -5
-	"Michael #2" = 20
-	"Nicholas #1" = 10
-	"Nikephoros #2" = 20
 	"Pavlos #0" = 0
 	"Petros #0" = 0
 	"Philippos #0" = 0
 	"Photios #0" = 0
-	"Sibylla #0" = -1
-	"Simeon #1" = 5
+	"Romanos #0" = 0
 	"Stephanos #0" = 0
-	"Theodore #1" = 5
 	"Theophylaktos #0" = 0
-	"Thomas #2" = 20
 	"Vasilis #0" = 0
 	"Vlasis #0" = 0
-	"Xenia #0" = -1
+	
+	"Pelagia #0" = -5
+	"Alexandra #0" = -1
+	"Anna #0" = -1
+	"Iouliana #0" = -1
 }
 leader_names = {
-	"Angelus"
-	"Asan"
+	"Arbantenos"
+	"Arianites"
+	"Attikos"
 	"Branas"
-	"Cantacuzene"
-	"Comnenus"
-	"Ducas"
-	"Mavros"
+	"Chordolibas"
+	"Chrysanthos"
+	"Erotikos"
+	"Eudaimon"
+	"Eulogios"
+	"Gabrielopoulos"
+	"Kamytzes Komnenodoukas"
+	"Katakalon"
+	"Katzamoundes"
+	"Kottounios"
+	"Makrinos"
+	"Margunios"
+	"Moungos"
 	"Notaras"
-	"Palaeologus"
-	"Phocas"
-	"Raoul"
-	"Spagnoli"
-	"Sphrantzes"
-	"Tocco"
-	"Zaccaria"
+	"Palaiologos"
+	"Pelamedes"
+	"Theodorokanos"
+	"Trellos"
+	"Tzipoureles"
+	"Tzoumenes"
+	"di Foggia"
 }
 ship_names = {
 	"Agios Kyprianos"
