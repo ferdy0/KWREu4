@@ -1,5 +1,5 @@
-owner = WAL
-controller = WAL
+owner = CRI
+controller = CRI
 capital = "Qirq-Yer"
 is_city = yes
 culture = khazak
@@ -8,6 +8,7 @@ trade_goods = salt
 base_tax = 2
 base_production = 2
 base_manpower = 1
+add_core = CRI
 add_core = WAL
 discovered_by = east_african
 discovered_by = eastern

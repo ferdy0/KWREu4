@@ -26,81 +26,64 @@ historical_units = {
 	steppe_uhlans
 }
 monarch_names = {
-	"Adil #0" = 10
-	"Alp #0" = 10
-	"Amin #0" = 10
-	"Arslan #0" = 10
-	"Bahadir #0" = 20
-	"Devlet #0" = 40
-	"Fetih #0" = 20
-	"Ghazi #0" = 30
-	"Haji #0" = 20
-	"Halim #0" = 10
-	"Haspulad #0" = 10
-	"Hayder #0" = 10
-	"Inayet #0" = 10
-	"Islam #0" = 30
-	"Janay #0" = 10
+	"Bachman #1" = 20
+	"Eltut #2" = 20
+	"Qutan #2" = 20
+	"Barak #0" = 10
+	"Batir #0" = 10
+	"Esim #0" = 10
+	"Jangir #0" = 10
 	"Janibek #0" = 10
-	"Khalida #0" = -1
-	"Maqsud #0" = 10
-	"Mariam #0" = -1
-	"Mehmed #0" = 40
-	"Mengli #0" = 20
-	"Mubarek #0" = 10
-	"Murad #0" = 10
-	"Nur Devlet #0" = 10
-	"Otemesh #0" = 10
-	"Qaplan #0" = 20
-	"Qirim #0" = 10
-	"Saadet #0" = 20
-	"Sabah #0" = -1
-	"Safa #0" = 10
-	"Sahib #0" = 20
-	"Satilghan #0" = 10
-	"Selamet #0" = 20
-	"Selim #0" = 30
-	"Shahin #0" = 10
-	"Shardan #0" = 10
-	"Toqtamish #0" = 10
+	"Shighay #0" = 10
+	"Abilghazi #0" = 0
+	"Abilmambet #0" = 0
+	"Abulay #0" = 0
+	"Abulkhayr #0" = 0
+	"Ahmat #0" = 0
+	"Arunghazi #0" = 0
+	"Ayshwak #0" = 0
+	"Bokey #0" = 0
+	"Bulat #0" = 0
+	"Burunduq #0" = 0
+	"Erali #0" = 0
+	"Ghubaydulla #0" = 0
+	"Haqnazar #0" = 0
+	"Jantore #0" = 0
+	"Jarmuhambet #0" = 0
+	"Jolbaris #0" = 0
+	"Kenesari #0" = 0
+	"Kerey #0" = 0
+	"Mamash #0" = 0
+	"Nurali #0" = 0
+	"Qaratay #0" = 0
+	"Qasim #0" = 0
+	"Qayip #0" = 0
+	"Sameke #0" = 0
+	"Sherghazi #0" = 0
+	"Tahir #0" = 0
+	"Tauke #0" = 0
+	"Tawekel #0" = 0
+	"Tugum #0" = 0
+	"Wali #0" = 0
+	
+	"Aisha #0" = -1
+	"Hayfa #0" = -1
+	"Zuhra  #0" = -1
 }
 leader_names = {
-	"Agah"
-	"Altan"
-	"Asanin"
-	"Bekmambet"
-	"Bektöre"
-	"Celebicihan"
-	"Cobanzade"
-	"Dägci"
-	"Fazil"
-	"Gaspirali"
-	"Giraybay"
-	"Hablemitoglu"
-	"Hilmi"
-	"Ihsan"
-	"Inalcik"
-	"Ipci"
-	"Kemal"
-	"Kirimal"
-	"Kosay"
-	"Kubay"
-	"Mamut"
-	"Mangitli"
-	"Mansiz"
-	"Mehdi"
-	"Neyazi"
-	"Ortayli"
-	"Qirimoglu"
-	"Sarigöl"
-	"Semizade"
-	"Seydahmet"
-	"Soysal"
-	"Tarhan"
-	"Tögay"
-	"Uralgiray"
-	"Zihni"
-	"Ziyaeddin"
+	"Batu Arslan"
+	"Bora Unegen"
+	"Burilgijin"
+	"Chagan Chinua"
+	"Cherenqai"
+	"Kokechar"
+	"Mongke Cheren"
+	"Qutughgge"
+	"Suren Gal"
+	"Tegus-tu"
+	"Temurgene"
+	"Toluichu"
+	"Yekedai"
 }
 ship_names = {
 	"Bakhchisaray"

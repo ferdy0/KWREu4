@@ -1,5 +1,5 @@
-owner = WAL
-controller = WAL
+owner = CRI
+controller = CRI
 capital = "Matrega"
 is_city = yes
 culture = alan
@@ -9,7 +9,7 @@ base_tax = 4
 base_production = 2
 base_manpower = 3
 add_core = CIR
-add_core = WAL
+add_core = CRI
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

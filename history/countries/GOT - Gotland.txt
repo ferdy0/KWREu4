@@ -1,20 +1,50 @@
-government = monarchy
-add_government_reform = feudalism_reform
+government = republic
+add_government_reform = merchants_reform
 government_rank = 1
 technology_group = western
 religion = catholic
 primary_culture = swedish
 capital = 25
 mercantilism = 25
-1439.9.24= {
-#	government = monarchy
+1379.8.27 = {
 	monarch = {
-		name = "Eric VII"
-		dynasty = Gryf
-		culture = pommeranian
+		name = "Greger"
+		dynasty = "Villnäs"
+		birth_date = 1324.5.5
+		dip = 4
+		adm = 2
+		mil = 2
+	}
+}
+1384.1.10 = {
+	monarch = {
+		name = "Magnus"
+		dynasty = "Wrangel"
+		birth_date = 1343.12.5
+		dip = 6
+		adm = 4
+		mil = 6
+	}
+}
+1413.3.16 = {
+	monarch = {
+		name = "Gottfrid"
+		dynasty = "von Ascheberg"
+		birth_date = 1382.6.15
+		dip = 4
+		adm = 2
+		mil = 2
+	}
+}
+1433.2.25 = {
+	monarch = {
+		name = "Gustav"
+		dynasty = Oxenstierna
 		adm = 1
 		dip = 2
 		mil = 3
-		birth_date = 1382.1.1
+		birth_date = 1402.4.25
+		religion = catholic
+		culture = swedish
 	}
 }
