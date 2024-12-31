@@ -5496,10 +5496,19 @@ on_create_vassal = {
             }
 	    }
 	    set_country_flag = potestate_vassal
-        change_variable = {
-            which = count_potestate_members
-            value = ´1
-        }
+	    if = {
+	        limit = {
+	            has_global_flag = odd_potestate_number
+	        }
+	        change_variable = {
+                which = half_potestate_members
+                value = ´1
+            }
+            clr_global_flag = odd_potestate_number
+	    }
+	    else = {
+	        set_global_flag = odd_potestate_number
+	    }
 	}
 }
 
@@ -5673,10 +5682,20 @@ on_country_released = {
             }
 	    }
 	    clr_country_flag = potestate_vassal
-        subtract_variable = {
-            which = count_potestate_members
-            value = ´1
-        }
+	    if = {
+	        limit = {
+	            has_global_flag = odd_potestate_number
+	        }
+            clr_global_flag = odd_potestate_number
+	    }
+	    else = {
+	        subtract_variable = {
+                which = half_potestate_members
+                value = ´1
+            }
+	        set_global_flag = odd_potestate_number
+	    }
+
 	}
 }
 

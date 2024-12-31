@@ -19,8 +19,8 @@ country_event = {
 
 	immediate = {
         set_variable = {
-            which = count_potestate_members
-            value = 7
+            which = half_potestate_members
+            value = 3
         }
 	}
 
@@ -44,7 +44,6 @@ country_event = {
 	desc = potestate_events.2.d
 	picture = RELIGIOUS_WARS_eventPicture
 	is_triggered_only = yes
-	fire_only_once = yes
 	trigger = {
 		has_country_flag = potestate_leader
 	}
@@ -53,18 +52,6 @@ country_event = {
         set_variable = {
             which = potestate_votes
             value = 1
-        }
-        set_variable = {
-            which = half_potestate_members
-            value = count_potestate_members
-        }
-        divide_variable = {
-            which = half_potestate_members
-            value = 2
-        }
-        round_variable = {
-            which = half_potestate_members
-            value = -1
         }
 	}
 
@@ -76,7 +63,6 @@ country_event = {
             }
             country_event = { id = potestate_events.3 }
         }
-        country_event = { id = potestate_events.3 }
         country_event = {
             id = potestate_events.4
             days = 90
@@ -149,18 +135,6 @@ country_event = {
             }
        	}
        	add_prestige = 10
-		change_variable = {
-            which = potestate_votes
-            value = 1
-        }
-		change_variable = {
-            which = half_potestate_members
-            value = 1
-        }
-		change_variable = {
-            which = count_potestate_members
-            value = 1
-        }
    	}
 
 	option = { #shit
