@@ -6512,7 +6512,7 @@ advisory_merchants = {
             }
             FROM = {
                 kill_leader = {
-                    type = admiral
+                    type = explorer
                 }
             }
             add_treasury = -100
