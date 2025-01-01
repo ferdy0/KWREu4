@@ -389,3 +389,12 @@ levantine_hood = {
 wonder_construction = {
     local_great_project_upgrade_cost = -0.25
 }
+killed_monarch = { }
+killed_heir = { }
+killed_general = { }
+killed_admiral = { }
+killed_merchant = { }
+dead_merchant = {
+    merchants = -1
+}
+syphoned_mana = { }

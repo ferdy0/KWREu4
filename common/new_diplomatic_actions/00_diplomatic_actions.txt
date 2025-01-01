@@ -6344,3 +6344,255 @@ advisory_merchants = {
 			always = no 
 		}
 	}
+
+	### Assassin actions
+
+    kill_monarch = {
+        category = covert
+        require_acceptance = no
+
+        is_visible = {
+            tag = HAH
+        }
+
+        is_allowed = {
+		    has_spy_network_in = {
+			    who = FROM
+				value = 100
+			}
+			NOT = {
+			    has_country_modifier = killed_monarch
+			}
+            treasury = 200
+            adm_power = 100
+            dip_power = 100
+            mil_power = 100
+        }
+
+        on_accept = {
+            add_spy_network_in = {
+                who = FROM
+            	value = -100
+            }
+            add_country_modifier = {
+                name = killed_monarch
+                duration = 3650
+            }
+            FROM = {
+                kill_ruler = yes
+            }
+            add_treasury = -200
+            add_adm_power = -33
+            add_dip_power = -33
+            add_mil_power = -33
+        }
+    }
+
+    kill_their_heir = {
+        category = covert
+        require_acceptance = no
+
+        is_visible = {
+            tag = HAH
+        }
+
+        is_allowed = {
+		    has_spy_network_in = {
+			    who = FROM
+				value = 80
+			}
+			NOT = {
+			    has_country_modifier = killed_heir
+			}
+            treasury = 100
+            adm_power = 50
+            dip_power = 50
+            mil_power = 50
+        }
+
+        on_accept = {
+            add_spy_network_in = {
+                who = FROM
+            	value = -80
+            }
+            add_country_modifier = {
+                name = killed_heir
+                duration = 3650
+            }
+            FROM = {
+                kill_heir = {}
+            }
+            add_treasury = -100
+            add_adm_power = -20
+            add_dip_power = -20
+            add_mil_power = -20
+        }
+    }
+
+    kill_general = {
+        category = covert
+        require_acceptance = no
+
+        is_visible = {
+            tag = HAH
+        }
+
+        is_allowed = {
+		    has_spy_network_in = {
+			    who = FROM
+				value = 60
+			}
+			NOT = {
+			    has_country_modifier = killed_general
+			}
+			FROM = {
+                has_leaders = {
+                    value = 1
+                    type = general
+                    include_monarch = no
+                    include_heir = no
+                }
+            }
+            treasury = 100
+        }
+
+        on_accept = {
+            add_spy_network_in = {
+                who = FROM
+            	value = -60
+            }
+            add_country_modifier = {
+                name = killed_general
+                duration = 3650
+            }
+            FROM = {
+                kill_leader = {
+                    type = general
+                }
+            }
+            add_treasury = -100
+        }
+    }
+
+    kill_admiral = {
+        category = covert
+        require_acceptance = no
+
+        is_visible = {
+            tag = HAH
+        }
+
+        is_allowed = {
+		    has_spy_network_in = {
+			    who = FROM
+				value = 60
+			}
+			NOT = {
+			    has_country_modifier = killed_admiral
+			}
+			FROM = {
+                has_leaders = {
+                    value = 1
+                    type = admiral
+                    include_monarch = no
+                    include_heir = no
+                }
+            }
+            treasury = 100
+        }
+
+        on_accept = {
+            add_spy_network_in = {
+                who = FROM
+            	value = -60
+            }
+            add_country_modifier = {
+                name = killed_admiral
+                duration = 3650
+            }
+            FROM = {
+                kill_leader = {
+                    type = admiral
+                }
+            }
+            add_treasury = -100
+        }
+    }
+
+    kill_merchant = {
+        category = covert
+        require_acceptance = no
+
+        is_visible = {
+            tag = HAH
+        }
+
+        is_allowed = {
+		    has_spy_network_in = {
+			    who = FROM
+				value = 80
+			}
+			NOT = {
+			    has_country_modifier = killed_merchant
+			}
+            treasury = 200
+        }
+
+        on_accept = {
+            add_spy_network_in = {
+                who = FROM
+            	value = -80
+            }
+            add_country_modifier = {
+                name = killed_merchant
+                duration = 3650
+            }
+            FROM = {
+                add_country_modifier = {
+                    name = dead_merchant
+                    duration = 3650
+                }
+            }
+            add_treasury = -200
+        }
+    }
+
+    syphon_mana = {
+        category = covert
+        require_acceptance = no
+
+        is_visible = {
+            tag = HAH
+        }
+
+        is_allowed = {
+		    has_spy_network_in = {
+			    who = FROM
+				value = 80
+			}
+			NOT = {
+			    has_country_modifier = syphoned_mana
+			}
+            treasury = 300
+        }
+
+        on_accept = {
+            add_spy_network_in = {
+                who = FROM
+            	value = -80
+            }
+            add_country_modifier = {
+                name = syphoned_mana
+                duration = 3650
+            }
+            FROM = {
+                add_adm_power = -50
+                add_dip_power = -50
+                add_mil_power = -50
+            }
+            add_adm_power = 50
+            add_dip_power = 50
+            add_mil_power = 50
+            add_treasury = -300
+        }
+    }
