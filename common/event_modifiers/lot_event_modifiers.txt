@@ -21,3 +21,6 @@ apostolic_minorities = {
 bro_fights_bro = {
 	land_morale = -0.10
 }
+stops_byz_ending_disaster_early = {
+	religious_unity = -0.10
+}

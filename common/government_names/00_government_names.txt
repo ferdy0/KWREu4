@@ -3020,6 +3020,7 @@ serbian_feudal_monarchy = {
 		OR = {
 			has_reform = feudalism_reform
 			has_reform = autocracy_reform
+			has_reform = serbian_despotate_reform
 		}
 		OR = {
 			primary_culture = serbian
@@ -3131,6 +3132,7 @@ byzantine_monarchy = {
 			tag = TRE
 			tag = EPI
 			tag = MOE
+			tag = RAM
 		}
 	}
 }

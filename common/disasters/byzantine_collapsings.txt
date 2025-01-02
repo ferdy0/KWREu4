@@ -69,8 +69,9 @@ byzantine_collapsings = {
 
 	
 	can_end = {
-		hidden_trigger = { has_country_flag = byz_collapsed_end }
+		religious_unity = 0.95
 		stability = 1
+		heir_has_ruler_dynasty = yes
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		NOT = {
 			has_spawned_rebels = pretender_rebels
@@ -92,19 +93,20 @@ byzantine_collapsings = {
 	
 	on_monthly = {
 		random_events = {
-			75 = 0
+			50 = 0
 			10 = byzantine_collapsings.11 #Lose Morale in Armies for a Year
-			4 = purple_phoenix.12 #Lose 25 MIL power
-			3 = byzantine_collapsings.5 #Unrest in Eretna
-			3 = byzantine_collapsings.6 #Unrest in Karaman
-			3 = byzantine_collapsings.7 #Unrest in Albania
+			10 = purple_phoenix.12 #Lose 25 MIL power
+			5 = byzantine_collapsings.5 #Unrest in Eretna
+			5 = byzantine_collapsings.6 #Unrest in Karaman
+			5 = byzantine_collapsings.7 #Unrest in Albania
+			4 = byzantine_collapsings.4 #Unrest in Germiyan
+			4 = byzantine_collapsings.8 #Unrest in Bulgaria
+			4 = byzantine_collapsings.9 #Unrest in Latin Empire
+			4 = byzantine_collapsings.10 #Unrest in Trebizond
 			2 = purple_phoenix.11 #Gain 50 MIL power
 			2 = purple_phoenix.14 #Lose 25 DIP power
 			2 = purple_phoenix.16 #Lose 25 ADM power
-			2 = byzantine_collapsings.4 #Unrest in Germiyan
-			2 = byzantine_collapsings.8 #Unrest in Bulgaria
-			2 = byzantine_collapsings.9 #Unrest in Latin Empire
-			2 = byzantine_collapsings.10 #Unrest in Trebizond
+			2 = byzantine_collapsings.52 #Add 1 Corruption
 		}
 	}
 }
