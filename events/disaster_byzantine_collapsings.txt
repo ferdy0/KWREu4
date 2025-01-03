@@ -31,7 +31,7 @@ country_event = {
 		name = byzantine_collapsings.1.a
 		add_country_modifier = {
 			name = stops_byz_ending_disaster_early
-			duration = 1825
+			duration = 1095
 		}
 		set_saved_name = {
 			key = byzantine_predenter_contestant
@@ -3861,9 +3861,6 @@ country_event = {
 				value = 90
 			}
 		}
-		NOT = {
-			has_global_flag = illyria_has_seceded
-		}
 	}
 	
 	mean_time_to_happen = {
@@ -3898,7 +3895,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			add_rebel_progress = {
-				value = 30
+				value = -30
 			}
 		}
 	}

@@ -93,20 +93,20 @@ byzantine_collapsings = {
 	
 	on_monthly = {
 		random_events = {
-			50 = 0
+			41 = 0
 			10 = byzantine_collapsings.11 #Lose Morale in Armies for a Year
 			10 = purple_phoenix.12 #Lose 25 MIL power
-			5 = byzantine_collapsings.5 #Unrest in Eretna
-			5 = byzantine_collapsings.6 #Unrest in Karaman
-			5 = byzantine_collapsings.7 #Unrest in Albania
-			4 = byzantine_collapsings.4 #Unrest in Germiyan
-			4 = byzantine_collapsings.8 #Unrest in Bulgaria
-			4 = byzantine_collapsings.9 #Unrest in Latin Empire
-			4 = byzantine_collapsings.10 #Unrest in Trebizond
+			6 = byzantine_collapsings.5 #Unrest in Eretna
+			6 = byzantine_collapsings.6 #Unrest in Karaman
+			6 = byzantine_collapsings.7 #Unrest in Albania
+			3 = byzantine_collapsings.4 #Unrest in Germiyan
+			3 = byzantine_collapsings.8 #Unrest in Bulgaria
+			3 = byzantine_collapsings.9 #Unrest in Latin Empire
+			3 = byzantine_collapsings.10 #Unrest in Trebizond
+			3 = byzantine_collapsings.52 #Add 1 Corruption
 			2 = purple_phoenix.11 #Gain 50 MIL power
 			2 = purple_phoenix.14 #Lose 25 DIP power
 			2 = purple_phoenix.16 #Lose 25 ADM power
-			2 = byzantine_collapsings.52 #Add 1 Corruption
 		}
 	}
 }
