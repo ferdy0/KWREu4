@@ -1,6 +1,6 @@
 ck2_converter_generated = yes
 graphical_culture = westerngfx
-color = { 193 171 8 }
+color = { 99 163 182 }
 revolutionary_colors = { 5 8 5 }
 historical_idea_groups = {
 	exploration_ideas
@@ -28,110 +28,113 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Adelfonso #3" = 10
-	"Al'a'addin #0" = 0
-	"Aldara #0" = -1
-	"Alfa #0" = 0
-	"Alfonsu #3" = 10
-	"Armengol #2" = 10
-	"Aurelio #1" = 10
-	"Aymar #0" = 0
-	"Ayshun #0" = 0
-	"Bermudu #2" = 10
-	"Blanca #0" = -1
-	"Carule #0" = 0
-	"Catalina #0" = -1
-	"Cristina #1" = -1
-	"Diego #0" = 0
-	"Eskander #0" = 0
-	"Fafila #1" = 10
-	"Fernando #1" = 10
-	"Fernán #2" = 10
-	"Fruela #1" = 10
-	"Fruella #1" = 10
-	"García #1" = 10
-	"Guilheumina #0" = -1
-	"Guillermo #1" = 10
-	"Guiomar #0" = -1
+	"Fernándo #4" = 80
+	"Antoninus #1" = 40
+	"Enrique #0" = 40
+	"Nuño #0" = 40
+	"Sebastián #2" = 40
+	"Carlos #0" = 20
+	"Diego #0" = 20
+	"Felipe #0" = 20
+	"Juan #0" = 20
+	"Munio #2" = 20
+	"Alfonso #0" = 10
+	"Manrique #0" = 10
+	"Pedro #0" = 10
+	"Benedicto #0" = 5
+	"David #0" = 5
+	"Tobías #0" = 5
+	"Vellido #0" = 5
+	"Zacarías #0" = 5
+	"Adolfo #0" = 0
+	"Alonso #0" = 0
+	"Álvaro #0" = 0
+	"Baltasar #0" = 0
+	"Bernardo #0" = 0
+	"Bertrán #0" = 0
+	"Cristobal #0" = 0
+	"Domingo #0" = 0
+	"Esteban #0" = 0
+	"Fadrique #0" = 0
+	"Francisco #0" = 0
+	"García #0" = 0
+	"Gonzalo #0" = 0
 	"Gutierre #0" = 0
-	"Henrique #0" = 0
-	"Hermenechildo #2" = 10
+	"Hamid #0" = 0
 	"Hermenegildo #0" = 0
-	"Inés #0" = -1
-	"Jahhaf #0" = 0
-	"Kukuray #0" = 0
+	"Hernando #0" = 0
+	"Ignacio #0" = 0
+	"Jaime #0" = 0
+	"Laín #0" = 0
 	"Lope #0" = 0
-	"Luis #0" = 0
-	"Mafalda #0" = -1
-	"Manrique #0" = 0
-	"Marquesa #0" = -1
-	"Mauregato #1" = 10
-	"Mencía #0" = -1
-	"Monio #0" = 0
-	"Mukhtar #0" = 0
-	"Mília #1" = -1
-	"Nepociano #1" = 10
-	"Nuño #0" = 0
-	"Ordoñu #4" = 10
-	"Pedro #0" = 0
-	"Pelagio #1" = 10
-	"Raimon-Berenguié #0" = 0
+	"Lázaro #0" = 0
+	"Miguel #0" = 0
+	"Orchena #0" = 0
+	"Pelayo #0" = 0
+	"Qatan #0" = 0
 	"Raimundo #0" = 0
-	"Ramiro #1" = 10
-	"Ramiru #3" = 10
-	"Ruqayya #0" = -1
-	"Sancho #1" = 10
-	"Sanchu #2" = 10
-	"Savaricu #0" = 0
-	"Sebastián #0" = 0
-	"Sekkin #0" = 0
-	"Silo #1" = 10
-	"Tekay #0" = -1
-	"Veremondo #1" = 10
-	"Yasin #0" = 0
-	"Zakariyya #0" = 0
-	"Ùloku #0" = -1
+	"Ramiro #0" = 0
+	"Ramón #0" = 0
+	"Rodrigo #0" = 0
+	"Sancho #0" = 0
+	"Simón #0" = 0
+	"Tomás #0" = 0
+	"Valeriano #0" = 0
+	"Vela #0" = 0
+	
+	"Catalina #0" = -1
+	"Inés #0" = -1
+	"Juana #0" = -1
+	"María #0" = -1
+	"Mília #1" = -1
 }
+
 leader_names = {
-	"Campomanes"
+	"Awak"
+	"Barragán"
+	"Bermúdez"
+	"Borja"
+	"Cabeza de Vaca"
 	"Cienfuegos"
 	"Colón"
 	"Coronado"
-	"Cortés"
-	"Fonseca"
+	"Davides"
+	"Furtado"
 	"Gálvez"
 	"Gómez"
-	"Jiménez de Cisneros"
-	"López de Haro"
-	"Narváez"
-	"Nuñez de Balboa"
-	"Orellana"
+	"Magsen"
+	"Manrique"
+	"Mardanisid"
+	"Martínez de Oviedo"
+	"Muñíz"
 	"Osorio"
 	"Pimentel"
 	"Pinzón"
 	"Pizarro"
 	"Ponce de León"
-	"Portocarrero"
-	"Tellez-Girón"
-	"de Aguirre"
-	"de Alarcón"
-	"de Andrade"
+	"Quiròn"
+	"Sánchez"
+	"Trillo de las Asturias"
+	"de Aragón"
+	"de Aragón-Bejar"
 	"de Ayala"
-	"de Bazán"
-	"de Benavides"
-	"de Castilla"
-	"de Córdoba"
+	"de Badajoz"
+	"de Barrantes"
+	"de Cáceres"
+	"de Canales"
+	"de Canales-Pravia"
+	"de Cevallos"
 	"de Figueroa"
-	"de Guzmán"
+	"de Gourdon"
 	"de Lara"
 	"de Leiva"
 	"de Luna"
 	"de Mendoza"
 	"de Nebrija"
 	"de Ojeda"
-	"de Rojas"
-	"de Toledo"
-	"de Velasco"
+	"de Sahagún"
+	"de Samos"
+	"de Toro"
 	"de Villena"
 	"de Zúñiga"
 	"de la Cerda"

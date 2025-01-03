@@ -318,7 +318,7 @@ tyhrennian_missions_slot_1_continued = {
 		trigger = {
 		    north_america = { has_discovered = NOR }
 		    OR = {
-                Z05 = {
+                CAS = {
                     has_opinion = {
                         who = root
                         value = 150
@@ -335,7 +335,7 @@ tyhrennian_missions_slot_1_continued = {
                 exists = Z0H
                 OR = {
                     367 = {
-                        owned_by = Z05
+                        owned_by = CAS
                     }
                     367 = {
                         owned_by = SPA

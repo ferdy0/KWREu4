@@ -1,5 +1,5 @@
-owner = Z05
-controller = Z05
+owner = CAS
+controller = CAS
 capital = "Sevilla"
 is_city = yes
 culture = andalucian
@@ -11,7 +11,7 @@ base_manpower = 4
 extra_cost = 26
 center_of_trade = 2
 add_core = GRA
-add_core = Z05
+add_core = CAS
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

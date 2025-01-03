@@ -1,5 +1,5 @@
-owner = Z05
-controller = Z05
+owner = CAS
+controller = CAS
 capital = "Gibraltar"
 is_city = yes
 culture = andalucian
@@ -9,7 +9,7 @@ base_tax = 5
 base_production = 3
 base_manpower = 2
 add_core = GRA
-add_core = Z05
+add_core = CAS
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
