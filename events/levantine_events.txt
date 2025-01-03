@@ -1,0 +1,341 @@
+namespace = levantine_events
+
+# Set isolationism to the Levantine ones
+
+country_event = {
+	id = levantine_events.2
+	title = "levantine_events.2.t"
+	desc = "levantine_events.2.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = levantine
+		is_year = 1539
+		is_month = 9
+		NOT = { is_year = 1552 }
+		current_guru_is = guru_1
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "levantine_events.2.a"
+		appoint_next_guru = yes
+	}
+}
+
+# Guru Amar Das
+country_event = {
+	id = levantine_events.3
+	title = "levantine_events.3.t"
+	desc = "levantine_events.3.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = levantine
+		is_year = 1552
+		is_month = 3
+		NOT = { is_year = 1574 }
+		current_guru_is = guru_2
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 26
+	}
+
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "levantine_events.3.a"
+		appoint_next_guru = yes
+	}
+}
+
+# Guru Ram Das
+country_event = {
+	id = levantine_events.4
+	title = "levantine_events.4.t"
+	desc = "levantine_events.4.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = levantine
+		is_year = 1574
+		is_month = 9
+		NOT = { is_year = 1581 }
+		current_guru_is = guru_3
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "levantine_events.4.a"
+		appoint_next_guru = yes
+	}
+}
+
+# Guru Arjan
+country_event = {
+	id = levantine_events.5
+	title = "levantine_events.5.t"
+	desc = "levantine_events.5.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = levantine
+		is_year = 1581
+		is_month = 9
+		NOT = { is_year = 1606 }
+		current_guru_is = guru_4
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "levantine_events.5.a"
+		appoint_next_guru = yes
+	}
+}
+
+# Guru Hargobind
+country_event = {
+	id = levantine_events.6
+	title = "levantine_events.6.t"
+	desc = "levantine_events.6.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = levantine
+		is_year = 1606
+		is_month = 5
+		NOT = { is_year = 1644 }
+		current_guru_is = guru_5
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 25
+	}
+
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "levantine_events.6.a"
+		appoint_next_guru = yes
+	}
+}
+
+# Guru Har Rai
+country_event = {
+	id = levantine_events.7
+	title = "levantine_events.7.t"
+	desc = "levantine_events.7.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = levantine
+		is_year = 1644
+		is_month = 3
+		NOT = { is_year = 1661 }
+		current_guru_is = guru_6
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "levantine_events.7.a"
+		appoint_next_guru = yes
+	}
+}
+
+# Guru Har Krishan
+country_event = {
+	id = levantine_events.8
+	title = "levantine_events.8.t"
+	desc = "levantine_events.8.d"
+	picture = NEW_HEIR_eventPicture
+
+	trigger = {
+		religion = levantine
+		is_year = 1661
+		is_month = 10
+		NOT = { is_year = 1665 }
+		current_guru_is = guru_7
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 6
+	}
+
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "levantine_events.8.a"
+		appoint_next_guru = yes
+	}
+}
+
+# Guru Tegh Bahadur
+country_event = {
+	id = levantine_events.9
+	title = "levantine_events.9.t"
+	desc = "levantine_events.9.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = levantine
+		is_year = 1665
+		is_month = 3
+		NOT = { is_year = 1675 }
+		current_guru_is = guru_8
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 20
+	}
+
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "levantine_events.9.a"
+		appoint_next_guru = yes
+	}
+}
+
+# Guru Gobind Singh
+country_event = {
+	id = levantine_events.10
+	title = "levantine_events.10.t"
+	desc = "levantine_events.10.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = levantine
+		is_year = 1675
+		is_month = 11
+		NOT = { is_year = 1708 }
+		current_guru_is = guru_9
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 11
+	}
+
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "levantine_events.10.a"
+		appoint_next_guru = yes
+	}
+}
+
+# Guru Granth Sahib
+country_event = {
+	id = levantine_events.11
+	title = "levantine_events.11.t"
+	desc = "levantine_events.11.d"
+	picture = BIG_BOOK_eventPicture
+
+	trigger = {
+		religion = levantine
+		is_year = 1708
+		is_month = 10
+		current_guru_is = guru_10
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "levantine_events.11.a"
+		appoint_next_guru = yes
+	}
+}

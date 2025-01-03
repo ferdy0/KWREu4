@@ -569,18 +569,18 @@ country_event = {
 
 	option = { #wtf
 		name = "tyrhennia_civil_war.12.a"
-        change_religion = converted_dynamic_faith_113
+        change_religion = levantine
         2986 = {
-            change_religion = converted_dynamic_faith_113
+            change_religion = levantine
         }
         4735 = {
-            change_religion = converted_dynamic_faith_113
+            change_religion = levantine
         }
         127 = {
-            change_religion = converted_dynamic_faith_113
+            change_religion = levantine
         }
         4736 = {
-            change_religion = converted_dynamic_faith_113
+            change_religion = levantine
         }
         random_owned_province = {
             spawn_rebels = {
@@ -774,30 +774,30 @@ country_event = {
 		AFR = { add_opinion = { who = ROOT modifier = tyh_good_boi } }
 		add_papal_influence = -25
 		333 = {
-		    change_religion = converted_dynamic_faith_113
+		    change_religion = levantine
 		}
 		4559 = {
-		    change_religion = converted_dynamic_faith_113
+		    change_religion = levantine
 		}
 		4560 = {
-		    change_religion = converted_dynamic_faith_113
+		    change_religion = levantine
 		}
    	}
 
 	option = {
 		name = tyrhennia_civil_war.59.c
 		trigger = {
-		    religion = converted_dynamic_faith_113
+		    religion = levantine
 		}
 		AFR = { add_opinion = { who = ROOT modifier = tyh_good_boi } }
 		333 = {
-		    change_religion = converted_dynamic_faith_113
+		    change_religion = levantine
 		}
 		4559 = {
-		    change_religion = converted_dynamic_faith_113
+		    change_religion = levantine
 		}
 		4560 = {
-		    change_religion = converted_dynamic_faith_113
+		    change_religion = levantine
 		}
 		add_adm_power = 50
    	}
@@ -825,30 +825,30 @@ country_event = {
 		AFR = { add_opinion = { who = ROOT modifier = tyh_good_boi } }
 		add_papal_influence = -50
 		4737 = {
-		    change_religion = converted_dynamic_faith_113
+		    change_religion = levantine
 		}
 		2982 = {
-		    change_religion = converted_dynamic_faith_113
+		    change_religion = levantine
 		}
 		124 = {
-		    change_religion = converted_dynamic_faith_113
+		    change_religion = levantine
 		}
    	}
 
 	option = {
 		name = tyrhennia_civil_war.60.c
 		trigger = {
-		    religion = converted_dynamic_faith_113
+		    religion = levantine
 		}
 		AFR = { add_opinion = { who = ROOT modifier = tyh_good_boi } }
 		333 = {
-		    change_religion = converted_dynamic_faith_113
+		    change_religion = levantine
 		}
 		4559 = {
-		    change_religion = converted_dynamic_faith_113
+		    change_religion = levantine
 		}
 		4560 = {
-		    change_religion = converted_dynamic_faith_113
+		    change_religion = levantine
 		}
 		add_adm_power = 50
    	}
@@ -910,18 +910,18 @@ country_event = {
 		AFR = { add_opinion = { who = ROOT modifier = tyh_good_boi } }
 		add_papal_influence = -25
 		163 = {
-		    change_religion = converted_dynamic_faith_113
+		    change_religion = levantine
 		}
    	}
 
 	option = {
 		name = tyrhennia_civil_war.62.c
 		trigger = {
-		    religion = converted_dynamic_faith_113
+		    religion = levantine
 		}
 		AFR = { add_opinion = { who = ROOT modifier = tyh_good_boi } }
 		163 = {
-		    change_religion = converted_dynamic_faith_113
+		    change_religion = levantine
 		}
 		add_adm_power = 50
    	}

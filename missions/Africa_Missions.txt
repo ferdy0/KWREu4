@@ -408,7 +408,7 @@ africa_missions_slot_3 = {
 		    OR = {
 		        NOT = { has_country_modifier = busy_missionary }
 		        333 = {
-		            religion = converted_dynamic_faith_113
+		            religion = levantine
 		        }
 		    }
 		}
@@ -416,7 +416,7 @@ africa_missions_slot_3 = {
 			if = {
 			    limit = {
                     333 = {
-                        religion = converted_dynamic_faith_113
+                        religion = levantine
                     }
 			    }
 			    add_prestige = 10
@@ -459,7 +459,7 @@ africa_missions_slot_3 = {
 		    OR = {
 		        NOT = { has_country_modifier = busy_missionary }
 		        4737 = {
-		            religion = converted_dynamic_faith_113
+		            religion = levantine
 		        }
 		    }
 		}
@@ -467,7 +467,7 @@ africa_missions_slot_3 = {
 			if = {
 			    limit = {
                     4737 = {
-                        religion = converted_dynamic_faith_113
+                        religion = levantine
                     }
 			    }
 			    add_prestige = 20
@@ -508,7 +508,7 @@ africa_missions_slot_3 = {
 		    adm_power = 100
 		    advisor = theologian
 		    NOT = { has_country_modifier = busy_missionary }
-		    TYH = { religion = converted_dynamic_faith_113 }
+		    TYH = { religion = levantine }
 		}
 		effect = {
             add_treasury = -100
@@ -617,7 +617,7 @@ africa_missions_slot_4 = {
 		    OR = {
 		        NOT = { has_country_modifier = busy_missionary }
 		        163 = {
-		            religion = converted_dynamic_faith_113
+		            religion = levantine
 		        }
 		    }
 		}
@@ -625,7 +625,7 @@ africa_missions_slot_4 = {
 			if = {
 			    limit = {
                     163 = {
-                        religion = converted_dynamic_faith_113
+                        religion = levantine
                     }
 			    }
 			    add_prestige = 20
@@ -747,7 +747,7 @@ africa_missions_slot_5 = {
 		required_missions = { afr_15 }
 		position = 3
 		trigger = {
-		    TYH = { religion = converted_dynamic_faith_113 }
+		    TYH = { religion = levantine }
             advisor = quartermaster
             has_idea = african_6
             junior_union_with = TYH

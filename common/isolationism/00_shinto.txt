@@ -46,19 +46,3 @@ closed_doors_isolation = {
 		development_cost = -0.1
 	}
 }
-
-rule_of_little_brothers = {
-	isolation_value = 5
-}
-
-rule_of_brothers = {
-	isolation_value = 6
-}
-
-pragmatic_sanction = {
-	isolation_value = 7
-}
-
-catholic_way = {
-	isolation_value = 8
-}
