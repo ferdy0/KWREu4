@@ -91,4 +91,9 @@ add_accepted_culture = catalan
     	duration = -1
     	hidden = no
     }
+    add_country_modifier = {
+        name = thicc_ships
+        duration = -1
+        hidden = no
+    }
 }

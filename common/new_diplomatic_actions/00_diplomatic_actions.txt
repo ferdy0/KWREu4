@@ -6367,6 +6367,11 @@ advisory_merchants = {
             adm_power = 100
             dip_power = 100
             mil_power = 100
+            NOT = {
+                FROM = {
+                    has_country_modifier = something_happened
+                }
+            }
         }
 
         on_accept = {
@@ -6385,6 +6390,12 @@ advisory_merchants = {
             add_adm_power = -33
             add_dip_power = -33
             add_mil_power = -33
+            FROM = {
+                add_country_modifier = {
+                    name = something_happened
+                    duration = 7300
+                }
+            }
         }
     }
 
@@ -6408,6 +6419,11 @@ advisory_merchants = {
             adm_power = 50
             dip_power = 50
             mil_power = 50
+            NOT = {
+                FROM = {
+                    has_country_modifier = something_happened
+                }
+            }
         }
 
         on_accept = {
@@ -6426,6 +6442,12 @@ advisory_merchants = {
             add_adm_power = -20
             add_dip_power = -20
             add_mil_power = -20
+            FROM = {
+                add_country_modifier = {
+                    name = something_happened
+                    duration = 7300
+                }
+            }
         }
     }
 
@@ -6454,6 +6476,11 @@ advisory_merchants = {
                 }
             }
             treasury = 100
+            NOT = {
+                FROM = {
+                    has_country_modifier = something_happened
+                }
+            }
         }
 
         on_accept = {
@@ -6471,6 +6498,12 @@ advisory_merchants = {
                 }
             }
             add_treasury = -100
+            FROM = {
+                add_country_modifier = {
+                    name = something_happened
+                    duration = 7300
+                }
+            }
         }
     }
 
@@ -6499,6 +6532,16 @@ advisory_merchants = {
                 }
             }
             treasury = 100
+            NOT = {
+                FROM = {
+                    has_country_modifier = something_happened
+                }
+            }
+            NOT = {
+                FROM = {
+                    has_country_modifier = something_happened
+                }
+            }
         }
 
         on_accept = {
@@ -6513,6 +6556,12 @@ advisory_merchants = {
             FROM = {
                 kill_leader = {
                     type = explorer
+                }
+            }
+            FROM = {
+                add_country_modifier = {
+                    name = something_happened
+                    duration = 7300
                 }
             }
             add_treasury = -100
@@ -6536,6 +6585,11 @@ advisory_merchants = {
 			    has_country_modifier = killed_merchant
 			}
             treasury = 200
+            NOT = {
+                FROM = {
+                    has_country_modifier = something_happened
+                }
+            }
         }
 
         on_accept = {
@@ -6554,6 +6608,12 @@ advisory_merchants = {
                 }
             }
             add_treasury = -200
+            FROM = {
+                add_country_modifier = {
+                    name = something_happened
+                    duration = 7300
+                }
+            }
         }
     }
 
@@ -6574,6 +6634,11 @@ advisory_merchants = {
 			    has_country_modifier = syphoned_mana
 			}
             treasury = 300
+            NOT = {
+                FROM = {
+                    has_country_modifier = something_happened
+                }
+            }
         }
 
         on_accept = {
@@ -6594,5 +6659,11 @@ advisory_merchants = {
             add_dip_power = 50
             add_mil_power = 50
             add_treasury = -300
+            FROM = {
+                add_country_modifier = {
+                    name = something_happened
+                    duration = 7300
+                }
+            }
         }
     }

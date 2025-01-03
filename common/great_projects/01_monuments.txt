@@ -21388,6 +21388,7 @@ harbor_cagliari = {
 			development_cost_modifier = -0.1
 		}
 		country_modifiers = {
+		    trade_efficiency = 0.025
         }
 		area_modifier = {
 		}
@@ -21413,6 +21414,7 @@ harbor_cagliari = {
 			local_ship_repair = 0.25
 		}
 		country_modifiers = {
+		    trade_efficiency = 0.05
         }
 		on_upgraded = {
 			341 = {
@@ -21439,6 +21441,7 @@ harbor_cagliari = {
 			local_ship_repair = 0.5
 		}
 		country_modifiers = {
+		    trade_efficiency = 0.1
         }
 		on_upgraded = {
 		    TYH = {

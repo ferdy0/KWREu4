@@ -398,3 +398,13 @@ dead_merchant = {
     merchants = -1
 }
 syphoned_mana = { }
+something_happened = { }
+thicc_ships = {
+    global_ship_cost = 0.25
+    global_ship_recruit_speed = 0.25
+    sailor_maintenance_modifer = 0.25
+    number_of_cannons_modifier = 0.25
+    hull_size_modifier = 0.25
+    engagement_cost_modifier = 0.25
+    movement_speed_in_fleet_modifier = 1
+}
