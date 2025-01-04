@@ -1,0 +1,4 @@
+chasseur_charge = {
+    shock_damage = 0.15
+    manpower_recovery_speed = 0.1
+}

@@ -25,6 +25,61 @@ jerusalem_slot_2 = {
             cavalry_fraction = 0.3
             army_size_percentage = 0.8
         }
+
+        effect = {
+            delta_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
+            bahari_area = {
+                limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+            }
+
+            red_sea_coast_area = {
+                limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+            }
+
+            trans_jordan_area = {
+                limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+            }
+
+            tabuk_area = {
+                limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+            }
+
+            medina_area = {
+                limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+            }
+
+            add_country_modifier = {
+                name = chasseur_charge
+                duration = 5475
+            }
+        }
     }
 }
 
