@@ -149,3 +149,14 @@ nor_processing_sector = { #still needs localisation
     local_production_efficiency = 0.05
     local_state_maintenance_modifier = 0.15
 }
+
+nor_trade_around_the_world = { #still needs localisation
+    trade_range_modifier = 0.2
+    reduced_trade_penalty_on_non_main_tradenode = 0.15
+}
+
+nor_inspiration_from_the_east = { #still needs localisation
+    advisor_cost = -0.25
+    yearly_innovativeness = 0.2
+    global_unrest = 2
+}

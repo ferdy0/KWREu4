@@ -647,6 +647,64 @@ Norway_missions_s2 = {
             }
         }
     }
+
+    visiting_the_east_mission = { #still needs localisation
+        icon = mission_asian_city
+        required_missions = { To_lands_far_away_mission }
+        position = 14
+
+        trigger = {
+            151 = {
+                owner = {
+                    OR = {
+                        has_opinion = {
+                            who = NOR
+                            value = 100
+                        }
+                        has_spy_network_from = {
+                            who = NOR
+                            value = 50
+                        }
+                    }
+                }
+            }
+            379 = {
+                owner = {
+                    OR = {
+                        has_opinion = {
+                            who = NOR
+                            value = 100
+                        }
+                        has_spy_network_from = {
+                            who = NOR
+                            value = 50
+                        }
+                    }
+                }
+            }
+            684 = {
+                owner = {
+                    OR = {
+                        has_opinion = {
+                            who = NOR
+                            value = 100
+                        }
+                        has_spy_network_from = {
+                            who = NOR
+                            value = 50
+                        }
+                    }
+                }
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "nor_inspiration_from_the_east"
+                duration = 18250
+            }
+        }
+    }
 }
 Norway_missions_s3 = {
     slot = 3
@@ -2191,4 +2249,24 @@ Norway_missions_s5 = {
 			}
 		}
 	}
+
+    Trade_networks_mission = { #still needs localisation
+        icon = interest_of_holland
+        position = 13
+        required_missions = { Extracting_the_resources_mission }
+
+        trigger = {
+            any_owned_province = {
+                global_trade = 100
+            }
+            trade_income_percentage = 0.15
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "nor_trade_around_the_world"
+                duration = 18250
+            }
+        }
+    }
 }
