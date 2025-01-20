@@ -55,7 +55,9 @@ capital = 192
 		claim = 89
 		religion = catholic
 		culture = burgundian
+		block_disinherit = yes
 	}
+	set_heir_flag = is_charles_of_burg_flag
 }
 1444.11.11= {
 	add_prestige = 73

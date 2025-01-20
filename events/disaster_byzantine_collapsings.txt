@@ -2500,9 +2500,6 @@ country_event = {
 			has_global_flag = germiyan_has_seceded
 		}
 		AND = {
-			145 = {
-				unrest = 20
-			}
 			146 = {
 				unrest = 20
 			}
@@ -2518,9 +2515,6 @@ country_event = {
 			320 = {
 				unrest = 20
 			}
-			1773 = {
-				unrest = 20
-			}
 			1853 = {
 				unrest = 20
 			}
@@ -2531,9 +2525,6 @@ country_event = {
 				unrest = 20
 			}
 			4700 = {
-				unrest = 20
-			}
-			4701 = {
 				unrest = 20
 			}
 			4702 = {
@@ -3410,6 +3401,9 @@ country_event = {
 				owns_or_non_sovereign_subject_of = 4236
 			}
 		}
+		NOT = {
+			has_global_flag = byz_collapsed_end
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -3514,6 +3508,9 @@ country_event = {
 				owns_or_non_sovereign_subject_of = 4540
 				owns_or_non_sovereign_subject_of = 1944
 			}
+		}
+		NOT = {
+			has_global_flag = byz_collapsed_end
 		}
 	}
 	
@@ -3630,6 +3627,9 @@ country_event = {
 				owns_or_non_sovereign_subject_of = 2197
 				owns_or_non_sovereign_subject_of = 2201
 			}
+		}
+		NOT = {
+			has_global_flag = byz_collapsed_end
 		}
 	}
 	
@@ -3764,6 +3764,9 @@ country_event = {
 				owns_or_non_sovereign_subject_of = 2976
 			}
 		}
+		NOT = {
+			has_global_flag = byz_collapsed_end
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -3860,6 +3863,9 @@ country_event = {
 			rebel_progress_at_least = {
 				value = 90
 			}
+		}
+		NOT = {
+			has_global_flag = byz_collapsed_end
 		}
 	}
 	

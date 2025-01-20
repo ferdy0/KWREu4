@@ -8,6 +8,16 @@ capital = 219
 add_accepted_culture = andalucian
 add_accepted_culture = leonese
 set_country_flag = ZZZ_generated_converter_nation
+
+change_estate_land_share = {
+	estate = estate_nobles
+	share = 10
+}
+change_estate_land_share = {
+	estate = estate_church
+	share = -10
+}
+
 1363.9.17 = {
 	monarch = {
 		name = "Fernán III"
