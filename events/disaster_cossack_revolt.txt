@@ -1,0 +1,520 @@
+########################################
+# Cossack Revolts
+# Just allowing the Kazakh Cossacks
+# some more time for more shenanigans
+########################################
+
+namespace = cossack_revolt_dis
+
+# Cossack Revolt
+country_event = {
+	id = cossack_revolt_dis.1
+	title = "cossack_revolt_dis.1.t"
+	desc = "cossack_revolt_dis.1.d"
+	picture = COSSACK_ESTATE_RAIDERS_eventPicture
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = cossack_revolt
+		set_country_flag = cossack_revolt_target
+	}
+	
+	option = { #Cossacks rise up
+		name = cossack_revolt_dis.1.a
+		add_stability = -2
+		random_owned_province = {
+			limit = {
+				region = crimea_area
+				OR = {
+					culture = khazak
+					culture = pecheneg
+					culture = chuvash
+					culture = khazar
+				}
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 3
+				friend = CRI
+			}
+			set_province_flag = zaz_rebels_start_flag
+		}
+		random_owned_province = {
+			limit = {
+				NOT = { has_province_flag = zaz_rebels_start_flag }
+				region = crimea_area
+				OR = {
+					culture = khazak
+					culture = pecheneg
+					culture = chuvash
+					culture = khazar
+				}
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 3
+				friend = CRI
+			}
+			set_province_flag = zaz_rebels_start_flag
+			set_province_flag = cossack_revolt
+		}
+		crimea_area = {
+			limit = {
+				owned_by = ROOT
+				OR = {
+					culture = khazak
+					culture = pecheneg
+					culture = chuvash
+					culture = khazar
+				}
+			}
+			add_province_modifier = {
+				name = cossack_revolt_modifier
+				duration = -1 # removed via the on_end event
+			}
+		}
+	}
+}
+
+# Random rebels event for disaster
+# PROVINCENAME Revolts!
+country_event = {
+	id = cossack_revolt_dis.2
+	title = "cossack_revolt_dis.2.t"
+	desc = "cossack_revolt_dis.2.d"
+	picture = COSSACK_ESTATE_UPSET_eventPicture
+	goto = cossack_rebels_target
+	is_triggered_only = yes
+
+	trigger = {
+		any_owned_province = {
+			region = crimea_area
+			NOT = { controlled_by = REB }
+			NOT = { has_province_flag = cossack_revolt }
+			NOT = { has_province_flag = no_cossack_revolt }
+			OR = {
+				culture = khazak
+				culture = pecheneg
+				culture = chuvash
+				culture = khazar
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					region = crimea_area
+					NOT = { controlled_by = REB }
+					NOT = { has_province_flag = cossack_revolt }
+					NOT = { has_province_flag = no_cossack_revolt }
+					OR = {
+						culture = khazak
+						culture = pecheneg
+						culture = chuvash
+						culture = khazar
+					}
+				}
+				save_event_target_as = cossack_rebels_target
+			}
+		}
+	}
+
+	option = {
+		name = "cossack_revolt_dis.2.a"
+		ai_chance = { factor = 100 }
+		event_target:cossack_rebels_target = {
+			set_province_flag = cossack_revolt
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+				friend = CRI
+			}
+		}
+	}
+	option = {
+		name = "cossack_revolt_dis.2.b"
+		ai_chance = { factor = 0 }
+		event_target:cossack_rebels_target = {
+			add_local_autonomy = 100
+			set_province_flag = no_cossack_revolt
+		}
+	}
+}
+
+# Cossacks Declare Independence!
+# ends the disaster by virtue of CRI existing
+country_event = {
+	id = cossack_revolt_dis.3
+	title = "cossack_revolt_dis.3.t"
+	desc = "cossack_revolt_dis.3.d"
+	picture = COSSACK_ESTATE_RAIDERS_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { exists = CRI }
+		is_free_or_tributary_trigger = yes
+		num_of_owned_provinces_with = {
+			value = 5
+			OR = {
+				controlled_by = REB
+				local_autonomy = 90
+			}
+			OR = {
+				culture = khazak
+				culture = pecheneg
+				culture = chuvash
+				culture = khazar
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					region = crimea_area
+					OR = {
+						culture = khazak
+						culture = pecheneg
+						culture = chuvash
+						culture = khazar
+						is_core = CRI
+					}
+					is_capital = no
+				}
+				discover_country = CRI
+				add_core = CRI
+				clear_rebels = yes
+			}
+			release = CRI
+			CRI = {
+				change_government = republic
+				add_government_reform = cossacks_reform
+			}
+			every_owned_province = {
+				limit = {
+					region = crimea_area
+				}
+				add_claim = CRI
+			}
+		}
+	}
+	
+	option = {
+		name = "cossack_revolt_dis.3.a"
+		CRI = {
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+		hidden_effect = {
+			CRI = {
+				country_event = { id = cossack_revolt_dis.4 days = 1 }
+			}
+			every_country = {
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = CRI }
+					any_owned_province = {
+						region = crimea_area
+					}
+				}
+				country_event = { id = cossack_revolt_dis.5 days = 10 }
+			}
+			# Send messages to rivals allowing them to join
+			if = {
+				limit = {
+					CRI = { is_part_of_hre = yes }
+					has_dlc = "Emperor"
+				}
+				every_enemy_country = {
+					limit = {
+						is_emperor = no
+					}
+					country_event = { id = cossack_revolt_dis.20 days = 1 }
+				}
+			}
+			else = {
+				every_enemy_country = {
+					country_event = { id = cossack_revolt_dis.20 days = 1 }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "cossack_revolt_dis.3.b"
+		trigger = {
+			ai = no
+		}
+		CRI = {
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+		hidden_effect = {
+			CRI = {
+				country_event = { id = cossack_revolt_dis.4 days = 1 }
+				set_country_flag = swapped_to_cossack_state
+			}
+			every_country = {
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = CRI }
+					any_owned_province = {
+						region = crimea_area
+					}
+				}
+				country_event = { id = cossack_revolt_dis.5 days = 10 }
+			}
+			# Send messages to rivals allowing them to join
+			if = {
+				limit = {
+					CRI = { is_part_of_hre = yes }
+					has_dlc = "Emperor"
+				}
+				every_enemy_country = {
+					limit = {
+						is_emperor = no
+					}
+					country_event = { id = cossack_revolt_dis.20 days = 1 }
+				}
+			}
+			else = {
+				every_enemy_country = {
+					country_event = { id = cossack_revolt_dis.20 days = 1 }
+				}
+			}
+		}
+		switch_tag = CRI
+	}
+}
+
+# Cossack Mobilization
+country_event = {
+	id = cossack_revolt_dis.4
+	title = "cossack_revolt_dis.4.t"
+	desc = "cossack_revolt_dis.4.d"
+	picture = MILITARY_CAMP_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EXCELLENT"
+		CRI = {
+			capital_scope = {
+				build_to_forcelimit = {
+					infantry = 0.6
+					cavalry = 0.3
+					artillery = 0.1
+				}
+			}
+			random_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				build_to_forcelimit = {
+					heavy_ship = 0.3
+					light_ship = 0.3
+					transport = 0.2
+				}
+			}
+			add_treasury = 500
+			create_general = {
+				tradition = 80
+			}
+		}
+	}
+}
+
+# Cossack Claims
+country_event = {
+	id = cossack_revolt_dis.5
+	title = "cossack_revolt_dis.5.t"
+	desc = "cossack_revolt_dis.5.d"
+	picture = COSSACK_ESTATE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cossack_revolt_dis.5.a"
+		every_owned_province = {
+			limit = {
+				region = crimea_area
+			}
+			add_claim = CRI
+		}
+	}
+}
+
+# Cossack state joins Crimea
+country_event = {
+	id = cossack_revolt_dis.6
+	title = "cossack_revolt_dis.6.t"
+	desc = "cossack_revolt_dis.6.d"
+	picture = COSSACK_ESTATE_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		ai = yes
+		was_player = no
+		NOT = { tag = CRI }
+		CRI = {
+			exists = yes
+			OR = {
+				AND = {
+					ai = yes
+					was_player = no
+				}
+				has_country_flag = swapped_to_cossack_state
+			}
+			NOT = { truce_with = ROOT }
+			is_subject = no
+		}
+		is_free_or_tributary_trigger = yes
+		is_at_war = no
+		NOT = { num_of_cities = 5 }
+		any_owned_province = {
+			region = crimea_area
+		}
+		OR = {
+			primary_culture = khazak
+			primary_culture = pecheneg
+			primary_culture = chuvash
+			primary_culture = khazar
+		}
+		NOT = {
+			has_country_flag = state_joined_cossack_state
+		}
+		had_global_flag = {
+			flag = cossack_revolt
+			days = 1825 # 5 years
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "cossack_revolt_dis.6.a"
+		CRI = {
+			country_event = { id = cossack_revolt_dis.7 days = 1 }
+		}
+		set_country_flag = state_joined_cossack_state
+	}
+}
+
+# Incorporated into Crimea
+country_event = {
+	id = cossack_revolt_dis.7
+	title = "cossack_revolt_dis.7.t"
+	desc = "cossack_revolt_dis.7.d"
+	picture = COSSACK_ESTATE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cossack_revolt_dis.7.a"
+		FROM = {
+			every_owned_province = {
+				add_core = CRI
+			}
+		}
+		inherit = FROM
+		add_years_of_income = 3
+		add_yearly_manpower = 3
+		add_yearly_sailors = 3
+	}
+}
+
+# Cossack revolters call on the rivals of their enemy
+country_event = {
+	id = cossack_revolt_dis.20
+	title = "cossack_revolt_dis.20.t"
+	desc = "cossack_revolt_dis.20.d"
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cossack_revolt_dis.20.a"
+		create_alliance = CRI
+		join_all_offensive_wars_of = CRI
+		set_ai_attitude = {
+			who = CRI
+			attitude = attitude_friendly
+		}
+		CRI = {
+			add_opinion = {
+				who = ROOT
+				modifier = supported_independence
+			}
+		}
+	}
+	option = {
+		name = "cossack_revolt_dis.20.b"
+		add_prestige = -10
+	}
+}
+
+country_event = {
+	id = cossack_revolt_dis.100
+	title = "cossack_revolt_dis.100.t"
+	desc = {
+		trigger = {
+			NOT = { exists = CRI }
+		}
+		desc = "cossack_revolt_dis.100.d" # everything went pretty well
+	}
+	desc = {
+		trigger = {
+			exists = CRI
+		}
+		desc = "cossack_revolt_dis.100.d2" # oh no the dutch are revolting
+	}
+	picture = COSSACK_ESTATE_RAIDERS_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		on_non_estate_disaster_end = yes
+		hidden_effect = {
+			set_country_flag = had_cossack_revolt
+			every_owned_province = {
+				limit = {
+					has_province_modifier = cossack_revolt_modifier
+				}
+				remove_province_modifier = cossack_revolt_modifier
+			}
+		}
+	}
+	
+	option = {
+		name = cossack_revolt_dis.100.a
+		trigger = {
+			exists = CRI
+		}
+	}
+	option = {
+		name = cossack_revolt_dis.100.b
+		trigger = {
+			NOT = { exists = CRI }
+		}
+		crimea_area = {
+			limit = {
+				owned_by = ROOT
+			}
+			add_local_autonomy = -25
+		}
+	}
+}

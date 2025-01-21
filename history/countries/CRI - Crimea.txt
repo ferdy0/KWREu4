@@ -1,7 +1,7 @@
-government = tribal
-add_government_reform = steppe_horde
+government = republic
+add_government_reform = cossacks_reform
 government_rank = 1
-technology_group = nomad_group
+technology_group = eastern
 religion = orthodox
 primary_culture = khazak
 capital = 2410

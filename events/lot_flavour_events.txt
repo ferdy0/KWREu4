@@ -1,0 +1,83 @@
+########################################
+# Miscellaneous Flavour Events
+#
+#
+########################################
+
+namespace = lot_flavor_ev
+normal_or_historical_nations = yes
+
+#Break Mecklenburg-Luxemburg PU
+country_event = {
+	id = lot_flavor_ev.1
+	title = lot_flavor_ev.1.t
+	desc = lot_flavor_ev.1.d
+	picture = DIPLOMACY_SIGNING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = LUX
+			was_tag = LUX
+		}
+		MKL = {
+			is_subject_of = LUX
+		}
+		is_at_war = no
+		is_year = 1463
+		heir_age = 25
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	immediate = {
+		hidden_effect = {
+			MKL = {
+				add_liberty_desire = 20
+			}
+		}
+	}
+	
+	option = { # Mecklenburgian Independence
+		ai_chance = { factor = 30 }
+		name = lot_flavor_ev.1.a
+		add_years_of_income = 5
+		break_union = MKL
+		hidden_effect = {
+			MKL = {
+				add_years_of_income = -5
+				define_ruler = {
+					name = "Friedrich I"
+					dynasty = "von Luxemburg"
+					min_age = 18
+					max_age = 23
+					claim = 80
+					male = yes
+					culture = hessian
+					religion = catholic
+				}
+				define_consort = {
+					name = "Hannelore"
+					dynasty = "Sass"
+					min_age = 18
+					max_age = 25
+					claim = 80
+					female = yes
+					culture = pommeranian
+					religion = catholic
+				}
+			}
+		}
+	}
+	
+	option = { # Keep the union
+		ai_chance = { factor = 0 }
+		name = lot_flavor_ev.1.b
+		MKL = {
+			add_liberty_desire = 50
+		}
+	}
+}

@@ -4485,7 +4485,7 @@ altaic = {
 		}
 	}
 	khazak = {
-		primary = CRI
+		primary = KZK
 		male_names = {
 			Abilghazi Abilmambet Abulay Abulkhayr Ahmat Ayshwak Arunghazi Barak Batir Bokey Bulat Burunduq 
 			Erali Esim Ghubaydulla Haqnazar Jangir Janibek Jantore Jarmuhambet Jolbaris Kenesari Kerey Mamash 

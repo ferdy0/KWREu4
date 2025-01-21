@@ -24,3 +24,6 @@ bro_fights_bro = {
 stops_byz_ending_disaster_early = {
 	religious_unity = -0.10
 }
+cossack_revolt_modifier = {
+	local_unrest = 10
+}
