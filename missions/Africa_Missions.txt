@@ -597,6 +597,7 @@ africa_missions_slot_4 = {
 		}
 		effect = {
             set_country_flag = afr_allowed_meleanos
+            TYH = { set_country_flag = afr_allowed_meleanos }
 		    add_adm_power = -100
             define_advisor = {
                 type = theologian

@@ -1106,6 +1106,7 @@ knights_hospitalier = {
     icon = GFX_holy_order_scuola_grande
     trigger = {
 		is_or_was_tag = { tag = TYH }
+		religion = catholic
     }
     color = { 173 216 230 }
     cost = 50
@@ -1131,8 +1132,8 @@ knights_hospitalier = {
 knights_meleanos = {
     icon = GFX_holy_order_scuola_grande
     trigger = {
-		is_or_was_tag = { tag = AFR }
 		has_country_flag = afr_allowed_meleanos
+		religion = levantine
     }
     color = { 173 216 230 }
     cost = 50
