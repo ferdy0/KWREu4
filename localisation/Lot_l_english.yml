@@ -201,6 +201,10 @@
  byzantine_collapsings.52.d:0 "Recently it has come to light that corruption has tainted even our young court. We're still uncertain which of our advisors and retainers have lent their ear in exchange for coin but the news has not been contained to the palace walls."
  byzantine_collapsings.52.a:0 "Greed strikes once more."
  stops_byz_ending_disaster_early:0 "Petty Religious Squables"
+ lot_flavor_ev.2.t:0 "Assassination of Prince Martin"
+ lot_flavor_ev.2.d:0 "During the night a group of assassins snuck past the Jerusalemite guard and into the palace. Two assassins were apprehended in the hallway outside the emperor's own rooms, and another had lost his way and was apprehended a short distance from the Haghia Sophia. And whilst all seemed fine thereafter, the palace awoke to frightening news this morning. A final assassin had made it all the way to Prince Martin's bedchamber."
+ lot_flavor_ev.2.a:0 "We mourn for our Prince."
+ lot_flavor_ev.2.b:0 "The assasins will be held accountable!"
  ###### Toldedan Missions and Events ################
  lot_cas_spa_reconquista_three2_title:0 "Claims in Valencia"
  lot_cas_spa_reconquista_three2_desc:0 "The Kingdoms of Spain are our due. This includes the coastal kingdom of Valencia. By force or by cunning, we must make it ours."

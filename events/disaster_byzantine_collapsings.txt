@@ -1144,6 +1144,17 @@ country_event = {
 		NOT = {
 			dynasty = "Synadenos"
 		}
+		BYZ = {
+			owns = 146
+			owns = 147
+			owns = 148
+			owns = 320
+			owns = 1853
+			owns = 2348
+			owns = 4700
+			owns = 4702
+			owns = 4705
+		}
 	}
 	
 	immediate = {
