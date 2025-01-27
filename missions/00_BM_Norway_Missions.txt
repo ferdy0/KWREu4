@@ -648,7 +648,7 @@ Norway_missions_s2 = {
         }
     }
 
-    visiting_the_east_mission = { #still needs localisation
+    Visiting_the_east_mission = { #still needs localisation
         icon = mission_asian_city
         required_missions = { To_lands_far_away_mission }
         position = 14
@@ -1447,6 +1447,36 @@ Norway_missions_s3 = {
             }
         }
     }
+
+    Up_and_away_mission = {
+        icon = Mission_give_him_back_his_legions
+        required_missions = { Visiting_the_east_mission Manufactoring_goods_mission }
+        position = 15
+
+        trigger = {
+            employed_advisor = {
+                type = natural_scientist
+                skill = 5
+            }
+            employed_advisor = {
+                type = trader
+                skill = 5
+            }
+            employed_advisor = {
+                type = fortification_expert
+                skill = 5
+            }
+            innovativeness = 25
+            treasury = 1000
+        }
+
+        effect = {
+            country_event = {
+                id = mission_nor.3
+            }
+            add_prestige = 45
+        }
+    }
 }
 Norway_missions_s4 = {
     slot = 4
@@ -2109,6 +2139,284 @@ Norway_missions_s4 = {
                 }
                 add_province_modifier = {
                     name = "nor_processing_sector"
+                    duration = -1
+                }
+            }
+        }
+    }
+
+    Manufactoring_goods_mission = {
+        icon = Mission_beyond_the_urals
+        required_missions = { Processing_goods_mission }
+        position = 14
+        provinces_to_highlight = {
+            OR = {
+                area = western_norway
+                area = eastern_norway
+                area = northern_norway 
+                province_id = 5
+                province_id = 8
+                province_id = 4164
+                province_id = 16
+            }
+            NOT = {
+                AND = {
+                    has_building = workshop
+                    OR = {
+                        has_building = weapons
+                        has_building = wharf
+                        has_building = textile
+                        has_building = tradecompany
+                        has_building = farm_estate
+                        has_building = mills
+                    }
+                    num_of_times_expanded_infrastructure = 1
+                }
+            }
+        }
+
+        trigger = {
+            western_norway = {
+                type = all
+                AND = {
+                    has_building = workshop
+                    OR = {
+                        has_building = weapons
+                        has_building = wharf
+                        has_building = textile
+                        has_building = tradecompany
+                        has_building = farm_estate
+                        has_building = mills
+                    }
+                    num_of_times_expanded_infrastructure = 1
+                }
+            }
+            eastern_norway = {
+                type = all
+                AND = {
+                    has_building = workshop
+                    OR = {
+                        has_building = weapons
+                        has_building = wharf
+                        has_building = textile
+                        has_building = tradecompany
+                        has_building = farm_estate
+                        has_building = mills
+                    }
+                    num_of_times_expanded_infrastructure = 1
+                }
+            }
+            northern_norway  = {
+                type = all
+                AND = {
+                    has_building = workshop
+                    OR = {
+                        has_building = weapons
+                        has_building = wharf
+                        has_building = textile
+                        has_building = tradecompany
+                        has_building = farm_estate
+                        has_building = mills
+                    }
+                    num_of_times_expanded_infrastructure = 1
+                }
+            }
+            5 = {
+                AND = {
+                    has_building = workshop
+                    OR = {
+                        has_building = weapons
+                        has_building = wharf
+                        has_building = textile
+                        has_building = tradecompany
+                        has_building = farm_estate
+                        has_building = mills
+                    }
+                    num_of_times_expanded_infrastructure = 1
+                }
+            }
+            8 = {
+                AND = {
+                    has_building = workshop
+                    OR = {
+                        has_building = weapons
+                        has_building = wharf
+                        has_building = textile
+                        has_building = tradecompany
+                        has_building = farm_estate
+                        has_building = mills
+                    }
+                    num_of_times_expanded_infrastructure = 1
+                }
+            }
+            4164 = {
+                AND = {
+                    has_building = workshop
+                    OR = {
+                        has_building = weapons
+                        has_building = wharf
+                        has_building = textile
+                        has_building = tradecompany
+                        has_building = farm_estate
+                        has_building = mills
+                    }
+                    num_of_times_expanded_infrastructure = 1
+                }
+            }
+            16 = {
+                AND = {
+                    has_building = workshop
+                    OR = {
+                        has_building = weapons
+                        has_building = wharf
+                        has_building = textile
+                        has_building = tradecompany
+                        has_building = farm_estate
+                        has_building = mills
+                    }
+                    num_of_times_expanded_infrastructure = 1
+                }
+            }
+        }
+
+        effect = {
+            western_norway = {
+                limit = {
+                    AND = {
+                        has_building = workshop
+                        OR = {
+                            has_building = weapons
+                            has_building = wharf
+                            has_building = textile
+                            has_building = tradecompany
+                            has_building = farm_estate
+                            has_building = mills
+                        }
+                        num_of_times_expanded_infrastructure = 1
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_made_in_norway"
+                    duration = -1
+                }
+            }
+            eastern_norway = {
+                limit = {
+                    AND = {
+                        has_building = workshop
+                        OR = {
+                            has_building = weapons
+                            has_building = wharf
+                            has_building = textile
+                            has_building = tradecompany
+                            has_building = farm_estate
+                            has_building = mills
+                        }
+                        num_of_times_expanded_infrastructure = 1
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_made_in_norway"
+                    duration = -1
+                }
+            }
+            northern_norway  = {
+                limit = {
+                    AND = {
+                        has_building = workshop
+                        OR = {
+                            has_building = weapons
+                            has_building = wharf
+                            has_building = textile
+                            has_building = tradecompany
+                            has_building = farm_estate
+                            has_building = mills
+                        }
+                        num_of_times_expanded_infrastructure = 1
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_made_in_norway"
+                    duration = -1
+                }
+            }
+            5 = {
+                limit = {
+                    AND = {
+                        has_building = workshop
+                        OR = {
+                            has_building = weapons
+                            has_building = wharf
+                            has_building = textile
+                            has_building = tradecompany
+                            has_building = farm_estate
+                            has_building = mills
+                        }
+                        num_of_times_expanded_infrastructure = 1
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_made_in_norway"
+                    duration = -1
+                }
+            }
+            8 = {
+                limit = {
+                    AND = {
+                        has_building = workshop
+                        OR = {
+                            has_building = weapons
+                            has_building = wharf
+                            has_building = textile
+                            has_building = tradecompany
+                            has_building = farm_estate
+                            has_building = mills
+                        }
+                        num_of_times_expanded_infrastructure = 1
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_made_in_norway"
+                    duration = -1
+                }
+            }
+            4164 = {
+                limit = {
+                    AND = {
+                        has_building = workshop
+                        OR = {
+                            has_building = weapons
+                            has_building = wharf
+                            has_building = textile
+                            has_building = tradecompany
+                            has_building = farm_estate
+                            has_building = mills
+                        }
+                        num_of_times_expanded_infrastructure = 1
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_made_in_norway"
+                    duration = -1
+                }
+            }
+            16 = {
+                limit = {
+                    AND = {
+                        has_building = workshop
+                        OR = {
+                            has_building = weapons
+                            has_building = wharf
+                            has_building = textile
+                            has_building = tradecompany
+                            has_building = farm_estate
+                            has_building = mills
+                        }
+                        num_of_times_expanded_infrastructure = 1
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_made_in_norway"
                     duration = -1
                 }
             }

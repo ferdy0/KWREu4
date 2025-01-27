@@ -160,3 +160,11 @@ nor_inspiration_from_the_east = { #still needs localisation
     yearly_innovativeness = 0.2
     global_unrest = 2
 }
+
+nor_made_in_norway = { #still needs localisation
+    allowed_num_of_manufactories = 1
+    local_state_maintenance_modifier = 0.25
+    local_institution_spread = 0.1
+    local_build_cost = -0.15
+    local_build_time = -0.15
+}

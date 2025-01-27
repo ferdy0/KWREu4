@@ -98,6 +98,51 @@ country_event = { #still needs localisation
         }
     }
 }
+
+# Event for discovering airships and starting research
+country_event = { #still needs localisation
+    id = mission_nor.3
+    title = flavor_nor.3.t
+    desc = flavor_nor.3.d
+    picture = ASTRONOMER_eventPicture
+
+    is_triggered_only = yes
+
+    immediate = {
+        add_treasury  = -1000
+        country_event = {
+            id = mission_nor.4
+            days = 500
+        }
+    }
+
+    option = {
+        id = mission_nor.3.a
+    }
+}
+
+# Event for the first flight of the norwegian skyships
+country_event = { #still needs localisation
+    id = mission_nor.4
+    title = flavor_nor.4.t
+    desc = flavor_nor.4.d
+    picture = CITY_VIEW_eventPicture
+
+    is_triggered_only = yes
+
+    immediate = {
+        22 = {
+            add_great_project = {
+                type = nor_central_skyport_opplanda
+                instant = no
+            }
+        }
+    }
+
+    option = {
+        id = mission_nor.4.a
+    }
+}
 ######## Remove #'s to make the events work again!
 # Event for triggering the Finnmörk expidition
 #country_event = { #still needs localisation and be finished
