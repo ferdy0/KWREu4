@@ -141,6 +141,7 @@ country_event = { #still needs localisation
 
     option = {
         id = mission_nor.4.a
+        set_global_flag = nor_completed_airships
     }
 }
 ######## Remove #'s to make the events work again!

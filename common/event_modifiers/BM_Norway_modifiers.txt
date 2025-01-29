@@ -168,3 +168,23 @@ nor_made_in_norway = { #still needs localisation
     local_build_cost = -0.15
     local_build_time = -0.15
 }
+
+nor_mountain_skyways = { #still needs localisation
+    local_state_maintenance_modifier = -0.35
+    local_build_cost = -0.25
+    local_build_time = -0.15
+    local_production_efficiency = 0.20
+}
+
+nor_better_connected = { #still needs localisation
+    trade_efficiency = 0.15
+    center_of_trade_upgrade_cost = -0.10
+    global_trade_goods_size_modifier = 0.1
+}
+
+nor_skyship_observers = { #still needs localisation
+    cavalry_shock = 1
+    artillery_fire = 1
+    backrow_artillery_damage = 0.15
+    movement_speed = 0.10
+}

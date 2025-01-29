@@ -705,6 +705,40 @@ Norway_missions_s2 = {
             }
         }
     }
+
+    I_can_see_mission = {
+        icon = fixed_garrison_system
+        required_missions = { Up_and_away_mission }
+        position = 16
+
+        trigger = {
+            if = {
+                limit = { innovativeness = 50 }
+                treasury = 500
+                mil_power = 250
+            }
+            else = {
+                treasury = 1500
+                mil_power = 500
+            }
+        }
+
+        effect = {
+            if = {
+                limit = { innovativeness = 50 }
+                add_treasury = -500
+                add_mil_power = -250
+            }
+            else = {
+                add_treasury = -1500
+                add_mil_power = -500
+            }
+            add_country_modifier = {
+                name = "nor_skyship_observers"
+                duration = -1
+            }
+        }
+    }
 }
 Norway_missions_s3 = {
     slot = 3
@@ -1193,7 +1227,7 @@ Norway_missions_s3 = {
         }
     }
 
-    The_workshops_of_norway_mission = {
+    The_workshops_of_norway_mission = { #still needs localisation
         icon = mission_have_manufactories
         required_missions = { Iron_and_copper_mining_mission }
         position = 11
@@ -1448,8 +1482,8 @@ Norway_missions_s3 = {
         }
     }
 
-    Up_and_away_mission = {
-        icon = Mission_give_him_back_his_legions
+    Up_and_away_mission = { #still needs localisation
+        icon = mission_se_medicine_wheel
         required_missions = { Visiting_the_east_mission Manufactoring_goods_mission }
         position = 15
 
@@ -2145,8 +2179,8 @@ Norway_missions_s4 = {
         }
     }
 
-    Manufactoring_goods_mission = {
-        icon = Mission_beyond_the_urals
+    Manufactoring_goods_mission = { #still needs localisation
+        icon = mission_beyond_the_urals
         required_missions = { Processing_goods_mission }
         position = 14
         provinces_to_highlight = {
@@ -2419,6 +2453,71 @@ Norway_missions_s4 = {
                     name = "nor_made_in_norway"
                     duration = -1
                 }
+            }
+        }
+    }
+
+    The_mountains_unlocked_mission = { #still needs localisation
+        icon = mission_nah_ravine_dwellers
+        required_missions = { Up_and_away_mission }
+        position = 16
+        provinces_to_highlight = {
+            OR = {
+                province_id = 22
+                province_id = 10
+                province_id = 20
+                province_id = 8
+            }
+        }
+
+        trigger = {
+            has_global_flag = nor_completed_airships
+            22 = {
+                has_building = ramparts
+            }
+            10 = {
+                has_building = ramparts
+            }
+            20 = {
+                has_building = ramparts
+            }
+            8 = {
+                has_building = ramparts
+            }
+        }
+
+        effect = {
+            22 = {
+                remove_province_modifier = nor_mountain_paths
+                add_province_modifier = {
+                    name = "nor_mountain_skyways"
+                    duration = -1
+                }
+            }
+            10 = {
+                remove_province_modifier = nor_mountain_paths
+                add_province_modifier = {
+                    name = "nor_mountain_skyways"
+                    duration = -1
+                }
+            }
+            20 = {
+                remove_province_modifier = nor_mountain_paths
+                add_province_modifier = {
+                    name = "nor_mountain_skyways"
+                    duration = -1
+                }
+            }
+            8 = {
+                remove_province_modifier = nor_mountain_paths
+                add_province_modifier = {
+                    name = "nor_mountain_skyways"
+                    duration = -1
+                }
+            }
+            add_country_modifier = {
+                name = "nor_better_connected"
+                duration = 18250
             }
         }
     }  
