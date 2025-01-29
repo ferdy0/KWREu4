@@ -171,6 +171,35 @@ Norway_missions_s1 = {
             }
         }
     }
+
+    The_propulsion_problem_mission = { #still needs localisation
+        icon = ned_cloth_trading
+        required_missions = { I_can_see_mission }
+        position = 17
+
+        trigger = {
+            22 = {
+                has_great_project = {
+                    type = nor_central_skyport_opplanda
+                    tier = 2
+                }
+            }
+            estate_influence = {
+                estate = estate_burghers
+                influence = 80
+            }
+            treasury = 1000
+            adm_power = 200
+            dip_power = 200
+            mil_power = 200
+        }
+
+        effect = {
+            country_event = {
+                id = mission_nor.5
+            }
+        }
+    }
 }
 Norway_missions_s2 = {
     slot = 2
@@ -706,7 +735,7 @@ Norway_missions_s2 = {
         }
     }
 
-    I_can_see_mission = {
+    I_can_see_mission = { #still needs localisation
         icon = fixed_garrison_system
         required_missions = { Up_and_away_mission }
         position = 16
@@ -737,6 +766,27 @@ Norway_missions_s2 = {
                 name = "nor_skyship_observers"
                 duration = -1
             }
+        }
+    }
+
+    Bombs_away_mission = { #still needs localisation
+        icon = mission_humiliate_lubeck
+        required_missions = { I_can_see_mission }
+        position = 17
+
+        trigger = {
+            army_tradition = 35
+            army_professionalism = 15
+        }
+
+        effect = {
+            add_army_professionalism = -15
+            add_army_tradition = -35
+            add_country_modifier = {
+                name = "nor_gunpowder_shortage"
+                duration = 18250
+            }
+            set_global_flag = nor_bombs_away
         }
     }
 }

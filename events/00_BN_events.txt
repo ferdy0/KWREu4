@@ -2,6 +2,7 @@ namespace = mission_nor
 namespace = flavor_nor
 namespace = nor_great_expidition
 namespace = nor_sami_exploration
+namespace = nor_bombing
 
 # Event for giving ships to NWC
 country_event = { #still needs localisation
@@ -102,8 +103,8 @@ country_event = { #still needs localisation
 # Event for discovering airships and starting research
 country_event = { #still needs localisation
     id = mission_nor.3
-    title = flavor_nor.3.t
-    desc = flavor_nor.3.d
+    title = mission_nor.3.t
+    desc = mission_nor.3.d
     picture = ASTRONOMER_eventPicture
 
     is_triggered_only = yes
@@ -124,8 +125,8 @@ country_event = { #still needs localisation
 # Event for the first flight of the norwegian skyships
 country_event = { #still needs localisation
     id = mission_nor.4
-    title = flavor_nor.4.t
-    desc = flavor_nor.4.d
+    title = mission_nor.4.t
+    desc = mission_nor.4.d
     picture = CITY_VIEW_eventPicture
 
     is_triggered_only = yes
@@ -137,11 +138,233 @@ country_event = { #still needs localisation
                 instant = no
             }
         }
+        # Add in the one in america too
     }
 
     option = {
         id = mission_nor.4.a
         set_global_flag = nor_completed_airships
+    }
+}
+
+# Event for the propulsion problem
+country_event = { #still needs localisation
+    id = mission_nor.5
+    title = mission_nor.5.t
+    desc = mission_nor.5.d
+    picture = WESTERNISATION_eventPicture
+
+    is_triggered_only = yes
+
+    # Just use boats and horses bro, but i'll invest in better paths and boats
+    option = {
+        id = mission_nor.5.a
+        add_treasury = -500
+        add_adm_power = -100
+        add_dip_power = -100
+        add_mil_power = -100
+        country_event = {
+            id = mission_nor.6
+            days = 100
+        }
+    }
+
+    # You can try the hand powered propelor idea i guess
+    option = {
+        id = mission_nor.5.b
+        trigger = {
+            innovativeness = 75
+        }
+        add_treasury = -1000
+        add_adm_power = -200
+        add_dip_power = -200
+        add_mil_power = -200
+        country_event = {
+            id = mission_nor.7
+            days = 200
+        }
+    }
+
+    # What is this windmil propelor combo that you mentioned?
+    option = {
+        id = mission_nor.5.c
+        trigger = {
+            innovativeness = 95
+        }
+        add_treasury = -2000
+        add_adm_power = -400
+        add_dip_power = -400
+        add_mil_power = -400
+        country_event = {
+            id = mission_nor.8
+            days = 400
+        }
+    }
+}
+
+#Event for better infrastructure airships
+country_event = { #still needs localisation
+    id = mission_nor.6
+    title = mission_nor.6.t
+    desc = mission_nor.6.d
+    picture = FARMING_eventPicture
+
+    immediate = {
+        add_country_modifier = {
+            name = "nor_pulled_skyships"
+            duration = 18250
+        }
+    }
+}
+
+#Event for manual propellor
+country_event = { #still needs localisation
+    id = mission_nor.7
+    title = mission_nor.7.t
+    desc = mission_nor.7.d
+    picture = INVENTION_eventPicture
+
+    immediate = {
+        add_country_modifier = {
+            name = "nor_manual_skyships"
+            duration = 18250
+        }
+    }
+}
+
+#Event for windmill propellor
+country_event = { #still needs localisation
+    id = mission_nor.8
+    title = mission_nor.8.t
+    desc = mission_nor.8.d
+    picture = EP_ISLAND_eventPicture
+
+    immediate = {
+        add_country_modifier = {
+            name = "nor_windmill_skyships"
+            duration = 18250
+        }
+    }
+}
+
+#Event for selecting who to bomb
+country_event = {
+    id = nor_bombing.1
+    title = nor_bombing.1.t
+    desc = nor_bombing.1.d
+    picture = VILLAGE_BURNING_eventPicture
+
+    is_triggered_only = yes 
+
+    immediate = {
+        hidden_effect = {
+			if = {
+				limit = { NOT = { has_saved_event_target = bombing1 } }
+				select_bombing_location = yes
+			}
+		}
+    }
+
+    after = {
+		hidden_effect = {
+            every_war_enemy_country = {
+                every_province = {
+                    limit = { has_province_flag = bombing_@ROOT }
+                    clr_province_flag = bombing_@ROOT
+                }
+            }
+		}
+	}
+
+    # Go back
+    option = {
+        name = nor_bombing.1.a
+        add_treasury = 1000
+        add_army_professionalism = 0.1
+	}
+
+    # Bombing
+    option = {
+        name = nor_bombing.1.b
+		trigger = { has_saved_event_target = bombing1 }
+		goto = bombing1
+		custom_tooltip = nor_bombing.1.tooltip1
+		event_target:bombing1 = { province_event = { id = nor_bombing.2 } }
+	}
+
+    option = {
+        name = nor_bombing.1.c
+		trigger = { has_saved_event_target = bombing2 }
+		goto = bombing2
+		custom_tooltip = nor_bombing.1.tooltip2
+		event_target:bombing2 = { province_event = { id = nor_bombing.2 } }
+	}
+
+    option = {
+        name = nor_bombing.1.d
+		trigger = { has_saved_event_target = bombing3 }
+		goto = bombing3
+		custom_tooltip = nor_bombing.1.tooltip3
+		event_target:bombing3 = { province_event = { id = nor_bombing.2 } }
+	}
+
+    option = {
+        name = nor_bombing.1.e
+		trigger = { has_saved_event_target = bombing4 }
+		goto = bombing4
+		custom_tooltip = nor_bombing.1.tooltip4
+		event_target:bombing4 = { province_event = { id = nor_bombing.2 } }
+	}
+
+    option = {
+        name = nor_bombing.1.f
+		trigger = { has_saved_event_target = bombing5 }
+		goto = bombing5
+		custom_tooltip = nor_bombing.1.tooltip5
+		event_target:bombing5 = { province_event = { id = nor_bombing.2 } }
+	}
+
+    option = {
+        name = nor_bombing.1.g
+		trigger = { has_saved_event_target = bombing6 }
+		goto = bombing6
+		custom_tooltip = nor_bombing.1.tooltip6
+		event_target:bombing6 = { province_event = { id = nor_bombing.2 } }
+	}
+
+    option = {
+        name = nor_bombing.1.h
+		trigger = { has_saved_event_target = bombing7 }
+		goto = bombing7
+		custom_tooltip = nor_bombing.1.tooltip7
+		event_target:bombing7 = { province_event = { id = nor_bombing.2 } }
+	}
+
+    option = {
+        name = nor_bombing.1.i
+		trigger = { has_saved_event_target = bombing8 }
+		goto = bombing8
+		custom_tooltip = nor_bombing.1.tooltip8
+		event_target:bombing8 = { province_event = { id = nor_bombing.2 } }
+	}
+}
+
+# Event for the actual bombing
+province_event = {
+    id = nor_bombing.2
+    title = nor_bombing.2.t
+    desc = nor_bombing.2.d
+    picture = EP_MANIHOLE_HELMET_eventPicture
+    goto = ROOT
+
+    is_triggered_only = yes
+
+    option = {
+        id = nor_bombing.2.a
+        ROOT = {
+            change_controller = FROM
+            add_devastation = 50
+        }
     }
 }
 ######## Remove #'s to make the events work again!

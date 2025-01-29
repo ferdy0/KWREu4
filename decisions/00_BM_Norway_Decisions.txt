@@ -1,0 +1,33 @@
+country_decisions = {
+
+    nor_bombs_away = {
+        color = { 165 42 42 }
+        major = no
+
+        potential = {
+            tag = NOR
+            has_global_flag = nor_bombs_away
+        }
+
+        allow = {
+            treasury = 1000
+            army_professionalism = 0.1
+            is_at_war = yes
+            any_army = {
+				location = {
+					fort_level = 1
+					sieged_by = ROOT
+				}
+                unit_has_leader = yes
+			}
+        }
+
+        effect = {
+            add_treasury = -1000
+            add_army_professionalism = -0.1
+            country_event = {
+                id = nor_bombing.1
+            }
+        }
+    }
+}

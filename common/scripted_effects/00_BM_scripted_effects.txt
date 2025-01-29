@@ -1,0 +1,114 @@
+select_bombing_location = {
+    random_province = {
+		limit = {
+			fort_level = 1
+			sieged_by = ROOT
+			unit_has_leader = yes
+			num_of_units_in_province = {
+				who = ROOT
+				amount = 1
+			}
+            NOT = { has_province_flag = bombing_@ROOT }
+		}
+		set_province_flag = bombing_@ROOT
+        save_event_target_as = bombing1
+	}
+    random_province = {
+		limit = {
+			fort_level = 1
+			sieged_by = ROOT
+			unit_has_leader = yes
+			num_of_units_in_province = {
+				who = ROOT
+				amount = 1
+			}
+            NOT = { has_province_flag = bombing_@ROOT }
+		}
+		set_province_flag = bombing_@ROOT
+        save_event_target_as = bombing2
+	}
+    random_province = {
+		limit = {
+			fort_level = 1
+			sieged_by = ROOT
+			unit_has_leader = yes
+			num_of_units_in_province = {
+				who = ROOT
+				amount = 1
+			}
+            NOT = { has_province_flag = bombing_@ROOT }
+		}
+		set_province_flag = bombing_@ROOT
+        save_event_target_as = bombing3
+	}
+    random_province = {
+		limit = {
+			fort_level = 1
+			sieged_by = ROOT
+			unit_has_leader = yes
+			num_of_units_in_province = {
+				who = ROOT
+				amount = 1
+			}
+            NOT = { has_province_flag = bombing_@ROOT }
+		}
+		set_province_flag = bombing_@ROOT
+        save_event_target_as = bombing4
+	}
+    random_province = {
+		limit = {
+			fort_level = 1
+			sieged_by = ROOT
+			unit_has_leader = yes
+			num_of_units_in_province = {
+				who = ROOT
+				amount = 1
+			}
+            NOT = { has_province_flag = bombing_@ROOT }
+		}
+		set_province_flag = bombing_@ROOT
+        save_event_target_as = bombing5
+	}
+    random_province = {
+		limit = {
+			fort_level = 1
+			sieged_by = ROOT
+			unit_has_leader = yes
+			num_of_units_in_province = {
+				who = ROOT
+				amount = 1
+			}
+            NOT = { has_province_flag = bombing_@ROOT }
+		}
+		set_province_flag = bombing_@ROOT
+        save_event_target_as = bombing6
+	}
+    random_province = {
+		limit = {
+			fort_level = 1
+			sieged_by = ROOT
+			unit_has_leader = yes
+			num_of_units_in_province = {
+				who = ROOT
+				amount = 1
+			}
+            NOT = { has_province_flag = bombing_@ROOT }
+		}
+		set_province_flag = bombing_@ROOT
+        save_event_target_as = bombing7
+	}
+    random_province = {
+		limit = {
+			fort_level = 1
+			sieged_by = ROOT
+			unit_has_leader = yes
+			num_of_units_in_province = {
+				who = ROOT
+				amount = 1
+			}
+            NOT = { has_province_flag = bombing_@ROOT }
+		}
+		set_province_flag = bombing_@ROOT
+        save_event_target_as = bombing8
+	}
+}
