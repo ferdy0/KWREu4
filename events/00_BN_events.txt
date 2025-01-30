@@ -138,7 +138,12 @@ country_event = { #still needs localisation
                 instant = no
             }
         }
-        # Add in the one in america too
+        2564 = {
+            add_great_project = {
+                type = nor_central_skyport_america
+                instant = no
+            }
+        }
     }
 
     option = {

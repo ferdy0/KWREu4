@@ -1538,18 +1538,9 @@ Norway_missions_s3 = {
         position = 15
 
         trigger = {
-            employed_advisor = {
-                type = natural_scientist
-                skill = 5
-            }
-            employed_advisor = {
-                type = trader
-                skill = 5
-            }
-            employed_advisor = {
-                type = fortification_expert
-                skill = 5
-            }
+            natural_scientist = 5
+            trader = 5
+            fortification_expert = 5
             innovativeness = 25
             treasury = 1000
         }
@@ -2567,7 +2558,62 @@ Norway_missions_s4 = {
             }
             add_country_modifier = {
                 name = "nor_better_connected"
-                duration = 18250
+                duration = 7300
+            }
+        }
+    }
+
+    Transport_boom_mission = { #still needs localisation
+        icon = mission_royal_roads
+        required_missions = { The_mountains_unlocked_mission }
+        position = 17
+        provinces_to_highlight = {
+            OR = {
+                area = western_norway
+                area = eastern_norway
+                area = northern_norway 
+                province_id = 5
+                province_id = 8
+                province_id = 4164
+                province_id = 16
+            }
+            NOT = {
+                has_building = stock_excange
+            }
+        }
+
+        trigger = {
+            trader = 5
+            western_norway = {
+                type = all
+                has_building = stock_excange
+            }
+            eastern_norway = {
+                type = all
+                has_building = stock_excange
+            }
+            northern_norway  = {
+                type = all
+                has_building = stock_excange
+            }
+            5 = {
+                has_building = stock_excange
+            }
+            8 = {
+                has_building = stock_excange
+            }
+            4164 = {
+                has_building = stock_excange
+            }
+            16 = {
+                has_building = stock_excange
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "nor_transport_boom"
+                duration = 3650
             }
         }
     }  
@@ -2723,6 +2769,58 @@ Norway_missions_s5 = {
             add_country_modifier = {
                 name = "nor_trade_around_the_world"
                 duration = 18250
+            }
+        }
+    }
+
+    Transcontinental_transport_mission = { #still needs localisation
+        icon = mission_maize     
+        required_missions = { The_mountains_unlocked_mission } 
+        position = 17
+        provinces_to_highlight = {
+            province_id = 2564
+            province_id = 1978
+            province_id = 1979
+            province_id = 370
+            province_id = 1104
+        }
+
+        trigger = {
+            2564 = {
+                has_great_project = {
+                    type = nor_central_skyport_america
+                    tier = 2
+                }
+            }
+            treasury = 2000
+            navigator = 5
+        }
+
+        effect = {
+            add_treasury = -2000
+            1978 = {
+                add_province_modifier = {
+                    name = "nor_skyship_outpost"
+                    duration = -1
+                }
+            }
+            1979 = {
+                add_province_modifier = {
+                    name = "nor_skyship_outpost"
+                    duration = -1
+                }
+            }
+            370 = {
+                add_province_modifier = {
+                    name = "nor_skyship_outpost"
+                    duration = -1
+                }
+            }
+            1104 = {
+                add_province_modifier = {
+                    name = "nor_skyship_outpost"
+                    duration = -1
+                }
             }
         }
     }

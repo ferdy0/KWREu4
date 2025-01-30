@@ -214,3 +214,16 @@ nor_gunpowder_shortage = { #still needs localisation
     artillery_cost = 0.15 	
     infantry_cost = 0.10
 }
+
+nor_transport_boom = { #still needs localisation
+    development_cost_modifier = -0.05
+    global_tax_modifier = 0.05
+    global_prosperity_growth = 0.1
+    administrative_efficiency = 0.2
+}
+
+nor_skyship_outpost = { #still needs localisation
+    tax_income = 5
+    province_trade_power_modifier = 0.2
+    local_institution_spread = 0.1
+}

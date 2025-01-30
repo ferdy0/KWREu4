@@ -1,6 +1,6 @@
 country_decisions = {
 
-    nor_bombs_away = {
+    nor_bombs_away = { #still needs localisation
         color = { 165 42 42 }
         major = no
 
