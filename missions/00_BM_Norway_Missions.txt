@@ -2676,7 +2676,7 @@ Norway_missions_s4 = {
         }
     }
 
-    Royal_norwegian_skylines_mission = { #still needs localisation
+    Royal_norwegian_skyfleet_mission = { #still needs localisation
         icon = mission_european_politics
         required_missions = { Transport_boom_mission }
         position = 18
