@@ -789,6 +789,64 @@ Norway_missions_s2 = {
             set_global_flag = nor_bombs_away
         }
     }
+
+    Luft_leidang_mission = { #still needs localisation
+        icon = mission_expanded_leidang
+        required_missions = { Bombs_away_mission }
+        position = 18
+        provinces_to_highlight = {
+            OR = {
+                area = eastern_norway
+                area = western_norway
+                area = northern_norway 
+                province_id = 18
+                province_id = 8
+                province_id = 5
+                province_id = 4164
+                province_id = 16
+            }
+            NOT = {
+                has_building = conscription_center
+            }
+        }
+
+        trigger = {
+            eastern_norway = {
+                type = all
+                has_building = conscription_center
+            }
+            western_norway = {
+                type = all
+                has_building = conscription_center
+            }
+            northern_norway = {
+                type = all
+                has_building = conscription_center
+            }
+            18 = {
+                has_building = conscription_center
+            }
+            8 = {
+                has_building = conscription_center
+            }
+            5 = {
+                has_building = conscription_center
+            }
+            4164 = {
+                has_building = conscription_center
+            }
+            16 = {
+                has_building = conscription_center
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "nor_luft_leidang"
+                duration = 18250
+            }
+        }
+    }
 }
 Norway_missions_s3 = {
     slot = 3
@@ -2614,6 +2672,29 @@ Norway_missions_s4 = {
             add_country_modifier = {
                 name = "nor_transport_boom"
                 duration = 3650
+            }
+        }
+    }
+
+    Royal_norwegian_skylines_mission = { #still needs localisation
+        icon = mission_european_politics
+        required_missions = { Transport_boom_mission }
+        position = 18
+
+        trigger = {
+            num_of_light_ship = 100
+            mercantilism = 35
+            treasury = 1000
+        }
+
+        effect = {
+            add_treasury = -1000
+            add_country_modifier = {
+                name = "nor_royal_skyline"
+                duration = -1
+            }
+            22 = {
+                center_of_trade = 1
             }
         }
     }  

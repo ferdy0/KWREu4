@@ -197,6 +197,7 @@ nor_pulled_skyships = { #still needs localisation
 }
 
 nor_manual_skyships = { #still needs localisation
+    global_tax_income = -12
     envoy_travel_time = -0.2
     expand_infrastructure_cost_modifier = -0.10
     global_institution_spread = 0.15
@@ -204,6 +205,7 @@ nor_manual_skyships = { #still needs localisation
 }
 
 nor_windmill_skyships = { #still needs localisation
+    global_tax_income = -24
     envoy_travel_time = -0.4
     expand_infrastructure_cost_modifier = -0.20
     global_institution_spread = 0.30
@@ -223,7 +225,22 @@ nor_transport_boom = { #still needs localisation
 }
 
 nor_skyship_outpost = { #still needs localisation
-    tax_income = 5
+    tax_income = 2
     province_trade_power_modifier = 0.2
     local_institution_spread = 0.1
+}
+
+nor_luft_leidang = { #still needs localisation
+    yearly_army_professionalism = 0.01
+    manpower_recovery_speed = 0.10
+    reinforce_speed = 0.10
+    global_manpower_modifier = 0.10
+}
+
+nor_royal_skyline = { #still needs localisation
+    global_tax_income = -60
+    merchants = 1
+    trade_range_modifier = 0.25
+    global_ship_trade_power = 0.1
+    mercantilism_cost = -0.1
 }
