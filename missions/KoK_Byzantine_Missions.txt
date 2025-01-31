@@ -728,17 +728,39 @@ lot_byz_anatolia_2 = {
 		required_missions = { lot_survived_the_disaster }
 		position = 2
 		provinces_to_highlight = {
-			province_id = 326
-			province_id = 4311
-			province_id = 4312
+			OR = {
+				province_id = 326
+				province_id = 4311
+				province_id = 4312
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			
+			owns_core_province = 326
+			owns_core_province = 4311
+			owns_core_province = 4312
 		}
 		
 		effect = {
-			
+			4312 = {
+				change_culture = anatolian
+			}
+			rum_area = {
+				add_permanent_claim = BYZ
+			}
+			karaman_area = {
+				add_permanent_claim = BYZ
+			}
+			1848 = {
+				add_permanent_claim = BYZ
+			}
+			2298 = {
+				add_permanent_claim = BYZ
+			}
+			2302 = {
+				add_permanent_claim = BYZ
+			}
 		}
 	}
 	
@@ -1545,11 +1567,51 @@ lot_byz_greece_3 = {
 		provinces_to_highlight = {  }
 		
 		trigger = {
-			
+			custom_trigger_tooltip = {
+				tooltip = ended_collapse_disaster_tt
+				has_global_flag = byz_collapsed_end
+			}
+			stability = 2
+			capital = 151
+			151 = {
+				development = 20
+			}
 		}
 		
 		effect = {
-			
+			ankara_area = {
+				add_permanent_claim = BYZ
+			}
+			4311 = {
+				add_permanent_claim = BYZ
+			}
+			if = {
+				limit = {
+					exists = TRE
+					TRE = { is_subject = no }
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					months = 300
+					target = TRE
+				}
+			}
+			change_ruler_stat = {
+				type = adm
+				amount = 1
+			}
+			change_ruler_stat = {
+				type = dip
+				amount = 1
+			}
+			change_ruler_stat = {
+				type = mil
+				amount = 1
+			}
+			add_country_modifier = {
+				name = survived_disaster_pat_yourself_on_the_back
+				duration = 9125
+			}
 		}
 	}
 	
@@ -1558,18 +1620,49 @@ lot_byz_greece_3 = {
 		required_missions = { lot_survived_the_disaster }
 		position = 2
 		provinces_to_highlight = {
-			province_id = 164
-			province_id = 2348
-			province_id = 3003
-			province_id = 4700
+			OR = {
+				province_id = 164
+				province_id = 2348
+				province_id = 3003
+				province_id = 4700
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			
+			owns_core_province = 164
+			owns_core_province = 2348
+			owns_core_province = 3003
+			owns_core_province = 4700
+			OR = {
+				AND = {
+					num_of_light_ship = 10
+					OR = {
+						num_of_heavy_ship = 2
+						num_of_galley = 15
+					}
+				}
+				AND = {
+					num_of_heavy_ship = 5
+					num_of_galley = 10
+				}
+				num_of_galley = 20
+			}
 		}
 		
 		effect = {
-			#trade rewards
+			add_country_modifier = {
+				name = control_of_taegean_country
+				duration = 7300
+			}
+			164 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = 5475
+					power = 10
+					key = CONTROL_OF_TAEGEAN
+				}
+			}
 		}
 	}
 	
@@ -2586,22 +2679,44 @@ lot_early_themata_4_byz = {
 	}
 	has_country_shield = yes
 
-	lot_theme_trebizond = { #diplo or annex options
+	lot_theme_trebizond = {
 		icon = byz_pontic_empire
 		required_missions = { lot_survived_the_disaster }
 		position = 2
 		provinces_to_highlight = {
-			province_id = 328
-			province_id = 330
-			province_id = 2304
+			OR = {
+				province_id = 328
+				province_id = 330
+				province_id = 2304
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			
+			subject_owns = 328
+			subject_owns = 330
+			subject_owns = 2304
 		}
 		
 		effect = {
-			
+			every_subject_country = {
+				limit = {
+					OR = {
+						owns = 328
+						owns = 330
+						owns = 2304
+					}
+				}
+				steer_trade = BYZ
+				add_liberty_desire = -20
+			}
+			define_advisor = {
+				type = theologian
+				skill = 2
+				discount = yes
+				culture = pontic_greek
+				religion = coptic
+			}
 		}
 	}
 	
