@@ -244,3 +244,8 @@ nor_royal_skyline = { #still needs localisation
     global_ship_trade_power = 0.1
     mercantilism_cost = -0.1
 }
+
+nor_bombing_run = { #still needs localisation
+    fort_level = -10
+    local_fort_maintenance_modifier = -1
+}

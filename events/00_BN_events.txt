@@ -284,8 +284,8 @@ country_event = {
     # Go back
     option = {
         name = nor_bombing.1.a
-        add_treasury = 1000
-        add_army_professionalism = 0.1
+        add_treasury = 1500
+        add_army_professionalism = 0.2
 	}
 
     # Bombing
@@ -368,7 +368,11 @@ province_event = {
         id = nor_bombing.2.a
         ROOT = {
             change_controller = FROM
-            add_devastation = 50
+            add_devastation = 75
+        }
+        add_province_modifier = {
+            name = "nor_bombing_run"
+            duration = 1825
         }
     }
 }
