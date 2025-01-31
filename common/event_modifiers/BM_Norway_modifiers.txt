@@ -183,8 +183,8 @@ nor_better_connected = { #still needs localisation
 }
 
 nor_skyship_observers = { #still needs localisation
-    cavalry_shock = 1
-    artillery_fire = 1
+    cavalry_shock = 0.5
+    artillery_fire = 0.5
     backrow_artillery_damage = 0.15
     movement_speed = 0.10
 }
@@ -193,7 +193,7 @@ nor_pulled_skyships = { #still needs localisation
     envoy_travel_time = -0.1
     expand_infrastructure_cost_modifier = -0.05
     global_institution_spread = 0.1
-    all_power_cost = -0.05
+    all_power_cost = -0.02
 }
 
 nor_manual_skyships = { #still needs localisation
@@ -201,15 +201,15 @@ nor_manual_skyships = { #still needs localisation
     envoy_travel_time = -0.2
     expand_infrastructure_cost_modifier = -0.10
     global_institution_spread = 0.15
-    all_power_cost = -0.10
+    all_power_cost = -0.04
 }
 
 nor_windmill_skyships = { #still needs localisation
     global_tax_income = -24
     envoy_travel_time = -0.4
     expand_infrastructure_cost_modifier = -0.20
-    global_institution_spread = 0.30
-    all_power_cost = -0.20
+    global_institution_spread = 0.25
+    all_power_cost = -0.08
 }
 
 nor_gunpowder_shortage = { #still needs localisation
@@ -221,7 +221,7 @@ nor_transport_boom = { #still needs localisation
     development_cost_modifier = -0.05
     global_tax_modifier = 0.05
     global_prosperity_growth = 0.1
-    administrative_efficiency = 0.2
+    administrative_efficiency = 0.15
 }
 
 nor_skyship_outpost = { #still needs localisation

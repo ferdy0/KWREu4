@@ -10,8 +10,8 @@ country_decisions = {
         }
 
         allow = {
-            treasury = 1000
-            army_professionalism = 0.1
+            treasury = 1500
+            army_professionalism = 0.2
             is_at_war = yes
             any_army = {
 				location = {
@@ -23,8 +23,8 @@ country_decisions = {
         }
 
         effect = {
-            add_treasury = -1000
-            add_army_professionalism = -0.1
+            add_treasury = -1500
+            add_army_professionalism = -0.2
             country_event = {
                 id = nor_bombing.1
             }
