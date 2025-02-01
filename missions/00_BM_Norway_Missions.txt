@@ -1610,6 +1610,30 @@ Norway_missions_s3 = {
             add_prestige = 45
         }
     }
+
+    The_Skys_the_limit_mission = {
+        icon = mal_trade_with_europeans
+        required_missions = { Luft_leidang_mission Royal_norwegian_skyfleet_mission }
+        position = 19
+
+        trigger = {
+            has_estate_privilege = estate_burghers_land_rights
+            has_estate_privilege = estate_burghers_land_trade_rights
+            estate_loyalty = {
+                estate = estate_burghers
+                loyalty = 70
+            }
+            estate_influence = {
+                estate = estate_burghers
+                influence = 80
+            }
+        }
+
+        effect = {
+            set_global_flag = nor_industrialists_adctivated
+            # make it add a special government reform for Tier 3, Tier 6 or Tier 7 about the industrialists becoming more powerfull
+        }
+    }
 }
 Norway_missions_s4 = {
     slot = 4

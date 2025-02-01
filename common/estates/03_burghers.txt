@@ -257,9 +257,16 @@ estate_burghers = {
 		trigger = {
 			OR = {
 				tag = NOR
-				tag = ICE #change into NWC later
+				tag = NWC 
 			}
 			has_global_flag = nor_whaling_barons_active
+		}
+	}
+	custom_name = {
+		desc = estate_sky_barons
+		trigger = {
+			tag = NOR
+			has_global_flag = nor_industrialists_adctivated
 		}
 	}
 
