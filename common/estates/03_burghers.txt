@@ -263,7 +263,7 @@ estate_burghers = {
 		}
 	}
 	custom_name = {
-		desc = estate_sky_barons
+		desc = estate_steam_barons
 		trigger = {
 			tag = NOR
 			has_global_flag = nor_industrialists_adctivated
