@@ -35,3 +35,7 @@ control_of_taegean_country = {
 	ship_power_propagation = 0.1
 	trade_efficiency = 0.1
 }
+BYZ_reversal_of_downfall_lot = {
+	war_exhaustion  = -0.05
+	global_missionary_strength = 0.02
+}

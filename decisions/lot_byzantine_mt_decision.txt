@@ -1,0 +1,143 @@
+country_decisions = {
+
+	armenian_pronoia = {
+		major = yes
+		color = { 112 41 99 }
+		
+		potential = {
+			tag = BYZ
+			exists = ARM
+			mission_completed = lot_recover_sebasteia
+			NOT = {
+				mission_completed = lot_byzantine_armenian_diplomacy
+			}
+			NOT = {
+				has_global_flag = byz_armenian_pronoia_rej_iii
+			}
+		}
+		
+		allow = {
+			alliance_with = ARM
+			ARM = {
+				has_opinion = {
+					who = ROOT
+					value = 170
+				}
+			}
+			treasury = 100
+			NOT = {
+				had_recent_war = 10
+			}
+			custom_trigger_tooltip = {
+				tooltip = no_recent_rejection_armenia
+				OR = {
+					NOT = {
+						OR = {
+							has_country_flag = you_pressed_this_button_byz
+							has_global_flag = byz_armenian_pronoia_rej_i
+							has_global_flag = byz_armenian_pronoia_rej_ii
+						}
+					}
+					had_country_flag = {
+						flag = you_pressed_this_button_byz
+						days = 90
+					}
+					had_global_flag = {
+						flag = byz_armenian_pronoia_rej_i
+						days = 7300
+					}
+					had_global_flag = {
+						flag = byz_armenian_pronoia_rej_ii
+						days = 18250
+					}
+				}
+			}
+		}
+		
+		effect = {
+			ARM = {
+				country_event = {
+					id = lot_flavor_ev.3
+					days = 52
+				}
+			}
+			clr_country_flag = you_pressed_this_button_byz
+			set_country_flag = you_pressed_this_button_byz
+		}
+	}
+	
+	bulgarian_pronoia = {
+		major = yes
+		color = { 112 41 99 }
+		
+		potential = {
+			tag = BYZ
+			exists = BUL
+			mission_completed = lot_reconquer_greece
+			NOT = {
+				mission_completed = lot_byz_bulgaria
+			}
+			NOT = {
+				has_country_flag = you_pressed_this_button_bul
+			}
+		}
+		
+		allow = {
+			BUL = {
+				has_opinion = {
+					who = ROOT
+					value = 150
+				}
+			}
+			army_strength = {
+				who = BUL
+				value = 1.5
+			}
+			NOT = {
+				had_recent_war = 7
+			}
+		}
+		
+		effect = {
+			BUL = {
+				country_event = {
+					id = lot_flavor_ev.4
+					days = 30
+				}
+			}
+			set_country_flag = you_pressed_this_button_bul
+		}
+	}
+	
+	epirian_pronoia = {
+		major = yes
+		color = { 112 41 99 }
+		
+		potential = {
+			tag = BYZ
+			exists = EPI
+			EPI = { is_subject = no }
+			mission_completed = lot_byz_aegean
+			NOT = {
+				mission_completed = lot_theme_epirus
+			}
+		}
+		
+		allow = {
+			alliance_with = EPI
+			EPI = {
+				has_opinion = {
+					who = ROOT
+					value = 170
+				}
+			}
+		}
+		
+		effect = {
+			create_subject = {
+				subject_type = vassal
+				subject = EPI
+			}
+		}
+	}
+}

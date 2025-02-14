@@ -131,3 +131,185 @@ country_event = {
 		}
 	}
 }
+
+#Offer the Armenian Pronoia
+country_event = {
+	id = lot_flavor_ev.3
+	title = lot_flavor_ev.3.t
+	desc = lot_flavor_ev.3.d
+	picture = BYZ_BYZANTINE_EAGLE_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = { # Accept the Byzantine Sovereign
+		ai_chance = { factor = 10 }
+		name = lot_flavor_ev.3.a
+		BYZ = {
+			create_subject = {
+				subject_type = hereditary_pronoia_subject_type
+				subject = ARM
+			}
+			add_treasury = -100
+		}
+		add_treasury = 100
+		clr_global_flag = byz_armenian_pronoia_rej_i
+		clr_global_flag = byz_armenian_pronoia_rej_ii
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						has_global_flag = byz_armenian_pronoia_rej_i
+						has_global_flag = byz_armenian_pronoia_rej_ii
+					}
+				}
+			}
+			add_historical_friend = BYZ
+		}
+		change_country_color = {
+			color = { 112 41 99 }
+		}
+	}
+	
+	option = { # Reject the Byzantines
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2
+				has_global_flag = byz_armenian_pronoia_rej_i
+			}
+			modifier = {
+				factor = 5
+				has_global_flag = byz_armenian_pronoia_rej_ii
+			}
+		}
+		name = lot_flavor_ev.3.b
+		if = {
+			limit = {
+				has_global_flag = byz_armenian_pronoia_rej_ii
+			}
+			set_global_flag = byz_armenian_pronoia_rej_iii
+			anatolia_region = {
+				add_permanent_claim = BYZ
+			}
+			samtskhe_area = {
+				add_permanent_claim = BYZ
+			}
+			4302 = {
+				add_permanent_claim = BYZ
+			}
+			419 = {
+				add_permanent_claim = BYZ
+			}
+			rum_area = {
+				add_permanent_claim = ARM
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_flag = byz_armenian_pronoia_rej_i
+			}
+			set_global_flag = byz_armenian_pronoia_rej_ii
+		}
+		else = {
+			set_global_flag = byz_armenian_pronoia_rej_i
+		}
+		add_opinion = {
+			who = BYZ
+			modifier = insulted
+		}
+	}
+}
+
+#Demand Bulgarian Subjugation
+country_event = {
+	id = lot_flavor_ev.4
+	title = lot_flavor_ev.4.t
+	desc = lot_flavor_ev.4.d
+	picture = BYZ_BYZANTINE_EAGLE_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = { # Accept the Byzantine Sovereign
+		ai_chance = { factor = 75 }
+		name = lot_flavor_ev.4.a
+		add_government_reform = autocracy_reform
+		set_government_rank = 2
+		BYZ = {
+			create_subject = {
+				subject_type = hereditary_pronoia_subject_type
+				subject = BUL
+			}
+		}
+	}
+	
+	option = { # Reject the Byzantines
+		ai_chance = { factor = 25 }
+		name = lot_flavor_ev.4.b
+		add_opinion = {
+			who = BYZ
+			modifier = insulted
+		}
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			months = 300
+			target = BYZ
+		}
+		BYZ = {
+			add_casus_belli = {
+				type = cb_vassalize_mission
+				months = 300
+				target = BUL
+			}
+		}
+		bulgaria_area = {
+			add_permanent_claim = BYZ
+		}
+		silistria_area = {
+			add_permanent_claim = BYZ
+		}
+		1766 = {
+			add_permanent_claim = BYZ
+		}
+		3000 = {
+			add_permanent_claim = BYZ
+		}
+		3001 = {
+			add_permanent_claim = BYZ
+		}
+		4176 = {
+			add_permanent_claim = BYZ
+		}
+		4780 = {
+			add_permanent_claim = BYZ
+		}
+	}
+}
+
+country_event = {
+	id = lot_flavor_ev.5
+	title = lot_flavor_ev.5.t
+	desc = lot_flavor_ev.5.d
+	picture = ORTHODOX_eventPicture
+	
+	is_triggered_only = yes 
+	major = yes
+	
+	option = {
+		name = lot_flavor_ev.5.a
+		
+		ai_chance = {
+			factor = 1
+		}
+		
+		add_country_modifier = {
+			name = BYZ_reversal_of_downfall_lot
+			duration = 10950 
+		}
+		
+		add_power_projection_mission = {
+			amount = 25
+		}
+	}
+}

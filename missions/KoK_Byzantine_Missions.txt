@@ -31,16 +31,51 @@ lot_byz_anatolia_1 = {
 		required_missions = { lot_recover_galatia }
 		position = 3
 		provinces_to_highlight = {
-			area = rum_area
-			province_id = 4313
+			OR = {
+				area = rum_area
+				province_id = 4313
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			
+			owns_core_province = 329
+			owns_core_province = 1846
+			owns_core_province = 2300
+			owns_core_province = 4313
+			owns_core_province = 4314
+			owns_core_province = 4315
 		}
 		
 		effect = {
-			
+			anatolia_region = {
+				add_claim = ROOT
+			}
+			if = {
+				limit = {
+					328 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					2304 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				caucasia_region = {
+					add_claim = ROOT
+				}
+			}
+			else = {
+				328 = {
+					add_permanent_claim = ROOT
+				}
+				2304 = {
+					add_permanent_claim = ROOT
+				}
+				330 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			custom_tooltip = unlocks_armenia_vassal_oop
 		}
 	}
 	
@@ -769,18 +804,34 @@ lot_byz_anatolia_2 = {
 		required_missions = { lot_recover_galatia }
 		position = 3
 		provinces_to_highlight = {
-			area = karaman_area
-			province_id = 1848
-			province_id = 2298
-			province_id = 2302
+			OR = {
+				area = karaman_area
+				province_id = 1848
+				province_id = 2298
+				province_id = 2302
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			
+			owns_core_province = 323
+			owns_core_province = 324
+			owns_core_province = 1848
+			owns_core_province = 2298
+			owns_core_province = 2301
+			owns_core_province = 2302
+			owns_core_province = 4307
 		}
 		
 		effect = {
-			#steal the 'eastern frontiers' modifier from basegame 'avenge 1071' so that the rewards of 'the kingdom of cyprus and jerusalem' will still work.
+			custom_tooltip = BYZ_unlock_janissary_mercenary_company
+			set_country_flag = BYZ_janissary_merc_company
+			add_country_modifier = {
+				name = BYZ_eastern_flank_1
+				duration = -1
+			}
+			add_permanent_claim = 321
+			add_permanent_claim = 327
 		}
 	}
 }
@@ -1663,6 +1714,9 @@ lot_byz_greece_3 = {
 					key = CONTROL_OF_TAEGEAN
 				}
 			}
+			custom_tooltip = unlocks_epirian_vassal_oop
+			add_permanent_claim = 2410
+			add_permanent_claim = 285
 		}
 	}
 	
@@ -1671,15 +1725,67 @@ lot_byz_greece_3 = {
 		required_missions = { lot_byz_aegean }
 		position = 3
 		provinces_to_highlight = {
-			#lae {shrug}
+			OR = {
+				province_id = 145
+				province_id = 146
+				province_id = 147
+				province_id = 148
+				province_id = 1773
+				province_id = 1853
+				province_id = 4701
+				province_id = 4702
+				province_id = 4705
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			
+			145 = {
+				country_or_non_sovereign_subject_holds = BYZ
+			}
+			146 = {
+				country_or_non_sovereign_subject_holds = BYZ
+			}
+			147 = {
+				country_or_non_sovereign_subject_holds = BYZ
+			}
+			148 = {
+				country_or_non_sovereign_subject_holds = BYZ
+			}
+			1773 = {
+				country_or_non_sovereign_subject_holds = BYZ
+			}
+			1853 = {
+				country_or_non_sovereign_subject_holds = BYZ
+			}
+			4701 = {
+				country_or_non_sovereign_subject_holds = BYZ
+			}
+			4702 = {
+				country_or_non_sovereign_subject_holds = BYZ
+			}
+			owns_core_province = 4705
 		}
 		
 		effect = {
-			
+			add_permanent_claim = 163
+			add_permanent_claim = 320
+			if = {
+				limit = {
+					mission_completed = lot_theme_epirus
+				}
+				country_event = {
+					id = lot_flavor_ev.5
+				}
+			}
+			give_claims = { area = bulgaria_area }
+			give_claims = { area = silistria_area }
+			give_claims = { id = 1766 }
+			give_claims = { id = 3000 }
+			give_claims = { id = 3001 }
+			give_claims = { id = 4176 }
+			give_claims = { id = 4780 }
+			custom_tooltip = unlocks_bulgaria_vassal_oop
 		}
 	}
 }
@@ -2725,18 +2831,69 @@ lot_early_themata_4_byz = {
 		required_missions = { lot_byz_aegean }
 		position = 3
 		provinces_to_highlight = {
-			province_id = 142
-			province_id = 144
-			province_id = 4698
-			province_id = 4699
+			OR = {
+				province_id = 142
+				province_id = 144
+				province_id = 4698
+				province_id = 4699
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			
+			OR = {
+				EPI = {
+					is_subject_of = ROOT
+					owns_core_province = 142
+					owns_core_province = 144
+					owns_core_province = 4698
+					owns_core_province = 4699
+				}
+				AND = {
+					NOT = { exists = EPI }
+					owns_core_province = 142
+					owns_core_province = 144
+					owns_core_province = 4698
+					owns_core_province = 4699
+				}
+			}
 		}
 		
 		effect = {
-			
+			if = {
+				limit = {
+					NOT = { exists = EPI }
+					owns_core_province = 144
+				}
+				add_country_modifier = {
+					name = EPI_epirote_forces
+					duration = 5475
+				}
+			}
+			else_if = {
+				limit = {
+					EPI = {
+						is_subject_of = ROOT
+						owns_core_province = 144
+					}
+				}
+				EPI = {
+					add_country_modifier = {
+						name = EPI_epirote_forces
+						duration = 10950
+					}
+				}
+				add_dip_power = 75
+			}
+			if = {
+				limit = {
+					mission_completed = lot_reconquer_greece
+				}
+				country_event = {
+					id = lot_flavor_ev.5
+				}
+			}
+			give_claims = { area = albania_area }
 		}
 	}
 }
@@ -3557,16 +3714,47 @@ lot_trade_conquest_5_byz = {
 		required_missions = { lot_byz_aegean }
 		position = 3
 		provinces_to_highlight = {
-			province_id = 285
-			province_id = 2410
+			OR = {
+				province_id = 285
+				province_id = 2410
+			}
+			NOT = { owned_by = ROOT }
 		}
 		
 		trigger = {
-			
+			2410 = {
+				owned_by = ROOT
+				is_core = ROOT
+				development = 15
+			}
+			285 = {
+				owned_by = ROOT
+				is_core = ROOT
+				development = 15
+			}
 		}
 		
 		effect = {
-			
+			285 = {
+				add_core = FEO
+			}
+			2410 = {
+				add_core = FEO
+			}
+			create_vassal = FEO
+			FEO = {
+				add_government_reform = merchant_aristocracy_reform
+				change_primary_culture = goths
+				change_religion = orthodox
+				set_capital = 2410
+			}
+			284 = {
+				add_permanent_claim = ROOT
+			}
+			2447 = {
+				add_permanent_claim = ROOT
+			}
+			give_claims = { area = azov_area }
 		}
 	}
 	

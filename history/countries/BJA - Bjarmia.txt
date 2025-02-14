@@ -33,7 +33,7 @@ add_accepted_culture = vepsian
 }
 1406.9.2 = {
 	monarch = {
-		name = "JÃ¡rre I"
+		name = "Járre I"
 		dynasty = "Somatu"
 		adm = 3
 		dip = 3
@@ -45,7 +45,7 @@ add_accepted_culture = vepsian
 }
 1414.12.14 = {
 	monarch = {
-		name = "JÃ¡rre II"
+		name = "Járre II"
 		dynasty = "Somatu"
 		adm = 3
 		dip = 3

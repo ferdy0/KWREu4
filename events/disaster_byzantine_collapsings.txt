@@ -2726,6 +2726,14 @@ country_event = {
 		LAE = {
 			vassalize = KNI
 		}
+		1853 = {
+			add_unrest = -10
+			change_religion = catholic
+		}
+		2297 = {
+			add_unrest = 10
+			change_religion = orthodox
+		}
 		hidden_effect = {
 			LAE = {
 				define_ruler = {
@@ -2815,14 +2823,6 @@ country_event = {
 			}
 			320 = {
 				remove_core = LAE
-			}
-			1853 = {
-				add_unrest = -10
-				change_religion = catholic
-			}
-			2297 = {
-				add_unrest = 10
-				change_religion = orthodox
 			}
 			4702 = {
 				add_unrest = -10
@@ -3697,12 +3697,10 @@ country_event = {
 					OR = {
 						area = azov_area
 						province_id = 2447
+						province_id = 284
 					}
 				}
 				cede_province = CRI
-			}
-			284 = {
-				add_core = FEO
 			}
 			285 = {
 				add_core = FEO
