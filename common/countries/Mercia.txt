@@ -1,6 +1,6 @@
 ck2_converter_generated = yes
 graphical_culture = westerngfx
-color = { 200 30 0 }
+color = { 71 117 45 }
 revolutionary_colors = { 13 8 13 }
 historical_idea_groups = {
 	exploration_ideas
@@ -30,38 +30,36 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Beorhtwulf #0" = 20
-	"Beornred #0" = 20
-	"Beornwulf #0" = 20
-	"Burgred #0" = 20
-	"Cearl #0" = 20
-	"Ceolred #0" = 5
-	"Ceolwald #0" = 20
-	"Ceolwulf #1" = 20
-	"Cnebba #0" = 20
-	"Creoda #0" = 20
-	"Cynehelm #0" = 20
-	"Cynweld #0" = 20
-	"Cœnred #0" = 20
-	"Cœnwulf #0" = 20
-	"Ecgberht #0" = 20
-	"Ecgfrith #0" = 20
-	"Eowa #0" = 20
-	"Icel #0" = 20
-	"Ludeca #0" = 20
-	"Offa #0" = 20
-	"Oswia #0" = 20
-	"Peada #0" = 20
-	"Penda #0" = 20
-	"Pybba #0" = 20
-	"Shypicha #0" = 20
-	"Wiglaf #0" = 20
-	"Wigmund #0" = 20
-	"Wigstan #0" = 20
-	"Wulfhere #0" = 20
-	"Ælfflæd #0" = -20
-	"Ælfwynn #0" = 20
-	"Æthelflæd #0" = -20
-	"Æthelred #1" = 20
-	"Æthelstan #0" = 20
+	"Arthur #2" = 20
+	"Elystan #3" = 10
+	"Roderick #0" = 10
+	"Simon #0" = 10
+	"Adam #0" = 5
+	"Gerallt #1" = 5
+	"Godwyn #0" = 5
+	"Llywelyn #0" = 5
+	"Meichal #0" = 5
+	"Gwilliam #0" = 0
+	"Laurence #0" = 0
+	"Matthew #0" = 0
+	"Meddyn #0" = 0
+	"Nicholas #0" = 0
+	"Walter #0" = 0
+	
+	"Mair #0" = -10
+	"Cerian #0" = -1
+	"Lleigy #0" = -1
+	"Æronwen #0" = -1
+}
+leader_names = {
+	"Clwyd"
+	"Elfael"
+	"Fitzalan"
+	"Gorfynydd"
+	"Itchington"
+	"Mynyw"
+	"Rhuddlan"
+	"Talhaiarn"
+	"de Gand"
+	"de la Pole"
 }

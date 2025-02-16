@@ -1,5 +1,5 @@
-owner = WLS
-controller = WLS
+owner = MRC
+controller = MRC
 capital = "Shrewsbury"
 is_city = yes
 culture = english
@@ -8,7 +8,7 @@ trade_goods = wool
 base_tax = 4
 base_production = 4
 base_manpower = 2
-add_core = WLS
+add_core = MRC
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
