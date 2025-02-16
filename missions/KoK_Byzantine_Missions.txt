@@ -84,15 +84,71 @@ lot_byz_anatolia_1 = {
 		required_missions = { lot_recover_sebasteia }
 		position = 4
 		provinces_to_highlight = {
-			#Armenia {shrug}
+			OR = {
+				area = erzurum_area
+				area = north_kurdistan_area
+				area = samtskhe_area
+				province_id = 419
+				province_id = 4302
+			}
+			NOT = {	country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			
+			erzurum_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_kurdistan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			samtskhe_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			419 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4302 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		
 		effect = {
-			
+			if = {
+				limit = {
+					ARM = {
+						is_subject_of = BYZ
+					}
+					erzurum_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					north_kurdistan_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					samtskhe_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					419 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					4302 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				add_power_projection_mission = { amount = 10 }
+			}
+			else = {
+				create_general_with_pips = { tradition = 80 add_siege = 1 }
+			}
+			add_country_modifier = {
+				name = byz_arm_diplo_mission
+				duration = 14600
+			}
 		}
 	}
 }
@@ -136,10 +192,13 @@ lot_byz_middle_east_1 = {
 				area = syrian_desert_area
 				area = palestine_area
 				area = trans_jordan_area
+				province_id = 321
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			mission_completed = lot_recover_anatolikon
+			owns_core_province = 321
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
 					area = aleppo_area
@@ -1402,13 +1461,17 @@ MEE_BYZ_economy_2 = {
 	}
 	has_country_shield = yes
 	
-	lot_BYZ_tarnished_state = { #will be base game localisation and tag, just this to remind to check triggers (add a trigger to disaster to be over).
+	BYZ_tarnished_state = {
 		icon = develop_provence
 		required_missions = { }
 		position = 13
 		provinces_to_highlight = {
 		}
 		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = ended_collapse_disaster_tt
+				has_global_flag = byz_collapsed_end
+			}
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = BYZ_developed_provinces_at_least_20_times
@@ -1780,11 +1843,11 @@ lot_byz_greece_3 = {
 			}
 			give_claims = { area = bulgaria_area }
 			give_claims = { area = silistria_area }
-			give_claims = { id = 1766 }
-			give_claims = { id = 3000 }
-			give_claims = { id = 3001 }
-			give_claims = { id = 4176 }
-			give_claims = { id = 4780 }
+			give_claims = { province_id = 1766 }
+			give_claims = { province_id = 3000 }
+			give_claims = { province_id = 3001 }
+			give_claims = { province_id = 4176 }
+			give_claims = { province_id = 4780 }
 			custom_tooltip = unlocks_bulgaria_vassal_oop
 		}
 	}
@@ -1826,6 +1889,11 @@ lot_balkan_tree_3_byz = {
 			OR = {
 				area = bulgaria_area
 				area = silistria_area
+				province_id = 1766
+				province_id = 3000
+				province_id = 3001
+				province_id = 4176
+				province_id = 4780
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -1837,7 +1905,22 @@ lot_balkan_tree_3_byz = {
 			silistria_area = {
 				country_or_non_sovereign_subject_holds = ROOT
 				type = all
-			}			
+			}
+			1766 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			3000 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			3001 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4176 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4780 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
 			hidden_effect = {
@@ -1848,24 +1931,79 @@ lot_balkan_tree_3_byz = {
 			}
 			add_accepted_culture = bulgarian
 			custom_tooltip = BYZ_bulgarian_no_slot_taken
-		
-			custom_tooltip = " "
-			
 			create_general_with_pips = { tradition = 50 add_shock = 1 }
-			
-			custom_tooltip = " "
-			
-			give_claims = { area = wallachia_area }
-			give_claims = { area = moldavia_area }
-			
-			custom_tooltip = " "
-			
 			4704 = {
 				add_permanent_province_modifier = {
 					name = BYZ_new_constantinople
 					duration = -1
 				}
 			}
+			if = {
+				limit = {
+					BUL = {
+						is_subject_of = BYZ
+					}
+					owns = 1766
+				}
+				1766 = {
+					remove_core = BUL
+					cede_province = BYZ
+					add_core = BYZ
+				}
+			}
+			if = {
+				limit = {
+					BUL = {
+						is_subject_of = BYZ
+					}
+					owns = 3000
+				}
+				3000 = {
+					remove_core = BUL
+					cede_province = BYZ
+					add_territorial_core = BYZ
+				}
+			}
+			if = {
+				limit = {
+					BUL = {
+						is_subject_of = BYZ
+					}
+					owns = 3001
+				}
+				3001 = {
+					remove_core = BUL
+					cede_province = BYZ
+					add_core = BYZ
+				}
+			}
+			if = {
+				limit = {
+					BUL = {
+						is_subject_of = BYZ
+					}
+					owns = 4176
+				}
+				4176 = {
+					remove_core = BUL
+					cede_province = BYZ
+					add_territorial_core = BYZ
+				}
+			}
+			if = {
+				limit = {
+					BUL = {
+						is_subject_of = BYZ
+					}
+					owns = 4780
+				}
+				4780 = {
+					remove_core = BUL
+					cede_province = BYZ
+					add_core = BYZ
+				}
+			}
+			give_claims = { region = balkan_region }
 		}
 	}
 	
@@ -1879,7 +2017,8 @@ lot_balkan_tree_3_byz = {
 				area = east_adriatic_coast_area
 				area = bosnia_area
 				area = slavonia_area
-				area = carinthia_area
+				area = rascia_area
+				area = serbia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -1889,34 +2028,25 @@ lot_balkan_tree_3_byz = {
 					area = croatia_area
 					area = east_adriatic_coast_area
 					area = bosnia_area
-					area = slavonia_area
-					area = carinthia_area
+					area = rascia_area
+					area = serbia_area
 				}
-				value = 15
+				value = 20
 			}
 		}
 		effect = {
-			custom_tooltip = BYZ_western_flank_1_2
-			hidden_effect = {
-				remove_country_modifier = BYZ_western_flank_1
-				add_country_modifier = {
-					name = BYZ_western_flank_2
-					duration = -1
-				}
+			add_country_modifier = {
+				name = BYZ_western_flank_2
+				duration = -1
 			}
 			
-			custom_tooltip = " "
-			
-			give_claims = { area = transdanubia_area }
-			give_claims = { area = alfold_area }
+			give_claims = { area = carinthia_area }
 			give_claims = { area = venetia_area }
 			give_claims = { area = po_valley_area }
 			give_claims = { area = emilia_romagna_area }
 			give_claims = { area = lombardy_area }
 			give_claims = { area = piedmont_area }
 			give_claims = { area = liguria_area }
-			
-			custom_tooltip = " "
 			
 			add_army_tradition_or_mil_power = { amount = 10 }
 		}
@@ -1963,10 +2093,15 @@ lot_byz_rome_amb_3 = {
 				area = lombardy_area
 				area = piedmont_area
 				area = liguria_area
+				area = carinthia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			carinthia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
 					area = venetia_area
@@ -2932,14 +3067,21 @@ lot_byz_rome_amb_4 = {
 		position = 4
 		provinces_to_highlight = {
 			area = albania_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			
+			albania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		
 		effect = {
-			
+			give_claims = { area = apulia_area }
+			give_claims = { area = calabria_area }
+			give_claims = { area = sicily_area }
+			give_claims = { area = western_sicily_area }
 		}
 	}
 	
@@ -3763,18 +3905,37 @@ lot_trade_conquest_5_byz = {
 		required_missions = { lot_byz_theodoro }
 		position = 4
 		provinces_to_highlight = {
-			area = crimea_area
-			province_id = 286
-			province_id = 287
-			province_id = 2414
+			OR = {
+				area = crimea_area
+				province_id = 286
+				province_id = 287
+				province_id = 2414
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			
+			crimea_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns_core_province = 286
+			owns_core_province = 287
+			owns_core_province = 2414
 		}
 		
 		effect = {
-			
+			286 = {
+				rename_capital = "Tanais"
+				add_base_production = 1
+				add_province_modifier = {
+					name = azov_trade_colony
+					duration = 9125
+				}
+			}
+			give_claims = { area = azov_area }
+			give_claims = { area = zaporizhia_area }
+			give_claims = { area = yedisan_area }
 		}
 	}
 	
@@ -3783,18 +3944,63 @@ lot_trade_conquest_5_byz = {
 		required_missions = { lot_byz_crim_azov }
 		position = 5
 		provinces_to_highlight = {
-			area = yedisan_area
-			area = zaporizhia_area
-			area = azov_area
-			area = crimea_area
+			OR = {
+				area = yedisan_area
+				area = zaporizhia_area
+				area = azov_area
+				area = crimea_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			
+			azov_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			zaporizhia_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			yedisan_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
 		}
 		
 		effect = {
-			
+			286 = {
+				change_province_name = "Tanais"
+				add_base_production = 2
+				extend_province_modifier = {
+					name = azov_trade_colony
+					duration = 9125
+				}
+			}
+			astrakhan_area = {
+				add_claim = ROOT
+			}
+			lower_don_area = {
+				add_claim = ROOT
+			}
+			if = {
+				limit = {
+					exists = WAL
+					WAL = { is_subject = no }
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					months = 300
+					target = WAL
+				}
+			}
+			else = {
+				give_claims = { area = moldavia_area }
+				give_claims = { area = wallachia_area }
+			}
 		}
 	}
 	
@@ -3803,16 +4009,79 @@ lot_trade_conquest_5_byz = {
 		required_missions = { lot_byz_pontic_steppe }
 		position = 6
 		provinces_to_highlight = {
-			area = wallachia_area
-			area = moldavia_area
+			OR = {
+				area = wallachia_area
+				area = moldavia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			
+			OR = {
+				AND = {
+					exists = WAL
+					WAL = {
+						is_subject_of = ROOT
+					}
+					wallachia_area = {
+						type = all
+						owned_by = WAL
+						is_core = WAL
+					}
+				}
+				AND = {
+					NOT = {
+						exists = WAL
+					}
+					moldavia_area = {
+						type = all
+						owned_by = ROOT
+						is_core = ROOT
+					}
+					wallachia_area = {
+						type = all
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+			}
 		}
 		
 		effect = {
-			
+			if = {
+				limit = {
+					WAL = {
+						is_subject_of = BYZ
+					}
+				}
+				add_country_modifier = {
+					name = "united_voivodes"
+					duration = 7300
+				}
+				wallachia_area = {
+					add_province_modifier = {
+						name = hun_wallachian_military_frontier
+						duration = 7300
+					}
+				}
+			}
+			else = {
+				moldavia_area = {
+					add_core = WAL
+					remove_core = BYZ
+				}
+				wallachia_area = {
+					add_core = WAL
+					remove_core = BYZ
+				}
+				create_vassal = WAL
+				WAL = {
+					add_government_reform = feudalism_reform
+					set_capital = 161
+				}
+			}
+			add_prestige_or_monarch_power = { amount = 25 }
+			create_march = WAL
 		}
 	}
 }
@@ -4150,7 +4419,7 @@ MEE_BYZ_economy_5 = {
 	}
 	has_country_shield = yes
 	
-	lot_BYZ_peloponesian_renaissance = { #will be basegame localisation, just remember to actually "fix" the triggers so that it can't fire on start.
+	BYZ_peloponesian_renaissance = {
 		icon = standardize_relazioni
 		required_missions = { }
 		position = 13
@@ -4162,7 +4431,7 @@ MEE_BYZ_economy_5 = {
 				has_institution = renaissance
 				development_in_provinces = {
 					area = morea_area
-					value = 30
+					value = 50
 				}
 			}
 		}
@@ -4191,7 +4460,7 @@ MEE_BYZ_economy_5 = {
 				second_limit = "
 					development_in_provinces = {
 						area = morea_area
-						value = 30
+						value = 50
 					}
 				"
 				second_effect = "

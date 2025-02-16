@@ -39,3 +39,10 @@ BYZ_reversal_of_downfall_lot = {
 	war_exhaustion  = -0.05
 	global_missionary_strength = 0.02
 }
+byz_arm_diplo_mission = {
+	legitimacy = 1
+	army_tradition = 1
+}
+azov_trade_colony = {
+	province_trade_power_value = 1
+}
