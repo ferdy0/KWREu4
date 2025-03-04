@@ -335,4 +335,8 @@
  lot_byz_illyria_desc:0 "The current state of Illyria is cause for concern. The despotate remains the last hold-out for house Synadenos. The former imperial house poses an existential threat to our claim and seems to be slowly building up their power base."
  lot_byz_wallachia_title:0 "The Wallachian March"
  lot_byz_wallachia_desc:0 "The principality of Wallachia lies across the mighty Danube river and would be impossible to control directly from $CAPITAL_CITY$. If we were, instead, to install a friendly regime in [161.GetCapitalName] it would provide a welcome buffer to defend our homeland."
- 
+ byzantine_collapsings.100.t:0 "Surviving the Twilight"
+ byzantine_collapsings.100.d:0 "After many long and hard years our administration has weathered the downfall of house Synadenos. A new face, your face, runs the empire now."
+ byzantine_collapsings.100.a:0 "Let the Purple Phoenix rise!"
+ army_in_deep_mourning:0 "Mourning Troops"
+ having_had_of_the_having_15:0 "Has had the §YTwilight of the Synadenos§! disaster for at least 10 years."

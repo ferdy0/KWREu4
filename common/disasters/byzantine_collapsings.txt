@@ -4,7 +4,7 @@
 byzantine_collapsings = {
 	potential = {
 		tag = BYZ
-		NOT = { has_country_flag = had_byz_collapse }
+		NOT = { has_global_flag = had_byz_collapse }
 		is_free_or_tributary_trigger = yes
 		government = monarchy
 	}
@@ -12,7 +12,6 @@ byzantine_collapsings = {
 
 	can_start = {
 		current_age = age_of_discovery
-		is_at_war = no
 		has_any_disaster = no
 		OR = {
 			has_regency = yes
@@ -86,11 +85,18 @@ byzantine_collapsings = {
 	
 	can_end = {
 		religious_unity = 0.95
-		stability = 1
+		stability = 2
 		heir_has_ruler_dynasty = yes
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		NOT = {
 			has_spawned_rebels = pretender_rebels
+		}
+		custom_trigger_tooltip = {
+			tooltip = having_had_of_the_having_15
+			had_global_flag = {
+				flag = had_byz_collapse
+				days = 3650
+			}
 		}
 	}
 	

@@ -46,3 +46,6 @@ byz_arm_diplo_mission = {
 azov_trade_colony = {
 	province_trade_power_value = 1
 }
+army_in_deep_mourning = {
+	land_morale = -0.2
+}

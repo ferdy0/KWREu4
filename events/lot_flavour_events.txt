@@ -111,6 +111,10 @@ country_event = {
 			HAH = {
 				add_treasury = 50
 			}
+			add_country_modifier = {
+				name = army_in_deep_mourning
+				duration = 1095
+			}
 		}
 	}
 	
