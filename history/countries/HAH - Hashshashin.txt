@@ -5,6 +5,7 @@ technology_group = muslim
 religion = shiite
 primary_culture = persian
 capital = 2215
+historical_friend = KHO
 add_accepted_culture = mazandarani
 mercantilism = 10
 1379.4.13 = {
