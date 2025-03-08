@@ -1,37 +1,42 @@
-
-vassal = {
+dependency = {
+	subject_type = "potestate_vassal"
 	first = HOL
 	second = UTR
-	start_date = 1444.11.11
+	start_date = 1084.5.8
 	end_date = 1836.1.1
 }
-vassal = {
+dependency = {
+	subject_type = "potestate_vassal"
 	first = HOL
 	second = GEL
-	start_date = 1444.11.11
+	start_date = 1141.10.28
 	end_date = 1836.1.1
 }
-vassal = {
+dependency = {
+	subject_type = "potestate_vassal"
 	first = HOL
 	second = LUX
-	start_date = 1444.11.11
+	start_date = 1344.11.11
 	end_date = 1836.1.1
 }
-vassal = {
+dependency = {
+	subject_type = "potestate_vassal"
 	first = HOL
 	second = KLE
-	start_date = 1444.11.11
+	start_date = 1351.7.12
 	end_date = 1836.1.1
 }
-vassal = {
+dependency = {
+	subject_type = "potestate_vassal"
 	first = HOL
 	second = Z0N
-	start_date = 1444.11.11
+	start_date = 1336.5.30
 	end_date = 1836.1.1
 }
-vassal = {
+dependency = {
+	subject_type = "potestate_vassal"
 	first = HOL
 	second = FRI
-	start_date = 1444.11.11
+	start_date = 1355.11.11
 	end_date = 1836.1.1
 }

@@ -131,6 +131,9 @@ monarchy = {
 				austrian_absolute_monarchy
 				merchant_aristocracy_reform
 				gothic_monarchy_reform
+				#kwr specials
+				potestate_freedom_mon
+				potestate_overlord_mon
 			}
 		}
 		hereditary_vs_nobility = {
@@ -668,6 +671,9 @@ republic = {
 				egyptian_government_reform
 				city_alliance_reform
 				turkoman_ottoman_institutions
+				#kwr specials
+				potestate_freedom_rep
+				potestate_overlord_rep
 			}
 		}
 		republican_virtues = {
@@ -1267,6 +1273,9 @@ theocracy = {
 				egyptian_government_reform
 				blood_theocracy_reform
 				turkoman_ottoman_institutions
+				#kwr specials
+				potestate_freedom_theo
+				potestate_overlord_theo
 			}
 		}
 		internal_vs_external_mission = {

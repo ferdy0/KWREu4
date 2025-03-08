@@ -1,0 +1,143 @@
+potestate_freedom_rep = {
+	icon = "dutch_republic"
+	allow_normal_conversion = no
+	potential = {
+		NOT = { has_country_flag = formed_netherlands_flag }
+		overlord = {
+			OR = {
+				has_reform = potestate_overlord_mon
+				has_reform = potestate_overlord_rep
+				has_reform = potestate_overlord_theo
+			}
+		}
+	}
+	fixed_rank = 1
+	lock_level_when_selected = yes
+	royal_marriage = yes
+	
+	modifiers = {
+		heavy_ship_power = 0.1
+		trade_efficiency = 0.1
+		reduced_liberty_desire_on_other_continent = 10
+		max_absolutism = 10
+		has_voc_indiamen = yes
+		allowed_voc_indiamen_fraction = 0.2
+	}
+
+	removed_effect = {
+		if = {
+			# Monarchs seize power
+			limit = { government = monarchy }
+			country_event = { id = dutch_republic.33 }
+		}
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		has_dutch_election = yes
+		locked_government_type = yes
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Res Publica"
+				has_dlc = "Winds of Change"
+			}
+		}
+		states_general_mechanic = {
+			statists = {
+				naval_forcelimit_modifier = 0.10
+				global_trade_power = 0.05
+				republican_tradition = 1
+			}
+
+			orangists = {
+				land_forcelimit_modifier = 0.25
+				stability_cost_modifier = -0.10
+				republican_tradition = -1
+			}
+		}
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	duration = 4
+}
+
+potestate_overlord_rep = {
+	icon = "dutch_republic"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_country_flag = formed_netherlands_flag }
+		OR = {
+			primary_culture = dutch
+			primary_culture = frisian
+			primary_culture = flemish
+		}
+	}
+	lock_level_when_selected = yes
+	royal_marriage = yes
+	
+	modifiers = {
+		heavy_ship_power = 0.1
+		trade_efficiency = 0.1
+		reduced_liberty_desire_on_other_continent = 10
+		max_absolutism = 10
+		has_voc_indiamen = yes
+		allowed_voc_indiamen_fraction = 0.2
+		diplomats = 1
+	}
+
+	removed_effect = {
+		if = {
+			# Monarchs seize power
+			limit = { government = monarchy }
+			country_event = { id = dutch_republic.33 }
+		}
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		has_dutch_election = yes
+		locked_government_type = yes
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Res Publica"
+				has_dlc = "Winds of Change"
+			}
+		}
+		states_general_mechanic = {
+			statists = {
+				naval_forcelimit_modifier = 0.10
+				global_trade_power = 0.05
+				republican_tradition = 1
+			}
+
+			orangists = {
+				land_forcelimit_modifier = 0.25
+				stability_cost_modifier = -0.10
+				republican_tradition = -1
+			}
+		}
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	duration = 4
+}

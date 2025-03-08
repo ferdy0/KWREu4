@@ -1,0 +1,74 @@
+potestate_vassal = {
+	copy_from = daimyo_vassal
+	count = vassal
+	sprite = GFX_icon_appanage
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_appanage
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_appanage
+	
+	# Properties:
+	has_power_projection = yes
+	takes_diplo_slot = no
+	gets_help_with_rebels = no
+	separatists_become_subjects = yes
+	allows_taking_land_without_independence = yes
+	can_use_claims = yes
+	forms_trade_companies = no
+	can_concentrate_development = no
+	overlord_protects_external = yes
+	can_be_annexed = no
+
+	trust_on_start = 5
+	
+	base_liberty_desire = 5.0
+	military_focus = 1.2
+
+	relative_power_class = 1
+	should_quit_wars_on_activation = no
+	
+	can_fight = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_rival = {
+		independent_nations = yes
+		same_overlord = potestate_vassal
+		other_overlord = all
+	}
+	can_ally = {
+		independent_nations = yes
+		same_overlord = potestate_vassal
+		other_overlord = all
+	}
+	can_marry = {
+		independent_nations = yes
+		same_overlord = potestate_vassal
+		other_overlord = all
+	}
+	
+	# Subject Interactions
+	#(disable)
+	scutage = no
+	grant_core_claim = yes
+	grant_province = yes
+	place_relative_on_throne = no
+	enforce_religion = no
+	enforce_culture = no
+	seize_territory = no
+	#(enable)
+	force_seppuku = no
+	contribute_to_capital = yes
+	conscript_general = yes
+	force_isolation = no
+	return_land = yes
+	
+	# Modifiers
+	
+	modifier_overlord = clear #We don't want to duplicate the ones inherited from daimyo_vassal
+	modifier_subject = clear #Ditto
+	modifier_subject = {
+		modifier = subject_nation
+	}
+	modifier_overlord = {
+		modifier = daimyo_subject
+	}
+}

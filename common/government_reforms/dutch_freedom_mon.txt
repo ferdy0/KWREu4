@@ -1,0 +1,54 @@
+potestate_freedom_mon = {
+	icon = "ballot_box"
+	allow_normal_conversion = no
+	potential = {
+		NOT = { has_country_flag = formed_netherlands_flag }
+		overlord = {
+			OR = {
+				has_reform = potestate_overlord_mon
+				has_reform = potestate_overlord_rep
+				has_reform = potestate_overlord_theo
+			}
+		}
+	}
+	fixed_rank = 1
+	lock_level_when_selected = yes
+	
+	modifiers = {
+		land_morale = 0.1
+		infantry_power = 0.1
+		has_voc_indiamen = yes
+		allowed_voc_indiamen_fraction = 0.2
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+potestate_overlord_mon = {
+	icon = "dutch_republic"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_country_flag = formed_netherlands_flag }
+		OR = {
+			primary_culture = dutch
+			primary_culture = frisian
+			primary_culture = flemish
+		}
+	}
+	maintain_dynasty = yes
+	lock_level_when_selected = yes
+
+	modifiers = {
+		heavy_ship_power = 0.1
+		trade_efficiency = 0.1
+		reduced_liberty_desire_on_other_continent = 10
+		has_voc_indiamen = yes
+		allowed_voc_indiamen_fraction = 0.2
+		diplomats = 1
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}

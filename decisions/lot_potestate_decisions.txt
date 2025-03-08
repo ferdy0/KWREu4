@@ -1,0 +1,136 @@
+country_decisions = {
+
+	integrate_brabant_pot = {
+		major = yes
+		color = { 243 108 33 }
+		
+		potential = {
+			OR = {
+				has_reform = potestate_overlord_mon
+				has_reform = potestate_overlord_rep
+				has_reform = potestate_overlord_theo
+			}
+			NOT = { has_country_flag = formed_netherlands_flag }
+			NOT = { has_global_flag = integrated_brb_to_pot }
+		}
+		
+		allow = {
+			OR = {
+				AND = {
+					exists = BRB
+					BRB = {
+						is_subject_of = ROOT
+					}
+				}
+				AND = {
+					NOT = {
+						exists = BRB
+					}
+					any_owned_province = {
+						is_core = BRB
+					}
+				}
+			}
+		}
+		
+		effect = {
+			ROOT = {
+				create_subject = {
+					subject_type = potestate_vassal
+					subject = BRB
+				}
+			}
+			BRB = {
+				if = {
+					limit = {
+						government = republic
+					}
+					add_government_reform = potestate_freedom_rep
+				}
+				else_if = {
+					limit = {
+						government = theocracy
+					}
+					add_government_reform = potestate_freedom_theo
+				}
+				else = {
+					add_government_reform = potestate_freedom_mon
+				}
+			}
+			hidden_effect = {
+				change_variable = {
+				which = total_potestate_members
+				value = 1
+				}
+				set_global_flag = integrated_brb_to_pot
+			}
+		}
+	}
+	
+	integrate_flanders_pot = {
+		major = yes
+		color = { 243 108 33 }
+		
+		potential = {
+			OR = {
+				has_reform = potestate_overlord_mon
+				has_reform = potestate_overlord_rep
+				has_reform = potestate_overlord_theo
+			}
+			NOT = { has_country_flag = formed_netherlands_flag }
+			NOT = { has_global_flag = integrated_fla_to_pot }
+		}
+		
+		allow = {
+			OR = {
+				AND = {
+					exists = FLA
+					FLA = {
+						is_subject_of = ROOT
+					}
+				}
+				AND = {
+					NOT = {
+						exists = FLA
+					}
+					any_owned_province = {
+						is_core = FLA
+					}
+				}
+			}
+		}
+		
+		effect = {
+			ROOT = {
+				create_subject = {
+					subject_type = potestate_vassal
+					subject = FLA
+				}
+			}
+			FLA = {
+				if = {
+					limit = {
+						government = republic
+					}
+					add_government_reform = potestate_freedom_rep
+				}
+				else_if = {
+					limit = {
+						government = theocracy
+					}
+					add_government_reform = potestate_freedom_theo
+				}
+				else = {
+					add_government_reform = potestate_freedom_mon
+				}
+			}
+			hidden_effect = {
+				change_variable = {
+				which = total_potestate_members
+				value = 1
+				}
+				set_global_flag = integrated_fla_to_pot
+			}
+		}
+	}
+}

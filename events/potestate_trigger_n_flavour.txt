@@ -1,0 +1,1518 @@
+########################################
+# Potestate Events                     #
+########################################
+
+namespace = potestate_flavour
+
+country_event = { #Death of the Potestate
+	id = potestate_flavour.1
+	title = potestate_flavour.1.t
+	desc = {
+		trigger = {
+			NOT = { has_reform = potestate_freedom_rep }
+		}
+		desc = potestate_flavour.1.d.1
+	}
+	desc = {
+		trigger = {
+			has_reform = potestate_freedom_rep
+		}
+		desc = potestate_flavour.1.d.2
+	}
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = potestate_overlord_mon
+			has_reform = potestate_overlord_rep
+			has_reform = potestate_overlord_theo
+		}
+		NOT = {
+			has_ruler_flag = the_elected_potestate
+			has_global_flag = election_in_progress_just_wait
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = potestate_flavour.1.a
+		hidden_effect = {
+			country_event = {
+				id = potestate_flavour.2
+				days = 21
+			}
+			set_global_flag = election_in_progress_just_wait
+			every_known_country = {
+				limit = {
+					is_subject_of_type = potestate_vassal
+				}
+				country_event = {
+					id = potestate_flavour.2
+					days = 21
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LUX, UTR, and Z0N to be elected. Add likelihood of votes for opinion, development, general wealth, and disable voting on non-dutch/frisian/flemish nations.)
+	id = potestate_flavour.2
+	title = potestate_flavour.2.t
+	desc = potestate_flavour.2.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #HOL
+		name = potestate_flavour.2.a
+		trigger = {
+			HOL = {
+				OR = {
+					has_reform = potestate_overlord_mon
+					has_reform = potestate_overlord_rep
+					has_reform = potestate_overlord_theo
+					has_reform = potestate_freedom_mon
+					has_reform = potestate_freedom_rep
+					has_reform = potestate_freedom_theo
+				}
+			}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1.5
+				HOL = {
+					OR = {
+						has_reform = potestate_overlord_mon
+						has_reform = potestate_overlord_rep
+						has_reform = potestate_overlord_theo
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				HOL = {
+					NOT = {
+						ai = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				tag = HOL
+			}
+			modifier = {
+				factor = 1.1
+				HOL = {
+					has_matching_religion = ROOT
+				}
+			}
+			modifier = {
+				factor = 0
+				HOL = {
+					NOT = {
+						OR = {
+							primary_culture = dutch
+							primary_culture = frisian
+							primary_culture = flemish
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.1
+				HOL = {
+					total_development = 50
+				}
+			}
+			modifier = {
+				factor = 1.1
+				alliance_with = HOL
+			}
+			modifier = {
+				factor = 1.1
+				HOL = {
+					monthly_income = ROOT
+				}
+			}
+			modifier = {
+				factor = 1.1
+				has_opinion = {
+					who = HOL
+					value = 100
+				}
+			}
+			modifier = {
+				factor = 0.5
+				HOL = {
+					is_female = yes
+				}
+			}
+		}
+		hidden_effect = {
+			change_variable = {
+				which = voted_holland_lord
+				value = 1
+			}
+			change_variable = {
+				which = potestate_voting_check
+				value = 1
+			}
+		}
+	}
+	
+	option = { #FRI
+		name = potestate_flavour.2.b
+		trigger = {
+			FRI = {
+				OR = {
+					has_reform = potestate_overlord_mon
+					has_reform = potestate_overlord_rep
+					has_reform = potestate_overlord_theo
+					has_reform = potestate_freedom_mon
+					has_reform = potestate_freedom_rep
+					has_reform = potestate_freedom_theo
+				}
+			}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1.5
+				FRI = {
+					OR = {
+						has_reform = potestate_overlord_mon
+						has_reform = potestate_overlord_rep
+						has_reform = potestate_overlord_theo
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				FRI = {
+					NOT = {
+						ai = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				tag = FRI
+			}
+			modifier = {
+				factor = 1.1
+				FRI = {
+					has_matching_religion = ROOT
+				}
+			}
+			modifier = {
+				factor = 0
+				FRI = {
+					NOT = {
+						OR = {
+							primary_culture = dutch
+							primary_culture = frisian
+							primary_culture = flemish
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.1
+				FRI = {
+					total_development = 50
+				}
+			}
+			modifier = {
+				factor = 1.1
+				alliance_with = FRI
+			}
+			modifier = {
+				factor = 1.1
+				FRI = {
+					monthly_income = ROOT
+				}
+			}
+			modifier = {
+				factor = 1.1
+				has_opinion = {
+					who = FRI
+					value = 100
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FRI = {
+					is_female = yes
+				}
+			}
+		}
+		hidden_effect = {
+			change_variable = {
+				which = voted_friesland_lord
+				value = 1
+			}
+			change_variable = {
+				which = potestate_voting_check
+				value = 1
+			}
+		}
+	}
+	
+	option = { #UTR
+		name = potestate_flavour.2.c
+		trigger = {
+			UTR = {
+				OR = {
+					has_reform = potestate_overlord_mon
+					has_reform = potestate_overlord_rep
+					has_reform = potestate_overlord_theo
+					has_reform = potestate_freedom_mon
+					has_reform = potestate_freedom_rep
+					has_reform = potestate_freedom_theo
+				}
+			}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1.5
+				UTR = {
+					OR = {
+						has_reform = potestate_overlord_mon
+						has_reform = potestate_overlord_rep
+						has_reform = potestate_overlord_theo
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				UTR = {
+					NOT = {
+						ai = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				tag = UTR
+			}
+			modifier = {
+				factor = 1.1
+				UTR = {
+					has_matching_religion = ROOT
+				}
+			}
+			modifier = {
+				factor = 0
+				UTR = {
+					NOT = {
+						OR = {
+							primary_culture = dutch
+							primary_culture = frisian
+							primary_culture = flemish
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.1
+				UTR = {
+					total_development = 50
+				}
+			}
+			modifier = {
+				factor = 1.1
+				alliance_with = UTR
+			}
+			modifier = {
+				factor = 1.1
+				UTR = {
+					monthly_income = ROOT
+				}
+			}
+			modifier = {
+				factor = 1.1
+				has_opinion = {
+					who = UTR
+					value = 100
+				}
+			}
+			modifier = {
+				factor = 0.5
+				UTR = {
+					is_female = yes
+				}
+			}
+		}
+		hidden_effect = {
+			change_variable = {
+				which = voted_utrecht_lord
+				value = 1
+			}
+			change_variable = {
+				which = potestate_voting_check
+				value = 1
+			}
+		}
+	}
+	
+	option = { #GEL
+		name = potestate_flavour.2.e
+		trigger = {
+			GEL = {
+				OR = {
+					has_reform = potestate_overlord_mon
+					has_reform = potestate_overlord_rep
+					has_reform = potestate_overlord_theo
+					has_reform = potestate_freedom_mon
+					has_reform = potestate_freedom_rep
+					has_reform = potestate_freedom_theo
+				}
+			}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1.5
+				GEL = {
+					OR = {
+						has_reform = potestate_overlord_mon
+						has_reform = potestate_overlord_rep
+						has_reform = potestate_overlord_theo
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				GEL = {
+					NOT = {
+						ai = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				tag = GEL
+			}
+			modifier = {
+				factor = 1.1
+				GEL = {
+					has_matching_religion = ROOT
+				}
+			}
+			modifier = {
+				factor = 0
+				GEL = {
+					NOT = {
+						OR = {
+							primary_culture = dutch
+							primary_culture = frisian
+							primary_culture = flemish
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.1
+				GEL = {
+					total_development = 50
+				}
+			}
+			modifier = {
+				factor = 1.1
+				alliance_with = GEL
+			}
+			modifier = {
+				factor = 1.1
+				GEL = {
+					monthly_income = ROOT
+				}
+			}
+			modifier = {
+				factor = 1.1
+				has_opinion = {
+					who = GEL
+					value = 100
+				}
+			}
+			modifier = {
+				factor = 0.5
+				GEL = {
+					is_female = yes
+				}
+			}
+		}
+		hidden_effect = {
+			change_variable = {
+				which = voted_gelre_lord
+				value = 1
+			}
+			change_variable = {
+				which = potestate_voting_check
+				value = 1
+			}
+		}
+	}
+	
+	option = { #KLE
+		name = potestate_flavour.2.f
+		trigger = {
+			KLE = {
+				OR = {
+					has_reform = potestate_overlord_mon
+					has_reform = potestate_overlord_rep
+					has_reform = potestate_overlord_theo
+					has_reform = potestate_freedom_mon
+					has_reform = potestate_freedom_rep
+					has_reform = potestate_freedom_theo
+				}
+			}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1.5
+				KLE = {
+					OR = {
+						has_reform = potestate_overlord_mon
+						has_reform = potestate_overlord_rep
+						has_reform = potestate_overlord_theo
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				KLE = {
+					NOT = {
+						ai = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				tag = KLE
+			}
+			modifier = {
+				factor = 1.1
+				KLE = {
+					has_matching_religion = ROOT
+				}
+			}
+			modifier = {
+				factor = 0
+				KLE = {
+					NOT = {
+						OR = {
+							primary_culture = dutch
+							primary_culture = frisian
+							primary_culture = flemish
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.1
+				KLE = {
+					total_development = 50
+				}
+			}
+			modifier = {
+				factor = 1.1
+				alliance_with = KLE
+			}
+			modifier = {
+				factor = 1.1
+				KLE = {
+					monthly_income = ROOT
+				}
+			}
+			modifier = {
+				factor = 1.1
+				has_opinion = {
+					who = KLE
+					value = 100
+				}
+			}
+			modifier = {
+				factor = 0.5
+				KLE = {
+					is_female = yes
+				}
+			}
+		}
+		hidden_effect = {
+			change_variable = {
+				which = voted_kleef_lord
+				value = 1
+			}
+			change_variable = {
+				which = potestate_voting_check
+				value = 1
+			}
+		}
+	}
+	
+	option = { #Z0N
+		name = potestate_flavour.2.g
+		trigger = {
+			Z0N = {
+				OR = {
+					has_reform = potestate_overlord_mon
+					has_reform = potestate_overlord_rep
+					has_reform = potestate_overlord_theo
+					has_reform = potestate_freedom_mon
+					has_reform = potestate_freedom_rep
+					has_reform = potestate_freedom_theo
+				}
+			}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1.5
+				Z0N = {
+					OR = {
+						has_reform = potestate_overlord_mon
+						has_reform = potestate_overlord_rep
+						has_reform = potestate_overlord_theo
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				Z0N = {
+					NOT = {
+						ai = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				tag = Z0N
+			}
+			modifier = {
+				factor = 1.1
+				Z0N = {
+					has_matching_religion = ROOT
+				}
+			}
+			modifier = {
+				factor = 0
+				Z0N = {
+					NOT = {
+						OR = {
+							primary_culture = dutch
+							primary_culture = frisian
+							primary_culture = flemish
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.1
+				Z0N = {
+					total_development = 50
+				}
+			}
+			modifier = {
+				factor = 1.1
+				alliance_with = Z0N
+			}
+			modifier = {
+				factor = 1.1
+				Z0N = {
+					monthly_income = ROOT
+				}
+			}
+			modifier = {
+				factor = 1.1
+				has_opinion = {
+					who = Z0N
+					value = 100
+				}
+			}
+			modifier = {
+				factor = 0.5
+				Z0N = {
+					is_female = yes
+				}
+			}
+		}
+		hidden_effect = {
+			change_variable = {
+				which = voted_gulik_lord
+				value = 1
+			}
+			change_variable = {
+				which = potestate_voting_check
+				value = 1
+			}
+		}
+	}
+	
+	option = { #LUX
+		name = potestate_flavour.2.h
+		trigger = {
+			LUX = {
+				OR = {
+					has_reform = potestate_overlord_mon
+					has_reform = potestate_overlord_rep
+					has_reform = potestate_overlord_theo
+					has_reform = potestate_freedom_mon
+					has_reform = potestate_freedom_rep
+					has_reform = potestate_freedom_theo
+				}
+			}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1.5
+				LUX = {
+					OR = {
+						has_reform = potestate_overlord_mon
+						has_reform = potestate_overlord_rep
+						has_reform = potestate_overlord_theo
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				LUX = {
+					NOT = {
+						ai = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				tag = LUX
+			}
+			modifier = {
+				factor = 1.1
+				LUX = {
+					has_matching_religion = ROOT
+				}
+			}
+			modifier = {
+				factor = 0
+				LUX = {
+					NOT = {
+						OR = {
+							primary_culture = dutch
+							primary_culture = frisian
+							primary_culture = flemish
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.1
+				LUX = {
+					total_development = 50
+				}
+			}
+			modifier = {
+				factor = 1.1
+				alliance_with = LUX
+			}
+			modifier = {
+				factor = 1.1
+				LUX = {
+					monthly_income = ROOT
+				}
+			}
+			modifier = {
+				factor = 1.1
+				has_opinion = {
+					who = LUX
+					value = 100
+				}
+			}
+			modifier = {
+				factor = 0.5
+				LUX = {
+					is_female = yes
+				}
+			}
+		}
+		hidden_effect = {
+			change_variable = {
+				which = voted_luxemburg_lord
+				value = 1
+			}
+			change_variable = {
+				which = potestate_voting_check
+				value = 1
+			}
+		}
+	}
+	
+	option = { #BRB
+		name = potestate_flavour.2.i
+		trigger = {
+			BRB = {
+				OR = {
+					has_reform = potestate_overlord_mon
+					has_reform = potestate_overlord_rep
+					has_reform = potestate_overlord_theo
+					has_reform = potestate_freedom_mon
+					has_reform = potestate_freedom_rep
+					has_reform = potestate_freedom_theo
+				}
+			}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1.5
+				BRB = {
+					OR = {
+						has_reform = potestate_overlord_mon
+						has_reform = potestate_overlord_rep
+						has_reform = potestate_overlord_theo
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				BRB = {
+					NOT = {
+						ai = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				tag = BRB
+			}
+			modifier = {
+				factor = 1.1
+				BRB = {
+					has_matching_religion = ROOT
+				}
+			}
+			modifier = {
+				factor = 0
+				BRB = {
+					NOT = {
+						OR = {
+							primary_culture = dutch
+							primary_culture = frisian
+							primary_culture = flemish
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.1
+				BRB = {
+					total_development = 50
+				}
+			}
+			modifier = {
+				factor = 1.1
+				alliance_with = BRB
+			}
+			modifier = {
+				factor = 1.1
+				BRB = {
+					monthly_income = ROOT
+				}
+			}
+			modifier = {
+				factor = 1.1
+				has_opinion = {
+					who = BRB
+					value = 100
+				}
+			}
+			modifier = {
+				factor = 0.5
+				BRB = {
+					is_female = yes
+				}
+			}
+		}
+		hidden_effect = {
+			change_variable = {
+				which = voted_brabant_lord
+				value = 1
+			}
+			change_variable = {
+				which = potestate_voting_check
+				value = 1
+			}
+		}
+	}
+	
+	option = { #FLA
+		name = potestate_flavour.2.j
+		trigger = {
+			FLA = {
+				OR = {
+					has_reform = potestate_overlord_mon
+					has_reform = potestate_overlord_rep
+					has_reform = potestate_overlord_theo
+					has_reform = potestate_freedom_mon
+					has_reform = potestate_freedom_rep
+					has_reform = potestate_freedom_theo
+				}
+			}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1.5
+				FLA = {
+					OR = {
+						has_reform = potestate_overlord_mon
+						has_reform = potestate_overlord_rep
+						has_reform = potestate_overlord_theo
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				FLA = {
+					NOT = {
+						ai = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				tag = FLA
+			}
+			modifier = {
+				factor = 1.1
+				FLA = {
+					has_matching_religion = ROOT
+				}
+			}
+			modifier = {
+				factor = 0
+				FLA = {
+					NOT = {
+						OR = {
+							primary_culture = dutch
+							primary_culture = frisian
+							primary_culture = flemish
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.1
+				FLA = {
+					total_development = 50
+				}
+			}
+			modifier = {
+				factor = 1.1
+				alliance_with = FLA
+			}
+			modifier = {
+				factor = 1.1
+				FLA = {
+					monthly_income = ROOT
+				}
+			}
+			modifier = {
+				factor = 1.1
+				has_opinion = {
+					who = FLA
+					value = 100
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FLA = {
+					is_female = yes
+				}
+			}
+		}
+		hidden_effect = {
+			change_variable = {
+				which = voted_vlaanderen_lord
+				value = 1
+			}
+			change_variable = {
+				which = potestate_voting_check
+				value = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = potestate_flavour.3
+	title = potestate_flavour.3.t
+	desc = potestate_flavour.3.d
+	
+	#hidden = yes
+	
+	trigger = {
+		is_variable_equal = {
+			which = potestate_voting_check
+			which = total_potestate_members
+		}
+		OR = {
+			has_reform = potestate_overlord_mon
+			has_reform = potestate_overlord_rep
+			has_reform = potestate_overlord_theo
+		}
+	}
+	
+	after = {
+		set_variable = {
+			which = potestate_voting_check
+			value = 0
+		}
+	}
+	
+	option = {
+		name = potestate_flavour.3.a
+		if = { #hol
+			limit = {
+				check_variable = {
+					which = voted_holland_lord
+					which = voted_friesland_lord
+				}
+				check_variable = {
+					which = voted_holland_lord
+					which = voted_utrecht_lord
+				}
+				check_variable = {
+					which = voted_holland_lord
+					which = voted_gelre_lord
+				}
+				check_variable = {
+					which = voted_holland_lord
+					which = voted_kleef_lord
+				}
+				check_variable = {
+					which = voted_holland_lord
+					which = voted_gulik_lord
+				}
+				check_variable = {
+					which = voted_holland_lord
+					which = voted_luxemburg_lord
+				}
+				check_variable = {
+					which = voted_holland_lord
+					which = voted_brabant_lord
+				}
+				check_variable = {
+					which = voted_holland_lord
+					which = voted_vlaanderen_lord
+				}
+			}
+			HOL = {
+				country_event = {
+					id = potestate_flavour.4
+					days = 5
+				}
+			}
+		}
+		else_if = { #z0n
+			limit = {
+				check_variable = {
+					which = voted_gulik_lord
+					which = voted_friesland_lord
+				}
+				check_variable = {
+					which = voted_gulik_lord
+					which = voted_utrecht_lord
+				}
+				check_variable = {
+					which = voted_gulik_lord
+					which = voted_gelre_lord
+				}
+				check_variable = {
+					which = voted_gulik_lord
+					which = voted_kleef_lord
+				}
+				check_variable = {
+					which = voted_gulik_lord
+					which = voted_holland_lord
+				}
+				check_variable = {
+					which = voted_gulik_lord
+					which = voted_luxemburg_lord
+				}
+				check_variable = {
+					which = voted_gulik_lord
+					which = voted_brabant_lord
+				}
+				check_variable = {
+					which = voted_gulik_lord
+					which = voted_vlaanderen_lord
+				}
+			}
+			Z0N = {
+				country_event = {
+					id = potestate_flavour.4
+					days = 5
+				}
+			}
+		}
+		else_if = { #lux
+			limit = {
+				check_variable = {
+					which = voted_luxemburg_lord
+					which = voted_friesland_lord
+				}
+				check_variable = {
+					which = voted_luxemburg_lord
+					which = voted_utrecht_lord
+				}
+				check_variable = {
+					which = voted_luxemburg_lord
+					which = voted_gelre_lord
+				}
+				check_variable = {
+					which = voted_luxemburg_lord
+					which = voted_kleef_lord
+				}
+				check_variable = {
+					which = voted_luxemburg_lord
+					which = voted_gulik_lord
+				}
+				check_variable = {
+					which = voted_luxemburg_lord
+					which = voted_holland_lord
+				}
+				check_variable = {
+					which = voted_luxemburg_lord
+					which = voted_brabant_lord
+				}
+				check_variable = {
+					which = voted_luxemburg_lord
+					which = voted_vlaanderen_lord
+				}
+			}
+			LUX = {
+				country_event = {
+					id = potestate_flavour.4
+					days = 5
+				}
+			}
+		}
+		else_if = { #utr
+			limit = {
+				check_variable = {
+					which = voted_utrecht_lord
+					which = voted_friesland_lord
+				}
+				check_variable = {
+					which = voted_utrecht_lord
+					which = voted_holland_lord
+				}
+				check_variable = {
+					which = voted_utrecht_lord
+					which = voted_gelre_lord
+				}
+				check_variable = {
+					which = voted_utrecht_lord
+					which = voted_kleef_lord
+				}
+				check_variable = {
+					which = voted_utrecht_lord
+					which = voted_gulik_lord
+				}
+				check_variable = {
+					which = voted_utrecht_lord
+					which = voted_luxemburg_lord
+				}
+				check_variable = {
+					which = voted_utrecht_lord
+					which = voted_brabant_lord
+				}
+				check_variable = {
+					which = voted_utrecht_lord
+					which = voted_vlaanderen_lord
+				}
+			}
+			UTR = {
+				country_event = {
+					id = potestate_flavour.4
+					days = 5
+				}
+			}
+		}
+		else_if = { #fri
+			limit = {
+				check_variable = {
+					which = voted_friesland_lord
+					which = voted_holland_lord
+				}
+				check_variable = {
+					which = voted_friesland_lord
+					which = voted_utrecht_lord
+				}
+				check_variable = {
+					which = voted_friesland_lord
+					which = voted_gelre_lord
+				}
+				check_variable = {
+					which = voted_friesland_lord
+					which = voted_kleef_lord
+				}
+				check_variable = {
+					which = voted_friesland_lord
+					which = voted_gulik_lord
+				}
+				check_variable = {
+					which = voted_friesland_lord
+					which = voted_luxemburg_lord
+				}
+				check_variable = {
+					which = voted_friesland_lord
+					which = voted_brabant_lord
+				}
+				check_variable = {
+					which = voted_friesland_lord
+					which = voted_vlaanderen_lord
+				}
+			}
+			FRI = {
+				country_event = {
+					id = potestate_flavour.4
+					days = 5
+				}
+			}
+		}
+		else_if = { #fla
+			limit = {
+				check_variable = {
+					which = voted_vlaanderen_lord
+					which = voted_friesland_lord
+				}
+				check_variable = {
+					which = voted_vlaanderen_lord
+					which = voted_utrecht_lord
+				}
+				check_variable = {
+					which = voted_vlaanderen_lord
+					which = voted_gelre_lord
+				}
+				check_variable = {
+					which = voted_vlaanderen_lord
+					which = voted_kleef_lord
+				}
+				check_variable = {
+					which = voted_vlaanderen_lord
+					which = voted_gulik_lord
+				}
+				check_variable = {
+					which = voted_vlaanderen_lord
+					which = voted_luxemburg_lord
+				}
+				check_variable = {
+					which = voted_vlaanderen_lord
+					which = voted_brabant_lord
+				}
+				check_variable = {
+					which = voted_vlaanderen_lord
+					which = voted_holland_lord
+				}
+			}
+			FLA = {
+				country_event = {
+					id = potestate_flavour.4
+					days = 5
+				}
+			}
+		}
+		else_if = { #brb
+			limit = {
+				check_variable = {
+					which = voted_brabant_lord
+					which = voted_friesland_lord
+				}
+				check_variable = {
+					which = voted_brabant_lord
+					which = voted_utrecht_lord
+				}
+				check_variable = {
+					which = voted_brabant_lord
+					which = voted_gelre_lord
+				}
+				check_variable = {
+					which = voted_brabant_lord
+					which = voted_kleef_lord
+				}
+				check_variable = {
+					which = voted_brabant_lord
+					which = voted_gulik_lord
+				}
+				check_variable = {
+					which = voted_brabant_lord
+					which = voted_luxemburg_lord
+				}
+				check_variable = {
+					which = voted_brabant_lord
+					which = voted_holland_lord
+				}
+				check_variable = {
+					which = voted_brabant_lord
+					which = voted_vlaanderen_lord
+				}
+			}
+			BRB = {
+				country_event = {
+					id = potestate_flavour.4
+					days = 5
+				}
+			}
+		}
+		else_if = { #gel
+			limit = {
+				check_variable = {
+					which = voted_gelre_lord
+					which = voted_friesland_lord
+				}
+				check_variable = {
+					which = voted_gelre_lord
+					which = voted_utrecht_lord
+				}
+				check_variable = {
+					which = voted_gelre_lord
+					which = voted_holland_lord
+				}
+				check_variable = {
+					which = voted_gelre_lord
+					which = voted_kleef_lord
+				}
+				check_variable = {
+					which = voted_gelre_lord
+					which = voted_gulik_lord
+				}
+				check_variable = {
+					which = voted_gelre_lord
+					which = voted_luxemburg_lord
+				}
+				check_variable = {
+					which = voted_gelre_lord
+					which = voted_brabant_lord
+				}
+				check_variable = {
+					which = voted_gelre_lord
+					which = voted_vlaanderen_lord
+				}
+			}
+			GEL = {
+				country_event = {
+					id = potestate_flavour.4
+					days = 5
+				}
+			}
+		}
+		else_if = { #kle
+			limit = {
+				check_variable = {
+					which = voted_kleef_lord
+					which = voted_friesland_lord
+				}
+				check_variable = {
+					which = voted_kleef_lord
+					which = voted_utrecht_lord
+				}
+				check_variable = {
+					which = voted_kleef_lord
+					which = voted_gelre_lord
+				}
+				check_variable = {
+					which = voted_kleef_lord
+					which = voted_holland_lord
+				}
+				check_variable = {
+					which = voted_kleef_lord
+					which = voted_gulik_lord
+				}
+				check_variable = {
+					which = voted_kleef_lord
+					which = voted_luxemburg_lord
+				}
+				check_variable = {
+					which = voted_kleef_lord
+					which = voted_brabant_lord
+				}
+				check_variable = {
+					which = voted_kleef_lord
+					which = voted_vlaanderen_lord
+				}
+			}
+			HOL = {
+				country_event = {
+					id = potestate_flavour.4
+					days = 5
+				}
+			}
+		}
+		else = {
+			HOL = {
+				country_event = {
+					id = potestate_flavour.4
+					days = 5
+				}
+			}
+		}
+	}
+}
+
+# The following is from Japan to inspire how to assign the new Potestate and assign the Freedoms to their suzerainship.
+# One of the triggers should be a check for 'total votes cast' (don't forget to increase said variable when adding BRB and FLA to Potestate!)
+# Freedom with most votes gets the Potestate
+# Don't forget to assign a ruler_flag for the winning potestate so the potestate_flavour.1 event fires properly again!
+country_event = {
+	id = potestate_flavour.4
+	title = potestate_flavour.4.t
+	desc = {
+		trigger = {
+			OR = {
+				has_reform = potestate_overlord_mon
+				has_reform = potestate_overlord_rep
+				has_reform = potestate_overlord_theo
+			}
+		}
+		desc = potestate_flavour.4.d.1 #Congrats on a new cycle.
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				has_reform = potestate_overlord_mon
+				has_reform = potestate_overlord_rep
+				has_reform = potestate_overlord_theo
+			}
+		}
+		desc = potestate_flavour.4.d.2 #A new Freedom on stage.
+	}
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		#Set new potestate up (gov. form)
+		hidden_effect = {
+			set_ruler_flag = the_elected_potestate
+			save_event_target_as = new_potestate_raa
+			if = {
+				limit = {
+					has_reform = potestate_freedom_rep
+				}
+				grant_independence = yes
+				add_government_reform = potestate_overlord_rep
+			}
+			else_if = {
+				limit = {
+					has_reform = potestate_freedom_theo
+				}
+				grant_independence = yes
+				add_government_reform = potestate_overlord_theo
+			}
+			else = {
+				grant_independence = yes
+				add_government_reform = potestate_overlord_mon
+			}
+		}
+		#Handle freedom (vassal) transfer
+		hidden_effect = {
+			every_known_country = {
+				limit = {
+					is_subject_of_type = potestate_vassal
+					NOT = { is_subject_of = event_target:new_potestate_raa }
+				}
+				event_target:new_potestate_raa = {
+					create_subject = {
+						subject_type = potestate_vassal
+						subject = PREV
+					}
+				}
+			}
+		}
+		#Demote previous potestate to freedom (vassal)
+		hidden_effect = {
+			every_known_country = {
+				limit = {
+					OR = {
+						has_reform = potestate_overlord_mon
+						has_reform = potestate_overlord_rep
+						has_reform = potestate_overlord_theo
+					}
+					NOT = { has_ruler_flag = the_elected_potestate }
+				}
+				if = {
+					limit = {
+						has_reform = potestate_overlord_rep
+					}
+					add_government_reform = potestate_freedom_rep
+				}
+				else_if = {
+					limit = {
+						has_reform = potestate_overlord_theo
+					}
+					add_government_reform = potestate_freedom_theo
+				}
+				else = {
+					add_government_reform = potestate_freedom_mon
+				}
+				event_target:new_potestate_raa = {
+					create_subject = {
+						subject_type = potestate_vassal
+						subject = PREV
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = potestate_flavour.4.a
+		#hidden_effect = {
+			set_variable = {
+				which = voted_holland_lord
+				value = 0
+			}
+			set_variable = {
+				which = voted_friesland_lord
+				value = 0
+			}
+			set_variable = {
+				which = voted_utrecht_lord
+				value = 0
+			}
+			set_variable = {
+				which = voted_gelre_lord
+				value = 0
+			}
+			set_variable = {
+				which = voted_kleef_lord
+				value = 0
+			}
+			set_variable = {
+				which = voted_gulik_lord
+				value = 0
+			}
+			set_variable = {
+				which = voted_luxemburg_lord
+				value = 0
+			}
+			set_variable = {
+				which = voted_brabant_lord
+				value = 0
+			}
+			set_variable = {
+				which = voted_vlaanderen_lord
+				value = 0
+			}
+		#}
+		clr_global_flag = election_in_progress_just_wait
+	}
+}
