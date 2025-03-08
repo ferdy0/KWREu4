@@ -39,7 +39,8 @@ dependency = {
 	end_date = 1836.1.1
 }
 
-march = {
+dependency = {
+	subject_type="cultural_sphere_of_influence_subject"
 	first =	HAH
 	second = KHO
 	start_date = 1444.1.1

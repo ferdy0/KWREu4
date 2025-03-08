@@ -9,7 +9,7 @@ religious_school = ismaili_school
 add_accepted_culture = azerbaijani
 add_army_professionalism = 0.05
 1442.1.1= { #Appointed as governor of Sultaniyya, Qazvin, Rayy and Qom, but takes up tribute from Kashan, Qazvin, Sari, Isfahan, Natanz, Firuzkuh, Sultaniyya, Tarum, Azerbaijan as well.
-	religion = sunni
+	religion = shiite
 	religious_school = hanafi_school
 	add_piety = -0.5
 	monarch = {
@@ -20,7 +20,7 @@ add_army_professionalism = 0.05
 		dip = 2
 		mil = 4
 		culture = uzbehk
-		religion = sunni
+		religion = shiite
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = bold_fighter_personality
