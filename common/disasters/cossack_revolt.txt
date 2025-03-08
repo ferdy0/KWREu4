@@ -3,7 +3,7 @@ cossack_revolt_disaster = {
 	potential = {
 		normal_or_historical_nations = yes
 		is_year = 1550
-		NOT = { is_year = 1750 }
+		NOT = { is_year = 1700 }
 		NOT = { has_global_flag = cossack_revolt }
 		num_of_owned_provinces_with = {
 			value = 3
