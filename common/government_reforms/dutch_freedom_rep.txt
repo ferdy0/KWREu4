@@ -1,3 +1,49 @@
+potestate_peasant_freedom = {
+	icon = "peasant_republic"
+	allow_normal_conversion = no
+	potential = {
+		NOT = { has_country_flag = formed_netherlands_flag }
+		overlord = {
+			OR = {
+				has_reform = potestate_overlord_mon
+				has_reform = potestate_overlord_rep
+				has_reform = potestate_overlord_theo
+			}
+		}
+	}
+	fixed_rank = 1
+	lock_level_when_selected = yes
+	modifiers = {
+		production_efficiency = 0.1
+		land_morale = 0.05
+		max_absolutism = -10
+	}
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_global_flag = great_peasants_war_flag
+					is_part_of_hre = yes
+				}
+				1 = {
+					change_variable = {
+						which = GPW_counting_variable
+						value = 2
+					}
+				}
+			}
+		}
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		disables_estate_nobles = yes
+		is_peasants_republic = yes
+		locked_government_type = yes
+	}
+	duration = 4
+}
+
 potestate_freedom_rep = {
 	icon = "dutch_republic"
 	allow_normal_conversion = no
@@ -73,7 +119,7 @@ potestate_freedom_rep = {
 
 potestate_overlord_rep = {
 	icon = "dutch_republic"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	potential = {
 		NOT = { has_country_flag = formed_netherlands_flag }
 		OR = {

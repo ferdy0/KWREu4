@@ -34,6 +34,31 @@ country_decisions = {
 		}
 		
 		effect = {
+			if = {
+				limit = {
+					NOT = {
+						exists = BRB
+					}
+				}
+				if = {
+					limit = {
+						any_owned_province = {
+							is_core = BRB
+						}
+					}
+					release = BRB
+				}
+				else = {
+					random_subject_country = {
+						limit = {
+							any_owned_province = {
+								is_core = BRB
+							}
+						}
+						release = BRB
+					}
+				}
+			}
 			ROOT = {
 				create_subject = {
 					subject_type = potestate_vassal
@@ -103,6 +128,31 @@ country_decisions = {
 		}
 		
 		effect = {
+			if = {
+				limit = {
+					NOT = {
+						exists = FLA
+					}
+				}
+				if = {
+					limit = {
+						any_owned_province = {
+							is_core = FLA
+						}
+					}
+					release = FLA
+				}
+				else = {
+					random_subject_country = {
+						limit = {
+							any_owned_province = {
+								is_core = FLA
+							}
+						}
+						release = FLA
+					}
+				}
+			}
 			ROOT = {
 				create_subject = {
 					subject_type = potestate_vassal
@@ -134,6 +184,86 @@ country_decisions = {
 					}
 				}
 				set_global_flag = integrated_fla_to_pot
+			}
+		}
+	}
+	
+	integrate_east_frisia_pot = {
+		color = { 243 108 33 }
+		
+		potential = {
+			OR = {
+				has_reform = potestate_overlord_mon
+				has_reform = potestate_overlord_rep
+				has_reform = potestate_overlord_theo
+			}
+			NOT = { has_country_flag = formed_netherlands_flag }
+			NOT = { has_global_flag = integrated_efr_to_pot }
+		}
+		
+		allow = {
+			OR = {
+				AND = {
+					exists = EFR
+					EFR = {
+						is_subject_of = ROOT
+					}
+				}
+				AND = {
+					NOT = {
+						exists = EFR
+					}
+					OR = {
+						any_owned_province = {
+							is_core = EFR
+						}
+						any_subject_country = {
+							any_owned_province = {
+								is_core = EFR
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						exists = EFR
+					}
+				}
+				if = {
+					limit = {
+						any_owned_province = {
+							is_core = EFR
+						}
+					}
+					release = EFR
+				}
+				else = {
+					random_subject_country = {
+						limit = {
+							any_owned_province = {
+								is_core = EFR
+							}
+						}
+						release = EFR
+					}
+				}
+			}
+			ROOT = {
+				create_subject = {
+					subject_type = potestate_vassal
+					subject = EFR
+				}
+			}
+			EFR = {
+				add_government_reform = potestate_peasant_freedom
+			}
+			hidden_effect = {
+				set_global_flag = integrated_efr_to_pot
 			}
 		}
 	}

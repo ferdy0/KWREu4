@@ -672,6 +672,7 @@ republic = {
 				city_alliance_reform
 				turkoman_ottoman_institutions
 				#kwr specials
+				potestate_peasant_freedom
 				potestate_freedom_rep
 				potestate_overlord_rep
 			}

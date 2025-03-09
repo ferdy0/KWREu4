@@ -48,6 +48,7 @@ country_event = { #Death of the Potestate
 			every_known_country = {
 				limit = {
 					is_subject_of_type = potestate_vassal
+					NOT = { tag = EFR }
 				}
 				country_event = {
 					id = potestate_flavour.2
@@ -972,7 +973,7 @@ country_event = {
 	title = potestate_flavour.3.t
 	desc = potestate_flavour.3.d
 	
-	#hidden = yes
+	hidden = yes
 	
 	trigger = {
 		is_variable_equal = {
@@ -1493,7 +1494,7 @@ country_event = {
 	
 	option = {
 		name = potestate_flavour.4.a
-		#hidden_effect = {
+		hidden_effect = {
 			set_variable = {
 				which = voted_holland_lord
 				value = 0
@@ -1530,7 +1531,7 @@ country_event = {
 				which = voted_vlaanderen_lord
 				value = 0
 			}
-		#}
+		}
 		clr_global_flag = election_in_progress_just_wait
 	}
 }

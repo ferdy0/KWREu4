@@ -382,3 +382,16 @@
  integrate_brabant_pot_desc:0 "Our cultural brothers in Brabant deserve a place under our protection as Potestate. Let us integrate them to this fold."
  integrate_flanders_pot_title:0 "Integrate the County of Flanders"
  integrate_flanders_pot_desc:0 "Our cultural brothers in Flanders deserve a place under our protection as Potestate. Let us integrate them to this fold."
+ potestate_peasant_freedom:0 "Peasants Freedom"
+ potestate_peasant_freedom_desc:0 "A true freedom, as early medieval Frisia used to be as well. A governmental form where peasant communities hold the power themselves and elect rulers from among their leaders."
+ integrate_east_frisia_pot_title:0 "Integrate East Frisia"
+ integrate_east_frisia_pot_desc:0 "Long East Frisia has been a freedom independent of our Potestate. In an increasingly volatile world they deserve the protection of the combined armies of our potestate. To retain their true freedom and independence they shall not be included in election for a new potestate."
+ ###### Dutch Missions & the VOC ####################
+ NED_ESTABLISH_VOC_IN_INDONESIA:0 "We will establish the §Y[VOC.GetName]§! in the East Indies as our §YCommercial Enterprise§!."
+ establish_voc_title:0 "Establish the VOC"
+ establish_voc_desc:0 "Instead of directly governing the lands of India, let us establish the Vereenigde Oostindische Compagnie to govern it for us."
+ lot_expand_voc_title:0 "Expand the VOC"
+ lot_expand_voc_desc:0 "We have lands in the Indies that should be granted to the Vereenigde Oostindische Compagnie."
+ lot_establish_voc_title:0 "Establish the VOC"
+ lot_establish_voc_desc:0 "Instead of directly governing the Indies, let us establish the Vereenigde Oostindische Compagnie to govern it for us."
+ 

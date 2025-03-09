@@ -17,8 +17,6 @@ potestate_freedom_theo = {
 	modifiers = {
 		church_loyalty_modifier = 0.1
 		global_tax_modifier = 0.1
-		has_voc_indiamen = yes
-		allowed_voc_indiamen_fraction = 0.2
 	}
 	custom_attributes = {
 		locked_government_type = yes
@@ -27,7 +25,7 @@ potestate_freedom_theo = {
 
 potestate_overlord_theo = {
 	icon = "dutch_republic"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	potential = {
 		NOT = {
 			has_country_flag = formed_netherlands_flag
