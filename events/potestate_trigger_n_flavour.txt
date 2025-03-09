@@ -153,13 +153,15 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 			}
 		}
 		hidden_effect = {
-			change_variable = {
-				which = voted_holland_lord
-				value = 1
-			}
-			change_variable = {
-				which = potestate_voting_check
-				value = 1
+			HOL = {
+				change_variable = {
+					which = voted_holland_lord
+					value = 1
+				}
+				change_variable = {
+					which = potestate_voting_check
+					value = 1
+				}
 			}
 		}
 	}
@@ -251,13 +253,15 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 			}
 		}
 		hidden_effect = {
-			change_variable = {
-				which = voted_friesland_lord
-				value = 1
-			}
-			change_variable = {
-				which = potestate_voting_check
-				value = 1
+			HOL = {
+				change_variable = {
+					which = voted_friesland_lord
+					value = 1
+				}
+				change_variable = {
+					which = potestate_voting_check
+					value = 1
+				}
 			}
 		}
 	}
@@ -349,13 +353,15 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 			}
 		}
 		hidden_effect = {
-			change_variable = {
-				which = voted_utrecht_lord
-				value = 1
-			}
-			change_variable = {
-				which = potestate_voting_check
-				value = 1
+			HOL = {
+				change_variable = {
+					which = voted_utrecht_lord
+					value = 1
+				}
+				change_variable = {
+					which = potestate_voting_check
+					value = 1
+				}
 			}
 		}
 	}
@@ -447,13 +453,15 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 			}
 		}
 		hidden_effect = {
-			change_variable = {
-				which = voted_gelre_lord
-				value = 1
-			}
-			change_variable = {
-				which = potestate_voting_check
-				value = 1
+			HOL = {
+				change_variable = {
+					which = voted_gelre_lord
+					value = 1
+				}
+				change_variable = {
+					which = potestate_voting_check
+					value = 1
+				}
 			}
 		}
 	}
@@ -545,13 +553,15 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 			}
 		}
 		hidden_effect = {
-			change_variable = {
-				which = voted_kleef_lord
-				value = 1
-			}
-			change_variable = {
-				which = potestate_voting_check
-				value = 1
+			HOL = {
+				change_variable = {
+					which = voted_kleef_lord
+					value = 1
+				}
+				change_variable = {
+					which = potestate_voting_check
+					value = 1
+				}
 			}
 		}
 	}
@@ -643,13 +653,15 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 			}
 		}
 		hidden_effect = {
-			change_variable = {
-				which = voted_gulik_lord
-				value = 1
-			}
-			change_variable = {
-				which = potestate_voting_check
-				value = 1
+			HOL = {
+				change_variable = {
+					which = voted_gulik_lord
+					value = 1
+				}
+				change_variable = {
+					which = potestate_voting_check
+					value = 1
+				}
 			}
 		}
 	}
@@ -741,13 +753,15 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 			}
 		}
 		hidden_effect = {
-			change_variable = {
-				which = voted_luxemburg_lord
-				value = 1
-			}
-			change_variable = {
-				which = potestate_voting_check
-				value = 1
+			HOL = {
+				change_variable = {
+					which = voted_luxemburg_lord
+					value = 1
+				}
+				change_variable = {
+					which = potestate_voting_check
+					value = 1
+				}
 			}
 		}
 	}
@@ -839,13 +853,15 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 			}
 		}
 		hidden_effect = {
-			change_variable = {
-				which = voted_brabant_lord
-				value = 1
-			}
-			change_variable = {
-				which = potestate_voting_check
-				value = 1
+			HOl = {
+				change_variable = {
+					which = voted_brabant_lord
+					value = 1
+				}
+				change_variable = {
+					which = potestate_voting_check
+					value = 1
+				}
 			}
 		}
 	}
@@ -937,13 +953,15 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 			}
 		}
 		hidden_effect = {
-			change_variable = {
-				which = voted_vlaanderen_lord
-				value = 1
-			}
-			change_variable = {
-				which = potestate_voting_check
-				value = 1
+			HOL = {
+				change_variable = {
+					which = voted_vlaanderen_lord
+					value = 1
+				}
+				change_variable = {
+					which = potestate_voting_check
+					value = 1
+				}
 			}
 		}
 	}

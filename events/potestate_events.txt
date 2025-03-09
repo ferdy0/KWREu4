@@ -139,31 +139,31 @@ country_event = {
 #			modifier = {
 #				factor = 0.2
 #				has_opinion = {
-                    who = overlord
-                    value = 0
-               }
-			}
-			modifier = {
-				factor = 0
-				has_opinion = {
-                    who = overlord
-                    value = -100
-               }
-			}
-		}
-		change_variable = {
-            which = potestate_votes
-            value = 1
-        }
-   	}
-
-	option = { #vote for ourselves
-		name = potestate_events.3.b
-		ai_chance = { factor = 50 }
-        add_prestige = 5
-   	}
-}
-
+#                    who = overlord
+#                    value = 0
+#               }
+#			}
+#			modifier = {
+#				factor = 0
+#				has_opinion = {
+#                    who = overlord
+#                    value = -100
+#               }
+#			}
+#		}
+#		change_variable = {
+#            which = potestate_votes
+#            value = 1
+#        }
+#   	}
+#
+#	option = { #vote for ourselves
+#		name = potestate_events.3.b
+#		ai_chance = { factor = 50 }
+#        add_prestige = 5
+#   	}
+#}
+#
 #country_event = {
 #	id = potestate_events.4
 #	title = potestate_events.4.t

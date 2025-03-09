@@ -58,9 +58,11 @@ country_decisions = {
 				}
 			}
 			hidden_effect = {
-				change_variable = {
-				which = total_potestate_members
-				value = 1
+				HOL = {
+					change_variable = {
+						which = total_potestate_members
+						value = 1
+					}
 				}
 				set_global_flag = integrated_brb_to_pot
 			}
@@ -125,9 +127,11 @@ country_decisions = {
 				}
 			}
 			hidden_effect = {
-				change_variable = {
-				which = total_potestate_members
-				value = 1
+				HOL = {
+					change_variable = {
+						which = total_potestate_members
+						value = 1
+					}
 				}
 				set_global_flag = integrated_fla_to_pot
 			}
