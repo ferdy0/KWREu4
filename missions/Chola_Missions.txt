@@ -1,0 +1,221 @@
+chola_missions_1 = {
+    slot = 2
+    generic = no
+    ai = yes
+    potential = {
+        tag = MAD
+    }
+    has_country_shield = yes
+
+    mad_2 = {
+        icon = 
+        required_missions = { mad_1 }
+        position = 2
+        provinces_to_highlight = {
+        }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+
+    mad_5 = {
+        icon = 
+        required_missions = { mad_4 }
+        position = 4
+        provinces_to_highlight = {
+        }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+
+	mad_7 = {
+        icon = 
+        required_missions = { mad_5 mad_6 }
+        position = 5
+        provinces_to_highlight = {
+        }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+
+	mad_16 = {
+        icon = 
+        required_missions = { mad_7 mad_15 }
+        position = 11
+        provinces_to_highlight = {
+        }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+}
+
+chola_missions_2 = {
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+        tag = MAD
+    }
+    has_country_shield = yes
+
+    mad_1 = {
+        icon = 
+        required_missions = { }
+        position = 1
+        provinces_to_highlight = {
+        }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+
+    mad_3 = {
+        icon = 
+        required_missions = { mad_1 }
+        position = 2
+        provinces_to_highlight = {
+        }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+
+	mad_4 = {
+        icon = 
+        required_missions = { mad_3 }
+        position = 3
+        provinces_to_highlight = {
+        }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+
+    mad_6 = {
+        icon = 
+        required_missions = { mad_4 }
+        position = 4
+        provinces_to_highlight = {
+        }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+
+	mad_8 = {
+        icon = 
+        required_missions = { mad_6 }
+        position = 5
+        provinces_to_highlight = {
+        }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+
+    mad_10 = {
+        icon = 
+        required_missions = { mad_8 }
+        position = 6
+        provinces_to_highlight = {
+        }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+
+	mad_11 = {
+        icon = 
+        required_missions = { mad_10 }
+        position = 7
+        provinces_to_highlight = {
+        }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+
+    mad_13 = {
+        icon = 
+        required_missions = { mad_11 mad_12}
+        position = 8
+        provinces_to_highlight = {
+        }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+
+	mad_14 = {
+        icon = 
+        required_missions = { mad_13 }
+        position = 9
+        provinces_to_highlight = {
+        }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+
+    mad_15 = {
+        icon = 
+        required_missions = { mad_14 }
+        position = 10
+        provinces_to_highlight = {
+        }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+}
+
+chola_missions_3 = {
+    slot = 4
+    generic = no
+    ai = yes
+    potential = {
+        tag = MAD
+    }
+    has_country_shield = yes
+
+    mad_9 = {
+        icon = 
+        required_missions = { mad_8 }
+        position = 6
+        provinces_to_highlight = {
+        }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+
+    mad_12 = {
+        icon = m
+        required_missions = { mad_10 }
+        position = 7
+        provinces_to_highlight = {
+        }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+}
