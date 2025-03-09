@@ -2,9 +2,15 @@ chola_missions_1 = {
     slot = 2
     generic = no
     ai = yes
-    potential = {
-        tag = MAD
-    }
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = MAD
+		NOT = { map_setup = map_setup_random }
+	}
     has_country_shield = yes
 
     mad_2 = {
@@ -60,22 +66,16 @@ chola_missions_2 = {
     slot = 3
     generic = no
     ai = yes
-    potential = {
-        tag = MAD
-    }
-    has_country_shield = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
 
-    mad_1 = {
-        icon = 
-        required_missions = { }
-        position = 1
-        provinces_to_highlight = {
-        }
-        trigger = {
-        }
-        effect = {
-        }
-    }
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = MAD
+		NOT = { map_setup = map_setup_random }
+	}
+    has_country_shield = yes
 
     mad_3 = {
         icon = 
@@ -190,10 +190,28 @@ chola_missions_3 = {
     slot = 4
     generic = no
     ai = yes
-    potential = {
-        tag = MAD
-    }
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = MAD
+		NOT = { map_setup = map_setup_random }
+	}
     has_country_shield = yes
+
+    mad_1 = {
+        icon =
+        required_missions = { }
+        position = 1
+        provinces_to_highlight = {
+        }
+        trigger = {
+        }
+        effect = {
+        }
+    }
 
     mad_9 = {
         icon = 
@@ -218,4 +236,20 @@ chola_missions_3 = {
         effect = {
         }
     }
+}
+
+chola_missions_4 = {
+    slot = 5
+    generic = no
+    ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = MAD
+		NOT = { map_setup = map_setup_random }
+	}
+    has_country_shield = yes
 }
