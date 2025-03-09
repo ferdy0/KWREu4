@@ -1240,7 +1240,7 @@ country_event = {
 				limit = {
 					religion = catholic
 				}
-				add_unrest = 20
+				add_unrest = 15
 				add_province_modifier = {
 					name = disgruntled_recruitment
 					duration = 730
@@ -1256,7 +1256,7 @@ country_event = {
 				limit = {
 					religion = catholic
 				}
-				add_unrest = 15
+				add_unrest = 10
 				add_province_modifier = {
 					name = disgruntled_recruitment
 					duration = 365
@@ -1268,25 +1268,25 @@ country_event = {
 			}
 		}
 		146 = {
-			add_unrest = 15
+			add_unrest = 10
 			add_province_modifier = {
 				name = catholic_minorities
 				duration = 365
 			}
 		}
 		147 = {
-			add_unrest = 15
+			add_unrest = 10
 			remove_core = EPI
 		}
 		164 = {
-			add_unrest = 15
+			add_unrest = 10
 			add_province_modifier = {
 				name = catholic_minorities
 				duration = 365
 			}
 		}
 		1853 = {
-			add_unrest = 15
+			add_unrest = 10
 			add_province_modifier = {
 				name = catholic_minorities
 				duration = 365
@@ -1296,7 +1296,7 @@ country_event = {
 			remove_core = LAE
 		}
 		3003 = {
-			add_unrest = 15
+			add_unrest = 10
 			add_province_modifier = {
 				name = catholic_minorities
 				duration = 365

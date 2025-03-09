@@ -2934,9 +2934,9 @@ lot_early_themata_4_byz = {
 		}
 		
 		trigger = {
-			subject_owns = 328
-			subject_owns = 330
-			subject_owns = 2304
+			owns_or_non_sovereign_subject_of = 328
+			owns_or_non_sovereign_subject_of = 330
+			owns_or_non_sovereign_subject_of = 2304
 		}
 		
 		effect = {
