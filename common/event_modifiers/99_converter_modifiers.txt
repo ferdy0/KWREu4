@@ -408,8 +408,14 @@ thicc_ships = {
     engagement_cost_modifier = 0.25
     movement_speed_in_fleet_modifier = 1
 }
+
 tolerated_minority = {
     local_unrest = -2
     local_religious_unity_contribution = 0.0
     trade_goods_size_modifier = 0.1
+}
+cholan_army = {
+	infantry_power = 0.15
+	land_morale = 0.05
+	land_maintenance_modifier = -0.15
 }

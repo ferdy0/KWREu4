@@ -253,8 +253,38 @@ chola_missions_3 = {
         provinces_to_highlight = {
         }
         trigger = {
+			army_size_percentage = 0.8
+            has_leaders = {
+                value = 2
+                type = general
+	            include_monarch = no
+	            include_heir = no
+            }
         }
         effect = {
+            4421 = {
+                add_claim = MAD
+            }
+            531 = {
+                add_claim = MAD
+            }
+            541 = {
+                add_claim = MAD
+            }
+            4428 = {
+                add_claim = MAD
+            }
+            2100 = {
+                add_claim = MAD
+            }
+            2099 = {
+                add_claim = MAD
+            }
+            add_country_modifier = { 
+                name = cholan_army
+                duration = 5475
+                hidden = no
+            }
         }
     }
 
