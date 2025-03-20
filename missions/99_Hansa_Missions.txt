@@ -8,7 +8,7 @@ lubeck_missions_1 = {
 	has_country_shield = yes
 	
 	hsa_arm_the_powder_monkeys = {
-		icon = mission_cannons_firing 
+		icon = mission_cannons_firing
 		required_missions = { }
 		position = 0 
 		provinces_to_highlight = { 

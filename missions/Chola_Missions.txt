@@ -14,19 +14,64 @@ chola_missions_1 = {
     has_country_shield = yes
 
     mad_2 = {
-        icon = 
+        icon = mission_cannons_firing
         required_missions = { mad_1 }
         position = 2
+
         provinces_to_highlight = {
+            province_id = 572
+            province_id = 2099
         }
+
         trigger = {
+            accepted_culture = sinhala
+            572 = {
+                owner = MAD
+                has_building = temple
+                has_building = marketplace
+                num_of_times_improved_by_owner = 3
+            }
+            2099 = {
+                owner = MAD
+                has_building = temple
+                num_of_times_improved_by_owner = 3
+            }
         }
+
         effect = {
+            4407 = {
+                add_province_modifier = {
+                    name = tolerated_minority
+                    duration = -1
+                    desc = tolerated_minority_tooltip
+                }
+            }
+            2099 = {
+                add_province_modifier = {
+                    name = tolerated_minority
+                    duration = -1
+                    desc = tolerated_minority_tooltip
+                }
+            }
+            4408 = {
+                add_province_modifier = {
+                    name = tolerated_minority
+                    duration = -1
+                    desc = tolerated_minority_tooltip
+                }
+            }
+            4409 = {
+                add_province_modifier = {
+                    name = tolerated_minority
+                    duration = -1
+                    desc = tolerated_minority_tooltip
+                }
+            }
         }
     }
 
     mad_5 = {
-        icon = 
+        icon = mission_cannons_firing
         required_missions = { mad_4 }
         position = 4
         provinces_to_highlight = {
@@ -38,7 +83,7 @@ chola_missions_1 = {
     }
 
 	mad_7 = {
-        icon = 
+        icon = mission_cannons_firing
         required_missions = { mad_5 mad_6 }
         position = 5
         provinces_to_highlight = {
@@ -50,7 +95,7 @@ chola_missions_1 = {
     }
 
 	mad_16 = {
-        icon = 
+        icon = mission_cannons_firing
         required_missions = { mad_7 mad_15 }
         position = 11
         provinces_to_highlight = {
@@ -78,7 +123,7 @@ chola_missions_2 = {
     has_country_shield = yes
 
     mad_3 = {
-        icon = 
+        icon = mission_cannons_firing
         required_missions = { mad_1 }
         position = 2
         provinces_to_highlight = {
@@ -90,7 +135,7 @@ chola_missions_2 = {
     }
 
 	mad_4 = {
-        icon = 
+        icon = mission_cannons_firing
         required_missions = { mad_3 }
         position = 3
         provinces_to_highlight = {
@@ -102,7 +147,7 @@ chola_missions_2 = {
     }
 
     mad_6 = {
-        icon = 
+        icon = mission_cannons_firing
         required_missions = { mad_4 }
         position = 4
         provinces_to_highlight = {
@@ -114,7 +159,7 @@ chola_missions_2 = {
     }
 
 	mad_8 = {
-        icon = 
+        icon = mission_cannons_firing
         required_missions = { mad_6 }
         position = 5
         provinces_to_highlight = {
@@ -126,7 +171,7 @@ chola_missions_2 = {
     }
 
     mad_10 = {
-        icon = 
+        icon = mission_cannons_firing
         required_missions = { mad_8 }
         position = 6
         provinces_to_highlight = {
@@ -138,7 +183,7 @@ chola_missions_2 = {
     }
 
 	mad_11 = {
-        icon = 
+        icon = mission_cannons_firing
         required_missions = { mad_10 }
         position = 7
         provinces_to_highlight = {
@@ -150,7 +195,7 @@ chola_missions_2 = {
     }
 
     mad_13 = {
-        icon = 
+        icon = mission_cannons_firing
         required_missions = { mad_11 mad_12}
         position = 8
         provinces_to_highlight = {
@@ -162,7 +207,7 @@ chola_missions_2 = {
     }
 
 	mad_14 = {
-        icon = 
+        icon = mission_cannons_firing
         required_missions = { mad_13 }
         position = 9
         provinces_to_highlight = {
@@ -174,7 +219,7 @@ chola_missions_2 = {
     }
 
     mad_15 = {
-        icon = 
+        icon = mission_cannons_firing
         required_missions = { mad_14 }
         position = 10
         provinces_to_highlight = {
@@ -202,7 +247,7 @@ chola_missions_3 = {
     has_country_shield = yes
 
     mad_1 = {
-        icon =
+        icon = mission_cannons_firing
         required_missions = { }
         position = 1
         provinces_to_highlight = {
@@ -214,7 +259,7 @@ chola_missions_3 = {
     }
 
     mad_9 = {
-        icon = 
+        icon = mission_cannons_firing
         required_missions = { mad_8 }
         position = 6
         provinces_to_highlight = {
@@ -226,7 +271,7 @@ chola_missions_3 = {
     }
 
     mad_12 = {
-        icon = m
+        icon = mission_cannons_firing
         required_missions = { mad_10 }
         position = 7
         provinces_to_highlight = {
