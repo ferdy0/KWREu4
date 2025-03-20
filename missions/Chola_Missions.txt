@@ -14,7 +14,7 @@ chola_missions_1 = {
     has_country_shield = yes
 
     mad_2 = {
-        icon = mission_cannons_firing
+        icon = mission_end_manipuri_raids
         required_missions = { mad_1 }
         position = 2
 
@@ -25,14 +25,14 @@ chola_missions_1 = {
 
         trigger = {
             accepted_culture = sinhala
+            owns = 572
+            owns = 2099
             572 = {
-                owner = MAD
                 has_building = temple
                 has_building = marketplace
                 num_of_times_improved_by_owner = 3
             }
             2099 = {
-                owner = MAD
                 has_building = temple
                 num_of_times_improved_by_owner = 3
             }
@@ -247,7 +247,7 @@ chola_missions_3 = {
     has_country_shield = yes
 
     mad_1 = {
-        icon = mission_cannons_firing
+        icon = mission_annex_prome
         required_missions = { }
         position = 1
         provinces_to_highlight = {
