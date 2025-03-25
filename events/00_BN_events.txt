@@ -214,6 +214,8 @@ country_event = { #still needs localisation
     desc = mission_nor.6.d
     picture = FARMING_eventPicture
 
+    is_triggered_only = yes
+
     immediate = {
         add_country_modifier = {
             name = "nor_pulled_skyships"
@@ -233,6 +235,8 @@ country_event = { #still needs localisation
     desc = mission_nor.7.d
     picture = INVENTION_eventPicture
 
+    is_triggered_only = yes
+
     immediate = {
         add_country_modifier = {
             name = "nor_manual_skyships"
@@ -251,6 +255,8 @@ country_event = { #still needs localisation
     title = mission_nor.8.t
     desc = mission_nor.8.d
     picture = EP_ISLAND_eventPicture
+
+    is_triggered_only = yes
 
     immediate = {
         add_country_modifier = {
