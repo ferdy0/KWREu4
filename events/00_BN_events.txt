@@ -220,6 +220,10 @@ country_event = { #still needs localisation
             duration = 18250
         }
     }
+
+    option = {
+        id = mission_nor.6.a
+    }
 }
 
 #Event for manual propellor
@@ -234,6 +238,10 @@ country_event = { #still needs localisation
             name = "nor_manual_skyships"
             duration = 18250
         }
+    }
+
+    option = {
+        id = mission_nor.7.a
     }
 }
 
@@ -250,10 +258,50 @@ country_event = { #still needs localisation
             duration = 18250
         }
     }
+
+    option = {
+        id = mission_nor.8.a
+    }
+}
+
+#Event for project selvvind
+country_event = { #still needs localisation
+    id = mission_nor.9
+    title = mission_nor.9.t
+    desc = mission_nor.9.d
+    picture = INVENTION_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        id = mission_nor.9.a
+        country_event = {
+            id = mission_nor.10
+            days = 1100
+        }
+    }
+}
+
+#Event for completing project selvvind
+country_event = { #still needs localisation
+    id = mission_nor.10
+    title = mission_nor.10.t
+    desc = mission_nor.10.d
+    picture = ENLIGHTENMENT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        id = mission_nor.10.a
+        add_country_modifier = {
+            name = "nor_aerial_steam_engines"
+            duration = -1
+        }
+    }
 }
 
 #Event for selecting who to bomb
-country_event = {
+country_event = { #still needs localisation
     id = nor_bombing.1
     title = nor_bombing.1.t
     desc = nor_bombing.1.d
@@ -285,7 +333,10 @@ country_event = {
     option = {
         name = nor_bombing.1.a
         add_treasury = 1500
-        add_army_professionalism = 0.2
+        change_variable = {
+            which = norBombsStorage 
+            value = 1
+        }
 	}
 
     # Bombing
@@ -355,7 +406,7 @@ country_event = {
 }
 
 # Event for the actual bombing
-province_event = {
+province_event = { #still needs localisation
     id = nor_bombing.2
     title = nor_bombing.2.t
     desc = nor_bombing.2.d
@@ -373,6 +424,59 @@ province_event = {
         add_province_modifier = {
             name = "nor_bombing_run"
             duration = 1825
+        }
+    }
+}
+
+country_event = { #still needs localisation
+    id = nor_bombing.3
+    title = nor_bombing.3.t
+    desc = nor_bombing.3.d
+    picture = EP_MANIHOLE_HELMET_eventPicture
+
+    is_triggered_only = yes
+
+    immediate = {
+        set_variable = {
+            which = norBombsStorage
+            value = 1
+        }
+    }
+
+    option = {
+        id = nor_bombing.3.a
+    }
+}
+
+country_event = { #still needs localisation
+    id = nor_bombing.4
+    title = nor_bombing.4.t
+    desc = nor_bombing.4.d
+    picture = SWORD_OF_OSMAN_eventPicture
+
+    trigger = {
+        has_global_flag = nor_bombs_away
+        check_variable = {
+            which = norBombsStorage
+            value = 0
+        }
+        NOT = {
+            check_variable = {
+                which = norBombsStorage
+                value = 5
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 30
+    }
+
+    option = {
+        id = nor_bombing.4.a
+        change_variable = {
+            which = norBombsStorage
+            value = 1
         }
     }
 }

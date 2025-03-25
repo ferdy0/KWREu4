@@ -249,3 +249,11 @@ nor_bombing_run = { #still needs localisation
     fort_level = -10
     local_fort_maintenance_modifier = -1
 }
+
+nor_aerial_steam_engines = { #still needs localisation
+    global_tax_income = -52
+    envoy_travel_time = -0.5
+    expand_infrastructure_cost_modifier = -0.30
+    global_institution_spread = 0.30
+    all_power_cost = -0.1
+}

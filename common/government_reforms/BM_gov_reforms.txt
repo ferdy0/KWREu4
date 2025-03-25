@@ -1,0 +1,35 @@
+BM_norwegian_parliamentary_monarchy = { #still needs localisation
+	icon = "queen"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_reform = BM_norwegian_parliamentary_monarchy
+			have_had_reform = BM_norwegian_parliamentary_monarchy
+		}
+	}
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 25
+	nation_designer_trigger = {
+		has_dlc = "Lions of the North"
+	}
+	modifiers = {
+		legitimacy = 1.5
+		global_unrest = -2
+		max_absolutism = -40
+		nobles_influence_modifier = -0.2
+        church_influence_modifier = 0.2
+        governing_cost = -0.1
+        max_possible_parliament_seats = 8
+	}
+
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense" 
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+}

@@ -11,7 +11,10 @@ country_decisions = {
 
         allow = {
             treasury = 1500
-            army_professionalism = 0.2
+            check_variable = {
+                which = norBombsStorage
+                value = 1
+            }
             is_at_war = yes
             any_army = {
 				location = {
@@ -24,7 +27,10 @@ country_decisions = {
 
         effect = {
             add_treasury = -1500
-            add_army_professionalism = -0.2
+            change_variable = {
+                which = norBombsStorage 
+                value = -1
+            }
             country_event = {
                 id = nor_bombing.1
             }

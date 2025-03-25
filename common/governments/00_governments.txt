@@ -44,6 +44,7 @@ monarchy = {
 				kalmar_union
 				danish_archkingdom
 				norwegian_parliamentary_monarchy
+				BM_norwegian_parliamentary_monarchy
 				#Never again
 				livonian_military_monarchy
 				livonian_naval_monarchy
@@ -516,6 +517,7 @@ monarchy = {
 	exclusive_reforms = {
 		parliamentary_reform
 		norwegian_parliamentary_monarchy
+		BM_norwegian_parliamentary_monarchy
 		british_monarchy
 		angevin_monarchy
 		absolute_british_monarchy

@@ -787,6 +787,10 @@ Norway_missions_s2 = {
                 duration = 18250
             }
             set_global_flag = nor_bombs_away
+            country_event = {
+                id = nor_bombing.3
+                days = 1
+            }
         }
     }
 
@@ -844,6 +848,27 @@ Norway_missions_s2 = {
             add_country_modifier = {
                 name = "nor_luft_leidang"
                 duration = 18250
+            }
+        }
+    }
+
+    project_selvvind_mission = {
+        icon = mission_rb_central_belt_coal_mining
+        required_missions = { The_royal_althing_mission }
+        position = 21
+
+        trigger = {
+            innovativeness = 90
+            adm_tech = 25
+            treasury = 10000
+            natural_scientist = 5
+        }
+
+        effect = {
+            add_treasury = -10000
+            change_innovativeness = -50
+            country_event = {
+                id = mission_nor.9
             }
         }
     }
@@ -1611,7 +1636,7 @@ Norway_missions_s3 = {
         }
     }
 
-    The_Skys_the_limit_mission = {
+    The_skys_the_limit_mission = { #still needs localisation
         icon = mal_trade_with_europeans
         required_missions = { Luft_leidang_mission Royal_norwegian_skyfleet_mission }
         position = 19
@@ -1632,6 +1657,40 @@ Norway_missions_s3 = {
         effect = {
             set_global_flag = nor_industrialists_adctivated
             # make it add a special government reform for Tier 3, Tier 6 or Tier 7 about the industrialists becoming more powerfull
+        }
+    }
+
+    The_royal_althing_mission = { #still needs localisation
+        icon = mission_establish_the_prikazy
+        required_missions = { The_skys_the_limit_mission }
+        position = 20
+
+        trigger = {
+            legitimacy = 100
+            stability = 3
+            estate_loyalty = {
+                estate = estate_nobility
+                loyalty = 40
+            }
+            NOT = {
+                estate_influence = {
+                    estate = estate_nobility
+                    influence = 11
+                }
+            }
+            has_estate_privilege = estate_church_institutionalized_clergy
+        }
+
+        effect = {
+            change_estate_land_share = {
+				estate = estate_nobles
+				share = -10
+			}
+            change_estate_land_share = {
+				estate = estate_church
+				share = 10
+			}
+            add_government_reform = BM_norwegian_parliamentary_monarchy
         }
     }
 }
