@@ -257,3 +257,17 @@ nor_aerial_steam_engines = { #still needs localisation
     global_institution_spread = 0.30
     all_power_cost = -0.1
 }
+
+nor_grand_trading_skyfleet = { #still needs localisation
+    light_ship = { ship_trade_power_modifier = 0.2 }
+    movement_speed_in_fleet_modifier = 1
+}
+
+nor_greatest_capital_ever_seen = {
+    local_build_time = -0.25
+    local_build_cost = -0.25
+    allowed_num_of_buildings = 3
+    allowed_num_of_manufactories = 1
+    statewide_governing_cost = -0.25
+    local_production_efficiency = 0.1
+}

@@ -1690,7 +1690,40 @@ Norway_missions_s3 = {
 				estate = estate_church
 				share = 10
 			}
-            add_government_reform = BM_norwegian_parliamentary_monarchy
+            add_government_reform = BM_norwegian_parliamentary_monarchy #might move this reform up a bunch of missions and make this a special privelige for the church instead
+        }
+    }
+
+    The_peak_mission = { #still needs localisation
+        icon = mission_imperial_capitals
+        required_missions = { Following_the_winds_mission project_selvvind_mission }
+        position = 22
+
+        trigger = {
+            22 = {
+                num_of_times_expanded_infrastructure = 4
+            }
+            development_in_provinces = {
+	            value = 200
+	            area = northern_norway
+                area = eastern_norway
+                area = western_norway
+                province_id = 5
+                province_id = 8
+                province_id = 18
+                province_id = 16
+                province_id = 4164
+            }
+            #add that the great palace needs to be level 3
+        }
+
+        effect = {
+            22 = {
+                add_province_modifier = {
+                    name = "nor_greatest_capital_ever_seen"
+                    duration = -1
+                }
+            }
         }
     }
 }
@@ -2778,6 +2811,25 @@ Norway_missions_s4 = {
             }
             22 = {
                 center_of_trade = 1
+            }
+        }
+    }
+
+    Following_the_winds_mission = { #still needs localisation
+        icon = mission_high_income
+        required_missions = { The_royal_althing_mission }
+        position = 21
+
+        trigger = {
+            num_of_trading_bonuses = 10
+            num_of_strong_trade_companies = 3
+            production_income_percentage = 0.25
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "nor_grand_trading_skyfleet"
+                duration = 18250
             }
         }
     }  

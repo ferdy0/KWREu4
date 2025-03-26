@@ -283,7 +283,7 @@ country_event = { #still needs localisation
         id = mission_nor.9.a
         country_event = {
             id = mission_nor.10
-            days = 1100
+            days = 2000
         }
     }
 }
