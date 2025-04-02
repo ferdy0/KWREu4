@@ -1252,3 +1252,91 @@ country_event = {
         add_manpower = -5
    	}
 }
+
+country_event = {
+	id = tyrhennia_civil_war.78
+	title = tyrhennia_civil_war.78.t
+	desc = tyrhennia_civil_war.78.d
+	picture = BUDDHA_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #yes
+		name = tyrhennia_civil_war.78.a
+		ai_chance = { factor = 75 }
+		add_historical_friend = MAD
+        MAD = {
+            country_event = {
+                id = tyrhennia_civil_war.79
+                days = 15
+                random = 15
+            }
+        }
+   	}
+
+	option = { #no
+		name = tyrhennia_civil_war.78.b
+		ai_chance = { factor = 25 }
+		add_historical_rival = MAD
+        MAD = {
+            country_event = {
+                id = tyrhennia_civil_war.80
+                days = 15
+                random = 15
+            }
+        }
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.79
+	title = tyrhennia_civil_war.79.t
+	desc = tyrhennia_civil_war.79.d
+	picture = BUDDHA_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #yes
+		name = tyrhennia_civil_war.79.a
+		549 = {
+            cede_province = MAD
+            remove_core = ORI
+            add_core = MAD
+        }
+		2080 = {
+            cede_province = MAD
+            remove_core = ORI
+            add_core = MAD
+        }
+        add_historical_friend = ORI
+        560 = {
+            cede_province = ORI
+        }
+        2096 = {
+            cede_province = ORI
+        }
+        2081 = {
+            cede_province = ORI
+        }
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.80
+	title = tyrhennia_civil_war.80.t
+	desc = tyrhennia_civil_war.80.d
+	picture = BUDDHA_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #yes
+		name = tyrhennia_civil_war.80.a
+		549 = {
+		    add_permanent_claim = MAD
+		}
+		2080 = {
+            add_permanent_claim = MAD
+        }
+        add_historical_rival = ORI
+   	}
+}

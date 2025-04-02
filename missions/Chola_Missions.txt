@@ -123,14 +123,42 @@ chola_missions_2 = {
     has_country_shield = yes
 
     mad_3 = {
-        icon = mission_cannons_firing
+        icon = mission_gharbianss
         required_missions = { mad_1 }
         position = 2
         provinces_to_highlight = {
+            province_id = 560
+            province_id = 2096
+            province_id = 2081
         }
         trigger = {
+            reverse_has_opinion = {
+            	who = ORI
+            	value = 150
+            }
+            alliance_with = ORI
+            ORI = {
+                OR = {
+                    offensive_war_with = MLW
+                    defensive_war_with = MLW
+                }
+            }
+            controls = 560
+            controls = 2096
+            controls = 2081
+            ORI = {
+                owns = 549
+                owns = 2080
+            }
         }
         effect = {
+            ORI = {
+                country_event = {
+                    id = tyrhennia_civil_war.78
+                    days = 15
+                    random = 15
+                }
+            }
         }
     }
 
