@@ -13,6 +13,28 @@ tibetan_empire_local = {
 		government = monarchy
 	}
 }
+nepalese_protectorate = {
+	rank = {
+		1 = PROTECTORATE
+		2 = PROTECTORATE
+	}
+	ruler_male = {
+		1 = PROTECTOR_GENERAL
+		2 = PROTECTOR_GENERAL
+	}
+	ruler_female = {
+		1 = PROTECTOR_GENERAL_fem
+		2 =PROTECTOR_GENERAL_fem
+	}
+	trigger = {
+		tag = NPL
+		government = monarchy
+		OR = {
+			is_subject_of = TIB
+			is_subject_of = XUE
+		}
+	}	
+}
 tyrrhenian_archonate = {
 	rank = {
 		1 = GRAND_ARCHONATE

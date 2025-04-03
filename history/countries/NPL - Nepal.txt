@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = uparaja_reform
+add_government_reform = korean_monarchy
 government_rank = 2
 technology_group = indian
 religion = vajrayana

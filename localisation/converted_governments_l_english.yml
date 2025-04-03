@@ -14,9 +14,12 @@
  DAUPHIN_fem:0 "Dauphine"
  ECUMENICAL_PATRIARCH:0 "Ecumenical Patriarch"
  ECUMENICAL_MATRIARCH:0 "Ecumenical Matriarch"
+ PROTECTOR_GENERAL:0 "Protector-General"
+ PROTECTOR_GENERAL_FEM:0 "Protector-General"
 
  #Governments
  ARCHONATE:0 "Archonate"
  GRAND_ARCHONATE:0 "Grand Archonate"
  NOME:0 "Nome"
  FARA:0 "Fara"
+ PROTECTORATE:0 "Protectorate"
