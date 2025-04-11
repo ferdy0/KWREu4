@@ -200,6 +200,93 @@ Norway_missions_s1 = {
             }
         }
     }
+
+    The_base_mission = { #still needs localisation
+        icon = spa_dominate_sevilla
+        required_missions = { project_selvvind_mission }
+        position = 22
+
+        trigger = {
+            northern_norway = {
+                type = all
+                has_building = counting_house
+            }
+            eastern_norway = {
+                type = all
+                has_building = counting_house
+            }
+            western_norway = {
+                type = all
+                has_building = counting_house
+            }
+            5 = {
+                has_building = counting_house
+            }
+            8 = {
+                has_building = counting_house
+            }
+            18 = {
+                has_building = counting_house
+            }
+            16 = {
+                has_building = counting_house
+            }
+            4164 = {
+                has_building = counting_house
+            }
+        }
+
+        effect = {
+            northern_norway = {
+                add_province_modifier = {
+                    name = "nor_counting_the_goods"
+                    duration = 7300
+                }
+            }
+            eastern_norway = {
+                add_province_modifier = {
+                    name = "nor_counting_the_goods"
+                    duration = 7300
+                }
+            }
+            western_norway = {
+                add_province_modifier = {
+                    name = "nor_counting_the_goods"
+                    duration = 7300
+                }
+            }
+            5 = {
+                add_province_modifier = {
+                    name = "nor_counting_the_goods"
+                    duration = 7300
+                }
+            }
+            8 = {
+                add_province_modifier = {
+                    name = "nor_counting_the_goods"
+                    duration = 7300
+                }
+            }
+            18 = {
+                add_province_modifier = {
+                    name = "nor_counting_the_goods"
+                    duration = 7300
+                }
+            }
+            16 = {
+                add_province_modifier = {
+                    name = "nor_counting_the_goods"
+                    duration = 7300
+                }
+            }
+            4164 = {
+                add_province_modifier = {
+                    name = "nor_counting_the_goods"
+                    duration = 7300
+                }
+            }
+        }
+    }
 }
 Norway_missions_s2 = {
     slot = 2
