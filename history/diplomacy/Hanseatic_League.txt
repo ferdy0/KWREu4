@@ -31,3 +31,11 @@ alliance = {
 	start_date = 1291.3.23
 	end_date = 1581.1.1
 }
+
+alliance = {
+	first = HSA
+	second = GEL
+	trade_league = 1
+	start_date = 1291.3.23
+	end_date = 1581.1.1
+}

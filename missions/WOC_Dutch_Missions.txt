@@ -1,0 +1,710 @@
+NED_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = { 
+		has_dlc = "Winds of Change"
+		OR = {
+			tag = BRB
+			tag = FLA
+		}
+	} 
+
+	NED_flanders = {
+		icon = ned_in_flanders_fields
+		position = 2
+		required_missions = { NED_raise_the_militia } 
+		provinces_to_highlight = {  
+			OR = {
+				area = flanders_area
+				area = brabant_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		} 
+
+		trigger = {  
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = flanders_area
+					area = brabant_area
+				}
+				value = 4
+			}
+			1744 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		} 
+
+		effect = {  
+			if = {
+				limit = {
+					primary_culture = flemish
+				}
+				add_years_of_owned_provinces_production_income = {
+					years = 5
+					trigger = {
+						trade_goods = cloth
+						OR = {
+							area = flanders_area
+							area = brabant_area
+						}
+					}
+					custom_tooltip = NED_FROM_CLOTH_PROVINCES
+				}
+				1744 = {
+					add_center_of_trade_level = 1
+				}
+			}
+			else = {
+				country_event_with_option_insight = {
+					id = dutch_mission_events.2
+					option_1 = "
+						1744 = {
+							change_culture = ROOT
+							add_province_modifier = {
+								name = ned_hollander_settlers
+								duration = 7300
+							}
+						}
+					"
+					option_2 = "
+						custom_tooltip = NED_ALL_FLEMISH_PROVINCES_LOSE_SEPERATISM
+						custom_tooltip = \" \"
+						define_advisor = {
+							culture = flemish
+							skill = 2
+							type = artist
+							cost_multiplier = 0.5
+						}
+					"
+				}
+			}
+		} 
+	}
+}
+
+NED_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = { 
+		has_dlc = "Winds of Change"
+		OR = {
+			tag = BRB
+			tag = FLA
+		}
+	} 
+
+	NED_raise_the_militia = {
+		icon = mission_landsknecht_soldier
+		position = 1
+
+		trigger = {  
+			OR = {
+				army_size_percentage = 1
+				army_size = 10
+			}
+		} 
+
+		effect = {  
+			give_claims = { area = north_brabant_area }
+			give_claims = { area = holland_area }
+			give_claims = { area = frisia_area }
+			give_claims = { area = flanders_area }
+			give_claims = { area = brabant_area }
+			
+			custom_tooltip = SEPERATOR_TOOLTIP
+			
+			complex_dynamic_effect = {
+				first_custom_tooltip = NED_IF_SUBJECT
+				first_limit = "
+					is_subject = yes
+				"
+				first_effect = "
+					set_country_flag = ned_no_stab_loss_on_independence_flag
+					custom_tooltip = NED_WE_WONT_LOSE_STABILITY_UPON_DECLARING_WAR_ON_OVERLORD
+				"
+				second_custom_tooltip = NED_IF_FREE
+				second_limit = "
+					is_subject = no
+				"
+				second_effect = "
+					create_general_with_pips = { tradition = 40 add_shock = 1 }
+				"
+			}
+		} 
+	}
+
+	NED_holland = {
+		icon = interest_of_holland
+		position = 2
+		required_missions = { NED_raise_the_militia } 
+		provinces_to_highlight = {  
+			OR = {
+				area = holland_area
+				area = north_brabant_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		trigger = {  
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = holland_area
+					area = north_brabant_area
+				}
+				value = 5
+			}
+		} 
+
+		effect = { 
+			custom_tooltip = NED_LOSE_10_AE_WITH_HRE
+			
+			custom_tooltip = SEPERATOR_TOOLTIP
+			
+			hidden_effect = {
+				every_known_country = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					add_aggressive_expansion = {
+						who = ROOT
+						value = -10
+					}
+				}
+			} 
+			if = {
+				limit = {
+					OR = {
+						tag = HOL
+						was_tag = HOL
+					}
+				}
+				country_event_with_effect_insight = {
+					id = dutch_mission_events.1
+					effect = "
+						change_mil = 1
+						add_legitimacy = 20
+					"
+				}
+			}
+			else = {
+				custom_tooltip = NED_MOST_DEVELOPED_PROVINCE_GAINS_FOLLOWING
+				tooltip = {
+					add_base_production = 1
+					add_base_manpower = 1
+					add_base_manpower = 1
+				}
+				hidden_effect = {
+					pick_best_provinces = {
+						scope = every_owned_province
+						scale = higher_development_than
+						1 = yes
+						event_target_name = "low_countries_target"
+						global_trigger = "
+							OR = {
+								area = holland_area
+								area = north_brabant_area
+							}
+						"
+					}
+					if = {
+						limit = {
+							has_saved_event_target = low_countries_target_1
+						}
+						event_target:low_countries_target_1 = {
+							add_base_production = 1
+							add_base_manpower = 1
+							add_base_manpower = 1
+						}
+					}
+				}
+			}
+		}
+	}
+
+	NED_unification_of_low_countries = {
+		icon = je_maintiendrai
+		position = 3
+		required_missions = {
+			NED_friesland
+			NED_holland
+			NED_flanders
+		}
+		provinces_to_highlight = {  
+			region = low_countries_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		} 
+
+		trigger = {  
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 15
+				region = low_countries_region
+			}
+		} 
+
+		effect = {
+			give_claims = { region = low_countries_region }
+			custom_tooltip = " "
+			custom_tooltip = NED_ALLOW_FASTER_NETHERLANDS_FORMATION
+			set_country_flag = ned_ignore_tech_requirement_netherlands
+			if = {
+				limit = {
+					tag = NED
+				}
+				add_country_modifier = {
+					name = ned_je_maintiedrai
+					duration = 14600
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = ned_je_maintiedrai
+					duration = 10950
+				}
+				custom_tooltip = " "
+				custom_tooltip = NED_IF_NETHERLANDS_EXTEND_ABOVE_MODIFIER
+			}
+		} 
+	}
+}
+
+NED_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = { 
+		has_dlc = "Winds of Change"
+		OR = {
+			tag = BRB
+			tag = FLA
+		}
+	} 
+
+	NED_friesland = {
+		icon = ned_friesland
+		position = 2
+		required_missions = { NED_raise_the_militia } 
+		provinces_to_highlight = {  
+			area = frisia_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		} 
+
+		trigger = {  
+			frisia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		} 
+
+		effect = {  
+			if = {
+				limit = {
+					primary_culture = frisian
+				}
+				add_country_modifier = {
+					name = ned_protection_of_frisian_freedom
+					duration = 5475
+				}
+				100 = {
+					add_base_production = 1
+				}
+				4382 = {
+					add_base_production = 1
+				}
+			}
+			else = {
+				add_army_tradition_or_mil_power = { amount = 10 }
+				
+				custom_tooltip = SEPERATOR_TOOLTIP
+				
+				add_estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 10
+				}
+			}
+		} 
+	}
+}
+
+NED_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = { 
+		has_dlc = "Winds of Change"
+		OR = {
+			tag = BRB
+			tag = FLA
+		}
+	} 
+
+	NED_end_sound_toll = {
+		icon = mission_end_the_sound_toll
+		position = 2
+		required_missions = { NED_hansa_relations } 
+		provinces_to_highlight = {  
+			province_id = 12
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		} 
+
+		trigger = {  
+			tag = NED
+			12 = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					AND = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+						owner = {
+							has_opinion = {
+								who = ROOT
+								value = 150
+							}
+						}
+					}
+				}
+			}
+		} 
+
+		effect = {
+			complex_dynamic_effect = {
+				first_custom_tooltip = NED_IF_COMPLETED_THROUGH_DIPLOMACY
+				first_limit = "
+					12 = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+						owner = {
+							has_opinion = {
+								who = ROOT
+								value = 150
+							}
+						}
+					}
+				"
+				first_effect = "
+					12 = {
+						add_province_triggered_modifier = ned_sound_toll_ties
+						custom_tooltip = NED_PROVINCE_TRIGGERED_MODIFIER_GRANTS_TRADE_POWER
+					}
+				"
+				second_custom_tooltip = NED_IF_COMPLETED_THROUGH_HOSTILITY
+				second_limit = "
+					12 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				"
+				second_effect = "
+					country_event_with_option_insight = {
+						id = dutch_mission_events.4
+						option_1 = \"
+							12 = {
+								add_or_upgrade_trade_building = yes
+							}
+							custom_tooltip = NED_LOSE_RELATIONS_WITH_LUBECK_COUNTRIES
+						\"
+						option_2 = \"
+							12 = {
+								remove_province_modifier = sound_toll
+								add_or_upgrade_production_building = yes
+							}
+							add_dip_power = 75
+							custom_tooltip = NED_GAIN_RELATIONS_WITH_LUBECK_COUNTRIES
+						\"
+					}
+				"
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						12 = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+					}
+					country_event = {
+						id = dutch_mission_events.4
+					}
+				}
+			}
+		} 
+	}
+
+	NED_baltic_supremacy = {
+		icon = mission_rb_control_the_hansa
+		position = 3
+		required_missions = { NED_sail_towards_lubeck } 
+		provinces_to_highlight = {  
+			province_id = 45
+			NOT = {
+				trade_share = {
+					country = ROOT
+					share = 25
+				}
+			}
+		} 
+
+		trigger = {  
+			45 = {
+				is_strongest_trade_power = ROOT
+				trade_share = {
+					country = ROOT
+					share = 25
+				}
+			}
+		} 
+
+		effect = {  
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 10
+			}
+			
+			custom_tooltip = SEPERATOR_TOOLTIP
+			
+			change_ruler_stat = {
+				type = dip
+				amount = 1
+			}
+			
+			custom_tooltip = SEPERATOR_TOOLTIP
+			
+			complex_dynamic_effect = {
+				first_custom_tooltip = NED_IF_NO_LUBECK
+				first_limit = "
+					OR = {
+						NOT = {
+							exists = HSA
+						}
+						is_trade_league_leader = no
+					}
+				"
+				first_effect = "
+					add_country_modifier_for_age = {
+						name = ned_connection_to_the_baltic
+						age = age_of_reformation
+					}
+				"
+			}
+		} 
+	}
+}
+
+NED_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = { 
+		has_dlc = "Winds of Change"
+		OR = {
+			tag = BRB
+			tag = FLA
+		}
+	} 
+
+	NED_hansa_relations = {
+		icon = mission_bane_of_the_hansa
+		position = 1
+		provinces_to_highlight = {  
+			province_id = 45
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		} 
+
+		trigger = {  
+			OR = {
+				45 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				45 = {
+					trade_share = {
+						country = ROOT
+						share = 5
+					}
+				}
+				45 = {
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 125
+						}
+						alliance_with = ROOT
+					}
+				}
+			}
+		} 
+
+		effect = {  
+			add_mercantilism_or_monarch_power = { amount = 2 }
+			
+			custom_tooltip = SEPERATOR_TOOLTIP
+			
+			complex_dynamic_effect = {
+				first_custom_tooltip = NED_IF_COMPLETED_THROUGH_DIPLOMACY
+				first_limit = "
+					45 = {
+						owner = {
+							has_opinion = {
+								who = ROOT
+								value = 125
+							}
+							alliance_with = ROOT
+						}
+					}
+				"
+				first_effect = "
+					45 = {
+						add_trade_modifier = {
+							who = ROOT
+							duration = 5475
+							power = 60
+							key = NED_HANSA_ALLIANCES
+						}
+					}
+					add_dip_power = 100
+				"
+				second_custom_tooltip = NED_IF_COMPLETED_THROUGH_HOSTILITY
+				second_limit = "
+					OR = {
+						45 = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						45 = {
+							trade_share = {
+								country = ROOT
+								share = 5
+							}
+						}
+					}
+				"
+				second_effect = "
+					give_claims = { id = 45 }
+					give_claims = { id = 25 }
+					45 = {
+						add_trade_modifier = {
+							who = ROOT
+							duration = 5475
+							power = 30
+							key = NED_CHALLENGE_HANSA
+						}
+					}
+				"
+			}
+		} 
+	}
+
+	NED_sail_towards_lubeck = {
+		icon = support_the_bulk_trades
+		position = 2
+		required_missions = { NED_hansa_relations } 
+		provinces_to_highlight = {  
+			province_id = 45
+			NOT = {
+				trade_share = {
+					country = ROOT
+					share = 15
+				}
+			}
+		} 
+
+		trigger = {  
+			num_of_light_ship = 30
+			45 = {
+				trade_share = {
+					country = ROOT
+					share = 15
+				}
+			}
+		} 
+
+		effect = {  
+			capital_scope = {
+				add_trade_node_income = 3
+			}
+			
+			custom_tooltip = SEPERATOR_TOOLTIP
+			
+			custom_tooltip = NED_GRANT_CLAIMS_ON_ALL_BATLIC_COT_PROVINCES
+			hidden_effect = {
+				1926 = {
+					every_trade_node_member_province = { 
+						limit = {
+							province_has_center_of_trade_of_level = 1
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+				}
+			}
+		} 
+	}
+
+	NED_securing_baltic_grain = {
+		icon = mission_pol_breadbasket_europe
+		position = 4
+		required_missions = { NED_sail_towards_lubeck }
+
+		trigger = { 
+			trading_bonus = {
+				trade_goods = grain
+				value = yes
+			}
+			1 = {
+				trade_share = {
+					country = ROOT
+					share = 30
+				}
+				is_strongest_trade_power = ROOT
+			}
+		} 
+
+		effect = {  
+			distribute_development = {
+				type = production
+				amount = 5
+			}
+			custom_tooltip = NED_GRANT_BONUS_ON_ALL_LOW_COUNTRIES_FARMLANDS_PROVINCES
+			tooltip = {
+				add_province_modifier = {
+					name = ned_baltic_grain_supply
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						region = low_countries_region
+						has_terrain = farmlands
+					}
+					add_province_modifier = {
+						name = ned_baltic_grain_supply
+						duration = -1
+					}
+				}
+			}
+		} 
+	}
+}

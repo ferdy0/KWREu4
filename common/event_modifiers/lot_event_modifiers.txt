@@ -49,3 +49,9 @@ azov_trade_colony = {
 army_in_deep_mourning = {
 	land_morale = -0.2
 }
+you_invested_didnt_ya = {
+	trade_goods_size_modifier = 0.2
+}
+oooo_invested_in_a_city_didya = {
+	trade_value_modifier = 0.2
+}
