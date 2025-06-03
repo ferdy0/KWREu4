@@ -1,0 +1,115 @@
+dutch_water_boards = {
+	potential = {
+		owner = {
+			OR = {
+				primary_culture = dutch
+				primary_culture = flemish
+				primary_culture = frisian
+				primary_culture = hessian
+			}
+		}
+	}
+	trigger = {
+		OR = {
+			has_building = courthouse
+			has_building = town_hall
+		}
+	}
+	min_local_autonomy = 10
+	province_trade_power_modifier = 0.05 #to undo autonomy impact on trade
+	local_build_cost = -0.25
+	local_development_cost = -0.1
+	
+	on_activation = {
+	}
+	
+	on_deactivation = {
+	add_unrest = 5
+	}
+}
+
+der_sumpfdrache = {
+	potential = {
+		owner = {
+			OR = {
+				primary_culture = dutch
+				primary_culture = flemish
+				primary_culture = frisian
+				primary_culture = hessian
+			}
+		}
+	}
+	trigger = {
+		if = {
+			limit = {
+				root = { mil_tech = 24 }
+			}
+			has_building = fort_18th
+		}
+		else_if = {
+			limit = {
+				root = { mil_tech = 19 }
+			}
+			has_building = fort_17th
+		}
+		else_if = {
+			limit = {
+				root = { mil_tech = 14 }
+			}
+			has_building = fort_16th
+		}
+		else = {
+			has_building = fort_15th
+		}
+	}
+	local_defensiveness = 0.1
+	fort_level = 1
+	
+	on_activation = {
+	}
+	
+	on_deactivation = {
+	}
+}
+
+utr_archbishopric = {
+	potential = {
+		has_building = cathedral
+	}
+	trigger = {
+		owner = {
+			OR = {
+				religion = catholic
+				religion = protestant
+				religion = reformed
+			}
+		}
+	}
+	if = {
+		limit = {
+			owner = { religion = catholic }
+		}
+		diplomats = 1
+		diplomatic_upkeep = 1
+		local_religious_conversion_resistance = 0.1
+	}
+	else_if = {
+		limit = {
+			owner = { religion = protestant }
+		}
+		local_religious_unity_contribution = -0.1
+		local_missionary_strength = -0.01
+	}
+	else_if = {
+		limit = {
+			owner = { religion = reformed }
+		}
+		local_missionary_strength = -0.02
+	}
+	
+	on_activation = {
+	}
+	
+	on_deactivation = {
+	}
+}

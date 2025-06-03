@@ -52,6 +52,11 @@ potestate_int_1 = {
 				owns_core_province = 2975
 			}
 			else = {
+				custom_trigger_tooltip = {
+					tooltip = lot_is_this_country_the_pot
+					has_subject_of_type = potestate_vassal
+				}
+				has_reform = general_estates_reform
 				KLE = {
 					is_subject_of_type = potestate_vassal
 					owns_core_province = 2975
@@ -60,36 +65,10 @@ potestate_int_1 = {
 						value = 175
 					}
 				}
-				custom_trigger_tooltip = {
-					tooltip = lot_is_this_country_the_pot
-					has_subject_of_type = potestate_vassal
-				}
-				has_reform = general_estates_reform
 			}
-			#OR = {
-			#	AND = {
-			#		tag = KLE
-			#		custom_trigger_tooltip = {
-			#			tooltip = lot_is_this_country_the_pot
-			#			has_subject_of_type = potestate_vassal
-			#		}
-			#		owns_core_province = 2975
-			#	}
-			#	AND = {
-			#		KLE = {
-			#			is_subject_of_type =  potestate_vassal
-			#			owns_core_province = 2975
-			#			has_opinion = {
-			#				who = ROOT
-			#				value = 175
-			#			}
-			#		}
-			#		has_reform = general_estates_reform
-			#	}
-			#}
 		}
 
-		effect = {  
+		effect = {
 			custom_tooltip = kleef_will_vote
 			hidden_effect = {
 				set_country_flag = permanent_clevian_vote
@@ -97,7 +76,7 @@ potestate_int_1 = {
 		}
 	}
 	
-	claim_gelre_vote = { #to be worked on!!
+	claim_gelre_vote = {
 		icon = sources_of_trade
 		position = 2
 		required_missions = {  } 
@@ -115,6 +94,7 @@ potestate_int_1 = {
 					has_subject_of_type = potestate_vassal
 				}
 				owns_core_province = 99
+				treasury = 300
 			}
 			else = {
 				custom_trigger_tooltip = {
@@ -124,50 +104,36 @@ potestate_int_1 = {
 				GEL = {
 					is_subject_of_type = potestate_vassal
 					owns_core_province = 99
+				}
+				GEL = {
 					has_opinion = {
 						who = ROOT
 						value = 175
 					}
+					subsidised_percent_amount = {
+						value = 0.33
+					}
 				}
-				has_reform = general_estates_reform
 			}
-			#OR = {
-			#	AND = {
-			#		tag = GEL
-			#		custom_trigger_tooltip = {
-			#			tooltip = lot_is_this_country_the_pot
-			#			has_subject_of_type = potestate_vassal
-			#		}
-			#		owns_core_province = 99
-			#	}
-			#	AND = {
-			#		GEL = {
-			#			is_subject_of_type =  potestate_vassal
-			#			owns_core_province = 2175
-			#			has_opinion = {
-			#				who = ROOT
-			#				value = 175
-			#			}
-			#		}
-			#		has_reform = general_estates_reform
-			#	}
-			#}
 		}
 
 		effect = {  
-			custom_tooltip = kleef_will_vote
+			custom_tooltip = gelre_will_vote
 			hidden_effect = {
-				set_country_flag = permanent_clevian_vote
+				set_country_flag = permanent_gelrian_vote
+			}
+			GEL = {
+				add_liberty_desire = -10
 			}
 		}
 	}
 	
-	claim_gulik_vote = { #to be worked on!!
+	claim_gulik_vote = {
 		icon = mission_rhine
 		position = 3
 		required_missions = {  } 
 		provinces_to_highlight = {  
-			province_id = 99
+			province_id = 1876
 		}
 
 		trigger = {
@@ -179,7 +145,14 @@ potestate_int_1 = {
 					tooltip = lot_is_this_country_the_pot
 					has_subject_of_type = potestate_vassal
 				}
-				owns_core_province = 2975
+				owns_core_province = 4768
+				owns_core_province = 4770
+				1876 = {
+					trade_share = {
+						country = ROOT
+						share = 15
+					}
+				}
 			}
 			else = {
 				custom_trigger_tooltip = {
@@ -188,20 +161,25 @@ potestate_int_1 = {
 				}
 				Z0N = {
 					is_subject_of_type = potestate_vassal
-					owns_core_province = 2975
+					owns_core_province = 4768
 					has_opinion = {
 						who = ROOT
-						value = 175
+						value = 100
 					}
 				}
-				has_reform = general_estates_reform
+				1876 = {
+					trade_share = {
+						country = Z0N
+						share = 10
+					}
+				}
 			}
 		}
 
 		effect = {  
-			custom_tooltip = kleef_will_vote
+			custom_tooltip = gulik_will_vote
 			hidden_effect = {
-				set_country_flag = permanent_clevian_vote
+				set_country_flag = permanent_julicher_vote
 			}
 		}
 	}
@@ -246,8 +224,7 @@ potestate_exp_1 = {
 		position = 4
 		required_missions = {  } 
 		provinces_to_highlight = {  
-			region = low_countries_region
-			country_or_non_sovereign_subject_holds = FLA
+			area = flanders_area
 		}
 
 		trigger = {
@@ -283,11 +260,12 @@ potestate_exp_1 = {
 		provinces_to_highlight = {  
 			OR = {
 				area = flanders_area
+				province_id = 88
+				province_id = 87
 			}
-			country_or_non_sovereign_subject_holds = FLA
 		}
 
-		trigger = { #work on this so that it adds their permanent vote if potestate, but integrates them if ned is formed and they're a vassal.
+		trigger = {
 			if = {
 				limit = {
 					tag = FLA
@@ -296,7 +274,35 @@ potestate_exp_1 = {
 					tooltip = lot_is_this_country_the_pot
 					has_subject_of_type = potestate_vassal
 				}
-				owns_core_province = 2975
+				owns_core_province = 87
+				87 = {
+					province_has_center_of_trade_of_level = 2
+				}
+				1269 = {
+					trade_share = {
+						country = ROOT
+						share = 25
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					tag = NED
+				}
+				dip_power = 550
+				FLA = {
+					is_subject_of_type = potestate_vassal
+				}
+				FLA = {
+					owns_core_province = 88
+					owns_core_province = 90
+					owns_core_province = 1865
+					owns_core_province = 87
+					owns_core_province = 4769
+				}
+				87 = {
+					province_has_center_of_trade_of_level = 3
+				}
 			}
 			else = {
 				custom_trigger_tooltip = {
@@ -305,24 +311,33 @@ potestate_exp_1 = {
 				}
 				FLA = {
 					is_subject_of_type = potestate_vassal
-					owns_core_province = 2975
-					has_opinion = {
-						who = ROOT
-						value = 175
-					}
+					owns_core_province = 88
+					owns_core_province = 90
+					owns_core_province = 1865
+					owns_core_province = 87
+					owns_core_province = 4769
 				}
-				has_reform = general_estates_reform
+				87 = {
+					province_has_center_of_trade_of_level = 3
+				}
 			}
 		}
 
 		effect = {  
-			custom_tooltip = friesland_will_vote
-			hidden_effect = {
-				set_country_flag = permanent_frisian_vote
+			if = {
+				limit = {
+					tag = NED
+				}
+				add_dip_power = -550
+				inherit = FLA
 			}
-			FRI = {
-				add_liberty_desire = 30
+			else = {
+				custom_tooltip = vlaanderen_will_vote
+				hidden_effect = {
+					set_country_flag = permanent_flemish_vote
+				}
 			}
+			add_years_of_income = 0.5
 		}
 	}
 }
@@ -1011,9 +1026,10 @@ potestate_int_2 = {
 					has_subject_of_type = potestate_vassal
 				}
 				FRI = {
-					is_subject_of = ROOT
 					is_subject_of_type = potestate_vassal
 					owns_core_province = 100
+				}
+				FRI = {
 					has_opinion = {
 						who = HOL
 						value = 100
@@ -1021,28 +1037,6 @@ potestate_int_2 = {
 					NOT = { liberty_desire = 50 }
 				}
 			}
-			#OR = {
-			#	AND = {
-			#		tag = FRI
-			#		custom_trigger_tooltip = {
-			#			tooltip = lot_is_this_country_the_pot
-			#			has_subject_of_type = potestate_vassal
-			#		}
-			#		owns_core_province = 100
-			#	}
-			#	AND = {
-			#		FRI = {
-			#			is_subject_of_type = potestate_vassal
-			#			has_opinion = {
-			#				who = HOL
-			#				value = 150
-			#			}
-			#			owns_core_province = 100
-			#			NOT = { liberty_desire = 50 }
-			#		}
-			#		
-			#	}
-			#}
 		}
 
 		effect = {  
@@ -1056,13 +1050,13 @@ potestate_int_2 = {
 		}
 	}
 	
-	claim_holland_vote = { #to be worked on!!
+	claim_holland_vote = {
 		icon = mission_ned_amsterdam_bourse
 		position = 2
 		required_missions = {  } 
 		provinces_to_highlight = {  
 			area = holland_area
-			country_or_non_sovereign_subject_holds = HOL
+			controlled_by = HOL
 		}
 		
 		trigger = {
@@ -1074,9 +1068,14 @@ potestate_int_2 = {
 					tooltip = lot_is_this_country_the_pot
 					has_subject_of_type = potestate_vassal
 				}
-				owns_core_province = 97
 				owns_core_province = 4383
-				owns_core_province = 96
+				owns_core_province = 97
+				97 = {
+					has_great_project = {
+						type = amsterdam_bourse
+						tier = 1
+					}
+				}
 			}
 			else = {
 				custom_trigger_tooltip = {
@@ -1085,23 +1084,28 @@ potestate_int_2 = {
 				}
 				HOL = {
 					is_subject_of_type = potestate_vassal
-					owns_core_province = 100
+					owns_core_province = 4383
+				}
+				HOL = {
+					owns_core_province = 97
 					has_opinion = {
 						who = HOL
-						value = 100
+						value = 150
 					}
-					NOT = { liberty_desire = 50 }
+				}
+				97 = {
+					has_great_project = {
+						type = amsterdam_bourse
+						tier = 1
+					}
 				}
 			}
 		}
 
 		effect = {  
-			custom_tooltip = friesland_will_vote
+			custom_tooltip = holland_will_vote
 			hidden_effect = {
-				set_country_flag = permanent_frisian_vote
-			}
-			FRI = {
-				add_liberty_desire = 30
+				set_country_flag = permanent_hollander_vote
 			}
 		}
 	}
@@ -1128,46 +1132,25 @@ potestate_int_2 = {
 				owns_core_province = 4381
 			}
 			else = {
-				UTR = {
-					is_subject_of_type = potestate_vassal
-					owns_core_province = 98
-					has_opinion = {
-						who = ROOT
-						value = 150
-					}
-					government = theocracy
-				}
 				custom_trigger_tooltip = {
 					tooltip = lot_is_this_country_the_pot
 					has_subject_of_type = potestate_vassal
 				}
 				has_estate_privilege = estate_church_religious_delegation
 				NOT = { has_estate_privilege = estate_church_institutionalized_clergy }
+				UTR = {
+					is_subject_of_type = potestate_vassal
+					government = theocracy
+					owns_core_province = 98
+				}
+				UTR = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+					
+				}
 			}
-			#OR = {
-			#	AND = {
-			#		tag = UTR
-			#		custom_trigger_tooltip = {
-			#			tooltip = lot_is_this_country_the_pot
-			#			has_subject_of_type = potestate_vassal
-			#		}
-			#		owns_core_province = 98
-			#		owns_core_province = 4381
-			#	}
-			#	AND = {
-			#		UTR = {
-			#			is_subject_of_type = potestate_vassal
-			#			has_opinion = {
-			#				who = HOL
-			#				value = 150
-			#			}
-			#			owns_core_province = 98
-			#			government = theocracy
-			#		}
-			#		has_estate_privilege = estate_church_religious_delegation
-			#		NOT = { has_estate_privilege = estate_church_institutionalized_clergy }
-			#	}
-			#}
 		}
 
 		effect = {  
@@ -1971,32 +1954,6 @@ dutch_local_flavour_urban = {
 					development = 30
 				}
 			}
-			#OR = {
-			#	AND = {
-			#		OR = {
-			#			tag = NED
-			#			tag = HOL
-			#		}
-			#		4383 = {
-			#			base_production = 10
-			#			development = 30
-			#		}
-			#	}
-			#	AND = {
-			#		tag = UTR
-			#		98 = {
-			#			base_production = 10
-			#			development = 20
-			#		}
-			#	}
-			#	AND = {
-			#		tag = KLE
-			#		2975 = {
-			#			base_production = 10
-			#			development = 25
-			#		}
-			#	}
-			#}
 		}
 
 		effect = {  
@@ -2073,23 +2030,49 @@ dutch_local_waterworks = {
 		position = 2
 		required_missions = {  }
 		provinces_to_highlight = {
-			region = low_countries_region
-			country_or_non_sovereign_subject_holds = ROOT
+			OR = {
+				region = low_countries_region
+				province_id = 2975
+				province_id = 4768
+			}
+			controlled_by = ROOT
 		}
 		
 		trigger = {
-			#every_owned_province = {
-			#	limit = {
-			#		region = low_countries_region
-			#	}
-			#	num_of_times_expanded_infrastructure = 2
-			#	#some kind of currency cost
-			#}
+			NOT = { had_recent_war = 10 }
+			adm_tech = 8
+			if = {
+				limit = {
+					num_of_cities = 4
+				}
+				treasury = 200
+			}
+			else_if = {
+				limit = {
+					num_of_cities = 2
+				}
+				treasury = 100
+			}
+			else = {
+				treasury = 50
+			}
+			all_owned_province = { #would be cool if we can limit this to only provinces in the low_countries_region and Cleves and Julich provinces
+				num_of_times_expanded_infrastructure = 2
+			}
 		}
 
 		effect = {
-			#courthouse to represent the waterschap office
-			#permanent provincial modifier for a bit of autonomy but also lower dev and construction cost. (on all coastal and river provinces)
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = low_countries_region
+						province_id = 2975
+						province_id = 4768
+					}
+				}
+				add_building = courthouse
+				add_province_triggered_modifier = dutch_water_boards
+			}
 		}
 	}
 }
@@ -2133,8 +2116,12 @@ potestate_exp_3 = {
 		position = 3
 		required_missions = {  } 
 		provinces_to_highlight = {  
-			region = low_countries_region
-			country_or_non_sovereign_subject_holds = BRB
+			OR = {
+				area = north_brabant_area
+				area = brabant_area
+				province_id = 1743
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
@@ -2144,14 +2131,6 @@ potestate_exp_3 = {
 				}
 				BRB = {
 					is_subject_of = ROOT
-				}
-				north_brabant_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-				brabant_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
 			1744 = {
@@ -2196,11 +2175,12 @@ potestate_exp_3 = {
 			OR = {
 				area = north_brabant_area
 				area = brabant_area
+				province_id = 1743
 			}
 			country_or_non_sovereign_subject_holds = BRB
 		}
-
-		trigger = { #work on this so that it adds their permanent vote if potestate, but integrates them if ned is formed and they're a vassal.
+		
+		trigger = {
 			if = {
 				limit = {
 					tag = BRB
@@ -2209,32 +2189,77 @@ potestate_exp_3 = {
 					tooltip = lot_is_this_country_the_pot
 					has_subject_of_type = potestate_vassal
 				}
-				owns_core_province = 2975
+				owns_core_province = 1744
+				owns_core_province = 95
+				owns_core_province = 92
+				army_size = 25
+			}
+			else_if = {
+				limit = {
+					tag = NED
+				}
+				dip_power = 300
+				treasury = 550
+				BRB = {
+					is_subject_of_type = potestate_vassal
+					has_opinion = {
+						who = ROOT
+						value = 175
+					}
+				}
+				BRB = {
+					owns_core_province = 1744
+					owns_core_province = 95
+					owns_core_province = 92
+				}
 			}
 			else = {
 				custom_trigger_tooltip = {
 					tooltip = lot_is_this_country_the_pot
 					has_subject_of_type = potestate_vassal
 				}
+				treasury = 550
 				BRB = {
 					is_subject_of_type = potestate_vassal
-					owns_core_province = 2975
 					has_opinion = {
 						who = ROOT
 						value = 175
 					}
 				}
-				has_reform = general_estates_reform
+				BRB = {
+					owns_core_province = 1744
+					owns_core_province = 95
+					owns_core_province = 92
+				}
 			}
 		}
-
 		effect = {  
-			custom_tooltip = friesland_will_vote
-			hidden_effect = {
-				set_country_flag = permanent_frisian_vote
+			if = {
+				limit = {
+					tag = NED
+				}
+				add_treasury = -550
+				add_dip_power = -300
+				inherit = BRB
 			}
-			FRI = {
-				add_liberty_desire = 30
+			else_if = {
+				limit = {
+					tag = BRB
+				}
+				custom_tooltip = brabant_will_vote
+				hidden_effect = {
+					set_country_flag = permanent_brabantian_vote
+				}
+			}
+			else = {
+				add_treasury = -550
+				BRB = {
+					add_treasury = 550
+				}
+				custom_tooltip = brabant_will_vote
+				hidden_effect = {
+					set_country_flag = permanent_brabantian_vote
+				}
 			}
 		}
 	}
@@ -2884,6 +2909,10 @@ east_frisian_expansion = {
 		icon = ned_friesland
 		position = 1
 		required_missions = {  }
+		provinces_to_highlight = {  
+			province_id = 1931
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 
 		trigger = {
 			owns_core_province = 4382
@@ -2936,41 +2965,26 @@ frisian_local_flavour = {
 		}
 	}
 	
-	fri_original_freedom = { #i'm workin' 'ere
-		icon = mission_unite_home_region #to be replaced with another
+	fri_original_cow = {
+		icon = mission_pol_tend_east
 		position = 2
 		required_missions = {  }
+		provinces_to_highlight = {  
+			province_id = 100
+		}
 
 		trigger = {
-			owns_core_province = 4382
 			owns_core_province = 100
-			owns_or_non_sovereign_subject_of = 1931
+			100 = {
+				has_building = farm_estate
+			}
 		}
 
 		effect = {  
-			if = {
-				limit = {
-					primary_culture = frisian
-				}
-				add_country_modifier = {
-					name = ned_protection_of_frisian_freedom
-					duration = 5475
-				}
-				100 = {
-					add_base_production = 1
-				}
-				4382 = {
-					add_base_production = 1
-				}
-			}
-			else = {
-				add_army_tradition_or_mil_power = { amount = 10 }
-				
-				custom_tooltip = SEPERATOR_TOOLTIP
-				
-				add_estate_loyalty = {
-					estate = estate_nobles
-					loyalty = 10
+			100 = {
+				add_province_modifier = {
+					name = frisian_cow_home
+					duration = 7300
 				}
 			}
 		}
@@ -2992,43 +3006,57 @@ gelran_local_flavour = {
 		}
 	}
 	
-	gel_t_graafschap_zutphen = { #i'm workin' 'ere, probably lubeck/hansa focussed
+	gel_t_graafschap_zutphen = {
 		icon = defend_the_city
 		position = 2
 		required_missions = {  }
-
+		provinces_to_highlight = {  
+			province_id = 45
+		}
+		
 		trigger = {
-			owns_core_province = 4382
-			owns_core_province = 100
-			owns_or_non_sovereign_subject_of = 1931
+			OR = {
+				HSA = {
+					has_opinion = {
+						who = ROOT
+						value = 125
+					}
+				}
+				alliance_with = HSA
+			}
+			1269 = {
+				trade_share = {
+					country = HSA
+					share = 2
+				}
+			}
+			45 = {
+				trade_share = {
+					country = ROOT
+					share = 1
+				}
+			}
 		}
 
 		effect = {  
-			if = {
-				limit = {
-					primary_culture = frisian
-				}
-				add_country_modifier = {
-					name = ned_protection_of_frisian_freedom
-					duration = 5475
-				}
-				100 = {
-					add_base_production = 1
-				}
-				4382 = {
-					add_base_production = 1
+			45 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = 7300
+					power = 5
+					key = NED_HANSA_ALLIANCES
 				}
 			}
-			else = {
-				add_army_tradition_or_mil_power = { amount = 10 }
-				
-				custom_tooltip = SEPERATOR_TOOLTIP
-				
-				add_estate_loyalty = {
-					estate = estate_nobles
-					loyalty = 10
+			99 = {
+				add_trade_modifier = {
+					who = HSA
+					duration = 7300
+					power = 3
+					key = HSA_ZUTPHEN
 				}
 			}
+			add_dip_power = 100
+			add_mercantilism_or_monarch_power = { amount = 2 }
 		}
 	}
 }
@@ -3053,28 +3081,29 @@ hollander_local_flavour = {
 		icon = ned_dykes
 		position = 2
 		required_missions = {  }
-	#	provinces_to_highlight = {
-	#		province_id = 97
-	#		NOT = has_great_project = {
-	#			type = dutch_polders
-	#			tier = 3
-	#		}
-	#	}
-	#
-	#	trigger = {
-	#		#owns_core_province = 97
-	#		#97 = {
-	#		#	has_great_project = {
-	#		#		type = dutch_polders
-	#		#		tier = 3
-	#		#	}
-	#		#}
-	#	} 
-	#
-	#	effect = {
-	#		#set_country_flag = ned_buff_dutch_polders_great_project_flag
-	#		#custom_tooltip = NED_MODIFY_DUTCH_POLDERS_MONUMENT
-	#	} 
+		provinces_to_highlight = {
+			province_id = 97
+		}
+		
+		trigger = {
+			owns_core_province = 97
+			97 = {
+				has_great_project = {
+					type = dutch_polders
+					tier = 2
+				}
+				has_building = workshop
+			}
+		}
+		
+		effect = {
+			97 = {
+				add_province_modifier = {
+					name = new_and_budding_lands
+					duration = 7300
+				}
+			}
+		}
 	}
 }
 
@@ -3093,18 +3122,46 @@ gulik_local_flavour = {
 		}
 	}
 	
-	gulik_de_moerasdraak = { #i'm workin' 'ere
-		icon = mission_unite_home_region #to be replaced with another
+	gulik_de_moerasdraak = {
+		icon = fixed_garrison_system
 		position = 2
 		required_missions = {  }
+		
+		provinces_to_highlight = {
+			province_id = 4470
+		}
 
 		trigger = {
 			owns_core_province = 4770
-			#strongest fort, and maybe something else
+			4770 = {
+				if = {
+					limit = {
+						root = { mil_tech = 24 }
+					}
+					has_building = fort_18th
+				}
+				else_if = {
+					limit = {
+						root = { mil_tech = 19 }
+					}
+					has_building = fort_17th
+				}
+				else_if = {
+					limit = {
+						root = { mil_tech = 14 }
+					}
+					has_building = fort_16th
+				}
+				else = {
+					has_building = fort_15th
+				}
+			}
 		}
 
 		effect = {  
-			#defensive buffs, let's go! (conditional!)
+			4770 = {
+				add_province_triggered_modifier = der_sumpfdrache
+			}
 		}
 	}
 }
@@ -3172,36 +3229,33 @@ utrecht_local_flavour = {
 		}
 	}
 	
-	utr_archbishop_of_t_nether = { #i'm workin' 'ere, makin' utrecht archbishop, maybe compete with Liege, or papal relations, or both
-		icon = mission_unite_home_region #to be replaced with another
+	utr_archbishop_of_t_nether = { #i hope this works
+		icon = eastern_catholicization
 		position = 2
-		required_missions = {  } 
-		provinces_to_highlight = {  
-			province_id = 94
-			OR = {
-				NOT = { development = 15 }
-				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				NOT = { has_fort_building_trigger = yes  }
-			}
-		} 
+		required_missions = {  }
 	
-		trigger = {  
-			94 = {
+		trigger = {
+			98 = {
 				country_or_non_sovereign_subject_holds = ROOT
-				has_fort_building_trigger = yes
-				development = 15
+				has_building = temple
 			}
-		} 
-	
-		effect = {  
-			94 = {
-				add_or_upgrade_fort_building = yes
-				add_province_modifier = {
-					name = ned_the_bock
-					duration = -1
+			OR = {
+				AND = {
+					is_year = 1540
+					alliance_with = KOL
+				}
+				98 = {
+					has_cardinal = yes
 				}
 			}
-		} 
+		}
+	
+		effect = {
+			98 = {
+				add_building = cathedral
+				add_province_triggered_modifier = utr_archbishopric
+			}
+		}
 	}
 }
 
@@ -3219,32 +3273,30 @@ brabant_local_flavour = {
 		has_global_flag = integrated_brb_to_pot
 	}
 	
-	brb_compete_flanders = { #i'm workin' 'ere, something about a sea canal
-		icon = mission_unite_home_region #to be replaced with another
+	brb_compete_flanders = {
+		icon = mission_se_along_the_river 
 		position = 2
-		required_missions = {  } 
-		provinces_to_highlight = {  
-			province_id = 94
-			OR = {
-				NOT = { development = 15 }
-				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				NOT = { has_fort_building_trigger = yes  }
-			}
+		required_missions = {  }
+		provinces_to_highlight = {
+			province_id = 92
 		} 
 	
 		trigger = {  
-			94 = {
+			92 = {
 				country_or_non_sovereign_subject_holds = ROOT
-				has_fort_building_trigger = yes
-				development = 15
+				base_production = 10
+				OR = {
+					has_building = marketplace
+					has_building = trade_depot
+					has_building = stock_exchange
+				}
 			}
 		} 
 	
 		effect = {  
-			94 = {
-				add_or_upgrade_fort_building = yes
+			92 = {
 				add_province_modifier = {
-					name = ned_the_bock
+					name = brussel_schelde_zeekanaal
 					duration = -1
 				}
 			}
@@ -3352,36 +3404,42 @@ flanders_local_flavour = {
 		has_global_flag = integrated_fla_to_pot
 	}
 	
-	fla_cloth_trade = { #i'm workin' 'ere, inspired by base cloth trading mission
+	fla_cloth_trade = {
 		icon = ned_cloth_trading
 		position = 2
 		required_missions = {  } 
 		provinces_to_highlight = {  
-			province_id = 94
-			OR = {
-				NOT = { development = 15 }
-				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				NOT = { has_fort_building_trigger = yes  }
-			}
 		} 
 	
 		trigger = {  
-			94 = {
-				country_or_non_sovereign_subject_holds = ROOT
-				has_fort_building_trigger = yes
-				development = 15
+			trade_goods_produced_amount = {
+				trade_goods = cloth
+				amount = 10
 			}
 		} 
 	
-		effect = {  
-			94 = {
-				add_or_upgrade_fort_building = yes
+		effect = {
+			custom_tooltip = NED_ALL_FLEMISH_PROVINCES_GAIN_FOLLOWING
+			tooltip = {
 				add_province_modifier = {
-					name = ned_the_bock
-					duration = -1
+					name = ned_flemish_cloth_trading
+					duration = 5475
 				}
 			}
-		} 
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						region = low_countries_region
+						trade_goods = cloth
+						culture = flemish
+					}
+					add_province_modifier = {
+						name = ned_flemish_cloth_trading
+						duration = 5475
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -4995,23 +5053,9 @@ potestate_unification = {
 		} 
 
 		effect = {
-			give_claims = { region = low_countries_region }
-			if = {
-				limit = {
-					tag = NED
-				}
-				add_country_modifier = {
-					name = ned_je_maintiedrai
-					duration = 14600
-				}
-			}
-			else = {
-				add_country_modifier = {
-					name = ned_je_maintiedrai
-					duration = 10950
-				}
-				custom_tooltip = " "
-				custom_tooltip = NED_IF_NETHERLANDS_EXTEND_ABOVE_MODIFIER
+			add_country_modifier = {
+				name = ned_je_maintiedrai
+				duration = 10950
 			}
 			if = {
 				limit = {

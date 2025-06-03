@@ -81,6 +81,7 @@ country_decisions = {
 				else = {
 					add_government_reform = potestate_freedom_mon
 				}
+				swap_non_generic_missions = yes
 			}
 			hidden_effect = {
 				HOL = {
@@ -175,6 +176,7 @@ country_decisions = {
 				else = {
 					add_government_reform = potestate_freedom_mon
 				}
+				swap_non_generic_missions = yes
 			}
 			hidden_effect = {
 				HOL = {
@@ -261,6 +263,7 @@ country_decisions = {
 			}
 			EFR = {
 				add_government_reform = potestate_peasant_freedom
+				swap_non_generic_missions = yes
 			}
 			hidden_effect = {
 				set_global_flag = integrated_efr_to_pot

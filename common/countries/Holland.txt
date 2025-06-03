@@ -28,8 +28,8 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Dirk #5" = 80
-	"Floris #2" = 80
+	"Floris #2" = 50
+	"Dirk #5" = 30
 	"Lambert #1" = 30
 	"Robrecht #0" = 30
 	"Arnulf #1" = 15

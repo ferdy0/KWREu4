@@ -152,6 +152,62 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 					is_female = yes
 				}
 			}
+			modifier = {
+				factor = 50
+				tag = KLE
+				HOL = {
+					has_country_flag = permanent_clevian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = GEL
+				HOL = {
+					has_country_flag = permanent_gelrian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = Z0N
+				HOL = {
+					has_country_flag = permanent_julicher_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = FLA
+				HOL = {
+					has_country_flag = permanent_flemish_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = FRI
+				HOL = {
+					has_country_flag = permanent_frisian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = HOL
+				HOL = {
+					has_country_flag = permanent_hollander_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = UTR
+				HOL = {
+					has_country_flag = permanent_utrechter_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = BRB
+				HOL = {
+					has_country_flag = permanent_brabantian_vote
+				}
+			}
 		}
 		hidden_effect = {
 			HOL = {
@@ -250,6 +306,62 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 				factor = 0.5
 				FRI = {
 					is_female = yes
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = KLE
+				FRI = {
+					has_country_flag = permanent_clevian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = GEL
+				FRI = {
+					has_country_flag = permanent_gelrian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = Z0N
+				FRI = {
+					has_country_flag = permanent_julicher_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = FLA
+				FRI = {
+					has_country_flag = permanent_flemish_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = FRI
+				FRI = {
+					has_country_flag = permanent_frisian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = HOL
+				FRI = {
+					has_country_flag = permanent_hollander_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = UTR
+				FRI = {
+					has_country_flag = permanent_utrechter_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = BRB
+				FRI = {
+					has_country_flag = permanent_brabantian_vote
 				}
 			}
 		}
@@ -352,6 +464,62 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 					is_female = yes
 				}
 			}
+			modifier = {
+				factor = 50
+				tag = KLE
+				UTR = {
+					has_country_flag = permanent_clevian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = GEL
+				UTR = {
+					has_country_flag = permanent_gelrian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = Z0N
+				UTR = {
+					has_country_flag = permanent_julicher_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = FLA
+				UTR = {
+					has_country_flag = permanent_flemish_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = FRI
+				UTR = {
+					has_country_flag = permanent_frisian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = HOL
+				UTR = {
+					has_country_flag = permanent_hollander_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = UTR
+				UTR = {
+					has_country_flag = permanent_utrechter_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = BRB
+				UTR = {
+					has_country_flag = permanent_brabantian_vote
+				}
+			}
 		}
 		hidden_effect = {
 			HOL = {
@@ -450,6 +618,62 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 				factor = 0.5
 				GEL = {
 					is_female = yes
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = KLE
+				GEL = {
+					has_country_flag = permanent_clevian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = GEL
+				GEL = {
+					has_country_flag = permanent_gelrian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = Z0N
+				GEL = {
+					has_country_flag = permanent_julicher_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = FLA
+				GEL = {
+					has_country_flag = permanent_flemish_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = FRI
+				GEL = {
+					has_country_flag = permanent_frisian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = HOL
+				GEL = {
+					has_country_flag = permanent_hollander_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = UTR
+				GEL = {
+					has_country_flag = permanent_utrechter_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = BRB
+				GEL = {
+					has_country_flag = permanent_brabantian_vote
 				}
 			}
 		}
@@ -552,6 +776,62 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 					is_female = yes
 				}
 			}
+			modifier = {
+				factor = 50
+				tag = KLE
+				KLE = {
+					has_country_flag = permanent_clevian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = GEL
+				KLE = {
+					has_country_flag = permanent_gelrian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = Z0N
+				KLE = {
+					has_country_flag = permanent_julicher_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = FLA
+				KLE = {
+					has_country_flag = permanent_flemish_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = FRI
+				KLE = {
+					has_country_flag = permanent_frisian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = HOL
+				KLE = {
+					has_country_flag = permanent_hollander_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = UTR
+				KLE = {
+					has_country_flag = permanent_utrechter_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = BRB
+				KLE = {
+					has_country_flag = permanent_brabantian_vote
+				}
+			}
 		}
 		hidden_effect = {
 			HOL = {
@@ -650,6 +930,62 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 				factor = 0.5
 				Z0N = {
 					is_female = yes
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = KLE
+				Z0N = {
+					has_country_flag = permanent_clevian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = GEL
+				Z0N = {
+					has_country_flag = permanent_gelrian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = Z0N
+				Z0N = {
+					has_country_flag = permanent_julicher_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = FLA
+				Z0N = {
+					has_country_flag = permanent_flemish_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = FRI
+				Z0N = {
+					has_country_flag = permanent_frisian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = HOL
+				Z0N = {
+					has_country_flag = permanent_hollander_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = UTR
+				Z0N = {
+					has_country_flag = permanent_utrechter_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = BRB
+				Z0N = {
+					has_country_flag = permanent_brabantian_vote
 				}
 			}
 		}
@@ -752,6 +1088,62 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 					is_female = yes
 				}
 			}
+			modifier = {
+				factor = 50
+				tag = KLE
+				LUX = {
+					has_country_flag = permanent_clevian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = GEL
+				LUX = {
+					has_country_flag = permanent_gelrian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = Z0N
+				LUX = {
+					has_country_flag = permanent_julicher_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = FLA
+				LUX = {
+					has_country_flag = permanent_flemish_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = FRI
+				LUX = {
+					has_country_flag = permanent_frisian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = HOL
+				LUX = {
+					has_country_flag = permanent_hollander_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = UTR
+				LUX = {
+					has_country_flag = permanent_utrechter_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = BRB
+				LUX = {
+					has_country_flag = permanent_brabantian_vote
+				}
+			}
 		}
 		hidden_effect = {
 			HOL = {
@@ -850,6 +1242,62 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 				factor = 0.5
 				BRB = {
 					is_female = yes
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = KLE
+				BRB = {
+					has_country_flag = permanent_clevian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = GEL
+				BRB = {
+					has_country_flag = permanent_gelrian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = Z0N
+				BRB = {
+					has_country_flag = permanent_julicher_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = FLA
+				BRB = {
+					has_country_flag = permanent_flemish_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = FRI
+				BRB = {
+					has_country_flag = permanent_frisian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = HOL
+				BRB = {
+					has_country_flag = permanent_hollander_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = UTR
+				BRB = {
+					has_country_flag = permanent_utrechter_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = BRB
+				BRB = {
+					has_country_flag = permanent_brabantian_vote
 				}
 			}
 		}
@@ -952,6 +1400,62 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 					is_female = yes
 				}
 			}
+			modifier = {
+				factor = 50
+				tag = KLE
+				FLA = {
+					has_country_flag = permanent_clevian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = GEL
+				FLA = {
+					has_country_flag = permanent_gelrian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = Z0N
+				FLA = {
+					has_country_flag = permanent_julicher_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = FLA
+				FLA = {
+					has_country_flag = permanent_flemish_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = FRI
+				FLA = {
+					has_country_flag = permanent_frisian_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = HOL
+				FLA = {
+					has_country_flag = permanent_hollander_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = UTR
+				FLA = {
+					has_country_flag = permanent_utrechter_vote
+				}
+			}
+			modifier = {
+				factor = 50
+				tag = BRB
+				FLA = {
+					has_country_flag = permanent_brabantian_vote
+				}
+			}
 		}
 		hidden_effect = {
 			HOL = {
@@ -976,20 +1480,52 @@ country_event = {
 	hidden = yes
 	
 	trigger = {
+		tag = HOL
 		is_variable_equal = {
 			which = potestate_voting_check
 			which = total_potestate_members
-		}
-		OR = {
-			has_reform = potestate_overlord_mon
-			has_reform = potestate_overlord_rep
-			has_reform = potestate_overlord_theo
 		}
 	}
 	
 	after = {
 		set_variable = {
 			which = potestate_voting_check
+			value = 0
+		}
+		set_variable = {
+			which = voted_holland_lord
+			value = 0
+		}
+		set_variable = {
+			which = voted_friesland_lord
+			value = 0
+		}
+		set_variable = {
+			which = voted_utrecht_lord
+			value = 0
+		}
+		set_variable = {
+			which = voted_gelre_lord
+			value = 0
+		}
+		set_variable = {
+			which = voted_kleef_lord
+			value = 0
+		}
+		set_variable = {
+			which = voted_gulik_lord
+			value = 0
+		}
+		set_variable = {
+			which = voted_luxemburg_lord
+			value = 0
+		}
+		set_variable = {
+			which = voted_brabant_lord
+			value = 0
+		}
+		set_variable = {
+			which = voted_vlaanderen_lord
 			value = 0
 		}
 	}
@@ -1367,7 +1903,7 @@ country_event = {
 					which = voted_vlaanderen_lord
 				}
 			}
-			HOL = {
+			KLE = {
 				country_event = {
 					id = potestate_flavour.4
 					days = 5
@@ -1417,7 +1953,14 @@ country_event = {
 	major = yes
 	is_triggered_only = yes
 	
-	immediate = {
+	after = {
+		hidden_effect = {
+			clr_global_flag = election_in_progress_just_wait
+		}
+	}
+	
+	option = {
+		name = potestate_flavour.4.a
 		#Set new potestate up (gov. form)
 		hidden_effect = {
 			set_ruler_flag = the_elected_potestate
@@ -1490,48 +2033,5 @@ country_event = {
 				}
 			}
 		}
-	}
-	
-	option = {
-		name = potestate_flavour.4.a
-		hidden_effect = {
-			set_variable = {
-				which = voted_holland_lord
-				value = 0
-			}
-			set_variable = {
-				which = voted_friesland_lord
-				value = 0
-			}
-			set_variable = {
-				which = voted_utrecht_lord
-				value = 0
-			}
-			set_variable = {
-				which = voted_gelre_lord
-				value = 0
-			}
-			set_variable = {
-				which = voted_kleef_lord
-				value = 0
-			}
-			set_variable = {
-				which = voted_gulik_lord
-				value = 0
-			}
-			set_variable = {
-				which = voted_luxemburg_lord
-				value = 0
-			}
-			set_variable = {
-				which = voted_brabant_lord
-				value = 0
-			}
-			set_variable = {
-				which = voted_vlaanderen_lord
-				value = 0
-			}
-		}
-		clr_global_flag = election_in_progress_just_wait
 	}
 }
