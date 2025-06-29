@@ -205,6 +205,19 @@ Norway_missions_s1 = {
         icon = spa_dominate_sevilla
         required_missions = { project_selvvind_mission }
         position = 22
+        OR = {
+                area = eastern_norway
+                area = western_norway
+                area = northern_norway 
+                province_id = 18
+                province_id = 8
+                province_id = 5
+                province_id = 4164
+                province_id = 16
+            }
+            NOT = {
+                has_building = counting_house
+            }
 
         trigger = {
             northern_norway = {
@@ -939,7 +952,7 @@ Norway_missions_s2 = {
         }
     }
 
-    project_selvvind_mission = {
+    project_selvvind_mission = { #still needs localisation
         icon = mission_rb_central_belt_coal_mining
         required_missions = { The_royal_althing_mission }
         position = 21
@@ -956,6 +969,32 @@ Norway_missions_s2 = {
             change_innovativeness = -50
             country_event = {
                 id = mission_nor.9
+            }
+        }
+    }
+
+    Project_tidtaker_mission = { #still needs localisation
+        icon = mission_corsairs_of_the_north_sea
+        required_missions = { The_base_mission The_peak_mission}
+        position = 23
+
+        trigger = {
+            NOT = {
+                any_country = {
+                    num_of_light_ship = NOR
+                }
+            }
+            innovativeness = 90
+            dip_tech = 26
+            treasury = 10000
+            natural_scientist = 5
+        }
+
+        effect = {
+            add_treasury = -10000
+            change_innovativeness = -50
+            country_event = {
+                id = mission_nor.11
             }
         }
     }
@@ -1782,7 +1821,7 @@ Norway_missions_s3 = {
     }
 
     The_peak_mission = { #still needs localisation
-        icon = mission_imperial_capitals
+        icon = imperial_capitals
         required_missions = { Following_the_winds_mission project_selvvind_mission }
         position = 22
 
@@ -1811,6 +1850,30 @@ Norway_missions_s3 = {
                     duration = -1
                 }
             }
+        }
+    }
+
+    Project_mekanisk_tenker_mission = { #still needs localisation
+        icon = mission_rule_of_the_sun
+        required_missions = { Project_tidtaker_mission The_eureaka_plan_mission}
+        position = 24
+
+        trigger = {
+            innovativeness = 100
+            natural_scientist = 5
+            treasury = 50000
+            adm_tech = 32
+            mil_tech = 32
+            dip_tech = 32
+        }
+
+        effect = {
+            country_event = {
+                id = mission_nor.13
+            }
+            add_prestige = 100
+            add_splendor = 250
+            add_treasury = -50000
         }
     }
 }
@@ -2919,6 +2982,39 @@ Norway_missions_s4 = {
                 duration = 18250
             }
         }
+    }
+
+    The_eureaka_plan_mission = { #still needs localisation, is about getting everyone educated by the church
+        icon = spa_infantes_aragon
+        required_missions = { The_peak_mission The_slope_mission }
+        position = 23
+
+        trigger = {
+            estate_loyalty = {
+                estate = estate_church
+                loyalty = 85
+            }
+            estate_influence = {
+                estate = estate_church
+                influence = 80
+            }
+            estate_loyalty = {
+                estate = estate_burghers
+                loyalty = 80
+            }
+            treasury = 15000
+            NOT = {
+                has_country_modifier = nor_highest_learning
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "nor_education_for_the_masses"
+                duration = -1
+            }
+            add_treasury = -15000
+        }
     }  
 }
 Norway_missions_s5 = {
@@ -3124,6 +3220,64 @@ Norway_missions_s5 = {
                     name = "nor_skyship_outpost"
                     duration = -1
                 }
+            }
+        }
+    }
+
+    The_slope_mission = { #still needs localisation
+        icon = mission_compulsory_education
+        required_missions = { Following_the_winds_mission }
+        position = 22
+        provinces_to_highlight = {
+            OR = {
+                area = eastern_norway
+                area = western_norway
+                area = northern_norway 
+                province_id = 18
+                province_id = 8
+                province_id = 5
+                province_id = 4164
+                province_id = 16
+            }
+            NOT = {
+                has_building = university
+            }
+        }
+
+        trigger = {
+            eastern_norway = {
+                type = all
+                has_building = university
+            }
+            western_norway = {
+                type = all
+                has_building = university
+            }
+            northern_norway = {
+                type = all
+                has_building = university
+            }
+            18 = {
+                has_building = university
+            }
+            8 = {
+                has_building = university
+            }
+            5 = {
+                has_building = university
+            }
+            4164 = {
+                has_building = university
+            }
+            16 = {
+                has_building = university
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "nor_highest_learning"
+                duration = 7300
             }
         }
     }

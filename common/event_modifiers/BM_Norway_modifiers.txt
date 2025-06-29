@@ -276,3 +276,29 @@ nor_counting_the_goods = { #still needs localisation
     local_production_efficiency = 0.1
     allowed_num_of_manufactories = 1
 }
+
+nor_developing_chronometer = { #still needs localisation
+    innovativeness_gain = -0.7
+    global_tax_income = -60
+}
+
+nor_accurate_chronometers = { #still needs localisation
+    movement_speed_in_fleet_modifier = 2
+    transport_attrition = -0.3
+    naval_attrition = -0.2
+}
+
+nor_highest_learning = { #still needs localisation
+    innovativeness_gain = 0.5
+    development_cost_modifier = -0.05
+    administrative_efficiency = 0.2
+}
+
+nor_education_for_the_masses = { #still needs localisation
+    innovativeness_gain = 0.7
+    development_cost_modifier = -0.1
+    administrative_efficiency = 0.25
+    production_efficiency = 0.05
+     	technology_cost = -0.15
+    global_tax_income = -300
+}   

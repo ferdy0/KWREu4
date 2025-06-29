@@ -306,6 +306,60 @@ country_event = { #still needs localisation
     }
 }
 
+#Event for starting project tidtaker
+country_event = { #still needs localisation
+    id = mission_nor.11
+    title = mission_nor.11.t
+    desc = mission_nor.11.d
+    picture = INVENTION_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        id = mission_nor.11.a
+        add_country_modifier = {
+            name = "nor_developing_chronometer"
+            duration = 2555
+        }
+        country_event = {
+            id = mission_nor.12
+            days = 2555
+        }
+    }
+}
+
+#Event for completing project tidtaker
+country_event = { #still needs localisation
+    id = mission_nor.12
+    title = mission_nor.12.t
+    desc = mission_nor.12.d
+    picture = NAVAL_MILITARY_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        id = mission_nor.12.a
+        add_country_modifier = {
+            name = "nor_accurate_chronometers"
+            duration = -1
+        }
+    }
+}
+
+#Capstone event for completing the mission tree, it will be about starting research on the difference engine
+country_event = { #still needs localisation
+    id = mission_nor.13
+    title = mission_nor.13.t
+    desc = mission_nor.13.d
+    picture = TEMPORAL_RIFT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        id = mission_nor.13.a
+    }
+}
+
 #Event for selecting who to bomb
 country_event = { #still needs localisation
     id = nor_bombing.1
