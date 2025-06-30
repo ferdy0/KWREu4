@@ -455,16 +455,25 @@ Norway_missions_s2 = {
                     liberty_desire = 5
                 }
             }
+            369 = {
+                num_of_times_improved = 3
+            }
+            1978 = {
+                num_of_times_improved = 3
+            }
+            1979 = {
+                num_of_times_improved = 3
+            }
+            #add it so that iceland has to complete a mission to start their mission tree
         }
 
         effect = {
-            #none yet, this will be changed to giving the islands and Iceland to the norwegian whaling corperation with tag NWC
-            ICE = { #change into NWC later 
-                add_country_modifier = {
-                    name = "nwc_no_expansion"
-                    duration = -1
+            ICE = {
+                country_event = {
+                    id = mission_nor.14
                 }
             }
+            add_treasury = 100
         }
     }
 
@@ -487,7 +496,7 @@ Norway_missions_s2 = {
         effect = {
             set_global_flag = nor_whaling_barons_active
             set_estate_privilege = estate_burghers_whaling_trips
-            ICE = { #change into NWC later
+            NWC = { 
                 set_estate_privilege = estate_burghers_whaling_trips
             }
         }
@@ -510,7 +519,7 @@ Norway_missions_s2 = {
         effect = {
             custom_tooltip = nor_giving_ships_tt
             tooltip = {
-                ICE = { #change into NWC later 
+                NWC = { 
                     country_event = {
                         id = mission_nor.1 days = 10 
                     } 
@@ -553,16 +562,13 @@ Norway_missions_s2 = {
 
         effect = {
             add_adm_power = -200
-            ICE = { #change into NWC later
-                remove_country_modifier = "nwc_no_expansion"
-            }
             country_event = {
                 id = flavor_nor.1
                 days = 1
             }
-            ICE = { #change into NWC later
+            NWC = { 
                 country_event = {
-                    id = flavor_nor.1
+                    id = flavor_nor.2
                     days = 1
                 }   
             }
@@ -1064,7 +1070,7 @@ Norway_missions_s3 = {
             greenland_area = {
                 owned_by = NOR
             }
-            exists = ICE #change into NWC later
+            exists = NWC 
         }
 
         effect = {
@@ -1072,7 +1078,7 @@ Norway_missions_s3 = {
                 change_trade_goods = fish
             }
             greenland_area = {
-                cede_province = ICE #change into NWC later
+                cede_province = NWC 
             }
         }
     }
@@ -1137,13 +1143,15 @@ Norway_missions_s3 = {
 
         trigger = {
             newfoundland_area = {
+                type = all
                 owned_by = NOR
             }
         }
 
         effect = {
             newfoundland_area = {
-                cede_province = ICE #change into NWC later
+                type = all
+                cede_province = NWC
             }
             newfoundland_area = {
                 add_province_modifier = {
@@ -1192,7 +1200,7 @@ Norway_missions_s3 = {
                 name = "nor_vinland_reclaimed"
                 duration = 7300
             }
-            ICE = { #change into NWC later
+            NWC = { 
                 add_country_modifier = {
                 name = "nwc_vinland_reclaimed"
                 duration = 7300
@@ -1241,7 +1249,7 @@ Norway_missions_s3 = {
                 name = "ec_colonisation_fever"
                 duration = 3650
             }
-            ICE = { #change into NWC later
+            NWC = { 
                 add_country_modifier = {
                     name = "ec_colonisation_fever"
                     duration = 3650

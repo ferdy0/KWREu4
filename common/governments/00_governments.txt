@@ -44,7 +44,6 @@ monarchy = {
 				kalmar_union
 				danish_archkingdom
 				norwegian_parliamentary_monarchy
-				BM_norwegian_parliamentary_monarchy
 				#Never again
 				livonian_military_monarchy
 				livonian_naval_monarchy
@@ -135,6 +134,8 @@ monarchy = {
 				#kwr specials
 				potestate_freedom_mon
 				potestate_overlord_mon
+				#BM specials
+				BM_norwegian_parliamentary_monarchy
 			}
 		}
 		hereditary_vs_nobility = {
@@ -677,6 +678,8 @@ republic = {
 				potestate_peasant_freedom
 				potestate_freedom_rep
 				potestate_overlord_rep
+				#BM specials
+				BM_NWC_corperate_althing
 			}
 		}
 		republican_virtues = {

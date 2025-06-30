@@ -1,0 +1,109 @@
+graphical_culture = westerngfx
+color = { 156 92 131 }
+revolutionary_colors = { 16 13 16 }
+historical_idea_groups = {
+	plutocracy_ideas
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	maritime_ideas
+}
+historical_units = {
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	prussian_frederickian
+	prussian_uhlan
+	swedish_arme_blanche
+	swedish_caroline
+	swedish_gallop
+	swedish_gustavian
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Olav #0" = 10
+	"Erik #0" = 10
+	"Christoffer #0" = 10
+	"�gmundur #0" = 10
+	"Harald #0" = 10
+	"Inge #0" = 5
+	"Sigurd #0" = 5
+	"Gissur #0" = 0
+	"Ari #0" = 0
+	"Anders #0" = 0
+	"Ansgard #0" = 0
+	"Arvid #0" = 0
+	"Bernt #0" = 0
+	"Birger #0" = 0
+	"Bj�rn #0" = 0
+	"Daniel #0" = 0
+	"Edvard #0" = 0
+	"Eilert #0" = 0
+	"Einar #0" = 0
+	"Elias #0" = 0
+	"Esben #0" = 0
+	"Folke #0" = 0
+	"Gunnar #0" = 0
+	"Kasper #0" = 0
+	"Kennet #0" = 0
+	"Knut #0" = 0
+	"Ludvig #0" = 0
+	"Mats #0" = 0
+	"Mikael #0" = 0
+	"Nj�ld #0" = 0
+	"Njord #0" = 0
+	"Oddmund #0" = 0
+	"Peder #0" = 0
+	"Rikard #0" = 0
+	"Simon #0" = 0
+	"S�ren #0" = 0
+	"Tollak #0" = 0
+	"Torhild #0" = 0
+	"Margaret #0" = -5
+	"Kristina #0" = -1
+	"Ingibj�rg #0" = -1
+	"Selma #0" = -1
+	"Hallgr�m�na #0" = -1
+	"Saga #0" = -1
+	"Gunnd�s #0" = -1
+}
+leader_names = {
+	"Amundsen"
+	"Arason"
+	"Arnesson"
+	"Bjelke"
+	"Bolt"
+	"Egilsson"
+	"Eriksson"
+	"Haraldsson"
+	"Larsson"
+	"Leifsson"
+	"Magnusson"
+	"Nansen"
+	"Nikul�sson"
+	"Norheim"
+	"Olavsson"
+	"P�lsson"
+	"Sverresson"
+	"Torgeirsson"
+}
+ship_names = {
+	"Drangaj�kull"
+	"Eir�ksj�kull"
+	"Eyjafjallaj�kull"
+	"Hofsj�kull"
+	"Langj�kull"
+	"Sn�fellsj�kull"
+	"Tindfjallaj�kull"
+	"Torfaj�kull"
+	"Tungnafellsj�kull"
+	"Vattnaj�kul"
+}
+preferred_religion = protestant

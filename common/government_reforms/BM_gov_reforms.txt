@@ -33,3 +33,93 @@ BM_norwegian_parliamentary_monarchy = { #still needs localisation
 		has_parliament = yes
 	}
 }
+
+BM_NWC_corperate_althing = { #still needs localisation
+	icon = "sailors"
+	allow_normal_conversion = no
+	modifiers = {
+		max_absolutism = -10
+		merchants = 1
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = merchant_republic
+	potential = {
+		OR = {
+			has_reform = BM_NWC_corperate_althing
+			have_had_reform = BM_NWC_corperate_althing
+		}
+	}
+	boost_income = yes
+	duration = 4
+	factions = {
+		mr_aristocrats
+		mr_traders
+		mr_guilds
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			NOT = { has_dlc = "Mare Nostrum" }
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+		}
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+		}
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense" 
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		is_merchant_republic = yes
+		elections_increase_factions_influence = yes
+		locked_government_type = yes
+	}
+	ai = {
+		factor = 0.75 #generic
+		
+		modifier = {
+			factor = 0
+			num_of_cities = 11
+		}
+		
+		modifier = {
+			factor = 0
+			capital_scope = { has_port = no }
+		}
+		
+		modifier = {
+			factor = 0
+			NOT = {
+				capital_scope = { province_has_center_of_trade_of_level = 1 }
+			}
+		}
+		
+		modifier = {
+			factor = 0
+			is_subject = yes
+		}
+	}
+}

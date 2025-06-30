@@ -25,7 +25,7 @@ country_event = { #still needs localisation
                         }
                     }
                 }
-                light_ship = ICE #change into NWC later
+                light_ship = NWC
                 ROOT = {
                     subtract_variable = {
                         which = nor_transfer_total_light_ships
@@ -48,6 +48,24 @@ country_event = { #still needs localisation
 
     option = {
         name = flavor_nor.1.a
+        create_subject = {
+            subject_type = private_enterprise
+            subject = NWC
+        }
+    }
+}
+
+#Event for turning the NWC into a colonial nation
+country_event = { #still needs localisation
+    id = flavor_nor.2
+    title = flavor_nor.2.t
+    desc = flavor_nor.2.d
+    picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_nor.2
         #nothing hapens, this is just flavour
     }
 }
@@ -357,6 +375,34 @@ country_event = { #still needs localisation
 
     option = {
         id = mission_nor.13.a
+    }
+}
+
+#Event for turning iceland into NWC
+country_event = { #still needs localisation
+    id = mission_nor.14
+    title = mission_nor.14.t
+    desc = mission_nor.14.d
+    picture = REFORM_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        id = mission_nor.14.a
+        add_government_reform = BM_NWC_corperate_althing
+        change_tag = NWC
+        369 = {
+            add_core = NWC
+            cede_province = NWC
+        }
+        1978 = {
+            add_core = NWC
+            cede_province = NWC
+        }
+        1979 = {
+            add_core = NWC
+            cede_province = NWC
+        }
     }
 }
 
