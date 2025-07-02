@@ -568,7 +568,7 @@ Norway_missions_s2 = {
             }
             NWC = { 
                 country_event = {
-                    id = flavor_nor.2
+                    id = flavor_nor.4
                     days = 1
                 }   
             }
@@ -3080,84 +3080,59 @@ Norway_missions_s5 = {
         }
     }
 
-    Nor_religious_path_mission = {
+    Nor_religion_mission = { #still needs localisation
 		icon = catholic_confraternity
 		position = 8
 		required_missions = {  }
 		provinces_to_highlight = {
 			is_capital_of = ROOT
-			NOT = { has_tax_building_trigger = yes }
+			NOT = { 
+                OR = {
+                    has_building = temple
+                    has_building = cathedral
+                } 
+            }
 		}
-		trigger = {
-			if = {
-				limit = { 
-					religion = norse_pagan_reformed
-				}
-				OR = {
-					religion = norse_pagan_reformed
-					AND = {
-						religion = catholic
-						has_country_modifier = counter_reformation
-					}
-					AND = {
-						religion_group = christian
-						NOT = { religion = catholic }
-						NOT = { current_age = age_of_discovery }
-					}
-					AND = {
-						has_idea_group = humanist_ideas
-						NOT = { current_age = age_of_discovery }
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					has_ruler_modifier = rethinking_catholic_life
-				}
-				NOT = { has_ruler_modifier = rethinking_catholic_life }
-				OR = {
-					AND = {
-						religion = catholic
-						has_country_modifier = counter_reformation
-					}
-					AND = {
-						religion_group = christian
-						NOT = { religion = catholic }
-						NOT = { current_age = age_of_discovery }
-					}
-					AND = {
-						has_idea_group = humanist_ideas
-						NOT = { current_age = age_of_discovery }
-					}
-				}
-			}
-			else = {
-				OR = {
-					AND = {
-						religion = catholic
-						has_country_modifier = counter_reformation
-					}
-					AND = {
-						religion_group = christian
-						NOT = { religion = catholic }
-						NOT = { current_age = age_of_discovery }
-					}
-					AND = {
-						has_idea_group = humanist_ideas
-						NOT = { current_age = age_of_discovery }
-					}
-				}
-			}
-			capital_scope = {
-				has_tax_building_trigger = yes
-			}
-		}
-		effect = {
-			enable_branching_mission_review = {
-				key = NOR
-				ai_event_id = flavor_sca.1
-			}
-		}
+		
+        trigger = {
+			ROOT = {
+                capital_scope = {
+                    OR = {
+                        has_building = temple
+                        has_building = cathedral
+                    } 
+                }
+                OR = {
+                    AND = {
+                        dominant_religion = catholic
+                        is_religion_enabled = protestant
+                    }
+                    dominant_religion = protestant
+                }
+            }
+        }
+
+        effect = {
+            if = {
+                limit = {
+                    dominant_religion = catholic
+                }
+                capital_scope = {
+                    remove_building = temple
+                    add_building = cathedral
+                }
+            }
+            if = {
+                limit = {
+                    dominant_religion = protestant
+                }
+                set_country_flag = "nor_beghards_enabled"
+                country_event = {
+                    id = mission_nor.15
+                    days = 10
+                }
+            }
+        }
 	}
 
     Trade_networks_mission = { #still needs localisation

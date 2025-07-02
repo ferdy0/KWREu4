@@ -299,6 +299,14 @@ nor_education_for_the_masses = { #still needs localisation
     development_cost_modifier = -0.1
     administrative_efficiency = 0.25
     production_efficiency = 0.05
-     	technology_cost = -0.15
+    technology_cost = -0.15
     global_tax_income = -300
 }   
+
+nor_beghard_built = { #still needs localisation
+    local_manpower_modifier = -0.5
+    local_build_time = -0.05
+    local_build_cost = -0.05
+    local_production_efficiency = 0.05
+    local_development_cost_modifier = -0.05
+}

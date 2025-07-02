@@ -36,4 +36,63 @@ country_decisions = {
             }
         }
     }
+
+    nor_build_beghard = { #still needs localisation
+        major = yes
+
+        potential = {
+            tag = NOR
+            has_country_flag = nor_beghards_enabled
+        }
+
+        allow = {
+            treasury = 150
+            ROOT = { #Need to fix this decision's check, for now i am leaving it in because it doesn't break anything but itself. Come back to this with Simm tomorrow
+                any_state = {
+                    all_province_in_state = {
+                        NOT = {
+                            has_province_modifer = "nor_beghard_built"
+                        }
+                    }
+                }
+                any_state = {
+                    any_province_in_state = {
+                        OR = {
+                            has_building = temple
+                            has_building = cathedral
+                        }
+                    }
+                }
+            }
+        }
+
+        effect = {
+            add_treasury = -150
+            random_owned_area = {
+                limit = {
+                    NOT = {
+                        has_province_modifer = "nor_beghard_built"
+                    }
+                    any_province_in_state = {
+                        OR = {
+                            has_building = temple
+                            has_building = cathedral
+                        }
+                    }
+                }
+                random_province_in_state = {
+                    limit = {
+                        OR = {
+                            has_building = temple
+                            has_building = cathedral
+                        }
+                    }
+                    add_province_modifier = {
+                        name = "nor_beghard_built"
+                        duration = -1
+                    }
+                }
+            }
+        } 
+    }
 }
