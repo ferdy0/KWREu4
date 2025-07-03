@@ -1,4 +1,4 @@
-graphical_culture = westerngfx
+﻿graphical_culture = westerngfx
 color = { 156 92 131 }
 revolutionary_colors = { 16 13 16 }
 historical_idea_groups = {
@@ -31,7 +31,7 @@ monarch_names = {
 	"Olav #0" = 10
 	"Erik #0" = 10
 	"Christoffer #0" = 10
-	"�gmundur #0" = 10
+	"Ægmundur #0" = 10
 	"Harald #0" = 10
 	"Inge #0" = 5
 	"Sigurd #0" = 5
@@ -42,7 +42,7 @@ monarch_names = {
 	"Arvid #0" = 0
 	"Bernt #0" = 0
 	"Birger #0" = 0
-	"Bj�rn #0" = 0
+	"Bjørn #0" = 0
 	"Daniel #0" = 0
 	"Edvard #0" = 0
 	"Eilert #0" = 0
@@ -57,22 +57,22 @@ monarch_names = {
 	"Ludvig #0" = 0
 	"Mats #0" = 0
 	"Mikael #0" = 0
-	"Nj�ld #0" = 0
+	"Njæld #0" = 0
 	"Njord #0" = 0
 	"Oddmund #0" = 0
 	"Peder #0" = 0
 	"Rikard #0" = 0
 	"Simon #0" = 0
-	"S�ren #0" = 0
+	"Søren #0" = 0
 	"Tollak #0" = 0
 	"Torhild #0" = 0
 	"Margaret #0" = -5
 	"Kristina #0" = -1
-	"Ingibj�rg #0" = -1
+	"Ingibjærg #0" = -1
 	"Selma #0" = -1
-	"Hallgr�m�na #0" = -1
+	"Hallgríma #0" = -1
 	"Saga #0" = -1
-	"Gunnd�s #0" = -1
+	"Gunndís #0" = -1
 }
 leader_names = {
 	"Amundsen"
@@ -87,23 +87,22 @@ leader_names = {
 	"Leifsson"
 	"Magnusson"
 	"Nansen"
-	"Nikul�sson"
+	"Nikulsson"
 	"Norheim"
 	"Olavsson"
-	"P�lsson"
 	"Sverresson"
 	"Torgeirsson"
 }
 ship_names = {
-	"Drangaj�kull"
-	"Eir�ksj�kull"
-	"Eyjafjallaj�kull"
-	"Hofsj�kull"
-	"Langj�kull"
-	"Sn�fellsj�kull"
-	"Tindfjallaj�kull"
-	"Torfaj�kull"
-	"Tungnafellsj�kull"
-	"Vattnaj�kul"
+	"Drangajøkull"
+	"Eiríksjøkull"
+	"Eyjafjallajøkull"
+	"Hofsjøkull"
+	"Langjøkull"
+	"Snøfellsjøkull"
+	"Tindfjallajøkull"
+	"Torfajøkull"
+	"Tungnafellsjøkull"
+	"Vattnajøkul"
 }
 preferred_religion = protestant

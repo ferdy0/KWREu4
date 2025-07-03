@@ -1,4 +1,4 @@
-government = republic
+﻿government = republic
 add_government_reform = BM_NWC_corperate_althing
 government_rank = 1
 technology_group = western
@@ -8,7 +8,7 @@ capital = 344
 add_accepted_culture = icelandic
 1399.1.1 = {
 	monarch = {
-		name = "Al�ing"
+		name = "Alþing"
 		adm = 3
 		dip = 3
 		mil = 3
