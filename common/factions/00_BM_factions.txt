@@ -1,0 +1,28 @@
+########################################
+# BM Norway Factions
+########################################
+
+steam_barons = {
+	monarch_power = DIP
+	always = yes
+
+	#Merchants, Traders, Expansions.
+	modifier = {
+		global_prov_trade_power_modifier = 0.1
+		diplomatic_reputation = 1
+		stability_cost_modifier = 0.1
+	}
+}
+
+beghards = {
+	monarch_power = ADM
+	always = yes
+
+	#buildings, Internal Stability.
+	modifier = {
+		expand_infrastructure_cost_modifier = -0.1
+		global_prosperity_growth = 0.1
+		advisor_pool = 1
+		discipline = -0.05
+	}
+}

@@ -1,10 +1,10 @@
-BM_norwegian_parliamentary_monarchy = { #still needs localisation
+BM_norwegian_balance_of_power = { #still needs localisation
 	icon = "queen"
 	allow_normal_conversion = no
 	potential = {
 		OR = {
-			has_reform = BM_norwegian_parliamentary_monarchy
-			have_had_reform = BM_norwegian_parliamentary_monarchy
+			has_reform = BM_norwegian_balance_of_power
+			have_had_reform = BM_norwegian_balance_of_power
 		}
 	}
 	lock_level_when_selected = yes
@@ -17,21 +17,13 @@ BM_norwegian_parliamentary_monarchy = { #still needs localisation
 		legitimacy = 1.5
 		global_unrest = -2
 		max_absolutism = -40
-		nobles_influence_modifier = -0.2
-        church_influence_modifier = 0.2
+		burghers_influence_modifier = 0.1
+        church_influence_modifier = 0.1
         governing_cost = -0.1
         max_possible_parliament_seats = 8
 	}
 
-	conditional = {
-		allow = {
-			OR = {
-				has_dlc = "Common Sense" 
-				has_dlc = "Domination"
-			}
-		}
-		has_parliament = yes
-	}
+	factions = { steam_barons beghards }
 }
 
 BM_NWC_corperate_althing = { #still needs localisation
@@ -122,4 +114,30 @@ BM_NWC_corperate_althing = { #still needs localisation
 			is_subject = yes
 		}
 	}
+}
+
+BM_chamber_of_churches = { #still needs localisation
+	icon = "legislative_assembly_reform"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_reform = BM_chamber_of_churches
+			have_had_reform = BM_chamber_of_churches
+		}
+	}
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 25
+	nation_designer_trigger = {
+		has_dlc = "Res Publica"
+	}
+	modifiers = {
+		max_absolutism = -10
+        church_influence_modifier = 0.15
+		centralize_state_cost = -0.1
+		institution_spread_from_true_faith = 0.1
+		administrative_efficiency = 0.1
+	}
+
+	has_parliament = yes
 }

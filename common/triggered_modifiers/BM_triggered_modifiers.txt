@@ -1,0 +1,73 @@
+nor_high_production = { #still needs localisation
+    potential = {
+        tag = NOR
+        NOR = {
+            has_reform = BM_norwegian_balance_of_power
+        }
+    }
+
+    trigger = {
+        NOR = {
+            production_income_percentage = 0.25
+        }
+    }
+
+    steam_barons_influence = 0.25
+}
+
+nor_higher_production = { #still needs localisation
+    potential = {
+        tag = NOR
+        NOR = {
+            has_reform = BM_norwegian_balance_of_power
+        }
+    }
+
+    trigger = {
+        NOR = {
+            production_income_percentage = 0.5
+        }
+    }
+
+    steam_barons_influence = 0.35
+}
+
+nor_high_church = { #still needs localisation
+    potential = {
+        tag = NOR
+        NOR = {
+            has_reform = BM_norwegian_balance_of_power
+        }
+    }
+
+    trigger = {
+        NOR = {
+            estate_influence = {
+                estate = estate_church
+                influence = 80
+            }
+        }
+    }
+
+    beghards_influence = 0.25
+}
+
+nor_higher_church = { #still needs localisation
+    potential = {
+        tag = NOR
+        NOR = {
+            has_reform = BM_norwegian_balance_of_power
+        }
+    }
+
+    trigger = {
+        NOR = {
+            estate_influence = {
+                estate = estate_church
+                influence = 90
+            }
+        }
+    }
+
+    beghards_influence = 0.35
+}

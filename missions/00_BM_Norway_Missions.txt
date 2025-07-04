@@ -1824,7 +1824,7 @@ Norway_missions_s3 = {
 				estate = estate_church
 				share = 10
 			}
-            add_government_reform = BM_norwegian_parliamentary_monarchy #might move this reform up a bunch of missions and make this a special privelige for the church instead
+            add_government_reform = BM_norwegian_balance_of_power #might move this reform up a bunch of missions and make this a special privelige for the church instead
         }
     }
 
@@ -3134,6 +3134,43 @@ Norway_missions_s5 = {
             }
         }
 	}
+
+    Chamber_of_churches_mission = { #still needs localisation
+        icon = mission_hands_praying
+        position = 9
+        required_missions = { Nor_religion_mission }
+        provinces_to_highlight = {
+            area = northern_norway
+            area = eastern_norway
+            area = western_norway
+            area = svealand_area
+            area = vastra_gotaland_area
+        }
+
+        trigger = {
+            num_of_owned_provinces_with = {
+                value = 3
+                area = northern_norway
+                area = eastern_norway
+                area = western_norway
+                area = svealand_area
+                area = vastra_gotaland_area
+                has_province_modifier = nor_beghard_built
+            }
+            estate_influence = {
+                estate = estate_church
+                influence = 60
+            }
+            estate_loyalty = {
+                estate = estate_church
+                loyalty = 70
+            }
+        }
+
+        effect = {
+            add_government_reform = BM_chamber_of_churches
+        }
+    }
 
     Trade_networks_mission = { #still needs localisation
         icon = interest_of_holland

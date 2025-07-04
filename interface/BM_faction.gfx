@@ -1,0 +1,20 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_faction_bg_steam_barons"
+        texturefile = "gfx//interface//faction_blue_frame.tga"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_faction_steam_barons"
+        texturefile = "gfx//interface//guilds_icon.tga"
+    }
+    spriteType = {
+        name = "GFX_faction_bg_beghards"
+        texturefile = "gfx//interface//faction_blue_frame.tga"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_faction_beghards"
+        texturefile = "gfx//interface//aristocrats_icon.tga"
+    }
+}

@@ -3,7 +3,25 @@ namespace = flavor_nor
 namespace = nor_great_expidition
 namespace = nor_sami_exploration
 namespace = nor_bombing
+namespace = test_nor
 
+#Event for testing out stuff
+country_event = {
+    id = test_nor.1
+    title = test_nor.1.t
+    desc = test_nor.1.d
+    picture = CORSAIR_eventPicture
+    
+    is_triggered_only = yes
+
+    immediate = {
+        add_government_reform = BM_norwegian_balance_of_power
+    }
+
+    option = {
+        name = test_nor.1.a
+    }
+}
 # Event for giving ships to NWC
 country_event = { #still needs localisation
     id = mission_nor.1
