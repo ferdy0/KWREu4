@@ -1,12 +1,24 @@
 government = monarchy
-add_government_reform = margraviate_reform
+add_government_reform = feudalism_reform
 government_rank = 1
-technology_group = eastern
+technology_group = western
 religion = catholic
 primary_culture = austrian
 capital = 128
 add_accepted_culture = slovene
 set_country_flag = ZZZ_generated_converter_nation
+1376.5.15 = {
+	monarch = {
+		name = "Rudolf I"
+		dynasty = "von Veringen"
+		adm = 5
+		dip = 2
+		mil = 5
+		birth_date = 1376.5.15
+		religion = catholic
+		culture = austrian
+	}
+}
 1377.12.4 = {
 	monarch = {
 		name = "Ingelrade I"
@@ -27,18 +39,6 @@ set_country_flag = ZZZ_generated_converter_nation
 		adm = 5
 		dip = 2
 		mil = 5
-		religion = catholic
-		culture = austrian
-	}
-}
-1376.5.15 = {
-	monarch = {
-		name = "Rudolf I"
-		dynasty = "von Veringen"
-		adm = 5
-		dip = 2
-		mil = 5
-		birth_date = 1376.5.15
 		religion = catholic
 		culture = austrian
 	}

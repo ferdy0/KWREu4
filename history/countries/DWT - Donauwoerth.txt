@@ -46,7 +46,7 @@ fixed_capital = 4711
 }
 1402.2.12 = {
 	monarch = {
-		name = "Friedrich"
+		name = "Friedrich I"
 		dynasty = "von Segeberg"
 		adm = 4
 		dip = 5

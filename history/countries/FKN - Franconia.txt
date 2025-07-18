@@ -19,7 +19,7 @@ capital = 79
 }
 1372.2.16 = {
 	monarch = {
-		name = "Giselbert I"
+		name = "Giselbert II"
 		dynasty = "von Heldrungen"
 		adm = 6
 		dip = 3

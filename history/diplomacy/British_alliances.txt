@@ -4,3 +4,9 @@ march = {
 	start_date = 1219.5.1
 	end_date = 1821.8.3
 }
+guarantee = {
+	first = IRE
+	second = LOI
+	start_date = 1444.11.11
+	end_date = 1836.1.1
+}

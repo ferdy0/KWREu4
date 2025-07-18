@@ -1,5 +1,5 @@
-owner = IRE
-controller = IRE
+owner = LOI
+controller = LOI
 capital = "Stornoway"
 is_city = yes
 culture = highland_scottish
@@ -8,8 +8,7 @@ trade_goods = grain
 base_tax = 1
 base_production = 3
 base_manpower = 2
-add_core = HSC
-add_core = IRE
+add_core = LOI
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -28,7 +28,6 @@ set_country_flag = ZZZ_generated_converter_nation
 		dip = 4
 		mil = 5
 		birth_date = 1397.8.16
-		female = yes
 		religion = catholic
 		culture = saxon
 	}

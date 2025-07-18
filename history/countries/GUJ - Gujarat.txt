@@ -67,6 +67,8 @@ add_accepted_culture = gujarati
 		religion = shiite
 		culture = gujarati
 	}
+}
+1414.3.9 = {
 	heir = {
 		name = "Ali"
 		monarch_name = "Ali V"
