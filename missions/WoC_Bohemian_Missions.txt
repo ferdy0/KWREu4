@@ -1,4 +1,4 @@
-woc_boh_first_branch = {
+woc_boh_religious_branch_1 = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -865,8 +865,8 @@ boh_first_unlocked_hussite = {
 	}
 }
 
-woc_boh_second_branch = {
-	slot = 2
+woc_boh_imperial_branch_1 = {
+	slot = 1
 	generic = no
 	ai = yes
 	potential_on_load = {
@@ -878,42 +878,6 @@ woc_boh_second_branch = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-	
-	boh_recover_nitrava = {
-		icon = mission_recover_nitrava 
-		required_missions = {  }
-		position = 2
-		
-		trigger = {
-			slovakia_area = {
-				type = all
-				owned_by = ROOT
-			}
-		}
-		
-		provinces_to_highlight = {
-			area = slovakia_area
-			NOT = {
-				owned_by = ROOT
-			}
-		}
-		
-		effect = {
-			add_accepted_culture_or_dip_power = { culture = slovak free = yes }
-			set_country_flag = boh_czechoslovak_brotherhood_flag
-			custom_tooltip = boh_every_province_slovakia
-			hidden_effect = {
-				slovakia_area = {
-					limit = { owned_by = ROOT }
-					add_random_development = 1
-				}
-			}
-		}
-		
-		ai_weight = {
-			factor = 500
-		}
-	}
 	
 	boh_electorate_of_saxony = {
 		icon = electorate_of_saxony
@@ -988,126 +952,337 @@ woc_boh_second_branch = {
 		}
 	}
 	
-	boh_bohemian_crystal = {
-		icon = bohemian_crystal
-		required_missions = { }
-		position = 7
+	boh_control_the_electors = {
+		icon = influence_the_princes
+		required_missions = {  }
+		position = 6
 		
-		provinces_to_highlight = {
+		trigger = { ###add end of the compact event as requirement!!
 			OR = {
-				province_id = 1771
-				province_id = 4238
+				custom_trigger_tooltip = {
+					tooltip = hussite_regency_tt
+					has_country_flag = hussite_regency_mission_flag
+				}
+				is_year = 1500
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { has_production_building_trigger = yes }
-				NOT = { num_of_times_improved = 5 }
+			if = {
+				limit = {
+					hre_size = 1
+				}
+				calc_true_if = {
+					all_elector = {
+						preferred_emperor = ROOT
+					}
+					amount = 4
+				}
 			}
+			else = {
+				num_of_allies = 3
+			}
+			
 		}
 		
-		trigger = {
-			1771 = {
-				owned_by = ROOT
-				num_of_times_improved = 5
-				has_production_building_trigger = yes
-			}
-			4238 = {
-				owned_by = ROOT
-				num_of_times_improved = 5
-				has_production_building_trigger = yes
+		provinces_to_highlight = {
+			owner = {
+				is_elector = yes
+				NOT = {
+					preferred_emperor = ROOT
+				}
 			}
 		}
 		
 		effect = {
-			set_country_flag = bohemian_crystal_flag
-			country_event = { id = prices.43 }
-			custom_tooltip = boh_crystal_event_insight_tt
+			add_country_modifier = {
+				name = "gen_hre_diplomacy_mod"
+				duration = 5475
+			}
 			if = {
 				limit = {
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						trade_goods = glass
-						value = 3
-					}
+					has_dlc = "The Cossacks"
 				}
-				custom_tooltip = boh_3_glass_province_yes
-				tooltip = {
-					1771 = {
-						add_or_upgrade_production_building = yes
+				custom_tooltip = boh_trust_electors_tt
+				hidden_effect = {
+					every_elector = {
+						limit = {
+							preferred_emperor = ROOT
+						}
+						add_trust = {
+							who = ROOT
+							value = 10
+							mutual = yes
+						}
 					}
 				}
 			}
 			else = {
-				custom_tooltip = boh_3_glass_province_no
+				define_advisor = {
+					type = statesman
+					skill = 2
+					culture = ROOT
+					religion = ROOT
+					cost_multiplier = 0.5
+				}
+			}
+		}
+	}
+	
+	lot_boh_karels_claims = {
+		icon = mission_karels_heritage
+		required_missions = { boh_control_the_electors }
+		position = 7
+		
+		trigger = {
+			if = {
+				limit = {
+					hre_size = 1
+				}
+				is_emperor = yes
+			}
+			else = {
+				government_rank = 3
+			}
+		}
+		
+		effect = {
+			custom_tooltip = boh_dip_for_reform_votes_tt
+			add_country_modifier = {
+				name = "boh_luxembourg_legacy"
+				duration = 7300
+			}
+			94 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			custom_tooltip = boh_perma_claim_hre_provinces_tt
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_part_of_hre = yes 
+					}
+					ROOT = {
+						add_dip_power = 1
+					}
+				}
+				every_province = {
+					limit = {
+						is_part_of_hre = yes
+						owner = {
+							NOT = {
+								is_part_of_hre = yes
+							}
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	
+	lot_boh_reformatio_sigismundi = {
+		icon = reformatio_sigismundi
+		required_missions = { lot_boh_karels_claims }
+		position = 8
+		
+		trigger = {
+			if = {
+				limit = {
+					hre_size = 1
+				}
+				is_emperor = yes
+				if = {
+					limit = {
+						has_dlc = "Emperor"
+					}
+					hre_reform_passed = emperor_perpetual_diet
+				}
+				else = {
+					hre_reform_passed = gemeinerpfennig
+				}
+			}
+			else = {
+				reform_level = 7
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_boh.17 }
+			custom_tooltip = boh_reformatio_sigismundi_insight_tt
+		}
+	}
+	
+	boh_peace_in_europe = {
+		icon = peace_in_europe
+		required_missions = { lot_boh_reformatio_sigismundi }
+		position = 9
+		
+		provinces_to_highlight = {
+			NOT = {
+				owned_by = ROOT
+			}
+			owner = {
+				capital_scope = {
+					continent = europe
+				}
+				OR = {
+					army_size = ROOT
+					total_development = ROOT
+				}
+			}
+		}
+		
+		trigger = {
+			is_at_war = no
+			if = {
+				limit = {
+					hre_size = 1
+				}
+				calc_true_if = {
+					all_province = {
+						is_part_of_hre = yes
+					}
+					amount = 300
+				}
+				is_emperor = yes
+			}
+			else = {
+				total_development = 2000
+			}
+			custom_trigger_tooltip = {
+				tooltip = boh_biggest_eu_army
+				NOT = {
+					any_country = {
+						capital_scope = {
+							continent = europe
+						}
+						army_size = ROOT
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = boh_biggest_eu_dev
+				NOT = {
+					any_country = {
+						capital_scope = {
+							continent = europe
+						}
+						total_development = ROOT
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_absolutism = 10
+			add_revolutionary_zeal = 10
+			add_country_modifier = {
+				name = "boh_peace_in_europe"
+				duration = -1
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_country = {
+							army_size = ROOT
+						}
+					}
+					NOT = {
+						any_country = {
+							total_development = ROOT
+						}
+					}
+				}
+				custom_tooltip = boh_global_hegemon_tt_yes
 				tooltip = {
-					1771 = {
-						add_or_upgrade_production_building = yes
+					if = {
+						limit = {
+							OR = {
+								has_dlc = "Res Publica"
+								has_dlc = "Common Sense"
+							}
+						}
+						add_country_modifier = {
+							name = "boh_hegemon"
+							desc = "boh_until_lose_war"
+							duration = -1
+						}
+					}
+					else = {
+						add_country_modifier = {
+							name = "boh_hegemon_dlcless"
+							duration = -1
+						}
+					}
+				}
+			}
+			else = {
+				custom_tooltip = boh_global_hegemon_tt_no
+				tooltip = {
+					if = {
+						limit = {
+							OR = {
+								has_dlc = "Res Publica"
+								has_dlc = "Common Sense"
+							}
+						}
+						add_country_modifier = {
+							name = "boh_hegemon"
+							desc = "boh_until_lose_war"
+							duration = -1
+						}
+					}
+					else = {
+						add_country_modifier = {
+							name = "boh_hegemon_dlcless"
+							duration = -1
+						}
 					}
 				}
 			}
 			hidden_effect = {
 				if = {
 					limit = {
-						num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-							trade_goods = glass
-							value = 3
+						NOT = {
+							any_country = {
+								army_size = ROOT
+							}
+						}
+						NOT = {
+							any_country = {
+								total_development = ROOT
+							}
 						}
 					}
-					1771 = {
-						add_or_upgrade_production_building = yes
+					if = {
+						limit = {
+							OR = {
+								has_dlc = "Res Publica"
+								has_dlc = "Common Sense"
+							}
+						}
+						add_country_modifier = {
+							name = "boh_hegemon"
+							duration = -1
+						}
+					}
+					else = {
+						add_country_modifier = {
+							name = "boh_hegemon_dlcless"
+							duration = -1
+						}
 					}
 				}
 			}
 		}
 	}
-	
-	boh_vladislav_hall = {
-		icon = mission_lit_jesuit_academy
-		required_missions = { boh_the_golden_city }
-		position = 9
-		
-		trigger = {
-			owns = 266
-			266 = {
-				development = 45
-			}
-			266 = {
-				has_courthouse_building_trigger = yes
-			}
-			OR = {
-				crown_land_share = 60
-				monthly_dip = 10
-				DIP = 5
-			}
-		}
-		
-		provinces_to_highlight = {
-			province_id = 266
-		}
-		
-		effect = {
-			266 = {
-				add_or_upgrade_courthouse_building = yes
-			}
-			custom_tooltip = boh_building_courthouses_bonus
-			hidden_effect = {
-				set_country_flag = fra_courthouse_bonus_flag
-				every_owned_province = {
-					limit = {
-						has_courthouse_building_trigger = yes
-					}
-					add_province_modifier = {
-						name = fra_improved_court_houses_modifier
-						duration = -1
-					}
-				}
-			}
-		}
-	}
-	
 }
 
-woc_boh_third_branch = {
-	slot = 3
+woc_boh_imperial_branch_2 = {
+	slot = 2
 	generic = no
 	ai = yes
 	potential_on_load = {
@@ -1232,7 +1407,7 @@ woc_boh_third_branch = {
 	lot_boh_lothars_legacy = {
 		icon = mission_the_renaissance_king
 		required_missions = { lot_boh_humiliate_schweiz }
-		position = 2
+		position = 3
 		
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -1308,30 +1483,6 @@ woc_boh_third_branch = {
 		
 		ai_weight = {
 			factor = 500
-		}
-	}
-	
-	boh_reforge_great_moravia = {
-		icon = restore_great_moravia
-		required_missions = { lot_boh_lothars_legacy boh_recover_nitrava boh_vistula_land }
-		position = 3
-		
-		trigger = {
-			stability = 3
-			prestige = 90
-			legitimacy = 90
-			total_development = 500
-		}
-		
-		effect = {
-			country_event = { id = flavor_boh.16 }
-			custom_tooltip = boh_great_moravia_insight_tt
-			tooltip = {
-				add_ruler_modifier = {
-					name = boh_svatopluks_heir
-					duration = -1
-				}
-			}
 		}
 	}
 	
@@ -1591,26 +1742,60 @@ woc_boh_third_branch = {
 		}
 	}
 	
-	boh_bozi_bojovnici = {
-		icon = mission_bozi_bojovnici
-		required_missions = { boh_lion_of_the_empire }
+	lot_boh_electorate_of_salzburg = {
+		icon = mission_religious
+		required_missions =  { boh_lion_of_the_empire }
 		position = 5
 		
-		trigger = {
-			army_tradition = 60
-			has_mil_advisor_2 = yes
-			custom_trigger_tooltip = {
-				tooltip = boh_has_won_20_battles
-				check_variable = { which = bohemia_num_of_won_battles value = 20 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 76
+				province_id = 4760
 			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			76 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4760 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			is_subject = no
 		}
 		
 		effect = {
-			unlock_government_reform = {
-				government_reform = vozove_hradby_reform
+			custom_tooltip = boh_10_ae_hre_tt
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					add_aggressive_expansion = {
+						who = ROOT
+						value = -10
+						apply_calc = no
+					}
+				}
 			}
 		}
 	}
+}
+
+woc_boh_bohemian_branch_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = BOH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
 	
 	boh_bohemian_commonwealth = {
 		icon = bohemian_commonwealth
@@ -1692,7 +1877,7 @@ woc_boh_third_branch = {
 	
 	boh_recover_from_hussite_wars = {
 		icon = mission_devastate_christianity
-		required_missions = { }
+		required_missions = {  }
 		position = 7
 		
 		trigger = {
@@ -1759,6 +1944,334 @@ woc_boh_third_branch = {
 						}
 					}
 					add_devastation = -100
+				}
+			}
+		}
+	}
+	
+	boh_univerzita_karlova = {
+		icon = mission_early_modern_university
+		required_missions =  { boh_the_golden_city }
+		position = 9
+		
+		trigger = {
+			owns = 266
+			266 = {
+				has_building = university
+			}
+			has_adm_advisor_3 = yes
+			has_dip_advisor_3 = yes
+			has_mil_advisor_3 = yes
+		}
+		
+		provinces_to_highlight = {
+			province_id = 266
+			OR = {
+				NOT = {
+					owned_by = ROOT
+				}
+				NOT = {
+					has_building = university
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Rights of Man"
+				}
+				custom_tooltip = boh_prevent_negative_traits
+				set_country_flag = boh_prevent_negative_traits
+			}
+			else = {
+				change_government_reform_progress = 100
+			}
+			if = {
+				limit = {
+					tag = BOH
+				}
+				custom_tooltip = boh_empower_ni_yes
+			}
+			else = {
+				custom_tooltip = boh_empower_ni_no
+			}
+			if = {
+				limit = {
+					NOT = {
+						tag = BOH
+					}
+				}
+				custom_tooltip = boh_not_empower_ni_yes
+				tooltip = {
+					add_country_modifier = {
+						name = czech_nationalism
+						duration = -1
+					}
+				}
+			}
+			else = {
+				custom_tooltip = boh_not_empower_ni_no
+				tooltip = {
+					add_country_modifier = {
+						name = czech_nationalism
+						duration = -1
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						tag = BOH
+					}
+					set_country_flag = boh_empowered_ni
+					swap_free_idea_group = yes
+				}
+				else = {
+					add_country_modifier = {
+						name = czech_nationalism
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+}
+
+woc_lot_boh_slavic_branch_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = BOH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	lot_dev_silesia = {
+		icon = mission_pol_tend_east
+		required_missions = { lot_boh_consolidate_silesia }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				province_id = 263
+				province_id = 264
+				province_id = 2966
+				province_id = 4238
+				province_id = 4723
+			}
+		}
+		
+		trigger = {
+			264 = {
+				development = 20
+			}
+			2966 = {
+				development = 15
+			}
+			4238 = {
+				development = 15
+			}
+			4723 = {
+				development = 15
+			}
+			263 = {
+				development = 15
+			}
+			treasury = 300
+		}
+		
+		effect = {
+			264 = {
+				add_building = temple
+				add_building = marketplace
+			}
+			2966 = {
+				add_building = temple
+			}
+			4238 = {
+				add_building = temple
+			}
+			4723 = {
+				add_building = temple
+			}
+			263 = {
+				add_building = temple
+			}
+			add_treasury = -300
+			2970 = {
+				add_province_triggered_modifier = silesian_tithes
+			}
+		}
+	}
+	
+	boh_recover_nitrava = {
+		icon = mission_recover_nitrava 
+		required_missions = {  }
+		position = 3
+		
+		trigger = {
+			slovakia_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		provinces_to_highlight = {
+			area = slovakia_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_accepted_culture_or_dip_power = { culture = slovak free = yes }
+			set_country_flag = boh_czechoslovak_brotherhood_flag
+			custom_tooltip = boh_every_province_slovakia
+			hidden_effect = {
+				slovakia_area = {
+					limit = { owned_by = ROOT }
+					add_random_development = 1
+				}
+			}
+		}
+		
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	boh_reforge_great_moravia = {
+		icon = restore_great_moravia
+		required_missions = { lot_boh_lothars_legacy boh_recover_nitrava boh_vistula_land }
+		position = 4
+		
+		trigger = {
+			stability = 3
+			prestige = 90
+			legitimacy = 90
+			total_development = 500
+		}
+		
+		effect = {
+			country_event = { id = flavor_boh.16 }
+			custom_tooltip = boh_great_moravia_insight_tt
+			tooltip = {
+				add_ruler_modifier = {
+					name = boh_svatopluks_heir
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	boh_bozi_bojovnici = {
+		icon = mission_bozi_bojovnici
+		required_missions = { boh_lion_of_the_empire }
+		position = 5
+		
+		trigger = {
+			army_tradition = 60
+			has_mil_advisor_2 = yes
+			custom_trigger_tooltip = {
+				tooltip = boh_has_won_20_battles
+				check_variable = { which = bohemia_num_of_won_battles value = 20 }
+			}
+		}
+		
+		effect = {
+			unlock_government_reform = {
+				government_reform = vozove_hradby_reform
+			}
+		}
+	}
+}
+
+woc_boh_bohemian_branch_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = BOH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	boh_bohemian_crystal = {
+		icon = bohemian_crystal
+		required_missions = { }
+		position = 7
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1771
+				province_id = 4238
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { has_production_building_trigger = yes }
+				NOT = { num_of_times_improved = 5 }
+			}
+		}
+		
+		trigger = {
+			1771 = {
+				owned_by = ROOT
+				num_of_times_improved = 5
+				has_production_building_trigger = yes
+			}
+			4238 = {
+				owned_by = ROOT
+				num_of_times_improved = 5
+				has_production_building_trigger = yes
+			}
+		}
+		
+		effect = {
+			set_country_flag = bohemian_crystal_flag
+			country_event = { id = prices.43 }
+			custom_tooltip = boh_crystal_event_insight_tt
+			if = {
+				limit = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						trade_goods = glass
+						value = 3
+					}
+				}
+				custom_tooltip = boh_3_glass_province_yes
+				tooltip = {
+					1771 = {
+						add_or_upgrade_production_building = yes
+					}
+				}
+			}
+			else = {
+				custom_tooltip = boh_3_glass_province_no
+				tooltip = {
+					1771 = {
+						add_or_upgrade_production_building = yes
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+							trade_goods = glass
+							value = 3
+						}
+					}
+					1771 = {
+						add_or_upgrade_production_building = yes
+					}
 				}
 			}
 		}
@@ -1864,147 +2377,44 @@ woc_boh_third_branch = {
 		}
 	}
 	
-	boh_reform_the_bergordnung = {
-		icon = reform_bergordnung
+	boh_vladislav_hall = {
+		icon = mission_lit_jesuit_academy
 		required_missions = { boh_the_golden_city }
 		position = 9
 		
-		provinces_to_highlight = {
-			owned_by = ROOT 
-			NOT = { has_manufactory_trigger = yes }
-		}
-		
 		trigger = {
-			num_of_owned_provinces_with = {
-				has_manufactory_trigger = yes
-				value = 20
+			owns = 266
+			266 = {
+				development = 45
 			}
-		}
-		
-		effect = {
-			if = {
-				limit = {
-					has_dlc = "Rights of Man"
-				}
-				add_ruler_personality = industrious_personality
+			266 = {
+				has_courthouse_building_trigger = yes
 			}
-			else = {
-				add_mercantilism = 5
-			}
-			unlock_government_reform = {
-				government_reform = bergordnung_reforms_reform
-			}
-		}
-	}
-	
-	boh_czech_heavy_industry = {
-		icon = mission_rb_build_furnaces
-		required_missions = { boh_reform_the_bergordnung }
-		position = 9
-		
-		trigger = {
-			development_in_provinces = {
-				has_manufactory_trigger = yes
-				value = 300
-			}
-			custom_trigger_tooltip = {
-				tooltip = boh_most_income_europe
-				NOT = {
-					any_country = {
-						capital_scope = {
-							continent = europe
-						}
-						monthly_income = ROOT
-					}
-				}
-			}
-		}
-		
-		provinces_to_highlight = {
 			OR = {
-				AND = {
-					owned_by = ROOT
-					has_manufactory_trigger = yes
-				}
-				AND = {
-					owner = {
-						capital_scope = {
-							continent = europe
-						}
-						monthly_income = ROOT
-					}
-					is_capital = yes
-				}
+				crown_land_share = 60
+				monthly_dip = 10
+				DIP = 5
 			}
 		}
 		
+		provinces_to_highlight = {
+			province_id = 266
+		}
+		
 		effect = {
-			custom_tooltip = boh_manufactories_development_tt
-			custom_tooltip = boh_province_industrial_bonus_tt
-			tooltip = {
-				add_province_modifier = {
-					name = boh_workshop_of_the_world
-					duration = -1
-				}
+			266 = {
+				add_or_upgrade_courthouse_building = yes
 			}
-			hidden_effect = {		
-                for = {
-                    amount = 10
-                    effect = "
-                        random_owned_province = {
-							limit = {
-								has_manufactory_trigger = yes
-							}
-							add_base_production = 1
-                        }
-                    "
-                }
-			}
-			if = {
-				limit = {
-					monthly_income = 500
-				}
-				custom_tooltip = boh_500_income_tt_yes
-			}
-			else = {
-				custom_tooltip = boh_500_income_tt_no
-			}
+			custom_tooltip = boh_building_courthouses_bonus
 			hidden_effect = {
+				set_country_flag = fra_courthouse_bonus_flag
 				every_owned_province = {
 					limit = {
-						OR = {
-							area = bohemia_area 
-							area = erzgebirge_area
-							area = moravia_area
-						}
+						has_courthouse_building_trigger = yes
 					}
 					add_province_modifier = {
-						name = boh_workshop_of_the_world
+						name = fra_improved_court_houses_modifier
 						duration = -1
-					}
-				}
-				if = {
-					limit = {
-						monthly_income = 500
-					}
-					every_owned_province = {
-						limit = {
-							has_province_modifier = boh_workshop_of_the_world
-						}
-						remove_province_modifier = boh_workshop_of_the_world
-					}
-					every_owned_province = {
-						limit = {
-							OR = {
-								area = bohemia_area 
-								area = erzgebirge_area
-								area = moravia_area
-							}
-						}
-						add_province_modifier = {
-							name = boh_workshop_of_the_world2
-							duration = -1
-						}
 					}
 				}
 			}
@@ -2012,7 +2422,7 @@ woc_boh_third_branch = {
 	}
 }
 
-woc_boh_fourth_branch = {
+woc_boh_slavic_branch_4 = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -2026,10 +2436,84 @@ woc_boh_fourth_branch = {
 	}
 	has_country_shield = yes
 	
+	lot_boh_consolidate_silesia = {
+		icon = take_silesia
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			silesia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			silesia_area = {
+				type = all
+				NOT = {
+					local_autonomy = 10
+				}
+			}
+		}
+		
+		provinces_to_highlight = {
+			area = silesia_area
+			OR = {
+				NOT = {
+					owned_by = ROOT
+				}
+				local_autonomy = 10
+			}
+		}
+		
+		effect = {
+			wielkopolska_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			central_poland_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			malopolska_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			2966 = {
+				add_core = GLG
+			}
+			4238 = {
+				add_core = GLG
+			}
+			264 = {
+				add_core = GLG
+			}
+			4723 = {
+				add_core = OPL
+			}
+			263 = {
+				add_core = OPL
+			}
+			create_vassal = GLG
+			create_vassal = OPL
+		}
+		
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
 	boh_vistula_land = {
 		icon = jageillonian_union
 		required_missions = { lot_boh_consolidate_silesia }
-		position = 2
+		position = 3
 		
 		trigger = {
 			262 = {
@@ -2143,45 +2627,118 @@ woc_boh_fourth_branch = {
 		}
 	}
 	
-	lot_boh_electorate_of_salzburg = {
-		icon = mission_religious
-		required_missions =  { boh_lion_of_the_empire }
+	boh_pomerelian_reconquest = {
+		icon = mission_king_of_eastern_europe
+		required_missions = { boh_premyslid_heritage }
 		position = 5
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 6
+				OR = {
+					area = east_prussia_area
+					area = west_prussia_area
+				}
+			}
+		}
 		
 		provinces_to_highlight = {
 			OR = {
-				province_id = 76
-				province_id = 4760
+				area = east_prussia_area
+				area = west_prussia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
-		trigger = {
-			76 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			4760 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			is_subject = no
-		}
-		
 		effect = {
-			custom_tooltip = boh_10_ae_hre_tt
-			hidden_effect = {
-				every_country = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					add_aggressive_expansion = {
-						who = ROOT
-						value = -10
-						apply_calc = no
+			set_country_flag = boh_can_release_prussia
+			add_army_tradition_or_mil_power = { amount = 20 }
+			custom_tooltip = boh_release_prussia_vassal_tt
+		}
+	}
+	
+	boh_restore_kralovec = {
+		icon = develop_konigsberg
+		required_missions = { boh_pomerelian_reconquest }
+		position = 6
+		
+		trigger = {
+			41 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			41 = {
+				development = 25
+			}
+			41 = {
+				religion = ROOT
+			}
+			41 = {
+				NOT = {
+					num_free_building_slots = 1
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = boh_baltic_dev_tt
+				NOT = {
+					any_province = {
+						has_port = yes
+						sea_zone = {
+							area = baltic_area
+						}
+						higher_development_than = 41
 					}
 				}
 			}
 		}
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 41
+				AND = {
+					has_port = yes
+					sea_zone = {
+						area = baltic_area
+					}
+					higher_development_than = 41
+				}
+			}
+		}
+		
+		effect = {
+			41 = {
+				add_base_production = 3
+			}
+			41 = {
+				add_province_modifier = {
+					name = "boh_pearl_of_the_baltics"
+					duration = -1
+				}
+			}
+			41 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 50
+					key = BOH_AMBER_ROAD
+				}
+			}
+		}
 	}
+}
+
+woc_lot_boh_industrial_branch_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = BOH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
 	
 	boh_municipal_works = {
 		icon = mission_have_manufactories
@@ -2222,30 +2779,59 @@ woc_boh_fourth_branch = {
 		}
 	}
 	
-	boh_univerzita_karlova = {
-		icon = mission_early_modern_university
-		required_missions =  { boh_the_golden_city }
-		position = 9
-		
-		trigger = {
-			owns = 266
-			266 = {
-				has_building = university
+	lot_mor_moravian_industry = {
+		icon = saxon_manufacturing
+		required_missions =  { lot_mor_fort_olmutz }
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4237
+				province_id = 4726
 			}
-			has_adm_advisor_3 = yes
-			has_dip_advisor_3 = yes
-			has_mil_advisor_3 = yes
 		}
 		
+		trigger = {
+			4237 = {
+				has_building = furnace
+			}
+			4726 = {
+				development = 25
+				#has_building = manufactory #this one doesn't work but it rather should so maybe someone can hjelp me?
+				has_building = state_house
+				has_building = town_hall
+			}
+		}
+		
+		effect = {
+			define_advisor = {
+				type = master_of_mint
+				skill = 3
+				discount = yes
+			}
+			4726 = {
+				change_trade_goods = paper
+				add_permanent_province_modifier = {
+					name = paper_mill_of_bohemia
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	boh_reform_the_bergordnung = {
+		icon = reform_bergordnung
+		required_missions = { boh_the_golden_city }
+		position = 9
+		
 		provinces_to_highlight = {
-			province_id = 266
-			OR = {
-				NOT = {
-					owned_by = ROOT
-				}
-				NOT = {
-					has_building = university
-				}
+			owned_by = ROOT 
+			NOT = { has_manufactory_trigger = yes }
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_manufactory_trigger = yes
+				value = 20
 			}
 		}
 		
@@ -2254,65 +2840,133 @@ woc_boh_fourth_branch = {
 				limit = {
 					has_dlc = "Rights of Man"
 				}
-				custom_tooltip = boh_prevent_negative_traits
-				set_country_flag = boh_prevent_negative_traits
+				add_ruler_personality = industrious_personality
 			}
 			else = {
-				change_government_reform_progress = 100
+				add_mercantilism = 5
+			}
+			unlock_government_reform = {
+				government_reform = bergordnung_reforms_reform
+			}
+		}
+	}
+	
+	lot_boh_czech_heavy_industry = {
+		icon = mission_rb_build_furnaces
+		required_missions = { boh_reform_the_bergordnung }
+		position = 10
+		
+		trigger = {
+			development_in_provinces = {
+				has_manufactory_trigger = yes
+				value = 300
+			}
+			custom_trigger_tooltip = {
+				tooltip = boh_most_income_europe
+				NOT = {
+					any_country = {
+						capital_scope = {
+							continent = europe
+						}
+						monthly_income = ROOT
+					}
+				}
+			}
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					owned_by = ROOT
+					has_manufactory_trigger = yes
+				}
+				AND = {
+					owner = {
+						capital_scope = {
+							continent = europe
+						}
+						monthly_income = ROOT
+					}
+					is_capital = yes
+				}
+			}
+		}
+		
+		effect = {
+			custom_tooltip = boh_manufactories_development_tt
+			custom_tooltip = boh_province_industrial_bonus_tt
+			tooltip = {
+				add_province_modifier = {
+					name = boh_workshop_of_the_world
+					duration = -1
+				}
+			}
+			hidden_effect = {		
+                for = {
+                    amount = 10
+                    effect = "
+                        random_owned_province = {
+							limit = {
+								has_manufactory_trigger = yes
+							}
+							add_base_production = 1
+                        }
+                    "
+                }
 			}
 			if = {
 				limit = {
-					tag = BOH
+					monthly_income = 500
 				}
-				custom_tooltip = boh_empower_ni_yes
+				custom_tooltip = boh_500_income_tt_yes
 			}
 			else = {
-				custom_tooltip = boh_empower_ni_no
-			}
-			if = {
-				limit = {
-					NOT = {
-						tag = BOH
-					}
-				}
-				custom_tooltip = boh_not_empower_ni_yes
-				tooltip = {
-					add_country_modifier = {
-						name = czech_nationalism
-						duration = -1
-					}
-				}
-			}
-			else = {
-				custom_tooltip = boh_not_empower_ni_no
-				tooltip = {
-					add_country_modifier = {
-						name = czech_nationalism
-						duration = -1
-					}
-				}
+				custom_tooltip = boh_500_income_tt_no
 			}
 			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = bohemia_area 
+							area = erzgebirge_area
+							area = moravia_area
+						}
+					}
+					add_province_modifier = {
+						name = boh_workshop_of_the_world
+						duration = -1
+					}
+				}
 				if = {
 					limit = {
-						tag = BOH
+						monthly_income = 500
 					}
-					set_country_flag = boh_empowered_ni
-					swap_free_idea_group = yes
-				}
-				else = {
-					add_country_modifier = {
-						name = czech_nationalism
-						duration = -1
+					every_owned_province = {
+						limit = {
+							has_province_modifier = boh_workshop_of_the_world
+						}
+						remove_province_modifier = boh_workshop_of_the_world
+					}
+					every_owned_province = {
+						limit = {
+							OR = {
+								area = bohemia_area 
+								area = erzgebirge_area
+								area = moravia_area
+							}
+						}
+						add_province_modifier = {
+							name = boh_workshop_of_the_world2
+							duration = -1
+						}
 					}
 				}
 			}
 		}
 	}
-	
 }
 
-woc_boh_fifth_branch = {
+woc_boh_slavic_branch_5 = {
 	slot = 5
 	generic = no
 	ai = yes
@@ -2326,84 +2980,10 @@ woc_boh_fifth_branch = {
 	}
 	has_country_shield = yes
 	
-	lot_boh_consolidate_silesia = {
-		icon = take_silesia
-		required_missions = { }
-		position = 1
-		
-		trigger = {
-			silesia_area = {
-				type = all
-				owned_by = ROOT
-			}
-			silesia_area = {
-				type = all
-				NOT = {
-					local_autonomy = 10
-				}
-			}
-		}
-		
-		provinces_to_highlight = {
-			area = silesia_area
-			OR = {
-				NOT = {
-					owned_by = ROOT
-				}
-				local_autonomy = 10
-			}
-		}
-		
-		effect = {
-			wielkopolska_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			central_poland_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			malopolska_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			2966 = {
-				add_core = GLG
-			}
-			4238 = {
-				add_core = GLG
-			}
-			264 = {
-				add_core = GLG
-			}
-			4723 = {
-				add_core = OPL
-			}
-			263 = {
-				add_core = OPL
-			}
-			create_vassal = GLG
-			create_vassal = OPL
-		}
-		
-		ai_weight = {
-			factor = 500
-		}
-	}
-	
 	boh_polish_diplomacy = {
 		icon = polish_diplomacy
 		required_missions = { lot_boh_consolidate_silesia }
-		position = 3
+		position = 2
 		
 		trigger = {
 			if = {
@@ -2703,423 +3283,198 @@ woc_boh_fifth_branch = {
 			}
 		}
 	}
-	
-	boh_pomerelian_reconquest = {
-		icon = mission_king_of_eastern_europe
-		required_missions = { boh_premyslid_heritage }
-		position = 5
-		
-		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 6
-				OR = {
-					area = east_prussia_area
-					area = west_prussia_area
-				}
-			}
-		}
-		
-		provinces_to_highlight = {
-			OR = {
-				area = east_prussia_area
-				area = west_prussia_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		effect = {
-			set_country_flag = boh_can_release_prussia
-			add_army_tradition_or_mil_power = { amount = 20 }
-			custom_tooltip = boh_release_prussia_vassal_tt
-		}
+}
+
+lot_boh_moravian_branch_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
 	}
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = BOH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
 	
-	boh_restore_kralovec = {
-		icon = develop_konigsberg
-		required_missions = { boh_pomerelian_reconquest }
+	lot_mor_czech_lands = {
+		icon = mission_pol_develop_countryside
+		required_missions = {  }
 		position = 6
-		
-		trigger = {
-			41 = {
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			41 = {
-				development = 25
-			}
-			41 = {
-				religion = ROOT
-			}
-			41 = {
-				NOT = {
-					num_free_building_slots = 1
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = boh_baltic_dev_tt
-				NOT = {
-					any_province = {
-						has_port = yes
-						sea_zone = {
-							area = baltic_area
-						}
-						higher_development_than = 41
-					}
-				}
-			}
+		provinces_to_highlight = {
+			area = moravia_area
 		}
 		
-		provinces_to_highlight = {
-			OR = {
-				province_id = 41
-				AND = {
-					has_port = yes
-					sea_zone = {
-						area = baltic_area
-					}
-					higher_development_than = 41
-				}
+		trigger = {
+			accepted_culture = czech
+			moravia_area = {
+				type = all
+				development = 18
 			}
 		}
 		
 		effect = {
-			41 = {
-				add_base_production = 3
+			define_advisor = {
+				type = theologian
+				skill = 2
+				culture = czech
+				religion = hussite
 			}
-			41 = {
-				add_province_modifier = {
-					name = "boh_pearl_of_the_baltics"
-					duration = -1
-				}
+			add_country_modifier = {
+				name = czechs_are_actually_quite_cool
+				duration = 18250
 			}
-			41 = {
-				add_trade_modifier = {
-					who = ROOT
-					duration = -1
-					power = 50
-					key = BOH_AMBER_ROAD
-				}
-			}
+		}
+		
+		ai_weight = {
+			factor = 500
 		}
 	}
 	
-	boh_control_the_electors = {
-		icon = influence_the_princes
-		required_missions = { }
+	lot_mor_fort_olmutz = {
+		icon = mission_castle_construction
+		required_missions = { lot_mor_czech_lands }
 		position = 7
-		
-		trigger = {
-			if = {
-				limit = {
-					hre_size = 1
-				}
-				calc_true_if = {
-					all_elector = {
-						preferred_emperor = ROOT
-					}
-					amount = 4
-				}
-			}
-			else = {
-				num_of_allies = 3
-			}
-		}
-		
 		provinces_to_highlight = {
-			owner = {
-				is_elector = yes
-				NOT = {
-					preferred_emperor = ROOT
-				}
-			}
+			province_id = 4237
 		}
-		
-		effect = {
-			add_country_modifier = {
-				name = "gen_hre_diplomacy_mod"
-				duration = 5475
-			}
-			if = {
-				limit = {
-					has_dlc = "The Cossacks"
-				}
-				custom_tooltip = boh_trust_electors_tt
-				hidden_effect = {
-					every_elector = {
-						limit = {
-							preferred_emperor = ROOT
-						}
-						add_trust = {
-							who = ROOT
-							value = 10
-							mutual = yes
-						}
-					}
-				}
-			}
-			else = {
-				define_advisor = {
-					type = statesman
-					skill = 2
-					culture = ROOT
-					religion = ROOT
-					cost_multiplier = 0.5
-				}
-			}
-		}
-	}
-	
-	boh_karels_claims = {
-		icon = mission_karels_heritage
-		required_missions = { boh_control_the_electors }
-		position = 8
 		
 		trigger = {
-			if = {
-				limit = {
-					hre_size = 1
-				}
-				is_emperor = yes
-			}
-			else = {
-				government_rank = 3
+			4237 = {
+				base_manpower = 10
+				has_fort_building_trigger = yes
+				num_of_times_expanded_infrastructure = 1
+				has_building = ramparts
+				has_building = soldier_households
 			}
 		}
 		
 		effect = {
-			custom_tooltip = boh_dip_for_reform_votes_tt
-			add_country_modifier = {
-				name = "boh_luxembourg_legacy"
-				duration = 7300
-			}
-			94 = {
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			custom_tooltip = boh_perma_claim_hre_provinces_tt
-			hidden_effect = {
-				every_country = {
-					limit = {
-						is_part_of_hre = yes 
-					}
-					ROOT = {
-						add_dip_power = 1
-					}
-				}
-				every_province = {
-					limit = {
-						is_part_of_hre = yes
-						owner = {
-							NOT = {
-								is_part_of_hre = yes
-							}
-						}
-					}
-					add_permanent_claim = ROOT
+			4237 = {
+				add_province_modifier = {
+					name = strong_mil_garrison
+					duration = -1
 				}
 			}
 		}
 	}
 	
-	boh_reformatio_sigismundi = {
-		icon = reformatio_sigismundi
-		required_missions = { boh_karels_claims }
+	lot_mor_vineries = {
+		icon = mission_wine_monopolies
+		required_missions = { lot_mor_fort_olmutz }
+		position = 8
+		provinces_to_highlight = {
+			province_id = 265
+		}
+		
+		trigger = { #the stuff after the hashtags doesn't work but it should give an idea of what it should check for
+			265 = {
+				base_production = 12
+				has_building = counting_house
+				#has_building = manufactory
+			}
+			#any_country = {
+			#	limit = {
+			#		italy_region
+			#	}
+			#	has_opinion = {
+			#		who = ROOT
+			#		value = 100
+			#	}
+			#}
+			#any_country = {
+			#	limit = {
+			#		iberia_region
+			#	}
+			#	has_opinion = {
+			#		who = ROOT
+			#		value = 100
+			#	}
+			#}
+			#any_country = {
+			#	limit = {
+			#		france_region
+			#	}
+			#	has_opinion = {
+			#		who = ROOT
+			#		value = 100
+			#	}
+			#}
+			#any_country = {
+			#	limit = {
+			#		balkan_region
+			#	}
+			#	has_opinion = {
+			#		who = ROOT
+			#		value = 100
+			#	}
+			#}
+			#any_country = {
+			#	limit = {
+			#		south_german_region
+			#	}
+			#	has_opinion = {
+			#		who = ROOT
+			#		value = 100
+			#	}
+			#}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = moravinification
+				duration = -1
+			}
+			265 = {
+				add_permanent_province_modifier = {
+					name = moravian_wining
+					duration = -1
+				}
+			}
+		}
+	}
+}
+	
+lot_boh_bohemian_branch_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = BOH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	lot_boh_eger_vaults = {
+		icon = reform_the_monte
+		required_missions = { boh_the_golden_city }
 		position = 9
 		
 		trigger = {
-			if = {
-				limit = {
-					hre_size = 1
-				}
-				is_emperor = yes
-				if = {
-					limit = {
-						has_dlc = "Emperor"
-					}
-					hre_reform_passed = emperor_perpetual_diet
-				}
-				else = {
-					hre_reform_passed = gemeinerpfennig
-				}
+			2967 = {
+				has_building = stock_exchange
+				has_building = town_hall
 			}
-			else = {
-				reform_level = 7
+			2967 = {
+				base_production = 10
+				development = 30
+				num_of_times_expanded_infrastructure = 1
 			}
 		}
 		
 		effect = {
-			country_event = { id = flavor_boh.17 }
-			custom_tooltip = boh_reformatio_sigismundi_insight_tt
-		}
-	}
-	
-	boh_peace_in_europe = {
-		icon = peace_in_europe
-		required_missions = { boh_reformatio_sigismundi }
-		position = 10
-		
-		provinces_to_highlight = {
-			NOT = {
-				owned_by = ROOT
-			}
-			owner = {
-				capital_scope = {
-					continent = europe
-				}
-				OR = {
-					army_size = ROOT
-					total_development = ROOT
-				}
-			}
-		}
-		
-		trigger = {
-			is_at_war = no
-			if = {
-				limit = {
-					hre_size = 1
-				}
-				calc_true_if = {
-					all_province = {
-						is_part_of_hre = yes
-					}
-					amount = 300
-				}
-				is_emperor = yes
-			}
-			else = {
-				total_development = 2000
-			}
-			custom_trigger_tooltip = {
-				tooltip = boh_biggest_eu_army
-				NOT = {
-					any_country = {
-						capital_scope = {
-							continent = europe
-						}
-						army_size = ROOT
-					}
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = boh_biggest_eu_dev
-				NOT = {
-					any_country = {
-						capital_scope = {
-							continent = europe
-						}
-						total_development = ROOT
-					}
-				}
-			}
-		}
-		
-		effect = {
-			add_absolutism = 10
-			add_revolutionary_zeal = 10
-			add_country_modifier = {
-				name = "boh_peace_in_europe"
-				duration = -1
-			}
-			if = {
-				limit = {
-					NOT = {
-						any_country = {
-							army_size = ROOT
-						}
-					}
-					NOT = {
-						any_country = {
-							total_development = ROOT
-						}
-					}
-				}
-				custom_tooltip = boh_global_hegemon_tt_yes
-				tooltip = {
-					if = {
-						limit = {
-							OR = {
-								has_dlc = "Res Publica"
-								has_dlc = "Common Sense"
-							}
-						}
-						add_country_modifier = {
-							name = "boh_hegemon"
-							desc = "boh_until_lose_war"
-							duration = -1
-						}
-					}
-					else = {
-						add_country_modifier = {
-							name = "boh_hegemon_dlcless"
-							duration = -1
-						}
-					}
-				}
-			}
-			else = {
-				custom_tooltip = boh_global_hegemon_tt_no
-				tooltip = {
-					if = {
-						limit = {
-							OR = {
-								has_dlc = "Res Publica"
-								has_dlc = "Common Sense"
-							}
-						}
-						add_country_modifier = {
-							name = "boh_hegemon"
-							desc = "boh_until_lose_war"
-							duration = -1
-						}
-					}
-					else = {
-						add_country_modifier = {
-							name = "boh_hegemon_dlcless"
-							duration = -1
-						}
-					}
-				}
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						NOT = {
-							any_country = {
-								army_size = ROOT
-							}
-						}
-						NOT = {
-							any_country = {
-								total_development = ROOT
-							}
-						}
-					}
-					if = {
-						limit = {
-							OR = {
-								has_dlc = "Res Publica"
-								has_dlc = "Common Sense"
-							}
-						}
-						add_country_modifier = {
-							name = "boh_hegemon"
-							duration = -1
-						}
-					}
-					else = {
-						add_country_modifier = {
-							name = "boh_hegemon_dlcless"
-							duration = -1
-						}
-					}
+			2967 = {
+				add_province_modifier = {
+					name = vaults_of_eger_stjoachim
+					duration = -1
 				}
 			}
 		}
 	}
-	
 }

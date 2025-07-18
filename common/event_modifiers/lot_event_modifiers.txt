@@ -69,3 +69,30 @@ brussel_schelde_zeekanaal = {
 	local_prosperity_growth = 0.1
 	local_institution_spread = 0.05
 }
+czechs_are_actually_quite_cool = {
+	tolerance_heretic = 1
+	tolerance_of_heretics_capacity = 1
+}
+strong_mil_garrison = {
+	local_garrison_size = 0.25
+	local_defensiveness = 0.25
+	local_manpower_modifier = 0.5
+}
+paper_mill_of_bohemia = {
+	trade_goods_size = 1
+	statewide_governing_cost = -0.25
+	local_state_maintenance_modifier = -0.5
+}
+moravinification = {
+	diplomatic_reputation = 1
+	dip_cost_modifier = -0.05
+}
+moravian_wining = {
+	trade_goods_size = 1
+	province_trade_power_modifier = 0.75
+}
+vaults_of_eger_stjoachim = {
+	gold_depletion_chance_modifier = -0.5 #or local_gold_depletion_chance_modifier = -0.5
+	monthly_gold_inflation_modifier = -0.5
+	trade_goods_size_modifier = 0.2
+}

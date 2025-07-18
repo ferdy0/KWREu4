@@ -62,8 +62,8 @@ der_sumpfdrache = {
 			has_building = fort_15th
 		}
 	}
-	local_defensiveness = 0.1
-	fort_level = 1
+	local_defensiveness = 0.5
+	local_hostile_attrition = 1
 	
 	on_activation = {
 	}
@@ -106,6 +106,31 @@ utr_archbishopric = {
 		}
 		local_missionary_strength = -0.02
 	}
+	
+	on_activation = {
+	}
+	
+	on_deactivation = {
+	}
+}
+
+silesian_tithes = {
+	potential = {
+		owner = {
+			tag = BOH
+		}
+	}
+	trigger = {
+		owner = {
+			owns_or_subject_of = 263
+			owns_or_subject_of = 264
+			owns_or_subject_of = 2966
+			owns_or_subject_of = 4238
+			owns_or_subject_of = 4723
+		}
+	}
+	tax_income = 12
+	local_manpower = 6
 	
 	on_activation = {
 	}
