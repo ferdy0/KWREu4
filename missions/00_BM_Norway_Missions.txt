@@ -1964,7 +1964,7 @@ Norway_missions_s4 = {
     }
     has_country_shield = yes
 
-    F&M_1_mission = { #still needs localisation
+    F_M_1_mission = { #still needs localisation
         icon = mission_dalaskogen
         required_missions = {  }
         position = 1
@@ -1997,9 +1997,9 @@ Norway_missions_s4 = {
         }
     }
 
-    F&M_2_mission = { #still needs localisation, is about developing the forresting industry
+    F_M_2_mission = { #still needs localisation, is about developing the forresting industry
         icon = mission_develop_the_scandes
-        required_missions = { F&M_1_mission }
+        required_missions = {F_M_1_mission }
         position = 2
         provinces_to_highlight = {
             OR = {
@@ -2046,9 +2046,9 @@ Norway_missions_s4 = {
         }
     }
 
-    F&M_3_mission = { #still needs localisation
+    F_M_3_mission = { #still needs localisation
         icon = mission_industrial_forging
-        required_missions = { F&M_2_mission }
+        required_missions = { F_M_2_mission }
         position = 3
         provinces_to_highlight = {
             OR = {
@@ -2093,7 +2093,7 @@ Norway_missions_s4 = {
 
     Build_up_MP_mission = { #still needs localisation
         icon = mission_castle_construction
-        required_missions = { F&M_3_mission }
+        required_missions = { F_M_3_mission }
         position = 4
         provinces_to_highlight = {
             province_id = 22
