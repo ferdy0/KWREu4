@@ -310,3 +310,10 @@ nor_beghard_built = { #still needs localisation
     local_production_efficiency = 0.05
     local_development_cost_modifier = -0.05
 }
+
+nor_bastion_of_northern_catholicism = {
+    global_missionary_strength = 0.03
+    missionaries = 1
+    papal_influence = 0.5
+    add_cardinal = yes
+}

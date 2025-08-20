@@ -4,6 +4,7 @@ namespace = nor_great_expidition
 namespace = nor_sami_exploration
 namespace = nor_bombing
 namespace = test_nor
+namespace = quick_nor
 
 #Event for testing out stuff
 country_event = {
@@ -200,7 +201,7 @@ country_event = { #still needs localisation
 
     immediate = {
         add_treasury  = -1000
-        country_event = {
+        province_event = {
             id = mission_nor.4
             days = 500
         }
@@ -212,7 +213,7 @@ country_event = { #still needs localisation
 }
 
 # Event for the first flight of the norwegian skyships
-country_event = { #still needs localisation
+province_event = { #still needs localisation
     id = mission_nor.4
     title = mission_nor.4.t
     desc = mission_nor.4.d
@@ -221,17 +222,13 @@ country_event = { #still needs localisation
     is_triggered_only = yes
 
     immediate = {
-        22 = {
-            add_great_project = {
-                type = nor_central_skyport_opplanda
-                instant = no
-            }
+        20 = {
+            set_province_flag = nor_can_build_skyport_opplanda
+            hidden_effect = { add_great_project = { type = nor_central_skyport_opplanda instant = yes } }
         }
         2564 = {
-            add_great_project = {
-                type = nor_central_skyport_america
-                instant = no
-            }
+            set_province_flag = nor_can_build_skyport_america
+            hidden_effect = { add_great_project = { type = nor_central_skyport_america instant = yes } }
         }
     }
 

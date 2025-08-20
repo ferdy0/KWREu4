@@ -1,0 +1,14 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_great_project_nor_mountain_palace"
+        texturefile = "gfx//interface//great_projects//great_project_nor_mountain_palace.dds"
+    }
+    spriteType = {
+        name = "GFX_great_project_nor_central_skyport_opplanda"
+        texturefile = "gfx//interface//great_projects//great_project_nor_central_skyport_opplanda.dds"
+    }
+    spriteType = {
+        name = "GFX_great_project_nor_central_skyport_america"
+        texturefile = "gfx//interface//great_projects//great_project_nor_central_skyport_america.dds"
+    }
+}

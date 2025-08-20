@@ -1275,22 +1275,92 @@ Norway_missions_s3 = {
         trigger = {
             susquehanna_area = {
                 type = all
-                has_building = workshop
+                OR = {
+                    AND = {
+                        OR = {
+                            owned_by = NOR
+                            owned_by = NWC
+                        }
+                        has_building = workshop
+                    }
+                    NOT = {
+                        OR = {
+                            owned_by = NOR
+                            owned_by = NWC
+                        }
+                    }
+                }
             }
             great_valley_area = {
                 type = all
-                has_building = workshop
+                OR = {
+                    AND = {
+                        OR = {
+                            owned_by = NOR
+                            owned_by = NWC
+                        }
+                        has_building = workshop
+                    }
+                    NOT = {
+                        OR = {
+                            owned_by = NOR
+                            owned_by = NWC
+                        }
+                    }
+                }
             }
             2553 = {
-                has_building = workshop
+                OR = {
+                    AND = {
+                        OR = {
+                            owned_by = NOR
+                            owned_by = NWC
+                        }
+                        has_building = workshop
+                    }
+                    NOT = {
+                        OR = {
+                            owned_by = NOR
+                            owned_by = NWC
+                        }
+                    }
+                }
             }
             south_appalachia_area = {
                 type = all
-                has_building = workshop 
+                OR = {
+                    AND = {
+                        OR = {
+                            owned_by = NOR
+                            owned_by = NWC
+                        }
+                        has_building = workshop
+                    }
+                    NOT = {
+                        OR = {
+                            owned_by = NOR
+                            owned_by = NWC
+                        }
+                    }
+                } 
             }
             appalachia_area = {
                 type = all
-                has_building = workshop 
+                OR = {
+                    AND = {
+                        OR = {
+                            owned_by = NOR
+                            owned_by = NWC
+                        }
+                        has_building = workshop
+                    }
+                    NOT = {
+                        OR = {
+                            owned_by = NOR
+                            owned_by = NWC
+                        }
+                    }
+                }
             }
         }
 
@@ -1402,7 +1472,7 @@ Norway_missions_s3 = {
                     owner = {
                         OR = {
                             tag = NOR
-                            tag = ICE #Chagne to NWC later
+                            tag = NWC
                         }
                     }
                     OR = {
@@ -1420,7 +1490,7 @@ Norway_missions_s3 = {
                     owner = {
                         OR = {
                             tag = NOR
-                            tag = ICE #Chagne to NWC later
+                            tag = NWC
                         }
                     }
                     OR = {
@@ -1439,7 +1509,7 @@ Norway_missions_s3 = {
                         owner = {
                             OR = {
                                 tag = NOR
-                                tag = ICE #Chagne to NWC later
+                                tag = NWC
                             }
                         }
                         OR = {
@@ -1460,7 +1530,7 @@ Norway_missions_s3 = {
                     owner = {
                         OR = {
                             tag = NOR
-                            tag = ICE #Chagne to NWC later
+                            tag = NWC
                         }
                     }
                     OR = {
@@ -1478,7 +1548,7 @@ Norway_missions_s3 = {
                     owner = {
                         OR = {
                             tag = NOR
-                            tag = ICE #Chagne to NWC later
+                            tag = NWC
                         }
                     }
                     OR = {
@@ -2183,7 +2253,7 @@ Norway_missions_s4 = {
                     region = northeast_america_region
                     region = southeast_america_region
                 }
-                value = 61 #what you already own is 17 in northeast and 8 in southeast + 36 (60%) of the other east coast provinces
+                value = 30 #own 30% of eastcoast provinces, which is about 30 provinces.
             }
         }
 
@@ -2193,7 +2263,7 @@ Norway_missions_s4 = {
                     owner = {
                         OR = {
                             tag = NOR
-                            tag = ICE #Chagne to NWC later
+                            tag = NWC
                         }
                     }
                     OR = {
@@ -2206,7 +2276,7 @@ Norway_missions_s4 = {
                     }
                 }
                 add_province_modifier = {
-                    name = nor_plantations_established
+                    name = "nor_plantations_established"
                     duration = 18250
                 }
             }
@@ -2215,7 +2285,7 @@ Norway_missions_s4 = {
                     owner = {
                         OR = {
                             tag = NOR
-                            tag = ICE #Chagne to NWC later
+                            tag = NWC
                         }
                     }
                     OR = {
@@ -2228,7 +2298,7 @@ Norway_missions_s4 = {
                     }
                 }
                 add_province_modifier = {
-                    name = nor_plantations_established
+                    name = "nor_plantations_established"
                     duration = 18250
                 }
             }
@@ -3120,6 +3190,10 @@ Norway_missions_s5 = {
                 capital_scope = {
                     remove_building = temple
                     add_building = cathedral
+                    add_province_modifier = {
+                        name = "nor_bastion_of_northern_catholicism"
+                        duration = 7300
+                    }
                 }
             }
             if = {
