@@ -317,3 +317,26 @@ nor_bastion_of_northern_catholicism = {
     papal_influence = 0.5
     add_cardinal = yes
 }
+
+GE_nor_sold_beaver_hides = {
+    trade_efficiency = 0.1
+    trade_steering = 0.15
+    global_foreign_trade_power = 0.05
+}
+
+GE_nor_trade_with_natives = {
+    diplomatic_reputation = 1
+    envoy_travel_time = -0.2
+    cb_on_primitives = yes
+}
+
+GE_nor_mikmaq_colony = {
+    global_colonial_growth = 10
+    colonist_placement_chance = 0.05
+}
+
+GE_nor_native_fights = {
+    drill_decay_modifier = -0.10
+    military_tactics = 0.05
+    prestige_from_land = 0.10
+}

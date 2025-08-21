@@ -701,6 +701,10 @@ country_event = { #Needs to be continued and localised
 
     option = {
         name = nor_great_expidition.1.a
+        country_event = {
+                id = nor_great_expidition.2
+                days = 30
+            }
         NWC = {
             country_event = {
                 id = nor_great_expidition.2
@@ -809,14 +813,16 @@ country_event = {
 
     is_triggered_only = yes
 
-    immediate = {
-        set_variable = {
-            which = GE_storage_space_left
-            value = 5
-        }
-        country_event = {
-            id = nor_great_expidition.3
-            days = 120
+    after = {
+        hidden_effect = {
+            set_variable = {
+                which = GE_storage_space_left
+                value = 4
+            }
+            country_event = {
+                id = nor_great_expidition.3
+                days = 120
+            }
         }
     }
 
@@ -825,9 +831,11 @@ country_event = {
         name = nor_great_expidition.2.a
         set_global_flag = GE_whalers_taken
         custom_tooltip = GE_storage_capacity_explainer_tt
-        subtract_variable_variable = {
-            which = GE_storage_space_left
-            value = 1
+        hidden_effect = {
+            subtract_variable_variable = {
+                which = GE_storage_space_left
+                value = 1
+            }
         }
         custom_tooltip = GE_storage_capacity_tt
     }
@@ -854,9 +862,11 @@ country_event = {
         name = nor_great_expidition.3.a
         trigger = { has_global_flag = GE_whalers_taken }
         add_treasury = 50
-        country_event = {
-            id = nor_great_expidition.4
-            days = 90
+        hidden_effect = {
+            country_event = {
+                id = nor_great_expidition.4
+                days = 90
+            }
         }
     }
 
@@ -870,9 +880,11 @@ country_event = {
         }
         set_global_flag = GE_took_useless_rocks
         custom_tooltip = GE_storage_capacity_tt
-        country_event = {
-            id = nor_great_expidition.4
-            days = 180
+        hidden_effect = {
+            country_event = {
+                id = nor_great_expidition.4
+                days = 180
+            }
         }
     }
 }
@@ -892,18 +904,22 @@ country_event = {
         highlight = yes
         custom_tooltip = GE_side_exploration_tt
         set_global_flag = GE_did_side_exploration
-        country_event = {
-            id = nor_side_expidition.1
-            days = 30
+        hidden_effect = {
+            country_event = {
+                id = nor_side_expidition.1
+                days = 30
+            }
         }
     }
 
     #We meet natives, but decide that we would rather go south to Markland
     option = {
         name = nor_great_expidition.4.b
-        country_event = {
-            id = nor_great_expidition.5
-            days = 60
+        hidden_effect = {
+            country_event = {
+                id = nor_great_expidition.5
+                days = 60
+            }
         }
     }
 }
@@ -920,15 +936,19 @@ country_event = {
     #An abundance of beavers
     option = {
         name = nor_side_expidition.1.a
-        subtract_variable = {
-            which = GE_storage_space_left
-            value = 1
+        hidden_effect = {
+            subtract_variable = {
+                which = GE_storage_space_left
+                value = 1
+            }
         }
         set_global_flag = GE_collected_beaver_hides
         custom_tooltip = GE_storage_capacity_tt
-        country_event = {
-            id = nor_side_expidition.2
-            days = 30
+        hidden_effect = {
+            country_event = {
+                id = nor_side_expidition.2
+                days = 30
+            }
         }
     }
 }
@@ -946,9 +966,11 @@ country_event = {
     option = {
         name = nor_side_expidition.2.a
         set_global_flag = GE_explored_hudson
-        country_event = {
-            id = nor_great_expidition.5
-            days = 90
+        hidden_effect = {
+            country_event = {
+                id = nor_great_expidition.5
+                days = 90
+            }
         }
     }
 }
@@ -966,9 +988,11 @@ country_event = {
     option = {
         name = nor_great_expidition.5.a
         add_prestige = 5
-        country_event = {
-            id = nor_great_expidition.6
-            days = 60
+        hidden_effect = {
+            country_event = {
+                id = nor_great_expidition.6
+                days = 60
+            }
         }
     }
 }
@@ -982,19 +1006,23 @@ country_event = {
 
     is_triggered_only = yes
 
-    immediate = {
-        country_event = {
-            id = nor_great_expidition.7
-            days = 60
+    after = {
+        hidden_effect = {
+            country_event = {
+                id = nor_great_expidition.7
+                days = 60
+            }
         }
     }
 
     #Finding L'Anse aux Meadows, set up camp and fishing
     option = {
         name = nor_great_expidition.6.a
-        subtract_variable = {
-            which = GE_storage_space_left
-            value = 1
+        hidden_effect = {
+            subtract_variable = {
+                which = GE_storage_space_left
+                value = 1
+            }
         }
         custom_tooltip = GE_storage_capacity_tt
     }
@@ -1002,9 +1030,12 @@ country_event = {
     #Finding L'Anse aux Meadows, set up camp and fishing, whalers go whaling 
     option = {
         name = nor_great_expidition.6.b
-        subtract_variable = {
-            which = GE_storage_space_left
-            value = 1
+        highlight = yes
+        hidden_effect = {
+            subtract_variable = {
+                which = GE_storage_space_left
+                value = 1
+            }
         }
         custom_tooltip = GE_storage_capacity_tt
         add_treasury = 50
@@ -1031,18 +1062,22 @@ country_event = {
         highlight = yes 
         custom_tooltip = GE_side_exploration_tt
         set_global_flag = GE_did_side_exploration
-        country_event = {
-            id = nor_side_expidition.3
-            days = 30
+        hidden_effect = {
+            country_event = {
+                id = nor_side_expidition.3
+                days = 30
+            }
         }
     }
 
     #Save the resources
     option = {
         name = nor_great_expidition.7.b
-        country_event = {
-            id = nor_great_expidition.8
-            days = 90
+        hidden_effect = {
+            country_event = {
+                id = nor_great_expidition.8
+                days = 90
+            }
         }
     }
 }
@@ -1059,33 +1094,37 @@ country_event = {
     #Trade with the natives along the St.Lawrence, leave the ships
     option = {
         name = nor_side_expidition.3.a
-        subtract_variable = {
-            which = GE_storage_space_left
-            value = 1
-        }
-        subtract_variable = {
-            which = nor_expidition_total_light_ships
-            value = 5
+        hidden_effect = {
+            subtract_variable = {
+                which = GE_storage_space_left
+                value = 1
+            }
+            subtract_variable = {
+                which = nor_expidition_total_light_ships
+                value = 5
+            }
+            country_event = {
+                id = nor_side_expidition.4
+                days = 30
+            }
         }
         custom_tooltip = GE_leaving_ships_tt
         custom_tooltip = GE_storage_capacity_tt
         set_global_flag = GE_traded_with_natives
-        country_event = {
-            id = nor_side_expidition.4
-            days = 30
-        }
     }
 
     #Trade but don't leave ships
     option = {
         name = nor_side_expidition.3.b
-        country_event = {
-            id = nor_great_expidition.8
-            days = 60
-        }
-        subtract_variable = {
-            which = GE_storage_space_left
-            value = 1
+        hidden_effect = {
+            country_event = {
+                id = nor_great_expidition.8
+                days = 60
+            }
+            subtract_variable = {
+                which = GE_storage_space_left
+                value = 1
+            }
         }
         custom_tooltip = GE_storage_capacity_tt
         set_global_flag = GE_traded_with_natives
@@ -1105,10 +1144,377 @@ country_event = {
     option = {
         name = nor_side_expidition.4.a
         set_global_flag = GE_explored_great_lakes
-        country_event = {
-            id = nor_great_expidition.8
-            days = 90
+        hidden_effect = {
+            country_event = {
+                id = nor_great_expidition.8
+                days = 90
+            }
         }
-        set_global_flag = GE_allied_with_natives
+    }
+}
+
+# Event for landing near the mikmaq
+country_event = {
+    id = nor_great_expidition.8
+    title = nor_great_expidition.8.t 
+    desc = nor_great_expidition.8.d 
+    picture = ECONOMY_eventPicture
+
+    is_triggered_only = yes
+
+    after = {
+        hidden_effect = {
+            country_event = {
+                id = nor_great_expidition.9
+                days = 60
+            }
+        }
+    }
+
+    #Partake in the gift giving ceremony with the mikmaq
+    option = {
+        name = nor_great_expidition.8.a 
+        trigger = {
+            check_variable = {
+                which = GE_storage_space_left
+                value = 1
+            }
+        }
+        hidden_effect = {
+            subtract_variable = {
+                which = GE_storage_space_left
+                value = 1
+            }
+        }
+        custom_tooltip = GE_storage_capacity_tt
+        set_global_flag = GE_gifts_to_mikmaq
+    }
+
+    #Too expensive
+    option = {
+        name = nor_great_expidition.8.b 
+    }
+}
+
+#Event for arriving in the southern tip of nova scotia and returning to Newfoundland or taking the last side expedition
+country_event = {
+    id = nor_great_expidition.9
+    title = nor_great_expidition.9.t 
+    desc = nor_great_expidition.9.d 
+    picture = LAND_MILITARY_eventPicture
+
+    is_triggered_only = yes 
+
+    #Go south and help the natives win their war
+    option = {
+        name = nor_great_expidition.9.a
+        trigger = {
+            NOT = {
+                has_global_flag = GE_did_side_exploration
+            }
+        }
+        highlight = yes
+        custom_tooltip = GE_side_exploration_tt
+        hidden_effect = {
+            country_event = {
+                id = nor_side_expidition.5
+                days = 30
+            }
+        }
+    }
+
+    #Return to Newfoundland
+    option = {
+        name = nor_great_expidition.9.b
+        hidden_effect = {
+            country_event = {
+                id = nor_great_expidition.10
+                days = 90
+            }
+        }
+    }
+}
+
+#Witnessing a battle
+country_event = {
+    id = nor_side_expidition.5
+    title = nor_side_expidition.5.t 
+    desc = nor_side_expidition.5.d 
+    picture = WOUNDED_SOLDIERS_eventPicture
+
+    is_triggered_only = yes 
+
+    #Cool to see them fight, now lets go further south
+    option = {
+        name = nor_side_expidition.5.a 
+        set_global_flag = GE_saw_natives_fight
+        add_army_tradition = 10
+        hidden_effect = {
+            country_event = {
+                id = nor_side_expidition.6
+                days = 30
+            }
+        }
+    }
+}
+
+#A long island
+country_event = {
+    id = nor_side_expidition.6
+    title = nor_side_expidition.6.t 
+    desc = nor_side_expidition.6.d 
+    picture = FARMING_WIFE_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = nor_side_expidition.6.a 
+        set_global_flag = GE_explored_new_england
+        hidden_effect = {
+            country_event = {
+                id = nor_great_expidition.10
+                days = 90
+            }
+        }
+    }
+}
+
+#Return to Vinland
+country_event = {
+    id = nor_great_expidition.10
+    title = nor_great_expidition.10.t 
+    desc = nor_great_expidition.10.d 
+    picture = JURAJ_JANOSIK_eventPicture
+
+    is_triggered_only = yes 
+
+    option = {
+        name = nor_great_expidition.10.a
+        add_treasury = 25
+        hidden_effect = {
+            country_event = {
+                id = nor_great_expidition.11
+                days = 180
+            }
+            NOR = {
+                country_event = {
+                    id = nor_great_expidition.11
+                    days = 180
+                }
+            }
+        }
+    }
+}
+
+#Arriving in Norway
+country_event = {
+    id = nor_great_expidition.11
+    title = nor_great_expidition.11.t 
+    desc = nor_great_expidition.11.d
+    picture = DECLARATION_INDEPENDENCE_eventPicture
+
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            europe_superregion = {
+                every_country = { 
+                    limit = {
+                        was_player = yes
+                    }
+                    country_event = {
+                        id = nor_great_expidition.12
+                        days = 10
+                    }
+                }
+            }
+        }
+    }
+
+    option = {
+        name = nor_great_expidition.11.a
+        canada_region = {
+            discover_country = ROOT
+        }
+        sea_of_labrador_area = {
+            discover_country = ROOT
+        }
+        gulf_of_st_lawrence_area = {
+            discover_country = ROOT
+        }
+        if = {
+            limit = {
+                has_global_flag = GE_took_useless_rocks
+            }
+            add_prestige = -25
+            custom_tooltip = GE_rocks_end_tt
+        }
+        if = {
+            limit = {
+                has_global_flag = GE_collected_beaver_hides
+            }
+            add_country_modifier = {
+                name = "GE_nor_sold_beaver_hides"
+                duration = 7300
+            }
+            custom_tooltip = GE_sold_beaver_hides_tt
+        }
+        if = {
+            limit = {
+                has_global_flag = GE_explored_hudson
+            }
+            hudson_bay_area = {
+                discover_country = ROOT
+            }
+            james_bay_area = {
+                discover_country = ROOT
+            }
+            hudson_bay_sea_area = {
+                discover_country = ROOT
+            }
+            custom_tooltip = GE_explored_hudson_tt
+        }
+        if = {
+            limit = {
+                has_global_flag = GE_traded_with_natives
+            }
+            add_country_modifier = {
+                name = "GE_nor_trade_with_natives"
+                duration = 7300
+            }
+            custom_tooltip = GE_nor_trade_with_natives_tt
+        }
+        if = {
+            limit = {
+                has_global_flag = GE_explored_great_lakes
+            }
+            michigan_area = {
+                discover_country = ROOT
+            }
+            wisconsin_area = {
+                discover_country = ROOT
+            }
+            lake_superior_area = {
+                discover_country = ROOT
+            }
+            custom_tooltip = GE_explored_great_lakes_tt
+        }
+        if = {
+            limit = {
+                has_global_flag = GE_gifts_to_mikmaq
+            }
+            add_country_modifier = {
+                name = "GE_nor_mikmaq_colony"
+                duration = 7300
+            }
+            custom_tooltip = GE_gifts_to_mikmaq_tt
+        }
+        if = {
+            limit = {
+                has_global_flag = GE_saw_natives_fight 
+            }
+            add_country_modifier = {
+                name = "GE_nor_native_fights"
+                duration = 7300
+            }
+            custom_tooltip = GE_saw_natives_fight_tt
+        }
+        if = {
+            limit = {
+                has_global_flag = GE_explored_new_england 
+            }
+            eastern_maine_area = {
+                discover_country = ROOT
+            }
+            maine_area = {
+                discover_country = ROOT
+            }
+            great_woods_area = {
+                discover_country = ROOT
+            }
+            massachusetts_bay_area = {
+                discover_country = ROOT
+            }
+            connecticut_valley_area = {
+                discover_country = ROOT
+            }
+            new_york_area = {
+               discover_country = ROOT 
+            }
+            custom_tooltip = GE_explored_new_england_tt
+        }
+    }
+}
+
+country_event = {
+    id = nor_great_expidition.12
+    title = nor_great_expidition.12.t 
+    desc = nor_great_expidition.12.d 
+    picture = muslimgfx_OVEREXTENSION_eventPicture
+
+    is_triggered_only = yes 
+
+    option = {
+        name = nor_great_expidition.12.a
+        canada_region = {
+            discover_country = ROOT
+        }
+        sea_of_labrador_area = {
+            discover_country = ROOT
+        }
+        gulf_of_st_lawrence_area = {
+            discover_country = ROOT
+        }
+        if = {
+            limit = {
+                has_global_flag = GE_explored_hudson
+            }
+            hudson_bay_area = {
+                discover_country = ROOT
+            }
+            james_bay_area = {
+                discover_country = ROOT
+            }
+            hudson_bay_sea_area = {
+                discover_country = ROOT
+            }
+        }
+        if = {
+            limit = {
+                has_global_flag = GE_explored_great_lakes
+            }
+            michigan_area = {
+                discover_country = ROOT
+            }
+            wisconsin_area = {
+                discover_country = ROOT
+            }
+            lake_superior_area = {
+                discover_country = ROOT
+            }
+        }
+        if = {
+            limit = {
+                has_global_flag = GE_explored_new_england 
+            }
+            eastern_maine_area = {
+                discover_country = ROOT
+            }
+            maine_area = {
+                discover_country = ROOT
+            }
+            great_woods_area = {
+                discover_country = ROOT
+            }
+            massachusetts_bay_area = {
+                discover_country = ROOT
+            }
+            connecticut_valley_area = {
+                discover_country = ROOT
+            }
+            new_york_area = {
+               discover_country = ROOT 
+            }
+        }
     }
 }
