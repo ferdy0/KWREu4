@@ -163,86 +163,314 @@ chola_missions_2 = {
     }
 
 	mad_4 = {
-        icon = mission_cannons_firing
+        icon = mission_seize_the_bengal_coast
         required_missions = { mad_3 }
         position = 3
         provinces_to_highlight = {
+            OR = {
+                province_id = 541
+                province_id = 531
+                province_id = 2030
+                province_id = 533
+        	}
         }
         trigger = {
+            has_great_project = {
+            	type = hampi
+            	tier = 1
+            }
+            541 = {
+                owned_by = MAD
+                has_building = marketplace
+                has_building = workshop
+                province_has_center_of_trade_of_level = 2
+            }
+            2030 = {
+                owned_by = MAD
+                has_building = marketplace
+                has_building = workshop
+                num_of_times_expanded_infrastructure = 1
+            }
+            531 = {
+                owned_by = MAD
+                has_building = marketplace
+                has_building = workshop
+                province_has_center_of_trade_of_level = 2
+                development = 15
+            }
+            533 = {
+                owned_by = MAD
+                has_building = workshop
+                development = 10
+            }
         }
         effect = {
+            add_country_modifier = {
+                name = armored_elephants
+                duration = 9125
+            }
+            533 = {
+                add_province_modifier = {
+                    name = mysore_forge
+                    duration = -1
+                }
+            }
+            konkan_area = {
+                add_permanent_claim = MAD
+            }
+            desh_area = {
+                add_permanent_claim = MAD
+            }
+            maidan_area = {
+                add_permanent_claim = MAD
+            }
+            telingana_area = {
+                add_permanent_claim = MAD
+            }
+            4433 = {
+                add_permanent_claim = MAD
+            }
+            4432 = {
+                add_permanent_claim = MAD
+            }
+            544 = {
+                add_permanent_claim = MAD
+            }
         }
     }
 
     mad_6 = {
-        icon = mission_cannons_firing
+        icon = mission_dominate_gujarati_trade
         required_missions = { mad_4 }
         position = 4
         provinces_to_highlight = {
         }
         trigger = {
+            2026 = {
+                trade_share = {
+                    country = MAD
+                    share = 80
+                }
+            }
+            552 = {
+                trade_share = {
+                    country = MAD
+                    share = 50
+                }
+            }
+            num_of_light_ship = 50
+            549 = {
+                owned_by = MAD
+                has_building = marketplace
+                development = 20
+                province_has_center_of_trade_of_level = 2
+            }
         }
         effect = {
+            add_country_modifier = {
+                name = masters_indian_trade
+                duration = 36500
+            }
+            549 = {
+                change_trade_goods = silk
+                add_province_modifier = {
+                    name = gateway_bengal
+                    duration = -1
+                }
+            }
+            552 = {
+                add_trade_modifier = {
+                    who = ROOT
+                    duration = -1
+                    power = 25
+                    key = STRONG_MERCHANTS
+                }
+            }
         }
     }
 
 	mad_8 = {
-        icon = mission_cannons_firing
+        icon = mission_to_the_south_china_sea
         required_missions = { mad_6 }
         position = 5
         provinces_to_highlight = {
         }
         trigger = {
+            navy_size_percentage = 1
+            num_of_admirals = 2
+            num_of_explorers = 1
+            has_idea = colonial_ventures
         }
         effect = {
+            add_country_modifier = {
+                name = exploring_indonesia
+                duration = 9125
+            }
+            north_sumatra_area = {
+                add_permanent_claim = MAD
+            }
+            central_sumatra_area = {
+                add_permanent_claim = MAD
+            }
+            johor_area = {
+                add_permanent_claim = MAD
+            }
+            batak_area = {
+                add_permanent_claim = MAD
+            }
         }
     }
 
     mad_10 = {
-        icon = mission_cannons_firing
+        icon = mission_hills_of_gondwana
         required_missions = { mad_8 }
         position = 6
         provinces_to_highlight = {
         }
         trigger = {
+            owns_all_provinces = {
+                area = north_sumatra_area
+                area = central_sumatra_area
+                area = johor_area
+                area = batak_area
+            }
         }
         effect = {
+            jambi_area = {
+                add_permanent_claim = MAD
+            }
+            minangkabau_area = {
+                add_permanent_claim = MAD
+            }
+            south_sumatra_area = {
+                add_permanent_claim = MAD
+            }
+            add_country_modifier = {
+                name = pushing_jungle
+                duration = 9125
+            }
         }
     }
 
 	mad_11 = {
-        icon = mission_cannons_firing
+        icon = mission_follow_the_brahmaputra
         required_missions = { mad_10 }
         position = 7
         provinces_to_highlight = {
         }
         trigger = {
+            dip_power = 200
+            623 = {
+                infantry_in_province = 20
+                has_building = naval_battery
+                has_building = impressment_offices
+                full_idea_group = exploration_ideas
+            }
         }
         effect = {
+            add_country_modifier = {
+                name = cholan_marines
+                duration = -1
+            }
         }
     }
 
     mad_13 = {
-        icon = mission_cannons_firing
+        icon = mnd_restore_angkor
         required_missions = { mad_11 mad_12}
         position = 8
         provinces_to_highlight = {
         }
         trigger = {
+            2690 = {
+                development = 40
+            }
+            any_owned_province = {
+                has_great_project = {
+            	    type = borobudur_temple
+            	    tier = 2
+            	}
+            }
+            any_owned_province = {
+                has_great_project = {
+            	    type = prambanan_temple
+            	    tier = 2
+            	}
+            }
+            accepted_culture = javanese
         }
         effect = {
+            2690 = {
+                change_trade_goods = incense
+            }
+            add_country_modifier = {
+                name = rebuilt_glory
+                duration = -1
+            }
+            banten_area = {
+                add_province_modifier = {
+                    name = rebuilt_glory_pro
+                    duration = -1
+                }
+            }
+            west_java_area = {
+                add_province_modifier = {
+                    name = rebuilt_glory_pro
+                    duration = -1
+                }
+            }
+            central_java_area = {
+                add_province_modifier = {
+                    name = rebuilt_glory_pro
+                    duration = -1
+                }
+            }
+            surabaya_area = {
+                add_province_modifier = {
+                    name = rebuilt_glory_pro
+                    duration = -1
+                }
+            }
+            east_java_area = {
+                add_permanent_claim = MAD
+            }
+            lesser_sunda_islands_area = {
+                add_permanent_claim = MAD
+            }
+            makassar_area = {
+                add_permanent_claim = MAD
+            }
         }
     }
 
 	mad_14 = {
-        icon = mission_cannons_firing
+        icon = mission_religious_harmony
         required_missions = { mad_13 }
         position = 9
         provinces_to_highlight = {
         }
         trigger = {
+            east_indies_superregion = {
+                AND = {
+                    owned_by = MAD
+                    is_prosperous = yes
+                    development = 25
+                    has_building = marketplace
+                    has_building = workshop
+                }
+        	}
         }
         effect = {
+            east_indies_superregion = {
+                limit = {
+                    owned_by = MAD
+                    province_has_center_of_trade_of_level = 1
+                }
+                add_province_modifier = {
+                    name = cholan_ports
+                    duration = -1
+                }
+        	}
         }
     }
 
