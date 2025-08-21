@@ -328,11 +328,29 @@ chola_missions_2 = {
         provinces_to_highlight = {
         }
         trigger = {
-            owns_all_provinces = {
-                area = north_sumatra_area
-                area = central_sumatra_area
-                area = johor_area
-                area = batak_area
+            617 = {
+                area_for_scope_province = {
+                    type = all
+                    owns = MAD
+                }
+            }
+            4811 = {
+                area_for_scope_province = {
+                    type = all
+                    owns = MAD
+                }
+            }
+            4810 = {
+                area_for_scope_province = {
+                    type = all
+                    owns = MAD
+                }
+            }
+            4815 = {
+                area_for_scope_province = {
+                    type = all
+                    owns = MAD
+                }
             }
         }
         effect = {
@@ -376,7 +394,7 @@ chola_missions_2 = {
     }
 
     mad_13 = {
-        icon = mnd_restore_angkor
+        icon = mission_mnd_khm_restore_angkor
         required_missions = { mad_11 mad_12}
         position = 8
         provinces_to_highlight = {
@@ -444,7 +462,7 @@ chola_missions_2 = {
     }
 
 	mad_14 = {
-        icon = mission_religious_harmony
+        icon = mission_dharma_mission_religious_harmony
         required_missions = { mad_13 }
         position = 9
         provinces_to_highlight = {
@@ -461,16 +479,32 @@ chola_missions_2 = {
         	}
         }
         effect = {
-            east_indies_superregion = {
-                limit = {
-                    owned_by = MAD
-                    province_has_center_of_trade_of_level = 1
+            617 = {
+                region = {
+                    type = all
+                        limit = {
+                            owned_by = MAD
+                            province_has_center_of_trade_of_level = 1
+                        }
+                        add_province_modifier = {
+                            name = cholan_ports
+                            duration = -1
+                        }
                 }
-                add_province_modifier = {
-                    name = cholan_ports
-                    duration = -1
+            }
+            624 = {
+                region = {
+                    type = all
+                        limit = {
+                            owned_by = MAD
+                            province_has_center_of_trade_of_level = 1
+                        }
+                        add_province_modifier = {
+                            name = cholan_ports
+                            duration = -1
+                        }
                 }
-        	}
+            }
         }
     }
 
