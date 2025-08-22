@@ -141,3 +141,23 @@ BM_chamber_of_churches = { #still needs localisation
 
 	has_parliament = yes
 }
+
+BM_steam_barons_ascendant = {
+	icon = "united_cantons_reform"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_reform = BM_steam_barons_ascendant
+			have_had_reform = BM_steam_barons_ascendant
+		}
+	}
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no 
+	modifiers = {
+		max_absolutism = -10
+        burghers_influence_modifier = 0.15
+		technology_cost = -0.1
+		candidate_random_bonus = 1
+		mercantilism_cost = -0.1
+	}
+}

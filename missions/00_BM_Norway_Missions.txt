@@ -1860,7 +1860,7 @@ Norway_missions_s3 = {
 
         effect = {
             set_global_flag = nor_industrialists_adctivated
-            # make it add a special government reform for Tier 3, Tier 6 or Tier 7 about the industrialists becoming more powerfull
+            add_government_reform = BM_steam_barons_ascendant
         }
     }
 
@@ -1894,7 +1894,7 @@ Norway_missions_s3 = {
 				estate = estate_church
 				share = 10
 			}
-            add_government_reform = BM_norwegian_balance_of_power #might move this reform up a bunch of missions and make this a special privelige for the church instead
+            add_government_reform = BM_norwegian_balance_of_power
         }
     }
 
@@ -2126,7 +2126,7 @@ Norway_missions_s4 = {
         position = 6
 
         trigger = {
-            1975 = {
+            1490 = {
                 trade_share = {
                     country = ROOT
                     share = 20
@@ -2155,10 +2155,28 @@ Norway_missions_s4 = {
         }
 
         trigger = {
-            1490 = {
-                trade_share = {
-                    country = ROOT
-                    share = 50
+            980 = {
+                OR = {
+                    owned_by = NOR
+                    owned_by = NWC
+                }
+            }
+            2569 = {
+                OR = {
+                    owned_by = NOR
+                    owned_by = NWC
+                }
+            }
+            2570 = {
+                OR = {
+                    owned_by = NOR
+                    owned_by = NWC
+                }
+            }
+            994 = {
+                OR = {
+                    owned_by = NOR
+                    owned_by = NWC
                 }
             }
         }

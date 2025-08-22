@@ -358,7 +358,7 @@ country_event = { #still needs localisation
 }
 
 #Event for project selvvind
-country_event = { #still needs localisation
+country_event = { 
     id = mission_nor.9
     title = mission_nor.9.t
     desc = mission_nor.9.d
@@ -368,15 +368,17 @@ country_event = { #still needs localisation
 
     option = {
         name = mission_nor.9.a
-        country_event = {
-            id = mission_nor.10
-            days = 2000
+        hidden_effect = {
+            country_event = {
+                id = mission_nor.10
+                days = 2000
+            }
         }
     }
 }
 
 #Event for completing project selvvind
-country_event = { #still needs localisation
+country_event = {
     id = mission_nor.10
     title = mission_nor.10.t
     desc = mission_nor.10.d
@@ -1442,6 +1444,27 @@ country_event = {
                discover_country = ROOT 
             }
             custom_tooltip = GE_explored_new_england_tt
+        }
+        while = {
+            limit = {
+                check_variable = {
+                    which = nor_expidition_total_light_ships
+                    value = 1
+                }
+            }
+            add_treasury = 5
+            if = {
+                limit = {
+                    tag = NOR
+                }
+                20 = {
+                    light_ship = NOR
+                }
+            }
+            subtract_variable = {
+                which = nor_expidition_total_light_ships
+                value = 1
+            }
         }
     }
 }
