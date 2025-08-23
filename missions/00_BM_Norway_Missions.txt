@@ -7,7 +7,7 @@ Norway_missions_s1 = {
     }
     has_country_shield = yes
 
-    Trade_1_mission = { #still needs localisation
+    Trade_1_mission = { 
         icon = mission_establish_high_seas_navy
         required_missions = { Whaling_1_mission }
         position = 2
@@ -31,7 +31,7 @@ Norway_missions_s1 = {
             }
         }
     }
-    Trade_2_mission = { #still needs localisation
+    Trade_2_mission = { 
         icon = mission_hanseatic_city
         required_missions = { Trade_1_mission }
         position = 3
@@ -82,7 +82,7 @@ Norway_missions_s1 = {
         }
     }
 
-    Explore_africa_mission = { #still needs localisation
+    Explore_africa_mission = { 
         icon = invest_in_the_rich_trades
         required_missions = { NWC_colonial_mandate_mission }
         position = 8
@@ -124,7 +124,7 @@ Norway_missions_s1 = {
         }
     }
 
-    Explore_asia_mission = { #still needs localisation
+    Explore_asia_mission = { 
         icon = mission_raid_christian_trade
         required_missions = { Explore_africa_mission }
         position = 9
@@ -144,7 +144,7 @@ Norway_missions_s1 = {
         }
     }
 
-    Mysteries_of_home_mission = { #still needs localisation
+    Mysteries_of_home_mission = { 
         icon = mission_european_politics
         required_missions = { Better_ships_explorers_mission }
         position = 13
@@ -172,7 +172,7 @@ Norway_missions_s1 = {
         }
     }
 
-    The_propulsion_problem_mission = { #still needs localisation
+    The_propulsion_problem_mission = { 
         icon = ned_cloth_trading
         required_missions = { I_can_see_mission }
         position = 17
@@ -201,7 +201,7 @@ Norway_missions_s1 = {
         }
     }
 
-    The_base_mission = { #still needs localisation
+    The_base_mission = { 
         icon = spa_dominate_sevilla
         required_missions = { project_selvvind_mission }
         position = 22
@@ -310,7 +310,7 @@ Norway_missions_s2 = {
     }
     has_country_shield = yes
 
-    Whaling_1_mission = { #still needs localisation
+    Whaling_1_mission = { 
         icon = mission_rb_cod_wars
         required_missions = {  }
         position = 1
@@ -383,7 +383,7 @@ Norway_missions_s2 = {
         }
     }
 
-    Whaling_2_mission = { #still needs localisation
+    Whaling_2_mission = { 
         icon = mission_sailor_boat
         required_missions = { Whaling_1_mission }
         position = 2
@@ -435,7 +435,7 @@ Norway_missions_s2 = {
         }
     }
 
-    Whaling_3_mission = { #still needs localisation
+    Whaling_3_mission = { 
         icon = mission_alliances
         required_missions = { Whaling_2_mission }
         position = 2
@@ -477,7 +477,7 @@ Norway_missions_s2 = {
         }
     }
 
-    Whaling_barons_mission = { #still needs localisation
+    Whaling_barons_mission = { 
         icon = mission_fish_markets
         required_missions = { Whaling_3_mission }
         position = 3
@@ -502,7 +502,7 @@ Norway_missions_s2 = {
         }
     }
 
-    Whaling_4_mission = { #still needs localisation
+    Whaling_4_mission = { 
         icon = mission_expanded_leidang
         required_missions = { Great_expedition_mission }
         position = 6
@@ -550,7 +550,7 @@ Norway_missions_s2 = {
         }
     }
 
-    NWC_colonial_mandate_mission = { #still needs localisation
+    NWC_colonial_mandate_mission = { 
         icon = mission_alliances
         required_missions = { Whaling_4_mission Set_up_foothold_mission }
         position = 7
@@ -575,7 +575,7 @@ Norway_missions_s2 = {
         }
     }
 
-    Ports_to_recieve_mission = { #still needs localisation
+    Ports_to_recieve_mission = { 
         icon = mission_rb_control_the_hansa
         required_missions = { NWC_colonial_mandate_mission }
         position = 8
@@ -604,7 +604,7 @@ Norway_missions_s2 = {
         }
     }
 
-    Whaling_5_mission = { #still needs localisation
+    Whaling_5_mission = { 
         icon = mission_retake_ceuta
         required_missions = { Ports_to_recieve_mission Explore_africa_mission }
         position = 9
@@ -693,7 +693,7 @@ Norway_missions_s2 = {
         }
     }
 
-    Better_ships_explorers_mission = { #still needs localisation
+    Better_ships_explorers_mission = { 
         icon = mission_sea_battles
         required_missions = { The_workshops_of_norway_mission }
         position = 12
@@ -783,7 +783,7 @@ Norway_missions_s2 = {
         }
     }
 
-    Visiting_the_east_mission = { #still needs localisation
+    Visiting_the_east_mission = { 
         icon = mission_asian_city
         required_missions = { To_lands_far_away_mission }
         position = 14
@@ -841,7 +841,7 @@ Norway_missions_s2 = {
         }
     }
 
-    I_can_see_mission = { #still needs localisation
+    I_can_see_mission = { 
         icon = fixed_garrison_system
         required_missions = { Up_and_away_mission }
         position = 16
@@ -875,7 +875,7 @@ Norway_missions_s2 = {
         }
     }
 
-    Bombs_away_mission = { #still needs localisation
+    Bombs_away_mission = { 
         icon = mission_humiliate_lubeck
         required_missions = { I_can_see_mission }
         position = 17
@@ -900,7 +900,7 @@ Norway_missions_s2 = {
         }
     }
 
-    Luft_leidang_mission = { #still needs localisation
+    Luft_leidang_mission = { 
         icon = mission_expanded_leidang
         required_missions = { Bombs_away_mission }
         position = 18
@@ -958,7 +958,7 @@ Norway_missions_s2 = {
         }
     }
 
-    project_selvvind_mission = { #still needs localisation
+    project_selvvind_mission = { 
         icon = mission_rb_central_belt_coal_mining
         required_missions = { The_royal_althing_mission }
         position = 21
@@ -979,7 +979,7 @@ Norway_missions_s2 = {
         }
     }
 
-    Project_tidtaker_mission = { #still needs localisation
+    Project_tidtaker_mission = { 
         icon = mission_corsairs_of_the_north_sea
         required_missions = { The_base_mission The_peak_mission}
         position = 23
@@ -1014,7 +1014,7 @@ Norway_missions_s3 = {
     }
     has_country_shield = yes
 
-    Navy_1_mission = { #still needs localisation
+    Navy_1_mission = { 
         icon = mission_danish_navy
         required_missions = {  }
         position = 2
@@ -1032,7 +1032,7 @@ Norway_missions_s3 = {
     }
 
 
-    Exploration_1_mission = { #still needs localisation
+    Exploration_1_mission = { 
         icon = mission_exploration
         required_missions = { Navy_1_mission }
         position = 3
@@ -1061,7 +1061,7 @@ Norway_missions_s3 = {
         }
     }
 
-    Colonise_greenland_mission = { #still needs localisation
+    Colonise_greenland_mission = { 
         icon = mission_longships
         required_missions = { Exploration_1_mission }
         position = 4
@@ -1083,7 +1083,7 @@ Norway_missions_s3 = {
         }
     }
 
-    Great_expedition_mission = { #still needs localisation
+    Great_expedition_mission = { 
         icon = mission_explore_the_world
         required_missions = { Colonise_greenland_mission }
         position = 5
@@ -1109,7 +1109,7 @@ Norway_missions_s3 = {
         }
 
         effect = {
-            custom_tooltip = nor_great_expidition_tt #still needs localisation
+            custom_tooltip = nor_great_expidition_tt 
             tooltip = { country_event = { id = nor_great_expidition.1 } }
             hidden_effect = {
                 set_variable = {
@@ -1136,7 +1136,7 @@ Norway_missions_s3 = {
         }
     }
 
-    Set_up_foothold_mission = { #still needs localisation
+    Set_up_foothold_mission = { 
         icon = mission_expand_into_the_forest
         required_missions = { Great_expedition_mission }
         position = 6
@@ -1162,7 +1162,7 @@ Norway_missions_s3 = {
         }
     }
 
-    Greater_expansion_mission = { #still needs localisation
+    Greater_expansion_mission = { 
         icon = mission_rb_settle_the_north
         required_missions = { Set_up_foothold_mission }
         position = 7
@@ -1209,7 +1209,7 @@ Norway_missions_s3 = {
         }
     }
 
-    Mountains_just_like_home_mission = { #still needs localisation
+    Mountains_just_like_home_mission = { 
         icon = mission_norwegian_america
         required_missions = { Greater_expansion_mission }
         position = 8
@@ -1564,7 +1564,7 @@ Norway_missions_s3 = {
         }
     }
 
-    The_workshops_of_norway_mission = { #still needs localisation
+    The_workshops_of_norway_mission = { 
         icon = mission_have_manufactories
         required_missions = { Iron_and_copper_mining_mission }
         position = 11
@@ -1819,7 +1819,7 @@ Norway_missions_s3 = {
         }
     }
 
-    Up_and_away_mission = { #still needs localisation
+    Up_and_away_mission = { 
         icon = mission_se_medicine_wheel
         required_missions = { Visiting_the_east_mission Manufactoring_goods_mission }
         position = 15
@@ -1840,7 +1840,7 @@ Norway_missions_s3 = {
         }
     }
 
-    The_skys_the_limit_mission = { #still needs localisation
+    The_skys_the_limit_mission = { 
         icon = mal_trade_with_europeans
         required_missions = { Luft_leidang_mission Royal_norwegian_skyfleet_mission }
         position = 19
@@ -1864,7 +1864,7 @@ Norway_missions_s3 = {
         }
     }
 
-    The_royal_althing_mission = { #still needs localisation
+    The_royal_althing_mission = { 
         icon = mission_establish_the_prikazy
         required_missions = { The_skys_the_limit_mission }
         position = 20
@@ -1898,7 +1898,7 @@ Norway_missions_s3 = {
         }
     }
 
-    The_peak_mission = { #still needs localisation
+    The_peak_mission = { 
         icon = imperial_capitals
         required_missions = { Following_the_winds_mission project_selvvind_mission }
         position = 22
@@ -1931,7 +1931,7 @@ Norway_missions_s3 = {
         }
     }
 
-    Project_mekanisk_tenker_mission = { #still needs localisation
+    Project_mekanisk_tenker_mission = { 
         icon = mission_rule_of_the_sun
         required_missions = { Project_tidtaker_mission The_eureaka_plan_mission}
         position = 24
@@ -1964,7 +1964,7 @@ Norway_missions_s4 = {
     }
     has_country_shield = yes
 
-    F_M_1_mission = { #still needs localisation
+    F_M_1_mission = { 
         icon = mission_dalaskogen
         required_missions = {  }
         position = 1
@@ -1997,7 +1997,7 @@ Norway_missions_s4 = {
         }
     }
 
-    F_M_2_mission = { #still needs localisation, is about developing the forresting industry
+    F_M_2_mission = { , is about developing the forresting industry
         icon = mission_develop_the_scandes
         required_missions = {F_M_1_mission }
         position = 2
@@ -2046,7 +2046,7 @@ Norway_missions_s4 = {
         }
     }
 
-    F_M_3_mission = { #still needs localisation
+    F_M_3_mission = { 
         icon = mission_industrial_forging
         required_missions = { F_M_2_mission }
         position = 3
@@ -2091,7 +2091,7 @@ Norway_missions_s4 = {
         }
     }
 
-    Build_up_MP_mission = { #still needs localisation
+    Build_up_MP_mission = { 
         icon = mission_castle_construction
         required_missions = { F_M_3_mission }
         position = 4
@@ -2120,7 +2120,7 @@ Norway_missions_s4 = {
         }
     }
 
-    Secure_atlantic_trade_mission = { #still needs localisation
+    Secure_atlantic_trade_mission = { 
         icon = mission_rb_grow_the_channel
         required_missions = { Great_expedition_mission }
         position = 6
@@ -2146,7 +2146,7 @@ Norway_missions_s4 = {
         }
     }
 
-    North_american_trade_mission = { #still needs localisation
+    North_american_trade_mission = { 
         icon = mission_pol_embellish_gdansk
         required_missions = { Secure_atlantic_trade_mission }
         position = 7
@@ -2195,7 +2195,7 @@ Norway_missions_s4 = {
         }
     }
 
-    Overland_routes_mission = { #still needs localisation
+    Overland_routes_mission = { 
         icon = mission_unite_scandinavia
         required_missions = { North_american_trade_mission }
         position = 8
@@ -2253,7 +2253,7 @@ Norway_missions_s4 = {
         }
     }
 
-    Colonise_east_coast_mission = { #still needs localisation
+    Colonise_east_coast_mission = { 
         icon = mission_rb_the_thirteen_colonies
         required_missions = { Overland_routes_mission }
         position = 9
@@ -2323,7 +2323,7 @@ Norway_missions_s4 = {
         }
     }
 
-    Crown_port_mission = { #still needs localisation
+    Crown_port_mission = { 
         icon = mission_develop_nevas_port
         required_missions = { Colonise_east_coast_mission }
         position = 10
@@ -2382,7 +2382,7 @@ Norway_missions_s4 = {
         }
     }
 
-    Extracting_the_resources_mission = { #still needs localisation, also needs to be changed province wise to align with the new area
+    Extracting_the_resources_mission = { , also needs to be changed province wise to align with the new area
         icon = mission_african_gold
         required_missions = { The_workshops_of_norway_mission }
         position = 12
@@ -2640,7 +2640,7 @@ Norway_missions_s4 = {
         }
     }
 
-    Manufactoring_goods_mission = { #still needs localisation
+    Manufactoring_goods_mission = { 
         icon = mission_beyond_the_urals
         required_missions = { Processing_goods_mission }
         position = 14
@@ -2918,7 +2918,7 @@ Norway_missions_s4 = {
         }
     }
 
-    The_mountains_unlocked_mission = { #still needs localisation
+    The_mountains_unlocked_mission = { 
         icon = mission_nah_ravine_dwellers
         required_missions = { Up_and_away_mission }
         position = 16
@@ -2983,7 +2983,7 @@ Norway_missions_s4 = {
         }
     }
 
-    Transport_boom_mission = { #still needs localisation
+    Transport_boom_mission = { 
         icon = mission_royal_roads
         required_missions = { The_mountains_unlocked_mission }
         position = 17
@@ -3038,7 +3038,7 @@ Norway_missions_s4 = {
         }
     }
 
-    Royal_norwegian_skyfleet_mission = { #still needs localisation
+    Royal_norwegian_skyfleet_mission = { 
         icon = mission_european_politics
         required_missions = { Transport_boom_mission }
         position = 18
@@ -3061,7 +3061,7 @@ Norway_missions_s4 = {
         }
     }
 
-    Following_the_winds_mission = { #still needs localisation
+    Following_the_winds_mission = { 
         icon = mission_high_income
         required_missions = { The_royal_althing_mission }
         position = 21
@@ -3080,7 +3080,7 @@ Norway_missions_s4 = {
         }
     }
 
-    The_eureaka_plan_mission = { #still needs localisation, is about getting everyone educated by the church
+    The_eureaka_plan_mission = { , is about getting everyone educated by the church
         icon = spa_infantes_aragon
         required_missions = { The_peak_mission The_slope_mission }
         position = 23
@@ -3122,7 +3122,7 @@ Norway_missions_s5 = {
     }
     has_country_shield = yes
 
-    Conquest_1_mission = { #still needs localisation
+    Conquest_1_mission = { 
         icon = mission_cannons_firing
         required_missions = {  }
         position = 2
@@ -3144,7 +3144,7 @@ Norway_missions_s5 = {
         }
     }
 
-    Conquest_2_mission = { #still needs localisation
+    Conquest_2_mission = { 
         icon = mission_conquer_sweden
         required_missions = { conquest_1_mission }
         position = 3
@@ -3168,7 +3168,7 @@ Norway_missions_s5 = {
         }
     }
 
-    Nor_religion_mission = { #still needs localisation
+    Nor_religion_mission = { 
 		icon = catholic_confraternity
 		position = 8
 		required_missions = {  }
@@ -3227,7 +3227,7 @@ Norway_missions_s5 = {
         }
 	}
 
-    Chamber_of_churches_mission = { #still needs localisation
+    Chamber_of_churches_mission = { 
         icon = mission_hands_praying
         position = 9
         required_missions = { Nor_religion_mission }
@@ -3264,7 +3264,7 @@ Norway_missions_s5 = {
         }
     }
 
-    Trade_networks_mission = { #still needs localisation
+    Trade_networks_mission = { 
         icon = interest_of_holland
         position = 13
         required_missions = { Extracting_the_resources_mission }
@@ -3284,7 +3284,7 @@ Norway_missions_s5 = {
         }
     }
 
-    Transcontinental_transport_mission = { #still needs localisation
+    Transcontinental_transport_mission = { 
         icon = mission_maize     
         required_missions = { The_mountains_unlocked_mission } 
         position = 17
@@ -3336,7 +3336,7 @@ Norway_missions_s5 = {
         }
     }
 
-    The_slope_mission = { #still needs localisation
+    The_slope_mission = { 
         icon = mission_compulsory_education
         required_missions = { Following_the_winds_mission }
         position = 22

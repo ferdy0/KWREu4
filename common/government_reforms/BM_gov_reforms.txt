@@ -1,4 +1,4 @@
-BM_norwegian_balance_of_power = { #still needs localisation
+BM_norwegian_balance_of_power = {
 	icon = "queen"
 	allow_normal_conversion = no
 	potential = {
@@ -26,7 +26,7 @@ BM_norwegian_balance_of_power = { #still needs localisation
 	factions = { steam_barons beghards }
 }
 
-BM_NWC_corperate_althing = { #still needs localisation
+BM_NWC_corperate_althing = { 
 	icon = "sailors"
 	allow_normal_conversion = no
 	modifiers = {
@@ -116,7 +116,7 @@ BM_NWC_corperate_althing = { #still needs localisation
 	}
 }
 
-BM_chamber_of_churches = { #still needs localisation
+BM_chamber_of_churches = { 
 	icon = "legislative_assembly_reform"
 	allow_normal_conversion = no
 	potential = {

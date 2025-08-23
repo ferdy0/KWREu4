@@ -396,6 +396,8 @@ monarchy = {
 				superiority_of_the_state_reform
 				divided_aristocracy_reform
 				grand_council_reform
+				#BananaReforms
+				BM_steam_barons_ascendant
 			}
 		}
 		economical_matters = {

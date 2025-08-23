@@ -199,7 +199,7 @@ estate_burghers_whaling_trips = {
 		has_global_flag = nor_whaling_barons_active
 	}
 	on_granted = {
-		custom_tooltip = nor_whaling_monopoly_granted #still needs localisation
+		custom_tooltip = nor_whaling_monopoly_granted 
 	}
 	on_granted_province = {
 		if = {
@@ -214,7 +214,7 @@ estate_burghers_whaling_trips = {
 	}
 	can_revoke = { NOT = { has_global_flag = nor_whaling_barons_active } }
 	on_invalid = {
-		custom_tooltip = nor_whaling_monopoly_invalid #still needs localisation
+		custom_tooltip = nor_whaling_monopoly_invalid
 	}
 	on_invalid_province = {
 		if = {

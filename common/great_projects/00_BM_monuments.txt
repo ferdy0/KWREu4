@@ -92,7 +92,7 @@ nor_mountain_palace = {
 		country_modifiers = {
 			diplomatic_reputation = 0.15 	
             centralize_state_cost = -0.05
-            core_creation = -0.1
+            local_defensiveness = 0.10
 		}
 
 		#what effects happen when this tier is achieved
@@ -123,8 +123,8 @@ nor_mountain_palace = {
 		country_modifiers = {
 			diplomatic_reputation = 0.25 	
             centralize_state_cost = -0.10
-            core_creation = -0.15
-            unjustified_demands = -0.1
+            local_defensiveness = 0.15
+            local_defender_dice_roll_bonus = 1
 		}
 
 		#what effects happen when this tier is achieved
@@ -155,9 +155,9 @@ nor_mountain_palace = {
 		country_modifiers = {
 			diplomatic_reputation = 0.5 	
             centralize_state_cost = -0.15
-            core_creation = -0.3
-            unjustified_demands = -0.2
-            can_fabricate_for_vassals = yes
+            local_defensiveness = 0.3
+            local_defender_dice_roll_bonus = 1
+            fort_level = 1
 		}
 
 		#what effects happen when this tier is achieved

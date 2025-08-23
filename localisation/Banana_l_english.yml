@@ -177,3 +177,14 @@
  mission_nor.10.t:0 "The success of Project Selvvind!"
  mission_nor.10.d:0 "After many years of toil, the inventor has anounced a successfull test of aerial populsion using one of his steam engines. This will revolutionise our airship travel! Unfortunatly, whilst the crown would have had the pattent for 20 years, the parliament has decided to grant the pattent to the inventor himself insted, who refused to sell the exclusive rights to the crown and instead made the technology publicaly avaliable. This has been a setback, but the crown has still set up the first large scale production plant with the inventors's help, and will reap the benefits for a long time."
  mission_nor.10.a:0 "That bastard!"
+
+ #Gov reforms
+ BM_NWC_corperate_althing:0 "The Corperate Althing"
+ BM_norwegian_balance_of_power:0 "The Beghards and the Barons"
+ BM_chamber_of_churches:0 "The chamber of churches"
+ BM_steam_barons_ascendant:0 "The rule of Steam"
+
+ #Estate privelidges
+ estate_burghers_whaling_trips:0 "Sponsored whaling trips"
+ nor_whaling_monopoly_granted:0 "All provinces that produce fish will get a province modifier modifier imporving this production"
+ nor_whaling_monopoly_invalid:0 "All provinces with the special province modifier will have it removed"

@@ -693,7 +693,7 @@ country_event = { #still needs localisation
 #################################
 
 # Event for starting the great expidition
-country_event = { #Needs to be continued and localised
+country_event = {
     id = nor_great_expidition.1
     title = nor_great_expidition.1.t
     desc = nor_great_expidition.1.d
