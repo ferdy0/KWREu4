@@ -910,7 +910,7 @@ tyhrennian_missions_slot_3 = {
 
 	tyh_destroy_austria = {
 		icon = conquer_austria
-		position = 8
+		position = 7
 		required_missions = { tyh_army_republic }
 		provinces_to_highlight = {
 			OR = {

@@ -71,38 +71,183 @@ chola_missions_1 = {
     }
 
     mad_5 = {
-        icon = mission_cannons_firing
+        icon = mission_unite_coromandel
         required_missions = { mad_4 }
         position = 4
         provinces_to_highlight = {
+            province_id = 2084
+            province_id = 4439
+            province_id = 2037
+            province_id = 542
+            province_id = 1948
+            province_id = 544
+            province_id = 4432
+            province_id = 4433
+            province_id = 529
         }
         trigger = {
+            2084 = {
+                has_building = dock
+                OR = {
+                    has_building = coastal_defence
+                    has_building = naval_battery
+                }
+                has_building = ramparts
+                has_building = shipyard
+                fort_level = 1
+                development = 20
+                num_of_times_expanded_infrastructure = 1
+                heavy_ships_in_province = 10
+            }
+            4439 = {
+                fort_level = 1
+            }
+            2037 = {
+                fort_level = 1
+            }
+            542 = {
+                fort_level = 1
+            }
+            1948 = {
+                fort_level = 1
+            }
+            544 = {
+                fort_level = 1
+            }
+            4432 = {
+                fort_level = 1
+            }
+            4433 = {
+                fort_level = 1
+            }
+            529 = {
+                fort_level = 1
+            }
         }
         effect = {
+            2084 = {
+                kill_units = {
+                    who = owner
+                    type = heavy_ship
+                    amount = 10
+                }
+                add_province_modifier = {
+                    name = based_godawari_fleet
+                    duration = -1
+                }
+            }
+            4439 = {
+                add_province_modifier = {
+                    name = protected_godawari_fleet
+                    duration = -1
+                }
+            }
+            2037 = {
+                add_province_modifier = {
+                    name = protected_godawari_fleet
+                    duration = -1
+                }
+            }
+            542 = {
+                add_province_modifier = {
+                    name = protected_godawari_fleet
+                    duration = -1
+                }
+            }
+            1948 = {
+                add_province_modifier = {
+                    name = protected_godawari_fleet
+                    duration = -1
+                }
+            }
+            544 = {
+                add_province_modifier = {
+                    name = protected_godawari_fleet
+                    duration = -1
+                }
+            }
+            4432 = {
+                add_province_modifier = {
+                    name = protected_godawari_fleet
+                    duration = -1
+                }
+            }
+            4433 = {
+                add_province_modifier = {
+                    name = protected_godawari_fleet
+                    duration = -1
+                }
+            }
+            529 = {
+                add_province_modifier = {
+                    name = protected_godawari_fleet
+                    duration = -1
+                }
+            }
         }
     }
 
 	mad_7 = {
-        icon = mission_cannons_firing
+        icon = mission_subdue_rajputana
         required_missions = { mad_5 mad_6 }
         position = 5
         provinces_to_highlight = {
         }
         trigger = {
+            total_development = MLW
+            army_size = MLW
+            navy_size = MLW
+            prestige = MLW
+            monthly_income = MLW
+            MLW = {
+                has_opinion_modifier = {
+            	    who = ROOT
+            	    modifier = scornfully_insulted
+            	}
+            }
         }
         effect = {
+            add_permanent_power_projection = {
+                amount = 15
+                type = MAD_defeat_MLW
+            }
+            add_country_modifier = {
+                name = defense_india
+                duration = -1
+            }
         }
     }
 
 	mad_16 = {
-        icon = mission_cannons_firing
+        icon = mission_the_chola_conquests
         required_missions = { mad_7 mad_15 }
         position = 11
         provinces_to_highlight = {
         }
         trigger = {
+            total_development = 3000
+            has_institution = industrialization
+            prestige = 100
+            any_owned_province = { has_building = furnace }
+            power_projection = 75
+            calc_true_if = {
+                all_known_country = {
+                        has_opinion = {
+                            who = ROOT
+                            value = 100
+                        }
+                        capital_scope = {
+                            continent = europe
+                        }
+            	}
+                amount = 5
+            }
         }
         effect = {
+            add_country_modifier = {
+                name = child_labour
+                duration = -1
+            }
         }
     }
 }
@@ -468,55 +613,70 @@ chola_missions_2 = {
         provinces_to_highlight = {
         }
         trigger = {
-            east_indies_superregion = {
+         	all_owned_province = {
                 AND = {
-                    owned_by = MAD
+                    OR = {
+                        region = moluccas_region
+                        region = indonesia_region
+                    }
                     is_prosperous = yes
                     development = 25
                     has_building = marketplace
                     has_building = workshop
                 }
-        	}
+            }
         }
         effect = {
-            617 = {
-                region = {
-                    type = all
-                        limit = {
-                            owned_by = MAD
-                            province_has_center_of_trade_of_level = 1
-                        }
-                        add_province_modifier = {
-                            name = cholan_ports
-                            duration = -1
-                        }
+         	every_owned_province = {
+                limit = {
+                    province_has_center_of_trade_of_level = 1
+                    OR = {
+                        region = moluccas_region
+                        region = indonesia_region
+                    }
                 }
-            }
-            624 = {
-                region = {
-                    type = all
-                        limit = {
-                            owned_by = MAD
-                            province_has_center_of_trade_of_level = 1
-                        }
-                        add_province_modifier = {
-                            name = cholan_ports
-                            duration = -1
-                        }
+                add_province_modifier = {
+                    name = cholan_ports
+                    duration = -1
                 }
             }
         }
     }
 
     mad_15 = {
-        icon = mission_cannons_firing
+        icon = mission_oceania_assemble_an_army
         required_missions = { mad_14 }
         position = 10
         provinces_to_highlight = {
         }
         trigger = {
+            colony = 1
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                value = 8
+                colonial_region = colonial_australia
+                is_city = yes
+            }
+            adm_power = 100
+            dip_power = 100
+            mil_power = 100
         }
         effect = {
+            add_country_modifier = {
+                name = sponsoring_australia
+                duration = -1
+            }
+            random_subject_country = {
+                limit = {
+                    is_colonial_nation = yes
+                    all_owned_province = {
+                        colonial_region = colonial_australia
+                    }
+                }
+                add_country_modifier = {
+                    name = cholan_sponsorship
+                    duration = -1
+                }
+            }
         }
     }
 }
@@ -579,26 +739,136 @@ chola_missions_3 = {
     }
 
     mad_9 = {
-        icon = mission_cannons_firing
+        icon = mission_the_chola_conquests
         required_missions = { mad_8 }
         position = 6
         provinces_to_highlight = {
         }
         trigger = {
+            	dip_power = 200
+            	4815 = {
+            	    is_core = MAD
+            	    development = 25
+            	    has_building = workshop
+            	    has_building = manufactory
+            	    num_of_times_expanded_infrastructure = 1
+            	    infantry_in_province = 5
+            	    fort_level = 1
+            	}
+            	617 = {
+            	    is_core = MAD
+            	    development = 25
+            	    has_building = workshop
+            	    has_building = manufactory
+            	    num_of_times_expanded_infrastructure = 1
+            	    infantry_in_province = 5
+            	    fort_level = 1
+            	}
+            	2673 = {
+            	    is_core = MAD
+            	    development = 25
+            	    has_building = workshop
+            	    has_building = manufactory
+            	    num_of_times_expanded_infrastructure = 1
+            	    infantry_in_province = 5
+            	    fort_level = 1
+            	}
+            	620 = {
+            	    is_core = MAD
+            	    development = 25
+            	    has_building = workshop
+            	    has_building = manufactory
+            	    num_of_times_expanded_infrastructure = 1
+            	    infantry_in_province = 5
+            	    fort_level = 1
+            	}
         }
         effect = {
+            	add_dip_power = -200
+            	4815 = {
+            	    change_culture = tamil
+            	    change_religion = hinduism
+            	    add_base_production = 2
+                    kill_units = {
+                        who = MAD
+                        type = infantry
+                        amount = 5
+                    }
+                    center_of_trade = 1
+                    change_trade_goods = cloth
+                    add_province_modifier = {
+                        name = heart_cholan_indo
+                        duration = -1
+                    }
+            	}
+            	617 = {
+            	    change_culture = tamil
+            	    change_religion = hinduism
+            	    add_base_production = 2
+                    kill_units = {
+                        who = MAD
+                        type = infantry
+                        amount = 5
+                    }
+            	}
+            	2673 = {
+            	    change_culture = tamil
+            	    change_religion = hinduism
+            	    add_base_production = 2
+                    kill_units = {
+                        who = MAD
+                        type = infantry
+                        amount = 5
+                    }
+            	}
+            	620 = {
+            	    change_culture = tamil
+            	    change_religion = hinduism
+            	    add_base_production = 2
+                    kill_units = {
+                        who = MAD
+                        type = infantry
+                        amount = 5
+                    }
+            	}
         }
     }
 
     mad_12 = {
-        icon = mission_cannons_firing
+        icon = mission_unite_coromandel
         required_missions = { mad_10 }
         position = 7
         provinces_to_highlight = {
         }
         trigger = {
+			navy_size_percentage = 0.9
+            has_leaders = {
+                value = 3
+                type = admiral
+	            include_monarch = no
+	            include_heir = no
+            }
+            navy_tradition = 50
+            num_of_heavy_ship = 75
         }
         effect = {
+            add_country_modifier = {
+                name = cholan_armada
+                duration = 5475
+                hidden = no
+            }
+            banten_area = {
+                add_permanent_claim = MAD
+            }
+            west_java_area = {
+                add_permanent_claim = MAD
+            }
+            central_java_area = {
+                add_permanent_claim = MAD
+            }
+            surabaya_area = {
+                add_permanent_claim = MAD
+            }
         }
     }
 }

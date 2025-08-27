@@ -461,3 +461,41 @@ cholan_ports = {
     local_defensiveness = 0.1
     local_production_efficiency = 0.25
 }
+sponsoring_australia = {
+    global_tax_income = -72
+}
+cholan_sponsorship = {
+    country_admin_power = 1
+    country_diplomatic_power = 1
+    country_military_power = 1
+    global_tax_income = 24
+    global_colonial_growth = 20
+}
+heart_cholan_indo = {
+    	province_trade_power_modifier = 0.1
+    	trade_goods_size = 0.5
+    	local_development_cost_modifier = -0.25
+    	local_sailors_modifier = 0.5
+}
+cholan_armada = {
+	naval_maintenance_modifier = -0.15
+}
+based_godawari_fleet = {
+    local_ship_cost = -0.25
+    ship_recruit_speed = -0.25
+    max_attrition = 1
+    local_defensiveness = 0.25
+}
+protected_godawari_fleet = {
+    max_attrition = 0.5
+    local_defensiveness = 0.15
+    local_garrison_size = 0.25
+}
+defense_india = {
+    garrison_size = 0.25
+    defensiveness = 0.15
+}
+child_labour = {
+    global_trade_goods_size_modifier = 0.15
+    global_own_trade_power = -0.15
+}
