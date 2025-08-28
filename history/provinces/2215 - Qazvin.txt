@@ -1,6 +1,6 @@
 owner = HAH
 controller = HAH
-capital = "Qazvin"
+capital = "Alamut"
 is_city = yes
 culture = mazandarani
 religion = shiite

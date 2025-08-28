@@ -1,6 +1,6 @@
 ardabil_missions_1 = {
 	slot = 1
-	generic = no
+	generic = yes
 	ai = yes
 	potential_on_load = {
 		has_dlc = "King of Kings"
@@ -57,7 +57,7 @@ ardabil_missions_1 = {
 
 ardabil_missions_2 = {
 	slot = 2
-	generic = no
+	generic = yes
 	ai = yes
 	potential_on_load = {
 		has_dlc = "King of Kings"
@@ -158,7 +158,7 @@ ardabil_missions_2 = {
 
 ardabil_missions_3 = {
 	slot = 3
-	generic = no
+	generic = yes
 	ai = yes
 	potential_on_load = {
 		has_dlc = "King of Kings"
@@ -194,7 +194,7 @@ ardabil_missions_3 = {
 
 ardabil_missions_4 = {
 	slot = 4
-	generic = no
+	generic = yes
 	ai = yes
 	potential_on_load = {
 		has_dlc = "King of Kings"
@@ -316,7 +316,7 @@ ardabil_missions_4 = {
 
 ardabil_missions_5 = {
 	slot = 5
-	generic = no
+	generic = yes
 	ai = yes
 	potential_on_load = {
 		has_dlc = "King of Kings"

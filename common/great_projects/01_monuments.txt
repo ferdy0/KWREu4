@@ -19605,7 +19605,7 @@ narikala_fortress = {
 }
 
 golestan_palace = {
-	start = 428
+	start = 2215
 	date = 1324.1.1 #16th century actually
 	time = { months = 0	}
 	build_cost = 0
@@ -19621,13 +19621,13 @@ golestan_palace = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			culture = persian
+			culture = mazandarani
 			province_is_or_accepts_culture = yes
 		}
 	}
 	can_upgrade_trigger = {
 		AND = {
-			culture = persian
+			culture = mazandarani
 			province_is_or_accepts_culture = yes
 		}
 	}

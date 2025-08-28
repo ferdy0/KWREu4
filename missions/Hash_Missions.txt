@@ -1,0 +1,319 @@
+hash_missions_1 = {
+    slot = 1
+    generic = no
+    ai = yes
+	potential = {
+		tag = HAH
+	}
+    has_country_shield = yes
+
+    hash_15 = {
+        icon = mission_end_manipuri_raids
+        required_missions = { }
+        position = 1
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+        }
+
+        effect = {
+        }
+    }
+
+    hash_16 = {
+        icon = mission_end_manipuri_raids
+        required_missions = { hash_15 }
+        position = 2
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+        }
+
+        effect = {
+        }
+    }
+
+    hash_17 = {
+        icon = mission_end_manipuri_raids
+        required_missions = { hash_16 }
+        position = 3
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+        }
+
+        effect = {
+        }
+    }
+
+    hash_18 = {
+        icon = mission_end_manipuri_raids
+        required_missions = { hash_17 }
+        position = 4
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+        }
+
+        effect = {
+        }
+    }
+}
+
+hash_missions_2 = {
+    slot = 2
+    generic = no
+    ai = yes
+	potential = {
+		tag = HAH
+	}
+    has_country_shield = yes
+
+    hash_1 = {
+        icon = mission_end_manipuri_raids
+        required_missions = { }
+        position = 1
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+        }
+
+        effect = {
+        }
+    }
+
+    hash_9 = {
+        icon = mission_end_manipuri_raids
+        required_missions = { hash_4 }
+        position = 3
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+        }
+
+        effect = {
+        }
+    }
+
+    hash_10 = {
+        icon = mission_end_manipuri_raids
+        required_missions = { hash_9 }
+        position = 4
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+        }
+
+        effect = {
+        }
+    }
+}
+
+hash_missions_3 = {
+    slot = 3
+    generic = no
+    ai = yes
+	potential = {
+		tag = HAH
+	}
+    has_country_shield = yes
+
+    hash_2 = {
+        icon = mission_end_manipuri_raids
+        required_missions = { }
+        position = 1
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+        }
+
+        effect = {
+        }
+    }
+
+    hash_4 = {
+        icon = mission_end_manipuri_raids
+        required_missions = { hash_1 hash_2 hash_3 }
+        position = 2
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+        }
+
+        effect = {
+        }
+    }
+
+    hash_5 = {
+        icon = mission_end_manipuri_raids
+        required_missions = { hash_4 }
+        position = 3
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+        }
+
+        effect = {
+        }
+    }
+
+    hash_6 = {
+        icon = mission_end_manipuri_raids
+        required_missions = { hash_5 }
+        position = 4
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+        }
+
+        effect = {
+        }
+    }
+}
+
+hash_missions_4 = {
+    slot = 4
+    generic = no
+    ai = yes
+	potential = {
+		tag = HAH
+	}
+    has_country_shield = yes
+
+    hash_3 = {
+        icon = mission_end_manipuri_raids
+        required_missions = { }
+        position = 1
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+        }
+
+        effect = {
+        }
+    }
+
+    hash_7 = {
+        icon = mission_end_manipuri_raids
+        required_missions = { hash_4 }
+        position = 3
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+        }
+
+        effect = {
+        }
+    }
+
+    hash_8 = {
+        icon = mission_end_manipuri_raids
+        required_missions = { hash_7 }
+        position = 4
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+        }
+
+        effect = {
+        }
+    }
+}
+
+hash_missions_5 = {
+    slot = 5
+    generic = no
+    ai = yes
+	potential = {
+		tag = HAH
+	}
+    has_country_shield = yes
+
+    hash_11 = {
+        icon = mission_end_manipuri_raids
+        required_missions = { }
+        position = 1
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+        }
+
+        effect = {
+        }
+    }
+
+    hash_12 = {
+        icon = mission_end_manipuri_raids
+        required_missions = { hash_11 }
+        position = 2
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+        }
+
+        effect = {
+        }
+    }
+
+    hash_13 = {
+        icon = mission_end_manipuri_raids
+        required_missions = { hash_12 }
+        position = 3
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+        }
+
+        effect = {
+        }
+    }
+
+    hash_14 = {
+        icon = mission_end_manipuri_raids
+        required_missions = { hash_13 }
+        position = 4
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+        }
+
+        effect = {
+        }
+    }
+}
