@@ -1,0 +1,4 @@
+MAD_defeat_MLW = {
+	max = 15
+	decay = no
+}

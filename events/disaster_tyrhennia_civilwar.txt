@@ -1263,7 +1263,7 @@ country_event = {
 
 	option = { #yes
 		name = tyrhennia_civil_war.78.a
-		ai_chance = { factor = 75 }
+		ai_chance = { factor = 90 }
 		add_historical_friend = MAD
         MAD = {
             country_event = {
@@ -1276,7 +1276,7 @@ country_event = {
 
 	option = { #no
 		name = tyrhennia_civil_war.78.b
-		ai_chance = { factor = 25 }
+		ai_chance = { factor = 10 }
 		add_historical_rival = MAD
         MAD = {
             country_event = {
