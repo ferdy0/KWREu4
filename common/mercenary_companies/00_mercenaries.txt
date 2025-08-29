@@ -2882,3 +2882,38 @@ merc_swiss_royal_guard = {
 	min_size = 6
 	max_size = 12
 }
+
+daylami_pikemen = {
+    regiments_per_development = 0.4
+    home_province = 416
+	cost_modifier = 1
+	sprites = { dlc098_nav_sprite_pack dlc020_ara_sprite_pack dlc029_spa_sprite_pack dlc049_SPA_sprite_pack dlc053_spa_sprite_pack westerngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		has_country_flag = hash_guardians_islam
+	}
+    modifier = {
+		morale_damage = 0.15
+		shock_damage_received = -0.2
+	}
+	min_size = 6
+	max_size = 12
+}
+
+khorasani_riders = {
+    regiments_per_development = 0.4
+    home_province = 427
+	cost_modifier = 1.5
+	cavalry_weight = 1
+	sprites = { dlc098_nav_sprite_pack dlc020_ara_sprite_pack dlc029_spa_sprite_pack dlc049_SPA_sprite_pack dlc053_spa_sprite_pack westerngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		has_country_flag = hash_guardians_islam
+	}
+    modifier = {
+		shock_damage = 0.2
+		cavalry_flanking = 1
+	}
+	min_size = 6
+	max_size = 10
+}

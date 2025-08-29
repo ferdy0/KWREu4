@@ -24,3 +24,63 @@ ZZZ_enhanced_unreformed_religion = {
 	
 	global_missionary_strength = -0.005
 }
+
+puppet_court_1 = {
+    potential = {
+        tag = HAH
+    }
+
+    trigger = {
+        has_country_flag = puppet_court_1
+        NOT = { num_of_cities = 2 }
+    }
+
+     vassal_forcelimit_bonus = 0.1
+     vassal_income = 0.05
+     reduced_liberty_desire = 10
+ }
+
+puppet_court_2 = {
+    potential = {
+        tag = HAH
+    }
+
+    trigger = {
+        has_country_flag = puppet_court_2
+        NOT = { num_of_cities = 2 }
+    }
+
+     vassal_forcelimit_bonus = 0.2
+     vassal_income = 0.1
+     reduced_liberty_desire = 20
+ }
+
+puppet_court_3 = {
+    potential = {
+        tag = HAH
+    }
+
+    trigger = {
+        has_country_flag = puppet_court_3
+        NOT = { num_of_cities = 2 }
+    }
+
+     vassal_forcelimit_bonus = 0.3
+     vassal_income = 0.15
+     reduced_liberty_desire = 30
+ }
+
+puppet_court_4 = {
+    potential = {
+        tag = HAH
+    }
+
+    trigger = {
+        has_country_flag = puppet_court_4
+        NOT = { num_of_cities = 2 }
+    }
+
+     vassal_forcelimit_bonus = 0.5
+     vassal_income = 0.25
+     reduced_liberty_desire = 50
+ }
