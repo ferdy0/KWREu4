@@ -957,7 +957,7 @@ woc_boh_imperial_branch_1 = {
 		required_missions = {  }
 		position = 6
 		
-		trigger = { ###add end of the compact event as requirement!!
+		trigger = {
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = hussite_regency_tt
