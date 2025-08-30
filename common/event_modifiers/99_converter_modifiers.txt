@@ -535,5 +535,26 @@ silk_producers = {
 }
 silk_taxes = {
     province_trade_power_value = 15
-    	tax_income = 24
+    tax_income = 24
+}
+unity_mosque_alamut = {
+    local_unrest = -2
+    local_tax_modifier = 0.25
+    local_development_cost_modifier = -0.1
+}
+center_islamic_fashion = {
+    trade_goods_size = 0.5
+}
+islamic_clothes_emporium = {
+    trade_goods_size = 2
+    province_trade_power_modifier = 0.15
+}
+border_forts = {
+    local_defensiveness = 0.15
+}
+golestani_hardtacks = {
+    land_attrition = -0.10
+}
+golestani_trading_company = {
+    province_trade_power_value = 25
 }

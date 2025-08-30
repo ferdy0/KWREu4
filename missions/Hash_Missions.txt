@@ -90,17 +90,17 @@ hash_missions_1 = {
                         name = sabotaged_soup
                         duration = 9125
                     }
-                    505 = {
-                        add_province_modifier = {
-                            name = sabotaged_def
-                            duration = 3650
-                        }
+                }
+                505 = {
+                    add_province_modifier = {
+                        name = sabotaged_def
+                        duration = 3650
                     }
-                    2229 = {
-                        add_province_modifier = {
-                            name = sabotaged_def
-                            duration = 3650
-                        }
+                }
+                2229 = {
+                    add_province_modifier = {
+                        name = sabotaged_def
+                        duration = 3650
                     }
                 }
                 add_spy_network_in = {
@@ -647,6 +647,7 @@ hash_missions_3 = {
                 clr_country_flag = puppet_court_3
                 set_country_flag = puppet_court_4
             }
+            custom_tooltip = upgraded_puppeter
         }
     }
 }
@@ -661,7 +662,7 @@ hash_missions_4 = {
     has_country_shield = yes
 
     hash_3 = {
-        icon = mission_end_manipuri_raids
+        icon = mission_arabian_fort
         required_missions = { }
         position = 1
 
@@ -669,14 +670,26 @@ hash_missions_4 = {
         }
 
         trigger = {
+            treasury = 100
+            mil_power = 50
         }
 
         effect = {
+            add_treasury = -100
+            add_mil_power = -50
+            450 = {
+                add_building = fort_15th
+            }
+            KRY = {
+                add_liberty_desire = -50
+                add_historical_friend = HAH
+            }
+            add_historical_friend = KRY
         }
     }
 
     hash_7 = {
-        icon = mission_end_manipuri_raids
+        icon = mission_mal_jihad_upon_own_population
         required_missions = { hash_4 }
         position = 3
 
@@ -684,14 +697,72 @@ hash_missions_4 = {
         }
 
         trigger = {
+            theologian = 2
+            OR = {
+                is_defender_of_faith = yes
+                any_known_country = {
+                    is_defender_of_faith = yes
+                    has_opinion = {
+                     	who = ROOT
+                       	value = 100
+                    }
+                }
+            }
+            413 = {
+                num_of_times_improved = 2
+            }
+            2210 = {
+                num_of_times_improved = 2
+            }
+            424 = {
+                num_of_times_improved = 2
+            }
+            treasury = 250
+            SRV = {
+                has_opinion = {
+                    who = ROOT
+                    value = 200
+                }
+            }
         }
 
         effect = {
+            413 = {
+               	add_base_tax = 1
+               	add_building = temple
+            }
+            2210 = {
+               	add_base_tax = 1
+               	add_building = temple
+            }
+            424 = {
+               	add_base_tax = 1
+               	add_building = temple
+            }
+            add_historical_friend = ARD
+            add_historical_friend = LRI
+            add_historical_friend = ARL
+            ARD = {
+                add_historical_friend = HAH
+            }
+            LRI = {
+                add_historical_friend = HAH
+            }
+            ARL = {
+                add_historical_friend = HAH
+            }
+            2215 = {
+                add_building = cathedral
+                add_province_modifier = {
+                    name = unity_mosque_alamut
+                    duration = -1
+                }
+            }
         }
     }
 
     hash_8 = {
-        icon = mission_end_manipuri_raids
+        icon = per_unify_the_shia_realms
         required_missions = { hash_7 }
         position = 4
 
@@ -699,9 +770,68 @@ hash_missions_4 = {
         }
 
         trigger = {
+            424 = {
+                num_of_times_improved = 4
+                has_manufactory_trigger = yes
+            }
+            2210 = {
+                num_of_times_improved = 4
+                has_manufactory_trigger = yes
+            }
+            414 = {
+                num_of_times_improved = 4
+                has_manufactory_trigger = yes
+            }
+            natural_scientist = 2
         }
 
         effect = {
+            424 = {
+                add_province_modifier = {
+                    name = center_islamic_fashion
+                    duration = -1
+                }
+            }
+            2210 = {
+                add_province_modifier = {
+                    name = center_islamic_fashion
+                    duration = -1
+                }
+            }
+            414 = {
+                add_province_modifier = {
+                    name = center_islamic_fashion
+                    duration = -1
+                }
+            }
+            2215 = {
+                add_province_modifier = {
+                    name = islamic_clothes_emporium
+                    duration = -1
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = puppet_court_1
+                }
+                clr_country_flag = puppet_court_1
+                set_country_flag = puppet_court_2
+            }
+            else_if = {
+                limit = {
+                    has_country_flag = puppet_court_2
+                }
+                clr_country_flag = puppet_court_2
+                set_country_flag = puppet_court_3
+            }
+            else_if = {
+                limit = {
+                    has_country_flag = puppet_court_3
+                }
+                clr_country_flag = puppet_court_3
+                set_country_flag = puppet_court_4
+            }
+            custom_tooltip = upgraded_puppeter
         }
     }
 }
@@ -716,7 +846,7 @@ hash_missions_5 = {
     has_country_shield = yes
 
     hash_11 = {
-        icon = mission_end_manipuri_raids
+        icon = per_sword_of_our_faith
         required_missions = { }
         position = 1
 
@@ -724,14 +854,45 @@ hash_missions_5 = {
         }
 
         trigger = {
+            has_leaders = {
+                value = 1
+                type = general
+                include_monarch = no
+                include_heir = no
+            }
+            army_size_percentage = 1
+            has_spy_network_in = {
+                who = PER
+                value = 50
+            }
+            mil_power = 100
         }
 
         effect = {
+         	PER = {
+                add_country_modifier = {
+                    name = sabotaged_soup
+                    duration = 3650
+                }
+            }
+            2217 = {
+                add_province_modifier = {
+                    name = sabotaged_def
+                    duration = 3650
+                }
+            }
+            429 = {
+                add_province_modifier = {
+                    name = sabotaged_def
+                    duration = 3650
+                }
+            }
+            add_mil_power = -100
         }
     }
 
     hash_12 = {
-        icon = mission_end_manipuri_raids
+        icon = byz_reinforce_constantinople
         required_missions = { hash_11 }
         position = 2
 
@@ -739,14 +900,31 @@ hash_missions_5 = {
         }
 
         trigger = {
+            2217 = {
+                owner = { tag = LRI }
+                has_fort_building_trigger = yes
+                has_building = ramparts
+            }
+            2213 = {
+                owner = { tag = Z40 }
+                has_fort_building_trigger = yes
+                has_building = ramparts
+            }
         }
 
         effect = {
+            2213 = {
+                add_base_manpower = 2
+                add_province_modifier = {
+                    name = border_forts
+                    duration = -1
+                }
+            }
         }
     }
 
     hash_13 = {
-        icon = mission_end_manipuri_raids
+        icon = mission_central_asian_steppes
         required_missions = { hash_12 }
         position = 3
 
@@ -754,14 +932,32 @@ hash_missions_5 = {
         }
 
         trigger = {
+            4337 = {
+                development = 20
+                has_manufactory_trigger = yes
+            }
+            Z40 = {
+                has_opinion = {
+                    who = ROOT
+                    value = 200
+                }
+            }
         }
 
         effect = {
+            add_country_modifier = {
+                name = golestani_hardtacks
+                duration = -1
+            }
+            add_historical_friend = Z40
+            Z40 = {
+                add_historical_friend = HAH
+            }
         }
     }
 
     hash_14 = {
-        icon = mission_end_manipuri_raids
+        icon = ven_scales_of_power
         required_missions = { hash_13 }
         position = 4
 
@@ -769,9 +965,72 @@ hash_missions_5 = {
         }
 
         trigger = {
+            428 = {
+                development = 30
+                province_has_center_of_trade_of_level = 3
+            }
+            has_spy_network_in = {
+              	who = PER
+              	value = 80
+            }
+            treasury = 300
         }
 
         effect = {
+            428 = {
+                add_province_modifier = {
+                    name = golestani_trading_company
+                    duration = -1
+                }
+            }
+            2215 = {
+                add_trade_modifier = {
+                    who = ROOT
+                    duration = -1
+                    power = 25
+                    key = STRONG_HAH
+                }
+            }
+            431 = {
+                add_trade_modifier = {
+                    who = ROOT
+                    duration = -1
+                    power = 25
+                    key = STRONG_HAH
+                }
+            }
+            2215 = {
+                add_trade_modifier = {
+                    who = Z40
+                    duration = -1
+                    power = 10
+                    key = STRONG_HAH_VASSAL
+                }
+            }
+            431 = {
+                add_trade_modifier = {
+                    who = Z40
+                    duration = -1
+                    power = 10
+                    key = STRONG_HAH_VASSAL
+                }
+            }
+            2215 = {
+                add_trade_modifier = {
+                    who = PER
+                    duration = -1
+                    power = -25
+                    key = HAH_MEDDLING
+                }
+            }
+            431 = {
+                add_trade_modifier = {
+                    who = PER
+                    duration = -1
+                    power = -25
+                    key = HAH_MEDDLING
+                }
+            }
         }
     }
 }
