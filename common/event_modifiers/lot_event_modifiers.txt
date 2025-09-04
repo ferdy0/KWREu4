@@ -96,3 +96,6 @@ vaults_of_eger_stjoachim = {
 	monthly_gold_inflation_modifier = -0.5
 	trade_goods_size_modifier = 0.2
 }
+baldurs_gate = {
+	tax_income = 12
+}

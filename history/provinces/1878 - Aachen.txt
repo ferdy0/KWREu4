@@ -21,3 +21,7 @@ discovered_by = western
 latent_trade_goods = {
 	coal
 }
+add_province_modifier = {
+	name = baldurs_gate
+	duration = -1
+}
