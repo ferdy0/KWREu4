@@ -33,7 +33,7 @@ add_accepted_culture = gujarati
 }
 1389.11.13 = {
 	monarch = {
-		name = "Akbar III"
+		name = "Akbar IV"
 		dynasty = "Fatimid"
 		adm = 2
 		dip = 4

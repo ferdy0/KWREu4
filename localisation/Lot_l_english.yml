@@ -528,4 +528,8 @@
  lot_boh_eger_vaults_title:0 "Vaults of Eger"
  lot_boh_eger_vaults_desc:0 "The mines of the St. Joachim valley have brought wealth and abundance to the Erzgebirge region to the north-west of our kingdom. The sudden demand for mine labourers has sprung a small town in the selfsame valley. Establishing a royal mint in the town could solidify its prosperity and the region's importance in the north German trade networks."
  vaults_of_eger_stjoachim:0 "Vaults of Eger"
+ baldurs_gate:0 "Baldur's Gate"
+ ###### Omani Mission Fixes #########################
+ lot_OMA_hormuz_title:0 "Secure the Pirate Coast"
+ lot_OMA_hormuz_desc:0 "The people of the Pirate Coast have been raiding ships in the Persian Gulf and the Straight of Hormuz. If we are to secure our future as the trading hub of Arabia then we must subdue our unruly neighbours."
  
