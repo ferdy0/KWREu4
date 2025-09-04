@@ -2796,7 +2796,7 @@ woc_lot_boh_industrial_branch_4 = {
 			}
 			4726 = {
 				development = 25
-				#has_building = manufactory #this one doesn't work but it rather should so maybe someone can hjelp me?
+				has_manufactory_trigger = yes
 				has_building = state_house
 				has_building = town_hall
 			}
@@ -3369,57 +3369,57 @@ lot_boh_moravian_branch_5 = {
 			province_id = 265
 		}
 		
-		trigger = { #the stuff after the hashtags doesn't work but it should give an idea of what it should check for
+		trigger = {
 			265 = {
 				base_production = 12
 				has_building = counting_house
 				#has_building = manufactory
 			}
-			#any_country = {
-			#	limit = {
-			#		italy_region
-			#	}
-			#	has_opinion = {
-			#		who = ROOT
-			#		value = 100
-			#	}
-			#}
-			#any_country = {
-			#	limit = {
-			#		iberia_region
-			#	}
-			#	has_opinion = {
-			#		who = ROOT
-			#		value = 100
-			#	}
-			#}
-			#any_country = {
-			#	limit = {
-			#		france_region
-			#	}
-			#	has_opinion = {
-			#		who = ROOT
-			#		value = 100
-			#	}
-			#}
-			#any_country = {
-			#	limit = {
-			#		balkan_region
-			#	}
-			#	has_opinion = {
-			#		who = ROOT
-			#		value = 100
-			#	}
-			#}
-			#any_country = {
-			#	limit = {
-			#		south_german_region
-			#	}
-			#	has_opinion = {
-			#		who = ROOT
-			#		value = 100
-			#	}
-			#}
+			any_known_country = {
+				capital_scope = {
+				    region = italy_region
+			    }
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+			}
+			any_known_country = {
+				capital_scope = {
+				    region = iberia_region
+			    }
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+			}
+			any_known_country = {
+				capital_scope = {
+				    region = france_region
+			    }
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+			}
+			any_known_country = {
+				capital_scope = {
+				    region = balkan_region
+			    }
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+			}
+			any_known_country = {
+				capital_scope = {
+				    region = south_german_region
+			    }
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+			}
 		}
 		
 		effect = {

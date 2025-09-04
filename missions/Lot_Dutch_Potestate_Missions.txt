@@ -2056,7 +2056,12 @@ dutch_local_waterworks = {
 			else = {
 				treasury = 50
 			}
-			all_owned_province = { #would be cool if we can limit this to only provinces in the low_countries_region and Cleves and Julich provinces
+			all_owned_province = {
+			    #OR = {   #conditionnal triggers are weird
+                #    region = low_countries_region
+                #    province_id = 2975
+                #    province_id = 4768
+				#}
 				num_of_times_expanded_infrastructure = 2
 			}
 		}
