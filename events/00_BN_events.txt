@@ -143,54 +143,6 @@ country_event = { #still needs localisation
     }
 }
 
-#Event for spawning the reformation in norway
-country_event = { #still needs localisation
-    id = flavor_nor.3
-    title = flavor_nor.3.t
-    desc = flavor_nor.3.d
-    picture = LUTHER_eventPicture
-
-    is_triggered_only = yes
-    fire_only_once = yes
-
-    trigger = {
-        is_religion_enabled = protestant
-    }
-
-    immediate = {
-        while = {
-            limit = {
-                NOT = {
-                    num_of_religion = {
-                        religion = protestant 
-                        value = 0.2
-                    }
-                }
-            }
-            random_owned_province = {
-                change_religion = protestant
-            }
-        }
-    }
-
-    option = {
-        name = flavor_nor.3.a
-        change_religion = protestant
-        add_church_power = 10
-        ROOT = {
-            capital_scope = {
-                change_religion = protestant
-                add_reform_center = protestant
-            }
-        }
-    }
-
-    option = {
-        name = flavor_nor.3.b
-        add_papal_influence = 50
-    }
-}
-
 # Event for discovering airships and starting research
 country_event = { #still needs localisation
     id = mission_nor.3

@@ -532,4 +532,7 @@
  ###### Omani Mission Fixes #########################
  lot_OMA_hormuz_title:0 "Secure the Pirate Coast"
  lot_OMA_hormuz_desc:0 "The people of the Pirate Coast have been raiding ships in the Persian Gulf and the Straight of Hormuz. If we are to secure our future as the trading hub of Arabia then we must subdue our unruly neighbours."
- 
+ ###### Norwegian Protestant Reformation ############
+ norwegian_reformation_begins.t:0 "The Protestant Reformation"
+ norwegian_reformation_begins.d:0 "Thoughts of disapporival against the Roman Catholic Church are spreading across Europe as a result of the increasing corruption of monks and clerics. Voices are raised questioning the current principles and greed of the Church. Particularly astute have been the criticisms leveled at the Church by the clergymen of the Nidaros rite in Scandinavia. One monk in particular, Morten Løðarson of $CAPITAL$, has expressed deep concerns and is now openly declaring his discontent with the Church, paving the way for a reformation of the faith."
+ norwegian_reformation_begins.a:0 "Only time will tell what this may bring"
