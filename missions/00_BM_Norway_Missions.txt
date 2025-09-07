@@ -204,7 +204,7 @@ Norway_missions_s1 = {
     The_base_mission = { 
         icon = spa_dominate_sevilla
         required_missions = { project_selvvind_mission }
-        position = 22
+        position = 21
         OR = {
                 area = eastern_norway
                 area = western_norway
@@ -957,11 +957,35 @@ Norway_missions_s2 = {
             }
         }
     }
+	
+	The_skys_the_limit_mission = { 
+        icon = mal_trade_with_europeans
+        required_missions = { Luft_leidang_mission Royal_norwegian_skyfleet_mission }
+        position = 19
+
+        trigger = {
+            has_estate_privilege = estate_burghers_land_rights
+            has_estate_privilege = estate_burghers_land_trade_rights
+            estate_loyalty = {
+                estate = estate_burghers
+                loyalty = 70
+            }
+            estate_influence = {
+                estate = estate_burghers
+                influence = 80
+            }
+        }
+
+        effect = {
+            set_global_flag = nor_industrialists_adctivated
+            add_government_reform = BM_steam_barons_ascendant
+        }
+    }
 
     project_selvvind_mission = { 
         icon = mission_rb_central_belt_coal_mining
-        required_missions = { The_royal_althing_mission }
-        position = 21
+        required_missions = { The_royal_althing_mission The_skys_the_limit_mission }
+        position = 20
 
         trigger = {
             innovativeness = 90
@@ -982,7 +1006,7 @@ Norway_missions_s2 = {
     Project_tidtaker_mission = { 
         icon = mission_corsairs_of_the_north_sea
         required_missions = { The_base_mission The_peak_mission}
-        position = 23
+        position = 22
 
         trigger = {
             NOT = {
@@ -1840,68 +1864,10 @@ Norway_missions_s3 = {
         }
     }
 
-    The_skys_the_limit_mission = { 
-        icon = mal_trade_with_europeans
-        required_missions = { Luft_leidang_mission Royal_norwegian_skyfleet_mission }
-        position = 19
-
-        trigger = {
-            has_estate_privilege = estate_burghers_land_rights
-            has_estate_privilege = estate_burghers_land_trade_rights
-            estate_loyalty = {
-                estate = estate_burghers
-                loyalty = 70
-            }
-            estate_influence = {
-                estate = estate_burghers
-                influence = 80
-            }
-        }
-
-        effect = {
-            set_global_flag = nor_industrialists_adctivated
-            add_government_reform = BM_steam_barons_ascendant
-        }
-    }
-
-    The_royal_althing_mission = { 
-        icon = mission_establish_the_prikazy
-        required_missions = { The_skys_the_limit_mission }
-        position = 20
-
-        trigger = {
-            legitimacy = 100
-            stability = 3
-            estate_loyalty = {
-                estate = estate_nobility
-                loyalty = 40
-            }
-            NOT = {
-                estate_influence = {
-                    estate = estate_nobility
-                    influence = 11
-                }
-            }
-            has_estate_privilege = estate_church_institutionalized_clergy
-        }
-
-        effect = {
-            change_estate_land_share = {
-				estate = estate_nobles
-				share = -10
-			}
-            change_estate_land_share = {
-				estate = estate_church
-				share = 10
-			}
-            add_government_reform = BM_norwegian_balance_of_power
-        }
-    }
-
     The_peak_mission = { 
         icon = imperial_capitals
         required_missions = { Following_the_winds_mission project_selvvind_mission }
-        position = 22
+        position = 21
 
         trigger = {
             22 = {
@@ -1934,7 +1900,7 @@ Norway_missions_s3 = {
     Project_mekanisk_tenker_mission = { 
         icon = mission_rule_of_the_sun
         required_missions = { Project_tidtaker_mission The_eureaka_plan_mission}
-        position = 24
+        position = 23
 
         trigger = {
             innovativeness = 100
@@ -3060,11 +3026,46 @@ Norway_missions_s4 = {
             }
         }
     }
+	
+	The_royal_althing_mission = { 
+        icon = mission_establish_the_prikazy
+        required_missions = {  }
+        position = 19
+
+        trigger = {
+            mission_completed = Chamber_of_churches_mission
+			legitimacy = 100
+            stability = 3
+            estate_loyalty = {
+                estate = estate_nobility
+                loyalty = 40
+            }
+            NOT = {
+                estate_influence = {
+                    estate = estate_nobility
+                    influence = 11
+                }
+            }
+            has_estate_privilege = estate_church_institutionalized_clergy
+        }
+
+        effect = {
+            change_estate_land_share = {
+				estate = estate_nobles
+				share = -10
+			}
+            change_estate_land_share = {
+				estate = estate_church
+				share = 10
+			}
+            add_government_reform = BM_norwegian_balance_of_power
+        }
+    }
 
     Following_the_winds_mission = { 
         icon = mission_high_income
-        required_missions = { The_royal_althing_mission }
-        position = 21
+        required_missions = { The_royal_althing_mission The_skys_the_limit_mission }
+        position = 20
 
         trigger = {
             num_of_trading_bonuses = 10
@@ -3083,7 +3084,7 @@ Norway_missions_s4 = {
     The_eureaka_plan_mission = { #, is about getting everyone educated by the church
         icon = spa_infantes_aragon
         required_missions = { The_peak_mission The_slope_mission }
-        position = 23
+        position = 22
 
         trigger = {
             estate_loyalty = {
@@ -3146,7 +3147,7 @@ Norway_missions_s5 = {
 
     Conquest_2_mission = { 
         icon = mission_conquer_sweden
-        required_missions = { conquest_1_mission }
+        required_missions = { Conquest_1_mission }
         position = 3
 
         trigger = {
@@ -3339,7 +3340,7 @@ Norway_missions_s5 = {
     The_slope_mission = {
         icon = Compulsory_Education
         required_missions = { Following_the_winds_mission }
-        position = 22
+        position = 21
         provinces_to_highlight = {
             OR = {
                 area = eastern_norway
