@@ -1302,7 +1302,7 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 			}
 		}
 		hidden_effect = {
-			HOl = {
+			HOL = {
 				change_variable = {
 					which = voted_brabant_lord
 					value = 1
