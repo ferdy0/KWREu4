@@ -680,8 +680,8 @@ country_event = {
                     which = nor_expidition_total_light_ships
                     value = 45
                 }
-                add_prestige = 90
             }
+            add_prestige = 90
         }
         else_if = {
             limit = {
@@ -689,8 +689,8 @@ country_event = {
                     which = nor_expidition_total_light_ships
                     value = 40
                 }
-                add_prestige = 80
             }
+            add_prestige = 80
         }
         else_if = {
             limit = {
@@ -698,8 +698,8 @@ country_event = {
                     which = nor_expidition_total_light_ships
                     value = 35
                 }
-                add_prestige = 70
             }
+                add_prestige = 70
         }
         else_if = {
             limit = {
@@ -707,8 +707,8 @@ country_event = {
                     which = nor_expidition_total_light_ships
                     value = 30
                 }
-                add_prestige = 60
             }
+                add_prestige = 60
         }
         else_if = {
             limit = {
@@ -716,8 +716,8 @@ country_event = {
                     which = nor_expidition_total_light_ships
                     value = 25
                 }
-                add_prestige = 50
             }
+                add_prestige = 50
         }
         else_if = {
             limit = {
@@ -725,8 +725,8 @@ country_event = {
                     which = nor_expidition_total_light_ships
                     value = 20
                 }
-                add_prestige = 40
             }
+                add_prestige = 40
         }
         else_if = {
             limit = {
@@ -734,8 +734,8 @@ country_event = {
                     which = nor_expidition_total_light_ships
                     value = 15
                 }
-                add_prestige = 30
             }
+                add_prestige = 30
         }
         else_if = {
             limit = {
@@ -743,8 +743,8 @@ country_event = {
                     which = nor_expidition_total_light_ships
                     value = 10
                 }
-                add_prestige = 20
             }
+                add_prestige = 20
         }
         else_if = {
             limit = {
@@ -752,8 +752,8 @@ country_event = {
                     which = nor_expidition_total_light_ships
                     value = 5
                 }
-                add_prestige = 10
             }
+                add_prestige = 10
         }
     }
 }
