@@ -99,3 +99,14 @@ vaults_of_eger_stjoachim = {
 baldurs_gate = {
 	tax_income = 12
 }
+tirol_imperial_mint = {
+	local_gold_depletion_chance_modifier = -0.1
+	tax_income = 12
+}
+bribed_to_reform = {  }
+convinced_to_reform = {
+	imperial_reform_catholic_approval = 100
+}
+convinced_to_not_reform = {
+	imperial_reform_catholic_approval = -100
+}

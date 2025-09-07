@@ -536,3 +536,17 @@
  norwegian_reformation_begins.t:0 "The Protestant Reformation"
  norwegian_reformation_begins.d:0 "Thoughts of disapporival against the Roman Catholic Church are spreading across Europe as a result of the increasing corruption of monks and clerics. Voices are raised questioning the current principles and greed of the Church. Particularly astute have been the criticisms leveled at the Church by the clergymen of the Nidaros rite in Scandinavia. One monk in particular, Morten Løðarson of $CAPITAL$, has expressed deep concerns and is now openly declaring his discontent with the Church, paving the way for a reformation of the faith."
  norwegian_reformation_begins.a:0 "Only time will tell what this may bring"
+ ###### Tyrolean (Breath) Mints #####################
+ tirol_imperial_mint:0 "Imperial Mint of Schwaz"
+ convinced_to_reform:0 "(Bribed to) Support the Imperial Reform"
+ convinced_to_not_reform:0 "(Bribed to) Oppose the Imperial Reform"
+ bribe_to_reform:0 "Bribe Support for Imperial Reforms"
+ bribe_to_reform_title:0 "Bribe Support for Imperial Reforms"
+ bribe_to_reform_desc:0 "Bribe the [From.GovernmentName] of [From.GetName] for their support on the proposed imperial reforms."
+ bribe_to_reform_tooltip:0 "Bribe the [From.GovernmentName] of [From.GetName] for their support on the proposed imperial reforms."
+ bribed_to_reform:0 "Recently Bribed Someone"
+ bribe_to_not_reform:0 "Bribe Opposition against Imperial Reforms"
+ bribe_to_not_reform_title:0 "Bribe Opposition against Imperial Reforms"
+ bribe_to_not_reform_desc:0 "Bribe the [From.GovernmentName] of [From.GetName] for their opposition against the proposed imperial reforms."
+ bribe_to_not_reform_tooltip:0 "Bribe the [From.GovernmentName] of [From.GetName] for their opposition against the proposed imperial reforms."
+ 

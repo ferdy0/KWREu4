@@ -6667,3 +6667,88 @@ advisory_merchants = {
             }
         }
     }
+	
+	bribe_to_reform = {
+        category = emperor
+        require_acceptance = no
+
+        is_visible = {
+            any_owned_province = {
+				has_province_modifier = tirol_imperial_mint
+			}
+			FROM = {
+				is_part_of_hre = yes
+			}
+        }
+
+        is_allowed = {
+			NOT = {
+			    has_country_modifier = bribed_to_reform
+			}
+            treasury = 100
+        }
+
+        on_accept = {
+            add_country_modifier = {
+                name = bribed_to_reform
+                duration = 1825
+            }
+            FROM = { #target
+                add_country_modifier = {
+                    name = convinced_to_reform
+                    duration = 18250
+                }
+				if = {
+					limit = {
+						government = theocracy
+						relation = catholic
+					}
+					add_reform_desire = 0.2
+				}
+				else = {
+					add_corruption = 1
+				}
+            }
+        }
+    }
+	
+	bribe_to_not_reform = {
+        category = emperor
+        require_acceptance = no
+
+        is_visible = {
+            any_owned_province = {
+				has_province_modifier = tirol_imperial_mint
+			}
+        }
+
+        is_allowed = {
+			NOT = {
+			    has_country_modifier = bribed_to_reform
+			}
+            treasury = 100
+        }
+
+        on_accept = {
+            add_country_modifier = {
+                name = bribed_to_reform
+                duration = 1825
+            }
+            FROM = { #target
+                add_country_modifier = {
+                    name = convinced_to_not_reform
+                    duration = 18250
+                }
+				if = {
+					limit = {
+						government = theocracy
+						relation = catholic
+					}
+					add_reform_desire = 0.2
+				}
+				else = {
+					add_corruption = 1
+				}
+            }
+        }
+    }
