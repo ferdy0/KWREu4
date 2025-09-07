@@ -655,10 +655,10 @@ country_event = {
 
     option = {
         name = nor_great_expidition.1.a
-        country_event = {
-                id = nor_great_expidition.2
-                days = 30
-            }
+        #country_event = {
+        #        id = nor_great_expidition.2
+        #        days = 30
+        #    }
         NWC = {
             country_event = {
                 id = nor_great_expidition.2
