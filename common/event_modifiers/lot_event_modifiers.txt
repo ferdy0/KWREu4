@@ -110,3 +110,4 @@ convinced_to_reform = {
 convinced_to_not_reform = {
 	imperial_reform_catholic_approval = -100
 }
+ready_to_secede_from_this_byz = {  }

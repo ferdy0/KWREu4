@@ -105,7 +105,8 @@ byzantine_collapsings = {
 	modifier = {
 		global_unrest = 5
 		all_power_cost = 0.10
-		yearly_corruption = 0.05
+		yearly_corruption = 0.1
+		can_not_declare_war = yes
 	}	
 	
 	
@@ -115,7 +116,7 @@ byzantine_collapsings = {
 	
 	on_monthly = {
 		random_events = {
-			40 = 0
+			60 = 0
 			10 = byzantine_collapsings.11 #Lose Morale in Armies for a Year
 			8 = purple_phoenix.12 #Lose 25 MIL power
 			6 = byzantine_collapsings.5 #Unrest in Eretna
@@ -129,6 +130,16 @@ byzantine_collapsings = {
 			2 = purple_phoenix.11 #Gain 50 MIL power
 			2 = purple_phoenix.14 #Lose 25 DIP power
 			2 = purple_phoenix.16 #Lose 25 ADM power
+		}
+		random_owned_province = {
+			limit = {
+				NOT = {
+					has_province_modifier = ready_to_secede_from_this_byz
+				}
+			}
+			province_event = {
+				id = byzantine_collapsings.53
+			}
 		}
 	}
 }
