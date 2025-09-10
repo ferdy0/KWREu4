@@ -550,25 +550,25 @@ chola_missions_4 = {
             617 = {
                 area_for_scope_province = {
                     type = all
-                    owns = MAD
+                    owner = { tag = MAD }
                 }
             }
             4811 = {
                 area_for_scope_province = {
                     type = all
-                    owns = MAD
+                    owner = { tag = MAD }
                 }
             }
             4810 = {
                 area_for_scope_province = {
                     type = all
-                    owns = MAD
+                    owner = { tag = MAD }
                 }
             }
             4815 = {
                 area_for_scope_province = {
                     type = all
-                    owns = MAD
+                    owner = { tag = MAD }
                 }
             }
         }
@@ -687,31 +687,133 @@ chola_missions_4 = {
         provinces_to_highlight = {
         }
         trigger = {
-         	all_owned_province = {
-                AND = {
-                    OR = {
-                        region = moluccas_region
-                        region = indonesia_region
+            calc_true_if = {
+                all_owned_province = {
+                    AND = {
+                        OR = {
+                            region = malaya_region
+                            region = moluccas_region
+                            region = indonesia_region
+                        }
+                        owner = { tag = MAD }
+                        development = 25
+                        is_prosperous = yes
+                        has_building = workshop
+                        has_building = marketplace
                     }
-                    is_prosperous = yes
-                    development = 25
-                    has_building = marketplace
-                    has_building = workshop
                 }
+                amount = 20
             }
         }
         effect = {
-         	every_owned_province = {
-                limit = {
-                    province_has_center_of_trade_of_level = 1
-                    OR = {
-                        region = moluccas_region
-                        region = indonesia_region
+            617 = {
+                if = {
+                    limit = {
+                        owner = { tag = MAD }
+                    }
+                    add_province_modifier = {
+                        name = cholan_ports
+                        duration = -1
                     }
                 }
-                add_province_modifier = {
-                    name = cholan_ports
-                    duration = -1
+            }
+            2673 = {
+                if = {
+                    limit = {
+                        owner = { tag = MAD }
+                    }
+                    add_province_modifier = {
+                        name = cholan_ports
+                        duration = -1
+                    }
+                }
+            }
+            620 = {
+                if = {
+                    limit = {
+                        owner = { tag = MAD }
+                    }
+                    add_province_modifier = {
+                        name = cholan_ports
+                        duration = -1
+                    }
+                }
+            }
+            622 = {
+                if = {
+                    limit = {
+                        owner = { tag = MAD }
+                    }
+                    add_province_modifier = {
+                        name = cholan_ports
+                        duration = -1
+                    }
+                }
+            }
+            624 = {
+                if = {
+                    limit = {
+                        owner = { tag = MAD }
+                    }
+                    add_province_modifier = {
+                        name = cholan_ports
+                        duration = -1
+                    }
+                }
+            }
+            630 = {
+                if = {
+                    limit = {
+                        owner = { tag = MAD }
+                    }
+                    add_province_modifier = {
+                        name = cholan_ports
+                        duration = -1
+                    }
+                }
+            }
+            629 = {
+                if = {
+                    limit = {
+                        owner = { tag = MAD }
+                    }
+                    add_province_modifier = {
+                        name = cholan_ports
+                        duration = -1
+                    }
+                }
+            }
+            641 = {
+                if = {
+                    limit = {
+                        owner = { tag = MAD }
+                    }
+                    add_province_modifier = {
+                        name = cholan_ports
+                        duration = -1
+                    }
+                }
+            }
+            2714 = {
+                if = {
+                    limit = {
+                        owner = { tag = MAD }
+                    }
+                    add_province_modifier = {
+                        name = cholan_ports
+                        duration = -1
+                    }
+                }
+            }
+            636 = {
+                if = {
+                    limit = {
+                        owner = { tag = MAD }
+                    }
+                    add_province_modifier = {
+                        name = cholan_ports
+                        duration = -1
+                    }
                 }
             }
         }

@@ -117,7 +117,7 @@ canaania_ideas = {
 	}
 	canaania_6 = {
 		leader_land_manuever = 2
-		leader_naval_manuever = 2
+		leader_naval_manuever = 1
 	}
 	canaania_7 = {
 		allowed_marine_fraction = 0.25
