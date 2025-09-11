@@ -33,9 +33,7 @@ christian = {
 				trigger = {
 					NOT = { has_global_flag = guru_event_happening }
 				}
-				chance = {
-					factor = 1000
-				}
+				chance = { factor = 1000 }
 				modifier = {
 					country_admin_power = 1
 				}
@@ -67,29 +65,7 @@ christian = {
 					is_month = 6
 					NOT = { has_global_flag = guru_event_happening }
 				}
-				chance = {
-					factor = 5
-					modifier = {
-						factor = 1.5
-						is_year = 1476
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1477
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1478
-					}
-					modifier = {
-						factor = 2
-						is_year = 1479
-					}
-					modifier = {
-						factor = 2
-						is_year = 1480
-					}
-				}
+				chance = { factor = 1000 }
 				modifier = {
 					country_military_power = 1
 				}
@@ -120,29 +96,7 @@ christian = {
 					is_month = 3
 					NOT = { has_global_flag = guru_event_happening }
 				}
-				chance = {
-					factor = 5
-					modifier = {
-						factor = 1.5
-						is_year = 1511
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1512
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1513
-					}
-					modifier = {
-						factor = 2
-						is_year = 1514
-					}
-					modifier = {
-						factor = 2
-						is_year = 1515
-					}
-				}
+				chance = { factor = 1000 }
 				modifier = {
 					country_diplomatic_power = 1
 				}
@@ -175,29 +129,7 @@ christian = {
 					is_month = 9
 					NOT = { has_global_flag = guru_event_happening }
 				}
-				chance = {
-					factor = 5
-					modifier = {
-						factor = 1.5
-						is_year = 1533
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1534
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1535
-					}
-					modifier = {
-						factor = 2
-						is_year = 1536
-					}
-					modifier = {
-						factor = 2
-						is_year = 1537
-					}
-				}
+				chance = { factor = 1000 }
 				modifier = {
 					country_admin_power = 1
 				}
@@ -229,29 +161,7 @@ christian = {
 					is_month = 9
 					NOT = { has_global_flag = guru_event_happening }
 				}
-				chance = {
-					factor = 5
-					modifier = {
-						factor = 1.5
-						is_year = 1560
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1561
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1562
-					}
-					modifier = {
-						factor = 2
-						is_year = 1563
-					}
-					modifier = {
-						factor = 2
-						is_year = 1564
-					}
-				}
+				chance = { factor = 1000 }
 				modifier = {
 					country_diplomatic_power = 1
 				}
@@ -284,29 +194,7 @@ christian = {
 					is_month = 6
 					NOT = { has_global_flag = guru_event_happening }
 				}
-				chance = {
-					factor = 5
-					modifier = {
-						factor = 1.5
-						is_year = 1579
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1580
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1581
-					}
-					modifier = {
-						factor = 2
-						is_year = 1582
-					}
-					modifier = {
-						factor = 2
-						is_year = 1583
-					}
-				}
+				chance = { factor = 1000 }
 				modifier = {
 					country_military_power = 1
 				}
@@ -337,29 +225,7 @@ christian = {
 					is_month = 3
 					NOT = { has_global_flag = guru_event_happening }
 				}
-				chance = {
-					factor = 5
-					modifier = {
-						factor = 1.5
-						is_year = 1613
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1614
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1615
-					}
-					modifier = {
-						factor = 2
-						is_year = 1616
-					}
-					modifier = {
-						factor = 2
-						is_year = 1617
-					}
-				}
+				chance = { factor = 1000 }
 				modifier = {
 					country_diplomatic_power = 1
 				}
@@ -390,29 +256,7 @@ christian = {
 					is_month = 3
 					NOT = { has_global_flag = guru_event_happening }
 				}
-				chance = {
-					factor = 5
-					modifier = {
-						factor = 1.5
-						is_year = 1644
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1645
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1646
-					}
-					modifier = {
-						factor = 2
-						is_year = 1647
-					}
-					modifier = {
-						factor = 2
-						is_year = 1648
-					}
-				}
+				chance = { factor = 1000 }
 				modifier = {
 					country_diplomatic_power = 1
 				}
@@ -445,29 +289,7 @@ christian = {
 					is_month = 3
 					NOT = { has_global_flag = guru_event_happening }
 				}
-				chance = {
-					factor = 5
-					modifier = {
-						factor = 1.5
-						is_year = 1673
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1674
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1675
-					}
-					modifier = {
-						factor = 2
-						is_year = 1676
-					}
-					modifier = {
-						factor = 2
-						is_year = 1677
-					}
-				}
+				chance = { factor = 1000 }
 				modifier = {
 					country_admin_power = 1
 				}
@@ -498,29 +320,7 @@ christian = {
 					is_month = 3
 					NOT = { has_global_flag = guru_event_happening }
 				}
-				chance = {
-					factor = 5
-					modifier = {
-						factor = 1.5
-						is_year = 1676
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1677
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1678
-					}
-					modifier = {
-						factor = 2
-						is_year = 1679
-					}
-					modifier = {
-						factor = 2
-						is_year = 1680
-					}
-				}
+				chance = { factor = 1000 }
 				modifier = {
 					country_admin_power = 1
 				}
@@ -546,7 +346,7 @@ christian = {
 						cost = 50
 
 						prestige = 1
-						country_event = { id = levantine_events.12 }
+						country_event = { id = levantine_events.1 }
 					}
 				}
 			}
@@ -556,29 +356,7 @@ christian = {
 					is_month = 3
 					NOT = { has_global_flag = guru_event_happening }
 				}
-				chance = {
-					factor = 5
-					modifier = {
-						factor = 1.5
-						is_year = 1728
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1729
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1730
-					}
-					modifier = {
-						factor = 2
-						is_year = 1731
-					}
-					modifier = {
-						factor = 2
-						is_year = 1732
-					}
-				}
+				chance = { factor = 1000 }
 				modifier = {
 					state_maintenance_modifier = -0.5
 					drill_decay_modifier = -0.25
