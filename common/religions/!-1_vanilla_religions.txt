@@ -1644,11 +1644,11 @@ dharmic = {
 		province = {
 			local_missionary_strength = -0.01
 		}
-		
+
 		on_convert = {
 			change_religion = sikhism
 			add_prestige = -100
-			
+
 			add_country_modifier = {
 				name = "conversion_zeal"
 				duration = 3650

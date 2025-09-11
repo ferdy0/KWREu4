@@ -29,7 +29,7 @@ christian = {
 		}
 
 		gurus = {
-			guru_1 = {
+			primacy_jerusalem = {
 				trigger = {
 					NOT = { has_global_flag = guru_event_happening }
 				}
@@ -40,247 +40,30 @@ christian = {
 					country_admin_power = 1
 				}
 				teachings = {
-					share_and_consume = {
+					jerusalem_boss = {
 						type = ADM
 						cost = 50
 
-						global_unrest = -1
+						tolerance_own = 2
 					}
-					work_honestly = {
+					triarchy_gud = {
 						type = DIP
 						cost = 50
 
-						production_efficiency = 0.05
+						church_loyalty_modifier = 0.1
 					}
-					recite_his_name = {
+					local_synods = {
 						type = MIL
 						cost = 50
 
-						global_regiment_cost = -0.025
+						development_cost_modifier = -0.05
+						global_autonomy = 0.05
 					}
 				}
 			}
-			guru_2 = {
+			wealth_merchants = {
 				trigger = {
-					is_year = 1539
-					is_month = 9
-					NOT = { has_global_flag = guru_event_happening }
-				}
-				chance = {
-					factor = 5
-					modifier = {
-						factor = 1.5
-						is_year = 1540
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1541
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1542
-					}
-					modifier = {
-						factor = 2
-						is_year = 1543
-					}
-					modifier = {
-						factor = 2
-						is_year = 1544
-					}
-				}
-				modifier = {
-					country_military_power = 1
-				}
-				teachings = {
-					gurmukhi_script_teaching = {
-						type = ADM
-						cost = 50
-
-						technology_cost = -0.025
-					}
-					temple_langar = {
-						type = DIP
-						cost = 50
-
-						church_loyalty_modifier = 0.05
-					}
-					wrestling_akhara = {
-						type = MIL
-						cost = 50
-
-						yearly_army_professionalism = 0.005
-					}
-				}
-			}
-			guru_3 = {
-				trigger = {
-					is_year = 1552
-					is_month = 3
-					NOT = { has_global_flag = guru_event_happening }
-				}
-				chance = {
-					factor = 5
-					modifier = {
-						factor = 1.5
-						is_year = 1553
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1554
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1555
-					}
-					modifier = {
-						factor = 2
-						is_year = 1556
-					}
-					modifier = {
-						factor = 2
-						is_year = 1557
-					}
-				}
-				modifier = {
-					country_diplomatic_power = 1
-				}
-				teachings = {
-					dasvandh_collection = {
-						type = ADM
-						cost = 50
-
-						global_tax_modifier = 0.05
-					}
-					anand_karaj = {
-						type = DIP
-						cost = 50
-
-						diplomatic_reputation = 1
-					}
-					sanghat_equality = {
-						type = MIL
-						cost = 50
-
-						nobles_loyalty_modifier = 0.05
-						rajput_exclusive_loyalty_modifier = 0.05
-						maratha_exclusive_loyalty_modifier = 0.05
-					}
-				}
-			}
-			guru_4 = {
-				trigger = {
-					is_year = 1574
-					is_month = 9
-					NOT = { has_global_flag = guru_event_happening }
-				}
-				chance = {
-					factor = 5
-					modifier = {
-						factor = 1.5
-						is_year = 1575
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1576
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1577
-					}
-					modifier = {
-						factor = 2
-						is_year = 1578
-					}
-					modifier = {
-						factor = 2
-						is_year = 1579
-					}
-				}
-				modifier = {
-					country_admin_power = 1
-				}
-				teachings = {
-					legitimize_inheritance = {
-						type = ADM
-						cost = 50
-
-						legitimacy = 0.25
-						republican_tradition = 0.1
-						devotion = 0.25
-						horde_unity = 0.25
-						meritocracy = 0.1
-					}
-					scripture_hymns = {
-						type = DIP
-						cost = 50
-
-						prestige = 0.5
-					}
-					masand_system = {
-						type = MIL
-						cost = 50
-
-						global_manpower_modifier = 0.1
-					}
-				}
-			}
-			guru_5 = {
-				trigger = {
-					is_year = 1581
-					is_month = 9
-					NOT = { has_global_flag = guru_event_happening }
-				}
-				chance = {
-					factor = 5
-					modifier = {
-						factor = 1.5
-						is_year = 1582
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1583
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1584
-					}
-					modifier = {
-						factor = 2
-						is_year = 1585
-					}
-					modifier = {
-						factor = 2
-						is_year = 1586
-					}
-				}
-				modifier = {
-					country_diplomatic_power = 1
-				}
-				teachings = {
-					adi_granth = {
-						type = ADM
-						cost = 50
-
-						global_institution_spread = 0.1
-					}
-					the_abode_of_god = {
-						type = DIP
-						cost = 50
-
-						religious_unity = 0.1
-					}
-					martyrdom = {
-						type = MIL
-						cost = 50
-
-						land_morale = 0.05
-					}
-				}
-			}
-			guru_6 = {
-				trigger = {
-					is_year = 1606
+					is_year = 1475
 					is_month = 6
 					NOT = { has_global_flag = guru_event_happening }
 				}
@@ -288,61 +71,331 @@ christian = {
 					factor = 5
 					modifier = {
 						factor = 1.5
-						is_year = 1607
+						is_year = 1476
 					}
 					modifier = {
 						factor = 1.5
-						is_year = 1608
+						is_year = 1477
 					}
 					modifier = {
 						factor = 1.5
-						is_year = 1609
+						is_year = 1478
 					}
 					modifier = {
 						factor = 2
-						is_year = 1610
+						is_year = 1479
 					}
 					modifier = {
 						factor = 2
-						is_year = 1611
+						is_year = 1480
 					}
 				}
 				modifier = {
 					country_military_power = 1
 				}
 				teachings = {
-					throne_of_the_timeless_one = {
+					greed_sin = {
 						type = ADM
 						cost = 50
 
-						legitimacy = 0.25
-						republican_tradition = 0.1
-						devotion = 0.25
-						horde_unity = 0.25
-						meritocracy = 0.1
+						yearly_corruption = -0.5
 					}
-					protection_of_the_poor = {
+					usury_sin = {
 						type = DIP
 						cost = 50
 
-						war_exhaustion = -0.025
+						inflation_reduction = 0.1
 					}
-					miri_and_piri = {
+					charity_gud = {
 						type = MIL
 						cost = 50
 
-						discipline = 0.025
+						global_tax_modifier = 0.15
 					}
 				}
 			}
-			guru_7 = {
+			veneration_saints = {
 				trigger = {
-					is_year = 1644
+					is_year = 1510
 					is_month = 3
 					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
+					modifier = {
+						factor = 1.5
+						is_year = 1511
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1512
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1513
+					}
+					modifier = {
+						factor = 2
+						is_year = 1514
+					}
+					modifier = {
+						factor = 2
+						is_year = 1515
+					}
+				}
+				modifier = {
+					country_diplomatic_power = 1
+				}
+				teachings = {
+					veneration_idolatry = {
+						type = ADM
+						cost = 50
+
+						idea_cost = -0.075
+						relation_with_heretics = -25
+					}
+					commemorate_not_venerate = {
+						type = DIP
+						cost = 50
+
+						tolerance_own = 2
+					}
+					adoration_not_veneration = {
+						type = MIL
+						cost = 50
+
+						tolerance_own = -1
+						relation_with_heretics = 25
+					}
+				}
+			}
+			crusader_inheritance = {
+				trigger = {
+					is_year = 1532
+					is_month = 9
+					NOT = { has_global_flag = guru_event_happening }
+				}
+				chance = {
+					factor = 5
+					modifier = {
+						factor = 1.5
+						is_year = 1533
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1534
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1535
+					}
+					modifier = {
+						factor = 2
+						is_year = 1536
+					}
+					modifier = {
+						factor = 2
+						is_year = 1537
+					}
+				}
+				modifier = {
+					country_admin_power = 1
+				}
+				teachings = {
+					muslims_tolerated = {
+						type = ADM
+						cost = 50
+
+                        global_manpower_modifier = 0.1
+					}
+					preach_time = {
+						type = DIP
+						cost = 50
+
+						missionaries = 1
+						manpower_recovery_speed = 0.025
+					}
+					violence_answer = {
+						type = MIL
+						cost = 50
+
+						shock_damage = 0.05
+					}
+				}
+			}
+			on_communes = {
+				trigger = {
+					is_year = 1559
+					is_month = 9
+					NOT = { has_global_flag = guru_event_happening }
+				}
+				chance = {
+					factor = 5
+					modifier = {
+						factor = 1.5
+						is_year = 1560
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1561
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1562
+					}
+					modifier = {
+						factor = 2
+						is_year = 1563
+					}
+					modifier = {
+						factor = 2
+						is_year = 1564
+					}
+				}
+				modifier = {
+					country_diplomatic_power = 1
+				}
+				teachings = {
+					communes_protected = {
+						type = ADM
+						cost = 50
+
+						global_tax_modifier = -0.1
+						global_autonomy = 0.05
+						global_trade_goods_size_modifier = 0.05
+					}
+					communes_reformed = {
+						type = DIP
+						cost = 50
+
+						production_efficiency = 0.075
+					}
+					communes_dissovled = {
+						type = MIL
+						cost = 50
+
+						global_tax_modifier = 0.15
+					}
+				}
+			}
+			role_priest = {
+				trigger = {
+					is_year = 1578
+					is_month = 6
+					NOT = { has_global_flag = guru_event_happening }
+				}
+				chance = {
+					factor = 5
+					modifier = {
+						factor = 1.5
+						is_year = 1579
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1580
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1581
+					}
+					modifier = {
+						factor = 2
+						is_year = 1582
+					}
+					modifier = {
+						factor = 2
+						is_year = 1583
+					}
+				}
+				modifier = {
+					country_military_power = 1
+				}
+				teachings = {
+					provide_flock = {
+						type = ADM
+						cost = 50
+
+						global_institution_spread = 0.25
+					}
+					guide_flock = {
+						type = DIP
+						cost = 50
+
+						technology_cost = -0.025
+					}
+					guard_flock = {
+						type = MIL
+						cost = 50
+
+						hostile_attrition = 1
+					}
+				}
+			}
+			command_army = {
+				trigger = {
+					is_year = 1612
+					is_month = 3
+					NOT = { has_global_flag = guru_event_happening }
+				}
+				chance = {
+					factor = 5
+					modifier = {
+						factor = 1.5
+						is_year = 1613
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1614
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1615
+					}
+					modifier = {
+						factor = 2
+						is_year = 1616
+					}
+					modifier = {
+						factor = 2
+						is_year = 1617
+					}
+				}
+				modifier = {
+					country_diplomatic_power = 1
+				}
+				teachings = {
+					ruler_leads = {
+						type = ADM
+						cost = 50
+
+						discipline = 0.025
+					}
+					knights_lead = {
+						type = DIP
+						cost = 50
+
+						movement_speed = 0.10
+					}
+					bishops_lead = {
+						type = MIL
+						cost = 50
+
+						land_morale = 0.05
+					}
+				}
+			}
+			monastic_wealth = {
+				trigger = {
+					is_year = 1643
+					is_month = 3
+					NOT = { has_global_flag = guru_event_happening }
+				}
+				chance = {
+					factor = 5
+					modifier = {
+						factor = 1.5
+						is_year = 1644
+					}
 					modifier = {
 						factor = 1.5
 						is_year = 1645
@@ -352,100 +405,43 @@ christian = {
 						is_year = 1646
 					}
 					modifier = {
-						factor = 1.5
+						factor = 2
 						is_year = 1647
 					}
 					modifier = {
 						factor = 2
 						is_year = 1648
 					}
-					modifier = {
-						factor = 2
-						is_year = 1649
-					}
 				}
 				modifier = {
 					country_diplomatic_power = 1
 				}
 				teachings = {
-					impartial_manjis = {
+					trickle_down = {
 						type = ADM
 						cost = 50
 
-						yearly_corruption = -0.05
+						global_unrest = 1
+						all_estate_loyalty_equilibrium = 0.075
 					}
-					the_fragrance_of_a_flower = {
+					new_ordinances_orders = {
 						type = DIP
 						cost = 50
 
-						improve_relation_modifier = 0.1
+						improve_relation_modifier = 0.15
 					}
-					one_guru = {
+					dissolve_them = {
 						type = MIL
-						cost = 50
-
-						nobles_loyalty_modifier = 0.05
-						rajput_exclusive_loyalty_modifier = 0.05
-						maratha_exclusive_loyalty_modifier = 0.05
-					}
-				}
-			}
-			guru_8 = {
-				trigger = {
-					is_year = 1661
-					is_month = 3
-					NOT = { has_global_flag = guru_event_happening }
-				}
-				chance = {
-					factor = 5
-					modifier = {
-						factor = 1.5
-						is_year = 1662
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1663
-					}
-					modifier = {
-						factor = 1.5
-						is_year = 1664
-					}
-					modifier = {
-						factor = 2
-						is_year = 1665
-					}
-					modifier = {
-						factor = 2
-						is_year = 1666
-					}
-				}
-				modifier = {
-					country_diplomatic_power = 1
-				}
-				teachings = {
-					treat_the_sick = {
-						type = ADM
 						cost = 50
 
 						monarch_admin_power = 1
-					}
-					illiterate_recites_saloks = {
-						type = DIP
-						cost = 50
-
-						monarch_diplomatic_power = 1
-					}
-					young_humility = {
-						type = MIL
-						cost = 50
-
-						monarch_military_power = 1
+						tolerance_own = -1
 					}
 				}
 			}
-			guru_9 = {
+			nationalism_imperialism = {
 				trigger = {
-					is_year = 1665
+					is_year = 1672
 					is_month = 3
 					NOT = { has_global_flag = guru_event_happening }
 				}
@@ -453,52 +449,52 @@ christian = {
 					factor = 5
 					modifier = {
 						factor = 1.5
-						is_year = 1666
+						is_year = 1673
 					}
 					modifier = {
 						factor = 1.5
-						is_year = 1667
+						is_year = 1674
 					}
 					modifier = {
 						factor = 1.5
-						is_year = 1668
+						is_year = 1675
 					}
 					modifier = {
 						factor = 2
-						is_year = 1669
+						is_year = 1676
 					}
 					modifier = {
 						factor = 2
-						is_year = 1670
+						is_year = 1677
 					}
 				}
 				modifier = {
 					country_admin_power = 1
 				}
 				teachings = {
-					the_word_of_sikh = {
+					church_all_friends = {
 						type = ADM
 						cost = 50
 
-						missionaries = 1
+						religious_unity = 0.25
 					}
-					all_kings_must_pass = {
+					church_dont_care = {
 						type = DIP
 						cost = 50
 
-						tolerance_heretic = 2
+						global_unrest = -2
 					}
-					resist_persecution = {
+					church_evil = {
 						type = MIL
 						cost = 50
 
-						hostile_attrition = 1
+						manpower_in_culture_group_provinces = 0.1
 					}
 				}
 			}
-			guru_10 = {
+			rights_of_boi = {
 				trigger = {
-					is_year = 1675
+					is_year = 1700
 					is_month = 3
 					NOT = { has_global_flag = guru_event_happening }
 				}
@@ -529,29 +525,34 @@ christian = {
 					country_admin_power = 1
 				}
 				teachings = {
-					pluralism = {
+					man_in_place = {
 						type = ADM
 						cost = 50
 
-						advisor_cost = -0.1
+						global_regiment_cost = -0.10
 					}
-					dharam_yudh = {
+					men_religion_equal = {
 						type = DIP
 						cost = 50
 
-						war_taxes_cost_modifier = -0.5
+						legitimacy = 0.5
+                        republican_tradition = 0.2
+                        devotion = 0.5
+                        horde_unity = 0.5
+                        meritocracy = 0.2
 					}
-					the_khalsa_sikh = {
+					men_equal_period = {
 						type = MIL
 						cost = 50
 
-						yearly_army_professionalism = 0.005
+						prestige = 1
+						country_event = { id = levantine_events.12 }
 					}
 				}
 			}
-			guru_11 = {
+			what_about_science = {
 				trigger = {
-					is_year = 1708
+					is_year = 1727
 					is_month = 3
 					NOT = { has_global_flag = guru_event_happening }
 				}
@@ -559,23 +560,23 @@ christian = {
 					factor = 5
 					modifier = {
 						factor = 1.5
-						is_year = 1709
+						is_year = 1728
 					}
 					modifier = {
 						factor = 1.5
-						is_year = 1710
+						is_year = 1729
 					}
 					modifier = {
 						factor = 1.5
-						is_year = 1711
+						is_year = 1730
 					}
 					modifier = {
 						factor = 2
-						is_year = 1712
+						is_year = 1731
 					}
 					modifier = {
 						factor = 2
-						is_year = 1713
+						is_year = 1732
 					}
 				}
 				modifier = {
@@ -583,30 +584,30 @@ christian = {
 					drill_decay_modifier = -0.25
 				}
 				teachings = {
-					eternally_living_guru = {
+					faith_and_science = {
 						type = ADM
 						cost = 50
 
-						development_cost = -0.1
+						development_cost_modifier = -0.05
 					}
-					divine_justice = {
+					science_is_woke = {
 						type = DIP
 						cost = 50
 
-						trade_efficiency = 0.1
+						technology_cost = 0.025
+						monarch_diplomatic_power = 1
 					}
-					the_unchanging_writing = {
+					science_not_problem = {
 						type = MIL
 						cost = 50
 
-						drill_gain_modifier = 0.5
+						technology_cost = -0.05
 					}
 				}
 			}
 		}
 	}
 		
-		heretic = { BOGOMILIST WALDENSIAN FRATICELLI LOLLARD SOCINIAN }
-	}
+	heretic = { BOGOMILIST WALDENSIAN FRATICELLI LOLLARD SOCINIAN }
 }
 

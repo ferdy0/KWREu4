@@ -1,7 +1,5 @@
 namespace = levantine_events
 
-# Set isolationism to the Levantine ones
-
 country_event = {
 	id = levantine_events.2
 	title = "levantine_events.2.t"
@@ -10,10 +8,9 @@ country_event = {
 
 	trigger = {
 		religion = levantine
-		is_year = 1539
-		is_month = 9
-		NOT = { is_year = 1552 }
-		current_guru_is = guru_1
+		is_year = 1475
+		is_month = 6
+		current_guru_is = primacy_jerusalem
 		NOT = { has_global_flag = guru_event_happening }
 	}
 
@@ -35,7 +32,6 @@ country_event = {
 	}
 }
 
-# Guru Amar Das
 country_event = {
 	id = levantine_events.3
 	title = "levantine_events.3.t"
@@ -44,10 +40,9 @@ country_event = {
 
 	trigger = {
 		religion = levantine
-		is_year = 1552
+		is_year = 1510
 		is_month = 3
-		NOT = { is_year = 1574 }
-		current_guru_is = guru_2
+		current_guru_is = wealth_merchants
 		NOT = { has_global_flag = guru_event_happening }
 	}
 
@@ -69,7 +64,6 @@ country_event = {
 	}
 }
 
-# Guru Ram Das
 country_event = {
 	id = levantine_events.4
 	title = "levantine_events.4.t"
@@ -78,10 +72,9 @@ country_event = {
 
 	trigger = {
 		religion = levantine
-		is_year = 1574
+		is_year = 1532
 		is_month = 9
-		NOT = { is_year = 1581 }
-		current_guru_is = guru_3
+		current_guru_is = veneration_saints
 		NOT = { has_global_flag = guru_event_happening }
 	}
 
@@ -103,7 +96,6 @@ country_event = {
 	}
 }
 
-# Guru Arjan
 country_event = {
 	id = levantine_events.5
 	title = "levantine_events.5.t"
@@ -112,10 +104,9 @@ country_event = {
 
 	trigger = {
 		religion = levantine
-		is_year = 1581
+		is_year = 1559
 		is_month = 9
-		NOT = { is_year = 1606 }
-		current_guru_is = guru_4
+		current_guru_is = crusader_inheritance
 		NOT = { has_global_flag = guru_event_happening }
 	}
 
@@ -137,7 +128,6 @@ country_event = {
 	}
 }
 
-# Guru Hargobind
 country_event = {
 	id = levantine_events.6
 	title = "levantine_events.6.t"
@@ -146,10 +136,9 @@ country_event = {
 
 	trigger = {
 		religion = levantine
-		is_year = 1606
-		is_month = 5
-		NOT = { is_year = 1644 }
-		current_guru_is = guru_5
+		is_year = 1578
+		is_month = 6
+		current_guru_is = on_communes
 		NOT = { has_global_flag = guru_event_happening }
 	}
 
@@ -171,7 +160,6 @@ country_event = {
 	}
 }
 
-# Guru Har Rai
 country_event = {
 	id = levantine_events.7
 	title = "levantine_events.7.t"
@@ -180,10 +168,9 @@ country_event = {
 
 	trigger = {
 		religion = levantine
-		is_year = 1644
+		is_year = 1612
 		is_month = 3
-		NOT = { is_year = 1661 }
-		current_guru_is = guru_6
+		current_guru_is = role_priest
 		NOT = { has_global_flag = guru_event_happening }
 	}
 
@@ -205,7 +192,6 @@ country_event = {
 	}
 }
 
-# Guru Har Krishan
 country_event = {
 	id = levantine_events.8
 	title = "levantine_events.8.t"
@@ -214,10 +200,9 @@ country_event = {
 
 	trigger = {
 		religion = levantine
-		is_year = 1661
-		is_month = 10
-		NOT = { is_year = 1665 }
-		current_guru_is = guru_7
+		is_year = 1643
+		is_month = 3
+		current_guru_is = command_army
 		NOT = { has_global_flag = guru_event_happening }
 	}
 
@@ -239,7 +224,6 @@ country_event = {
 	}
 }
 
-# Guru Tegh Bahadur
 country_event = {
 	id = levantine_events.9
 	title = "levantine_events.9.t"
@@ -248,10 +232,9 @@ country_event = {
 
 	trigger = {
 		religion = levantine
-		is_year = 1665
+		is_year = 1672
 		is_month = 3
-		NOT = { is_year = 1675 }
-		current_guru_is = guru_8
+		current_guru_is = monastic_wealth
 		NOT = { has_global_flag = guru_event_happening }
 	}
 
@@ -273,7 +256,6 @@ country_event = {
 	}
 }
 
-# Guru Gobind Singh
 country_event = {
 	id = levantine_events.10
 	title = "levantine_events.10.t"
@@ -282,10 +264,10 @@ country_event = {
 
 	trigger = {
 		religion = levantine
-		is_year = 1675
-		is_month = 11
+		is_year = 1700
+		is_month = 3
 		NOT = { is_year = 1708 }
-		current_guru_is = guru_9
+		current_guru_is = nationalism_imperialism
 		NOT = { has_global_flag = guru_event_happening }
 	}
 
@@ -307,7 +289,6 @@ country_event = {
 	}
 }
 
-# Guru Granth Sahib
 country_event = {
 	id = levantine_events.11
 	title = "levantine_events.11.t"
@@ -316,9 +297,9 @@ country_event = {
 
 	trigger = {
 		religion = levantine
-		is_year = 1708
-		is_month = 10
-		current_guru_is = guru_10
+		is_year = 1727
+		is_month = 3
+		current_guru_is = rights_of_boi
 		NOT = { has_global_flag = guru_event_happening }
 	}
 
@@ -337,5 +318,42 @@ country_event = {
 	option = {
 		name = "levantine_events.11.a"
 		appoint_next_guru = yes
+	}
+}
+
+# Abolish slavery
+country_event = {
+	id = levantine_events.12
+	title = "levantine_events.12.t"
+	desc = "levantine_events.12.d"
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "levantine_events.12.a"
+		add_prestige = 5
+        add_country_modifier = {
+            name = innovative_modifier
+            duration = 3650
+        }
+        add_country_modifier = {
+            name = "the_abolish_slavery_act"
+            duration = -1
+        }
+        custom_tooltip = abolished_slavery_act_tooltip
+        hidden_effect = {
+            every_owned_province = {
+        	    limit = {
+        		    trade_goods = slaves
+        		}
+        		change_trade_goods = unknown
+        		remove_building = tradecompany
+        		if = {
+        		    limit = { has_province_modifier = slave_entrepot }
+        		    remove_province_modifier = slave_entrepot
+        		}
+        	}
+        }
 	}
 }
