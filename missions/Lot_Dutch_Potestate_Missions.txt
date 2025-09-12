@@ -5049,12 +5049,23 @@ potestate_unification = {
 		} 
 
 		trigger = {  
-			mission_completed = claim_kleef_vote
-			mission_completed = claim_friesland_vote
-			mission_completed = claim_gelre_vote
-			mission_completed = claim_holland_vote
-			mission_completed = claim_gulik_vote
-			mission_completed = claim_utrecht_vote
+			OR = {
+				AND = {
+					mission_completed = claim_kleef_vote
+					mission_completed = claim_friesland_vote
+					mission_completed = claim_gelre_vote
+					mission_completed = claim_holland_vote
+					mission_completed = claim_gulik_vote
+					mission_completed = claim_utrecht_vote
+				}
+				AND = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 15
+						region = low_countries_region
+					}
+					is_year = 1650
+				}
+			}
 		} 
 
 		effect = {
