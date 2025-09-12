@@ -43,6 +43,7 @@ christian = {
 						cost = 50
 
 						tolerance_own = 2
+						cavalry_flanking = 10
 					}
 					triarchy_gud = {
 						type = DIP
@@ -75,12 +76,14 @@ christian = {
 						cost = 50
 
 						yearly_corruption = -0.5
+						reserves_organisation = 10
 					}
 					usury_sin = {
 						type = DIP
 						cost = 50
 
 						inflation_reduction = 0.1
+						cav_to_inf_ratio = 10
 					}
 					charity_gud = {
 						type = MIL
@@ -173,18 +176,21 @@ christian = {
 						global_tax_modifier = -0.1
 						global_autonomy = 0.05
 						global_trade_goods_size_modifier = 0.05
+						reserves_organisation = 10
 					}
 					communes_reformed = {
 						type = DIP
 						cost = 50
 
 						production_efficiency = 0.075
+						reserves_organisation = 10
 					}
 					communes_dissovled = {
 						type = MIL
 						cost = 50
 
 						global_tax_modifier = 0.15
+						cav_to_inf_ratio = 10
 					}
 				}
 			}
@@ -346,7 +352,7 @@ christian = {
 						cost = 50
 
 						prestige = 1
-						country_event = { id = levantine_events.1 }
+						cavalry_flanking = 10
 					}
 				}
 			}

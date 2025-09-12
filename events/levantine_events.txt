@@ -1,20 +1,274 @@
 namespace = levantine_events
 
-# Abolish slavery
 country_event = {
 	id = levantine_events.1
 	title = levantine_events.1.t
 	desc = levantine_events.1.d
-	picture = BIG_BOOK_eventPicture
+	picture = ADVISOR_eventPicture
 
-	is_triggered_only = yes
+    fire_only_once = yes
+
+	trigger = {
+		religion = levantine
+		is_year = 1445
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
 
 	option = {
 		name = levantine_events.1.a
+	}
+}
+
+country_event = {
+	id = levantine_events.2
+	title = levantine_events.2.t
+	desc = levantine_events.2.d
+	picture = ADVISOR_eventPicture
+
+    fire_only_once = yes
+
+	trigger = {
+		religion = levantine
+		is_year = 1475
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = levantine_events.2.a
+	}
+}
+
+country_event = {
+	id = levantine_events.3
+	title = levantine_events.3.t
+	desc = levantine_events.3.d
+	picture = ADVISOR_eventPicture
+
+    fire_only_once = yes
+
+	trigger = {
+		religion = levantine
+		is_year = 1510
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = levantine_events.3.a
+	}
+}
+
+country_event = {
+	id = levantine_events.4
+	title = levantine_events.4.t
+	desc = levantine_events.4.d
+	picture = ADVISOR_eventPicture
+
+    fire_only_once = yes
+
+	trigger = {
+		religion = levantine
+		is_year = 1532
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = levantine_events.4.a
+	}
+}
+
+country_event = {
+	id = levantine_events.5
+	title = levantine_events.5.t
+	desc = levantine_events.5.d
+	picture = ADVISOR_eventPicture
+
+    fire_only_once = yes
+
+	trigger = {
+		religion = levantine
+		is_year = 1559
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = levantine_events.5.a
+	}
+}
+
+country_event = {
+	id = levantine_events.6
+	title = levantine_events.6.t
+	desc = levantine_events.6.d
+	picture = ADVISOR_eventPicture
+
+    fire_only_once = yes
+
+	trigger = {
+		religion = levantine
+		is_year = 1578
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = levantine_events.6.a
+	}
+}
+
+country_event = {
+	id = levantine_events.7
+	title = levantine_events.7.t
+	desc = levantine_events.7.d
+	picture = ADVISOR_eventPicture
+
+    fire_only_once = yes
+
+	trigger = {
+		religion = levantine
+		is_year = 1612
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = levantine_events.7.a
+	}
+}
+
+country_event = {
+	id = levantine_events.8
+	title = levantine_events.8.t
+	desc = levantine_events.8.d
+	picture = ADVISOR_eventPicture
+
+    fire_only_once = yes
+
+	trigger = {
+		religion = levantine
+		is_year = 1643
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = levantine_events.8.a
+	}
+}
+
+country_event = {
+	id = levantine_events.9
+	title = levantine_events.9.t
+	desc = levantine_events.9.d
+	picture = ADVISOR_eventPicture
+
+    fire_only_once = yes
+
+	trigger = {
+		religion = levantine
+		is_year = 1672
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = levantine_events.9.a
+	}
+}
+
+country_event = {
+	id = levantine_events.10
+	title = levantine_events.10.t
+	desc = levantine_events.10.d
+	picture = ADVISOR_eventPicture
+
+    fire_only_once = yes
+
+	trigger = {
+		religion = levantine
+		is_year = 1700
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = levantine_events.10.a
+	}
+}
+
+country_event = {
+	id = levantine_events.11
+	title = levantine_events.11.t
+	desc = levantine_events.11.d
+	picture = ADVISOR_eventPicture
+
+    fire_only_once = yes
+
+	trigger = {
+		religion = levantine
+		is_year = 1727
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = levantine_events.11.a
+	}
+}
+
+# Abolish slavery
+country_event = {
+	id = levantine_events.12
+	title = levantine_events.12.t
+	desc = levantine_events.12.d
+	picture = BIG_BOOK_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		religion = levantine
+		has_global_modifier_value = {
+        	which = cavalry_flanking
+        	value = 9
+        }
+	}
+
+	option = {
+		name = levantine_events.12.a
 		add_prestige = 5
         add_country_modifier = {
             name = innovative_modifier
             duration = 3650
+        }
+        add_country_modifier = {
+            name = counter_trigger_levantine_cavflanking
+            duration = -1
         }
         add_country_modifier = {
             name = "the_abolish_slavery_act"
@@ -33,6 +287,98 @@ country_event = {
         		    remove_province_modifier = slave_entrepot
         		}
         	}
+        }
+	}
+}
+
+country_event = {
+	id = levantine_events.13
+	title = levantine_events.13.t
+	desc = levantine_events.13.d
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		religion = levantine
+		NOT = { has_country_modifier = merchants_cowed_levantine }
+		NOT = { has_country_flag = greed_is_sin }
+	}
+
+	mean_time_to_happen = {
+		months = 240
+
+		modifier = {
+            factor = 2
+            has_country_flag = usury_is_sin
+        }
+	}
+
+	option = {
+		name = levantine_events.13.a
+		random_owned_province = {
+		    add_province_modifier = {
+                name = absent_merchants_levantine
+                duration = 3650
+            }
+		}
+		add_country_modifier = {
+            name = merchants_cowed_levantine
+            duration = 3650
+        }
+	}
+}
+
+country_event = {
+	id = levantine_events.14
+	title = levantine_events.14.t
+	desc = levantine_events.14.d
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		religion = levantine
+		has_global_modifier_value = {
+        	which = reserves_organisation
+        	value = 9
+        }
+	}
+
+	mean_time_to_happen = {
+		day = 1
+	}
+
+	option = {
+		name = levantine_events.14.a
+		set_country_flag = usury_is_sin
+		add_country_modifier = {
+            name = counter_trigger_levantine_reserves
+            duration = -1
+        }
+	}
+}
+
+country_event = {
+	id = levantine_events.15
+	title = levantine_events.15.t
+	desc = levantine_events.15.d
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		religion = levantine
+		has_global_modifier_value = {
+        	which = cav_to_inf_ratio
+        	value = 9
+        }
+	}
+
+	mean_time_to_happen = {
+		day = 1
+	}
+
+	option = {
+		name = levantine_events.15.a
+		set_country_flag = greed_is_sin
+		add_country_modifier = {
+            name = counter_trigger_levantine_cavratio
+            duration = -1
         }
 	}
 }

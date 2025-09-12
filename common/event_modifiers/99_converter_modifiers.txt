@@ -558,3 +558,19 @@ golestani_hardtacks = {
 golestani_trading_company = {
     province_trade_power_value = 25
 }
+absent_merchants_levantine = {
+    province_trade_power_modifier = -0.1
+}
+merchants_cowed_levantine = {
+    global_trade_power = -0.15
+    trade_efficiency = -0.05
+}
+counter_trigger_levantine_reserves = {
+    reserves_organisation = -10
+}
+counter_trigger_levantine_cavratio = {
+    cav_to_inf_ratio = -10
+}
+counter_trigger_levantine_cavflanking = {
+    cavalry_flanking = -10
+}
