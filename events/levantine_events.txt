@@ -10,7 +10,7 @@ country_event = {
 
 	trigger = {
 		religion = levantine
-		is_year = 1445
+		is_year = 1444
 	}
 
 	mean_time_to_happen = {
