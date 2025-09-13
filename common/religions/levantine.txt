@@ -35,7 +35,7 @@ christian = {
 				}
 				chance = { factor = 1000 }
 				modifier = {
-					country_admin_power = 1
+					loyalty_change_on_revoked = 0.1
 				}
 				teachings = {
 					jerusalem_boss = {
@@ -68,7 +68,7 @@ christian = {
 				}
 				chance = { factor = 1000 }
 				modifier = {
-					country_military_power = 1
+					global_tax_modifier = 0.15
 				}
 				teachings = {
 					greed_sin = {
@@ -76,6 +76,7 @@ christian = {
 						cost = 50
 
 						yearly_corruption = -0.5
+						global_foreign_trade_power = -0.1
 						reserves_organisation = 10
 					}
 					usury_sin = {
@@ -89,7 +90,7 @@ christian = {
 						type = MIL
 						cost = 50
 
-						global_tax_modifier = 0.15
+						global_tax_modifier = 0.10
 					}
 				}
 			}
@@ -101,7 +102,7 @@ christian = {
 				}
 				chance = { factor = 1000 }
 				modifier = {
-					country_diplomatic_power = 1
+					manpower_in_true_faith_provinces= 0.10
 				}
 				teachings = {
 					veneration_idolatry = {
@@ -134,14 +135,14 @@ christian = {
 				}
 				chance = { factor = 1000 }
 				modifier = {
-					country_admin_power = 1
+					warscore_cost_vs_other_religion = -0.1
 				}
 				teachings = {
 					muslims_tolerated = {
 						type = ADM
 						cost = 50
 
-                        global_manpower_modifier = 0.1
+                        global_manpower_modifier = 0.15
 					}
 					preach_time = {
 						type = DIP
@@ -155,6 +156,7 @@ christian = {
 						cost = 50
 
 						shock_damage = 0.05
+						global_missionary_strength = 0.01
 					}
 				}
 			}
@@ -166,23 +168,23 @@ christian = {
 				}
 				chance = { factor = 1000 }
 				modifier = {
-					country_diplomatic_power = 1
+					global_unrest = -1.5
 				}
 				teachings = {
 					communes_protected = {
 						type = ADM
 						cost = 50
 
-						global_tax_modifier = -0.1
-						global_autonomy = 0.05
-						global_trade_goods_size_modifier = 0.05
+						min_autonomy = 10
+						defensiveness = 0.25
+						land_morale = 0.025
 						reserves_organisation = 10
 					}
 					communes_reformed = {
 						type = DIP
 						cost = 50
 
-						production_efficiency = 0.075
+						stability_cost_modifier = -0.1
 						reserves_organisation = 10
 					}
 					communes_dissovled = {
@@ -202,7 +204,7 @@ christian = {
 				}
 				chance = { factor = 1000 }
 				modifier = {
-					country_military_power = 1
+					same_religion_advisor_cost = -0.1
 				}
 				teachings = {
 					provide_flock = {
@@ -233,7 +235,7 @@ christian = {
 				}
 				chance = { factor = 1000 }
 				modifier = {
-					country_diplomatic_power = 1
+					leader_land_shock = 1
 				}
 				teachings = {
 					ruler_leads = {
@@ -264,14 +266,14 @@ christian = {
 				}
 				chance = { factor = 1000 }
 				modifier = {
-					country_diplomatic_power = 1
+					build_cost = -0.05
 				}
 				teachings = {
 					trickle_down = {
 						type = ADM
 						cost = 50
 
-						global_unrest = 1
+						yearly_corruption = 0.1
 						all_estate_loyalty_equilibrium = 0.075
 					}
 					new_ordinances_orders = {
@@ -297,7 +299,7 @@ christian = {
 				}
 				chance = { factor = 1000 }
 				modifier = {
-					country_admin_power = 1
+					development_cost_in_primary_culture = -0.025
 				}
 				teachings = {
 					church_all_friends = {
@@ -328,7 +330,8 @@ christian = {
 				}
 				chance = { factor = 1000 }
 				modifier = {
-					country_admin_power = 1
+					fire_damage_received = -0.05
+					female_advisor_chance = -1
 				}
 				teachings = {
 					man_in_place = {
@@ -364,8 +367,8 @@ christian = {
 				}
 				chance = { factor = 1000 }
 				modifier = {
-					state_maintenance_modifier = -0.5
-					drill_decay_modifier = -0.25
+					advisor_pool = 1
+					advisor_cost = -0.05
 				}
 				teachings = {
 					faith_and_science = {
@@ -373,19 +376,23 @@ christian = {
 						cost = 50
 
 						development_cost_modifier = -0.05
+						church_loyalty_modifier = 0.1
+						church_influence_modifier = 0.1
 					}
 					science_is_woke = {
 						type = DIP
 						cost = 50
 
-						technology_cost = 0.025
+						technology_cost = 0.25
 						monarch_diplomatic_power = 1
+						monarch_admin_power = 1
+						monarch_military_power = 1
 					}
 					science_not_problem = {
 						type = MIL
 						cost = 50
 
-						technology_cost = -0.05
+						technology_cost = -0.1
 					}
 				}
 			}
