@@ -391,9 +391,11 @@ country_event = {
 
 	trigger = {
 		religion = levantine
-		has_global_modifier_value = {
-        	which = reserves_organisation
-        	value = -9
+		NOT = {
+            has_global_modifier_value = {
+                which = reserves_organisation
+                value = -9
+            }
         }
 	}
 
@@ -415,9 +417,11 @@ country_event = {
 
 	trigger = {
 		religion = levantine
-		has_global_modifier_value = {
-        	which = cav_to_inf_ratio
-        	value = -9
+		NOT = {
+            has_global_modifier_value = {
+                which = cav_to_inf_ratio
+                value = -9
+            }
         }
 	}
 
@@ -439,9 +443,11 @@ country_event = {
 
 	trigger = {
 		religion = levantine
-		has_global_modifier_value = {
-        	which = cavalry_flanking
-        	value = -9
+		NOT = {
+            has_global_modifier_value = {
+                which = cavalry_flanking
+                value = -9
+            }
         }
 	}
 
