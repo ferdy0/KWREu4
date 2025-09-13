@@ -1,0 +1,568 @@
+swiss_parliament_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		 has_dlc = "Emperor"
+	}
+	potential = {
+		tag = SWI
+		NOT = { map_setup = map_setup_random }
+		has_dlc = "Emperor"
+	}
+	has_country_shield = yes
+	
+	swi_preis_stabilite = {
+		icon = vaud_and_wallis
+		required_missions = { swi_stability_act }
+		position = 2
+		provinces_to_highlight = {
+			province_id = 165	# Bern
+			OR = {
+				NOT = { owned_by = ROOT}
+				NOT = { is_core = ROOT }
+			}
+		}
+		trigger = {
+			165 = {		# Bern
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			is_year = 1494
+			is_at_war = no
+			NOT = { had_recent_war = 50 }
+			has_country_flag = swi_stability_act_passed
+		}
+		effect = {
+			165 ={		# Bern
+				add_province_triggered_modifier = swi_peace_finance_modifier
+				add_province_triggered_modifier = swi_price_stabilite_modifier
+			}
+		}
+	}
+}
+
+swiss_maritime_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		 has_dlc = "Emperor"
+	}
+	potential = {
+		tag = SWI
+		NOT = { map_setup = map_setup_random }
+		has_dlc = "Emperor"
+	}
+	has_country_shield = yes
+
+	swi_revive_maritime_spirit = {
+		icon = vaud_and_wallis
+		required_missions = { }
+		position = 3
+		provinces_to_highlight = {
+			province_id = 2986
+			2986 = {
+				owner = {
+					NOT = { gives_fleet_basing_rights_to = ROOT }
+				}
+			}
+		}
+		trigger = {
+			has_idea = maritime_mercantilism
+			2986 = {	# Cagliari
+				owner = {
+					gives_fleet_basing_rights_to = ROOT
+				}
+			}
+		}
+		effect = {
+			set_country_flag = swi_can_buy_ships
+			2986 = {
+				save_global_event_target_as = swi_ship_construction_port
+			}
+			# TODO decission to switch construction port
+		}
+	}
+
+	swi_geneva_sail = {
+		icon = vaud_and_wallis
+		required_missions = { swi_revive_maritime_spirit 
+							  swi_promote_city_growth}
+		position = 4
+		provinces_to_highlight = {
+			province_id = 4720
+			OR = {
+				NOT = {owned_by = ROOT}
+				NOT = {is_core = ROOT}
+				NOT = {base_production = 18}
+				has_manufactory_trigger = no
+				has_production_building_trigger = no
+			}
+		}
+		trigger = {
+			4720 = {	# Geneva
+				owned_by = ROOT
+				is_core = ROOT
+				base_production = 18
+				has_manufactory_trigger = yes
+				has_production_building_trigger = yes
+			}
+		}
+		effect = {
+			4720 = { 	# Geneva
+				add_or_upgrade_production_building = yes
+			}
+			# TODO maybe add a temporary naval maintainance reduction
+		}
+	}
+
+	swi_maritime_academy = {
+		icon = vaud_and_wallis
+		required_missions = { swi_geneva_sail }
+		position = 5
+		trigger = {
+			navy_size_percentage = 0.7
+			treasury = 500
+		}
+		effect = {
+			add_treasury = -500
+			4720 = { 	# Geneva
+				# TODO great project stuff
+			}
+			
+		}
+	}
+
+	swi_landing_exercises = {
+		icon = vaud_and_wallis
+		required_missions = { swi_maritime_academy }
+		position = 6
+		provinces_to_highlight = {
+			province_id = 4720
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				NOT = { base_manpower = 15 }
+			}
+		}
+		trigger = {
+			has_country_flag = swi_mercenary_act_passed
+			num_of_transport = 10
+			4720 = { 	# Geneva
+				owned_by = ROOT
+				is_core = ROOT
+				base_manpower = 15
+			}
+			event_target:swi_ship_construction_port = {	# unless changed Cagliari
+				owner = {
+					has_opinion ={
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+		}
+		effect = {
+			4720 = { 	# Geneva
+				# TODO merc stuff
+			}
+			
+		}
+	}
+}
+swiss_mountain_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		 has_dlc = "Emperor"
+	}
+	potential = {
+		tag = SWI
+		NOT = { map_setup = map_setup_random }
+		has_dlc = "Emperor"
+	}
+	has_country_shield = yes
+
+	swi_strike_the_iron = {
+		icon = vaud_and_wallis
+		required_missions = { swi_utilize_mountains }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				province_id = 165
+				province_id = 166
+			}
+			OR = {
+				NOT = {owned_by = ROOT}
+				NOT = {is_core = ROOT}
+				NOT ={ base_production = 10 }
+				has_manufactory_trigger = no
+				has_production_building_trigger = no
+			} 
+		}
+		trigger = {
+			165 = { 	# Bern
+				owned_by = ROOT
+				is_core = ROOT
+				base_production = 10
+				has_manufactory_trigger = yes
+				has_production_building_trigger = yes
+			}
+			166 = {		# Waldstätte
+				owned_by = ROOT
+				is_core = ROOT
+				base_production = 10
+				has_manufactory_trigger = yes
+				has_production_building_trigger = yes
+			}
+		}
+		effect = {
+			# TODO add ustom tooltip
+			set_country_flag = swi_strike_the_iron_flag
+		}
+	}
+}
+swiss_parliament_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		 has_dlc = "Emperor"
+	}
+	potential = {
+		tag = SWI
+		NOT = { map_setup = map_setup_random }
+		has_dlc = "Emperor"
+	}
+	has_country_shield = yes
+
+	swi_stability_act = {
+		icon = vaud_and_wallis
+		required_missions = { }
+		position = 1
+		trigger = {
+			is_year = 1454
+			stability = 3
+			is_at_war = no
+			NOT = { had_recent_war = 10 }
+		}
+		effect = {
+			unlock_issue = {
+				issue = swi_stability_act
+			}
+		}
+	}
+}
+
+swiss_city_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		 has_dlc = "Emperor"
+	}
+	potential = {
+		tag = SWI
+		NOT = { map_setup = map_setup_random }
+		has_dlc = "Emperor"
+	}
+	has_country_shield = yes
+
+	swi_quarries = {
+		icon = vaud_and_wallis
+		required_missions = { }
+		position = 2
+		provinces_to_highlight = {
+			owned_by = ROOT
+			is_core = ROOT
+			has_terrain = mountain
+			OR ={
+				NOT = { grown_by_development = 3 }
+			}
+		}
+		trigger = {
+			all_core_province = {
+				if = {
+					limit = {
+						has_terrain = mountain
+					}
+					grown_by_development = 3
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = swi_building_supplies_modifier
+				duration = 7300		# 20 Years
+			}
+		}
+	}
+
+	swi_promote_city_growth = {
+		icon = vaud_and_wallis
+		required_missions = { swi_quarries }
+		position = 3
+		provinces_to_highlight = {
+			owned_by = ROOT
+			is_core = ROOT
+			NOT = {
+				has_terrain = mountain
+			}
+			OR ={
+				has_production_building_trigger = no
+				NOT = { grown_by_development = 3 }
+				NOT = { num_of_buildings_in_province = 2 }
+				NOT ={ num_of_times_expanded_infrastructure = 1 }
+			}
+		}
+		trigger = {
+			all_core_province = {
+				if = {
+					limit = {
+						NOT = {
+							has_terrain = mountain
+						}
+					}
+					grown_by_development = 3
+					has_production_building_trigger = yes
+					num_of_buildings_in_province = 2
+					num_of_times_expanded_infrastructure = 1
+				}
+			}
+			treasury = 200
+		}
+		effect = {
+			add_treasury = -200
+			add_country_modifier = {
+				name = swi_city_expansion_modifier
+				duration = 7300		# 20 Years
+			}
+		}
+	}
+
+	swi_cheese = {
+		icon = vaud_and_wallis
+		required_missions = { swi_promote_city_growth }
+		position = 4
+		provinces_to_highlight = {
+			owned_by = ROOT
+			is_core = ROOT
+			trade_goods = livestock
+			OR ={
+				has_manufactory_trigger = no
+				has_production_building_trigger = no
+				NOT = { base_production = 15 }
+			}
+		}
+		trigger = {
+			all_core_province = {
+				if = {
+					limit = {
+						trade_goods = livestock
+					}
+					has_manufactory_trigger = yes
+					has_production_building_trigger = yes
+					base_production = 15
+				}
+			}
+			treasury = 200
+		}
+		effect = {
+			every_core_province = {
+				if = {
+					limit = {
+						trade_goods = livestock
+					}
+					add_province_modifier = {
+						name = swi_cheese_modifier 	# Would probably be better to tie it into a gov form or a privelege
+						duration = -1				# so it gets auto removed if trade good changes or something?
+					}
+				}
+			}
+		}
+	}
+}
+
+swiss_maritime_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		 has_dlc = "Emperor"
+	}
+	potential = {
+		tag = SWI
+		NOT = { map_setup = map_setup_random }
+		has_dlc = "Emperor"
+	}
+	has_country_shield = yes
+
+	swi_sell_our_cloth = {
+		icon = vaud_and_wallis
+		required_missions = { swi_geneva_sail }
+		position = 5
+		provinces_to_highlight = {
+			owned_by = ROOT
+			is_core = ROOT
+			trade_goods = cloth
+			OR ={
+				has_manufactory_trigger = no
+				has_production_building_trigger = no
+				has_trade_building_trigger = no
+				NOT = { base_production = 18 }
+			}
+		}
+		trigger = {
+			num_of_light_ship = 10
+			has_institution = global_trade
+			all_core_province = {
+				if = {
+					limit = { trade_goods = cloth }
+					has_manufactory_trigger = yes
+					has_production_building_trigger = yes
+					has_trade_building_trigger = yes
+					base_production = 18
+				}
+			}
+		}
+		effect = {
+			add_years_of_owned_provinces_production_income = {
+				years = 1
+				trigger = {
+					trade_goods = cloth
+				}
+			} 
+			186 = { 	# Paris (Champagne trade node)
+				add_trade_modifier = {
+					who = ROOT
+					duration = 18250
+					power = 25
+					key = swi_cloth_sale_trade_modifier
+				}
+			}
+
+			1876 = {	# Frankfurt (Rheinland Trade Node)
+				add_trade_modifier = {
+					who = ROOT
+					duration = 18250
+					power = 25
+					key = swi_cloth_sale_trade_modifier
+				}
+			}
+
+			1298 = {	# Ligurian See (Genoa trade node)
+				add_trade_modifier = {
+					who = ROOT
+					duration = 18250
+					power = 25
+					key = swi_cloth_sale_trade_modifier
+				}
+			}
+			134 = { 	# Wien (Wien trade node)
+				add_trade_modifier = {
+					who = ROOT
+					duration = 18250
+					power = 25
+					key = swi_cloth_sale_trade_modifier
+				}
+			}
+		}
+	}
+}
+
+swiss_mountain_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		 has_dlc = "Emperor"
+	}
+	potential = {
+		tag = SWI
+		NOT = { map_setup = map_setup_random }
+		has_dlc = "Emperor"
+	}
+	has_country_shield = yes
+
+	swi_utilize_mountains = {
+		icon = vaud_and_wallis
+		required_missions = { }
+		position = 6
+		provinces_to_highlight = {
+			owned_by = ROOT
+			is_core = ROOT
+			has_terrain = mountain
+			OR = {
+				NOT = { num_of_buildings_in_province = 1 }
+				NOT = { num_of_times_expanded_infrastructure = 1 }
+			}
+		}
+		trigger = {
+			all_core_province = {
+				if = {
+					limit = {
+						has_terrain = mountain
+					}
+					num_of_buildings_in_province = 1
+					num_of_times_expanded_infrastructure = 1
+				}
+			}
+			treasury = 200
+		}
+		effect = {
+			add_treasury = -200
+			unlock_estate_privilege = {
+					estate_privilege = estate_burghers_mountain_expansion
+			}
+
+		}
+	}
+
+	swi_eizenbergwerk_gonzen = {
+		icon = vaud_and_wallis
+		required_missions = { swi_utilize_mountains }
+		position = 7
+		provinces_to_highlight = {
+			province_id = 1870
+			OR = {
+				NOT = {owned_by = ROOT}
+				NOT = {is_core = ROOT}
+				NOT ={ base_production = 15 }
+				has_manufactory_trigger = no
+				has_production_building_trigger = no
+				NOT = { manufactories = 1 }
+			} 
+		}
+		trigger = {
+			1870 = { 	# St.Gallen
+				owned_by = ROOT
+				is_core = ROOT
+				base_production = 15
+				has_manufactory_trigger = yes
+				has_production_building_trigger = yes
+				manufactories = 1
+			}
+		}
+		effect = {
+			1870 = { 	# St.Gallen
+				change_trade_goods = iron
+				remove_building = manufactory
+				add_building = weapons
+				# TODO Remove this if cheese modifier gets reworked
+				if = {
+					limit = {
+						has_province_modifier = swi_cheese_modifier
+					}
+					remove_province_modifier = swi_cheese_modifier
+				}
+				add_province_modifier = {
+					name = swi_eizenbergwerk_gonzen_modifier
+					duration = -1
+				}
+			}
+			
+		}
+	}
+}

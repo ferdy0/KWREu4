@@ -1,0 +1,31 @@
+swi_peace_finance_modifier = {
+    potential = {
+        owner = {is_at_war = no}
+    }
+    trigger = {
+        owner ={
+            NOT = { had_recent_war = 10 }
+        } 
+    }
+
+    inflation_reduction = 0.05
+}
+swi_price_stabilite_modifier = {
+    potential = {
+        owner = {
+            is_at_war = no
+            NOT = { had_recent_war = 10 }
+        }
+    }
+    trigger = {
+        NOT = {
+            owner ={
+                inflation = 2
+            }
+        }
+    }
+    
+    global_trade_power = 0.05
+    global_trade_goods_size_modifier = 0.05 # Slightly buffed, because I agree with robo, this does feel too underwhelming
+                                            # either way it is pretty easy to break if someone wants to just by declaring
+}

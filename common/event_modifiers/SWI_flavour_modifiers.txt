@@ -1,0 +1,22 @@
+swi_eizenbergwerk_gonzen_modifier = {
+    trade_goods_size = 1
+    merc_maintenance_modifier = -0.05
+}
+
+swi_building_supplies_modifier = {
+    build_cost = -0.1
+    expand_infrastructure_cost_modifier = -0.3
+}
+
+swi_city_expansion_modifier = {
+    development_cost_modifier = -0.05
+    production_efficiency = 0.1
+}
+
+swi_cheese_modifier = {
+    trade_value_modifier = 0.1
+}
+
+estate_burghers_mountain_expansion_swi_strike_the_iron = {
+    trade_goods_size_modifier = 0.05    # This Modifier seems boring, might change
+}

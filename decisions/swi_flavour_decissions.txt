@@ -1,0 +1,123 @@
+country_decisions = {
+    swi_ship_purchase_decision = {
+        major = yes
+        ai_will_do = {
+            factor = 0
+        }
+        potential = {
+            has_country_flag = swi_can_buy_ships
+        }
+        allow = {
+            event_target:swi_ship_construction_port = {
+                owner = {
+                    gives_fleet_basing_rights_to = ROOT
+                    NOT = { has_country_flag = swi_pause_ship_sales }
+                    OR = {
+                        NOT = { tag = HUN }
+                        owns_core_province = 4753 # Zadar 
+                    }
+                }
+            }
+        }
+        effect = {
+            country_event = {
+                id = additional_flavor_swi.1
+            }
+        }
+    }
+
+    swi_pause_ship_sales_decision = {
+        major = yes
+        ai_will_do = {
+            factor = 0
+        }
+        potential = {   # Looks a little convoluted to avoid game chacking event_target before it's set
+            if = {
+                limit = {
+                    any_country = {
+                        has_country_flag = swi_can_buy_ships
+                    }
+                    NOT = { has_country_flag = swi_pause_ship_sales }
+                }
+                event_target:swi_ship_construction_port = {
+                    owner = {
+                        tag = ROOT
+                    }
+                }
+            }
+            else = {
+                always = no
+            }
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            set_country_flag = swi_pause_ship_sales
+            every_country = {
+                if = {
+                    limit = { has_country_flag = swi_can_buy_ships}
+                    country_event = {
+                        id = additional_flavor_swi.10   # Notifies of the pause
+                    }
+                }
+            }
+        }
+    }
+
+    swi_resume_ship_sales_decision = {
+        major = yes
+        ai_will_do = {
+            factor = 100
+        }
+        potential = {       # Looks a little convoluted to avoid game chacking event_target before it's set
+            if = {
+                limit = {
+                    has_country_flag = swi_pause_ship_sales
+                }
+                event_target:swi_ship_construction_port = {
+                    owner = {
+                        tag = ROOT
+                    }
+                }
+                
+            }
+            else = {
+                always = no
+            }
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            clr_country_flag = swi_pause_ship_sales
+            every_country = {
+                if = {
+                    limit = { has_country_flag = swi_can_buy_ships}
+                    country_event = {
+                        id = additional_flavor_swi.11   # Notifies of the resuming
+                    }
+                }
+            }
+        }
+    }
+
+    swi_change_ship_construction_port = {
+        major = yes
+        ai_will_do = {
+            factor = 0
+        }
+        potential = {
+            has_country_flag = swi_can_buy_ships
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            country_event = {
+                id = additional_flavor_swi.12
+            }
+        }
+    }
+}
+

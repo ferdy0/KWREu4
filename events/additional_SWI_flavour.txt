@@ -1,0 +1,812 @@
+######################################################
+#
+# Additional Events to supplement New SWI Mission Tree
+#
+######################################################
+
+namespace = additional_flavor_swi
+
+# Ship Purchace Begin
+country_event = {
+	id = additional_flavor_swi.1
+	title = "additional_flavor_swi.1.t"
+	desc = "additional_flavor_swi.1.d"
+	picture = HARBOUR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Close
+		name = additional_flavor_swi.1.a
+		highlight = yes
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {	# Light Ship
+		name = additional_flavor_swi.1.b
+		country_event = {
+			id = additional_flavor_swi.2
+		}
+	}
+	option = { # Transport
+		name = additional_flavor_swi.1.c
+		country_event = {
+			id = additional_flavor_swi.3
+		}
+	}
+
+}
+
+# Ship Purchace Light Ship 
+country_event = {
+	id = additional_flavor_swi.2
+	title = "additional_flavor_swi.2.t"
+	desc = "additional_flavor_swi.2.d"
+	picture = HARBOUR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = additional_flavor_swi.2.a
+		highlight = yes
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = { # 1 Light Ship
+		name = additional_flavor_swi.2.b
+		trigger = {
+			if = {
+				limit = {
+					event_target:swi_ship_construction_port = {
+						province_id = 2986 # Cagliari
+					}
+				}
+				treasury = 40
+			}
+			else = {
+				treasury = 50
+			}
+		}
+		if = {
+			limit = {
+				event_target:swi_ship_construction_port = {
+					province_id = 2986 # Cagliari
+				}
+			}
+			add_treasury = -40
+			event_target:swi_ship_construction_port = {
+				owner = {
+					add_treasury = 10
+					save_event_target_as = swi_ship_provider
+				}
+			}
+			country_event = {
+				id = additional_flavor_swi.4
+				days = 270
+			}
+		}
+		else = {
+			country_event = {
+				id = additional_flavor_swi.4
+				days = 365
+			}
+			add_treasury = -50
+			event_target:swi_ship_construction_port = {
+				owner = {
+					add_treasury = 10
+					save_event_target_as = swi_ship_provider
+				}
+			}
+		}
+	}
+
+	option = { # 5 Light Ships
+		name = additional_flavor_swi.2.c
+		trigger = {
+			if = {
+				limit = {
+					event_target:swi_ship_construction_port = {
+						province_id = 2986 # Cagliari
+					}
+				}
+				treasury = 200
+			}
+			else = {
+				treasury = 250
+			}
+		}
+		if = {
+			limit = {
+				event_target:swi_ship_construction_port = {
+					province_id = 2986 # Cagliari
+				}
+			}
+			add_treasury = -200
+			event_target:swi_ship_construction_port = {
+				owner = {
+					add_treasury = 50
+					save_event_target_as = swi_ship_provider
+				}
+			}
+			country_event = {
+				id = additional_flavor_swi.5
+				days = 270
+			}
+		}
+		else = {
+			country_event = {
+				id = additional_flavor_swi.5
+				days = 365
+			}
+			add_treasury = -250
+			event_target:swi_ship_construction_port = {
+				owner = {
+					add_treasury = 50
+					save_event_target_as = swi_ship_provider
+				}
+			}
+		}
+	}
+
+	option = { # 10 Light Ships
+		name = additional_flavor_swi.2.d
+		trigger = {
+			if = {
+				limit = {
+					event_target:swi_ship_construction_port = {
+						province_id = 2986 # Cagliari
+					}
+				}
+				treasury = 400
+			}
+			else = {
+				treasury = 500
+			}
+		}
+		if = {
+			limit = {
+				event_target:swi_ship_construction_port = {
+					province_id = 2986 # Cagliari
+				}
+			}
+			add_treasury = -400
+			event_target:swi_ship_construction_port = {
+				owner = {
+					add_treasury = 100
+					save_event_target_as = swi_ship_provider
+				}
+			}
+			country_event = {
+				id = additional_flavor_swi.6
+				days = 270
+			}
+		}
+		else = {
+			country_event = {
+				id = additional_flavor_swi.6
+				days = 365
+			}
+			add_treasury = -500
+			event_target:swi_ship_construction_port = {
+				owner = {
+					add_treasury = 100
+					save_event_target_as = swi_ship_provider
+				}
+			}
+		}
+	}
+}
+
+# Ship Purchace Transport Ship 
+country_event = {
+	id = additional_flavor_swi.3
+	title = "additional_flavor_swi.3.t"
+	desc = "additional_flavor_swi.3.d"
+	picture = HARBOUR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = additional_flavor_swi.3.a
+		highlight = yes
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = { # 1 Transport Ship
+		name = additional_flavor_swi.3.b
+		trigger = {
+			if = {
+				limit = {
+					event_target:swi_ship_construction_port = {
+						province_id = 2986 # Cagliari
+					}
+				}
+				treasury = 24
+			}
+			else = {
+				treasury = 27
+			}
+		}
+		if = {
+			limit = {
+				event_target:swi_ship_construction_port = {
+					province_id = 2986 # Cagliari
+				}
+			}
+			add_treasury = -24
+			event_target:swi_ship_construction_port = {
+				owner = {
+					add_treasury = 6
+					save_event_target_as = swi_ship_provider
+				}
+			}
+			country_event = {
+				id = additional_flavor_swi.7
+				days = 270
+			}
+		}
+		else = {
+			country_event = {
+				id = additional_flavor_swi.7
+				days = 365
+			}
+			add_treasury = -27
+			event_target:swi_ship_construction_port = {
+				owner = {
+					add_treasury = 6
+					save_event_target_as = swi_ship_provider
+				}
+			}
+		}
+	}
+
+	option = { # 5 Transport Ships
+		name = additional_flavor_swi.3.c
+		trigger = {
+			if = {
+				limit = {
+					event_target:swi_ship_construction_port = {
+						province_id = 2986 # Cagliari
+					}
+				}
+				treasury = 120
+			}
+			else = {
+				treasury = 135
+			}
+		}
+		if = {
+			limit = {
+				event_target:swi_ship_construction_port = {
+					province_id = 2986 # Cagliari
+				}
+			}
+			add_treasury = -120
+			event_target:swi_ship_construction_port = {
+				owner = {
+					add_treasury = 30
+					save_event_target_as = swi_ship_provider
+				}
+			}
+			country_event = {
+				id = additional_flavor_swi.8
+				days = 270
+			}
+		}
+		else = {
+			country_event = {
+				id = additional_flavor_swi.8
+				days = 365
+			}
+			add_treasury = -135
+			event_target:swi_ship_construction_port = {
+				owner = {
+					add_treasury = 30
+					save_event_target_as = swi_ship_provider
+				}
+			}
+		}
+	}
+
+	option = { # 10 Transport Ships
+		name = additional_flavor_swi.3.d
+		trigger = {
+			if = {
+				limit = {
+					event_target:swi_ship_construction_port = {
+						province_id = 2986 # Cagliari
+					}
+				}
+				treasury = 240
+			}
+			else = {
+				treasury = 270
+			}
+		}
+		if = {
+			limit = {
+				event_target:swi_ship_construction_port = {
+					province_id = 2986 # Cagliari
+				}
+			}
+			add_treasury = -240
+			event_target:swi_ship_construction_port = {
+				owner = {
+					add_treasury = 60
+					save_event_target_as = swi_ship_provider
+				}
+			}
+			country_event = {
+				id = additional_flavor_swi.9
+				days = 270
+			}
+		}
+		else = {
+			country_event = {
+				id = additional_flavor_swi.9
+				days = 365
+			}
+			add_treasury = -270
+			event_target:swi_ship_construction_port = {
+				owner = {
+					add_treasury = 60
+					save_event_target_as = swi_ship_provider
+				}
+			}
+		}
+	}
+}
+
+# 1 Light Ship Delivered
+country_event = {
+	id = additional_flavor_swi.4
+	title = "additional_flavor_swi.4.t"
+	desc = "additional_flavor_swi.4.d"
+	picture = HARBOUR_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				event_target:swi_ship_construction_port = {
+					owner = {
+						gives_fleet_basing_rights_to = ROOT
+						NOT = { has_country_flag = swi_pause_ship_sales }
+						tag = event_target:swi_ship_provider
+					}
+				}
+			}
+			event_target:swi_ship_construction_port = {
+				light_ship = ROOT
+			}
+		}
+		else = {	# Refund all parties if deal was canceled
+			if = {
+				limit = {
+					event_target:swi_ship_construction_port = {
+						province_id = 2986 # Cagliari
+					}
+				}
+				add_treasury = 40
+			}
+			else = {
+				add_treasury = 50
+			}
+			event_target:swi_ship_provider = {
+				add_treasury = -10
+			}
+		}
+	}
+	option = {
+		name = "OK"
+	}
+}
+
+# 5 Light Ships Delivered
+country_event = {
+	id = additional_flavor_swi.5
+	title = "additional_flavor_swi.5.t"
+	desc = "additional_flavor_swi.5.d"
+	picture = HARBOUR_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				event_target:swi_ship_construction_port = {
+					owner = {
+						gives_fleet_basing_rights_to = ROOT
+						NOT = { has_country_flag = swi_pause_ship_sales }
+						tag = event_target:swi_ship_provider
+					}
+				}
+			}
+			event_target:swi_ship_construction_port = {
+				light_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+			}
+		}
+		else = {	# Refund all parties if deal was canceled
+			if = {
+				limit = {
+					event_target:swi_ship_construction_port = {
+						province_id = 2986 # Cagliari
+					}
+				}
+				add_treasury = 200
+			}
+			else = {
+				add_treasury = 400
+			}
+			event_target:swi_ship_provider = {
+				add_treasury = -50
+			}
+		}
+	}
+	option = {
+		name = "OK"
+	}
+}
+
+# 10 Light Ships Delivered
+country_event = {
+	id = additional_flavor_swi.6
+	title = "additional_flavor_swi.6.t"
+	desc = "additional_flavor_swi.6.d"
+	picture = HARBOUR_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				event_target:swi_ship_construction_port = {
+					owner = {
+						gives_fleet_basing_rights_to = ROOT
+						NOT = { has_country_flag = swi_pause_ship_sales }
+						tag = event_target:swi_ship_provider
+					}
+				}
+			}
+			event_target:swi_ship_construction_port = {
+				light_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+			}
+		}
+		else = {	# Refund all parties if deal was canceled
+			if = {
+				limit = {
+					event_target:swi_ship_construction_port = {
+						province_id = 2986 # Cagliari
+					}
+				}
+				add_treasury = 400
+			}
+			else = {
+				add_treasury = 500
+			}
+			event_target:swi_ship_provider = {
+				add_treasury = -100
+			}
+		}
+	}
+	option = {
+		name = "OK"
+	}
+}
+
+# 1 Transport Ship Delivered
+country_event = {
+	id = additional_flavor_swi.7
+	title = "additional_flavor_swi.7.t"
+	desc = "additional_flavor_swi.7.d"
+	picture = HARBOUR_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				event_target:swi_ship_construction_port = {
+					owner = {
+						gives_fleet_basing_rights_to = ROOT
+						NOT = { has_country_flag = swi_pause_ship_sales }
+						tag = event_target:swi_ship_provider
+					}
+				}
+			}
+			event_target:swi_ship_construction_port = {
+				transport = ROOT
+			}
+		}
+		else = {	# Refund all parties if deal was canceled
+			if = {
+				limit = {
+					event_target:swi_ship_construction_port = {
+						province_id = 2986 # Cagliari
+					}
+				}
+				add_treasury = 24
+			}
+			else = {
+				add_treasury = 27
+			}
+			event_target:swi_ship_provider = {
+				add_treasury = -6
+			}
+		}
+	}
+	option = {
+		name = "OK"
+	}
+}
+
+# 5 Transport Ships Delivered
+country_event = {
+	id = additional_flavor_swi.8
+	title = "additional_flavor_swi.8.t"
+	desc = "additional_flavor_swi.8.d"
+	picture = HARBOUR_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				event_target:swi_ship_construction_port = {
+					owner = {
+						gives_fleet_basing_rights_to = ROOT
+						NOT = { has_country_flag = swi_pause_ship_sales }
+						tag = event_target:swi_ship_provider
+					}
+				}
+			}
+			event_target:swi_ship_construction_port = {
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+			}
+		}
+		else = {	# Refund all parties if deal was canceled
+			if = {
+				limit = {
+					event_target:swi_ship_construction_port = {
+						province_id = 2986 # Cagliari
+					}
+				}
+				add_treasury = 120
+			}
+			else = {
+				add_treasury = 135
+			}
+			event_target:swi_ship_provider = {
+				add_treasury = -30
+			}
+		}
+	}
+	option = {
+		name = "OK"
+	}
+}
+
+# 10 Transport Ships Delivered
+country_event = {
+	id = additional_flavor_swi.9
+	title = "additional_flavor_swi.9.t"
+	desc = "additional_flavor_swi.9.d"
+	picture = HARBOUR_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				event_target:swi_ship_construction_port = {
+					owner = {
+						gives_fleet_basing_rights_to = ROOT
+						NOT = { has_country_flag = swi_pause_ship_sales }
+						tag = event_target:swi_ship_provider
+					}
+				}
+			}
+			event_target:swi_ship_construction_port = {
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+				transport = ROOT
+			}
+		}
+		else = {	# Refund all parties if deal was canceled
+			if = {
+				limit = {
+					event_target:swi_ship_construction_port = {
+						province_id = 2986 # Cagliari
+					}
+				}
+				add_treasury = 240
+			}
+			else = {
+				add_treasury = 270
+			}
+			event_target:swi_ship_provider = {
+				add_treasury = -60
+			}
+		}
+	}
+	option = {
+		name = "OK"
+	}
+}
+
+# Ship sales were paused
+country_event = {
+	id = additional_flavor_swi.10
+	title = "additional_flavor_swi.10.t"
+	desc = "additional_flavor_swi.10.d"
+	picture = PORT_BLOCKADED_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = additional_flavor_swi.10.a
+	}
+}
+
+# Ship sales were resumed
+country_event = {
+	id = additional_flavor_swi.11
+	title = "additional_flavor_swi.11.t"
+	desc = "additional_flavor_swi.11.d"
+	picture = PORT_BLOCKADED_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = additional_flavor_swi.11.a
+	}
+}
+
+# Change ship construction port event
+country_event = {
+	id = additional_flavor_swi.12
+	title = "additional_flavor_swi.12.t"
+	desc = "additional_flavor_swi.12.d"
+	picture = PORT_BLOCKADED_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Close
+		name = additional_flavor_swi.12.a
+		ai_chance = {
+			factor = 100
+		}
+		highlight = yes
+	}
+
+	option = {		# Cagliari
+		name = additional_flavor_swi.12.b
+		trigger = {		
+			event_target:swi_ship_construction_port = {
+                    NOT = { province_id = 2986 }
+                }
+		}
+		2986 = {
+			save_event_target_as = swi_potential_ship_construction_port
+			owner = {
+				country_event = {
+					id = additional_flavor_swi.13
+				}
+			}
+		}
+	}
+
+	option = {		# Lübeck
+		name = additional_flavor_swi.12.c
+		trigger = {		
+			event_target:swi_ship_construction_port = {
+                    NOT = { province_id = 45 }
+                }
+		}
+		45 = {
+			save_event_target_as = swi_potential_ship_construction_port
+			owner = {
+				country_event = {
+					id = additional_flavor_swi.13
+				}
+			}
+		}
+	}
+
+	option = {		# Holland
+		name = additional_flavor_swi.12.d
+		trigger = {		
+			event_target:swi_ship_construction_port = {
+                    NOT = { province_id = 97 }
+                }
+		}
+		97 = {
+			save_event_target_as = swi_potential_ship_construction_port
+			owner = {
+				country_event = {
+					id = additional_flavor_swi.13
+				}
+			}
+		}
+	}
+
+	option = {		# Zadar
+		name = additional_flavor_swi.12.d
+		trigger = {		
+			event_target:swi_ship_construction_port = {
+                    NOT = { province_id = 4753 }
+					owned_by = HUN
+                }
+		}
+		4753 = {
+			save_event_target_as = swi_potential_ship_construction_port
+			owner = {
+				country_event = {
+					id = additional_flavor_swi.13
+				}
+			}
+		}
+	}
+}
+
+# Change ship construction port event
+country_event = {
+	id = additional_flavor_swi.13
+	title = "additional_flavor_swi.13.t"
+	desc = "additional_flavor_swi.13.d"
+	picture = PORT_BLOCKADED_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# NO
+		name = additional_flavor_swi.13.a
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {	# YES
+		name = additional_flavor_swi.13.b
+		ai_chance = {
+			factor = 100
+		}
+		event_target:swi_potential_ship_construction_port = {
+			save_global_event_target_as = swi_ship_construction_port 
+		}
+	}
+}
