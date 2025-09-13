@@ -43,7 +43,6 @@ christian = {
 						cost = 50
 
 						tolerance_own = 2
-						cavalry_flanking = 10
 					}
 					triarchy_gud = {
 						type = DIP
