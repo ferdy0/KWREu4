@@ -382,3 +382,75 @@ country_event = {
         }
 	}
 }
+
+country_event = {
+	id = levantine_events.16
+	title = levantine_events.16.t
+	desc = levantine_events.16.d
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		religion = levantine
+		has_global_modifier_value = {
+        	which = reserves_organisation
+        	value = -9
+        }
+	}
+
+	mean_time_to_happen = {
+		day = 1
+	}
+
+	option = {
+		name = levantine_events.16.a
+		remove_country_modifier = counter_trigger_levantine_reserves
+	}
+}
+
+country_event = {
+	id = levantine_events.17
+	title = levantine_events.17.t
+	desc = levantine_events.17.d
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		religion = levantine
+		has_global_modifier_value = {
+        	which = cav_to_inf_ratio
+        	value = -9
+        }
+	}
+
+	mean_time_to_happen = {
+		day = 1
+	}
+
+	option = {
+		name = levantine_events.17.a
+		remove_country_modifier = counter_trigger_levantine_cavratio
+	}
+}
+
+country_event = {
+	id = levantine_events.18
+	title = levantine_events.18.t
+	desc = levantine_events.18.d
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		religion = levantine
+		has_global_modifier_value = {
+        	which = cavalry_flanking
+        	value = -9
+        }
+	}
+
+	mean_time_to_happen = {
+		day = 1
+	}
+
+	option = {
+		name = levantine_events.18.a
+		remove_country_modifier = counter_trigger_levantine_cavflanking
+	}
+}
