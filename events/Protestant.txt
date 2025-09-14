@@ -61,7 +61,9 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			AND = {
-				is_or_was_tag = NOR
+				is_or_was_tag = {
+					tag = NOR
+				}
 				ai = no
 			}
 		}
