@@ -1,5 +1,5 @@
 namespace = mission_nor
-namespace = flavor_nor
+namespace = flavor_nor      # Not unique, change pls
 namespace = nor_great_expidition
 namespace = nor_sami_exploration
 namespace = nor_bombing
@@ -154,7 +154,7 @@ country_event = { #still needs localisation
 
     immediate = {
         add_treasury  = -1000
-        province_event = {
+        province_event = {          # Wrong Scope: province_event called in country scope
             id = mission_nor.4
             days = 500
         }
@@ -433,7 +433,7 @@ country_event = { #still needs localisation
 country_event = { #still needs localisation
     id = mission_nor.15
     title = mission_nor.15.t
-    desc - mission_nor.15.d
+    desc = mission_nor.15.d
     picture = REFORM_eventPicture
 
     is_triggered_only = yes
@@ -786,7 +786,7 @@ country_event = {
         set_global_flag = GE_whalers_taken
         custom_tooltip = GE_storage_capacity_explainer_tt
         hidden_effect = {
-            subtract_variable_variable = {
+            subtract_variable = {
                 which = GE_storage_space_left
                 value = 1
             }
@@ -828,7 +828,7 @@ country_event = {
     option = {
         name = nor_great_expidition.3.b
         trigger = { has_global_flag = GE_whalers_left }
-        subtract_variable_variable = {
+        subtract_variable = {
             which = GE_storage_space_left
             value = 2
         }
