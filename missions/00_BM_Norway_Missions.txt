@@ -882,11 +882,11 @@ Norway_missions_s2 = {
 
         trigger = {
             army_tradition = 35
-            army_professionalism = 15
+            army_professionalism = 0.15     # 1 here is 100 Army professionalism
         }
 
         effect = {
-            add_army_professionalism = -15
+            add_army_professionalism = -0.15 
             add_army_tradition = -35
             add_country_modifier = {
                 name = "nor_gunpowder_shortage"
@@ -2348,7 +2348,7 @@ Norway_missions_s4 = {
         }
     }
 
-    Extracting_the_resources_mission = { , also needs to be changed province wise to align with the new area
+    Extracting_the_resources_mission = { # , also needs to be changed province wise to align with the new area
         icon = mission_african_gold
         required_missions = { The_workshops_of_norway_mission }
         position = 12
@@ -2802,83 +2802,92 @@ Norway_missions_s4 = {
                 }
             }
             5 = {
-                limit = {
-                    AND = {
-                        has_building = workshop
-                        OR = {
-                            has_building = weapons
-                            has_building = wharf
-                            has_building = textile
-                            has_building = tradecompany
-                            has_building = farm_estate
-                            has_building = mills
+                if = {
+                    limit = { 
+                        AND = {
+                            has_building = workshop
+                            OR = {
+                                has_building = weapons
+                                has_building = wharf
+                                has_building = textile
+                                has_building = tradecompany
+                                has_building = farm_estate
+                                has_building = mills
+                            }
+                            num_of_times_expanded_infrastructure = 1
                         }
-                        num_of_times_expanded_infrastructure = 1
                     }
-                }
-                add_province_modifier = {
-                    name = "nor_made_in_norway"
-                    duration = -1
+                    add_province_modifier = {
+                        name = "nor_made_in_norway"
+                        duration = -1
+                    }
                 }
             }
             8 = {
-                limit = {
-                    AND = {
-                        has_building = workshop
-                        OR = {
-                            has_building = weapons
-                            has_building = wharf
-                            has_building = textile
-                            has_building = tradecompany
-                            has_building = farm_estate
-                            has_building = mills
+                if = {
+                    limit = { 
+                        AND = {
+                            has_building = workshop
+                            OR = {
+                                has_building = weapons
+                                has_building = wharf
+                                has_building = textile
+                                has_building = tradecompany
+                                has_building = farm_estate
+                                has_building = mills
+                            }
+                            num_of_times_expanded_infrastructure = 1
                         }
-                        num_of_times_expanded_infrastructure = 1
+                    }
+                    add_province_modifier = {
+                        name = "nor_made_in_norway"
+                        duration = -1
                     }
                 }
-                add_province_modifier = {
-                    name = "nor_made_in_norway"
-                    duration = -1
-                }
+                
             }
             4164 = {
-                limit = {
-                    AND = {
-                        has_building = workshop
-                        OR = {
-                            has_building = weapons
-                            has_building = wharf
-                            has_building = textile
-                            has_building = tradecompany
-                            has_building = farm_estate
-                            has_building = mills
+                if = {
+                    limit = { 
+                        AND = {
+                            has_building = workshop
+                            OR = {
+                                has_building = weapons
+                                has_building = wharf
+                                has_building = textile
+                                has_building = tradecompany
+                                has_building = farm_estate
+                                has_building = mills
+                            }
+                            num_of_times_expanded_infrastructure = 1
                         }
-                        num_of_times_expanded_infrastructure = 1
                     }
-                }
-                add_province_modifier = {
-                    name = "nor_made_in_norway"
-                    duration = -1
+                    add_province_modifier = {
+                        name = "nor_made_in_norway"
+                        duration = -1
+                    }
                 }
             }
             16 = {
-                limit = {
-                    AND = {
-                        has_building = workshop
-                        OR = {
-                            has_building = weapons
-                            has_building = wharf
-                            has_building = textile
-                            has_building = tradecompany
-                            has_building = farm_estate
-                            has_building = mills
+                if = {
+                    limit = { 
+                        AND = {
+                            has_building = workshop
+                            OR = {
+                                has_building = weapons
+                                has_building = wharf
+                                has_building = textile
+                                has_building = tradecompany
+                                has_building = farm_estate
+                                has_building = mills
+                            }
+                            num_of_times_expanded_infrastructure = 1
                         }
-                        num_of_times_expanded_infrastructure = 1
                     }
-                }
-                add_province_modifier = {
-                    name = "nor_made_in_norway"
-                    duration = -1
+                    add_province_modifier = {
+                        name = "nor_made_in_norway"
+                        duration = -1
+                    }
                 }
             }
         }
@@ -2964,7 +2973,7 @@ Norway_missions_s4 = {
                 province_id = 16
             }
             NOT = {
-                has_building = stock_excange
+                has_building = stock_exchange
             }
         }
 
@@ -2972,27 +2981,27 @@ Norway_missions_s4 = {
             trader = 5
             western_norway = {
                 type = all
-                has_building = stock_excange
+                has_building = stock_exchange
             }
             eastern_norway = {
                 type = all
-                has_building = stock_excange
+                has_building = stock_exchange
             }
             northern_norway  = {
                 type = all
-                has_building = stock_excange
+                has_building = stock_exchange
             }
             5 = {
-                has_building = stock_excange
+                has_building = stock_exchange
             }
             8 = {
-                has_building = stock_excange
+                has_building = stock_exchange
             }
             4164 = {
-                has_building = stock_excange
+                has_building = stock_exchange
             }
             16 = {
-                has_building = stock_excange
+                has_building = stock_exchange
             }
         }
 
@@ -3037,12 +3046,12 @@ Norway_missions_s4 = {
 			legitimacy = 100
             stability = 3
             estate_loyalty = {
-                estate = estate_nobility
+                estate = estate_nobles
                 loyalty = 40
             }
             NOT = {
                 estate_influence = {
-                    estate = estate_nobility
+                    estate = estate_nobles
                     influence = 11
                 }
             }
