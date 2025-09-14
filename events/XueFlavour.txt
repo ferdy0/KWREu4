@@ -1,3 +1,4 @@
+namespace = xue_events
 #Jewish Community in Kaifeng
 country_event = {
 	id = xue_events.1
