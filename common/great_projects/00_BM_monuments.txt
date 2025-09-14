@@ -18,27 +18,37 @@ nor_mountain_palace = {
     type = monument
 
     build_trigger = {
-		OR = {
-            tag = NOR
-            tag = SCA
-            tag = NWC
-        }
+		owner = {
+			OR = {
+				tag = NOR
+				tag = SCA
+				tag = NWC
+			}
+		}
+		
+	}
+	keep_trigger = {
+		
 	}
 
     can_use_modifiers_trigger = {
-        OR = {
-            tag = NOR
-            tag = SCA
-            tag = NWC
-        }
+        owner = {
+			OR = {
+				tag = NOR
+				tag = SCA
+				tag = NWC
+			}
+		}
     }
 
     can_upgrade_trigger = {
-        OR = {
-            tag = NOR
-            tag = SCA
-            tag = NWC
-        }
+        owner = {
+			OR = {
+				tag = NOR
+				tag = SCA
+				tag = NWC
+			}
+		}
     }
 
     tier_0 = {
@@ -169,9 +179,7 @@ nor_mountain_palace = {
 nor_central_skyport_opplanda = {
 	# start = 20
 
-	date = {
-		1855.06.20
-	}
+	date = 1855.06.20
 
 	time = {
 		months = 120
@@ -203,10 +211,12 @@ nor_central_skyport_opplanda = {
 	}
 
 	can_use_modifiers_trigger = {
-		OR = {
-			tag = NOR
-			tag = SCA
-			tag = NWC
+		owner = {
+			OR = {
+				tag = NOR
+				tag = SCA
+				tag = NWC
+			}
 		}
 	}
 
@@ -330,9 +340,7 @@ nor_central_skyport_opplanda = {
 nor_central_skyport_america = {
 	# start = 2564
 
-	date = {
-		1855.06.20
-	}
+	date = 1855.06.20
 
 	time = {
 		months = 120
@@ -362,10 +370,12 @@ nor_central_skyport_america = {
 	}
 
 	can_use_modifiers_trigger = {
-		OR = {
-			tag = NOR
-			tag = SCA
-			tag = NWC
+		owner = {
+			OR = {
+				tag = NOR
+				tag = SCA
+				tag = NWC
+			}
 		}
 	}
 
