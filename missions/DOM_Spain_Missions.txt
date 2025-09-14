@@ -2251,7 +2251,7 @@ dom_cas_missions_3_c = {
 				fire = 5
 				manuever = 6
 				siege = 1
-				name = "Hernï¿½n Cortï¿½s"
+				name = "Hernán Cortés"
 			}
 			490 = {
 				add_base_production = 3
