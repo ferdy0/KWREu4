@@ -2251,7 +2251,7 @@ dom_cas_missions_3_c = {
 				fire = 5
 				manuever = 6
 				siege = 1
-				name = "Hernán Cortés"
+				name = "Hernï¿½n Cortï¿½s"
 			}
 			490 = {
 				add_base_production = 3
@@ -2458,60 +2458,76 @@ dom_cas_missions_4 = {
 				add_permanent_claim = ROOT
 			}
 			338 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_claim = ROOT
 				}
-				add_claim = ROOT
 			}
 			341 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_claim = ROOT
 				}
-				add_claim = ROOT
 			}
 			125 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_claim = ROOT
 				}
-				add_claim = ROOT
 			}
 			121 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_claim = ROOT
 				}
-				add_claim = ROOT
 			}
 			118 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_claim = ROOT
 				}
-				add_claim = ROOT
 			}
 			115 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_claim = ROOT
 				}
-				add_claim = ROOT
 			}
 			101 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_claim = ROOT
 				}
-				add_claim = ROOT
 			}
 			201 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_claim = ROOT
 				}
-				add_claim = ROOT
 			}
 		}
 	}

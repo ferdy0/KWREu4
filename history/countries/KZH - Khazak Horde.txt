@@ -14,6 +14,7 @@ historical_rival = SHY
 		adm = 2
 		dip = 2
 		mil = 4
+	}
 }
 1465.1.1= {
 	monarch = {
