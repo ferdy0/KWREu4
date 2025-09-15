@@ -6,6 +6,7 @@ potestate_vassal = {
 	diplomacy_subject_sprite = GFX_icon_diplomacy_am_appanage
 	
 	# Properties:
+	can_fight_independence_war = no
 	has_power_projection = yes
 	takes_diplo_slot = no
 	gets_help_with_rebels = no

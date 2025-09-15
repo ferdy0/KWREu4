@@ -315,3 +315,35 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = lot_flavor_ev.6
+	title = lot_flavor_ev.6.t
+	desc = lot_flavor_ev.6.d
+	picture = OVEREXTENSION_eventPicture
+	
+	trigger = {
+		tag = HOL
+		LUX = {
+			NOT = {
+				dynasty = "von Luxemburg"
+			}
+		}
+		NOT = {
+			war_with = LUX
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = lot_flavor_ev.6.a
+		
+		declare_war_with_cb = {
+			who = LUX
+			casus_belli = cb_trade_war_triggered
+		}
+	}
+}

@@ -39,6 +39,11 @@ country_event = { #Death of the Potestate
 	
 	option = {
 		name = potestate_flavour.1.a
+		trigger = {
+			NOT = {
+				is_at_war = yes
+			}
+		}
 		hidden_effect = {
 			country_event = {
 				id = potestate_flavour.2
@@ -54,6 +59,19 @@ country_event = { #Death of the Potestate
 					id = potestate_flavour.2
 					days = 21
 				}
+			}
+		}
+	}
+	
+	option = {
+		name = potestate_flavour.1.b
+		trigger = {
+			is_at_war = yes
+		}
+		hidden_effect = {
+			country_event = {
+				id = potestate_flavour.1
+				days = 180
 			}
 		}
 	}

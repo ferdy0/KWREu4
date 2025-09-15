@@ -270,4 +270,46 @@ country_decisions = {
 			}
 		}
 	}
+	
+	enforce_lux_dynasty_treaty = {
+		major = yes
+		
+		potential = {
+			tag = HOL
+			LUX = {
+				NOT = {
+					dynasty = "von Luxemburg"
+				}
+			}
+		}
+		
+		allow = {
+			war_score_against = {
+				who = LUX
+				value = 50
+			}
+		}
+		
+		effect = {
+			white_peace = LUX
+			create_subject = {
+				subject_type = potestate_vassal
+				subject = LUX
+			}
+			LUX = {
+				add_government_reform = potestate_freedom_mon
+				define_ruler = {
+					dynasty = "von Luxemburg"
+					culture = LUX
+					religion = LUX
+				}
+				define_heir = {
+					dynasty = "von Luxemburg"
+					culture = LUX
+					religion = LUX
+				}
+			}
+			add_stability = 1
+		}
+	}
 }
