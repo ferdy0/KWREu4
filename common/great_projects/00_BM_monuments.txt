@@ -92,6 +92,7 @@ nor_mountain_palace = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+            local_defensiveness = 0.10
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -102,7 +103,6 @@ nor_mountain_palace = {
 		country_modifiers = {
 			diplomatic_reputation = 0.15 	
             centralize_state_cost = -0.05
-            local_defensiveness = 0.10
 		}
 
 		#what effects happen when this tier is achieved
@@ -123,6 +123,8 @@ nor_mountain_palace = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+            local_defensiveness = 0.15
+            local_defender_dice_roll_bonus = 1
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -133,8 +135,6 @@ nor_mountain_palace = {
 		country_modifiers = {
 			diplomatic_reputation = 0.25 	
             centralize_state_cost = -0.10
-            local_defensiveness = 0.15
-            local_defender_dice_roll_bonus = 1
 		}
 
 		#what effects happen when this tier is achieved
@@ -155,6 +155,9 @@ nor_mountain_palace = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+            local_defensiveness = 0.3
+            local_defender_dice_roll_bonus = 1
+            fort_level = 1
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -165,9 +168,6 @@ nor_mountain_palace = {
 		country_modifiers = {
 			diplomatic_reputation = 0.5 	
             centralize_state_cost = -0.15
-            local_defensiveness = 0.3
-            local_defender_dice_roll_bonus = 1
-            fort_level = 1
 		}
 
 		#what effects happen when this tier is achieved
