@@ -134,6 +134,7 @@ monarchy = {
 				#kwr specials
 				potestate_freedom_mon
 				potestate_overlord_mon
+				swi_statthalterei
 				#BM specials
 				BM_norwegian_balance_of_power
 			}

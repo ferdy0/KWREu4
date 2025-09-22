@@ -20,3 +20,19 @@ swi_cheese_modifier = {
 estate_burghers_mountain_expansion_swi_strike_the_iron = {
     trade_goods_size_modifier = 0.05    # This Modifier seems boring, might change
 }
+
+swi_city_autonomy_modifier_1 = {
+    min_autonomy = 10
+}
+
+swi_city_autonomy_modifier_2 = {
+    min_autonomy = 15
+}
+
+swi_city_autonomy_modifier_3 = {
+    min_autonomy = 20
+}
+
+swi_city_autonomy_modifier_4 = {
+    min_autonomy = 25   # might be *too* crippling imo, might decrease by 5 on all levels
+}

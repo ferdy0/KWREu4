@@ -1,0 +1,6 @@
+spriteTypes = { # If editing an existing .gfx file then this line will likely already be there, so you might not need to write this. However, make sure the following are inside this.
+    spriteType = {
+        name = "GFX_great_project_swi_marine_academy"	
+        texturefile = "gfx//interface//great_projects//chillon_castle_lake_geneva_august_pippenhagen.dds"
+    }
+}

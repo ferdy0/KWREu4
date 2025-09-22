@@ -1,0 +1,37 @@
+swi_statthalterei = {
+	icon = "united_cantons_reform"
+	allow_normal_conversion = no
+
+	potential = {
+		OR = {
+			has_reform = swi_statthalterei
+			have_had_reform = swi_statthalterei
+			is_or_was_tag = {
+				tag = SWI
+			}
+		}
+	}
+
+    lock_level_when_selected = yes
+	monarchy = yes
+
+	custom_attributes = {
+		mercs_do_not_cost_army_professionalism = yes
+	}
+	
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+			
+		}
+		has_parliament = yes
+	}
+	modifiers = {
+		max_absolutism = -20
+		nobles_influence_modifier = -0.1
+		burghers_influence_modifier = 0.1
+		burghers_loyalty_modifier = 0.05
+	}
+	
+
+}

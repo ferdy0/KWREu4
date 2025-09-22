@@ -242,7 +242,7 @@ ruling_prince = {
 		3 = GREAT_PRINCESS
 	}
 	trigger = {
-		OR = {
+		OR = {		# TODO What the heck is this? Switzerland, Swiss cultured and ... Armenia..? Definetly needs to be changed
 			tag = SWI
 			tag = ARM
 			primary_culture = swiss

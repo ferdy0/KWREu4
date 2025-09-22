@@ -61,7 +61,7 @@ swiss_maritime_missions_1 = {
 		required_missions = { }
 		position = 3
 		provinces_to_highlight = {
-			province_id = 2986
+			province_id = 2986 	# Cagliari
 			2986 = {
 				owner = {
 					NOT = { gives_fleet_basing_rights_to = ROOT }
@@ -81,7 +81,6 @@ swiss_maritime_missions_1 = {
 			2986 = {
 				save_global_event_target_as = swi_ship_construction_port
 			}
-			# TODO decission to switch construction port
 		}
 	}
 
@@ -127,8 +126,11 @@ swiss_maritime_missions_1 = {
 		}
 		effect = {
 			add_treasury = -500
+			set_country_flag = swi_marine_academy_build_flag
 			4720 = { 	# Geneva
-				# TODO great project stuff
+				add_great_project = {
+					type = swi_marine_academy
+				}
 			}
 			
 		}
@@ -154,7 +156,7 @@ swiss_maritime_missions_1 = {
 				is_core = ROOT
 				base_manpower = 15
 			}
-			event_target:swi_ship_construction_port = {	# unless changed Cagliari
+			event_target:swi_ship_construction_port = {	# unless changed it is Cagliari
 				owner = {
 					has_opinion ={
 						who = ROOT
@@ -276,21 +278,25 @@ swiss_city_missions_2 = {
 		position = 2
 		provinces_to_highlight = {
 			owned_by = ROOT
-			is_core = ROOT
 			has_terrain = mountain
 			OR ={
 				NOT = { grown_by_development = 3 }
 			}
 		}
 		trigger = {
-			all_core_province = {
-				if = {
-					limit = {
-						has_terrain = mountain
+			custom_trigger_tooltip = {
+				tooltip = swi_quarries_tooltip
+				all_owned_province = {
+					if = {
+						limit = {
+							has_terrain = mountain
+						}
+						grown_by_development = 3
 					}
-					grown_by_development = 3
 				}
 			}
+			
+			
 		}
 		effect = {
 			add_country_modifier = {
@@ -306,7 +312,6 @@ swiss_city_missions_2 = {
 		position = 3
 		provinces_to_highlight = {
 			owned_by = ROOT
-			is_core = ROOT
 			NOT = {
 				has_terrain = mountain
 			}
@@ -318,17 +323,20 @@ swiss_city_missions_2 = {
 			}
 		}
 		trigger = {
-			all_core_province = {
-				if = {
-					limit = {
-						NOT = {
-							has_terrain = mountain
+			custom_trigger_tooltip = {
+				tooltip = swi_promote_city_growth_tooltip
+				all_owned_province = {
+					if = {
+						limit = {
+							NOT = {
+								has_terrain = mountain
+							}
 						}
+						grown_by_development = 3
+						has_production_building_trigger = yes
+						num_of_buildings_in_province = 2
+						num_of_times_expanded_infrastructure = 1
 					}
-					grown_by_development = 3
-					has_production_building_trigger = yes
-					num_of_buildings_in_province = 2
-					num_of_times_expanded_infrastructure = 1
 				}
 			}
 			treasury = 200
@@ -348,7 +356,6 @@ swiss_city_missions_2 = {
 		position = 4
 		provinces_to_highlight = {
 			owned_by = ROOT
-			is_core = ROOT
 			trade_goods = livestock
 			OR ={
 				has_manufactory_trigger = no
@@ -357,20 +364,23 @@ swiss_city_missions_2 = {
 			}
 		}
 		trigger = {
-			all_core_province = {
-				if = {
-					limit = {
-						trade_goods = livestock
+			custom_trigger_tooltip = {
+				tooltip = swi_cheese_tooltip
+				all_owned_province = {
+					if = {
+						limit = {
+							trade_goods = livestock
+						}
+						has_manufactory_trigger = yes
+						has_production_building_trigger = yes
+						base_production = 15
 					}
-					has_manufactory_trigger = yes
-					has_production_building_trigger = yes
-					base_production = 15
 				}
 			}
 			treasury = 200
 		}
 		effect = {
-			every_core_province = {
+			every_owned_province = {
 				if = {
 					limit = {
 						trade_goods = livestock
@@ -405,7 +415,6 @@ swiss_maritime_missions_2 = {
 		position = 5
 		provinces_to_highlight = {
 			owned_by = ROOT
-			is_core = ROOT
 			trade_goods = cloth
 			OR ={
 				has_manufactory_trigger = no
@@ -415,15 +424,18 @@ swiss_maritime_missions_2 = {
 			}
 		}
 		trigger = {
-			num_of_light_ship = 10
 			has_institution = global_trade
-			all_core_province = {
-				if = {
-					limit = { trade_goods = cloth }
-					has_manufactory_trigger = yes
-					has_production_building_trigger = yes
-					has_trade_building_trigger = yes
-					base_production = 18
+			num_of_light_ship = 10
+			custom_trigger_tooltip = {
+				tooltip = swi_sell_our_cloth_tooltip
+				all_owned_province = {
+					if = {
+						limit = { trade_goods = cloth }
+						has_manufactory_trigger = yes
+						has_production_building_trigger = yes
+						has_trade_building_trigger = yes
+						base_production = 18
+					}
 				}
 			}
 		}
@@ -437,7 +449,7 @@ swiss_maritime_missions_2 = {
 			186 = { 	# Paris (Champagne trade node)
 				add_trade_modifier = {
 					who = ROOT
-					duration = 18250
+					duration = 18250	# 50 Years
 					power = 25
 					key = swi_cloth_sale_trade_modifier
 				}
@@ -446,7 +458,7 @@ swiss_maritime_missions_2 = {
 			1876 = {	# Frankfurt (Rheinland Trade Node)
 				add_trade_modifier = {
 					who = ROOT
-					duration = 18250
+					duration = 18250	# 50 Years
 					power = 25
 					key = swi_cloth_sale_trade_modifier
 				}
@@ -455,7 +467,7 @@ swiss_maritime_missions_2 = {
 			1298 = {	# Ligurian See (Genoa trade node)
 				add_trade_modifier = {
 					who = ROOT
-					duration = 18250
+					duration = 18250	# 50 Years
 					power = 25
 					key = swi_cloth_sale_trade_modifier
 				}
@@ -463,7 +475,7 @@ swiss_maritime_missions_2 = {
 			134 = { 	# Wien (Wien trade node)
 				add_trade_modifier = {
 					who = ROOT
-					duration = 18250
+					duration = 18250	# 50 Years
 					power = 25
 					key = swi_cloth_sale_trade_modifier
 				}
@@ -492,7 +504,6 @@ swiss_mountain_missions_2 = {
 		position = 6
 		provinces_to_highlight = {
 			owned_by = ROOT
-			is_core = ROOT
 			has_terrain = mountain
 			OR = {
 				NOT = { num_of_buildings_in_province = 1 }
@@ -500,15 +511,19 @@ swiss_mountain_missions_2 = {
 			}
 		}
 		trigger = {
-			all_core_province = {
-				if = {
-					limit = {
-						has_terrain = mountain
+			custom_trigger_tooltip = {
+				tooltip = swi_utilize_mountains_tooltip
+				all_owned_province = {
+					if = {
+						limit = {
+							has_terrain = mountain
+						}
+						num_of_buildings_in_province = 1
+						num_of_times_expanded_infrastructure = 1
 					}
-					num_of_buildings_in_province = 1
-					num_of_times_expanded_infrastructure = 1
 				}
 			}
+			
 			treasury = 200
 		}
 		effect = {
