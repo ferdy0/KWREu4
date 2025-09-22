@@ -30,6 +30,7 @@ on_startup = {
 		flavor_geo.1 # Disaster info
 		flavor_mam.111 # Mamluks-Syria relations
 		potestate_events.1 # Potestate setting up variables
+		additional_flavor_swi.15 # SWI setup
 	}
 	on_startup_effect = yes
 	on_startup_dlc_cleanup_effect = yes
@@ -5502,7 +5503,7 @@ on_create_vassal = {
 	        }
 	        change_variable = {
                 which = half_potestate_members
-                value = ´1
+                value = 1
             }
             clr_global_flag = odd_potestate_number
 	    }
@@ -5691,7 +5692,7 @@ on_country_released = {
 	    else = {
 	        subtract_variable = {
                 which = half_potestate_members
-                value = ´1
+                value = 1
             }
 	        set_global_flag = odd_potestate_number
 	    }

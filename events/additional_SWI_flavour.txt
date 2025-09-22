@@ -689,7 +689,7 @@ country_event = {
 	id = additional_flavor_swi.11
 	title = "additional_flavor_swi.11.t"
 	desc = "additional_flavor_swi.11.d"
-	picture = PORT_BLOCKADED_eventPicture
+	picture = SHIP_SAILING_eventPicture
 
 	is_triggered_only = yes
 
@@ -703,7 +703,7 @@ country_event = {
 	id = additional_flavor_swi.12
 	title = "additional_flavor_swi.12.t"
 	desc = "additional_flavor_swi.12.d"
-	picture = PORT_BLOCKADED_eventPicture
+	picture = LOADING_SHIP_eventPicture
 
 	is_triggered_only = yes
 
@@ -771,7 +771,9 @@ country_event = {
 		trigger = {		
 			event_target:swi_ship_construction_port = {
                     NOT = { province_id = 4753 }
-					owned_by = HUN
+					HUN = {
+						owns = 4753
+					}
                 }
 		}
 		4753 = {
@@ -785,12 +787,12 @@ country_event = {
 	}
 }
 
-# Change ship construction port event
+# Change ship construction port receiver agreement
 country_event = {
 	id = additional_flavor_swi.13
 	title = "additional_flavor_swi.13.t"
 	desc = "additional_flavor_swi.13.d"
-	picture = PORT_BLOCKADED_eventPicture
+	picture = SHIP_SAILING_eventPicture
 
 	is_triggered_only = yes
 
@@ -810,3 +812,118 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = additional_flavor_swi.14
+	title = "additional_flavor_swi.14.t"
+	desc = "additional_flavor_swi.14.d"
+	picture = SHIP_SAILING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# NO
+		name = additional_flavor_swi.14.a
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {	# YES
+		name = additional_flavor_swi.14.b
+		ai_chance = {
+			factor = 100
+		}
+		event_target:swi_potential_ship_construction_port = {
+			save_global_event_target_as = swi_ship_construction_port 
+		}
+	}
+}
+
+# SWI setup
+country_event = {
+	id = additional_flavor_swi.15
+	title = "additional_flavor_swi.15.t"
+	desc = "additional_flavor_swi.15.d"
+	picture = OVEREXTENSION_eventPicture
+
+	is_triggered_only = yes
+
+	hidden = yes	# TODO maybe add some explanation instead of having it hidden
+
+	trigger = {
+		tag = SWI
+	}
+
+	immediate = {
+		# Compiler complains too much if not done
+		2986 = {	# Cagliari
+			save_global_event_target_as = swi_ship_construction_port
+		}
+
+		add_country_modifier = {
+			name = swi_city_autonomy_modifier_4
+			duration = -1
+		}
+		country_event = {
+			id = additional_flavor_swi.16
+		}
+	}
+
+	option = {
+		name = "OK"
+	}
+}
+
+# SWI manpower - mercenary conversion
+country_event = {
+	id = additional_flavor_swi.16
+	title = "additional_flavor_swi.16.t"
+	desc = "additional_flavor_swi.16.d"
+	picture = OVEREXTENSION_eventPicture
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+	trigger = {
+		tag = SWI
+	}
+
+	immediate = {
+		country_event = {
+			id = additional_flavor_swi.16
+			days = 30	# Do this Monthly-ish should be good enough
+		}
+		set_variable = {
+			which = swi_mercenary_act_mod_size_var
+			value = 0
+		}
+		export_total_manpower_swi = {		# change this for ballancing
+			res_var = swi_mercenary_act_mod_size_var
+		}
+
+		set_variable = {
+			which = swi_mercenary_act_loca_var
+			which = swi_mercenary_act_mod_size_var
+		}
+		
+		multiply_variable = {
+			which = swi_mercenary_act_loca_var
+			value = 0.1		# minimum the individual modifier can be 
+		}
+		if = {
+			limit = {
+				has_estate_privilege = estate_nobles_swi_mercenary_act_privelege
+			}
+			apply_mercenary_act_modifier = {
+				var = swi_mercenary_act_mod_size_var
+			}
+		}
+		
+
+	}
+
+	option = {
+		name = "OK"
+	}
+}
+

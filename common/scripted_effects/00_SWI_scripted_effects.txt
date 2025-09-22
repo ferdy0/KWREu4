@@ -1,0 +1,558 @@
+# Calculate the total mil dev (maybe modified) for the swiss Mercenary Act mechanic
+export_total_manpower_swi = {
+    # Inputs:
+    #   res_var - the name of the variable into which the number goes
+    # Outputs:
+    #   res_var - the calculated number
+    set_variable = {
+        which = $res_var$
+        value = 0
+    }
+    every_owned_province = {
+        export_to_variable = {
+            which = $res_var$	# Province Scope version
+            value = trigger_value:base_manpower
+        }
+
+        # maybe some more stuff e.g. autonomy or buildings or some such
+
+        owner = {		# WHY PDX, can't we compare different named variables in different scopes
+            change_variable = {
+                which = $res_var$	# Country Scope
+                which = PREV	# province scope, but has to be same name for whatever reason has to be same name variable
+            } 
+        }
+    }
+    # if above is expanded don't forget to round the result
+}
+
+# Apply the relevant modifiers for the swiss Mercenary Act mechanic
+apply_mercenary_act_modifier = {
+    set_variable = {
+        which = modulo_res
+        which = $var$
+    }
+    set_variable = {
+        which = swi_ma_quotient_variable
+        which = $var$
+    }
+
+    # This is gonna be ugly: (could optimise a litle by making way uglier, decided not to)
+    # I have used a python script to print most of the following
+     # Modifier 1
+    modulo_variable = {
+        which = modulo_res
+        value = 2
+    }
+    if = {
+        limit = {
+            AND = {
+                check_variable = {
+                    which = modulo_res
+                    value = 1
+                }
+                NOT = { has_country_modifier = swi_mercenary_act_modifier_1}
+            }
+            
+        }
+        add_country_modifier = {
+            name = swi_mercenary_act_modifier_1
+            duration = -1
+            hidden = yes
+        }
+    }
+    else_if = {
+        limit = {
+            has_country_modifier = swi_mercenary_act_modifier_1
+        }
+        remove_country_modifier = swi_mercenary_act_modifier_1
+    }
+
+    subtract_variable = {
+        which = swi_ma_quotient_variable
+        which = modulo_res
+    }
+
+    divide_variable = {
+        which = swi_ma_quotient_variable
+        value = 2
+    }
+    set_variable = {
+        which = modulo_res
+        which = swi_ma_quotient_variable
+    }
+           
+     # Modifier 2
+    modulo_variable = {
+        which = modulo_res
+        value = 2
+    }
+    if = {
+        limit = {
+            AND = {
+                check_variable = {
+                    which = modulo_res
+                    value = 1
+                }
+                NOT = { has_country_modifier = swi_mercenary_act_modifier_2}
+            }
+            
+        }
+        add_country_modifier = {
+            name = swi_mercenary_act_modifier_2
+            duration = -1
+            hidden = yes
+        }
+    }
+    else_if = {
+        limit = {
+            has_country_modifier = swi_mercenary_act_modifier_2
+        }
+        remove_country_modifier = swi_mercenary_act_modifier_2
+    }
+
+    subtract_variable = {
+        which = swi_ma_quotient_variable
+        which = modulo_res
+    }
+
+    divide_variable = {
+        which = swi_ma_quotient_variable
+        value = 2
+    }
+    set_variable = {
+        which = modulo_res
+        which = swi_ma_quotient_variable
+    }
+           
+     # Modifier 4
+    modulo_variable = {
+        which = modulo_res
+        value = 2
+    }
+    if = {
+        limit = {
+            AND = {
+                check_variable = {
+                    which = modulo_res
+                    value = 1
+                }
+                NOT = { has_country_modifier = swi_mercenary_act_modifier_4}
+            }
+            
+        }
+        add_country_modifier = {
+            name = swi_mercenary_act_modifier_4
+            duration = -1
+            hidden = yes
+        }
+    }
+    else_if = {
+        limit = {
+            has_country_modifier = swi_mercenary_act_modifier_4
+        }
+        remove_country_modifier = swi_mercenary_act_modifier_4
+    }
+
+    subtract_variable = {
+        which = swi_ma_quotient_variable
+        which = modulo_res
+    }
+
+    divide_variable = {
+        which = swi_ma_quotient_variable
+        value = 2
+    }
+    set_variable = {
+        which = modulo_res
+        which = swi_ma_quotient_variable
+    }
+           
+     # Modifier 8
+    modulo_variable = {
+        which = modulo_res
+        value = 2
+    }
+    if = {
+        limit = {
+            AND = {
+                check_variable = {
+                    which = modulo_res
+                    value = 1
+                }
+                NOT = { has_country_modifier = swi_mercenary_act_modifier_8}
+            }
+            
+        }
+        add_country_modifier = {
+            name = swi_mercenary_act_modifier_8
+            duration = -1
+            hidden = yes
+        }
+    }
+    else_if = {
+        limit = {
+            has_country_modifier = swi_mercenary_act_modifier_8
+        }
+        remove_country_modifier = swi_mercenary_act_modifier_8
+    }
+
+    subtract_variable = {
+        which = swi_ma_quotient_variable
+        which = modulo_res
+    }
+
+    divide_variable = {
+        which = swi_ma_quotient_variable
+        value = 2
+    }
+    set_variable = {
+        which = modulo_res
+        which = swi_ma_quotient_variable
+    }
+           
+     # Modifier 16
+    modulo_variable = {
+        which = modulo_res
+        value = 2
+    }
+    if = {
+        limit = {
+            AND = {
+                check_variable = {
+                    which = modulo_res
+                    value = 1
+                }
+                NOT = { has_country_modifier = swi_mercenary_act_modifier_16}
+            }
+            
+        }
+        add_country_modifier = {
+            name = swi_mercenary_act_modifier_16
+            duration = -1
+            hidden = yes
+        }
+    }
+    else_if = {
+        limit = {
+            has_country_modifier = swi_mercenary_act_modifier_16
+        }
+        remove_country_modifier = swi_mercenary_act_modifier_16
+    }
+
+    subtract_variable = {
+        which = swi_ma_quotient_variable
+        which = modulo_res
+    }
+
+    divide_variable = {
+        which = swi_ma_quotient_variable
+        value = 2
+    }
+    set_variable = {
+        which = modulo_res
+        which = swi_ma_quotient_variable
+    }
+           
+     # Modifier 32
+    modulo_variable = {
+        which = modulo_res
+        value = 2
+    }
+    if = {
+        limit = {
+            AND = {
+                check_variable = {
+                    which = modulo_res
+                    value = 1
+                }
+                NOT = { has_country_modifier = swi_mercenary_act_modifier_32}
+            }
+            
+        }
+        add_country_modifier = {
+            name = swi_mercenary_act_modifier_32
+            duration = -1
+            hidden = yes
+        }
+    }
+    else_if = {
+        limit = {
+            has_country_modifier = swi_mercenary_act_modifier_32
+        }
+        remove_country_modifier = swi_mercenary_act_modifier_32
+    }
+
+    subtract_variable = {
+        which = swi_ma_quotient_variable
+        which = modulo_res
+    }
+
+    divide_variable = {
+        which = swi_ma_quotient_variable
+        value = 2
+    }
+    set_variable = {
+        which = modulo_res
+        which = swi_ma_quotient_variable
+    }
+           
+     # Modifier 64
+    modulo_variable = {
+        which = modulo_res
+        value = 2
+    }
+    if = {
+        limit = {
+            AND = {
+                check_variable = {
+                    which = modulo_res
+                    value = 1
+                }
+                NOT = { has_country_modifier = swi_mercenary_act_modifier_64}
+            }
+            
+        }
+        add_country_modifier = {
+            name = swi_mercenary_act_modifier_64
+            duration = -1
+            hidden = yes
+        }
+    }
+    else_if = {
+        limit = {
+            has_country_modifier = swi_mercenary_act_modifier_64
+        }
+        remove_country_modifier = swi_mercenary_act_modifier_64
+    }
+
+    subtract_variable = {
+        which = swi_ma_quotient_variable
+        which = modulo_res
+    }
+
+    divide_variable = {
+        which = swi_ma_quotient_variable
+        value = 2
+    }
+    set_variable = {
+        which = modulo_res
+        which = swi_ma_quotient_variable
+    }
+           
+     # Modifier 128
+    modulo_variable = {
+        which = modulo_res
+        value = 2
+    }
+    if = {
+        limit = {
+            AND = {
+                check_variable = {
+                    which = modulo_res
+                    value = 1
+                }
+                NOT = { has_country_modifier = swi_mercenary_act_modifier_128}
+            }
+            
+        }
+        add_country_modifier = {
+            name = swi_mercenary_act_modifier_128
+            duration = -1
+            hidden = yes
+        }
+    }
+    else_if = {
+        limit = {
+            has_country_modifier = swi_mercenary_act_modifier_128
+        }
+        remove_country_modifier = swi_mercenary_act_modifier_128
+    }
+
+    subtract_variable = {
+        which = swi_ma_quotient_variable
+        which = modulo_res
+    }
+
+    divide_variable = {
+        which = swi_ma_quotient_variable
+        value = 2
+    }
+    set_variable = {
+        which = modulo_res
+        which = swi_ma_quotient_variable
+    }
+           
+     # Modifier 256
+    modulo_variable = {
+        which = modulo_res
+        value = 2
+    }
+    if = {
+        limit = {
+            AND = {
+                check_variable = {
+                    which = modulo_res
+                    value = 1
+                }
+                NOT = { has_country_modifier = swi_mercenary_act_modifier_256}
+            }
+            
+        }
+        add_country_modifier = {
+            name = swi_mercenary_act_modifier_256
+            duration = -1
+            hidden = yes
+        }
+    }
+    else_if = {
+        limit = {
+            has_country_modifier = swi_mercenary_act_modifier_256
+        }
+        remove_country_modifier = swi_mercenary_act_modifier_256
+    }
+
+    subtract_variable = {
+        which = swi_ma_quotient_variable
+        which = modulo_res
+    }
+
+    divide_variable = {
+        which = swi_ma_quotient_variable
+        value = 2
+    }
+    set_variable = {
+        which = modulo_res
+        which = swi_ma_quotient_variable
+    }
+           
+     # Modifier 512
+    modulo_variable = {
+        which = modulo_res
+        value = 2
+    }
+    if = {
+        limit = {
+            AND = {
+                check_variable = {
+                    which = modulo_res
+                    value = 1
+                }
+                NOT = { has_country_modifier = swi_mercenary_act_modifier_512}
+            }
+            
+        }
+        add_country_modifier = {
+            name = swi_mercenary_act_modifier_512
+            duration = -1
+            hidden = yes
+        }
+    }
+    else_if = {
+        limit = {
+            has_country_modifier = swi_mercenary_act_modifier_512
+        }
+        remove_country_modifier = swi_mercenary_act_modifier_512
+    }
+
+    subtract_variable = {
+        which = swi_ma_quotient_variable
+        which = modulo_res
+    }
+
+    divide_variable = {
+        which = swi_ma_quotient_variable
+        value = 2
+    }
+    set_variable = {
+        which = modulo_res
+        which = swi_ma_quotient_variable
+    }
+           
+     # Modifier 1024
+    modulo_variable = {
+        which = modulo_res
+        value = 2
+    }
+    if = {
+        limit = {
+            AND = {
+                check_variable = {
+                    which = modulo_res
+                    value = 1
+                }
+                NOT = { has_country_modifier = swi_mercenary_act_modifier_1024}
+            }
+            
+        }
+        add_country_modifier = {
+            name = swi_mercenary_act_modifier_1024
+            duration = -1
+            hidden = yes
+        }
+    }
+    else_if = {
+        limit = {
+            has_country_modifier = swi_mercenary_act_modifier_1024
+        }
+        remove_country_modifier = swi_mercenary_act_modifier_1024
+    }    
+}
+
+# TODO: put this in somewhere as a contingency (on_revoke privelege or an event, that checks something)
+clear_mercenary_act_modifier = {
+        if = {
+			limit = { has_country_modifier = swi_mercenary_act_modifier_1 }
+			remove_country_modifier = swi_mercenary_act_modifier_1
+		}
+
+        if = {
+			limit = { has_country_modifier = swi_mercenary_act_modifier_2 }
+			remove_country_modifier = swi_mercenary_act_modifier_2
+		}
+
+        if = {
+			limit = { has_country_modifier = swi_mercenary_act_modifier_4 }
+			remove_country_modifier = swi_mercenary_act_modifier_4
+		}
+
+        if = {
+			limit = { has_country_modifier = swi_mercenary_act_modifier_8 }
+			remove_country_modifier = swi_mercenary_act_modifier_8
+		}
+
+        if = {
+			limit = { has_country_modifier = swi_mercenary_act_modifier_16 }
+			remove_country_modifier = swi_mercenary_act_modifier_16
+		}
+
+        if = {
+			limit = { has_country_modifier = swi_mercenary_act_modifier_32 }
+			remove_country_modifier = swi_mercenary_act_modifier_32
+		}
+
+        if = {
+			limit = { has_country_modifier = swi_mercenary_act_modifier_64 }
+			remove_country_modifier = swi_mercenary_act_modifier_64
+		}
+
+        if = {
+			limit = { has_country_modifier = swi_mercenary_act_modifier_128 }
+			remove_country_modifier = swi_mercenary_act_modifier_128
+		}
+
+        if = {
+			limit = { has_country_modifier = swi_mercenary_act_modifier_256 }
+			remove_country_modifier = swi_mercenary_act_modifier_256
+		}
+
+        if = {
+			limit = { has_country_modifier = swi_mercenary_act_modifier_512 }
+			remove_country_modifier = swi_mercenary_act_modifier_512
+		}
+
+        if = {
+			limit = { has_country_modifier = swi_mercenary_act_modifier_1024 }
+			remove_country_modifier = swi_mercenary_act_modifier_1024
+		}
+}

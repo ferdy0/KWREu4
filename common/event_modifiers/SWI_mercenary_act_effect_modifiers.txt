@@ -1,0 +1,46 @@
+# minimum the individual modifier can be
+# better to change stuff in the modifier value calculation scripetd effect
+swi_mercenary_act_modifier_1 = {
+    merc_maintenance_modifier = -0.001
+}
+
+swi_mercenary_act_modifier_2 = {
+    merc_maintenance_modifier = -0.002
+}
+
+swi_mercenary_act_modifier_4 = {
+    merc_maintenance_modifier = -0.004
+}
+
+swi_mercenary_act_modifier_8 = {
+    merc_maintenance_modifier = -0.008
+}
+
+swi_mercenary_act_modifier_16 = {
+    merc_maintenance_modifier = -0.016
+}
+
+swi_mercenary_act_modifier_32 = {
+    merc_maintenance_modifier = -0.032
+}
+
+swi_mercenary_act_modifier_64 = {
+    merc_maintenance_modifier = -0.064
+}
+
+swi_mercenary_act_modifier_128 = {
+    merc_maintenance_modifier = -0.128
+}
+
+swi_mercenary_act_modifier_256 = {
+    merc_maintenance_modifier = -0.256
+}
+
+swi_mercenary_act_modifier_512 = {
+    merc_maintenance_modifier = -0.512
+}
+
+swi_mercenary_act_modifier_1024 = {
+    merc_maintenance_modifier = -1.024
+}
+

@@ -4964,3 +4964,27 @@ estate_nobles_austrian_nobility_privileges = {
 		factor = 1
 	}
 }
+
+estate_nobles_swi_mercenary_act_privelege = {
+	icon = estate_eunuchs_establish_favor_system_privilege
+	max_absolutism = -10
+	influence = 0.05
+	loyalty = 0.05
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	can_revoke = no
+	is_valid = {
+		tag = SWI # TODO add conditions
+	}
+	on_granted = {
+		custom_tooltip = SWI_MERCENARY_ACT_PRIVELEGE_TOOLTIP
+	}
+
+	on_revoked = {
+		custom_tooltip = SWI_MERCENARY_ACT_PRIVELEGE_TOOLTIP
+		
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}

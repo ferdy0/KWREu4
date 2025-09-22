@@ -1,0 +1,2 @@
+﻿l_english:
+ SWI_MERCENARY_ACT_PRIVELEGE_TOOLTIP:0 "Enacting this privelege will remove all manpower but grant §G[Root.swi_mercenary_act_loca_var.GetValue]%§"
