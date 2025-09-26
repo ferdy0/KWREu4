@@ -21,7 +21,7 @@ country_event = {
 	
 	immediate = {
 		set_country_flag = had_tyh_civil_war
-		add_stability = -2
+		add_stability = -3
 		hidden_effect = {
 			random_owned_province = {
 				limit = {

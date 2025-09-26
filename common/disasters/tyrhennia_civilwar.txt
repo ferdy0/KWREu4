@@ -70,7 +70,7 @@ tyrhennia_civil_war = {
 
 	
 	can_end = {
-		hidden_trigger = { has_country_flag = civil_war_in_tyrhennia }
+		had_country_flag = { flag = had_tyh_civil_war days = 1825 }
 		stability = 1
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		NOT = {
