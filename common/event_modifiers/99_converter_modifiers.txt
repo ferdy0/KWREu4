@@ -574,3 +574,24 @@ counter_trigger_levantine_cavratio = {
 counter_trigger_levantine_cavflanking = {
     cavalry_flanking = -10
 }
+merchants_war = {
+    province_trade_power_modifier = -0.5
+}
+no_peace_no_authority = {
+    imperial_authority_value = -0.01
+}
+refused_peace_emperor = {
+    diplomatic_reputation = -1
+}
+accepted_peace_emperor = {
+    war_exhaustion = 0.1
+}
+peace_maker_dictated = {
+    imperial_authority_value = 0.01
+    diplomatic_reputation = 1
+}
+sour_looser_gotland_war = {
+    navy_tradition = 0.5
+    naval_maintenance_modifier = 0.15
+    diplomatic_reputation = -1
+}

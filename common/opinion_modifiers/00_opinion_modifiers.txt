@@ -5375,4 +5375,9 @@ afr_bad_boi = {
 
 hansa_stealing_merchants = {
 	opinion = -20 
-} 
+}
+
+war_refused_peace = {
+	opinion = -50
+	yearly_decay = 1
+}

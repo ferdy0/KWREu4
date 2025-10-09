@@ -1340,3 +1340,855 @@ country_event = {
         add_historical_rival = ORI
    	}
 }
+
+country_event = {
+	id = tyrhennia_civil_war.81
+	title = tyrhennia_civil_war.81.t
+	desc = tyrhennia_civil_war.81.d
+	picture = BUDDHA_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+        months = 3
+    }
+
+	trigger = {
+	    OR = {
+	        AND = {
+		        tag = NOV
+		        25 = {
+		            owner = {
+		                OR = {
+		                    tag = HSA
+		                    is_in_trade_league_with = HSA
+		                    vassal_of = HSA
+		                }
+		            }
+		        }
+		    }
+	        AND = {
+		        tag = HSA
+		        25 = {
+		            owner = {
+		                OR = {
+		                    tag = NOV
+		                    is_in_trade_league_with = NOV
+		                    vassal_of = NOV
+		                }
+		            }
+		        }
+		    }
+		}
+	}
+
+	option = { #war now
+		name = tyrhennia_civil_war.81.a
+		if = {
+		    limit = {
+		        tag = NOV
+		    }
+		    declare_war_with_cb = {
+                who = HSA
+                casus_belli = cb_trade_war_triggered
+            }
+		}
+		if = {
+		    limit = {
+		        tag = HSA
+		    }
+		    declare_war_with_cb = {
+                who = NOV
+                casus_belli = cb_trade_war_triggered
+            }
+		}
+        country_event = {
+            id = tyrhennia_civil_war.83
+            days = 30
+            random = 15
+        }
+        set_global_flag = war_lubeck_novg
+   	}
+
+	option = { #war later
+		name = tyrhennia_civil_war.81.b
+        country_event = {
+            id = tyrhennia_civil_war.82
+            days = 1825
+            random = 15
+        }
+   	}
+
+	option = { #no war
+		name = tyrhennia_civil_war.81.c
+		if = {
+		    limit = {
+		        tag = HSA
+		    }
+            25 = {
+                remove_claim = HSA
+            }
+		}
+		if = {
+		    limit = {
+		        tag = NOV
+		    }
+            25 = {
+                remove_claim = NOV
+            }
+		}
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.82
+	title = tyrhennia_civil_war.82.t
+	desc = tyrhennia_civil_war.82.d
+	picture = BUDDHA_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #war now
+		name = tyrhennia_civil_war.82.a
+		if = {
+		    limit = {
+		        tag = NOV
+		    }
+		    declare_war_with_cb = {
+                who = HSA
+                casus_belli = cb_trade_war_triggered
+            }
+		}
+		if = {
+		    limit = {
+		        tag = HSA
+		    }
+		    declare_war_with_cb = {
+                who = NOV
+                casus_belli = cb_trade_war_triggered
+            }
+		}
+        country_event = {
+            id = tyrhennia_civil_war.83
+            days = 30
+            random = 15
+        }
+        set_global_flag = war_lubeck_novg
+   	}
+
+	option = { #no war
+		name = tyrhennia_civil_war.82.b
+		if = {
+		    limit = {
+		        tag = HSA
+		    }
+            25 = {
+                remove_claim = HSA
+            }
+		}
+		if = {
+		    limit = {
+		        tag = NOV
+		    }
+            25 = {
+                remove_claim = NOV
+            }
+		}
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.83
+	title = tyrhennia_civil_war.83.t
+	desc = tyrhennia_civil_war.83.d
+	picture = BUDDHA_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+    major_trigger = {
+        has_discovered = 25
+    }
+
+	option = { #ok
+		name = tyrhennia_civil_war.83.a
+        25 = {
+            every_trade_node_member_province = {
+                limit = {
+                    has_port = yes
+                }
+                add_province_modifier = {
+                    name = merchants_war
+                    duration = -1
+                }
+            }
+        }
+        34 = {
+            every_trade_node_member_province = {
+                limit = {
+                    has_port = yes
+                }
+                add_province_modifier = {
+                    name = merchants_war
+                    duration = -1
+                }
+            }
+        }
+        45 = {
+            every_trade_node_member_province = {
+                limit = {
+                    has_port = yes
+                }
+                add_province_modifier = {
+                    name = merchants_war
+                    duration = -1
+                }
+            }
+        }
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.84
+	title = tyrhennia_civil_war.84.t
+	desc = tyrhennia_civil_war.84.d
+	picture = BUDDHA_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+        days = 1
+    }
+
+	trigger = {
+	    has_global_flag = war_lubeck_novg
+	    had_global_flag = {
+        	flag = war_lubeck_novg
+        	days = 90
+        }
+        is_emperor = yes
+	}
+
+	option = { #help lubeck
+		name = tyrhennia_civil_war.84.a
+		if = {
+		    limit = {
+		        HSA = {
+		            offensive_war_with = NOV
+		        }
+		    }
+		    join_all_offensive_wars_of = HSA
+		}
+		else = {
+		    join_all_defensive_wars_of = HSA
+		}
+   	}
+
+	option = { #help novgo
+		name = tyrhennia_civil_war.84.b
+		if = {
+		    limit = {
+		        NOV = {
+		            offensive_war_with = HSA
+		        }
+		    }
+		    join_all_offensive_wars_of = NOV
+		}
+		else = {
+		    join_all_defensive_wars_of = NOV
+		}
+   	}
+
+	option = { #make peace
+		name = tyrhennia_civil_war.84.c
+		HSA = {
+			country_event = { id = tyrhennia_civil_war.85 days = 30 }
+		}
+		NOV = {
+			country_event = { id = tyrhennia_civil_war.85 days = 30 }
+		}
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.85
+	title = tyrhennia_civil_war.85.t
+	desc = tyrhennia_civil_war.85.d
+	picture = BUDDHA_eventPicture
+
+	fire_only_once = yes
+    is_triggered_only = yes
+
+	option = { #no
+		name = tyrhennia_civil_war.85.a
+        emperor = {
+            add_opinion = {
+                who = ROOT
+                modifier = war_refused_peace
+            }
+            reverse_add_opinion = {
+                who = ROOT
+                modifier = war_refused_peace
+            }
+            add_country_modifier = {
+                name = no_peace_no_authority
+                duration = 365
+            }
+        }
+        add_country_modifier = {
+	        name = refused_peace_emperor
+			duration = 3650
+        }
+   	}
+
+	option = { #okay
+		name = tyrhennia_civil_war.85.b
+        add_country_modifier = {
+	        name = accepted_peace_emperor
+			duration = -1
+        }
+        if = {
+            limit = {
+                tag = HSA
+            }
+   		    set_global_flag = lubeck_accepted_peace
+   		}
+        if = {
+            limit = {
+                tag = NOV
+            }
+   		    set_global_flag = novg_accepted_peace
+   		}
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.86
+	title = tyrhennia_civil_war.86.t
+	desc = tyrhennia_civil_war.86.d
+	picture = BUDDHA_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+        days = 1
+    }
+
+	major = yes
+    major_trigger = {
+        has_discovered = 25
+    }
+
+	trigger = {
+	    has_global_flag = lubeck_accepted_peace
+	    has_global_flag = novg_accepted_peace
+	    tag = HSA
+	}
+
+	option = { #okay
+		name = tyrhennia_civil_war.86.b
+        white_peace = NOV
+        emperor = {
+            add_country_modifier = {
+                name = peace_maker_dictated
+            	duration = 3650
+            }
+            add_prestige = 25
+        }
+        clr_global_flag = war_lubeck_novg
+        25 = {
+            every_trade_node_member_province = {
+                limit = {
+                    has_port = yes
+                }
+                remove_province_modifier  = merchants_war
+            }
+        }
+        34 = {
+            every_trade_node_member_province = {
+                limit = {
+                    has_port = yes
+                }
+                remove_province_modifier  = merchants_war
+            }
+        }
+        45 = {
+            every_trade_node_member_province = {
+                limit = {
+                    has_port = yes
+                }
+                remove_province_modifier  = merchants_war
+            }
+        }
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.87
+	title = tyrhennia_civil_war.87.t
+	desc = tyrhennia_civil_war.87.d
+	picture = BUDDHA_eventPicture
+
+	mean_time_to_happen = {
+        days = 30
+    }
+
+	trigger = {
+	    has_global_flag = war_lubeck_novg
+	    had_global_flag = {
+        	flag = war_lubeck_novg
+        	days = 30
+        }
+        OR = {
+            owns = 38
+            owns = 12
+            owns = 43
+            owns = 17
+            owns = 27
+        }
+        NOT = {
+            OR = {
+                offensive_war_with = NOV
+                offensive_war_with = HSA
+                defensive_war_with = NOV
+                defensive_war_with = HSA
+                has_country_flag = had_lubeck_novg_war_event
+            }
+        }
+	}
+
+	immediate = {
+        set_country_flag = had_lubeck_novg_war_event
+	}
+
+	option = { #help attacker
+		name = tyrhennia_civil_war.87.a
+		ai_chance = { factor = 0 }
+		if = {
+		    limit = {
+		        HSA = {
+		            offensive_war_with = NOV
+		        }
+		    }
+		    join_all_offensive_wars_of = HSA
+		}
+		else = {
+		    join_all_offensive_wars_of = NOV
+		}
+   	}
+
+	option = { #help defender
+		name = tyrhennia_civil_war.87.b
+		ai_chance = { factor = 0 }
+		if = {
+		    limit = {
+		        NOV = {
+		            offensive_war_with = HSA
+		        }
+		    }
+		    join_all_defensive_wars_of = HSA
+		}
+		else = {
+		    join_all_defensive_wars_of = NOV
+		}
+   	}
+
+	option = { #who gives a damn
+		name = tyrhennia_civil_war.87.c
+		ai_chance = { factor = 100 }
+		25 = {
+            add_trade_modifier = {
+                who = HSA
+                duration = 5475
+                power = -10
+            }
+            add_trade_modifier = {
+                who = NOV
+                duration = 5475
+                power = -10
+            }
+		}
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.88
+	title = tyrhennia_civil_war.88.t
+	desc = tyrhennia_civil_war.88.d
+	picture = BUDDHA_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+        days = 1
+    }
+
+	trigger = {
+	    has_global_flag = war_lubeck_novg
+	    had_global_flag = {
+        	flag = war_lubeck_novg
+        	days = 180
+        }
+        owns = 97
+	}
+
+	option = { #help lubeck
+		name = tyrhennia_civil_war.88.a
+		if = {
+		    limit = {
+		        HSA = {
+		            offensive_war_with = NOV
+		        }
+		    }
+		    join_all_offensive_wars_of = HSA
+		}
+		else = {
+		    join_all_defensive_wars_of = HSA
+		}
+		set_global_flag = nether_helps_lubeck
+   	}
+
+	option = { #help novgo
+		name = tyrhennia_civil_war.88.b
+		if = {
+		    limit = {
+		        NOV = {
+		            offensive_war_with = HSA
+		        }
+		    }
+		    join_all_offensive_wars_of = NOV
+		}
+		else = {
+		    join_all_defensive_wars_of = NOV
+		}
+		set_global_flag = nether_helps_novgorod
+   	}
+
+	option = { #chill bro
+		name = tyrhennia_civil_war.88.c
+		add_prestige = 1
+   	}
+}
+
+country_event = {
+	id = tyrhennia_civil_war.89
+	title = tyrhennia_civil_war.89.t
+	desc = tyrhennia_civil_war.89.d
+	picture = BUDDHA_eventPicture
+
+	hidden = yes
+
+	mean_time_to_happen = {
+        days = 1
+    }
+
+	trigger = {
+	    has_global_flag = war_lubeck_novg
+        controls = 25
+        NOT = { has_country_flag = controller_of_gotland }
+	}
+
+	option = { #hidden flag
+		name = tyrhennia_civil_war.89.a
+		if = {
+		    limit = {
+		        tag = HSA
+		    }
+		    NOV = {
+		        clr_country_flag = controller_of_gotland
+		    }
+		}
+		else = {
+		    HSA = {
+		        clr_country_flag = controller_of_gotland
+		    }
+		}
+        set_country_flag = controller_of_gotland
+    }
+}
+
+country_event = {
+	id = tyrhennia_civil_war.90
+	title = tyrhennia_civil_war.90.t
+	desc = tyrhennia_civil_war.90.d
+	picture = BUDDHA_eventPicture
+
+    fire_only_once = yes
+
+	mean_time_to_happen = {
+        days = 30
+    }
+
+	trigger = {
+	    has_global_flag = war_lubeck_novg
+	    OR = {
+	        tag = HSA
+	        tag = NOV
+	    }
+	    OR = {
+	        AND = {
+                had_country_flag = {
+                    flag = controller_of_gotland
+                    days = 730
+                }
+                if = {
+                    limit = {
+                        tag = HSA
+                    }
+                    naval_strength = {
+                        who = NOV
+                        value = 1.2
+                    }
+                }
+                else = {
+                    naval_strength = {
+                        who = HSA
+                        value = 1.2
+                    }
+                }
+	        }
+	        AND = {
+                had_country_flag = {
+                    flag = controller_of_gotland
+                    days = 1825
+                }
+	        }
+	        AND = {
+                had_global_flag = {
+                    flag = war_lubeck_novg
+                    days = 730
+                }
+                if = {
+                    limit = {
+                        tag = HSA
+                    }
+                    AND = {
+                        controls = 310
+                        war_score = 55
+                    }
+                }
+                else = {
+                    AND = {
+                        controls = 45
+                        war_score = 55
+                    }
+                }
+	        }
+	    }
+	}
+
+	immediate = {
+        clr_global_flag = war_lubeck_novg
+        25 = {
+            every_trade_node_member_province = {
+                limit = {
+                    has_port = yes
+                }
+                remove_province_modifier  = merchants_war
+            }
+        }
+        34 = {
+            every_trade_node_member_province = {
+                limit = {
+                    has_port = yes
+                }
+                remove_province_modifier  = merchants_war
+            }
+        }
+        45 = {
+            every_trade_node_member_province = {
+                limit = {
+                    has_port = yes
+                }
+                remove_province_modifier  = merchants_war
+            }
+        }
+	}
+
+	option = { #defensive war won Hansa
+		name = tyrhennia_civil_war.90.a
+		trigger = {
+		    AND = {
+		        tag = HSA
+		        defensive_war_with = NOV
+		    }
+		}
+        25 = {
+            add_center_of_trade_level = 1
+            add_nationalism = -10
+            add_trade_modifier = {
+                who = HSA
+                duration = -1
+                power = 20
+                key = viktor_gotland_war
+            }
+            remove_claim = NOV
+            remove_core = NOV
+            add_trade_modifier = {
+                who = NOV
+                duration = -1
+                power = -20
+                key = looser_gotland_war
+            }
+        }
+        NOV = {
+			add_country_modifier  = {
+				name = sour_looser_gotland_war
+				duration = -1
+			}
+        }
+		white_peace = NOV
+		if = {
+		    limit = {
+		        has_global_flag = nether_helps_lubeck
+		    }
+		    create_alliance = HOL
+		    add_historical_friend = HOL
+		    HOl = {
+		        add_historical_friend = HSA
+		    }
+		}
+    }
+
+	option = { #defensive war won Novgorod
+		name = tyrhennia_civil_war.90.b
+		trigger = {
+		    AND = {
+		        tag = NOV
+		        defensive_war_with = HSA
+		    }
+		}
+        25 = {
+            add_center_of_trade_level = 1
+            add_nationalism = -10
+            add_trade_modifier = {
+                who = NOV
+                duration = -1
+                power = 20
+                key = viktor_gotland_war
+            }
+            remove_claim = HSA
+            remove_core = HSA
+            add_trade_modifier = {
+                who = HSA
+                duration = -1
+                power = -20
+                key = looser_gotland_war
+            }
+        }
+        HSA = {
+			add_country_modifier  = {
+				name = sour_looser_gotland_war
+				duration = -1
+			}
+        }
+		white_peace = HSA
+		if = {
+		    limit = {
+		        has_global_flag = nether_helps_novgorod
+		    }
+		    45 = {
+		        add_trade_modifier = {
+                    who = HOL
+                    duration = -1
+                    power = 20
+                    key = viktor_gotland_war
+                }
+		    }
+		}
+    }
+
+	option = { #offensive war won hansa
+		name = tyrhennia_civil_war.90.c
+		trigger = {
+		    AND = {
+		        tag = HSA
+		        offensive_war_with = NOV
+		    }
+		}
+        25 = {
+            remove_claim = NOV
+            remove_core = NOV
+            cede_province = HSA
+            add_nationalism = -10
+            add_trade_modifier = {
+                who = HSA
+                duration = -1
+                power = 20
+                key = viktor_gotland_war
+            }
+            add_trade_modifier = {
+                who = NOV
+                duration = -1
+                power = -20
+                key = looser_gotland_war
+            }
+        }
+        NOV = {
+			add_country_modifier  = {
+				name = sour_looser_gotland_war
+				duration = -1
+			}
+        }
+		white_peace = NOV
+		if = {
+		    limit = {
+		        has_global_flag = nether_helps_lubeck
+		    }
+		    create_alliance = HOL
+		    add_historical_friend = HOL
+		    HOl = {
+		        add_historical_friend = HSA
+		    }
+		}
+    }
+
+	option = { #offensive war won novgorod
+		name = tyrhennia_civil_war.90.d
+		trigger = {
+		    AND = {
+		        tag = NOV
+		        offensive_war_with = HSA
+		    }
+		}
+        25 = {
+            remove_claim = HSA
+            remove_core = HSA
+            cede_province = NOV
+            add_nationalism = -10
+            add_trade_modifier = {
+                who = NOV
+                duration = -1
+                power = 20
+                key = viktor_gotland_war
+            }
+            add_trade_modifier = {
+                who = HSA
+                duration = -1
+                power = -20
+                key = looser_gotland_war
+            }
+        }
+        HSA = {
+			add_country_modifier  = {
+				name = sour_looser_gotland_war
+				duration = -1
+			}
+        }
+		white_peace = HSA
+		if = {
+		    limit = {
+		        has_global_flag = nether_helps_novgorod
+		    }
+		    45 = {
+		        add_trade_modifier = {
+                    who = HOL
+                    duration = -1
+                    power = 20
+                    key = viktor_gotland_war
+                }
+		    }
+		}
+    }
+}

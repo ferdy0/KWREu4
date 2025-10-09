@@ -1368,4 +1368,42 @@ country_decisions = {
             set_government_rank = 3
 		}
 	}
+
+	stop_being_such_a_dick = {
+		major = yes
+		potential = {
+		    OR = {
+			    tag = NOV
+			    tag = HSA
+			}
+            has_country_modifier = sour_looser_gotland_war
+		}
+
+		allow = {
+            has_country_modifier = sour_looser_gotland_war
+            if = {
+                limit = {
+                    tag = NOV
+                }
+                HSA = {
+                    has_opinion = {
+                        who = NOV
+                        value = 125
+                    }
+                }
+            }
+            else = {
+                NOV = {
+                    has_opinion = {
+                        who = HSA
+                        value = 125
+                    }
+                }
+            }
+		}
+
+		effect = {
+		    remove_country_modifier = sour_looser_gotland_war
+		}
+	}
 }
