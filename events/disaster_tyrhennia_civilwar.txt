@@ -1936,15 +1936,21 @@ country_event = {
                     limit = {
                         tag = HSA
                     }
-                    naval_strength = {
-                        who = NOV
-                        value = 1.2
+                    AND = {
+                        naval_strength = {
+                            who = NOV
+                            value = 1.2
+                        }
+                        has_country_flag = hsa_naval_battle_won
                     }
                 }
                 else = {
-                    naval_strength = {
-                        who = HSA
-                        value = 1.2
+                    AND = {
+                        naval_strength = {
+                            who = HSA
+                            value = 1.2
+                        }
+                        has_country_flag = nov_naval_battle_won
                     }
                 }
 	        }

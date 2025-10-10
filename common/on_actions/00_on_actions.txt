@@ -897,6 +897,24 @@ on_battle_lost_province = {
 			add_army_tradition = 0.1
 		}
 	}
+	if = {
+	    limit = {
+	        tag = NOV
+	        from = { tag = HSA }
+	        root = { is_sea = yes }
+	        has_global_flag = war_lubeck_novg
+	    }
+	    from = { set_country_flag = hsa_naval_battle_won }
+	}
+	if = {
+	    limit = {
+	        tag = HSA
+	        from = { tag = NOV }
+	        root = { is_sea = yes }
+	        has_global_flag = war_lubeck_novg
+	    }
+	    from = { set_country_flag = nov_naval_battle_won }
+	}
 	random_events = {
 		1000 = 0
 		100 = tyw_events.22	# Capital Battle in Religious War
