@@ -1609,6 +1609,11 @@ country_event = {
 			country_event = { id = tyrhennia_civil_war.85 days = 30 }
 		}
    	}
+
+	option = { #Idgaf
+		name = tyrhennia_civil_war.84.d
+		add_prestige = 5
+   	}
 }
 
 country_event = {
@@ -1689,6 +1694,12 @@ country_event = {
 	option = { #okay
 		name = tyrhennia_civil_war.86.b
         white_peace = NOV
+        HSA = {
+            remove_country_modifier = accepted_peace_emperor
+        }
+        NOV = {
+            remove_country_modifier = accepted_peace_emperor
+        }
         emperor = {
             add_country_modifier = {
                 name = peace_maker_dictated
@@ -1745,7 +1756,7 @@ country_event = {
             owns = 12
             owns = 43
             owns = 17
-            owns = 27
+            owns = 28
         }
         NOT = {
             OR = {
@@ -1867,7 +1878,7 @@ country_event = {
 
 	option = { #chill bro
 		name = tyrhennia_civil_war.88.c
-		add_prestige = 1
+		add_prestige = 5
    	}
 }
 
@@ -2055,6 +2066,12 @@ country_event = {
 		        add_historical_friend = HSA
 		    }
 		}
+        HSA = {
+            remove_country_modifier = accepted_peace_emperor
+        }
+        NOV = {
+            remove_country_modifier = accepted_peace_emperor
+        }
     }
 
 	option = { #defensive war won Novgorod
@@ -2103,6 +2120,12 @@ country_event = {
                 }
 		    }
 		}
+        HSA = {
+            remove_country_modifier = accepted_peace_emperor
+        }
+        NOV = {
+            remove_country_modifier = accepted_peace_emperor
+        }
     }
 
 	option = { #offensive war won hansa
@@ -2148,6 +2171,12 @@ country_event = {
 		        add_historical_friend = HSA
 		    }
 		}
+        HSA = {
+            remove_country_modifier = accepted_peace_emperor
+        }
+        NOV = {
+            remove_country_modifier = accepted_peace_emperor
+        }
     }
 
 	option = { #offensive war won novgorod
@@ -2196,5 +2225,11 @@ country_event = {
                 }
 		    }
 		}
+        HSA = {
+            remove_country_modifier = accepted_peace_emperor
+        }
+        NOV = {
+            remove_country_modifier = accepted_peace_emperor
+        }
     }
 }
