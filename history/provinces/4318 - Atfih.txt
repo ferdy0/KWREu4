@@ -8,6 +8,7 @@ trade_goods = paper
 base_tax = 3
 base_production = 5
 base_manpower = 2
+discovered_by = KOJ
 add_core = EGY
 add_core = MAM
 discovered_by = east_african

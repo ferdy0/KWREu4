@@ -8,6 +8,7 @@ trade_goods = naval_supplies
 base_tax = 2
 base_production = 3
 base_manpower = 5
+discovered_by = KOJ
 add_core = KOJ
 discovered_by = east_african
 discovered_by = eastern

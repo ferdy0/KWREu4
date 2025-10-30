@@ -8,6 +8,7 @@ trade_goods = wool
 base_tax = 6
 base_production = 4
 base_manpower = 2
+discovered_by = KOJ
 add_core = ARD
 add_core = Z02
 discovered_by = east_african

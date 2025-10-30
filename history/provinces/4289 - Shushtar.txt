@@ -8,6 +8,7 @@ trade_goods = silk
 base_tax = 1
 base_production = 4
 base_manpower = 3
+discovered_by = KOJ
 add_core = LRI
 add_core = PER
 discovered_by = indian

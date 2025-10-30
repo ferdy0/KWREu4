@@ -8,6 +8,7 @@ trade_goods = cloth
 base_tax = 7
 base_production = 4
 base_manpower = 4
+discovered_by = KOJ
 discovered_by = east_african
 discovered_by = eastern
 add_core = ARD

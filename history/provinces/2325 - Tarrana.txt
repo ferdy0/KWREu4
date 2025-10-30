@@ -8,6 +8,7 @@ trade_goods = fish
 base_tax = 2
 base_production = 3
 base_manpower = 1
+discovered_by = KOJ
 add_core = EGY
 discovered_by = east_african
 discovered_by = eastern

@@ -8,6 +8,7 @@ trade_goods = livestock
 base_tax = 3
 base_production = 2
 base_manpower = 1
+discovered_by = KOJ
 discovered_by = western
 add_core = EGY
 add_core = HED

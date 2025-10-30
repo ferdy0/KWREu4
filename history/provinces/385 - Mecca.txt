@@ -8,6 +8,7 @@ trade_goods = incense
 base_tax = 4
 base_production = 4
 base_manpower = 4
+discovered_by = KOJ
 discovered_by = eastern
 discovered_by = western
 extra_cost = 10

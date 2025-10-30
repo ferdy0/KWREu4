@@ -1,11 +1,10 @@
 capital = "Tomsk"
-culture = khitan
+culture = ostyaki
 trade_goods = unknown
 base_tax = 2
 base_production = 1
 base_manpower = 2
 religion = tengri_pagan
-add_core = BRT
 discovered_by = nomad_group
 discovered_by = ottoman
 native_size = 5

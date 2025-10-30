@@ -8,6 +8,7 @@ trade_goods = cloth
 base_tax = 6
 base_production = 4
 base_manpower = 5
+discovered_by = KOJ
 extra_cost = 8
 center_of_trade = 1
 add_core = IRQ
