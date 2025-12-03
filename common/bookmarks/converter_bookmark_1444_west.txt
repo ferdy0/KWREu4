@@ -1,0 +1,18 @@
+bookmark =
+{
+	name = CK3A_NAME
+	desc = CK3A_DESC
+	date = "1444.11.11"
+	
+	country = BOH
+	country = NOR
+	country = TYH
+	country = TIR
+	country = HOL
+	country = CAS
+	country = SWI
+	country = FRA
+	country = HSA
+	country = POL
+	country = HUN
+}

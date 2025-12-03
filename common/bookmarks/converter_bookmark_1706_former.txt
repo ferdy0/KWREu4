@@ -1,0 +1,9 @@
+bookmark =
+{
+	name = CK3A_NAME_FORMER
+	date = "1444.11.11"
+	
+	country = POR
+	country = WLS
+	country = WAL
+}

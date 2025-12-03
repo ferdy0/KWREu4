@@ -1,0 +1,13 @@
+bookmark =
+{
+	name = CK3A_NAME_EAST
+	date = "1444.11.11"
+	
+	country = BYZ
+	country = ARM
+	country = KOJ
+	country = HAH
+	country = NOV
+	country = AFR
+	country = OMA
+}

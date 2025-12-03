@@ -1,0 +1,9 @@
+bookmark =
+{
+	name = CK3A_NAME_ASIA
+	date = "1444.11.11"
+	
+	country = TIB
+	country = MAD
+	country = AYU
+}
