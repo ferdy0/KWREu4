@@ -8,6 +8,7 @@ trade_goods = grain
 base_tax = 5
 base_production = 4
 base_manpower = 3
+discovered_by = KOJ
 add_core = MED
 add_core = NBI
 discovered_by = east_african

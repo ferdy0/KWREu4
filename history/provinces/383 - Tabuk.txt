@@ -10,6 +10,7 @@ base_tax = 1
 base_production = 4
 base_manpower = 1
 discovered_by = KOJ
+discovered_by = KOJ
 discovered_by = eastern
 discovered_by = western
 discovered_by = western

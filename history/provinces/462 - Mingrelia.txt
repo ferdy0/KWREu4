@@ -8,6 +8,7 @@ trade_goods = wine
 base_tax = 8
 base_production = 3
 base_manpower = 1
+discovered_by = KOJ
 discovered_by = eastern
 discovered_by = western
 extra_cost = 8

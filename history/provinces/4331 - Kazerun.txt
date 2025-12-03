@@ -8,6 +8,7 @@ trade_goods = wine
 base_tax = 6
 base_production = 5
 base_manpower = 5
+discovered_by = KOJ
 add_core = PER
 discovered_by = indian
 discovered_by = muslim

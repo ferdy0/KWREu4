@@ -8,6 +8,7 @@ trade_goods = wine
 base_tax = 6
 base_production = 4
 base_manpower = 4
+discovered_by = KOJ
 extra_cost = 16
 center_of_trade = 2
 add_core = ARD

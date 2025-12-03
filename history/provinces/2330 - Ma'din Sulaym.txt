@@ -9,6 +9,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 discovered_by = KOJ
+discovered_by = KOJ
 discovered_by = eastern
 discovered_by = western
 add_core = EGY

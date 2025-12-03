@@ -8,6 +8,7 @@ trade_goods = coffee
 base_tax = 3
 base_production = 5
 base_manpower = 2
+discovered_by = KOJ
 extra_cost = 10
 add_core = ADE
 add_core = YEM

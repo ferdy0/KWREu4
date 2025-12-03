@@ -9,6 +9,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 discovered_by = KOJ
+discovered_by = KOJ
 add_core = IRQ
 discovered_by = east_african
 discovered_by = indian

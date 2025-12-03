@@ -9,6 +9,7 @@ base_tax = 2
 base_production = 4
 base_manpower = 1
 discovered_by = KOJ
+discovered_by = KOJ
 add_core = LRI
 add_core = PER
 discovered_by = indian

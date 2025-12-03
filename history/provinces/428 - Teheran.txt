@@ -8,6 +8,7 @@ trade_goods = silk
 base_tax = 4
 base_production = 4
 base_manpower = 4
+discovered_by = KOJ
 extra_cost = 8
 center_of_trade = 1
 add_core = PER

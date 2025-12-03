@@ -8,6 +8,7 @@ trade_goods = wine
 base_tax = 7
 base_production = 6
 base_manpower = 5
+discovered_by = KOJ
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = western

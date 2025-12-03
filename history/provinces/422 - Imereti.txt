@@ -9,6 +9,7 @@ fort_15th = yes
 base_tax = 1
 base_production = 1
 base_manpower = 1
+discovered_by = KOJ
 discovered_by = eastern
 discovered_by = western
 add_core = GEO

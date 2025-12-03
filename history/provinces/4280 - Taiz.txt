@@ -9,6 +9,7 @@ fort_15th = yes
 base_tax = 6
 base_production = 5
 base_manpower = 6
+discovered_by = KOJ
 add_core = ADE
 add_core = YEM
 discovered_by = east_african

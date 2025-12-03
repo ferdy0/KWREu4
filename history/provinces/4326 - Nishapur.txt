@@ -8,6 +8,7 @@ trade_goods = gems
 base_tax = 3
 base_production = 1
 base_manpower = 3
+discovered_by = KOJ
 add_core = KHO
 add_core = TRS
 discovered_by = indian

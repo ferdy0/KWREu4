@@ -8,6 +8,7 @@ trade_goods = incense
 base_tax = 2
 base_production = 3
 base_manpower = 2
+discovered_by = KOJ
 add_core = ADE
 add_core = MHR
 discovered_by = east_african

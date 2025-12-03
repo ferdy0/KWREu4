@@ -9,6 +9,7 @@ fort_15th = yes
 base_tax = 6
 base_production = 4
 base_manpower = 1
+discovered_by = KOJ
 add_core = HAH
 add_core = TAB
 discovered_by = indian
