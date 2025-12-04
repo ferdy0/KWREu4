@@ -7,7 +7,6 @@ primary_culture = prussian
 capital = 2995
 add_army_professionalism = 0.1
 historical_rival = POL
-historical_friend = SWI
 add_accepted_culture = pommeranian
 1357.6.30 = {
 	monarch = {
