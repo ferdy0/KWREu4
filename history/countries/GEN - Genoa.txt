@@ -7,6 +7,7 @@ primary_culture = ligurian
 capital = 101
 fixed_capital = 101
 mercantilism = 15
+historical_friend = SWI
 1383.2.18 = {
 	monarch = {
 		name = "Liuni"

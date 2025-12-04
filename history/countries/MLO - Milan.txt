@@ -6,6 +6,7 @@ religion = catholic
 primary_culture = lombard
 capital = 104
 add_accepted_culture = romagnan
+historical_rival = SWI
 1359.5.24 = {
 	monarch = {
 		name = "Gottfried I"
