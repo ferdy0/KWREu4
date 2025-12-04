@@ -562,3 +562,45 @@ swiss_ideas = {
 		production_efficiency = 0.1
 	}
 }
+
+tyrolean_ideas = {
+	start = {
+		global_tax_income = 12
+		land_morale_constant = 0.5
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = TIR
+	}
+	free = yes  #will be triggered at load
+	
+	mountains_are_fun = {
+		defensiveness = 0.2
+	}
+	mining_culture = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	religious_fortitude = {
+		papal_influence = 2
+		monthly_church_power = 0.2
+		monthly_fervor_increase = 2
+		yearly_patriarch_authority = 0.1
+	}
+	printing_industry = {
+		industry_spread_from_true_faith = 0.33
+		technology_cost = -0.05
+	}
+	focus_on_field_defenses = {
+		land_morale = 0.15
+	}
+	crossroads_of_europe = {
+		development_cost_in_primary_culture = -0.10
+	}
+	reformed_imperial_mint = {
+		yearly_government_power = 1
+	}
+}
