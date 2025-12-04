@@ -85,7 +85,7 @@ paper_mill_of_bohemia = {
 }
 moravinification = {
 	diplomatic_reputation = 1
-	dip_cost_modifier = -0.05
+	dip_tech_cost_modifier = -0.05
 }
 moravian_wining = {
 	trade_goods_size = 1
