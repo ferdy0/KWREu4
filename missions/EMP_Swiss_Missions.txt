@@ -221,7 +221,7 @@ swiss_mountain_missions_1 = {
 			}
 		}
 		effect = {
-			# TODO add ustom tooltip
+			# TODO add custom tooltip
 			set_country_flag = swi_strike_the_iron_flag
 		}
 	}
@@ -455,7 +455,7 @@ swiss_maritime_missions_2 = {
 				}
 			}
 
-			1876 = {	# Frankfurt (Rheinland Trade Node)
+			1869 = {	# Frankfurt (Rheinland Trade Node)
 				add_trade_modifier = {
 					who = ROOT
 					duration = 18250	# 50 Years
@@ -578,6 +578,322 @@ swiss_mountain_missions_2 = {
 				}
 			}
 			
+		}
+	}
+}
+swiss_parliament_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		 has_dlc = "Emperor"
+	}
+	potential = {
+		tag = SWI
+		NOT = { map_setup = map_setup_random }
+		has_dlc = "Emperor"
+	}
+	has_country_shield = yes
+
+	swi_tolerance_act = {
+		icon = vaud_and_wallis
+		required_missions = { }
+		position = 1
+		trigger = {
+			NOT = {
+				current_age = age_of_discovery
+			}
+			OR = {
+				has_estate_privilege = estate_burghers_enforced_interfaith_dialogue
+				AND = {		# Introduced a failsafe If I somehow don't get touched by the reformation
+					OR = {
+						current_age = age_of_absolutism
+						current_age = age_of_revolutions
+					}
+					all_owned_province = {
+						has_owner_religion = yes
+					}
+				}
+			}
+			OR = {
+				AND = {
+					NOT = {
+						estate_influence = {
+							estate = estate_church
+							influence = 20		# Decreased as per robo's comment
+						}
+					}
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 60
+					}
+					crown_land_share = estate_church	# Also introduced to make harder
+				}
+				has_reform = curtail_clergy_power_reform
+			}
+		}
+		effect = {
+			unlock_issue = {
+				issue = swi_tolerance_act
+			}
+			# TODO improve the Estate Interfaith Privelege if passes
+		}
+	}
+
+	swi_state_act = {
+		icon = vaud_and_wallis
+		required_missions = { swi_stability_act 
+							  swi_tolerance_act
+							  swi_mercenary_act
+		 					}
+		position = 2
+		trigger = {
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+			has_reform = centralize_reform
+			OR = {
+				has_reform = superiority_of_the_state_reform
+				has_reform = dyanstic_administration_reform
+			}
+			crown_land_share = estate_church	# on robo's suggestion
+			crown_land_share = estate_nobles
+			crown_land_share = estate_burghers
+		}
+		effect = {
+			add_country_modifier = {
+				name = swi_controversial_debate
+				duration = -1
+			}
+			unlock_issue = {
+				issue = swi_state_act
+			}
+			# TODO parliamentary stuff
+		}
+	}
+}
+
+swiss_university_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		 has_dlc = "Emperor"
+	}
+	potential = {
+		tag = SWI
+		NOT = { map_setup = map_setup_random }
+		has_dlc = "Emperor"
+	}
+	has_country_shield = yes
+
+	swi_sanction_basel = {
+		icon = vaud_and_wallis
+		required_missions = { swi_swiss_guard }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 1869	# Zürich (rp wise also Basel)
+					NOT = {
+						AND = {
+							owned_by = ROOT
+							has_tax_building_trigger = yes
+						}
+					}
+				}
+				AND = {
+					owned_by = PAP
+					NOT = {
+						owner = {
+							has_opinion = {
+								who = ROOT
+								value = 100
+							}
+							OR ={
+								alliance_with = ROOT
+								guaranteed_by = ROOT
+							}
+						}
+					}
+				}
+			}
+			
+		}
+		trigger = {
+			if = {
+				limit = { exists = PAP}
+				PAP = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+					OR ={
+						alliance_with = ROOT
+						guaranteed_by = ROOT
+					}
+				}
+			}
+			papal_influence = 50
+			1869 ={	# Zürich (rp wise also Basel)
+				owned_by = ROOT
+				has_tax_building_trigger = yes
+			}
+			treasury = 100
+		}
+		effect = {
+			add_papal_influence = -50
+			add_treasury = -100
+			1869 ={	# Zürich (rp wise also Basel)
+				add_cardinal = yes
+				add_province_modifier = {
+					name = swi_papal_lecturers	# making the province unconvertible seems like the only way to prevent centre conversion
+					duration = -1
+				}
+			}
+		}
+	}
+
+	swi_expand_university = {
+		icon = vaud_and_wallis
+		required_missions = { 
+							  swi_sanction_basel
+							  swi_promote_city_growth
+							}
+		position = 4
+		provinces_to_highlight = {
+			province_id = 1869	# Zürich (rp wise also Basel)
+			NOT = {
+				AND = {
+					owned_by = ROOT
+					renaissance = 100
+					development = 30
+				}
+			}
+		}
+		trigger = {
+			treasury = 400
+			has_institution = renaissance
+			1869 ={	# Zürich (rp wise also Basel)
+				owned_by = ROOT
+				renaissance = 100
+				development = 30
+			}
+		}
+		effect = {
+			add_treasury = -400
+			1869 ={	# Zürich (rp wise also Basel)
+				add_building = university
+			}
+			change_innovativeness =  5
+		}
+	}
+
+	swi_print_research = {
+		icon = vaud_and_wallis
+		required_missions = { swi_expand_university }
+		position = 5
+		provinces_to_highlight = {
+			province_id = 1869	# Zürich (rp wise also Basel)
+			NOT = {
+				AND = {
+					owned_by = ROOT
+					printing_press = 100
+					has_production_building_trigger = yes
+					has_building = university
+					base_production = 18
+				}
+			}
+		}
+		trigger = {
+			treasury = 400
+			innovativeness = 15
+			has_institution = printing_press
+			1869 ={	# Zürich (rp wise also Basel)
+				owned_by = ROOT
+				printing_press = 100
+				has_production_building_trigger = yes
+				has_building = university
+				base_production = 18
+			}
+		}
+		effect = {
+			add_treasury = -400
+			1869 ={	# Zürich (rp wise also Basel)
+				change_trade_goods = paper
+				add_province_modifier = {
+					name = swi_research_printing
+					duration = -1
+				}
+			}
+		}
+	}
+
+	swi_faculty_of_ballistics = {
+		icon = vaud_and_wallis
+		required_missions = { swi_print_research }
+		position = 6
+		provinces_to_highlight = {
+			province_id = 1869	# Zürich (rp wise also Basel)
+			NOT = {
+				AND = {
+					owned_by = ROOT
+					has_building = university
+					base_manpower = 18	# increased compared to doc
+				}
+			}
+			
+		}
+		trigger = {
+			1869 ={	# Zürich (rp wise also Basel)
+				owned_by = ROOT
+				has_building = university
+				base_manpower = 18	# increased compared to doc
+			}
+			has_country_flag = swi_mercenary_act_passed
+		}
+		effect = {
+			# TODO merc stuff
+		}
+	}
+}
+swiss_mountain_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		 has_dlc = "Emperor"
+	}
+	potential = {
+		tag = SWI
+		NOT = { map_setup = map_setup_random }
+		has_dlc = "Emperor"
+	}
+	has_country_shield = yes
+
+	swi_guarantors_of_peace = {
+		icon = vaud_and_wallis
+		required_missions = { swi_utilize_mountains }
+		position = 7
+		provinces_to_highlight = {
+			has_terrain = mountain
+			owned_by = ROOT
+			NOT = { fort_level = 3 }
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 3
+				fort_level = 3
+				has_terrain = mountain
+			}
+			has_country_flag = swi_stability_act_passed
+		}
+		effect = {
+			add_country_modifier = {
+				name = "swiss_mountains_modifier"
+				duration = -1
+			}
 		}
 	}
 }

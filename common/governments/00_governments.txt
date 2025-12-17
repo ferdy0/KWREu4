@@ -517,6 +517,7 @@ monarchy = {
 		courts_of_navarra
 		elective_monarchy_reform
 		elective_monarchy
+		swi_statthalterei
 	}
 
 	# Parliamentary reforms cannot stack
@@ -537,6 +538,7 @@ monarchy = {
 		polish_great_sejm
 		courts_of_navarra
 		livonian_diplomatic_monarchy
+		swi_statthalterei
 	}
 
 	# Dictatorships etc

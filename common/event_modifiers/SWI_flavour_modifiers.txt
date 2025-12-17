@@ -36,3 +36,20 @@ swi_city_autonomy_modifier_3 = {
 swi_city_autonomy_modifier_4 = {
     min_autonomy = 25   # might be *too* crippling imo, might decrease by 5 on all levels
 }
+
+swi_controversial_debate = {
+    parliament_backing_chance = -0.5    # higher than intended originally because:
+    #   wanted to increase bribe cost but might be complicated as that isn't just a modifier, but a trigger
+    # has_expensive_debate is a thing, but it is a custom trigger, so it might be easier to change it's conditions there
+}
+
+swi_papal_lecturers = {
+    local_missionary_strength = -1  # hopefully gets removed on province owner change
+    papal_influence = 0.5
+}
+
+swi_research_printing = {
+    trade_goods_size = 1
+    local_institution_spread = 0.25
+    innovativeness_gain = 0.25
+}

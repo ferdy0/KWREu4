@@ -31,6 +31,8 @@ swi_statthalterei = {
 		nobles_influence_modifier = -0.1
 		burghers_influence_modifier = 0.1
 		burghers_loyalty_modifier = 0.05
+		mercenary_manpower = 0.25	# felt a lack of benefits beyond access to parliament,
+									# so took this from the base game swiss reform, though might cut it to +25%
 	}
 	
 
