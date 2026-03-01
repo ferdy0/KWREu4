@@ -351,3 +351,8 @@ ice_early_colonization_modifier = {
 nwc_icelandic_culture_accepted = {
     num_accepted_cultures = 1
 }
+
+nwc_native_trades = {
+    local_missionary_strength = 0.03
+    trade_goods_size_modifier = 0.10
+}

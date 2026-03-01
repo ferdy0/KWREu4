@@ -242,7 +242,7 @@ NWC_missions_2 = {
                     area = trois_rivieres_area
                     area = lower_canada_area
                 }
-                is_city = no
+                is_city = yes
             }
         }
 
@@ -329,12 +329,12 @@ NWC_missions_2 = {
 
         trigger = {
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                value = 28
                 OR = {
                     region = southeast_america_region
                     region = mississippi_region
                 }
                 is_city = yes
-                value = 28
             }
         }
 
@@ -394,8 +394,8 @@ NWC_missions_2 = {
         trigger = {
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 5
-                is_city = yes
                 region = carribeans_region
+                is_city = yes
             }
         }
     }
@@ -535,6 +535,7 @@ NWC_missions_3 = {
 
         trigger = {
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                value = 16
                 OR = {
                     area = south_iroquoisia_area
                     area = hudson_valley_area
@@ -546,7 +547,7 @@ NWC_missions_3 = {
                     area = appalachia_area
                     area = south_appalachia_area
                 }
-                value = 16
+                is_city = yes
             }
         }
 
@@ -937,6 +938,7 @@ NWC_missions_4 = {
                         culture = chipewyan
                         culture = athabascan
                     }
+                    is_city = yes
 				    trade_goods = fur
                     base_production = 3
                 }
