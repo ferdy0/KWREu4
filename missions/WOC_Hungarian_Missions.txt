@@ -1,0 +1,2089 @@
+lot_securing_borders_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = HUN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	sb_lot_strengthen_army_1_1 = {
+		icon = mission_cossack_cavalry
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			army_strength = {
+				who = POL
+				value = 1.10
+			}
+			num_of_generals = 2
+		}
+		
+		effect = {
+			malopolska_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sandomierz_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			silesia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	
+	hun_weaken_poland = {
+		icon = mission_partition_poland
+		required_missions = { sb_lot_strengthen_army_1_1 }
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				area = malopolska_area
+				area = silesia_area
+				area = sandomierz_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				OR = {
+					area = malopolska_area
+					area = silesia_area
+					area = sandomierz_area
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					exists = POL
+				}
+				if = {
+					limit = {
+						valid_for_personal_unions_trigger = yes
+						exists = POL
+						POL = {
+							valid_for_personal_unions_trigger = yes
+						}
+					}
+					custom_tooltip = hun_cb_poland_tt_yes
+					tooltip = {
+						add_casus_belli = {
+							type = cb_restore_personal_union
+							months = 300
+							target = POL
+						}
+					}
+				}
+				else = {
+					custom_tooltip = hun_cb_poland_tt_no
+					tooltip = {
+						add_casus_belli = {
+							type = cb_restore_personal_union
+							months = 300
+							target = POL
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					exists = PLC
+				}
+				if = {
+					limit = {
+						valid_for_personal_unions_trigger = yes
+						exists = PLC
+						PLC = {
+							valid_for_personal_unions_trigger = yes
+						}
+					}
+					custom_tooltip = hun_cb_plc_tt_yes
+					tooltip = {
+						add_casus_belli = {
+							type = cb_restore_personal_union
+							months = 300
+							target = PLC
+						}
+					}
+				}
+				else = {
+					custom_tooltip = hun_cb_plc_tt_no
+					tooltip = {
+						add_casus_belli = {
+							type = cb_restore_personal_union
+							months = 300
+							target = PLC
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							exists = POL
+							exists = PLC
+						}
+					}
+				}
+				custom_tooltip = hun_neither_pol_nor_plc_tt_yes
+				tooltip = {
+					mazovia_area = {
+						limit = {
+							NOT = { is_permanent_claim = ROOT }
+							NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					central_poland_area = {
+						limit = {
+							NOT = { is_permanent_claim = ROOT }
+							NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					wielkopolska_area = {
+						limit = {
+							NOT = { is_permanent_claim = ROOT }
+							NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					kuyavia_area = {
+						limit = {
+							NOT = { is_permanent_claim = ROOT }
+							NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+				}
+			}
+			else = {
+				custom_tooltip = hun_neither_pol_nor_plc_tt_no
+				tooltip = {
+					mazovia_area = {
+						limit = {
+							NOT = { is_permanent_claim = ROOT }
+							NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					central_poland_area = {
+						limit = {
+							NOT = { is_permanent_claim = ROOT }
+							NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					wielkopolska_area = {
+						limit = {
+							NOT = { is_permanent_claim = ROOT }
+							NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					kuyavia_area = {
+						limit = {
+							NOT = { is_permanent_claim = ROOT }
+							NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						valid_for_personal_unions_trigger = yes
+						exists = PLC
+						PLC = {
+							valid_for_personal_unions_trigger = yes
+						}
+					}
+					add_casus_belli = {
+						type = cb_restore_personal_union
+						months = 300
+						target = PLC
+					}
+				}
+				else_if = {
+					limit = {
+						valid_for_personal_unions_trigger = yes
+						exists = POL
+						POL = {
+							valid_for_personal_unions_trigger = yes
+						}
+					}
+					add_casus_belli = {
+						type = cb_restore_personal_union
+						months = 300
+						target = POL
+					}
+				}
+				else = {
+					mazovia_area = {
+						limit = {
+							NOT = { is_permanent_claim = ROOT }
+							NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					central_poland_area = {
+						limit = {
+							NOT = { is_permanent_claim = ROOT }
+							NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					wielkopolska_area = {
+						limit = {
+							NOT = { is_permanent_claim = ROOT }
+							NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					kuyavia_area = {
+						limit = {
+							NOT = { is_permanent_claim = ROOT }
+							NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	sb_lot_union_with_poland_1_3 = {
+		icon = mission_pol_throne_bohemia
+		required_missions = { hun_weaken_poland }
+		position = 3
+		
+		provinces_to_highlight = {
+			OR = {
+				region = poland_region
+			}
+			OR = {
+				country_or_non_sovereign_subject_holds = POL
+				country_or_non_sovereign_subject_holds = PLC
+			}
+		}
+		
+		trigger = {
+			OR = {
+				POL = {
+					is_subject_of = ROOT
+				}
+				PLC = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		
+		effect = {
+			add_accepted_culture_or_dip_power = {
+				culture = polish
+				dip_reward = yes 
+				free = yes
+			}
+			set_country_flag = hun_polish_culture_bonus
+			add_country_modifier = {
+				name = hun_polish_brotherhood
+				duration = -1 
+				desc = hun_as_long_as_polish_accepted
+			}
+			poland_region = { #could be removed or replaced
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+lot_defend_catholicism_2_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = HUN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	dc_lot_hun_the_order_of_the_dragon_1_5 = {
+		icon = reformatio_sigismundi
+		required_missions = { dc_lot_defender_of_christianity_2_4 }
+		position = 5
+		
+		trigger = {
+			if = {
+				limit = {
+					has_dlc = "Golden Century"
+				}
+				num_of_owned_provinces_with = {
+					holy_order = order_of_the_dragon_order
+					value = 30
+				}
+			}
+			else = {
+				num_of_owned_provinces_with = {
+					base_manpower = 5
+					value = 5
+				}
+			}
+			BOH = {
+				NOT = { religion = catholic }
+			}
+		}
+		
+		provinces_to_highlight = {
+			if = {
+				limit = {
+					has_dlc = "Golden Century"
+				}
+				owned_by = ROOT
+				NOT = {
+					holy_order = order_of_the_dragon_order
+				}
+			}
+			else = {
+				owned_by = ROOT
+				base_manpower = 5
+			}
+		}
+		
+		effect = {
+			add_casus_belli = {
+				type = cb_spread_the_true_faith
+				months = 300
+				target = BOH
+			}
+			add_country_modifier = {
+				name = "hun_expanding_the_order"
+				duration = 7300
+			}
+			if = {
+				limit = {
+					has_dlc = "Golden Century"
+				}
+				custom_tooltip = hun_holy_order_army_tradition_tt
+			}
+			else = {
+				add_army_tradition_or_mil_power = { amount = 10 }
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						holy_order = order_of_the_dragon_order
+					}
+					owner = {
+						add_army_tradition = 0.5
+					}
+				}
+			}
+		}
+	}
+	
+	dc_lot_recatholicise_bohemia_1_6 = {
+		icon = wars_of_religion
+		required_missions = { dc_lot_hun_the_order_of_the_dragon_1_5 }
+		position = 6
+		
+		provinces_to_highlight = {
+			OR = {
+				area = erzgebirge_area
+				area = bohemia_area
+				area = moravia_area
+			}
+			country_or_non_sovereign_subject_holds = BOH
+		}
+		
+		trigger = {
+			BOH = {
+				religion = catholic
+			}
+			has_won_war_against = {
+				who = BOH
+				max_years_since = 15
+			}
+		}
+		
+		effect = {
+			#wow so good, you converted Bohemia!
+		}
+	}
+}
+
+lot_between_two_empires_1_branching = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = HUN
+		NOT = {
+			OR = {
+				has_country_flag = friends_with_the_holy_empire
+				has_country_flag = enemies_of_the_holy_empire
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	bte_lot_branching_1_7 = {
+		icon = mission_unknown_mission
+		required_missions = { bte_lot_frens_between_empires_3_6 }
+		position = 7
+		
+		trigger = { custom_trigger_tooltip = { tooltip = HUN_IMPERIAL_BRANCHING always = no } }
+		
+		effect = {
+			custom_tooltip = HUN_IMPERIAL_BRANCHING
+		}
+	}
+	
+	bte_lot_branching_1_8 = {
+		icon = mission_unknown_mission
+		required_missions = { bte_lot_branching_1_7 }
+		position = 8
+		
+		trigger = { custom_trigger_tooltip = { tooltip = HUN_IMPERIAL_BRANCHING always = no } }
+		
+		effect = {
+			custom_tooltip = HUN_IMPERIAL_BRANCHING
+		}
+	}
+	
+	bte_lot_branching_1_9 = {
+		icon = mission_unknown_mission
+		required_missions = { bte_lot_branching_1_8 }
+		position = 9
+		
+		trigger = { custom_trigger_tooltip = { tooltip = HUN_IMPERIAL_BRANCHING always = no } }
+		
+		effect = {
+			custom_tooltip = HUN_IMPERIAL_BRANCHING
+		}
+	}
+}
+
+lot_between_two_empires_branching_pro_imperial = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = HUN
+		has_country_flag = friends_with_the_holy_empire
+		NOT = {
+			has_country_flag = enemies_of_the_holy_empire
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	bte_lot_ally_empire_1_7 = {
+		icon = lead_the_empire
+		required_missions = { bte_lot_frens_between_empires_3_6 }
+		position = 7
+		
+		trigger = {
+			alliance_with = emperor
+		}
+		
+		effect = {
+			#something good ig
+		}
+	}
+	
+	bte_lot_influence_electors_1_8 = {
+		icon = mission_rb_control_electors
+		required_missions = { bte_lot_ally_empire_1_7 }
+		position = 8
+		
+		trigger = {
+			#be friends with electors or so
+		}
+		
+		effect = {
+			#something good ig
+		}
+	}
+	
+	bte_lot_hun_the_imperial_ambition_1_9 = {
+		icon = holy_state
+		required_missions = { bte_lot_influence_electors_1_8 }
+		position = 9
+		
+		trigger = {
+			is_emperor = yes
+		}
+		
+		provinces_to_highlight = {
+			is_part_of_hre = yes
+		}
+		
+		effect = {
+			set_country_flag = hun_imperial_reelection_bonus
+			add_ruler_modifier = {
+				name = hun_first_hungarian_emperor
+				duration = -1
+			}
+		}
+	}
+}
+
+lot_between_two_empires_branching_anti_imperial = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = HUN
+		has_country_flag = enemies_of_the_holy_empire
+		NOT = {
+			has_country_flag = friends_with_the_holy_empire
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	bte_lot_conquer_bohemia_1_7 = {
+		icon = bohemian_borderlands
+		required_missions = { bte_lot_frens_between_empires_3_6 }
+		position = 7
+		
+		trigger = {
+			bohemia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			erzgebirge_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			moravia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			#something good ig
+		}
+	}
+	
+	bte_lot_control_electors_1_8 = {
+		icon = mission_rb_control_electors
+		required_missions = { bte_lot_conquer_bohemia_1_7 }
+		position = 8
+		
+		trigger = {
+			#control electors
+		}
+		
+		effect = {
+			#something good ig
+		}
+	}
+	
+	bte_lot_dismantle_empire_1_9 = {
+		icon = holy_state
+		required_missions = { bte_lot_control_electors_1_8 }
+		position = 9
+		
+		trigger = {
+			NOT = { hre_size = 1 }
+		}
+		
+		provinces_to_highlight = {
+			is_part_of_hre = yes
+		}
+		
+		effect = {
+			add_permanent_power_projection = {
+				type = hun_permanent_power_projection
+				amount = 20
+			}
+			add_country_modifier = {
+				name = hun_bane_of_the_empire
+				duration = -1
+			}
+		}
+	}
+}
+
+lot_defend_catholicism_1 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = HUN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+
+	hun_fund_the_monasteries = {
+		icon = fund_the_monasteries
+		required_missions = { }
+		position = 2
+		
+		provinces_to_highlight = {
+			owned_by = ROOT
+			has_tax_building_trigger = no
+			ROOT = {
+				NOT = {
+					num_of_owned_provinces_with = {
+						value = 5
+						has_tax_building_trigger = yes
+					}
+				}
+			}
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				has_tax_building_trigger = yes
+			}
+			if = {
+				limit = {
+					has_estate = estate_church
+				}
+				OR = {
+					num_of_estate_privileges = { estate = estate_church value = 5 } 
+					estate_loyalty = { estate = estate_church loyalty = 65 }
+					num_of_estate_agendas_completed = { estate = estate_church value = 2 } 
+				}
+			}
+		}
+		
+		effect = {
+			define_advisor = {
+				type = inquisitor
+				name = "Dénes Szécsi"
+				skill = 2
+				culture = hungarian
+				religion = ROOT
+				cost_multiplier = 0.5
+			}
+			if = {
+				limit = {
+					religion = catholic
+					capital_scope = {
+						NOT = {
+							has_cardinal = yes
+						}
+					}
+				}
+				custom_tooltip = hun_cardinal_capital_tt_yes
+			}
+			else = {
+				custom_tooltip = hun_cardinal_capital_tt_no
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						religion = catholic
+						capital_scope = {
+							NOT = {
+								has_cardinal = yes
+							}
+						}
+					}
+					capital_scope = {
+						add_cardinal = yes
+					}
+				}
+			}
+		}
+	}
+	
+	hun_unity_in_belief = {
+		icon = spread_piety
+		required_missions = { hun_fund_the_monasteries }
+		position = 3
+	
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { religion = ROOT }
+		}
+		
+		trigger = {
+			OR = {
+				religious_unity = 1
+				AND = {
+					NOT = {
+						any_owned_province = {
+							religion = orthodox
+							unrest = 1
+						}
+					}
+					development_in_provinces = {
+						value = 100
+						religion = orthodox
+					}
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					religious_unity = 1
+				}
+				custom_tooltip = hun_religious_unity_yes
+				tooltip = {
+					custom_tooltip = hun_empower_religious_diplomats_tt
+				}
+			}
+			else = {
+				custom_tooltip = hun_religious_unity_no
+				tooltip = {
+					custom_tooltip = hun_empower_religious_diplomats_tt
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_owned_province = {
+							religion = orthodox
+							unrest = 1
+						}
+					}
+					development_in_provinces = {
+						value = 100
+						religion = orthodox
+					}
+				}
+				custom_tooltip = hun_orthodox_unrest_yes
+				tooltip = {
+					custom_tooltip = hun_unlock_orthodox_privilege_tt
+				}
+			}
+			else = {
+				custom_tooltip = hun_orthodox_unrest_no
+				tooltip = {
+					custom_tooltip = hun_unlock_orthodox_privilege_tt
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						religious_unity = 1
+					}
+					set_country_flag = hun_empower_religious_diplomats
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							any_owned_province = {
+								religion = orthodox
+								unrest = 1
+							}
+						}
+						development_in_provinces = {
+							value = 100
+							religion = orthodox
+						}
+					}
+					set_country_flag = hun_empower_orthodox_autonomy
+				}
+			}
+		}
+	}
+}
+
+lot_defend_catholicism_2_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = HUN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	dc_lot_defender_of_christianity_2_4 = {
+		icon = mission_sword_of_the_reformation
+		required_missions = { hun_unity_in_belief }
+		position = 4
+		
+		trigger = {
+			OR = {
+				AND ={
+					religion = catholic
+					is_defender_of_faith = yes
+				}
+				AND = {
+					#some other, probably army, requirements
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					exists = CRO
+				}
+				add_casus_belli = {
+					target = CRO
+					type = cb_vassalize_mission
+					months = 300
+				}
+			}
+			else = {
+				slavonia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				croatia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				east_adriatic_coast_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			set_country_flag = hun_pp_on_heathen_wars
+			add_country_modifier = {
+				name = hun_bulwark_of_christianity
+				duration = 7300
+			}
+			custom_tooltip = hun_winning_wars_against_heathens_tt
+		}
+	}
+	
+	dc_lot_defend_croatia_2_5 = {
+		icon = mission_integrate_croatia
+		required_missions = { dc_lot_defender_of_christianity_2_4 }
+		position = 5
+		
+		provinces_to_highlight = {
+			OR = {
+				area = slavonia_area
+				area = croatia_area
+				area = east_adriatic_coast_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			OR = {
+				AND = {
+					CRO = {
+						is_subject_of = ROOT
+					}
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 8
+						OR = {
+							area = slavonia_area
+							area = croatia_area
+							area = east_adriatic_coast_area
+						}
+					}
+				}
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 11
+					OR = {
+						area = slavonia_area
+						area = croatia_area
+						area = east_adriatic_coast_area
+					}
+				}
+			}
+		}
+		
+		effect = {
+			#idk
+		}
+	}
+	
+	dc_lot_ally_latin_empire_2_6 = {
+		icon = hungarian_union
+		required_missions = { dc_lot_defend_croatia_2_5 }
+		position = 6
+		
+		trigger = {
+			alliance_with = LAE
+			marriage_with = LAE
+		}
+		
+		effect = {
+			#congrats on the marriage
+		}
+	}
+}
+
+lot_between_two_empires_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = HUN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	hun_fekete_sereg = {
+		icon = mission_fekete_sereg
+		required_missions = { bte_lot_frens_between_empires_3_6 }
+		position = 7
+		
+		provinces_to_highlight = {
+			is_capital = yes
+			owner = {
+				is_neighbor_of = root
+				land_morale = root
+				NOT = { is_subject_of = root }
+			}
+			NOT = { owned_by = root }
+		}
+		
+		trigger = {
+			OR = {
+				custom_trigger_tooltip = {
+					has_idea = found_the_black_army
+					tooltip = hun_has_unlocked_third_ni
+				}
+				has_country_modifier = hun_black_army
+				has_reform = black_army_reform
+				custom_trigger_tooltip = {
+					tooltip = emp_hun_black_army_supreme_trigger_tooltip
+					OR = {
+						current_age = age_of_absolutism
+						current_age = age_of_revolutions
+					}
+				}
+			}
+			army_size_percentage = 1
+			land_morale = 4
+			all_neighbor_country = {
+				OR = {
+					NOT = { land_morale = root }
+					is_subject_of = root
+				}
+			}
+		}
+		
+		effect = {
+			add_army_tradition_or_mil_power = { amount = 20 }
+			add_country_modifier = {
+				name = hun_supreme_black_army
+				duration = 7300
+			}
+		}
+	}
+	
+	hun_the_black_legion = {
+		icon = gory_to_the_black_army
+		required_missions = { hun_fekete_sereg }
+		position = 8
+		
+		trigger = {
+			OR = {
+				custom_trigger_tooltip = {
+					has_idea = found_the_black_army
+					tooltip = hun_has_unlocked_third_ni
+				}
+				has_country_modifier = hun_black_army
+				has_reform = black_army_reform
+				custom_trigger_tooltip = {
+					tooltip = emp_hun_black_army_supreme_trigger_tooltip
+					OR = {
+						current_age = age_of_absolutism
+						current_age = age_of_revolutions
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+				}
+				army_professionalism = 0.5
+			}
+			else = {
+				army_tradition = 75
+			}
+			num_of_mercenaries = 40
+			has_mil_advisor_3 = yes
+		}
+		
+		
+		effect = {
+			set_country_flag = hun_no_prof_black_army
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+				}
+				custom_tooltip = hun_black_legion_tt
+			}
+			else = {
+				add_mil_power = 100
+			}
+			add_country_modifier = {
+				name = hun_black_legion
+				duration = -1
+			}
+		}
+	}
+}
+
+lot_securing_borders_2 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = HUN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	sb_lot_rival_galicia_volhynia_3_1 = {
+		icon = mission_early_russian_army
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			is_rival = VOL
+			#possibly an other requirement too
+		}
+		
+		effect = {
+			#either restore union or subjugation cb on galicia volhynia, not sure which
+		}
+	}
+	
+	sb_lot_satilite_galicia_volhynia_3_2 = {
+		icon = mission_lit_march_west
+		required_missions = { sb_lot_strengthen_army_1_1 sb_lot_rival_galicia_volhynia_3_1 }
+		position = 1
+		
+		trigger = {
+			VOL = {
+				is_subject_of = HUN
+			}
+			#possibly an other requirement too
+		}
+		
+		effect = {
+			#no clue yet
+		}
+	}
+	
+}
+
+lot_academic_institutions_4 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = HUN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	hun_bibliotheca_corviniana = {
+		icon = bibliotheca_corviana
+		required_missions = { hun_fund_the_monasteries hun_the_great_city_of_buda }
+		position = 3
+		
+		provinces_to_highlight = {
+			province_id = 153
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		
+		trigger = {
+			has_institution = renaissance
+			OR = {
+				prestige = 50
+				advisor = artist
+			}
+			owns_core_province = 153
+		}
+		
+		effect = {
+			country_event = { id = flavor_hun.47 }
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+				}
+				custom_tooltip = hun_corviniana_insight_leviathan_tt
+				tooltip = {
+					add_country_modifier = {
+						name = hun_corviana_library
+						duration = 7300
+					}
+				}
+			}
+			else = {
+				custom_tooltip = hun_corviniana_insight_no_leviathan_tt
+				tooltip = {
+					add_country_modifier = {
+						name = hun_corviana_library
+						duration = 7300
+					}
+				}
+			}
+		}
+	}
+	
+	hun_universitas_istropolitana = {
+		icon = mission_early_modern_university
+		required_missions = { hun_bibliotheca_corviniana }
+		position = 4
+		
+		provinces_to_highlight = {
+			province_id = 1772
+			NOT = {
+				AND = {
+					owned_by = root
+					is_state_core = root
+					development = 25
+					has_building = university
+				}
+			}
+		}
+		
+		trigger = {
+			owns_core_province = 1772
+			1772 = {
+				OR = {
+					development = 25
+					has_building = university
+				}
+			}
+		}
+		
+		effect = {
+			custom_tooltip = hun_unlocking_nis_tt
+			set_country_flag = hun_national_idea_bonus
+			define_advisor = {
+				type = diplomat
+				name = "János Vitéz"
+				skill = 3
+				culture = hungarian
+				religion = ROOT
+				cost_multiplier = 0.25
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_flag = hun_unlocked_first_idea
+					}
+					change_government_reform_progress =  25
+				}
+				if = {
+					limit = {
+						has_country_flag = hun_unlocked_second_idea
+					}
+					change_government_reform_progress =  25
+				}
+				if = {
+					limit = {
+						has_country_flag = hun_unlocked_third_idea
+					}
+					change_government_reform_progress =  25
+				}
+				if = {
+					limit = {
+						has_country_flag = hun_unlocked_fourth_idea
+					}
+					change_government_reform_progress =  25
+				}
+				if = {
+					limit = {
+						has_country_flag = hun_unlocked_fifth_idea
+					}
+					change_government_reform_progress =  25
+				}
+				if = {
+					limit = {
+						has_country_flag = hun_unlocked_sixth_idea
+					}
+					change_government_reform_progress =  25
+				}
+				if = {
+					limit = {
+						has_country_flag = hun_unlocked_seventh_idea
+					}
+					change_government_reform_progress =  25
+				}
+			}
+		}
+	}
+	
+	hun_the_renaissance_king = {
+		icon = mission_the_renaissance_king_Mathias_Corvinus
+		required_missions = { hun_universitas_istropolitana }
+		position = 5
+		
+		trigger = {
+			university = 10
+			OR = {
+				DIP = 5
+				monthly_dip = 12
+			}
+			has_adm_advisor_3 = yes
+			has_dip_advisor_3 = yes
+			has_mil_advisor_3 = yes
+		}
+		
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = {
+				has_building = university
+			}
+		}
+		
+		effect = {
+			set_country_flag = hun_refund_mana_on_tech
+			custom_tooltip = hun_refund_mana_on_tech_tt
+			add_country_modifier = {
+				name = hun_patrons_of_art
+				duration = -1
+			}
+		}
+	}
+}
+
+lot_between_two_empires_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = HUN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	bte_lot_frens_between_empires_3_6 = {
+		icon = friends_in_high_places
+		required_missions = {  }
+		position = 6
+		
+		trigger = {
+			exists = BYZ
+			NOT = { hre_size = 1 }
+			num_of_trusted_allies = 2
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					alliance_with = BOH
+				}
+				add_historical_friend = BOH
+				clr_country_flag = friends_with_the_holy_empire
+				clr_country_flag = enemies_of_the_holy_empire
+				set_country_flag = friends_with_the_holy_empire
+				swap_non_generic_missions = yes
+			}
+			else = {
+				erzgebirge_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				bohemia_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				moravia_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				clr_country_flag = friends_with_the_holy_empire
+				clr_country_flag = enemies_of_the_holy_empire
+				set_country_flag = enemies_of_the_holy_empire
+				swap_non_generic_missions = yes
+			}
+			custom_tooltip = decides_branching_imperial
+			#also some other rewards ig
+		}
+	}
+	
+	bte_lot_guarantee_serbia_3_9 = {
+		icon = defeat_the_serbs
+		required_missions = { hun_strengthen_the_vegvar }
+		position = 9
+		
+		trigger = {
+			#some way to meddle in Illyria
+		}
+		
+		effect = {
+			#some cool effects ig
+		}
+	}
+}
+
+lot_woc_hun_fourth_branch_develop_the_country_1 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = HUN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	hun_expand_the_mint = {
+		icon = dominant_economy
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			owns = 154
+			154 = {
+				base_production = 6
+			}
+			OR = {
+				advisor = natural_scientist
+				gold_income_percentage = 0.2
+			}
+		}
+		
+		provinces_to_highlight = {
+			province_id = 154
+		}
+		
+		effect = {
+			add_inflation = -3
+			154 = {
+				add_province_modifier = {
+					name = hun_expand_mining_rights
+					duration = 10950
+				}
+			}
+			if = {
+				limit = {
+					gold_income_percentage = 0.4
+				}
+				custom_tooltip = hun_gold_income_tt_yes
+				tooltip = {
+					154 = {
+						add_base_production = 2
+					}
+				}
+			}
+			else = {
+				custom_tooltip = hun_gold_income_tt_no
+				tooltip = {
+					154 = {
+						add_base_production = 2
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						gold_income_percentage = 0.4
+					}
+					154 = {
+						add_base_production = 2
+					}
+				}
+			}
+		}
+	}
+	
+	hun_the_great_city_of_buda = {
+		icon = the_great_city_of_buda
+		required_missions = { hun_expand_the_mint hun_a_strong_economy }
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 134
+					153 = {
+						NOT = {
+							higher_development_than = 266
+						}
+					}
+				}
+				AND = {
+					province_id = 266
+					153 = {
+						NOT = {
+							higher_development_than = 266
+						}
+					}
+				}
+			}
+		}
+		
+		trigger = {
+			153 = {
+				higher_development_than = 134
+				higher_development_than = 266
+			}
+		}
+		
+		effect = {
+			153 = {
+				add_province_modifier = {
+					name = hun_great_city_buda
+					duration = 7300
+				}
+			}
+			country_event = { id = flavor_hun.53 }
+			custom_tooltip = hun_pest_production_insight_tt
+		}
+	}
+	
+	hun_develop_free_royal_towns = {
+		icon = mission_eastern_european_city
+		required_missions = { hun_the_great_city_of_buda }
+		position = 3
+		
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					province_has_center_of_trade_of_level = 1
+					region = carpathia_region
+					development = 20
+				}
+				amount = 3
+			}
+		}
+		
+		provinces_to_highlight = {
+			owned_by = ROOT
+			region = carpathia_region
+			province_has_center_of_trade_of_level = 1
+			NOT = {
+				development = 20
+			}
+		}
+		
+		effect = {
+			unlock_estate_privilege = { estate_privilege = estate_burghers_hungarian_royal_cities }
+		}
+	}
+	
+	hun_found_budapest = {
+		icon = a_strong_government
+		required_missions = { hun_a_strong_government }
+		position = 5
+		
+		trigger = {
+			owns = 153
+			153 = {
+				development = 40
+			}
+			153 = {
+				has_tax_building_trigger = yes
+			}
+			153 = {
+				has_trade_building_trigger = yes
+			}
+			153 = {
+				has_production_building_trigger = yes
+			}
+		}
+		
+		provinces_to_highlight = {
+			province_id = 153
+		}
+		
+		effect = {
+			set_country_flag = hun_bonus_dev_budapest
+			153 = {
+				change_province_name = "Budapest"
+				rename_capital = "Budapest"
+			}
+			153 = {
+				add_province_modifier = {
+					name = hun_pearl_on_the_danube
+					duration = -1
+				}
+			}
+			custom_tooltip = hun_developing_budapest_tt
+		}
+	}
+}
+
+lot_between_two_empires_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = HUN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	bte_lot_fortify_southern_border_4_7 = {
+		icon = fight_bosnian_heresies
+		required_missions = { bte_lot_frens_between_empires_3_6 }
+		position = 7
+		
+		trigger = {
+			num_of_owned_provinces_with ={
+				value = 3
+				OR = {
+					area = transylvania_area
+					area = southern_transylvania_area
+				}
+				country_or_non_sovereign_subject_holds = ROOT
+				if = {
+					limit = {
+						root = { mil_tech = 24 }
+					}
+					has_building = fort_18th
+				}
+				else_if = {
+					limit = {
+						root = { mil_tech = 19 }
+					}
+					has_building = fort_17th
+				}
+				else_if = {
+					limit = {
+						root = { mil_tech = 14 }
+					}
+					has_building = fort_16th
+				}
+				else = {
+					has_building = fort_15th
+				}
+			}
+		}
+		
+		effect = {
+			#some cool effects ig
+		}
+	}
+	
+	hun_strengthen_the_vegvar = {
+		icon = mission_strengthen_the_vegvar
+		required_missions = { bte_lot_fortify_southern_border_4_7 }
+		position = 8
+		
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					any_neighbor_province = {
+						NOT = { owned_by = ROOT }
+					}
+					has_fort_building_trigger = yes
+					num_of_times_improved = 3
+				}
+				amount = 5
+			}
+		}
+		
+		provinces_to_highlight = {
+			owned_by = ROOT
+			any_neighbor_province = {
+				NOT = { owned_by = ROOT }
+			}
+			has_fort_building_trigger = yes
+			NOT = {
+				num_of_times_improved = 3
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					exists = BUL
+				}
+				add_casus_belli = {
+					target = BUL
+					type = cb_vassalize_mission
+					months = 300
+				}
+			}
+			else = {
+				silistria_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				bulgaria_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					exists = WAL
+				}
+				add_casus_belli = {
+					target = WAL
+					type = cb_vassalize_mission
+					months = 300
+				}
+			}
+			else = {
+				wallachia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			custom_tooltip = hun_vegvar_bonus_mil_tt
+			unlock_estate_privilege = { estate_privilege = estate_nobles_vegvar_system }
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						any_neighbor_province = {
+							NOT = { owned_by = ROOT }
+						}
+						has_fort_building_trigger = yes
+						num_of_times_improved = 3
+					}
+					add_base_manpower = 1
+				}
+			}
+		}
+	}
+	
+	bte_lot_liberate_bulgaria_4_9 = {
+		icon = mission_the_russian_tsardom
+		required_missions = { hun_strengthen_the_vegvar }
+		position = 9
+		
+		trigger = {
+			OR = {
+				BUL = {
+					is_subject_of = ROOT
+				}
+				BUL = {
+					is_subject_of = BYZ
+				}
+				AND = {
+					bulgaria_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					silistria_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				AND = {
+					bulgaria_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = BYZ
+					}
+					silistria_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = BYZ
+					}
+				}
+			}
+		}
+		
+		effect = {
+			#some cool effects ig
+		}
+	}
+}
+
+lot_woc_hun_fifth_branch_develop_the_country_2 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = HUN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	hun_a_strong_economy = {
+		icon = balance_the_estates
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			share_of_starting_income = 2
+		}
+		
+		effect = {
+			add_years_of_income = 0.25
+			capital_scope = {	
+				add_or_upgrade_production_building = yes
+			}
+		}
+	}
+	
+	hun_fertile_lands_of_pannonia = {
+		icon = mission_pol_develop_countryside
+		required_missions = { hun_a_strong_economy }
+		position = 3
+		
+		provinces_to_highlight = {
+			owned_by = ROOT
+			region = carpathia_region
+			OR = {
+				has_production_building_trigger = no
+				NOT = { base_production = 6 }
+			}
+		}
+		
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					region = carpathia_region
+					base_production = 6
+				}
+				amount = 10
+			}
+			calc_true_if = {
+				all_owned_province = {
+					region = carpathia_region
+					has_production_building_trigger = yes
+				}
+				amount = 10
+			}
+		}
+		
+		effect = {
+			add_years_of_owned_provinces_production_income = {
+				years = 1
+				trigger = {
+					has_production_building_trigger = yes
+				}
+				custom_tooltip = INCOME_FROM_WORKSHOPS_DESC
+			}
+			carpathia_region = {
+				add_province_modifier = {
+					name = hun_fertile_lands
+					duration = 5475
+				}
+			}
+		}
+	}
+	
+	hun_a_strong_government = {
+		icon = mission_apostolic_kingdom
+		required_missions = { hun_develop_free_royal_towns hun_fertile_lands_of_pannonia }
+		position = 4
+		
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = {
+				OR = {
+					has_building = courthouse
+					has_building = town_hall
+				}
+			}
+		}
+		
+		trigger = {
+			reform_level = 7
+			crown_land_share = 60
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = courthouse
+						has_building = town_hall
+					}
+				}
+				amount = 10
+			}
+		}
+		
+		effect = {
+			change_government_reform_progress = 100
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+				}
+				add_country_modifier = {
+					name = hun_strengthen_the_government
+					duration = 3650
+				}
+				custom_tooltip = hun_centralize_government
+			}
+			else = {
+				add_country_modifier = {
+					name = hun_golden_age_of_hungary
+					duration = 9125
+				}
+			}
+		}
+	}
+	
+	hun_address_the_ethnic_situation = { 
+		icon = mission_address_the_ethnic_situation
+		required_missions = { hun_a_strong_government }
+		position = 5
+		
+		provinces_to_highlight = {
+			culture = hungarian
+		}
+		
+		trigger = {
+			num_accepted_cultures = 3
+			development_in_provinces = {
+				value = 250
+				culture_group = carpathian
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_hun.38 }
+			custom_tooltip = hun_ethnic_situation_insight_tt
+		}
+	}
+	
+	hun_a_multicultural_empire = { 
+		icon = multicultural_empire 
+		required_missions = { hun_address_the_ethnic_situation }
+		position = 6
+		
+		provinces_to_highlight = {
+			AND = {
+				owned_by = ROOT
+				OR = {
+					unrest = 1
+					nationalism = 1 
+					local_autonomy = 1 
+				}
+				ROOT = {
+					NOT = {
+						num_of_owned_provinces_with = {
+							value = 30
+							NOT = { unrest = 1 }
+							NOT = { nationalism = 1 }
+							NOT = { local_autonomy = 1 }
+						}
+					}
+				}
+			}
+		}
+		
+		trigger = {
+			stability = 3
+			num_accepted_cultures = 4
+			OR = {
+				tag = AUH
+				AND = {
+					total_development = 1000
+					OR = {
+						reform_level = 10
+						crown_land_share = 80
+					}
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 30
+				NOT = { unrest = 1 }
+				NOT = { nationalism = 1 }
+				NOT = { local_autonomy = 1 }
+			}
+		}
+		
+		effect = {
+			custom_tooltip = hun_austria_hungary_requirement_tt
+			set_country_flag = hun_keep_order_of_the_dragon
+			hidden_effect = {
+				unlock_government_reform = {
+					government_reform = imperial_hungarian_government
+				}
+			}
+			if = {
+				limit = {
+					government = monarchy
+				}
+				add_government_reform = imperial_hungarian_government
+			}
+			else = {
+				change_government_reform_progress = 100
+			}
+			custom_tooltip = hun_perma_access_order_of_the_dragon
+		}
+	}
+}
+
+lot_between_two_empires_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Winds of Change"
+	}
+	potential = {
+		has_dlc = "Winds of Change"
+		tag = HUN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	bte_lot_ally_byzantium_5_7 = {
+		icon = byz_justinians_ambition
+		required_missions = { bte_lot_frens_between_empires_3_6 }
+		position = 7
+		
+		trigger = {
+			#something about allying the byzantines
+		}
+		
+		effect = {
+			#some cool effects ig
+		}
+	}
+	
+	bte_lot_reconquer_greece_5_8 = {
+		icon = the_latin_empire
+		required_missions = { bte_lot_ally_byzantium_5_7 }
+		position = 8
+		
+		trigger = {
+			#something about allying the byzantines
+		}
+		
+		effect = {
+			#some cool effects ig
+		}
+	}
+	
+	bte_lot_contend_wallachia_5_9 = {
+		icon = danubian_power
+		required_missions = { hun_strengthen_the_vegvar }
+		position = 9
+		
+		trigger = {
+			OR = {
+				WAL = {
+					is_subject_of = ROOT
+				}
+				WAL = {
+					is_subject_of = BYZ
+				}
+				wallachia_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				wallachia_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = BYZ
+				}
+			}
+		}
+		
+		effect = {
+			#some cool effects ig
+		}
+	}
+}
