@@ -85,7 +85,7 @@ Norway_missions_s1 = {
     Explore_africa_mission = { 
         icon = invest_in_the_rich_trades
         required_missions = { NWC_colonial_mandate_mission }
-        position = 8
+        position = 7
         provinces_to_highlight = {
             province_id = 1177
         }
@@ -127,7 +127,7 @@ Norway_missions_s1 = {
     Explore_asia_mission = { 
         icon = mission_raid_christian_trade
         required_missions = { Explore_africa_mission }
-        position = 9
+        position = 8
 
         trigger = {
             has_discovered = 2100
@@ -147,7 +147,7 @@ Norway_missions_s1 = {
     Mysteries_of_home_mission = { 
         icon = mission_european_politics
         required_missions = { Better_ships_explorers_mission }
-        position = 13
+        position = 11
 
         trigger = {
             #Exploring Lappland
@@ -175,7 +175,7 @@ Norway_missions_s1 = {
     The_propulsion_problem_mission = { 
         icon = ned_cloth_trading
         required_missions = { I_can_see_mission }
-        position = 17
+        position = 15
 
         trigger = {
             22 = {
@@ -204,7 +204,7 @@ Norway_missions_s1 = {
     The_base_mission = { 
         icon = spa_dominate_sevilla
         required_missions = { project_selvvind_mission }
-        position = 21
+        position = 19
         OR = {
                 area = eastern_norway
                 area = western_norway
@@ -315,69 +315,27 @@ Norway_missions_s2 = {
         required_missions = {  }
         position = 1
         provinces_to_highlight = {
-            OR = {
-                province_id = 20
-                province_id = 1978
-                province_id = 369
-                province_id = 1979
-                province_id = 371
-                province_id = 370
-            } 
-            NOT = {
-                has_building = marketplace
-            }
+            continent = europe
+            trade_goods = fish
+            NOT = { has_building = marketplace }
         }
 
         trigger = {
-            20 = {
-                owned_by = ROOT
-                has_building = marketplace
-            }
-            1978 = {
-                owned_by = ROOT
-                has_building = marketplace
-            }
-            369 = {
-                owned_by = ROOT
-                has_building = marketplace
-            }
-            1979 = {
-                owned_by = ROOT
-                has_building = marketplace
-            }
-            371 = {
-                owned_by = ROOT
-                has_building = marketplace
-            }
-            370 = {
-                owned_by = ROOT
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                value = 6
+                continent = europe
+                trade_goods = fish
                 has_building = marketplace
             }
         }
 
         effect = {
-            20 = {
-                change_trade_goods = fish
-                add_base_production = 1
-            }
-            1978 = {
-                change_trade_goods = fish
-                add_base_production = 1
-            }
-            369 = {
-                change_trade_goods = fish
-                add_base_production = 1
-            }
-            1979 = {
-                change_trade_goods = fish
-                add_base_production = 1
-            }
-            371 = {
-                change_trade_goods = fish
-                add_base_production = 1
-            }
-            370 = {
-                change_trade_goods = fish
+            every_owned_province = {
+                limit = {
+                    continent = europe
+                    trade_goods = fish
+                    has_building = marketplace
+                }
                 add_base_production = 1
             }
         }
@@ -388,48 +346,29 @@ Norway_missions_s2 = {
         required_missions = { Whaling_1_mission }
         position = 2
         provinces_to_highlight = {
-            OR = {
-                province_id = 20
-                province_id = 1978
-                province_id = 369
-                province_id = 1979
-                province_id = 371
-                province_id = 370
-            }
+            continent = europe
+            trade_goods = fish
         }
 
         trigger = {
-            20 = {
-                owned_by = ROOT
-                base_production = 5
-            }
-            1978 = {
-                owned_by = ROOT
-                base_production = 5
-            }
-            369 = {
-                owned_by = ROOT
-                base_production = 5
-            }
-            1979 = {
-                owned_by = ROOT
-                base_production = 5
-            }
-            371 = {
-                owned_by = ROOT
-                base_production = 5
-            }
-            370 = {
-                owned_by = ROOT
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                value = 6
+                continent = europe
+                trade_goods = fish
                 base_production = 5
             }
         }
 
         effect = {
-            nor_whaling_provinces = {
+            every_owned_province = {
+                limit = {
+                    continent = europe
+                    trade_goods = fish
+                    base_production = 5
+                }
                 add_province_modifier = {
-                name = "nor_whaling_boom"
-                duration = -1
+                    name = "nor_whaling_boom"
+                    duration = -1
                 }
             }
         }
@@ -469,8 +408,15 @@ Norway_missions_s2 = {
 
         effect = {
             ICE = {
+                hidden_effect = { change_tag = NWC }
                 country_event = {
                     id = mission_nor.14
+                }
+            }
+            hidden_effect = {
+                create_subject = {
+                    subject_type = commercial_enterprise
+                    subject = NWC
                 }
             }
             add_treasury = 100
@@ -550,35 +496,10 @@ Norway_missions_s2 = {
         }
     }
 
-    NWC_colonial_mandate_mission = { 
-        icon = mission_alliances
-        required_missions = { Whaling_4_mission Set_up_foothold_mission }
-        position = 7
-
-        trigger = {
-            advisor = statesman
-            adm_power = 200
-        }
-
-        effect = {
-            add_adm_power = -200
-            country_event = {
-                id = flavor_nor.1
-                days = 1
-            }
-            NWC = { 
-                country_event = {
-                    id = flavor_nor.4
-                    days = 1
-                }   
-            }
-        }
-    }
-
     Ports_to_recieve_mission = { 
         icon = mission_rb_control_the_hansa
-        required_missions = { NWC_colonial_mandate_mission }
-        position = 8
+        required_missions = { Whaling_4_mission }
+        position = 7
 
         trigger = {
             20 = {
@@ -607,7 +528,7 @@ Norway_missions_s2 = {
     Whaling_5_mission = { 
         icon = mission_retake_ceuta
         required_missions = { Ports_to_recieve_mission Explore_africa_mission }
-        position = 9
+        position = 8
 
         trigger = {
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -665,7 +586,7 @@ Norway_missions_s2 = {
     Explorers_society_mission = {
         icon = mission_mnd_dai_universities
         required_missions = { Whaling_5_mission Explore_asia_mission }
-        position = 10
+        position = 9
         provinces_to_highlight = {
             province_id = 20
         }
@@ -693,10 +614,14 @@ Norway_missions_s2 = {
         }
     }
 
+    # Kalani - Prerequisite of the above ^
     Better_ships_explorers_mission = { 
         icon = mission_sea_battles
-        required_missions = { The_workshops_of_norway_mission }
-        position = 12
+        required_missions = { 
+            Explorers_society_mission 
+            The_workshops_of_norway_mission
+        }
+        position = 10
         provinces_to_highlight = {
             province_id = 20
         }
@@ -728,7 +653,7 @@ Norway_missions_s2 = {
     To_lands_far_away_mission = {
         icon = mission_plc_lifetime_of_war
         required_missions = { Better_ships_explorers_mission }
-        position = 13
+        position = 11
         provinces_to_highlight = {
             OR = {
                province_id = 1816
@@ -786,7 +711,7 @@ Norway_missions_s2 = {
     Visiting_the_east_mission = { 
         icon = mission_asian_city
         required_missions = { To_lands_far_away_mission }
-        position = 14
+        position = 12
 
         trigger = {
             151 = {
@@ -844,7 +769,7 @@ Norway_missions_s2 = {
     I_can_see_mission = { 
         icon = fixed_garrison_system
         required_missions = { Up_and_away_mission }
-        position = 16
+        position = 14
 
         trigger = {
             if = {
@@ -878,7 +803,7 @@ Norway_missions_s2 = {
     Bombs_away_mission = { 
         icon = mission_humiliate_lubeck
         required_missions = { I_can_see_mission }
-        position = 17
+        position = 15
 
         trigger = {
             army_tradition = 35
@@ -903,7 +828,7 @@ Norway_missions_s2 = {
     Luft_leidang_mission = { 
         icon = mission_expanded_leidang
         required_missions = { Bombs_away_mission }
-        position = 18
+        position = 16
         provinces_to_highlight = {
             OR = {
                 area = eastern_norway
@@ -961,7 +886,7 @@ Norway_missions_s2 = {
 	The_skys_the_limit_mission = { 
         icon = mal_trade_with_europeans
         required_missions = { Luft_leidang_mission Royal_norwegian_skyfleet_mission }
-        position = 19
+        position = 17
 
         trigger = {
             has_estate_privilege = estate_burghers_land_rights
@@ -985,7 +910,7 @@ Norway_missions_s2 = {
     project_selvvind_mission = { 
         icon = mission_rb_central_belt_coal_mining
         required_missions = { The_royal_althing_mission The_skys_the_limit_mission }
-        position = 20
+        position = 18
 
         trigger = {
             innovativeness = 90
@@ -1006,7 +931,7 @@ Norway_missions_s2 = {
     Project_tidtaker_mission = { 
         icon = mission_corsairs_of_the_north_sea
         required_missions = { The_base_mission The_peak_mission}
-        position = 22
+        position = 20
 
         trigger = {
             NOT = {
@@ -1041,7 +966,7 @@ Norway_missions_s3 = {
     Navy_1_mission = { 
         icon = mission_danish_navy
         required_missions = {  }
-        position = 2
+        position = 4
 
         trigger = {
             navy_size_percentage = 1
@@ -1055,61 +980,9 @@ Norway_missions_s3 = {
         }
     }
 
-
-    Exploration_1_mission = { 
-        icon = mission_exploration
-        required_missions = { Navy_1_mission }
-        position = 3
-
-        trigger = {
-            OR = {
-				has_idea = quest_for_the_new_world
-				has_idea = call_of_our_forefathers
-			}
-        }
-
-        effect = {
-            greenland_area = {
-                discover_country = NOR
-                add_province_modifier = {
-                    name = "nor_greenland_infrastructure"
-                    duration = 7300
-                }
-            }
-            denmark_strait_area = {
-                discover_country = NOR
-            }
-            1804 = {
-                discover_country = NOR
-            }
-        }
-    }
-
-    Colonise_greenland_mission = { 
-        icon = mission_longships
-        required_missions = { Exploration_1_mission }
-        position = 4
-
-        trigger = {
-            greenland_area = {
-                owned_by = NOR
-            }
-            exists = NWC 
-        }
-
-        effect = {
-            greenland_area = {
-                change_trade_goods = fish
-            }
-            greenland_area = {
-                cede_province = NWC 
-            }
-        }
-    }
-
     Great_expedition_mission = { 
         icon = mission_explore_the_world
-        required_missions = { Colonise_greenland_mission }
+        required_missions = { Navy_1_mission }
         position = 5
         provinces_to_highlight = {
             province_id = 20
@@ -1160,438 +1033,11 @@ Norway_missions_s3 = {
         }
     }
 
-    Set_up_foothold_mission = { 
-        icon = mission_expand_into_the_forest
-        required_missions = { Great_expedition_mission }
-        position = 6
-
-        trigger = {
-            newfoundland_area = {
-                type = all
-                owned_by = NOR
-            }
-        }
-
-        effect = {
-            newfoundland_area = {
-                type = all
-                cede_province = NWC
-            }
-            newfoundland_area = {
-                add_province_modifier = {
-                    name = "nwc_developing_new_world_port"
-                    duration = 7300
-                }
-            }
-        }
-    }
-
-    Greater_expansion_mission = { 
-        icon = mission_rb_settle_the_north
-        required_missions = { Set_up_foothold_mission }
-        position = 7
-        provinces_to_highlight = {
-            OR = {
-                area = labrador_area
-                area = cote_nord_area
-                area = notre_dame_mountains_area
-                area = upper_acadia_area
-                area = st_john_valley_area
-                area = lower_acadia_area
-                area = trois_rivieres_area
-                area = lower_canada_area
-            }
-        }
-
-        trigger = {
-            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-                OR = {
-                    area = labrador_area
-                    area = cote_nord_area
-                    area = notre_dame_mountains_area
-                    area = upper_acadia_area
-                    area = st_john_valley_area
-                    area = lower_acadia_area
-                    area = trois_rivieres_area
-                    area = lower_canada_area
-                }
-                value = 25
-            }
-        }
-
-        effect = {
-            add_country_modifier = {
-                name = "nor_vinland_reclaimed"
-                duration = 7300
-            }
-            NWC = { 
-                add_country_modifier = {
-                name = "nwc_vinland_reclaimed"
-                duration = 7300
-                }   
-            }
-        }
-    }
-
-    Mountains_just_like_home_mission = { 
-        icon = mission_norwegian_america
-        required_missions = { Greater_expansion_mission }
-        position = 8
-        provinces_to_highlight = {
-            OR = {
-                area = south_iroquoisia_area
-                area = hudson_valley_area
-                area = iroquoisia_area
-                area = westsylvania_area 
-                province_id = 2553
-                area = great_valley_area
-                area = susquehanna_area
-                area = appalachia_area
-                area = south_appalachia_area
-            }
-        }
-
-        trigger = {
-            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-                OR = {
-                    area = south_iroquoisia_area
-                    area = hudson_valley_area
-                    area = iroquoisia_area
-                    area = westsylvania_area 
-                    province_id = 2553
-                    area = great_valley_area
-                    area = susquehanna_area
-                    area = appalachia_area
-                    area = south_appalachia_area
-                }
-                value = 16
-            }
-        }
-
-        effect = {
-            add_country_modifier = {
-                name = "ec_colonisation_fever"
-                duration = 3650
-            }
-            NWC = { 
-                add_country_modifier = {
-                    name = "ec_colonisation_fever"
-                    duration = 3650
-                }
-            }
-        }
-    }
-
-    Metals_in_they_them_hills_mission = {
-        icon = mission_iron_and_copper
-        required_missions = { Mountains_just_like_home_mission }
-        position = 9
-        provinces_to_highlight = {
-            OR = {
-                area = susquehanna_area
-                area = great_valley_area
-                province_id = 2553
-                area = south_appalachia_area
-                area = appalachia_area
-            }
-        }
-
-        trigger = {
-            susquehanna_area = {
-                type = all
-                OR = {
-                    AND = {
-                        OR = {
-                            owned_by = NOR
-                            owned_by = NWC
-                        }
-                        has_building = workshop
-                    }
-                    NOT = {
-                        OR = {
-                            owned_by = NOR
-                            owned_by = NWC
-                        }
-                    }
-                }
-            }
-            great_valley_area = {
-                type = all
-                OR = {
-                    AND = {
-                        OR = {
-                            owned_by = NOR
-                            owned_by = NWC
-                        }
-                        has_building = workshop
-                    }
-                    NOT = {
-                        OR = {
-                            owned_by = NOR
-                            owned_by = NWC
-                        }
-                    }
-                }
-            }
-            2553 = {
-                OR = {
-                    AND = {
-                        OR = {
-                            owned_by = NOR
-                            owned_by = NWC
-                        }
-                        has_building = workshop
-                    }
-                    NOT = {
-                        OR = {
-                            owned_by = NOR
-                            owned_by = NWC
-                        }
-                    }
-                }
-            }
-            south_appalachia_area = {
-                type = all
-                OR = {
-                    AND = {
-                        OR = {
-                            owned_by = NOR
-                            owned_by = NWC
-                        }
-                        has_building = workshop
-                    }
-                    NOT = {
-                        OR = {
-                            owned_by = NOR
-                            owned_by = NWC
-                        }
-                    }
-                } 
-            }
-            appalachia_area = {
-                type = all
-                OR = {
-                    AND = {
-                        OR = {
-                            owned_by = NOR
-                            owned_by = NWC
-                        }
-                        has_building = workshop
-                    }
-                    NOT = {
-                        OR = {
-                            owned_by = NOR
-                            owned_by = NWC
-                        }
-                    }
-                }
-            }
-        }
-
-        effect = {
-            susquehanna_area = {
-                random_list = {
-                    20 = {
-                        # Nothing changes
-                    }
-                    40 = {
-                        change_trade_goods = iron
-                    }
-                    40 = {
-                        change_trade_goods = copper
-                    }
-                }
-            }
-            great_valley_area = {
-                random_list = {
-                    20 = {
-                        # Nothing changes
-                    }
-                    40 = {
-                        change_trade_goods = iron
-                    }
-                    40 = {
-                        change_trade_goods = copper
-                    }
-                }
-            }
-            2553 = {
-                random_list = {
-                    20 = {
-                        # Nothing changes
-                    }
-                    40 = {
-                        change_trade_goods = iron
-                    }
-                    40 = {
-                        change_trade_goods = copper
-                    }
-                }
-            }
-            south_appalachia_area = {
-                random_list = {
-                    20 = {
-                        # Nothing changes
-                    }
-                    40 = {
-                        change_trade_goods = iron
-                    }
-                    40 = {
-                        change_trade_goods = copper
-                    }
-                }
-            }
-            appalachia_area = {
-                random_list = {
-                    20 = {
-                        # Nothing changes
-                    }
-                    40 = {
-                        change_trade_goods = iron
-                    }
-                    40 = {
-                        change_trade_goods = copper
-                    }
-                }
-            }
-        }
-    }
-
-    Iron_and_copper_mining_mission = {
-        icon = mission_nah_ravine_dwellers
-        required_missions = { Metals_in_they_them_hills_mission }
-        position = 10
-        provinces_to_highlight = {
-            OR = {
-                area = susquehanna_area
-                area = great_valley_area
-                province_id = 2553
-                area = south_appalachia_area
-                area = appalachia_area
-            }
-        }
-
-        trigger = {
-            calc_true_if = {
-                all_owned_province = {
-                    OR = {
-                        area = susquehanna_area
-                        area = great_valley_area
-                        area = south_appalachia_area
-                        area = appalachia_area
-                        province_id = 2305
-                    }
-                    OR = {
-                        trade_goods = iron
-                        trade_goods = copper
-                    }
-                    has_building = weapons
-                }
-            }
-        }
-
-        effect = {
-            susquehanna_area = {
-                limit = {
-                    owner = {
-                        OR = {
-                            tag = NOR
-                            tag = NWC
-                        }
-                    }
-                    OR = {
-                        trade_goods = iron
-                        trade_goods = copper
-                    }
-                }
-                add_province_modifier = {
-                    name = "nor_mines_suported"
-                    duration = 18250
-                }
-            }
-            great_valley_area = {
-                limit = {
-                    owner = {
-                        OR = {
-                            tag = NOR
-                            tag = NWC
-                        }
-                    }
-                    OR = {
-                        trade_goods = iron
-                        trade_goods = copper
-                    }
-                }
-                add_province_modifier = {
-                    name = "nor_mines_suported"
-                    duration = 18250
-                }
-            }
-            if = {
-                limit = {
-                    2553 = {
-                        owner = {
-                            OR = {
-                                tag = NOR
-                                tag = NWC
-                            }
-                        }
-                        OR = {
-                            trade_goods = iron
-                            trade_goods = copper
-                        }
-                    }
-                }
-                2553 = {
-                    add_province_modifier = {
-                        name = "nor_mines_suported"
-                        duration = 18250
-                    }
-                }
-            }
-            south_appalachia_area = {
-                limit = {
-                    owner = {
-                        OR = {
-                            tag = NOR
-                            tag = NWC
-                        }
-                    }
-                    OR = {
-                        trade_goods = iron
-                        trade_goods = copper
-                    }
-                }
-                add_province_modifier = {
-                    name = "nor_mines_suported"
-                    duration = 18250
-                }
-            }
-            appalachia_area = {
-                limit = {
-                    owner = {
-                        OR = {
-                            tag = NOR
-                            tag = NWC
-                        }
-                    }
-                    OR = {
-                        trade_goods = iron
-                        trade_goods = copper
-                    }
-                }
-                add_province_modifier = {
-                    name = "nor_mines_suported"
-                    duration = 18250
-                }
-            }
-        }
-    }
-
+    # Kalani - This is now freestanding
     The_workshops_of_norway_mission = { 
         icon = mission_have_manufactories
-        required_missions = { Iron_and_copper_mining_mission }
-        position = 11
+        required_missions = { }
+        position = 9
         provinces_to_highlight = {
             OR = {
                 area = eastern_norway
@@ -1846,7 +1292,7 @@ Norway_missions_s3 = {
     Up_and_away_mission = { 
         icon = mission_se_medicine_wheel
         required_missions = { Visiting_the_east_mission Manufactoring_goods_mission }
-        position = 15
+        position = 13
 
         trigger = {
             natural_scientist = 5
@@ -1867,7 +1313,7 @@ Norway_missions_s3 = {
     The_peak_mission = { 
         icon = imperial_capitals
         required_missions = { Following_the_winds_mission project_selvvind_mission }
-        position = 21
+        position = 19
 
         trigger = {
             22 = {
@@ -1900,7 +1346,7 @@ Norway_missions_s3 = {
     Project_mekanisk_tenker_mission = { 
         icon = mission_rule_of_the_sun
         required_missions = { Project_tidtaker_mission The_eureaka_plan_mission}
-        position = 23
+        position = 21
 
         trigger = {
             innovativeness = 100
@@ -2086,6 +1532,7 @@ Norway_missions_s4 = {
         }
     }
 
+    # Kalani - Remove or Rework
     Secure_atlantic_trade_mission = { 
         icon = mission_rb_grow_the_channel
         required_missions = { Great_expedition_mission }
@@ -2112,6 +1559,7 @@ Norway_missions_s4 = {
         }
     }
 
+    # Kalani - Remove or Rework
     North_american_trade_mission = { 
         icon = mission_pol_embellish_gdansk
         required_missions = { Secure_atlantic_trade_mission }
@@ -2219,80 +1667,10 @@ Norway_missions_s4 = {
         }
     }
 
-    Colonise_east_coast_mission = { 
-        icon = mission_rb_the_thirteen_colonies
-        required_missions = { Overland_routes_mission }
-        position = 9
-        provinces_to_highlight = {
-            OR = {
-                region = northeast_america_region
-                region = southeast_america_region
-            }
-            NOT = { owned_by = NOR }
-        }
-
-        trigger = {
-            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-                OR = {
-                    region = northeast_america_region
-                    region = southeast_america_region
-                }
-                value = 30 #own 30% of eastcoast provinces, which is about 30 provinces.
-            }
-        }
-
-        effect = {
-            southeast_america_region = {
-                limit = {
-                    owner = {
-                        OR = {
-                            tag = NOR
-                            tag = NWC
-                        }
-                    }
-                    OR = {
-                        trade_goods = grain
-                        trade_goods = coffee
-                        trade_goods = cotton
-                        trade_goods = sugar
-                        trade_goods = tobacco
-                        trade_goods = cocoa
-                    }
-                }
-                add_province_modifier = {
-                    name = "nor_plantations_established"
-                    duration = 18250
-                }
-            }
-            northeast_america_region = {
-                limit = {
-                    owner = {
-                        OR = {
-                            tag = NOR
-                            tag = NWC
-                        }
-                    }
-                    OR = {
-                        trade_goods = grain
-                        trade_goods = coffee
-                        trade_goods = cotton
-                        trade_goods = sugar
-                        trade_goods = tobacco
-                        trade_goods = cocoa
-                    }
-                }
-                add_province_modifier = {
-                    name = "nor_plantations_established"
-                    duration = 18250
-                }
-            }
-        }
-    }
-
     Crown_port_mission = { 
         icon = mission_develop_nevas_port
-        required_missions = { Colonise_east_coast_mission }
-        position = 10
+        required_missions = { Overland_routes_mission }
+        position = 9
         provinces_to_highlight = {
             province_id = 20
         }
@@ -2348,10 +1726,11 @@ Norway_missions_s4 = {
         }
     }
 
+    # Kalani - Remove
     Extracting_the_resources_mission = { # , also needs to be changed province wise to align with the new area
         icon = mission_african_gold
         required_missions = { The_workshops_of_norway_mission }
-        position = 12
+        position = 10
         provinces_to_highlight = {
             OR = {
                 area = susquehanna_area
@@ -2407,10 +1786,11 @@ Norway_missions_s4 = {
         }
     }
 
+    # Kalani - Remove
     Processing_goods_mission = {
         icon = claim_tirol
         required_missions = { Extracting_the_resources_mission }
-        position = 13
+        position = 11
         provinces_to_highlight = {
             OR = {
                 area = hudson_valley_area
@@ -2609,7 +1989,7 @@ Norway_missions_s4 = {
     Manufactoring_goods_mission = { 
         icon = mission_beyond_the_urals
         required_missions = { Processing_goods_mission }
-        position = 14
+        position = 12
         provinces_to_highlight = {
             OR = {
                 area = western_norway
@@ -2896,7 +2276,7 @@ Norway_missions_s4 = {
     The_mountains_unlocked_mission = { 
         icon = mission_nah_ravine_dwellers
         required_missions = { Up_and_away_mission }
-        position = 16
+        position = 14
         provinces_to_highlight = {
             OR = {
                 province_id = 22
@@ -2961,7 +2341,7 @@ Norway_missions_s4 = {
     Transport_boom_mission = { 
         icon = mission_royal_roads
         required_missions = { The_mountains_unlocked_mission }
-        position = 17
+        position = 15
         provinces_to_highlight = {
             OR = {
                 area = western_norway
@@ -3016,7 +2396,7 @@ Norway_missions_s4 = {
     Royal_norwegian_skyfleet_mission = { 
         icon = mission_european_politics
         required_missions = { Transport_boom_mission }
-        position = 18
+        position = 16
 
         trigger = {
             num_of_light_ship = 100
@@ -3039,7 +2419,7 @@ Norway_missions_s4 = {
 	The_royal_althing_mission = { 
         icon = mission_establish_the_prikazy
         required_missions = {  }
-        position = 19
+        position = 17
 
         trigger = {
             mission_completed = Chamber_of_churches_mission
@@ -3074,7 +2454,7 @@ Norway_missions_s4 = {
     Following_the_winds_mission = { 
         icon = mission_high_income
         required_missions = { The_royal_althing_mission The_skys_the_limit_mission }
-        position = 20
+        position = 18
 
         trigger = {
             num_of_trading_bonuses = 10
@@ -3093,7 +2473,7 @@ Norway_missions_s4 = {
     The_eureaka_plan_mission = { #, is about getting everyone educated by the church
         icon = spa_infantes_aragon
         required_missions = { The_peak_mission The_slope_mission }
-        position = 22
+        position = 20
 
         trigger = {
             estate_loyalty = {
@@ -3180,7 +2560,7 @@ Norway_missions_s5 = {
 
     Nor_religion_mission = { 
 		icon = catholic_confraternity
-		position = 8
+		position = 7
 		required_missions = {  }
 		provinces_to_highlight = {
 			is_capital_of = ROOT
@@ -3239,7 +2619,7 @@ Norway_missions_s5 = {
 
     Chamber_of_churches_mission = { 
         icon = mission_hands_praying
-        position = 9
+        position = 8
         required_missions = { Nor_religion_mission }
         provinces_to_highlight = {
             area = northern_norway
@@ -3276,7 +2656,7 @@ Norway_missions_s5 = {
 
     Trade_networks_mission = { 
         icon = interest_of_holland
-        position = 13
+        position = 11
         required_missions = { Extracting_the_resources_mission }
 
         trigger = {
@@ -3297,7 +2677,7 @@ Norway_missions_s5 = {
     Transcontinental_transport_mission = { 
         icon = mission_maize     
         required_missions = { The_mountains_unlocked_mission } 
-        position = 17
+        position = 15
         provinces_to_highlight = {
             province_id = 2564
             province_id = 1978
@@ -3349,7 +2729,7 @@ Norway_missions_s5 = {
     The_slope_mission = {
         icon = Compulsory_Education
         required_missions = { Following_the_winds_mission }
-        position = 21
+        position = 19
         provinces_to_highlight = {
             OR = {
                 area = eastern_norway

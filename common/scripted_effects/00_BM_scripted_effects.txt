@@ -112,3 +112,110 @@ select_bombing_location = {
         save_event_target_as = bombing8
 	}
 }
+
+great_expedition_discovery_outcomes = {
+	##### St. Lawrence #####
+	### Land Areas
+	newfoundland_area = { discover_country = ROOT }
+	labrador_area = { discover_country = ROOT }
+	notre_dame_mountains_area = { discover_country = ROOT }
+	upper_acadia_area = { discover_country = ROOT }
+	lower_acadia_area = { discover_country = ROOT }
+	# Corte Nord
+	996 = { discover_country = ROOT }
+	2576 = { discover_country = ROOT }
+	2577 = { discover_country = ROOT }
+	2578 = { discover_country = ROOT }
+	# Trois Riviers
+	990 = { discover_country = ROOT }
+	4893 = { discover_country = ROOT }
+	# Lower Canada
+	993 = { discover_country = ROOT }
+	2584 = { discover_country = ROOT }
+	# St. John's Valley
+	2570 = { discover_country = ROOT }
+	### Water Areas
+    sea_of_labrador_area = { discover_country = ROOT }
+    gulf_of_st_lawrence_area = { discover_country = ROOT }
+	if = {
+        limit = { has_global_flag = GE_explored_hudson }
+		### Land Areas
+        james_bay_area = { discover_country = ROOT }
+		# Hudson Bay
+		1005 = { discover_country = ROOT }
+		1006 = { discover_country = ROOT }
+		2592 = { discover_country = ROOT }
+		### Water Areas
+        hudson_bay_sea_area = { discover_country = ROOT }
+        custom_tooltip = GE_explored_hudson_tt
+    }
+	if = {
+        limit = { has_global_flag = GE_explored_great_lakes }
+		### Land Areas
+		huronia_area = { discover_country = ROOT }
+		upper_canada_area = { discover_country = ROOT }
+        michigan_area = { discover_country = ROOT }
+		iroquoisia_area = { discover_country = ROOT }
+		# Hudson Valley
+		961 = { discover_country = ROOT }
+		4912 = { discover_country = ROOT }
+		# Ottawa Valley
+		4892 = { discover_country = ROOT }
+		# Alleghenies
+		954 = { discover_country = ROOT }
+		# Ohio
+		946 = { discover_country = ROOT }
+		947 = { discover_country = ROOT }
+		# Upper Ontario
+		1001 = { discover_country = ROOT }
+		1007 = { discover_country = ROOT }
+		2015 = { discover_country = ROOT }
+		2671 = { discover_country = ROOT }
+		# Lake Superior
+		910 = { discover_country = ROOT }
+		911 = { discover_country = ROOT }
+		2518 = { discover_country = ROOT }
+		4898 = { discover_country = ROOT }
+		# Wisconsin
+		914 = { discover_country = ROOT }
+		4899 = { discover_country = ROOT }
+		# Illinois
+		4903 = { discover_country = ROOT }
+		# Indiana
+		4922 = { discover_country = ROOT }
+		### Water Areas
+		1659 = { discover_country = ROOT }
+		1660 = { discover_country = ROOT }
+		1661 = { discover_country = ROOT }
+		1662 = { discover_country = ROOT }
+		1663 = { discover_country = ROOT }
+        custom_tooltip = GE_explored_great_lakes_tt
+    }
+	if = {
+        limit = { has_global_flag = GE_explored_new_england  }
+        connecticut_valley_area = { discover_country = ROOT }
+		# Eastern Maine
+		971 = { discover_country = ROOT }
+		2566 = { discover_country = ROOT }
+		# Maine
+		2013 = { discover_country = ROOT }
+		# New Hampshire
+		970 = { discover_country = ROOT }
+		# Massachusetts
+		968 = { discover_country = ROOT }
+		2561 = { discover_country = ROOT }
+        # New York
+		965 = { discover_country = ROOT }
+		2639 = { discover_country = ROOT }
+		# Delaware Valley
+		962 = { discover_country = ROOT }
+		2554 = { discover_country = ROOT }
+		### Water Areas
+		# Gulf Stream
+		1492 = { discover_country = ROOT }
+		1499 = { discover_country = ROOT }
+		1500 = { discover_country = ROOT }
+		1570 = { discover_country = ROOT }
+        custom_tooltip = GE_explored_new_england_tt
+    }
+}

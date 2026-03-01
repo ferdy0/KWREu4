@@ -6,6 +6,7 @@ namespace = nor_bombing
 namespace = test_nor
 namespace = quick_nor
 namespace = nor_side_expidition
+namespace = nwc_immigration
 
 #Event for testing out stuff
 country_event = {
@@ -57,6 +58,7 @@ country_event = { #still needs localisation
     }
 }
 
+# THIS EVENT IS REDUNDANT
 # Event for officialising the colonial charter for NWC
 country_event = { #still needs localisation
     id = flavor_nor.1
@@ -75,6 +77,7 @@ country_event = { #still needs localisation
     }
 }
 
+# THIS EVENT IS REDUNDANT
 #Event for turning the NWC into a colonial nation
 country_event = { #still needs localisation
     id = flavor_nor.4
@@ -87,6 +90,7 @@ country_event = { #still needs localisation
     option = {
         name = flavor_nor.4.a
         #nothing hapens, this is just flavour
+        great_expedition_discovery_outcomes = yes
     }
 }
 
@@ -410,10 +414,21 @@ country_event = { #still needs localisation
 
     is_triggered_only = yes
 
+    immediate = {
+        on_change_tag_effect = yes
+        swap_non_generic_missions = yes
+        add_government_reform = BM_NWC_corperate_althing
+        change_primary_culture = norwegian
+        add_accepted_culture = icelandic
+        add_country_modifier = {
+            name = "nwc_icelandic_culture_accepted"
+            duration = -1
+        }
+    }
+
     option = {
         name = mission_nor.14.a
-        add_government_reform = BM_NWC_corperate_althing
-        change_tag = NWC
+        country_event = { id = ideagroups.1 }
         369 = {
             add_core = NWC
             cede_province = NWC
@@ -699,7 +714,7 @@ country_event = {
                     value = 35
                 }
             }
-                add_prestige = 70
+            add_prestige = 70
         }
         else_if = {
             limit = {
@@ -708,7 +723,7 @@ country_event = {
                     value = 30
                 }
             }
-                add_prestige = 60
+            add_prestige = 60
         }
         else_if = {
             limit = {
@@ -717,7 +732,7 @@ country_event = {
                     value = 25
                 }
             }
-                add_prestige = 50
+            add_prestige = 50
         }
         else_if = {
             limit = {
@@ -726,7 +741,7 @@ country_event = {
                     value = 20
                 }
             }
-                add_prestige = 40
+            add_prestige = 40
         }
         else_if = {
             limit = {
@@ -735,7 +750,7 @@ country_event = {
                     value = 15
                 }
             }
-                add_prestige = 30
+            add_prestige = 30
         }
         else_if = {
             limit = {
@@ -744,7 +759,7 @@ country_event = {
                     value = 10
                 }
             }
-                add_prestige = 20
+            add_prestige = 20
         }
         else_if = {
             limit = {
@@ -753,7 +768,7 @@ country_event = {
                     value = 5
                 }
             }
-                add_prestige = 10
+            add_prestige = 10
         }
     }
 }
@@ -1271,10 +1286,12 @@ country_event = {
 
     immediate = {
         hidden_effect = {
+            set_country_flag = had_nor_great_expedition_11_var
             europe_superregion = {
                 every_country = { 
                     limit = {
                         was_player = yes
+                        NOT = { has_country_flag = had_nor_great_expedition_11_var }
                     }
                     country_event = {
                         id = nor_great_expidition.12
@@ -1419,6 +1436,11 @@ country_event = {
             }
         }
     }
+
+    option = {
+        name = nor_great_expidition.11.b
+        great_expedition_discovery_outcomes = yes
+    }
 }
 
 country_event = {
@@ -1491,5 +1513,27 @@ country_event = {
                discover_country = ROOT 
             }
         }
+    }
+}
+
+### Immigrant Events - By Kalani
+province_event = {
+    id = nwc_immigration.1
+    title = nwc_immigration.1
+    desc = nwc_immigration.1
+    picture = COLONIZATION_eventPicture
+
+    is_triggered_only = yes 
+
+    immediate = {
+        
+    }
+
+    option = { # Force the would-be colonists to stay
+
+    }
+
+    option = { # Let them go and be free
+
     }
 }

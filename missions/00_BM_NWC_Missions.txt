@@ -1,0 +1,1127 @@
+ICE_missions_1 = {
+    slot = 1
+    generic = no
+    ai = yes
+    potential = {
+        tag = ICE
+    }
+    has_country_shield = yes
+}
+
+NWC_missions_1 = {
+    slot = 1
+    generic = no
+    ai = yes
+    potential = {
+        tag = NWC
+    }
+    has_country_shield = yes
+
+    NWC_monopolize_great_lakes_mission = {
+        required_missions = { NWC_greater_expansion_mission }
+        icon = mission_establish_high_seas_navy
+        position = 5
+
+        provinces_to_highlight = {
+            OR = {
+                region = great_lakes_region
+                area = upper_canada_area
+                area = laurentian_area
+                area = upper_ontario_area
+                area = huronia_area
+                area = ottawa_valley_area
+            }
+            OR = {
+                is_city = no
+                NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            }
+        }
+
+        trigger = {
+            num_of_owned_provinces_with = {
+                value = 36
+				OR = {
+                    region = great_lakes_region
+                    area = upper_canada_area
+                    area = laurentian_area
+                    area = upper_ontario_area
+                    area = huronia_area
+                    area = ottawa_valley_area
+				}
+                is_city = yes
+			}
+        }
+
+        effect = {
+            canada_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+            great_lakes_region = {
+                limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+            }
+        }
+    }
+
+    NCW_hudson_bay_mission = {
+        required_missions = { 
+            NWC_monopolize_great_lakes_mission
+        }
+        icon = mission_colonize_louisiana
+        position = 6
+
+        provinces_to_highlight = {
+            region = hudson_bay_region
+            has_port = yes 
+            OR = {
+                is_city = no
+                NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            }
+        }
+
+        trigger = {
+            num_of_owned_provinces_with = {
+                value = 8
+                region = hudson_bay_region
+                has_port = yes 
+                is_city = yes
+			}
+        }
+
+        effect = {
+            hudson_bay_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+        }
+    }
+
+    NCW_tame_the_great_plains = {
+        required_missions = { 
+            NCW_hudson_bay_mission
+            NWC_southern_plantation_economy_mission 
+        }
+        icon = mission_colonize_louisiana
+        position = 7
+
+        provinces_to_highlight = {
+            region = great_plains_region
+            OR = {
+                is_city = no
+                NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            }
+        }
+
+        trigger = {
+            num_of_owned_provinces_with = {
+                value = 28
+                region = great_plains_region
+                is_city = yes
+			}
+        }
+
+        effect = {
+            great_plains_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+        }
+    }
+
+    # While everything before this is ambitious yet reasonable, everything after is just pure fantasy
+    NCW_north_american_supremacy_meme = {
+        required_missions = { 
+            NCW_tame_the_great_plains
+        }
+        icon = mission_norwegian_america
+        position = 8
+
+        provinces_to_highlight = {
+            OR = {
+				superregion = north_america_superregion
+				superregion = central_america_superregion
+			}
+            OR = {
+                is_city = no
+                NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            }
+        }
+
+        trigger = {
+            num_of_owned_provinces_with = {
+                value = 400
+                OR = {
+				    superregion = north_america_superregion
+				    superregion = central_america_superregion
+			    }
+                is_city = yes
+			}
+            num_of_owned_provinces_with = {
+                value = 12
+                OR = {
+                    region = cascadia_region
+                    region = california_region
+                }
+                has_port = yes
+                is_city = yes 
+            }
+        }
+
+        effect = {
+
+        }
+    }
+}
+
+ICE_missions_2 = {
+    slot = 2
+    generic = no
+    ai = yes
+    potential = {
+        OR = {
+            tag = NWC
+            tag = ICE
+        }
+    }
+    has_country_shield = yes
+}
+
+NWC_missions_2 = {
+    slot = 2
+    generic = no
+    ai = yes
+    potential = {
+        tag = NWC
+    }
+    has_country_shield = yes
+
+    NWC_greater_expansion_mission = { 
+        icon = mission_rb_settle_the_north
+        required_missions = { NWC_make_landfall_mission }
+        position = 4
+        provinces_to_highlight = {
+            OR = {
+                area = labrador_area
+                area = cote_nord_area
+                area = notre_dame_mountains_area
+                area = upper_acadia_area
+                area = st_john_valley_area
+                area = lower_acadia_area
+                area = trois_rivieres_area
+                area = lower_canada_area
+            }
+            OR = {
+                is_city = no
+                NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            }
+        }
+
+        trigger = {
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                value = 24
+                OR = {
+                    area = labrador_area
+                    area = cote_nord_area
+                    area = notre_dame_mountains_area
+                    area = upper_acadia_area
+                    area = st_john_valley_area
+                    area = lower_acadia_area
+                    area = trois_rivieres_area
+                    area = lower_canada_area
+                }
+                is_city = no
+            }
+        }
+
+        effect = {
+            if = {
+                limit = {
+                    is_subject = yes
+                }
+                add_country_modifier = {
+                    name = "nwc_vinland_reclaimed"
+                    duration = 7300
+                }
+                overlord = {
+                    add_country_modifier = {
+                        name = "nor_vinland_reclaimed"
+                        duration = 7300
+                    }
+                }
+            }
+            else = {
+                add_country_modifier = {
+                    name = "nwc_vinland_reclaimed"
+                    duration = 7300
+                }
+                add_country_modifier = {
+                    name = "nor_vinland_reclaimed"
+                    duration = 7300
+                }
+            }
+        }
+    }
+
+    NWC_colonise_east_coast_mission = { 
+        icon = mission_rb_the_thirteen_colonies
+        required_missions = { NWC_greater_expansion_mission }
+        position = 5
+        provinces_to_highlight = {
+            region = northeast_america_region
+            has_port = yes 
+            OR = {
+                is_city = no
+                NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            }
+        }
+
+        trigger = {
+            # You need to actually be on the coast...
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                region = northeast_america_region
+                is_city = yes
+                has_port = yes 
+                value = 8
+            }
+        }
+
+        effect = {
+            northeast_america_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+        }
+    }
+
+    NWC_southern_plantation_economy_mission = {
+        icon = mission_pol_breadbasket_europe
+        required_missions = { 
+            NWC_colonise_east_coast_mission 
+            NWC_mountains_just_like_home_mission
+        }
+        position = 6
+        provinces_to_highlight = {
+            OR = {
+                region = southeast_america_region
+                region = mississippi_region
+            }
+            OR = {
+                is_city = no
+                NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            }
+        }
+
+        trigger = {
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                OR = {
+                    region = southeast_america_region
+                    region = mississippi_region
+                }
+                is_city = yes
+                value = 28
+            }
+        }
+
+        effect = {
+            southeast_america_region = {
+                limit = {
+                    is_city = yes
+                    country_or_non_sovereign_subject_holds = ROOT
+                    OR = {
+                        trade_goods = grain
+                        trade_goods = coffee
+                        trade_goods = cotton
+                        trade_goods = sugar
+                        trade_goods = tobacco
+                        trade_goods = cocoa
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_plantations_established"
+                    duration = 18250
+                }
+            }
+            mississippi_region = {
+                limit = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    OR = {
+                        trade_goods = grain
+                        trade_goods = coffee
+                        trade_goods = cotton
+                        trade_goods = sugar
+                        trade_goods = tobacco
+                        trade_goods = cocoa
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_plantations_established"
+                    duration = 18250
+                }
+            }
+        }
+    }
+
+    NWC_west_indies = {
+        icon = mission_colonize_the_caribbean
+        required_missions = { 
+            NWC_southern_plantation_economy_mission
+        }
+        position = 7
+        provinces_to_highlight = {
+            region = carribeans_region
+            OR = {
+                is_city = no
+                NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            }
+        }
+
+        trigger = {
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                value = 5
+                is_city = yes
+                region = carribeans_region
+            }
+        }
+    }
+}
+
+ICE_missions_3 = {
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+        OR = {
+            tag = NWC
+            tag = ICE
+        }
+    }
+    has_country_shield = yes
+
+    ICE_build_fleet_mission = {
+        icon = mission_galleass
+        required_missions = {  }
+        position = 1
+
+        trigger = {
+            navy_size_percentage = 1
+            OR = {
+                num_of_heavy_ship = 3
+                num_of_light_ship = 3
+            }
+        }
+
+        effect = {
+            create_explorer = { tradition = 80 }
+        }
+    }
+
+    ICE_greenland_mission = {
+        required_missions = { ICE_build_fleet_mission }
+        icon = mission_exploration
+        position = 2
+        provinces_to_highlight = {
+            area = greenland_area
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+        }
+
+        trigger = {
+            greenland_area = {
+				has_discovered = ROOT
+			}
+        }
+
+        effect = {
+            # Gives skuddo a free colonist and a 50% discount to colonies to help the early game
+            add_country_modifier = {
+                name = "ice_early_colonization_modifier"
+                duration = 18250 # Just colonizing one province takes like 20+ years... and greenland is two provinces
+            }
+        }
+    }
+}
+
+NWC_missions_3 = {
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+        tag = NWC
+    }
+    has_country_shield = yes
+
+    NWC_make_landfall_mission = { 
+        required_missions = { ICE_greenland_mission }
+        icon = mission_settlers_north_america
+        position = 3
+        provinces_to_highlight = {
+            area = newfoundland_area
+            OR = { 
+                is_city = no
+                NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            }
+        }
+
+        trigger = {
+            newfoundland_area = {
+			    type = all
+				country_or_non_sovereign_subject_holds = ROOT
+                is_city = yes
+			}
+            980 = { 
+                owned_by = ROOT 
+            }
+        }
+
+        effect = {
+            newfoundland_area = {
+                limit = {
+					NOT = { is_core = ROOT }
+				}
+                add_core = ROOT
+            }
+            set_capital = 980
+            980 = { # Little bit of an eco boost to justify moving the capital
+                add_base_production = 2
+                if = {
+					limit = {
+						NOT = {
+							trade_goods = fish
+						}
+					}
+					change_trade_goods = fish
+				}
+            }
+        }
+    }
+
+    NWC_mountains_just_like_home_mission = { 
+        icon = mission_develop_the_scandes #mission_norwegian_america
+        required_missions = { NWC_greater_expansion_mission }
+        position = 5
+        provinces_to_highlight = {
+            OR = {
+                area = south_iroquoisia_area
+                area = hudson_valley_area
+                area = iroquoisia_area
+                area = westsylvania_area 
+                province_id = 2553
+                area = great_valley_area
+                area = susquehanna_area
+                area = appalachia_area
+                area = south_appalachia_area
+            }
+            OR = {
+                is_city = no
+                NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            }
+        }
+
+        trigger = {
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                OR = {
+                    area = south_iroquoisia_area
+                    area = hudson_valley_area
+                    area = iroquoisia_area
+                    area = westsylvania_area 
+                    province_id = 2553
+                    area = great_valley_area
+                    area = susquehanna_area
+                    area = appalachia_area
+                    area = south_appalachia_area
+                }
+                value = 16
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "ec_colonisation_fever"
+                duration = 3650
+            }
+        }
+    }
+
+    NWC_metals_in_they_them_hills_mission = {
+        icon = mission_iron_and_copper
+        required_missions = { NWC_mountains_just_like_home_mission }
+        position = 6
+        provinces_to_highlight = {
+            OR = {
+                area = susquehanna_area
+                area = great_valley_area
+                province_id = 2553
+                area = south_appalachia_area
+                area = appalachia_area
+            }
+        }
+
+        trigger = {
+            susquehanna_area = {
+                type = all
+                OR = {
+                    AND = {
+                        OR = {
+                            owned_by = NOR
+                            owned_by = NWC
+                        }
+                        has_building = workshop
+                    }
+                    NOT = {
+                        OR = {
+                            owned_by = NOR
+                            owned_by = NWC
+                        }
+                    }
+                }
+            }
+            great_valley_area = {
+                type = all
+                OR = {
+                    AND = {
+                        OR = {
+                            owned_by = NOR
+                            owned_by = NWC
+                        }
+                        has_building = workshop
+                    }
+                    NOT = {
+                        OR = {
+                            owned_by = NOR
+                            owned_by = NWC
+                        }
+                    }
+                }
+            }
+            2553 = {
+                OR = {
+                    AND = {
+                        OR = {
+                            owned_by = NOR
+                            owned_by = NWC
+                        }
+                        has_building = workshop
+                    }
+                    NOT = {
+                        OR = {
+                            owned_by = NOR
+                            owned_by = NWC
+                        }
+                    }
+                }
+            }
+            south_appalachia_area = {
+                type = all
+                OR = {
+                    AND = {
+                        OR = {
+                            owned_by = NOR
+                            owned_by = NWC
+                        }
+                        has_building = workshop
+                    }
+                    NOT = {
+                        OR = {
+                            owned_by = NOR
+                            owned_by = NWC
+                        }
+                    }
+                } 
+            }
+            appalachia_area = {
+                type = all
+                OR = {
+                    AND = {
+                        OR = {
+                            owned_by = NOR
+                            owned_by = NWC
+                        }
+                        has_building = workshop
+                    }
+                    NOT = {
+                        OR = {
+                            owned_by = NOR
+                            owned_by = NWC
+                        }
+                    }
+                }
+            }
+        }
+
+        effect = {
+            susquehanna_area = {
+                random_list = {
+                    20 = {
+                        # Nothing changes
+                    }
+                    40 = {
+                        change_trade_goods = iron
+                    }
+                    40 = {
+                        change_trade_goods = copper
+                    }
+                }
+            }
+            great_valley_area = {
+                random_list = {
+                    20 = {
+                        # Nothing changes
+                    }
+                    40 = {
+                        change_trade_goods = iron
+                    }
+                    40 = {
+                        change_trade_goods = copper
+                    }
+                }
+            }
+            2553 = {
+                random_list = {
+                    20 = {
+                        # Nothing changes
+                    }
+                    40 = {
+                        change_trade_goods = iron
+                    }
+                    40 = {
+                        change_trade_goods = copper
+                    }
+                }
+            }
+            south_appalachia_area = {
+                random_list = {
+                    20 = {
+                        # Nothing changes
+                    }
+                    40 = {
+                        change_trade_goods = iron
+                    }
+                    40 = {
+                        change_trade_goods = copper
+                    }
+                }
+            }
+            appalachia_area = {
+                random_list = {
+                    20 = {
+                        # Nothing changes
+                    }
+                    40 = {
+                        change_trade_goods = iron
+                    }
+                    40 = {
+                        change_trade_goods = copper
+                    }
+                }
+            }
+        }
+    }
+
+    NWC_iron_and_copper_mining_mission = {
+        icon = mission_rb_build_furnaces
+        required_missions = { NWC_metals_in_they_them_hills_mission }
+        position = 7
+        provinces_to_highlight = {
+            OR = {
+                area = susquehanna_area
+                area = great_valley_area
+                province_id = 2553
+                area = south_appalachia_area
+                area = appalachia_area
+            }
+        }
+
+        trigger = {
+            calc_true_if = {
+                all_owned_province = {
+                    OR = {
+                        area = susquehanna_area
+                        area = great_valley_area
+                        area = south_appalachia_area
+                        area = appalachia_area
+                        province_id = 2305
+                    }
+                    OR = {
+                        trade_goods = iron
+                        trade_goods = copper
+                    }
+                    has_building = weapons
+                }
+            }
+        }
+
+        effect = {
+            susquehanna_area = {
+                limit = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    OR = {
+                        trade_goods = iron
+                        trade_goods = copper
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_mines_suported"
+                    duration = 18250
+                }
+            }
+            great_valley_area = {
+                limit = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    OR = {
+                        trade_goods = iron
+                        trade_goods = copper
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_mines_suported"
+                    duration = 18250
+                }
+            }
+            if = {
+                limit = {
+                    2553 = {
+                        country_or_non_sovereign_subject_holds = ROOT
+                        OR = {
+                            trade_goods = iron
+                            trade_goods = copper
+                        }
+                    }
+                }
+                2553 = {
+                    add_province_modifier = {
+                        name = "nor_mines_suported"
+                        duration = 18250
+                    }
+                }
+            }
+            south_appalachia_area = {
+                limit = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    OR = {
+                        trade_goods = iron
+                        trade_goods = copper
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_mines_suported"
+                    duration = 18250
+                }
+            }
+            appalachia_area = {
+                limit = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    OR = {
+                        trade_goods = iron
+                        trade_goods = copper
+                    }
+                }
+                add_province_modifier = {
+                    name = "nor_mines_suported"
+                    duration = 18250
+                }
+            }
+        }
+    }
+}
+
+ICE_missions_4 = {
+    slot = 4
+    generic = no
+    ai = yes
+    potential = {
+        OR = {
+            tag = NWC
+            tag = ICE
+        }
+    }
+    has_country_shield = yes
+
+    ICE_whaling_mission = {
+        required_missions = { }
+        icon = mission_fish_markets
+        position = 1
+
+        provinces_to_highlight = {
+            is_capital_of = ROOT
+        }
+
+        trigger = {
+            capital_scope = {
+                base_production = 5
+            }
+        }
+
+        effect = {
+
+        }
+    }
+}
+
+NWC_missions_4 = {
+    slot = 4
+    generic = no
+    ai = yes
+    potential = {
+        tag = NWC
+    }
+    has_country_shield = yes
+
+    NWC_fur_trade_mission = {
+        required_missions = { NWC_make_landfall_mission }
+        icon = mission_dominate_home_trade_node
+        position = 4
+
+        # Certain natives are excluded from this mission because they come from areas without fur
+        provinces_to_highlight = {
+            OR = {
+                culture_group = central_algonquian
+                culture_group = eastern_algonquian
+				culture_group = iroquoian
+                culture_group = plains_algonquian
+                culture_group = siouan
+                culture = kiowa
+                culture = chipewyan
+                culture = athabascan
+			}
+            is_city = yes
+            trade_goods = fur
+            NOT = { base_production = 3 }
+            country_or_non_sovereign_subject_holds = ROOT
+        }
+
+        trigger = {
+            num_of_owned_provinces_with = {
+                value = 8
+                OR = {
+                    culture_group = central_algonquian
+                    culture_group = eastern_algonquian
+                    culture_group = iroquoian
+                    culture_group = plains_algonquian
+                    culture_group = siouan
+                    culture = kiowa
+                    culture = chipewyan
+                    culture = athabascan
+                }
+                is_city = yes
+				trade_goods = fur
+                base_production = 3
+			}
+        }
+
+        effect = {
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        culture_group = central_algonquian
+                        culture_group = eastern_algonquian
+                        culture_group = iroquoian
+                        culture_group = plains_algonquian
+                        culture_group = siouan
+                        culture = kiowa
+                        culture = chipewyan
+                        culture = athabascan
+                    }
+				    trade_goods = fur
+                    base_production = 3
+                }
+                add_province_modifier = {
+					name = nwc_native_trades
+					duration = 7300
+				}
+            }
+        }
+    }
+
+    NWC_convert_natives_mission = {
+        required_missions = { NWC_fur_trade_mission }
+        icon = mission_native_reductions
+        position = 5
+
+        provinces_to_highlight = {
+            OR = {
+                culture_group = caddoan
+                culture_group = central_algonquian
+                culture_group = eastern_algonquian
+				culture_group = iroquoian
+                culture_group = muskogean
+                culture_group = na_dene
+                culture_group = penutian
+                culture_group = plains_algonquian
+                culture_group = siouan
+                culture = shoshone
+                culture = kiowa
+			}
+            is_city = yes
+            NOT = { religion = ROOT }
+            country_or_non_sovereign_subject_holds = ROOT
+        }
+
+        trigger = {
+            num_of_owned_provinces_with = {
+                value = 12
+				OR = {
+                    culture_group = caddoan
+                    culture_group = central_algonquian
+                    culture_group = eastern_algonquian
+                    culture_group = iroquoian
+                    culture_group = muskogean
+                    culture_group = na_dene
+                    culture_group = penutian
+                    culture_group = plains_algonquian
+                    culture_group = siouan
+                    culture = shoshone
+                    culture = kiowa
+                }
+                is_city = yes
+				religion = ROOT
+			}
+        }
+
+        effect = {
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        culture_group = caddoan
+                        culture_group = central_algonquian
+                        culture_group = eastern_algonquian
+                        culture_group = iroquoian
+                        culture_group = muskogean
+                        culture_group = na_dene
+                        culture_group = penutian
+                        culture_group = plains_algonquian
+                        culture_group = siouan
+                        culture = shoshone
+                        culture = kiowa
+                    }
+				    religion = ROOT
+                }
+                add_local_autonomy = -10 
+            }
+        }
+    }
+
+    NWC_treaties_with_the_natives = { # This is where the fun begins
+        required_missions = { NWC_convert_natives_mission }
+        icon = mission_establish_high_seas_navy
+        position = 6
+
+        provinces_to_highlight = {
+            OR = {
+                culture_group = caddoan
+                culture_group = central_algonquian
+                culture_group = eastern_algonquian
+				culture_group = iroquoian
+                culture_group = muskogean
+                culture_group = na_dene
+                culture_group = penutian
+                culture_group = plains_algonquian
+                culture_group = siouan
+                culture = shoshone
+                culture = kiowa
+			}
+            is_city = yes
+            NOT = { local_autonomy = 10 }
+            country_or_non_sovereign_subject_holds = ROOT
+        }
+
+        trigger = {
+            num_of_owned_provinces_with = {
+                value = 20
+				OR = {
+                    culture_group = caddoan
+                    culture_group = central_algonquian
+                    culture_group = eastern_algonquian
+					culture_group = iroquoian
+                    culture_group = muskogean
+                    culture_group = na_dene
+                    culture_group = penutian
+                    culture_group = plains_algonquian
+                    culture_group = siouan
+                    culture = shoshone
+                    culture = kiowa
+				}
+                is_city = yes
+                NOT = { local_autonomy = 10 }
+			}
+        }
+
+        effect = {
+
+        }
+    }
+}
+
+ICE_missions_5 = {
+    slot = 5
+    generic = no
+    ai = yes
+    potential = {
+        OR = {
+            tag = ICE
+            tag = NWC
+        }
+    }
+    has_country_shield = yes
+
+    ICE_empower_althing_mission = {
+        required_missions = { }
+        icon = mission_establish_high_seas_navy
+        position = 1
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+            OR = {
+                legitimacy = 70
+                republican_tradition = 70
+                devotion = 70
+            }
+            crown_land_share = 30
+            AND = {
+				estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 60
+				}
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 60
+				}
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 60
+				}
+			}
+        }
+
+        effect = {
+
+        }
+    }
+}
+
+NWC_missions_5 = {
+    slot = 5
+    generic = no
+    ai = yes
+    potential = {
+        tag = NWC
+    }
+    has_country_shield = yes
+}

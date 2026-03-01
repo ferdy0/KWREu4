@@ -11,6 +11,7 @@ nor_whaling_boom = { #still needs localisation
     trade_value_modifier = 0.5
 }
 
+# Kalani - This doesn't work. when the colony is created the modifier is removed
 nor_greenland_infrastructure = { #still needs localisation
     local_colony_cost_modifier = -0.5
     local_colonial_growth = 10
@@ -339,4 +340,14 @@ GE_nor_native_fights = {
     drill_decay_modifier = -0.10
     military_tactics = 0.05
     prestige_from_land = 0.10
+}
+
+ice_early_colonization_modifier = {
+    colonists = 1
+    colony_cost_modifier = -0.5	
+}
+
+# Kalani - NWC's long list of accepting cultures
+nwc_icelandic_culture_accepted = {
+    num_accepted_cultures = 1
 }

@@ -604,3 +604,42 @@ tyrolean_ideas = {
 		yearly_government_power = 1
 	}
 }
+
+NWC_ideas = {
+	start = {
+		range = 0.5 # May reduce, just highballing
+		may_explore = yes
+	}
+
+	bonus = {
+		
+	}
+
+	trigger = {
+		tag = NWC
+	}
+
+	free = yes
+
+	NWC_1 = {
+		colonists = 1
+	}
+	NWC_2 = {
+
+	}
+	NWC_3 = {
+
+	}
+	tyrhennian_4 = {
+
+	}
+	tyrhennian_5 = {
+
+	}
+	tyrhennian_6 = {
+
+	}
+	tyrhennian_7 = {
+
+	}
+}
