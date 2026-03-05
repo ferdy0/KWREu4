@@ -1,7 +1,7 @@
 #1068 - Pegaya Orda
 
 culture = ostyaki
-religion = tengri_pagan_reformed
+religion = tengri_pagan # Kalani - Fixed w/ Lot Permission
 capital = "Ket"
 trade_goods = unknown
 hre = no
