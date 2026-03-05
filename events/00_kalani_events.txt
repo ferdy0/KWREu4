@@ -1,0 +1,1337 @@
+namespace = colonial_nwc
+# TO-DO: CUSTOM TOOLTIPS
+country_event = {
+    id = colonial_nwc.1
+    title = colonial_nwc.1.title
+    desc = colonial_nwc.1.desc
+    picture = REFORM_eventPicture
+
+    is_triggered_only = yes
+
+    option = { # Actually, nevermind
+        name = colonial_nwc.1.a
+
+        ai_chance = { # If the AI somehow gets this event unintentionally (e.g. bananaman crashes), make sure they can say no
+            factor = 1 
+            modifier = {
+				factor = 0
+				OR = { # If the AI can transfer Bananaman sanctioned colonial regions, don't say no
+                    any_subject_country = { # AI has a colonial subject in Canada or East Coast
+                        NOT = { tag = NWC }
+                        is_colonial_nation = yes
+                        is_at_war = no
+                        capital_scope = { 
+                            OR = {
+                                colonial_region = colonial_canada
+                                colonial_region = colonial_east_coast
+                            }
+                        }
+                        NOT = { liberty_desire = 50 }
+                    }
+                    any_subject_country = { # AI has a subject outside Canada or East Coast that owns those provinces
+                        NOT = { tag = NWC }
+			            is_colonial_nation = yes
+                        is_at_war = no
+			            NOT = { 
+                            capital_scope = { 
+                                OR = {
+                                    colonial_region = colonial_canada
+                                    colonial_region = colonial_east_coast
+                                }
+                            }
+                        }
+                        any_owned_province = {
+					        OR = {
+                                colonial_region = colonial_canada
+                                colonial_region = colonial_east_coast
+                            }
+                            is_colony = no
+				        }
+                        NOT = { liberty_desire = 50 }
+                    }
+                    any_owned_province = { # AI owns a province in Canada or East Coast
+                        OR = {
+                            colonial_region = colonial_canada
+                            colonial_region = colonial_east_coast
+                        }
+                        is_colony = no
+                    }
+                }
+			}
+        } 
+    }
+
+    option = { # Colonial Canada Region, should never show up as NWC is the "Canadian" colony
+        name = colonial_nwc.1.b
+        trigger = { 
+            OR = {
+                any_subject_country = { # You have a subject in Canada
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        capital_scope = { 
+                        colonial_region = colonial_canada
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_subject_country = { # You have a subject outside Canada that owns Canadian provinces
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_canada
+                        }
+                    }
+                    any_owned_province = {
+					    colonial_region = colonial_canada
+                        is_colony = no
+				    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_owned_province = { # You own a province in Canada
+					colonial_region = colonial_canada
+                    is_colony = no
+				}
+            }
+        }
+        custom_tooltip = nwc_transfer_canada_tt
+        hidden_effect = {
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    capital_scope = { 
+                        colonial_region = colonial_canada
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                NWC = {
+                    inherit = PREV
+                }
+            }
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_canada
+                        }
+                    }
+                    any_owned_province = {
+                        colonial_region = colonial_canada
+                        is_colony = no
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                add_liberty_desire = 5
+                every_owned_province = {
+                    limit = {
+                        colonial_region = colonial_canada
+                        is_colony = no
+                    }
+                    if = {
+                        limit = { is_claim = PREV }
+                        remove_claim = PREV
+                        add_claim = NWC
+                    }
+                    if = {
+                        limit = { is_core = PREV }
+                        remove_core = PREV
+                        add_territorial_core = NWC
+                    }
+                    cede_province = NWC
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    colonial_region = colonial_canada
+                    is_colony = no
+                }
+                if = {
+                    limit = { is_claim = PREV }
+                    remove_claim = PREV
+                    add_claim = NWC
+                }
+                if = {
+                    limit = { is_core = PREV }
+                    remove_core = PREV
+                    add_territorial_core = NWC
+                }
+                cede_province = NWC
+            }
+        }
+        ai_chance = { factor = 5 } # Make sure Skuddo at least controls his home region
+    }
+
+    option = { # Colonial East Coast Region
+        name = colonial_nwc.1.c
+        trigger = { 
+            OR = {
+                any_subject_country = { # You have a subject on the East Coast
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        capital_scope = { 
+                        colonial_region = colonial_eastern_america
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_subject_country = { # You have a subject outside the East Coast that owns East Coast provinces
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_eastern_america
+                        }
+                    }
+                    any_owned_province = {
+					    colonial_region = colonial_eastern_america
+                        is_colony = no
+				    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_owned_province = { # You own a province on the East Coast
+					colonial_region = colonial_eastern_america
+                    is_colony = no
+				}
+            }
+        }
+        custom_tooltip = nwc_transfer_east_coast_tt
+        hidden_effect = {
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    capital_scope = { 
+                        colonial_region = colonial_eastern_america
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                NWC = {
+                    inherit = PREV
+                }
+            }
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_eastern_america
+                        }
+                    }
+                    any_owned_province = {
+                        colonial_region = colonial_eastern_america
+                        is_colony = no
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                add_liberty_desire = 5
+                every_owned_province = {
+                    limit = {
+                        colonial_region = colonial_eastern_america
+                        is_colony = no
+                    }
+                    if = {
+                        limit = { is_claim = PREV }
+                        remove_claim = PREV
+                        add_claim = NWC
+                    }
+                    if = {
+                        limit = { is_core = PREV }
+                        remove_core = PREV
+                        add_territorial_core = NWC
+                    }
+                    cede_province = NWC
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    colonial_region = colonial_eastern_america
+                    is_colony = no
+                }
+                if = {
+                    limit = { is_claim = PREV }
+                    remove_claim = PREV
+                    add_claim = NWC
+                }
+                if = {
+                    limit = { is_core = PREV }
+                    remove_core = PREV
+                    add_territorial_core = NWC
+                }
+                cede_province = NWC
+            }
+        }
+        ai_chance = { factor = 1 } # Bananaman sanctioned transfer
+    }
+
+    option = { # Colonial Louisiana Region
+        name = colonial_nwc.1.d
+        trigger = { 
+            OR = {
+                any_subject_country = { # You have a subject in Louisiana
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        capital_scope = { 
+                        colonial_region = colonial_louisiana
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_subject_country = { # You have a subject outside Louisiana that owns Louisianan provinces
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_louisiana
+                        }
+                    }
+                    any_owned_province = {
+					    colonial_region = colonial_louisiana
+                        is_colony = no
+				    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_owned_province = { # You own a province in Louisiana
+					colonial_region = colonial_louisiana
+                    is_colony = no
+				}
+            }
+        }
+        custom_tooltip = nwc_transfer_louisiana_tt
+        hidden_effect = {
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    capital_scope = { 
+                        colonial_region = colonial_louisiana
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                NWC = {
+                    inherit = PREV
+                }
+            }
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_louisiana
+                        }
+                    }
+                    any_owned_province = {
+                        colonial_region = colonial_louisiana
+                        is_colony = no
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                add_liberty_desire = 5
+                every_owned_province = {
+                    limit = {
+                        colonial_region = colonial_louisiana
+                        is_colony = no
+                    }
+                    if = {
+                        limit = { is_claim = PREV }
+                        remove_claim = PREV
+                        add_claim = NWC
+                    }
+                    if = {
+                        limit = { is_core = PREV }
+                        remove_core = PREV
+                        add_territorial_core = NWC
+                    }
+                    cede_province = NWC
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    colonial_region = colonial_louisiana
+                    is_colony = no
+                }
+                if = {
+                    limit = { is_claim = PREV }
+                    remove_claim = PREV
+                    add_claim = NWC
+                }
+                if = {
+                    limit = { is_core = PREV }
+                    remove_core = PREV
+                    add_territorial_core = NWC
+                }
+                cede_province = NWC
+            }
+        }
+        ai_chance = { factor = 0 }
+    }
+
+    ### This one might even be an edge case tbh cause I don't think bananaman is going this far, but I think its reasonable
+    option = { # Colonial Cascadia Region
+        name = colonial_nwc.1.e
+        trigger = { 
+            OR = {
+                any_subject_country = { # You have a subject in Cascadia
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        capital_scope = { 
+                        colonial_region = colonial_alaska
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_subject_country = { # You have a subject outside Cascadia that owns Cascadian provinces
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_alaska
+                        }
+                    }
+                    any_owned_province = {
+					    colonial_region = colonial_alaska
+                        is_colony = no
+				    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_owned_province = { # You own a province in Cascadia
+					colonial_region = colonial_alaska
+                    is_colony = no
+				}
+            }
+        }
+        custom_tooltip = nwc_transfer_cascadia_tt
+        hidden_effect = {
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    capital_scope = { 
+                        colonial_region = colonial_alaska
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                NWC = {
+                    inherit = PREV
+                }
+            }
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_alaska
+                        }
+                    }
+                    any_owned_province = {
+                        colonial_region = colonial_alaska
+                        is_colony = no
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                add_liberty_desire = 5
+                every_owned_province = {
+                    limit = {
+                        colonial_region = colonial_alaska
+                        is_colony = no
+                    }
+                    if = {
+                        limit = { is_claim = PREV }
+                        remove_claim = PREV
+                        add_claim = NWC
+                    }
+                    if = {
+                        limit = { is_core = PREV }
+                        remove_core = PREV
+                        add_territorial_core = NWC
+                    }
+                    cede_province = NWC
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    colonial_region = colonial_alaska
+                    is_colony = no
+                }
+                if = {
+                    limit = { is_claim = PREV }
+                    remove_claim = PREV
+                    add_claim = NWC
+                }
+                if = {
+                    limit = { is_core = PREV }
+                    remove_core = PREV
+                    add_territorial_core = NWC
+                }
+                cede_province = NWC
+            }
+        }
+        ai_chance = { factor = 0 }
+    }
+
+    ### EVERYTHING BELOW IS TOTAL DELUSION INCLUDED ONLY FOR THE SAKE OF COMPLETENESS ###
+    option = { # Colonial California Region
+        name = colonial_nwc.1.f
+        trigger = { 
+            OR = {
+                any_subject_country = { # You have a subject in California
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        capital_scope = { 
+                        colonial_region = colonial_california
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_subject_country = { # You have a subject outside California that owns Californian provinces
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_california
+                        }
+                    }
+                    any_owned_province = {
+					    colonial_region = colonial_california
+                        is_colony = no
+				    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_owned_province = { # You own a province in California
+					colonial_region = colonial_california
+                    is_colony = no
+				}
+            }
+        }
+        custom_tooltip = nwc_transfer_california_tt
+        hidden_effect = {
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    capital_scope = { 
+                        colonial_region = colonial_california
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                NWC = {
+                    inherit = PREV
+                }
+            }
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_california
+                        }
+                    }
+                    any_owned_province = {
+                        colonial_region = colonial_california
+                        is_colony = no
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                add_liberty_desire = 5
+                every_owned_province = {
+                    limit = {
+                        colonial_region = colonial_california
+                        is_colony = no
+                    }
+                    if = {
+                        limit = { is_claim = PREV }
+                        remove_claim = PREV
+                        add_claim = NWC
+                    }
+                    if = {
+                        limit = { is_core = PREV }
+                        remove_core = PREV
+                        add_territorial_core = NWC
+                    }
+                    cede_province = NWC
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    colonial_region = colonial_california
+                    is_colony = no
+                }
+                if = {
+                    limit = { is_claim = PREV }
+                    remove_claim = PREV
+                    add_claim = NWC
+                }
+                if = {
+                    limit = { is_core = PREV }
+                    remove_core = PREV
+                    add_territorial_core = NWC
+                }
+                cede_province = NWC
+            }
+        }
+        ai_chance = { factor = 0 }
+    }
+
+    option = { # Colonial Mexico Region
+        name = colonial_nwc.1.g
+        trigger = { 
+            OR = {
+                any_subject_country = { # You have a subject in Mexico
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        capital_scope = { 
+                        colonial_region = colonial_mexico
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_subject_country = { # You have a subject outside Mexico that owns Mexican provinces
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_mexico
+                        }
+                    }
+                    any_owned_province = {
+					    colonial_region = colonial_mexico
+                        is_colony = no
+				    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_owned_province = { # You own a province in Mexico
+					colonial_region = colonial_mexico
+                    is_colony = no
+				}
+            }
+        }
+        custom_tooltip = nwc_transfer_mexico_tt
+        hidden_effect = {
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    capital_scope = { 
+                        colonial_region = colonial_mexico
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                NWC = {
+                    inherit = PREV
+                }
+            }
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_mexico
+                        }
+                    }
+                    any_owned_province = {
+                        colonial_region = colonial_mexico
+                        is_colony = no
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                add_liberty_desire = 5
+                every_owned_province = {
+                    limit = {
+                        colonial_region = colonial_mexico
+                        is_colony = no
+                    }
+                    if = {
+                        limit = { is_claim = PREV }
+                        remove_claim = PREV
+                        add_claim = NWC
+                    }
+                    if = {
+                        limit = { is_core = PREV }
+                        remove_core = PREV
+                        add_territorial_core = NWC
+                    }
+                    cede_province = NWC
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    colonial_region = colonial_mexico
+                    is_colony = no
+                }
+                if = {
+                    limit = { is_claim = PREV }
+                    remove_claim = PREV
+                    add_claim = NWC
+                }
+                if = {
+                    limit = { is_core = PREV }
+                    remove_core = PREV
+                    add_territorial_core = NWC
+                }
+                cede_province = NWC
+            }
+        }
+        ai_chance = { factor = 0 }
+    }
+
+    option = { # Colonial Caribbean Region
+        name = colonial_nwc.1.h
+        trigger = { 
+            OR = {
+                any_subject_country = { # You have a subject in the Caribbean
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        capital_scope = { 
+                        colonial_region = colonial_the_carribean
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_subject_country = { # You have a subject outside the Caribbean that owns Caribbean provinces
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_the_carribean
+                        }
+                    }
+                    any_owned_province = {
+					    colonial_region = colonial_the_carribean
+                        is_colony = no
+				    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_owned_province = { # You own a province in the Caribbean
+					colonial_region = colonial_the_carribean
+                    is_colony = no
+				}
+            }
+        }
+        custom_tooltip = nwc_transfer_caribbean_tt
+        hidden_effect = {
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    capital_scope = { 
+                        colonial_region = colonial_the_carribean
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                NWC = {
+                    inherit = PREV
+                }
+            }
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_the_carribean
+                        }
+                    }
+                    any_owned_province = {
+                        colonial_region = colonial_the_carribean
+                        is_colony = no
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                add_liberty_desire = 5
+                every_owned_province = {
+                    limit = {
+                        colonial_region = colonial_the_carribean
+                        is_colony = no
+                    }
+                    if = {
+                        limit = { is_claim = PREV }
+                        remove_claim = PREV
+                        add_claim = NWC
+                    }
+                    if = {
+                        limit = { is_core = PREV }
+                        remove_core = PREV
+                        add_territorial_core = NWC
+                    }
+                    cede_province = NWC
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    colonial_region = colonial_the_carribean
+                    is_colony = no
+                }
+                if = {
+                    limit = { is_claim = PREV }
+                    remove_claim = PREV
+                    add_claim = NWC
+                }
+                if = {
+                    limit = { is_core = PREV }
+                    remove_core = PREV
+                    add_territorial_core = NWC
+                }
+                cede_province = NWC
+            }
+        }
+        ai_chance = { factor = 0 }
+    }
+
+    option = { # Colonial Colombia Region
+        name = colonial_nwc.1.i
+        trigger = { 
+            OR = {
+                any_subject_country = { # You have a subject in Colombia
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        capital_scope = { 
+                        colonial_region = colonial_colombia
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_subject_country = { # You have a subject outside of Colombia that owns Colombian provinces
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+			        NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_colombia
+                        }
+                    }
+                    any_owned_province = {
+					    colonial_region = colonial_colombia
+                        is_colony = no
+				    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_owned_province = { # You own a province in Colombia
+					colonial_region = colonial_colombia
+                    is_colony = no
+				}
+            }
+        }
+        custom_tooltip = nwc_transfer_colombia_tt
+        hidden_effect = {
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    capital_scope = { 
+                        colonial_region = colonial_colombia
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                NWC = {
+                    inherit = PREV
+                }
+            }
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_colombia
+                        }
+                    }
+                    any_owned_province = {
+                        colonial_region = colonial_colombia
+                        is_colony = no
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                add_liberty_desire = 5
+                every_owned_province = {
+                    limit = {
+                        colonial_region = colonial_colombia
+                        is_colony = no
+                    }
+                    if = {
+                        limit = { is_claim = PREV }
+                        remove_claim = PREV
+                        add_claim = NWC
+                    }
+                    if = {
+                        limit = { is_core = PREV }
+                        remove_core = PREV
+                        add_territorial_core = NWC
+                    }
+                    cede_province = NWC
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    colonial_region = colonial_colombia
+                    is_colony = no
+                }
+                if = {
+                    limit = { is_claim = PREV }
+                    remove_claim = PREV
+                    add_claim = NWC
+                }
+                if = {
+                    limit = { is_core = PREV }
+                    remove_core = PREV
+                    add_territorial_core = NWC
+                }
+                cede_province = NWC
+            }
+        }
+        ai_chance = { factor = 0 }
+    }
+
+    option = { # Colonial Brazil Region
+        name = colonial_nwc.1.j
+        trigger = { 
+            OR = {
+                any_subject_country = { # You have a subject in Brazil
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        capital_scope = { 
+                        colonial_region = colonial_brazil
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_subject_country = { # You have a subject outside of Brazil that owns Brazillian provinces
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_brazil
+                        }
+                    }
+                    any_owned_province = {
+					    colonial_region = colonial_brazil
+                        is_colony = no
+				    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_owned_province = { # You own a province in Brazil
+					colonial_region = colonial_brazil
+                    is_colony = no
+				}
+            }
+        }
+        custom_tooltip = nwc_transfer_brazil_tt
+            hidden_effect = {
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    capital_scope = { 
+                        colonial_region = colonial_brazil
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                NWC = {
+                    inherit = PREV
+                }
+            }
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_brazil
+                        }
+                    }
+                    any_owned_province = {
+                        colonial_region = colonial_brazil
+                        is_colony = no
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                add_liberty_desire = 5
+                every_owned_province = {
+                    limit = {
+                        colonial_region = colonial_brazil
+                        is_colony = no
+                    }
+                    if = {
+                        limit = { is_claim = PREV }
+                        remove_claim = PREV
+                        add_claim = NWC
+                    }
+                    if = {
+                        limit = { is_core = PREV }
+                        remove_core = PREV
+                        add_territorial_core = NWC
+                    }
+                    cede_province = NWC
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    colonial_region = colonial_brazil
+                    is_colony = no
+                }
+                if = {
+                    limit = { is_claim = PREV }
+                    remove_claim = PREV
+                    add_claim = NWC
+                }
+                if = {
+                    limit = { is_core = PREV }
+                    remove_core = PREV
+                    add_territorial_core = NWC
+                }
+                cede_province = NWC
+            }
+        }
+        ai_chance = { factor = 0 }
+    }
+
+    option = { # Colonial Peru Region
+        name = colonial_nwc.1.k
+        trigger = { 
+            OR = {
+                any_subject_country = { # You have a subject in Peru
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        capital_scope = { 
+                        colonial_region = colonial_peru
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_subject_country = { # You have a subject outside of Peru that owns Peruvian provinces
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_peru
+                        }
+                    }
+                    any_owned_province = {
+					    colonial_region = colonial_peru
+                        is_colony = no
+				    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_owned_province = { # You own a province in Peru
+					colonial_region = colonial_peru
+                    is_colony = no
+				}
+            }
+        }
+        custom_tooltip = nwc_transfer_peru_tt
+        hidden_effect = {
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    capital_scope = { 
+                        colonial_region = colonial_peru
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                NWC = {
+                    inherit = PREV
+                }
+            }
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_peru
+                        }
+                    }
+                    any_owned_province = {
+                        colonial_region = colonial_peru
+                        is_colony = no
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                add_liberty_desire = 5
+                every_owned_province = {
+                    limit = {
+                        colonial_region = colonial_peru
+                        is_colony = no
+                    }
+                    if = {
+                        limit = { is_claim = PREV }
+                        remove_claim = PREV
+                        add_claim = NWC
+                    }
+                    if = {
+                        limit = { is_core = PREV }
+                        remove_core = PREV
+                        add_territorial_core = NWC
+                    }
+                    cede_province = NWC
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    colonial_region = colonial_peru
+                    is_colony = no
+                }
+                if = {
+                    limit = { is_claim = PREV }
+                    remove_claim = PREV
+                    add_claim = NWC
+                }
+                if = {
+                    limit = { is_core = PREV }
+                    remove_core = PREV
+                    add_territorial_core = NWC
+                }
+                cede_province = NWC
+            }
+        }
+        ai_chance = { factor = 0 }
+    }
+
+    option = { # Colonial La Plata Region
+        name = colonial_nwc.1.l
+        trigger = { 
+            OR = {
+                any_subject_country = { # You have a subject in La Plata
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        capital_scope = { 
+                        colonial_region = colonial_la_plata
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_subject_country = { # You have a subject outside of La Plata that owns Platinean provinces
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_la_plata
+                        }
+                    }
+                    any_owned_province = {
+					    colonial_region = colonial_la_plata
+                        is_colony = no
+				    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_owned_province = { # You own a province in La Plata
+					colonial_region = colonial_la_plata
+                    is_colony = no
+				}
+            }
+        }
+        custom_tooltip = nwc_transfer_la_plata_tt
+        hidden_effect = {
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    capital_scope = { 
+                        colonial_region = colonial_la_plata
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                NWC = {
+                    inherit = PREV
+                }
+            }
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_la_plata
+                        }
+                    }
+                    any_owned_province = {
+                        colonial_region = colonial_la_plata
+                        is_colony = no
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                add_liberty_desire = 5
+                every_owned_province = {
+                    limit = {
+                        colonial_region = colonial_la_plata
+                        is_colony = no
+                    }
+                    if = {
+                        limit = { is_claim = PREV }
+                        remove_claim = PREV
+                        add_claim = NWC
+                    }
+                    if = {
+                        limit = { is_core = PREV }
+                        remove_core = PREV
+                        add_territorial_core = NWC
+                    }
+                    cede_province = NWC
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    colonial_region = colonial_la_plata
+                    is_colony = no
+                }
+                if = {
+                    limit = { is_claim = PREV }
+                    remove_claim = PREV
+                    add_claim = NWC
+                }
+                if = {
+                    limit = { is_core = PREV }
+                    remove_core = PREV
+                    add_territorial_core = NWC
+                }
+                cede_province = NWC
+            }
+        }
+        ai_chance = { factor = 0 }
+    }
+
+    option = { # Colonial Australia Region... Blame Bananaman
+        name = colonial_nwc.1.m
+        trigger = { 
+            OR = {
+                any_subject_country = { # You have a subject in Australia
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        capital_scope = { 
+                        colonial_region = colonial_australia
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_subject_country = { # You have a subject outside of Australia that owns Australian provinces
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_australia
+                        }
+                    }
+                    any_owned_province = {
+					    colonial_region = colonial_australia
+                        is_colony = no
+				    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_owned_province = { # You own a province in Australia
+					colonial_region = colonial_australia
+                    is_colony = no
+				}
+            }
+        }
+        custom_tooltip = nwc_transfer_australia_tt
+        hidden_effect = {
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    capital_scope = { 
+                        colonial_region = colonial_australia
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                NWC = {
+                    inherit = PREV
+                }
+            }
+            every_subject_country = {
+                limit = {
+                    NOT = { tag = NWC }
+                    is_colonial_nation = yes
+                    is_at_war = no
+                    NOT = { 
+                        capital_scope = { 
+                            colonial_region = colonial_australia
+                        }
+                    }
+                    any_owned_province = {
+                        colonial_region = colonial_australia
+                        is_colony = no
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                add_liberty_desire = 5
+                every_owned_province = {
+                    limit = {
+                        colonial_region = colonial_australia
+                        is_colony = no
+                    }
+                    if = {
+                        limit = { is_claim = PREV }
+                        remove_claim = PREV
+                        add_claim = NWC
+                    }
+                    if = {
+                        limit = { is_core = PREV }
+                        remove_core = PREV
+                        add_territorial_core = NWC
+                    }
+                    cede_province = NWC
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    colonial_region = colonial_australia
+                    is_colony = no
+                }
+                if = {
+                    limit = { is_claim = PREV }
+                    remove_claim = PREV
+                    add_claim = NWC
+                }
+                if = {
+                    limit = { is_core = PREV }
+                    remove_core = PREV
+                    add_territorial_core = NWC
+                }
+                cede_province = NWC
+            }
+        }
+        ai_chance = { factor = 0 }
+    }
+}    
+        

@@ -419,11 +419,15 @@ ICE_missions_3 = {
         position = 1
 
         trigger = {
+            # Just so that skuddo can't instantly click the button
             navy_size_percentage = 1
-            OR = {
+            # Everything required to actually go do a colonialism
+            OR = { # Explorers can't go exploring if they don't have at least three heavy and/or light ships
                 num_of_heavy_ship = 3
                 num_of_light_ship = 3
             }
+            # Greenland and Quebec only need one guy to deal with uprisings, but the American Northeast will require at least two
+            num_of_transport = 2
         }
 
         effect = {

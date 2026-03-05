@@ -100,4 +100,101 @@ country_decisions = {
             custom_tooltip = nor_built_beghard_tt #still needs localisation
         } 
     }
+
+    nwc_colonial_transfer = {
+        major = no
+
+        potential = {
+            any_subject_country = { # You need to have the NWC as a colonial subject
+                tag = NWC
+				capital_scope = { 
+                    OR = {
+						continent = north_america
+						continent = south_america
+					}
+                }
+			}
+		}
+
+        allow = {
+            is_at_war = no # No wartime shenanagins for you Mr. Ananasman!
+            NWC = { is_at_war = no } # No wartime shenanagins for you either Skuddo!
+            OR = {
+                any_subject_country = { # You have a colonial subject
+                    NOT = { tag = NWC }
+			        is_colonial_nation = yes
+                    is_at_war = no
+			        capital_scope = { 
+                        OR = {
+						    continent = north_america
+						    continent = south_america
+					    }
+                    }
+                    NOT = { liberty_desire = 50 }
+                }
+                any_owned_province = { # You own a colony
+					OR = {
+						continent = north_america
+						continent = south_america
+					}
+                    is_colony = no
+				}
+            }
+        }
+
+        effect = {
+            country_event = { id = colonial_nwc.1 }
+        }
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+				factor = 0
+				NOR = { # AI only does this for Canada and East Coast. Bananaman has to do the rest himself
+                    any_subject_country = { # AI has a colonial subject in Canada or East Coast
+                        NOT = { tag = NWC }
+                        is_colonial_nation = yes
+                        is_at_war = no
+                        capital_scope = { 
+                            OR = {
+                                colonial_region = colonial_canada
+                                colonial_region = colonial_east_coast
+                            }
+                        }
+                        NOT = { liberty_desire = 50 }
+                    }
+                    any_subject_country = { # AI has a subject outside Canada or East Coast that owns those provinces
+                        NOT = { tag = NWC }
+			            is_colonial_nation = yes
+                        is_at_war = no
+			            NOT = { 
+                            capital_scope = { 
+                                OR = {
+                                    colonial_region = colonial_canada
+                                    colonial_region = colonial_east_coast
+                                }
+                            }
+                        }
+                        any_owned_province = {
+					        OR = {
+                                colonial_region = colonial_canada
+                                colonial_region = colonial_east_coast
+                            }
+                            is_colony = no
+				        }
+                        NOT = { liberty_desire = 50 }
+                    }
+                    any_owned_province = { # AI owns a province in Canada or East Coast
+                        OR = {
+                            colonial_region = colonial_canada
+                            colonial_region = colonial_east_coast
+                        }
+                        is_colony = no
+                    }
+                }
+			}
+        }
+        
+        ai_importance = 400 # AI pretty please don't fuck over Skuddo
+    }
 }

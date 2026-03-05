@@ -180,9 +180,13 @@
 
  #Gov reforms
  BM_NWC_corperate_althing:0 "The Corperate Althing"
+ BM_NWC_corperate_althing_desc:0 "PLACEHOLDER!"
  BM_norwegian_balance_of_power:0 "The Beghards and the Barons"
+ BM_norwegian_balance_of_power_desc:0 "PLACEHOLDER!"
  BM_chamber_of_churches:0 "The chamber of churches"
+ BM_chamber_of_churches_desc:0 "PLACEHOLDER!"
  BM_steam_barons_ascendant:0 "The rule of Steam"
+ BM_steam_barons_ascendant_desc:0 "PLACEHOLDER!"
 
  #Estate privelidges
  estate_burghers_whaling_trips:0 "Sponsored whaling trips"
