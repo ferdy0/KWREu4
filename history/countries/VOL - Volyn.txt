@@ -5,7 +5,7 @@ technology_group = eastern
 religion = orthodox
 primary_culture = ruthenian
 capital = 279
-add_accepted_culture = kishinyov
+add_accepted_culture = ruthenian
 1365.4.5 = {
 	monarch = {
 		name = "Yuriy II"
@@ -52,7 +52,7 @@ add_accepted_culture = kishinyov
 		death_date = 1464.9.22
 		female = yes
 		religion = orthodox
-		culture = kishinyov
+		culture = ruthenian
 	}
 }
 1434.8.18 = {

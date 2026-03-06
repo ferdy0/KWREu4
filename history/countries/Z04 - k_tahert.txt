@@ -30,7 +30,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		death_date = 1443.10.28
 		female = yes
 		religion = catholic
-		culture = dynamic-danish-dutch-culture-num2
+		culture = frisian
 	}
 	add_queen_personality = craven_personality
 	add_queen_personality = infertile_personality

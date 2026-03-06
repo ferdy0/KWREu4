@@ -3,6 +3,6 @@ add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
 religion = catholic
-primary_culture = elsinorian
+primary_culture = danish
 capital = 12
 historical_friend = DAN

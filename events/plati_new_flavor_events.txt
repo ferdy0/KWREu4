@@ -754,12 +754,6 @@ country_event = {
 			OR = {
 				tag = NOR
 				primary_culture = norse
-				primary_culture = cooler_norwegian
-				primary_culture = holmgardrian
-				primary_culture = marisbaltician
-				primary_culture = miklagardrian
-				primary_culture = serklandic
-				primary_culture = romsborgian
 			}
 		}
 		add_government_reform = norwegian_parliamentary_monarchy						#scandinavian ting, essentially
@@ -771,12 +765,6 @@ country_event = {
 			OR = {
 				tag = NOR
 				primary_culture = norse
-				primary_culture = cooler_norwegian
-				primary_culture = holmgardrian
-				primary_culture = marisbaltician
-				primary_culture = miklagardrian
-				primary_culture = serklandic
-				primary_culture = romsborgian
 			}
 		}
 		add_government_reform = danish_archkingdom										#more variety for norsemen	

@@ -7,7 +7,7 @@ germanic = {
 		primary = GER
 	}
 	alsatian = { # Kalani - This is used but is this made up by the converter or from CK3? If its made up, do we even want to keep it? MARKED FOR INVESTIGATION
-		primary = ALS
+		primary = ALS # Lot - I'd say we indeed keep it
 		dynasty_names = {
 			Anspach Asperger "auf der Maur" Bauer Bernstein Blauschild Blumenthal Bollinger
 			Dietemann Dreyfus Eisenberg Eisenhauer Erlenmeyer Fischer Goldfarb Goldkopf Goldstein
@@ -15,481 +15,96 @@ germanic = {
 			Rosen Rosenberg Rosenblum Rosenfeld Rosenthal Roth Rothkopf Rothschild Rothstein
 			Sauber Scheuchzer Schild Schmidt Schmitt Schneider Schubert Schumann Schwartz
 			Schwarz Schwarzkopf Schweitzer Stein Stern Strauss Vettel Weinstein Weintraub Weishaupt
-			"von Lothringen" "von Metz" "von Bolchen" "von Chï¿½teau-Salins" "von Didenhofen"
-			"von Forbach" "von Saarburg" "von Saargemï¿½nd" "von Erstein" "von Hagenau" "von Molsheim"
-			"von Schlettstadt" "von Straï¿½burg" "von Weiï¿½enburg" "von Zabern" "von Altkirch"
-			"von Colmar" "von Gebweiler" "von Mï¿½lhausen" "von Rappoltsweiler" "von Thann"
+			"von Lothringen" "von Metz" "von Bolchen" "von Château-Salins" "von Didenhofen"
+			"von Forbach" "von Saarburg" "von Saargemünd" "von Erstein" "von Hagenau" "von Molsheim"
+			"von Schlettstadt" "von Straßburg" "von Weißenburg" "von Zabern" "von Altkirch"
+			"von Colmar" "von Gebweiler" "von Mülhausen" "von Rappoltsweiler" "von Thann"
 		}
 	}
-	sudeten = { # Kalani - MARKED FOR REMOVAL
-		primary = SUD
-		dynasty_names = {
-			"von Prag" Pilsner "von Karlsbad" "von Aussig" "von Reichenberg"
-			"von Pardubitz" "von Iglau" Budweiser "von Brï¿½nn" Olmï¿½tzer "von Ostrau" Zliner Presburger
-			"von Presburg" "von Tyrnau" "von Trentschin" Laugaricio "von Neutra" "von Sillein"
-			Solna "von Neusohl" "von Eperies" Fragopolis "von Kaschau"
-		}
-	}
-	
-	jerusalemer = { primary = KOJ } # Kalani - MARKED FOR REMOVAL
-	kurlander = { primary = KUR } # Kalani - MARKED FOR REMOVAL
-	lothringian = { primary = LOT } # Kalani - MARKED FOR REMOVAL
-	new_english = { primary = GER } # Kalani - MARKED FOR REMOVAL
 }
 scandinavian = {
-	norse = { #Moves it from Lost Cultures to here, added in "Lions of the North" to vanilla 
-		# Kalani - Unfortunately from vanilla like it says... fine...
+	norse = {
+		country = {  }
 		province = { local_has_carolean = yes }
 		male_names = {
-			Aï¿½alsteinn Aghi Agmundr Agnarr ï¿½ki ï¿½leifr Alfarr Alfvin Algautr Ari Arnfinnr ï¿½rni Arnï¿½rr Arnï¿½ï¿½rr Arnviï¿½r ï¿½sbjï¿½rn ï¿½sgeirr ï¿½sketill ï¿½smundr ï¿½svaldr Auï¿½r Baggi Bï¿½rï¿½r Birgir Bjarni Bjartr Bjï¿½rn Brandr Brï¿½ï¿½ir # La Plï¿½iade
-			Brynjarr Bï¿½i Dagfinnr Dagr Danr Egill Eileifr Einarr Eindriï¿½i Eirï¿½kr Erlendr Erlingr Eysteinn Eyvindr Fï¿½lagi Finnr Flï¿½mingr Fï¿½lki Friï¿½ï¿½jï¿½fr Frï¿½ï¿½i Gauti Gautstafr Geirr Gï¿½rmr Guï¿½brandr Guï¿½friï¿½r Guï¿½ini # La Plï¿½iade
-			Guï¿½leifr Guï¿½mundr Gulbrandr Gunnarr Gunni Gunnvaldr Hï¿½kon Hï¿½lfdan Hallbjï¿½rn Halli Hallr Hallsteinn Hallï¿½ï¿½rr Hallvarï¿½r Haraldr Hï¿½varï¿½r Helgi Hemingr Herleifr Hildingr Hjï¿½lmarr Hï¿½lmgeirr Hrafn Hreiï¿½arr Hrï¿½aldr # La Plï¿½iade
-			Hrï¿½arr Hrï¿½ï¿½geirr Hrï¿½ï¿½ï¿½lfr Hrï¿½ï¿½valdr Hrï¿½lfr Hrï¿½rekr Hugleikr Ingi Ingimï¿½rr Ingï¿½lfr ï¿½varr Jarl Jï¿½steinn Kï¿½lfr Kï¿½ri Ketill Knï¿½tr Kï¿½ri Leifr Magni Mundi Njï¿½ll Oddbjï¿½rn Oddr Oddvarr ï¿½lvir Rï¿½ï¿½ï¿½lfr Ragnarr Ragnvaldr # La Plï¿½iade
-			Randï¿½lfr Rï¿½ni Sigfrï¿½ï¿½r Sigmundr Sigsteinn Sigurï¿½r Sindri Snorri Stï¿½li Steinarr Steingrï¿½mr Steinn Stï¿½gandr Stigr Sumarliï¿½i Sundri Suni Svantepolk Sveinn Sverrir ï¿½ï¿½rarinn ï¿½ï¿½rbjï¿½rn ï¿½ï¿½rfastr ï¿½ï¿½rfreï¿½r ï¿½ï¿½rgeirr # La Plï¿½iade
-			ï¿½ï¿½rgï¿½sl ï¿½ï¿½rgnï¿½r ï¿½ï¿½rir ï¿½ï¿½rketill ï¿½ï¿½rleifr ï¿½ï¿½rleikr ï¿½ï¿½rmï¿½ï¿½r ï¿½ï¿½rsteinn ï¿½ï¿½rvaldr ï¿½rï¿½ndr Tï¿½fi Tï¿½ki Tryggvi ï¿½lfr Uni Valdimï¿½rr Vï¿½garï¿½r Vetrliï¿½i Vï¿½gi Vï¿½kingr Vragi Yngvarr # La Plï¿½iade
+			Aðalsteinn Aghi Agmundr Agnarr Áki Áleifr Alfarr Alfvin Algautr Ari Arnfinnr Árni Arnórr Arnþórr Arnviðr Ásbjörn Ásgeirr Ásketill Ásmundr Ásvaldr Auðr Baggi Bárðr Birgir Bjarni Bjartr Björn Brandr Bróðir # La Pléiade
+			Brynjarr Búi Dagfinnr Dagr Danr Egill Eileifr Einarr Eindriði Eiríkr Erlendr Erlingr Eysteinn Eyvindr Félagi Finnr Flæmingr Fólki Friðþjófr Fróði Gauti Gautstafr Geirr Górmr Guðbrandr Guðfriðr Guðini # La Pléiade
+			Guðleifr Guðmundr Gulbrandr Gunnarr Gunni Gunnvaldr Hákon Hálfdan Hallbjörn Halli Hallr Hallsteinn Hallþórr Hallvarðr Haraldr Hávarðr Helgi Hemingr Herleifr Hildingr Hjálmarr Hólmgeirr Hrafn Hreiðarr Hróaldr # La Pléiade
+			Hróarr Hróðgeirr Hróðólfr Hróðvaldr Hrólfr Hrörekr Hugleikr Ingi Ingimárr Ingólfr Ívarr Jarl Jósteinn Kálfr Kári Ketill Knútr Kóri Leifr Magni Mundi Njáll Oddbjörn Oddr Oddvarr Ölvir Ráðúlfr Ragnarr Ragnvaldr # La Pléiade
+			Randúlfr Rúni Sigfröðr Sigmundr Sigsteinn Sigurðr Sindri Snorri Stáli Steinarr Steingrímr Steinn Stígandr Stigr Sumarliði Sundri Suni Svantepolk Sveinn Sverrir Þórarinn Þórbjörn Þórfastr Þórfreðr Þórgeirr # La Pléiade
+			Þórgísl Þórgnýr Þórir Þórketill Þórleifr Þórleikr Þórmóðr Þórsteinn Þórvaldr Þróndr Tófi Tóki Tryggvi Úlfr Uni Valdimárr Végarðr Vetrliði Vígi Víkingr Vragi Yngvarr # La Pléiade
 		}
 		female_names = {
-			Alfhildr ï¿½lï¿½f Arnbjï¿½rg ï¿½sa ï¿½sdï¿½s ï¿½shildr ï¿½slaug ï¿½sta ï¿½strï¿½ï¿½r Auï¿½r Auï¿½rhildr Bergljï¿½t Bjï¿½rg Borghildr Bï¿½ï¿½ildr Brynhildr Brynja Dagmï¿½r Dagnï¿½ Dagrï¿½n Edda Eydï¿½s Frï¿½ï¿½a Grï¿½mhildr Guï¿½laug Guï¿½leif Guï¿½rï¿½ï¿½r Guï¿½rï¿½n Gulla # La Plï¿½iade
-			Gunna Gunnbjï¿½rg Gunnhildr Gunnvï¿½r Gyï¿½a Hallï¿½ï¿½ra Helga Hildr Hjï¿½rdï¿½s Hlï¿½f Hrafnhildr Hreiï¿½unn Iï¿½unn Inga Ingibjï¿½rg Ingigerï¿½r Ingrï¿½ï¿½r Ingunn Ingvildr Jï¿½runnr Katla Ketilriï¿½r Magnhildr Myrgjï¿½l ï¿½laug Ragna Ragnbjï¿½rg # La Plï¿½iade
-			Ragnfrï¿½ï¿½r Ragnheiï¿½r Ragnhildr Rï¿½na Saldï¿½s Signï¿½ Sigrï¿½ï¿½r Sigrï¿½n Sï¿½lveig Steinunn Svanhildr ï¿½one ï¿½ï¿½ra ï¿½ï¿½rbjï¿½rg ï¿½ï¿½rdï¿½s ï¿½ï¿½rfrï¿½ï¿½r ï¿½ï¿½rhildr ï¿½ï¿½rnï¿½ ï¿½ï¿½runn ï¿½ï¿½rveig ï¿½ï¿½rvï¿½ ï¿½rud ï¿½rï¿½ï¿½r ï¿½ï¿½ri Tï¿½fa Unnr Valdï¿½s Vï¿½gdï¿½s # La Plï¿½iade
+			Alfhildr Álöf Arnbjörg Ása Ásdís Áshildr Áslaug Ásta Ástríðr Auðr Auðrhildr Bergljót Björg Borghildr Bóþildr Brynhildr Brynja Dagmár Dagný Dagrún Edda Eydís Fríða Grímhildr Guðlaug Guðleif Guðríðr Guðrún Gulla # La Pléiade
+			Gunna Gunnbjörg Gunnhildr Gunnvör Gyða Hallþóra Helga Hildr Hjördís Hlíf Hrafnhildr Hreiðunn Iðunn Inga Ingibjörg Ingigerðr Ingríðr Ingunn Ingvildr Jórunnr Katla Ketilriðr Magnhildr Myrgjöl Ólaug Ragna Ragnbjörg # La Pléiade
+			Ragnfríðr Ragnheiðr Ragnhildr Rúna Saldís Signý Sigríðr Sigrún Sólveig Steinunn Svanhildr Þone Þóra Þórbjörg Þórdís Þórfríðr Þórhildr Þórný Þórunn Þórveig Þórví Þrud Þrúðr Þýri Tófa Unnr Valdís Vígdís # La Pléiade
 			Yngvildr
 		}
 		dynasty_names = {
-			ï¿½slaugsson ï¿½striï¿½arson ï¿½svaldsson Eindriï¿½esson Eirï¿½ksson Gormsson Hï¿½konarson Haraldsson Loï¿½brok Munsï¿½ Ragnarsson Sigurï¿½arson Skjï¿½ldung Snorrason ï¿½ï¿½rgilsson ï¿½ï¿½rsteinsson ï¿½ï¿½rvaldsson Tryggvason Vï¿½lsung # La Plï¿½iade
-			Wï¿½gmunding Ylfing Yngling # La Plï¿½iade
+			Áslaugsson Ástriðarson Ásvaldsson Eindriðesson Eiríksson Gormsson Hákonarson Haraldsson Loðbrok Munsö Ragnarsson Sigurðarson Skjöldung Snorrason Þórgilsson Þórsteinsson Þórvaldsson Tryggvason Völsung # La Pléiade
+			Wægmunding Ylfing Yngling # La Pléiade
 		}
 	}
-	elsinorian = { # Kalani - MARKED FOR REMOVAL
-		province = { local_has_carolean = yes }
-		primary = DNL
-		dynasty_names = {
-			Arnï¿½rsson ï¿½sgeirsson Benediktsson Bjarnasen Bjï¿½rnsson Eggers Eldjï¿½rn Hafstein Hansen
-			Hermannsson Johanesson Jansson Magnusson Stefï¿½nsson Steinthosson Thï¿½rdarson Thï¿½rhallson Thorlï¿½ksson Thurs
-			Godhelming Beorming Eorling ï¿½bbing Hï¿½sting ï¿½lling Eadricing Eadwulfing Leodwalding
-			Ythelfrithing Yffing Ingving Offing Oswalding Cerdicing Wiglafing Coenwalhing
-			Beorning Iceling Wuffing Wihtgilsing Ross Ciesla Rowe Borthwick
-		}
-	}
-	ruotsish = { primary = FIN } # Kalani - MARKED FOR REMOVAL
-	holmgardrian = { primary = NOV } # Kalani - MARKED FOR REMOVAL
-	marisbaltician = { primary = EST } # Kalani - MARKED FOR REMOVAL
-	miklagardrian = { primary = BYZ } # Kalani - MARKED FOR REMOVAL
-	serklandic = { } # No primary because it's truly a joke
-	# Kalani - Why is it here then you twats? MARKED FOR REMOVAL
-	romsborgian = { primary = ITA } # Kalani - MARKED FOR REMOVAL
 	
 	#Royal Court Additions
-	cooler_norwegian = { # Kalani - MARKED FOR REMOVAL
-		primary = NOR
-		dynasty_names = { Skjaeran }
-	}
-	geatish = { # Kalani - MARKED FOR REMOVAL
-		province = { local_has_carolean = yes }
-		primary = SWE 
-	}
-	gutish = { # Kalani - MARKED FOR REMOVAL
-		province = { local_has_carolean = yes }
-		primary = GOT 
-	}
 	scanian = { # Kalani - MARKED FOR REMOVAL
-		province = { local_has_carolean = yes }
+		province = { local_has_carolean = yes } # Lot - tis in base game tho... I say we keep it
 		primary = SCN 
 	}
 }
 british = {
-	hibernic = { # Kalani - holy moly that's a lot of names. also MARKED FOR REMOVAL
-		primary = IRE
-		male_names = {
-			Abban Eveny Allen Albert Anlon Ambrose Hugh Aidan Egan Angus Ardal Barry
-			Behellagh Becan Bercan Brasil Brendan Bryan Buagh Collin Carbry Calvagh Kevin
-			Kyle Kevan Craig Cartagh Cahal Cahir Caffar Callaghan Cain Kienan Keiran Kennedy
-			Killian Kenny Kerill Colman Cole Cowan Connell Conan Conary Connor Conley Charles
-			Crevan Crohan Cronan Cumin Covey Dahy Darragh Declan Desmond Donald Donnelly
-			Donough Denis Dudley Dowan Dougal Douglas Dowling Achy Hector Enan Enna
-			Ercan Ernan Ever Evin Erevan Eochy Owen Fachny Falvy Felan Faragh Firdorcha Fergananym
-			Fergal Farrell Fehin Phelim Philip Feagh Finnin Fintan Finbar Fial Garvan Glasny Jarlath
-			Lysach Laserian Loughlin Loman Lonan Lorcan Larkin Lewy Melaghlin Maelisa Munchin
-			Mogue Mayog Meyler Malcolm Mailmorye Meyler Melrone Mahon Murtagh Murry Maurice
-			Murrough Nevan Neese Naghtan Nessan Neil Noel Oran Ossian Ryan Revelin Ronan Ross
-			Rowan Rory Sidney Shiel Sivny Sweeney Teague Timothy Thallach Tierny Turlough Trevor Toal
-			Toole Owney Ualarg
-		}
-		female_names = {
-			Eveleen Evin Alvy Anya Ashlin Atty Eymur Enat Eavan Eva Ellen Attracta Barduv Bevin
-			Vivian Blanid Blinna Brigid Bronagh Buanad Keeva Keelin Keevnat Kinnat Keira Cleena
-			Cloda Devnet Downet Dymphna Derval Dervorghil Dervla Deidre Dianiv Dorothy Dooley
-			Ernet Asna Avelyn Edna Evir Emer Aideen Whiltierna Fedelma Feenat Fiona Fyin Fenella
-			Flannad Fola Forvla Feenawn Gelace Gobnat Gormly Grania Enid Ita Lasareena Mave Maeve
-			Mella Meeda Monica More Moreen Meenat Monat Morrin Muriel Myrna None Neve Noelle
-			Noreen Ornat Onora Orla Peggy Pegeen Renny Rinach Rose Sally Searla Sheema Slaney Sally
-			Tualah Agnes
-		}
-		dynasty_names = {
-			Barry Beary Blake Bligh Boyle Bracken Braden Brady Braiden Branagan Brandane Brandon Bree
-			Brennan Bryan Bryant Cagney Calhoun Callaghan Callan Callen Cameron Carey Carmadie
-			Carnahan Carr Carrick Carrol Carroll Casey Cassidy Caven Christy Clancy Clinton Cochrane
-			Coday Cody Coffey Cogley Collins Coltrain Coltrane Comiskey Conleth Conley Conlon Connally
-			Connel Connell Connelley Connelly Connely Conner Connolly Connor Cool Corey Corkran
-			Cormack Cormag Cormick Corr Costello Cowan Coyle Coyne Creagh Crigan Crosby Cuin Culligan
-			Curry Daley Daly Danaher Daniel Davenport Day Delaney Desmond Devin Devlin Devor Devoy
-			Dillon Docherty Doherty Dolan Donaher Donnelley Donnelly Donoghue Donohew Donoho
-			Donovan Dormer Dougherty Dowling Doyle Driscoll Duane Duffy Dullaghan Dullahan Duncan
-			Dunlavey Dunleavy Ennis Fahey Fahy Fallon Faraday Farrell Fay Feagans Ferrall Ferrick Finnegan
-			Flaherty Flanagan Flanigan Flannagan Flannigan Flattery Flavin Flynn Forbes Fyall Gaffney
-			Gahan Gallagher Gallaher Galliher Galway Gannon Gaughan George Geraghty Gerety Gill
-			Gillooly Glacken Glackin Golliher Gordon Gormley Guilfoyle Guinness Haggerty Hanna
-			Harrington Hart Harvey Hassan Hayes Heneghan Hennessey Hennessy Hennigan Henry Hickey
-			Higgens Higgins Horan Hurley Karns Kavanagh Keady Keagan Kealy Keane Kearney Kearns
-			Keegan Keehn Keeley Keely Keene Kelleher Kelley Kellogg Kelly Kenna Kennedy Keogh Keough
-			Kerry Kerwin Kilcullen Kilday Kildow Kilduff Killeen Kilroy Kinney Kinnie Kinsella Kirlin Kirwan
-			Kissane Kyle Lafferty Lalor Lane Laverty Leamy Leary Leland Lennon Lennox Levy Lewis Logan
-			Lohan Looney Lydon Lynn Mackfall MacNeven MacPhail Mahan Malone Manahan Manning
-			Manus Marley Mayhan McAfee McAleese McAloon McAlpine McAtee McAuley McAuliffe
-			McAvoy McBride McCabe McCadden McCafferty McCandless McCanless McCardell McCarren
-			McCarry McCartney McCary McCaw McClellan McClelland McCluskie McCollom McConaghy
-			McCool McCorkle McCorry McCowen McCullagh McCulloch McCullough McCune McCurtain
-			McCutchan McDade McDaid McDermott McDevitt McDonagh McDonnell McDormand
-			McDowell McDuffie McEachern McElderry McElrath McElroy McElveen McElwee McEnany
-			McEnerny McEnery McEvoy McFadden McFadyen McFall McFaul McGarry McGaugh McGee
-			McGinley McGinnis McGoogan McGough McGovern McGrath McGreevy McGuiness McGuinn
-			McGuire McGurk McHale McHenry McIlrath McIndoe McIver McJunkin McJunkins McKaig
-			McKaughan McKee McKeever McKelvey McKelvie McKeon McKevitt McKibbin McKinstry
-			McKittrick McKown McLaughlin McLean McLeish McLoughlin McMahon McManigal McManus
-			McMinn McMurphy McNabb McNairy McNally McNaughton McNear McNeese McNelis
-			McNellis McNew McNish McOmber McParland McPartland McPeak McPhail McQuade
-			McQuaid McQueen McQuilken McQuitty McShea McSweeney McTigue Mecum Megill Mehaffey
-			Merrigan Millican Milligan Mills Monahan Mooney Moran Morgan Moriarty Morris Morrow
-			Muldoon Mulhern Mulkern Mullally Mullaly Mullican Mulligan Murphy Murtagh Nash Neal
-			Neale Neil Neill Nolan O O'Brien O'Casey O'Connell O'Connor O'Dare O'Dea O'Donnell
-			O'Donovan O'Flynn O'Hara O'Keefe O'Leary O'Malley O'Neil O'Neill O'Reilly O'Riley O'Riordan
-			O'Rourke Oscar O'Shaughnessy O'Shea O'Sullivan Owen Quigg Quigley Quinn Rafferty Reagan
-			Redmond Regan Reid Reilly Riley Robbins Rohan Rooney Rowan Ruane Ryan Scally Scanlon
-			Scully Shanahan Shane Shannon Sharkey Shaughnessy Shay Shea Shealy Sheedy Sheridan Shiley
-			Shinnick Shortell Skelly Solivan Sullivan Sweeney Taaffe Taylor Teague Tierney Timothy Toohey
-			Touhey Welshans Wheelan Wheeland Whelan
-		}
-	}
-	northumbrian = { # Kalani - who the fuck are these people making the converter anyway? MARKED FOR REMOVAL
-		primary = NOL
-		dynasty_names = {
-			Godhelming Beorming Eorling ï¿½bbing Hï¿½sting ï¿½lling Eadricing Eadwulfing Leodwalding
-			Ythelfrithing Yffing Ingving Offing Oswalding Cerdicing Wiglafing Coenwalhing
-			Beorning Iceling Wuffing Wihtgilsing Ross Ciesla Rowe Borthwick
-		}
-		male_names = {
-			Arncytel Balthere Beorhtfrith Beorhthelm Beorhtnoth Beorhtric Beorhtsige Beorhtwine Beorn Beornwulf
-			Burgheard Byrhtnoth Cearl Cenfus Cenwulf Ceolwulf Cerdic Copsige
-			Cuthberht Cynehelm Cynewulf Cytelbearn Eadberht Eadfrith Eadgar Eadmund Eadmï¿½r Eadric
-			Eadsige Eadulf Eadweald Eadweard Eadwig Eadwine Eadwulf Ealdhun Ealdmund Ealdwine
-			Ealdwulf Eanberht Eanfrith Eanhere Eardwulf Eastmund Ecgberht Ecgfrith Gamall Godwine Gospatric Guthfrith Guthmund
-			Gyrth Hacon Harold Heahberht Hereberht Hereweald Hereweard Hlothere Hrodberht Leofheah Leofhelm
-			Leofric Leofweald Leofwine Maccus Morcar Offa Onlaf Ordgar
-			Oscytel Oshere Osmund Osric Osulf Osweald Oswine Oswulf Peter Rï¿½genweald Scule
-			Sigeberht Sigehelm Sigeric Sigerï¿½d Sighere Siweard Stigand Swegn Swithelm Seaweald
-			Seaxbald Thurcytel Thurfrith Tostig Ulfcytel Waltheof Werestan Wiglaf
-			Wistan Wulf Wulfgar Wulfgeat Wulfhelm Wulfhere Wulfnoth Wulfstan ï¿½lfgar ï¿½lfnoth ï¿½lfric ï¿½lfrid ï¿½lfsige
-			ï¿½lfstan ï¿½lfwald ï¿½lfweard ï¿½lfwig ï¿½lfwine ï¿½thelbald ï¿½thelberht ï¿½thelfrith ï¿½thelhere
-			ï¿½thelric ï¿½thelsige ï¿½thelstan ï¿½thelweald ï¿½thelweard ï¿½thelwine ï¿½thelwold ï¿½thelwulf
-			Eormenred Eorcenberht Eormenric Eadbald Rï¿½dwald
-		}
-		female_names = {
-			Agatha Balthild Beorhtflid Beorhtgifu Beorhtgyth Beorhtwaru Beorhtwynn Beornflid Beorngyth Ceolflid Cristina
-			Cuthburg Cwenburg Cyneburg Cynegyth Cynehild Cyneswith Cynethryth Eadburg Eadflad Eadgifu Eadgyth Eadhburh Eadhild Ealdgyth
-			Ealhswith Eanswith Ecgfrida Ecgwyn Godgifu Gunhilda Gytha Helga Heregyth Hereswith Hextilda Hungifu Judith
-			Leofflad Leofgifu Leofrun Leofwaru Leofwynn Margaret Maud Matilda Mildrith Octreda Sigrid Wulfgifu
-			Wulfgyth Wulfhild Wulfrun Wulfthryth Wulfwaru Wulfwynn Wynnflad Warburg Seaxburh Wihtburh
-		}
-	}
-	mercian = { # Kalani - seriously who on the converter team got a hard-on for alt-hist balkanized britain? MARKED FOR REMOVAL
-		primary = MRC
-		dynasty_names = {
-			Godhelming Beorming Eorling ï¿½bbing Hï¿½sting ï¿½lling Eadricing Eadwulfing Leodwalding
-			Ythelfrithing Yffing Ingving Offing Oswalding Cerdicing Wiglafing Coenwalhing
-			Beorning Iceling Wuffing Wihtgilsing Ross Ciesla Rowe Borthwick
-		}
-		male_names = {
-			Arncytel Balthere Beorhtfrith Beorhthelm Beorhtnoth Beorhtric Beorhtsige Beorhtwine Beorn Beornwulf
-			Burgheard Byrhtnoth Cearl Cenfus Cenwulf Ceolwulf Cerdic Copsige
-			Cuthberht Cynehelm Cynewulf Cytelbearn Eadberht Eadfrith Eadgar Eadmund Eadmï¿½r Eadric
-			Eadrad Eadsige Eadulf Eadweald Eadweard Eadwig Eadwine Eadwulf Ealdhun Ealdmund Ealdred Ealdwine
-			Ealdwulf Eanberht Eanfrith Eanhere Eardwulf Eastmund Ecgberht Ecgfrith Gamall Godwine Gospatric Guthfrith Guthmund
-			Gyrth Hacon Harold Heahberht Hereberht Hereweald Hereweard Hlothere Hrodberht Leofheah Leofhelm
-			Leofric Leofweald Leofwine Maccus Morcar Mirleswegn Offa Onlaf Ordgar
-			Oscytel Oshere Osmund Osric Osred Osulf Osweald Oswine Oswulf Peter Redwulf Regenweald Scule
-			Sigeberht Sigehelm Sigeric Sigered Sighere Siweard Stigand Swegn Swithelm Swithred Swifrrd Sigweald
-			Seaxbald Seaxred Thored Thurcytel Thurfrith Tostig Uhtrï¿½d Ulfcytel Waltheof Werestan Wiglaf Wihtred
-			Wistan Wulf Wulfgar Wulfgeat Wulfhelm Wulfhere Wulfmï¿½r Wulfnoth Wulfstan ï¿½lfgar ï¿½lfnoth ï¿½lfric ï¿½lfred ï¿½lfsige
-			ï¿½lfstan ï¿½lfwald ï¿½lfweard ï¿½lfwig ï¿½lfwine ï¿½lle ï¿½thelbald ï¿½thelberht ï¿½thelfrith ï¿½thelhere
-			ï¿½thelric ï¿½thelred ï¿½thelsige ï¿½thelstan ï¿½helweald ï¿½thelweard ï¿½thelwine ï¿½thelwold ï¿½thelwulf
-			Eormenred Eorcenberht Eormenric Eadbald Redwald
-		}
-		female_names = {
-			Agatha Balthild Beorhtfled Beorhtgifu Beorhtgyth Beorhtwaru Beorhtwynn Beornfled Beorngyth Burgfled Ceolfled Cristina
-			Cuthburg Cwenburg Cyneburg Cynegyth Cynehild Cyneswith Cynethryth Eadburg Eadfled Eadgifu Eadgyth Eadhburh Eadhild Ealdgyth
-			Ealhfled Ealhswith Eanswith Ecgfrida Ecgwyn Godgifu Gunhilda Gytha Helga Heregyth Hereswith Hextilda Hungifu Judith
-			Leoffled Leofgifu Leofrun Leofwaru Leofwynn Margaret Maud Matilda Mildrith Octreda Siffled Sigrid Sethryth Wulffled Wulfgifu
-			Wulfgyth Wulfhild Wulfrun Wulfthryth Wulfwaru Wulfwynn Wynnfled Warburg ï¿½bba ï¿½lfflï¿½d ï¿½lfgifu ï¿½lfgyth ï¿½lflï¿½da ï¿½lfrida
-			ï¿½lfswith ï¿½lfthryth ï¿½lfwynn ï¿½thelburg ï¿½thelflï¿½d ï¿½thelgifu ï¿½thelhild ï¿½thelreda ï¿½thelswith ï¿½thelthryth
-			ï¿½thelburh Seaxburh Wihtburh
-		}
-	}
-	wessexian = { # Kalani - I'm already running out of funny things to say but there's so much more of them... MARKED FOR REMOVAL
-		primary = WSX
-		dynasty_names = {
-			Godhelming Beorming Eorling ï¿½bbing Hï¿½sting ï¿½lling Eadricing Eadwulfing Leodwalding
-			Ythelfrithing Yffing Ingving Offing Oswalding Cerdicing Wiglafing Coenwalhing
-			Beorning Iceling Wuffing Wihtgilsing Ross Ciesla Rowe Borthwick
-		}
-		male_names = {
-			Arncytel Balthere Beorhtfrith Beorhthelm Beorhtnoth Beorhtric Beorhtsige Beorhtwine Beorn Beornwulf
-			Burgheard Byrhtnoth Cearl Cenfus Cenwulf Ceolwulf Cerdic Copsige
-			Cuthberht Cynehelm Cynewulf Cytelbearn Eadberht Eadfrith Eadgar Eadmund Eadmï¿½r Eadric
-			Eadrad Eadsige Eadulf Eadweald Eadweard Eadwig Eadwine Eadwulf Ealdhun Ealdmund Ealdred Ealdwine
-			Ealdwulf Eanberht Eanfrith Eanhere Eardwulf Eastmund Ecgberht Ecgfrith Gamall Godwine Gospatric Guthfrith Guthmund
-			Gyrth Hacon Harold Heahberht Hereberht Hereweald Hereweard Hlothere Hrodberht Leofheah Leofhelm
-			Leofric Leofweald Leofwine Maccus Morcar Mirleswegn Offa Onlaf Ordgar
-			Oscytel Oshere Osmund Osric Osred Osulf Osweald Oswine Oswulf Peter Redwulf Regenweald Scule
-			Sigeberht Sigehelm Sigeric Sigered Sighere Siweard Stigand Swegn Swithelm Swithred Swifrrd Sigweald
-			Seaxbald Seaxred Thored Thurcytel Thurfrith Tostig Uhtrï¿½d Ulfcytel Waltheof Werestan Wiglaf Wihtred
-			Wistan Wulf Wulfgar Wulfgeat Wulfhelm Wulfhere Wulfmï¿½r Wulfnoth Wulfstan ï¿½lfgar ï¿½lfnoth ï¿½lfric ï¿½lfred ï¿½lfsige
-			ï¿½lfstan ï¿½lfwald ï¿½lfweard ï¿½lfwig ï¿½lfwine ï¿½lle ï¿½thelbald ï¿½thelberht ï¿½thelfrith ï¿½thelhere
-			ï¿½thelric ï¿½thelred ï¿½thelsige ï¿½thelstan ï¿½helweald ï¿½thelweard ï¿½thelwine ï¿½thelwold ï¿½thelwulf
-			Eormenred Eorcenberht Eormenric Eadbald Redwald
-		}
-		female_names = {
-			Agatha Balthild Beorhtfled Beorhtgifu Beorhtgyth Beorhtwaru Beorhtwynn Beornfled Beorngyth Burgfled Ceolfled Cristina
-			Cuthburg Cwenburg Cyneburg Cynegyth Cynehild Cyneswith Cynethryth Eadburg Eadfled Eadgifu Eadgyth Eadhburh Eadhild Ealdgyth
-			Ealhfled Ealhswith Eanswith Ecgfrida Ecgwyn Godgifu Gunhilda Gytha Helga Heregyth Hereswith Hextilda Hungifu Judith
-			Leoffled Leofgifu Leofrun Leofwaru Leofwynn Margaret Maud Matilda Mildrith Octreda Siffled Sigrid Sethryth Wulffled Wulfgifu
-			Wulfgyth Wulfhild Wulfrun Wulfthryth Wulfwaru Wulfwynn Wynnfled Warburg ï¿½bba ï¿½lfflï¿½d ï¿½lfgifu ï¿½lfgyth ï¿½lflï¿½da ï¿½lfrida
-			ï¿½lfswith ï¿½lfthryth ï¿½lfwynn ï¿½thelburg ï¿½thelflï¿½d ï¿½thelgifu ï¿½thelhild ï¿½thelreda ï¿½thelswith ï¿½thelthryth
-			ï¿½thelburh Seaxburh Wihtburh
-		}
-	}
-	essexian = { # Kalani - MARKED FOR REMOVAL
-		primary = ESX
-		dynasty_names = {
-			Godhelming Beorming Eorling ï¿½bbing Hï¿½sting ï¿½lling Eadricing Eadwulfing Leodwalding
-			Ythelfrithing Yffing Ingving Offing Oswalding Cerdicing Wiglafing Coenwalhing
-			Beorning Iceling Wuffing Wihtgilsing Ross Ciesla Rowe Borthwick
-		}
-		male_names = {
-			Arncytel Balthere Beorhtfrith Beorhthelm Beorhtnoth Beorhtric Beorhtsige Beorhtwine Beorn Beornwulf
-			Burgheard Byrhtnoth Cearl Cenfus Cenwulf Ceolwulf Cerdic Copsige
-			Cuthberht Cynehelm Cynewulf Cytelbearn Eadberht Eadfrith Eadgar Eadmund Eadmï¿½r Eadric
-			Eadrad Eadsige Eadulf Eadweald Eadweard Eadwig Eadwine Eadwulf Ealdhun Ealdmund Ealdred Ealdwine
-			Ealdwulf Eanberht Eanfrith Eanhere Eardwulf Eastmund Ecgberht Ecgfrith Gamall Godwine Gospatric Guthfrith Guthmund
-			Gyrth Hacon Harold Heahberht Hereberht Hereweald Hereweard Hlothere Hrodberht Leofheah Leofhelm
-			Leofric Leofweald Leofwine Maccus Morcar Mirleswegn Offa Onlaf Ordgar
-			Oscytel Oshere Osmund Osric Osred Osulf Osweald Oswine Oswulf Peter Redwulf Regenweald Scule
-			Sigeberht Sigehelm Sigeric Sigered Sighere Siweard Stigand Swegn Swithelm Swithred Swifrrd Sigweald
-			Seaxbald Seaxred Thored Thurcytel Thurfrith Tostig Uhtrï¿½d Ulfcytel Waltheof Werestan Wiglaf Wihtred
-			Wistan Wulf Wulfgar Wulfgeat Wulfhelm Wulfhere Wulfmï¿½r Wulfnoth Wulfstan ï¿½lfgar ï¿½lfnoth ï¿½lfric ï¿½lfred ï¿½lfsige
-			ï¿½lfstan ï¿½lfwald ï¿½lfweard ï¿½lfwig ï¿½lfwine ï¿½lle ï¿½thelbald ï¿½thelberht ï¿½thelfrith ï¿½thelhere
-			ï¿½thelric ï¿½thelred ï¿½thelsige ï¿½thelstan ï¿½helweald ï¿½thelweard ï¿½thelwine ï¿½thelwold ï¿½thelwulf
-			Eormenred Eorcenberht Eormenric Eadbald Redwald
-		}
-		female_names = {
-			Agatha Balthild Beorhtfled Beorhtgifu Beorhtgyth Beorhtwaru Beorhtwynn Beornfled Beorngyth Burgfled Ceolfled Cristina
-			Cuthburg Cwenburg Cyneburg Cynegyth Cynehild Cyneswith Cynethryth Eadburg Eadfled Eadgifu Eadgyth Eadhburh Eadhild Ealdgyth
-			Ealhfled Ealhswith Eanswith Ecgfrida Ecgwyn Godgifu Gunhilda Gytha Helga Heregyth Hereswith Hextilda Hungifu Judith
-			Leoffled Leofgifu Leofrun Leofwaru Leofwynn Margaret Maud Matilda Mildrith Octreda Siffled Sigrid Sethryth Wulffled Wulfgifu
-			Wulfgyth Wulfhild Wulfrun Wulfthryth Wulfwaru Wulfwynn Wynnfled Warburg ï¿½bba ï¿½lfflï¿½d ï¿½lfgifu ï¿½lfgyth ï¿½lflï¿½da ï¿½lfrida
-			ï¿½lfswith ï¿½lfthryth ï¿½lfwynn ï¿½thelburg ï¿½thelflï¿½d ï¿½thelgifu ï¿½thelhild ï¿½thelreda ï¿½thelswith ï¿½thelthryth
-			ï¿½thelburh Seaxburh Wihtburh
-		}
-	}
-	east_anglian = { # Kalani - MARKED FOR REMOVAL
-		primary = ENG
-		dynasty_names = {
-			Godhelming Beorming Eorling ï¿½bbing Hï¿½sting ï¿½lling Eadricing Eadwulfing Leodwalding
-			Ythelfrithing Yffing Ingving Offing Oswalding Cerdicing Wiglafing Coenwalhing
-			Beorning Iceling Wuffing Wihtgilsing Ross Ciesla Rowe Borthwick
-		}
-		male_names = {
-			Arncytel Balthere Beorhtfrith Beorhthelm Beorhtnoth Beorhtric Beorhtsige Beorhtwine Beorn Beornwulf
-			Burgheard Byrhtnoth Cearl Cenfus Cenwulf Ceolwulf Cerdic Copsige
-			Cuthberht Cynehelm Cynewulf Cytelbearn Eadberht Eadfrith Eadgar Eadmund Eadmï¿½r Eadric
-			Eadrad Eadsige Eadulf Eadweald Eadweard Eadwig Eadwine Eadwulf Ealdhun Ealdmund Ealdred Ealdwine
-			Ealdwulf Eanberht Eanfrith Eanhere Eardwulf Eastmund Ecgberht Ecgfrith Gamall Godwine Gospatric Guthfrith Guthmund
-			Gyrth Hacon Harold Heahberht Hereberht Hereweald Hereweard Hlothere Hrodberht Leofheah Leofhelm
-			Leofric Leofweald Leofwine Maccus Morcar Mirleswegn Offa Onlaf Ordgar
-			Oscytel Oshere Osmund Osric Osred Osulf Osweald Oswine Oswulf Peter Redwulf Regenweald Scule
-			Sigeberht Sigehelm Sigeric Sigered Sighere Siweard Stigand Swegn Swithelm Swithred Swifrrd Sigweald
-			Seaxbald Seaxred Thored Thurcytel Thurfrith Tostig Uhtrï¿½d Ulfcytel Waltheof Werestan Wiglaf Wihtred
-			Wistan Wulf Wulfgar Wulfgeat Wulfhelm Wulfhere Wulfmï¿½r Wulfnoth Wulfstan ï¿½lfgar ï¿½lfnoth ï¿½lfric ï¿½lfred ï¿½lfsige
-			ï¿½lfstan ï¿½lfwald ï¿½lfweard ï¿½lfwig ï¿½lfwine ï¿½lle ï¿½thelbald ï¿½thelberht ï¿½thelfrith ï¿½thelhere
-			ï¿½thelric ï¿½thelred ï¿½thelsige ï¿½thelstan ï¿½helweald ï¿½thelweard ï¿½thelwine ï¿½thelwold ï¿½thelwulf
-			Eormenred Eorcenberht Eormenric Eadbald Redwald
-		}
-		female_names = {
-			Agatha Balthild Beorhtfled Beorhtgifu Beorhtgyth Beorhtwaru Beorhtwynn Beornfled Beorngyth Burgfled Ceolfled Cristina
-			Cuthburg Cwenburg Cyneburg Cynegyth Cynehild Cyneswith Cynethryth Eadburg Eadfled Eadgifu Eadgyth Eadhburh Eadhild Ealdgyth
-			Ealhfled Ealhswith Eanswith Ecgfrida Ecgwyn Godgifu Gunhilda Gytha Helga Heregyth Hereswith Hextilda Hungifu Judith
-			Leoffled Leofgifu Leofrun Leofwaru Leofwynn Margaret Maud Matilda Mildrith Octreda Siffled Sigrid Sethryth Wulffled Wulfgifu
-			Wulfgyth Wulfhild Wulfrun Wulfthryth Wulfwaru Wulfwynn Wynnfled Warburg ï¿½bba ï¿½lfflï¿½d ï¿½lfgifu ï¿½lfgyth ï¿½lflï¿½da ï¿½lfrida
-			ï¿½lfswith ï¿½lfthryth ï¿½lfwynn ï¿½thelburg ï¿½thelflï¿½d ï¿½thelgifu ï¿½thelhild ï¿½thelreda ï¿½thelswith ï¿½thelthryth
-			ï¿½thelburh Seaxburh Wihtburh
-		}
-	}
-	ecgfrithian = { # Kalani - MARKED FOR REMOVAL
-		primary = IRE
-		dynasty_names = {
-			Godhelming Beorming Eorling ï¿½bbing Hï¿½sting ï¿½lling Eadricing Eadwulfing Leodwalding
-			Ythelfrithing Yffing Ingving Offing Oswalding Cerdicing Wiglafing Coenwalhing
-			Beorning Iceling Wuffing Wihtgilsing Ross Ciesla Rowe Borthwick
-		}
-		male_names = {
-			Arncytel Balthere Beorhtfrith Beorhthelm Beorhtnoth Beorhtric Beorhtsige Beorhtwine Beorn Beornwulf
-			Burgheard Byrhtnoth Cearl Cenfus Cenwulf Ceolwulf Cerdic Copsige
-			Cuthberht Cynehelm Cynewulf Cytelbearn Eadberht Eadfrith Eadgar Eadmund Eadmï¿½r Eadric
-			Eadrad Eadsige Eadulf Eadweald Eadweard Eadwig Eadwine Eadwulf Ealdhun Ealdmund Ealdred Ealdwine
-			Ealdwulf Eanberht Eanfrith Eanhere Eardwulf Eastmund Ecgberht Ecgfrith Gamall Godwine Gospatric Guthfrith Guthmund
-			Gyrth Hacon Harold Heahberht Hereberht Hereweald Hereweard Hlothere Hrodberht Leofheah Leofhelm
-			Leofric Leofweald Leofwine Maccus Morcar Mirleswegn Offa Onlaf Ordgar
-			Oscytel Oshere Osmund Osric Osred Osulf Osweald Oswine Oswulf Peter Redwulf Regenweald Scule
-			Sigeberht Sigehelm Sigeric Sigered Sighere Siweard Stigand Swegn Swithelm Swithred Swifrrd Sigweald
-			Seaxbald Seaxred Thored Thurcytel Thurfrith Tostig Uhtrï¿½d Ulfcytel Waltheof Werestan Wiglaf Wihtred
-			Wistan Wulf Wulfgar Wulfgeat Wulfhelm Wulfhere Wulfmï¿½r Wulfnoth Wulfstan ï¿½lfgar ï¿½lfnoth ï¿½lfric ï¿½lfred ï¿½lfsige
-			ï¿½lfstan ï¿½lfwald ï¿½lfweard ï¿½lfwig ï¿½lfwine ï¿½lle ï¿½thelbald ï¿½thelberht ï¿½thelfrith ï¿½thelhere
-			ï¿½thelric ï¿½thelred ï¿½thelsige ï¿½thelstan ï¿½helweald ï¿½thelweard ï¿½thelwine ï¿½thelwold ï¿½thelwulf
-			Eormenred Eorcenberht Eormenric Eadbald Redwald
-		}
-		female_names = {
-			Agatha Balthild Beorhtfled Beorhtgifu Beorhtgyth Beorhtwaru Beorhtwynn Beornfled Beorngyth Burgfled Ceolfled Cristina
-			Cuthburg Cwenburg Cyneburg Cynegyth Cynehild Cyneswith Cynethryth Eadburg Eadfled Eadgifu Eadgyth Eadhburh Eadhild Ealdgyth
-			Ealhfled Ealhswith Eanswith Ecgfrida Ecgwyn Godgifu Gunhilda Gytha Helga Heregyth Hereswith Hextilda Hungifu Judith
-			Leoffled Leofgifu Leofrun Leofwaru Leofwynn Margaret Maud Matilda Mildrith Octreda Siffled Sigrid Sethryth Wulffled Wulfgifu
-			Wulfgyth Wulfhild Wulfrun Wulfthryth Wulfwaru Wulfwynn Wynnfled Warburg ï¿½bba ï¿½lfflï¿½d ï¿½lfgifu ï¿½lfgyth ï¿½lflï¿½da ï¿½lfrida
-			ï¿½lfswith ï¿½lfthryth ï¿½lfwynn ï¿½thelburg ï¿½thelflï¿½d ï¿½thelgifu ï¿½thelhild ï¿½thelreda ï¿½thelswith ï¿½thelthryth
-			ï¿½thelburh Seaxburh Wihtburh
-		}
-	}
 	anglosaxon = { # Kalani - MARKED FOR REMOVAL
-		primary = ENG
+		primary = ENG # Lot - It's base-game, we're keeping it :)
 		dynasty_names = {
-			Godhelming Beorming Eorling ï¿½bbing Hï¿½sting ï¿½lling Eadricing Eadwulfing Leodwalding
-			Ythelfrithing Yffing Ingving Offing Oswalding Cerdicing Wiglafing Coenwalhing
+			Godhelming Beorming Eorling Æbbing Hæsting Ælling Eadricing Eadwulfing Leodwalding
+			Æthelfrithing Yffing Ingving Offing Oswalding Cerdicing Wiglafing Coenwalhing
 			Beorning Iceling Wuffing Wihtgilsing Ross Ciesla Rowe Borthwick
 		}
 		male_names = {
-			Arncytel Balthere Beorhtfrith Beorhthelm Beorhtnoth Beorhtric Beorhtsige Beorhtwine Beorn Beornwulf
-			Burgheard Byrhtnoth Cearl Cenfus Cenwulf Ceolwulf Cerdic Copsige
-			Cuthberht Cynehelm Cynewulf Cytelbearn Eadberht Eadfrith Eadgar Eadmund Eadmï¿½r Eadric
-			Eadrad Eadsige Eadulf Eadweald Eadweard Eadwig Eadwine Eadwulf Ealdhun Ealdmund Ealdred Ealdwine
+			Arncytel Balthere Beorhtfrith Beorhthelm Beorhtmær Beorhtnoth Beorhtric Beorhtsige Beorhtwine_Beorhtwine Beorn_Beorn Beornræd Beornwulf
+			Burgheard Byrhtnoth Cearl Cenfus Cenræd Cenwulf Ceolwulf Cerdic Copsige
+			Cuthberht Cuthræd Cynehelm Cynewulf Cytelbearn Eadberht Eadfrith Eadgar Eadmund Eadmær Eadric
+			Eadræd Eadsige Eadulf Eadweald Eadweard Eadwig Eadwine Eadwulf Ealdhun Ealdmund Ealdræd Ealdwine
 			Ealdwulf Eanberht Eanfrith Eanhere Eardwulf Eastmund Ecgberht Ecgfrith Gamall Godwine Gospatric Guthfrith Guthmund
-			Gyrth Hacon Harold Heahberht Hereberht Hereweald Hereweard Hlothere Hrodberht Leofheah Leofhelm
-			Leofric Leofweald Leofwine Maccus Morcar Mirleswegn Offa Onlaf Ordgar
-			Oscytel Oshere Osmund Osric Osred Osulf Osweald Oswine Oswulf Peter Redwulf Regenweald Scule
-			Sigeberht Sigehelm Sigeric Sigered Sighere Siweard Stigand Swegn Swithelm Swithred Swifrrd Sigweald
-			Seaxbald Seaxred Thored Thurcytel Thurfrith Tostig Uhtrï¿½d Ulfcytel Waltheof Werestan Wiglaf Wihtred
-			Wistan Wulf Wulfgar Wulfgeat Wulfhelm Wulfhere Wulfmï¿½r Wulfnoth Wulfstan ï¿½lfgar ï¿½lfnoth ï¿½lfric ï¿½lfred ï¿½lfsige
-			ï¿½lfstan ï¿½lfwald ï¿½lfweard ï¿½lfwig ï¿½lfwine ï¿½lle ï¿½thelbald ï¿½thelberht ï¿½thelfrith ï¿½thelhere
-			ï¿½thelric ï¿½thelred ï¿½thelsige ï¿½thelstan ï¿½helweald ï¿½thelweard ï¿½thelwine ï¿½thelwold ï¿½thelwulf
-			Eormenred Eorcenberht Eormenric Eadbald Redwald
+			Gyrth Hacon Harold Heahberht Hereberht Hereweald Hereweard Hlothere Hrodberht Inwær Leofheah Leofhelm
+			Leofric Leofweald Leofwine Maccus Morcar Mærleswegn Offa Onlaf Ordgar
+			Oscytel Oshere Osmund Osric Osræd Osulf Osweald Oswine Oswulf Peter Rædwulf_Ralph Rægenweald Scule
+			Sigeberht Sigehelm Sigeric Sigeræd Sighere Siweard Stigand Swegn Swithelm Swithræd Swæfræd Sæbert Sælræd Sæweald
+			Sæxbald Sæxræd Thoræd Thurcytel Thurfrith Tostig Uhtræd Ulfcytel Waltheof Werestan Wiglaf Wihtræd
+			Wistan Wulf Wulfgar Wulfgeat Wulfhelm Wulfhere Wulfmær Wulfnoth Wulfstan Ælfgar Ælfmær Ælfnoth Ælfric Ælfræd_Alfred Ælfsige
+			Ælfstan Ælfwald Ælfweard Ælfwig Ælfwine Ælle Æthelbald Æthelberht Æthelfrith Æthelhere Æthelmær
+			Æthelric Æthelræd_Ailred Æthelsige Æthelstan Æthelweald Æthelweard Æthelwine Æthelwold Æthelwulf
+			Eormenred Eorcenberht Eormenric Eadbald Rædwald
 		}
 		female_names = {
-			Agatha Balthild Beorhtfled Beorhtgifu Beorhtgyth Beorhtwaru Beorhtwynn Beornfled Beorngyth Burgfled Ceolfled Cristina
-			Cuthburg Cwenburg Cyneburg Cynegyth Cynehild Cyneswith Cynethryth Eadburg Eadfled Eadgifu Eadgyth Eadhburh Eadhild Ealdgyth
-			Ealhfled Ealhswith Eanswith Ecgfrida Ecgwyn Godgifu Gunhilda Gytha Helga Heregyth Hereswith Hextilda Hungifu Judith
-			Leoffled Leofgifu Leofrun Leofwaru Leofwynn Margaret Maud Matilda Mildrith Octreda Siffled Sigrid Sethryth Wulffled Wulfgifu
-			Wulfgyth Wulfhild Wulfrun Wulfthryth Wulfwaru Wulfwynn Wynnfled Warburg ï¿½bba ï¿½lfflï¿½d ï¿½lfgifu ï¿½lfgyth ï¿½lflï¿½da ï¿½lfrida
-			ï¿½lfswith ï¿½lfthryth ï¿½lfwynn ï¿½thelburg ï¿½thelflï¿½d ï¿½thelgifu ï¿½thelhild ï¿½thelreda ï¿½thelswith ï¿½thelthryth
-			ï¿½thelburh Seaxburh Wihtburh
+			Agatha Balthild Beorhtflæd Beorhtgifu Beorhtgyth Beorhtwaru Beorhtwynn Beornflæd Beorngyth Blæja Burgflæd Ceolflæd Cristina
+			Cuthburg Cwenburg Cyneburg Cynegyth Cynehild Cyneswith Cynethryth Eadburg Eadflæd Eadgifu Eadgyth Eadhburh Eadhild Ealdgyth
+			Ealhflæd Ealhswith Eanswith Ecgfrida Ecgwyn Godgifu Gunhilda Gytha Helga Heregyth Hereswith Hextilda Hungifu Judith
+			Leofflæd Leofgifu Leofrun Leofwaru Leofwynn Margaret_Margaret Maud Matilda Mildrith Octreda Sifflæd Sigrid Sæthryth Wulfflæd Wulfgifu
+			Wulfgyth Wulfhild Wulfrun Wulfthryth Wulfwaru Wulfwynn Wynnflæd Wærburg Æbba Ælfflæd Ælfgifu Ælfgyth Ælflæda_Ælflæda Ælfrida
+			Ælfswith Ælfthryth Ælfwynn Æthelburg Æthelflæd Æthelgifu Æthelhild Æthelræda_Æthelreda Æthelswith Æthelthryth
+			Æthelburh Seaxburh Wihtburh
 		}
 	} # Fallback
-	
-	northerner = { # Kalani - MARKED FOR REMOVAL
-		primary = NOL
-		dynasty_names = {
-			Godhelming Beorming Eorling ï¿½bbing Hï¿½sting ï¿½lling Eadricing Eadwulfing Leodwalding
-			Ythelfrithing Yffing Ingving Offing Oswalding Cerdicing Wiglafing Coenwalhing
-			Beorning Iceling Wuffing Wihtgilsing Ross Ciesla Rowe Borthwick
-		}
-		male_names = {
-			Arncytel Balthere Beorhtfrith Beorhthelm Beorhtnoth Beorhtric Beorhtsige Beorhtwine Beorn Beornwulf
-			Burgheard Byrhtnoth Cearl Cenfus Cenwulf Ceolwulf Cerdic Copsige
-			Cuthberht Cynehelm Cynewulf Cytelbearn Eadberht Eadfrith Eadgar Eadmund Eadmï¿½r Eadric
-			Eadrad Eadsige Eadulf Eadweald Eadweard Eadwig Eadwine Eadwulf Ealdhun Ealdmund Ealdred Ealdwine
-			Ealdwulf Eanberht Eanfrith Eanhere Eardwulf Eastmund Ecgberht Ecgfrith Gamall Godwine Gospatric Guthfrith Guthmund
-			Gyrth Hacon Harold Heahberht Hereberht Hereweald Hereweard Hlothere Hrodberht Leofheah Leofhelm
-			Leofric Leofweald Leofwine Maccus Morcar Mirleswegn Offa Onlaf Ordgar
-			Oscytel Oshere Osmund Osric Osred Osulf Osweald Oswine Oswulf Peter Redwulf Regenweald Scule
-			Sigeberht Sigehelm Sigeric Sigered Sighere Siweard Stigand Swegn Swithelm Swithred Swifrrd Sigweald
-			Seaxbald Seaxred Thored Thurcytel Thurfrith Tostig Uhtrï¿½d Ulfcytel Waltheof Werestan Wiglaf Wihtred
-			Wistan Wulf Wulfgar Wulfgeat Wulfhelm Wulfhere Wulfmï¿½r Wulfnoth Wulfstan ï¿½lfgar ï¿½lfnoth ï¿½lfric ï¿½lfred ï¿½lfsige
-			ï¿½lfstan ï¿½lfwald ï¿½lfweard ï¿½lfwig ï¿½lfwine ï¿½lle ï¿½thelbald ï¿½thelberht ï¿½thelfrith ï¿½thelhere
-			ï¿½thelric ï¿½thelred ï¿½thelsige ï¿½thelstan ï¿½helweald ï¿½thelweard ï¿½thelwine ï¿½thelwold ï¿½thelwulf
-			Eormenred Eorcenberht Eormenric Eadbald Redwald
-		}
-		female_names = {
-			Agatha Balthild Beorhtfled Beorhtgifu Beorhtgyth Beorhtwaru Beorhtwynn Beornfled Beorngyth Burgfled Ceolfled Cristina
-			Cuthburg Cwenburg Cyneburg Cynegyth Cynehild Cyneswith Cynethryth Eadburg Eadfled Eadgifu Eadgyth Eadhburh Eadhild Ealdgyth
-			Ealhfled Ealhswith Eanswith Ecgfrida Ecgwyn Godgifu Gunhilda Gytha Helga Heregyth Hereswith Hextilda Hungifu Judith
-			Leoffled Leofgifu Leofrun Leofwaru Leofwynn Margaret Maud Matilda Mildrith Octreda Siffled Sigrid Sethryth Wulffled Wulfgifu
-			Wulfgyth Wulfhild Wulfrun Wulfthryth Wulfwaru Wulfwynn Wynnfled Warburg ï¿½bba ï¿½lfflï¿½d ï¿½lfgifu ï¿½lfgyth ï¿½lflï¿½da ï¿½lfrida
-			ï¿½lfswith ï¿½lfthryth ï¿½lfwynn ï¿½thelburg ï¿½thelflï¿½d ï¿½thelgifu ï¿½thelhild ï¿½thelreda ï¿½thelswith ï¿½thelthryth
-			ï¿½thelburh Seaxburh Wihtburh
-		}
-	}
-	arvorigeg = { primary = FRA } # Kalani - MARKED FOR REMOVAL
-	dramor = { primary = KOJ } # Kalani - MARKED FOR REMOVAL
-}
-gaelic = {
-	coigriche = { primary = KOJ } # Kalani - MARKED FOR REMOVAL
-	pictish = { # Kalani - MARKED FOR REMOVAL
-		primary = SCO
-		dynasty_names = { "map Artcois" "map Bargoit" "map Buthud" "map Enfret" "map Eru" "map Gyrom" "map Lutrin" "map Mailcon" "map Munait" "map Taixali" "map Uleo" "map Wthoil" Circin Deoardivois Diuberr Erilich "Gaed Brechach" Gurthinmoch Ini Loc Morbet Necton Olgudach Smertae Tina Uecla Uip Vepogenus Wurgest }
-	}
 }
 latin = {
 	italian = { # Kalani - This one seems to be used a bit but I'm not sure why. MARKED FOR INVESTIGATION
-		primary = ITA
+		primary = ITA # Lot - Until Kalani has investigated it further we're not touching this one...
 		dynasty_names = { "de Liguori" "della Rovere" "di Borbone di Parma" "di Robilant" "di Savoia" "di Savoia-Aosta" "Pacoret de Saint Bon" "Thaon di Revel" Albricci Anfora Baratieri Bava-Beccaris Bonaccorsi Cadorna Cagni Canevaro Caraga Caviglia Ceccherini Clary Colonna d'Absburgo-Toscana Dezza Diaz Filomarino Giardino Gironda Govone Gravina Lanza Lombardo Lunardi Molinelli Orengo Orsini Pecori-Giraldi Perruchetti Pianelli Pironti Porro Ramorino Ricotti-Magnani Sanna Scammacca Solari Torlonia Turrisi Vaccari Zunica }
 	}
-	oltremare = { primary = KOJ } # Kalani - MARKED FOR REMOVAL
 }
 iberian	= {
-	province = { local_has_tercio = yes }
-	ultramar = { primary = KOJ } # Kalani - MARKED FOR REMOVAL
-}
-french = {
-	outremer = { # Kalani - MARKED FOR REMOVAL
-		primary = KOJ
-		male_names = { Achille Adolphe Adrien Aimable Alphonse Antoine Armand August Augustin
-		Charles Daniel Denis ï¿½douard Elie ï¿½ttiene Eugï¿½ne Fï¿½licien Fï¿½lix Fernand
-		Franï¿½ois Frï¿½dï¿½ric Georges Guillaume Gustave Henri Hubert Hugo Jacques Jean
-		Joseph Jules Julien Lazare Lï¿½opold Leroy Louis Lucien Matthieu Michel
-		Napolï¿½on Nicolas Patrice Paul Philippe Pierre Robert Thibaut Thierry Thomas }
-		dynasty_names = { Emicho "Sans-Avoir" Gautier "de Taranto" Bohemond Tancred Herman
-		"de Hauteville" "de Salerno" "de Bouillon" Godfrey Eustace "de Boulogne" Baldwin
-		"de Fauquembergues" Galilee Nazareth "de Bazoches" Gervaise Fulcher "de Chartres"
-		"de le Bourg" "de Saint-Pol" Grenier "de Hainaut" Grez Raymond "de Saint-Gilles"
-		"de Monteil" Cerdagne "Le Puy" Bï¿½arn Bigorre Guinard "de Roussillon" Aicard "d'Arles"
-		"de Lusignan" Berenguer Aguilers Raimbaut Roman "d'Orange" Odo Bayeux Chocques
-		Curthose "de Guader" Hierges Vermandois Coucy Embriaco Montlhï¿½ry Alan
-		Lastours "d'Auvergne" "de Bourgogne" "de Blois" "de Toulouse" "de Boulogne"
-		"de Provence" Lemarquis "de Flandre" "de Bretagne" "de Normandie" "de La Trï¿½moille"
-		Gï¿½nes Lotharingie Tarente Armï¿½nie Croisï¿½ Fatimide Danichmendide "de Roum" Arslan }
-	}
-	
-	angevin = { primary = ALE } # Kalani - MARKED FOR REMOVAL
-	auvergnat = { primary = AUV } # Kalani - MARKED FOR REMOVAL
-	arpitan = { primary = DAU } # Kalani - MARKED FOR REMOVAL
-	gallo = { primary = ENG } # Kalani - MARKED FOR REMOVAL
-	lengadocian = { primary = TOU } # Kalani - MARKED FOR REMOVAL
-	poitevin = { primary = ORL } # Kalani - MARKED FOR REMOVAL
-	provancale = { primary = PRO } # Kalani - MARKED FOR REMOVAL
-	siculo_norman = { primary = SIC } # Kalani - MARKED FOR REMOVAL
+	province = { local_has_tercio = yes } #Lot - Idk if we can remove this but for now I'll err on the safe side.
 }
 finno_ugric = {
 	karelian = { #Moved from East Slavic
 		# Kalani - It wasn't even in East Slavic you morons, it was in Nordic. 
 		# Nonetheless this is a vanilla culture that does see actual use, but do we want to move it back?
+		# Lot - Along with Bjarmian and the other cultures in this group it feels like it makes more sense to keep this in finno_ugric than to put it in east slavic
 		primary = KRL
 		male_names = {
-			Mohkku Mokci Nï¿½hkol Nï¿½innas Njulgu Oavï¿½n Orddot Rï¿½stos Riibma Ruigi Sï¿½rra Speaidna Viggu Kaarel Kaaren Kahus Kaido 
-			Kalev Kalju Kaljuvald Kalle Kaomeel Karuvald Kaugemeel Kaupo Pihl Piho Pikne Pï¿½evalemb Pï¿½rt Raak Raho Rahuleid Sulev 
+			Mohkku Mokci Náhkol Náinnas Njulgu Oaván Orddot Rástos Riibma Ruigi Sárra Speaidna Viggu Kaarel Kaaren Kahus Kaido 
+			Kalev Kalju Kaljuvald Kalle Kaomeel Karuvald Kaugemeel Kaupo Pihl Piho Pikne Päevalemb Pärt Raak Raho Rahuleid Sulev 
 			Sutepelg Tambet Tarva Tarvet Dobrinya Dokya Dondy Gazheg Hulyen Inzhay Irter Lyneg Lysko Kezhapa Kezhay Kezhedey 
 			Setyamka Shindyay Shypicha Shyrpuzh Spira Syrka Tikshayka Tuhan Tyueykezhut Tyutyuk Tugan Kezhevat Kichay Koksha 
 			Kuaz Kudym-Osh Kya Kyldysin Malyaka Malyy Meltsayka Mosheg Nalka Turush Uchva Varaka Vechkas Velmayka Virdyan Viryas 
@@ -505,6 +120,7 @@ finno_ugric = {
 	}
 	mordvin = { # Kalani - This does actually get used by the converter in european russia
 		# and unlike Alsatian I don't care enough to investigate or evaluate because I'm going to genocide them anyway
+		# Lot - we keep them
 		primary = MDV
 		male_names = {
 			Alyok Andryu Artyo Doro Drigo Gavryo Ilkut Kargata Kariton Khoddey Kiryo Koma
@@ -516,7 +132,7 @@ finno_ugric = {
 		dynasty_names = { Kokko Likhachev Mamin Minin Sibiriak  Tikhanov Zubov }
 	}
 	meshchera = { # Kalani - Same as Mordvin
-		primary = MSH
+		primary = MSH # Lot - we keep them
 		male_names = {
 			Anzyl Barash Izegre Izi Yolagay Lapkas
 			Maska Ozanay Oshegre Parsay Chotkar Shembuy Shumat Yumpatyr Yamshan
@@ -528,35 +144,51 @@ finno_ugric = {
 		dynasty_names = { Kokko Likhachev Mamin Minin Sibiriak  Tikhanov Zubov }
 	}
 	samoyed = { # Kalani - Same as Mordvin
-		primary = NEN
+		primary = NEN # Lot - we keep them
 	}
 	ostyaki = { # Kalani - Same as Mordvin
-		primary = YUG
+		primary = YUG # Lot - we keep them
 	}
 	ingrian = { # Kalani - MARKED FOR REMOVAL
-		primary = IGR
+		primary = IGR # Lot -  We are not removing it, it exists in base-game
+		male_names = {
+			Kahru Kahrulemb Gáktu Henes Járre Jeansa Juvven John Lágon Lávrrohas Leammá Mellet Mihka Igalemb Ihameel Ihar 
+			Ihatõiv Ihavald Illimar Ilmalemb Ilmar Ilvelemb Jaolemb Kaalep Lättelemb Manivald Mart Maru Mati Mats Meelis Mehis 
+			Ohetõiv Ohevald Olev Onni Otelemb Ott Arnaz Arti Artis Arvo Aymort Azeg Biur Biyar Burmort Chichayka Chuga Dergun 
+			Deryab Pakstyan Paksyay Paksyut Parush Pivtsay Pokshayka Putyayka Pyera Rateg Rayda Sarin Sektev Dobrinya Dokya 
+			Dondy Gazheg Hulyen Inzhay Irter Lyneg Lysko Kezhapa Kezhay Kezhedey Setyamka Shindyay Shypicha Shyrpuzh Spira Syrka 
+			Tikshayka Tuhan Tyueykezhut Tyutyuk Meltsayka Mordvinko Moksha Nalka Nuyaksha Nuyanza Nuyat Ovtay Pakstyan Paksyay 
+			Paksyut 
+		}
+		female_names = {
+			Aasa Ahma Aime Aimo Aita Aldi Ann Anni Annika Are Auli Aune Eha Elo Ere Helbe Hele Helgi Tiiu Tuuli Urve Viire Vilja 
+			Virge Virve Värvu Õie Õnne Ülane Ülle Anava Ashava Asrava Avya Azra-Va Chechama Chenksa Cherava Chichayka Chindyapa 
+			Chindyayka Chinzhay Chitska Mel'shay Nezayka Nulzyava Nyal'ka Nyayka Nyumina Nyv Olota Ordava Oshama Öshkamöshka 
+			Tetyava Tikshayka Toyaksha Tundava Tundya Unzhutka Upurga Utyayka Valdava Vergava Vezhav Vidyava Virtyava Yalgava 
+			Yugörka Anava Ashava Asrava Azra-Va Chechama Chenksa Cherava Chichayka Chindyapa Chindyayka Chinzhay Chitska Elyuva 
+			Inyava Kanyava Kanyuva Kirdyava Kunava Kunyavka Litava Liyava Mazava Megurka Mel'shay Nezayka Nulzyava Nuyanza 
+			Nyal'ka 
+		}
 	}
 	bjarmian = { # Kalani - Same as Mordvin
-		primary = BJA
+		primary = BJA # Lot - we keep them
 	}
 	vepsian = { # Kalani - Same as Mordvin
-		primary = VPS
+		primary = VPS # Lot - we keep them
 	}
-}
-south_slavic = { # Kalani - Finally, some fucking sense from the converter team
 }
 west_slavic = { # Kalani - I may have spoken too soon...
 	graphical_culture = easterngfx
 	old_pommeranian = { # Kalani - Used by converted advisors, advisor usage unknown. MARKED FOR INVESTIGATION
-		primary = POM
+		primary = POM #Lot - perhaps it might be an idea to keep this and use it for bar's Polabian culture since I can't seem to find any existant Polabian culture
 		male_names = {
-			Adolf Adï¿½m Adriï¿½n Agapit Aleksander Amadeusz Andrzej Antï¿½n Anzelm Ark Arturk August Augustin Aurelian
-			Barnim Bartlomion Bazyl Beno Bink Blazï¿½j Bï¿½nawentura
+			Adolf Adám Adrián Agapit Aleksander Amadeusz Andrzej Antóni Anzelm Ark Arturk August Augustin Aurelian
+			Barnim Bartlomion Bazyl Beno Bink Blazéj Bonawentura
 			Cekestin Cemirk Cezari Chilk Cyd Cyl 
-			Daniï¿½l
+			Danièl
 			Edmund Edwin Edward Eliasz Elk Emanuel Emil Erazm Erik Ernest
 			Feliks Fulk Ferdinand Floriszk Florian Franciszk Franik Franulk Franusz Fridriszk Fridrich
-			Gabriï¿½l Genk Gerat Gregor Grzegorz Grzenia Gwido
+			Gabrièl Genk Gerat Gregor Grzegorz Grzenia Gwido
 			Hadrien Henk Hermiczk Hiacynt Hilari Hubert
 			Jack Jakob Jakub Jark Jarosz Jasz Jerzi Jignac Jignacy Jignacylk Jinocenti Jirk Jop Jazk Julien Jurk
 			Kadzmierz Kasjusz Klaudiusz Klimk Krisztof Kristian Kristk Kaswer
@@ -573,7 +205,7 @@ west_slavic = { # Kalani - I may have spoken too soon...
 		}
 		female_names = {
 			Ada Adka Adolfa Adrianka
-			Ala AldkaAlojza Aluszka Amanda Andzela
+			Ala Aldka Alojza Aluszka Amanda Andzela
 			Antosza Anula Anusza Ariadka Arnolda Astrida
 			Barnimira Barnislawa Beatricza Benia Beniamina
 			Bernatka Binka Bronisa
@@ -606,97 +238,11 @@ west_slavic = { # Kalani - I may have spoken too soon...
 			Breza Byzewski Cieminski Derdowski Klawiter Pacholski Pellowski Fehr Kilian Symank
 		}
 	}
-	chrobatian = { # Kalani - MARKED FOR REMOVAL
-		primary = TRA
-		male_names = {
-			Kresimir Stjepan Almos Dimitrije Zvonimir Trpimir Goislav Slavic Svetoslav Miroslav Mutimir
-			Ladislav Karlo Andrej Luj Pero Vladislav Vjenceslav Aleksandar Dragutin Fauszty Franjo Gavrilo Ivan
-			Juraj Luka Matija Marko Mihajlo Milan Mirko Nenad Nikola Slavko Toma Vladko Zvonomir
-			Adam Andrija Bartol Bartolomeus Besar Bojan Boris Branimir Castimir Danail Daniel Dmitar
-			Dobromir Dragan Dragomir Drzislav Dujam Duym Filip Philip Gaspar Gheorghe George Grigorii
-			Hranislav Hrvoje Igor Ioan John Ivan John Ivanis Jitej Karlo Charles Koloman Koloman
-			Ladislav Ljudevit Ljutomisl Lovro Matej Matthew Mihajlo Milman Mislav Mutimir
-			Nikolitza Nicholas Ognjen Petar Peter Prohor Radomir Ratimir Sebeslav Seslav Slavich
-			Stanislav Stjepan Sulvan Teodor Tomislav Tvrdoslav Tvrtko Ulfo Ulf Vid Vitomir Vlaicu
-			Vukan Zvonimir Kresimir Gregory Caspar Josip
-		}
-		female_names = {
-			Adriana Anna Borislava Cededa Doroteja Dorothy Ekaterina Catherine Helena Helen Jadviga
-			Jovana Kera Ladika Maria Maria Mihaela Nada Petra Viola Yolanda Jadranka Mare
-			Antonija Capeka Dragana Dubravka Emilija Emily Gordana Jagoda Jelena Jelka Lucija Lucia
-			Catherine Marija Maria Marijana Mirjana Mirna Mojca Natalija Natasha
-			Rijeka Silvija Snjezana Sofija Sophia Suzana Susana Svjetlana Suronja Tatjana Tihana
-			Vedrana Visnja Vjekoslava Zlata Zvonimira Valerija Katalin
-		}
-		dynasty_names = {
-			"Trpimirovic" "Mihaljevic" "Subic" "Hrvatinic"
-			"Kosaca" "Vukcic" "Vukasin" "Dukasin" "Babonic" "Frankopan" "Kacic" "Draskovic"
-			"Bebek" "Svetoslavic" "Domagojevic" "Gorjanski"
-			"Svacic" "Kobilic" "Lackovic" "Lubic"
-			"Berislavic" "Nepilic" "Jalacic" "Zrinski" "Garaj" "Eltz" "Kaboga"
-			"Crnkovic" "Cerva" "Rubido"
-		}
-	}
-}
-carpathian = {
-	kulfoldi = { primary = KOJ } # Kalani - MARKED FOR REMOVAL
-	szekely = { primary = TRA } # Kalani - MARKED FOR REMOVAL
-}
-east_slavic = {
-	ilmenian = { # Krivichs
-		# Kalani - MARKED FOR REMOVAL. Also horrible fucking formatting, shame on you John Converter.
-		primary = NOV
-		dynasty_names = { Aleksseyev Antonov Azarov Badanov Brusilov Budonnyy Chibisov Denikin
-				Dragomirov Frolov Golivin Grishin Gurko Ivanov Konev Konstantinov Kornilov
-				Kolchak Kuropatkin Lazarev Makarov Men'shikov Nakhimov Nebogatov
-				Nikolayevich Ostrovskiy Pavlov Putyatin Romanov Rozhestvenskiy Skobelev
-				Shuvalov Surkov Tukhachevskiy Yegorov Yudenich Vorontsov Voroshilov Zavoyko
-				Drutsk Kopys Lahoysk Lukoml Minsk Orsha Polotsk Usvyatsk Vitebsk Zaslawye
-				Smolensk Tversk }
-	}
-	volhynian = { # Kalani - MARKED FOR REMOVAL
-		primary = VOL
-		dynasty_names = { Aleksseyev Antonov Azarov Badanov Brusilov Budonnyy Chibisov Denikin
-				Dragomirov Frolov Golivin Grishin Gurko Ivanov Konev Konstantinov Kornilov
-				Kolchak Kuropatkin Lazarev Makarov Men'shikov Nakhimov Nebogatov
-				Nikolayevich Ostrovskiy Pavlov Putyatin Romanov Rozhestvenskiy Skobelev
-				Shuvalov Surkov Tukhachevskiy Yegorov Yudenich Vorontsov Voroshilov Zavoyko
-				Volodymyrovych Yaroslavich Tmutarakansky Izyaslavich Svyatopolchych
-				Dorohobuzhsky Mstislavych Belzsky Romanovich Vasilkovich Danylovych Lvovych
-				Boleslaw Korybut Liubartovych }
-	}
-	severian = { # Kalani - MARKED FOR REMOVAL
-		primary = KIE
-		dynasty_names = { Aleksseyev Antonov Azarov Badanov Brusilov Budonnyy Chibisov Denikin
-				Dragomirov Frolov Golivin Grishin Gurko Ivanov Konev Konstantinov Kornilov
-				Kolchak Kuropatkin Lazarev Makarov Men'shikov Nakhimov Nebogatov
-				Nikolayevich Ostrovskiy Pavlov Putyatin Romanov Rozhestvenskiy Skobelev
-				Shuvalov Surkov Tukhachevskiy Yegorov Yudenich Vorontsov Voroshilov Zavoyko }
-	}
-	russian_culture = { # Kalani - Used by converted advisors, advisor usage unknown. MARKED FOR INVESTIGATION
-		primary = RUS
-		dynasty_names = { Aleksseyev Antonov Azarov Badanov Brusilov Budonnyy Chibisov Denikin
-				Dragomirov Frolov Golivin Grishin Gurko Ivanov Konev Konstantinov Kornilov
-				Kolchak Kuropatkin Lazarev Makarov Men'shikov Nakhimov Nebogatov
-				Nikolayevich Ostrovskiy Pavlov Putyatin Romanov Rozhestvenskiy Skobelev
-				Shuvalov Surkov Tukhachevskiy Yegorov Yudenich Vorontsov Voroshilov Zavoyko }
-	}
-	kishinyov = { # Kalani - YOU! YOU SHOULD BE RUTHENIAN! I FUCKING HATE YOU LIPOVANS! YOU RUIN MY BEAUTIFUL CULTURE MAP!
-		# It is used in the mod but as the Russia player PLEASE let me have this one. I beg for this to be MARKED FOR REMOVAL
-		primary = VOL
-		dynasty_names = { Aleksseyev Antonov Azarov Badanov Brusilov Budonnyy Chibisov Denikin
-				Dragomirov Frolov Golivin Grishin Gurko Ivanov Konev Konstantinov Kornilov
-				Kolchak Kuropatkin Lazarev Makarov Men'shikov Nakhimov Nebogatov
-				Nikolayevich Ostrovskiy Pavlov Putyatin Romanov Rozhestvenskiy Skobelev
-				Shuvalov Surkov Tukhachevskiy Yegorov Yudenich Vorontsov Voroshilov Zavoyko }
-	}
-	
-	red_ruthenian = { primary = VOL } # Kalani - MARKED FOR REMOVAL
 }
 baltic = {
 	pruthenian = { #Moves it from Lost Cultures to here
 		# Kalani - Similar situation as norse... except it has an even stronger case because its used at game start as a real culture... SUSTAINED
-		primary = PRT
+		primary = PRT # Lot - I am agreed with Kalani
 		male_names = {
 			Algirdas Antanas Antavas Aras Arunas Azuolas Budrys Bukantas Butavas Butigeidis Butvydas
 			Daugvilas Daumantas Dausprungas Dravenis Erdenis Erdvilas Gedigaudas
@@ -720,71 +266,35 @@ baltic = {
 			# CKII
 			"Wilks" "Klakis" "Luks" "Kuilis" "Kalabijjan"
 			"Jankowskie" "Konopacki" "Penikis" "Tontegode" "Vidins" "Draguns" "Sirkants"
+			# Ugric Baltic
+			"Karasi" "Ingrija" "Revala" "Virumaa" "Läänemaa" "Ingeri" "Livo" "Harjumaa"
+			"Ridala" "Saaremaa" "Vaiga" "Turaida"
 			# From Behindthename
 			Bender Brandenburg Butgereit Coors Danzig Daschke Didschus Dobileit Eichhorst
 			Exkorn Fratzke Goettner Grawert Gruendemann Guja Hittel Hopp Jacko
-			Kahlweiï¿½ Kallaur Kallweit Kass Kaulitz Kienlien Krauczun Krauledat Kruschel
+			Kahlwei Kallaur Kallweit Kass Kaulitz Kienlien Krauczun Krauledat Kruschel
 			Kurpjuhn Kurpjuweit Kurschat Kushner Leissmann Lenkeit Lickert Littman Lohmeyer
-			Netzke Pinewell Preï¿½ss Prusseit Puschat Pust Redlinger Ribbeck Rudat Schmoeckel
+			Netzke Pinewell Preuss Prusseit Puschat Pust Redlinger Ribbeck Rudat Schmoeckel
 			Strasser Strauser Tadeus Teitloff Tessmer Turnbo Welk Wowereit Zipplies Zoransky
 		}
 	}
 	livonian = {  #Moves it from Lost Cultures to here, added in "Lions of the North" to vanilla
 		# Kalani - Also true, fine I guess idgaf
 		male_names = {
-			Alo Asso Caupo Dabrel Gerweder Ilmedous Ilo Imme Kike Kovals Layanus Lembewalde Musts Paimis Peite Piï¿½ke Sula Uldenago Usis Valke Vesiki Vietso Waldeko Ylo Ymaut
+			Alo Asso Caupo Dabrel Gerweder Ilmedous Ilo Imme Kike Kovals Layanus Lembewalde Musts Paimis Peite Piške Sula Uldenago Usis Valke Vesiki Vietso Waldeko Ylo Ymaut
 		}
 		female_names = {
 			Elmede Use Valata Vasara
 		}
 		dynasty_names = {
-			"Karasi" "Ingrija" "Saaremaa" "Revala" "Virumaa" "Vaiga" "Ingeri" "Ingeri" "Livo" "Harjumaa" "Virumaa" 
+			"Karasi" "Ingrija" "Saaremaa" "Revala" "Virumaa" "Läänemaa" "Vaiga" "Ingeri" "Ingeri" "Livo" "Harjumaa" "Virumaa" 
 			"Ridala" "Saaremaa" "Vaiga" "Turaida"
 		}
 	}
 }
 byzantine = {
-	hellenistic = { # Kalani - MARKED FOR REMOVAL
-		primary = BYZ
-	}
 	anatolian = { # Kalani - SUSTAINED
 		primary = BYZ
-	}
-	bactrian = { # Kalani - MARKED FOR REMOVAL
-		primary = TRS
-	}
-	empurian = { # Kalani - MARKED FOR REMOVAL
-		primary = SPA
-	}
-	histrian = { # Kalani - MARKED FOR REMOVAL
-		primary = RMN
-	}
-	kyrenaikan = { # Kalani - MARKED FOR REMOVAL
-		primary = TRP
-	}
-	leucaethiopian = { # Kalani - MARKED FOR REMOVAL
-		primary = ETH
-	}
-	magnagreek = { # Kalani - MARKED FOR REMOVAL
-		primary = BYZ
-	}
-	messalian = { # Kalani - This is also a religion for some reason. Nonetheless the culture is unused. MARKED FOR REMOVAL
-		primary = PRO
-	}
-	ptolemaic = { # Kalani - MARKED FOR REMOVAL
-		primary = EGY
-	}
-	pulian = { # Kalani - MARKED FOR REMOVAL
-		primary = CLI
-	}
-	seleucian = { # Kalani - MARKED FOR REMOVAL
-		primary = PER
-	}
-	tylosi = { # Kalani - MARKED FOR REMOVAL
-		primary = ARB
-	}
-	yavana = { # Kalani - MARKED FOR REMOVAL
-		primary = AFG
 	}
 }
 caucasian = {
@@ -796,142 +306,18 @@ caucasian = {
 			Dzakhot Dzambeg Dzambolat Dzankhot Dzantemir Dzaug Dzhambulad Elbazduko
 			Elbrus Fedyr Gaito Giurgi Irbeg Irbek Isaq Kaurbek Kazbek
 			Khadzhimurat Khazbi Khetag Makharbeg Makharbek Mikhal Misost
-			Mushtï¿½fa Nikala Nikhala Phaule Qambolat Sakhandzheri Sauarmag
+			Musht?fa Nikala Nikhala Phaule Qambolat Sakhandzheri Sauarmag
 			Seqa Soslanbek Sozyr Sozyryqo Tamerlan Torez Totradz
 			Tsomak Tsomaq Tsotsoko Tugan Uryzmag Uyryzmag Vano Znaur
 		}
 		female_names = {
 			Agunda Ariana Atsyrukhs Dzerassa
-			Olgï¿½ Roksalana Rushana Sari Zalina
+			Olgá Roksalana Rushana Sari Zalina
 		}
 		dynasty_names = { Andiyev Ashuraliyev Basiev Bazayev Bestayev Chibirov Din Dudarova Dzhanayev Fadzayev Farniev Gabulov Gassiev Gazyumov Guriev Khapov Khetagurov Kokoity Kusov Nyxas Pagayev Pliyeva Sanakoyev Tibilov Tokaty Torchinov Toshinori Valiyev Zangiev Zazirov }
 	}
-	caspian = { # Kalani - MARKED FOR REMOVAL
-		dynasty_names = {
-			Abeghean Amatuni Andzevatsi Artsruni Bagean Bznuni Dimaksean Ensayatsi Gabeghean Gntuni Gnunid Habuzhean Hashteank Hawnuni Kajberuni Kamsarakan Koghean
-			Mamikonean Manawazean Mandakuni Paluni Oroduni Eruanduni Orontid Ropsean
-		}
-		male_names = {
-			Smbat Khachik Ashot Arsham Zariadres Hamazasp Vardan Artawazd Mzez Eruand Orontes Mithranes Kherkhes Khozrid Sames Arshames Trdat Tigran Zareh Artashes
-			Arshak Vagharsh Khosrow Varazdat Vasak Ashusha Varazvaghan Hmayeak Vahan Sahak Zarmihr Nikhor
-		}
-		female_names = {
-			Tigranuhi Vanuhi Mihrana Asatera Ariazate Aka Ghadana Erato Zarmandukht Pharantzem Mahbanu Zenobia Satenik
-		}
-	}
-}
-turko_semitic = {
-	frencharab = { # Kalani - MARKED FOR REMOVAL
-		primary = FRA
-		dynasty_names = {
-			"al-Ilidufransi" "al-Biri" "al-Uwrilyanisi" "al-Nwrmandi" "al-Langhuduki" "al-Luynihi"
-			"al-Dawfini" "al-Shambani" "al-Eunisi" "al-Sayntwnji" "al-Bawatui" "al-Jawin al-Wajasikuni"
-			"al-Buarjundi" "al-Bikardi" "al-Anjui" "al-Brwfansi" "al-Anjumuui" "al-Burbunaysi"
-			"al-Mariki" "al-Baritani" "al-Mayni" "al-Turini" "al-Liamuzini" "al-Fuui" "al-Awfirni"
-			"al-Biarini" "al-Alzasi" "al-Artawazi" "al-Rusiuni" "al-Falandarazi" "al-Faranshi" "al-Kumiti"
-			"al-Lurini" "al-Wabaruisi" "al-Kursiki" "al-Nayfrini"
-		}
-		male_names = {
-			al-Nasr al-Mu'azzam al-Salih al-'Adil al-Kamil al-Ashraf al-Afdal Tadj Mujir ud-Din Djamal ud-Din
-			ud-Din Shams Saif 'Abbas 'Abd al-Rahman Anwar Atuf Bakr Fahd Hakim Harun Hikmat Hisham Husayn
-			Jamaal Karim Malik Mirza Muhammad Rashid Rusul Shimun Tariq Usama Yasir Yusuf Zaid Ziyad Isma'il
-			Jafar Shihab
-		}
-		female_names = {
-			Ihsan Marwa Aisha Aziza Duha Farida Golbahar Gulnar Gulnaz Gulpari Hafsa Hasti Huma Ibtisam Jalila Kamala
-			Karima Khandan Khaterah Khatira Kinah Lala Madiha Mahdokht Nazy Neelab Negar Niki Nikoo Noushin Rabiya
-			Mahsa Mahwash Marwa Mastana Mehri Mina Minoo Munawwar Muzhdah Nahal Najela Nasiba Nastaran Nazaneen
-			Rajiya Sadiya Salma Sitara Thana Zahra Zahra Zuhayra
-		}
-	}
-	gagauz = { # Kalani - MARKED FOR REMOVAL
-		primary = RMN
-
-		dynasty_names = {
-			Kendighelean Kristioglo Esir Harlamenco Constantinov Tarnavsky Kissa Ciachir
-			Deli Dushkov Pasha Formuzal Papazoglu Stoianoglo Tomaily Topal Vlah Zanet Zanetov
-		}
-		male_names = {
-			Mehmet Mustafa Murat Ahmet Selim Osman Mahmut Bayezid Orhan Abdulaziz Abdï¿½lhamit Ibrahim
-			Abdï¿½lmecit Abdullah Cem Cihangir Alaattin Isa Musa Seyfettin Yakup Yusuf Giyasettin Numan
-			Ali Davut Hasan Hï¿½seyin Ishak Kamer Kasim Korkut Emin Iskender Halil Sait Hamit Ertugrul Izzettin
-			Nizamettin Sinan Ferhat Salih Ismail Bahadir Hizir Harun Cemal Inal Celalettin Ilyas
-			Dursun Ramazan Recep Abdulrahman Hayrettin
-			Afsin Ahmet Aksonqor Alaeddin Ali Alkan Alptigin Artuk Ayaz
-			Aydin Aydogan Aydogdu Aytekin Bulend Bahadir Balaban Basbuga Batuhan Baturay Baybars
-			Bayezid Baytas Belek Berkan Berkiyaruk Bozan Bugra Burak Cuneyd Dundar Danismend Davud David
-			Demir Dogan Dogukan Dukak Erdem Ertan Ertekin Ertugrul Gunduz Hasan Hasan Hizir Ibrahim Ilgazi
-			Inal Iskender Alexander Kurboga Kaikaus Kaikhusraw Kaiqobad Kara Karatay Kasim Kaya Kaytun
-			Kemal Korkut Kutalmis Kutay Kutlug Mursel Mahmud Mehmed Meliksah Mengucek Mesud Murad
-			Mustafa Orhan Osman Porsuk Rustem Ramazan Ridvan Suleyman Saim Saltuk
-			Saruca Savtekin Savur Sehinsah Selim Sencer Sinan Tanrivermis Tekin Timurtas Togay
-			Togtekin Toktamis Tolun Toruntay Tugrul Tunga Turgut Turhan Tutus Umur Yakut Yaman Yinal
-			Yunus
-		}
-		female_names = {
-			Akgul Asli Aslihan Ayasun Ayla Ayse Ayten Azize Bahar Banu
-			Canan Ceylan Dunya Dilber Dilek Emine Esin Fatma Firuze Gulï¿½ek Gulay Gulbahar Gulfem
-			Gulsum Gumus Gunduz Gundes Gunes Hatice Hayat Huriye Ilkay Ilknur Ipek Ipekel Irge Karacik Lale
-			Leyla Mala Mansure Merve Mutlu Nagihan Nergis Neslihan Nilufer Nur Peksen Terkhen Samur Sarica
-			Sati Sehnaz Serap Serife Sevilay Sevindik Sibel Sibylla Sirin Sirma Songul Sumru Tura
-			Umay Usunbike Vahide Yasar Yeldem Yildiz Zehra Zuhal Hatice Safiye Zeynep Mihrimah Nurbanu
-			Handan Alime
-		}
-	}
-	
-	lebanese = { primary = LEB } # Kalani - MARKED FOR REMOVAL
-	soqotri = { primary = MHR } # Kalani - MARKED FOR REMOVAL
-	palestinian = { primary = KOJ } # Kalani - MARKED FOR REMOVAL
-}
-maghrebi = {
-	kabylian = { primary = KBA } # Kalani - MARKED FOR REMOVAL
 }
 iranian = {
-	sogdian = { # Kalani - MARKED FOR REMOVAL
-		primary = KOK
-	}
-	tocharian = { # Kalani - MARKED FOR REMOVAL
-		primary = KAS
-		male_names = {
-			Airawanta Ajatasatru Ajite Alp Ambare Ampratasarme Amrataraksite Amratodane Anande
-			Anathapindike Aniruddhe Andhave Anktsas Arjune Aranemi Arnyartate Arslam Arthadarsi
-			Aryamarg Aryaske Aryatewe Aryawarme Aryottame Asokamitre Asokaraksite Asoke Asarte
-			Astawi Atakke Atidivakare Atyuccagami Atraikatte Bimbasare Caitike Caiytiska Cakravar
-			Cakule Candramukhe Candravasu Candre Caracate Cina Cinatyuti Citre Cittaraksite Cowaske
-			Dandakamal Devarakste Dhanike Dipankar Dirghanakhe Dravyasvare Durmukhe Ekasrinke
-			Erkatsole Esmine Etrise Gayakasyape Gayasirs Gaye Gunacamdre Gunasampade Hariscandre
-			Hastake Hetubalike Indradhvaje Indratewe Indre Indriske Issapake Jatisrone Jetavam
-			Kadike Kalodaye Kalyanamokse Kalyanavraddhi Kalyanawartane
-			Kanake Kanaske Kanthake Kapilavarne Kapilavastu Kas Kasyap Katakarni Kaundinye
-			Kauravye Kausal Kemarcune Kentarske Kercampey Kercapiske Kerdipole Kereptanne Kimne
-			Klenkarako Klpapatre Klyotiska Kotile Koysam Ksemankare Ksmarjune Ksmawarme Ksmate
-			Ksmateworsa Ksmika Kulkera Kumarapunye Kumpante Kunacamttrakau Kunacamttre
-			Kwirapabhadra Lariska Mahasammate Mahisvare Manisvare Mitrakseme Mitraske Mitre
-			Moksasene Moksasome Moksawarme Molyoke Mukalanti Munkhare Murdhagate Nandabala
-			Nandake Nande Nandipale Nasme Natte Naradeve Nirot Nupura Nyagrodhe Padmakesar
-			Padmottare Pakacandre Pawaske Pesane Prabhankare Prabhase Pranada Prasamnake
-			Pravare Priyadeve Ptompile Punyamitre
-			Purtas Rahule Raktadewe Ratnacuda Ratnasikhi Rsivadam Rudramukhe Rudrasarme Sagare
-			Samantatir Samcite Samghatrate Sanavasi Sanghasarme Sankene Sanum Saputanase Sarasike
-			Sarmacamdre Sarsire Satuma Satyake Satyaraksite Sidhasamgha Siladewe Silamitre Silarakite
-			Silaraksi Silasoma Silavande Silawarne Silayase Silopake Simpraye Sinke Sinku
-			Skanatatte Skwarle Slacamndre Solarke Some Srestake Sudarse Sudas Suddhodane Sujate
-			Sukase Suklodane Sunaksatre Sunetre Sutasome Sutate Swarnabuspe Swarnatepe Tarmacandre
-			Tarmaraksite Tenare Tohkem Tonke Tukik Tunka Tusi Udanalankar Udayi Ulkamukhe Uluke
-			Upage Upagupte Upanande Uposathe Urbilvakasyape Uttaraphalguni Uttare Vaisravane
-			Vaitike Varddhane Vidusake Vimalapuspe Vinaise Visale Wamsok Warwattaske Waryaruci
-			Waryasene Wasampile Wasave Wiryadewe Wiryamitre Wiryasanti Wisikke
-			Wrauske Yanayase Yarpalaske Yasa Yasawine Yase Yasonaka Yastare Yonge Yonu Ype
-			Yudhisthire Yugaraje
-		}
-		dynasty_names = {
-			Arkwi Erkent Kaum Samudtar Totka
-			 Gushi Asmires Garinei Thagures Oichardes Piades Rabanes Siziges
-		}		
-	}
-	saka = { # Kalani - MARKED FOR REMOVAL
-		primary = KAS
-	}
 	tajik = { # Kalani - SUSTAINED
 		male_names = {
 			Abdullo Abdullohi Alisher Aziz Bahrom Bakhtiyor Daler Davlat Dilshod Farrukh
@@ -944,39 +330,13 @@ iranian = {
 		primary = TRS
 	}
 	
-	gorani = { primary = BHT } # Kalani - MARKED FOR REMOVAL
-	mervi = { primary = KHO } # Kalani - MARKED FOR REMOVAL
-	shirvani = { primary = SRV } # Kalani - MARKED FOR REMOVAL
 	parthian = { primary = PRA } # Kalani - MARKED FOR REMOVAL
-}
-altaic = { # Kalani - I'm taking a break for now, but I'm not even half way done as measured by lines
-	khitan = {
-		primary = LIO
-		dynasty_names = { Genden Amar Tserendorj Tomorbaatar Damdinbazar Bodoo Sukhbaatar Jamyan Choibalsan Chagdarjav }
-	}
-	turko_afghan = { primary = AFG }
-	turko_iranian = { primary = TRS }
-}
-central_american = {
-}
-aridoamerican = {
-}
-maya = {
-}
-otomanguean = {
-}
-andean_group = {
-}
-je_tupi = {
-}
-je = {
+	# Lot - It's literally base-game. We're keeping it.
 }
 maranon = {
 	jivaro = {
 		primary = JIV
 	}
-}
-chibchan = {
 }
 mataco = {
 	chacoan = {
@@ -1020,20 +380,6 @@ plains_algonquian = {
 		primary = NAK #This is Nakawe, only country with Bungi as its Primary culture
 	}
 }
-eastern_algonquian = {
-}
-iroquoian = {
-}
-siouan = {
-}
-caddoan = {
-}
-muskogean = {
-}
-sonoran = {
-}
-apachean = {
-}
 na_dene = {
 	chipewyan = {
 		primary = SYD
@@ -1042,55 +388,13 @@ na_dene = {
 		primary = DNT
 	}
 }
-penutian = {
-}
-east_asian = {
-}
-korean_g = {
-}
 japanese_g = {
 	country = { has_samurai = yes }
 	province = { local_has_samurai = yes }
 }
-tibetan_group = {
-	gyalrong = {
-		primary = XIA
-		dynasty_names = { Dzasa Wangyal Shatra Lungshar Rinpoche Chï¿½phel Shakabpa Tashi }
-	}
-	tangut = {
-		primary = TAU
-		dynasty_names = { Dzasa Wangyal Shatra Lungshar Rinpoche Chï¿½phel Shakabpa Tashi }
-	}
-	zhangzhung = {
-		primary = GUG
-		dynasty_names = { Dzasa Wangyal Shatra Lungshar Rinpoche Chï¿½phel Shakabpa Tashi }
-	}
-	sumpa = {
-		primary = TIB
-		dynasty_names = { Dzasa Wangyal Shatra Lungshar Rinpoche Chï¿½phel Shakabpa Tashi }
-	}
-}
 malay = {
 	madagascan = {
 		primary = BUS #This culture is back when Madagascar was part of the Malay group
-	}
-}
-thai_group = {
-}
-southeastasian_group = {
-	palaungic = {
-		# The Palaung or Ta'ang are a Monï¿½Khmer ethnic minority found in Shan State of Burma, Yunnan Province of China and Northern Thailand.
-		primary = SST  # Shan
-		dynasty_names = {
-			Pegu Dagon Thaton Martaban
-		}
-		male_names = {
-			"Razadarit" "Binnya Dhammaraza" "Binnya Ran" "Binnya Waru" "Binnya Kyan" "Leik Mawdaw" "Mawdaw" 
-			"Dhammazedi" "Takayutpi" "Smim Sawhtut" "Smim Htaw" "Binnya Dala"
-		}
-		female_names = {
-			"Mya" "Shin Sawbu"
-		}
 	}
 }
 burman = {
@@ -1115,36 +419,14 @@ pacific = {
 		primary = HAW
 	}
 }
-aboriginal_australian = {
-}
-eastern_aryan = {
-	hindustani_proper = { primary = HIN }
-	maithili = { primary = TRT } #Tirhuta script is what Maithili is written in
-}
-hindusthani = {
-}
 western_aryan = {
-	dhundari = { primary = DHU }
-	kathiawari = { primary = JLV }
-	marwari = { primary = MAW }
-	mewari = { primary = DHU }
-	nimadi = { primary = KHD }
 	parsi = { primary = BMY }
-}
-dravidian = {
-}
-central_indic = {
-	munda = { primary = NGP }
-}
-mande = {
 }
 sahelian = {
 	zaghawa = {
 		primary = AIR
 		dynasty_names = { Wattara Toure Salim-Suwari Drame Saghanughu }
 	}
-}
-west_african = {
 }
 southern_african = {
 	nguni = {
@@ -1181,8 +463,6 @@ african = {
 		primary = AGK
 	}
 }
-cushitic = {
-}
 sudanese = {
 	acholi = {
 		primary = PAY
@@ -1203,8 +483,6 @@ evenks = {
 		primary = TUV
 	}
 }
-kamchatkan_g = {
-}
 tartar = {
 	chuvash = {
 		primary = CVS
@@ -1220,35 +498,6 @@ tartar = {
 	}
 	cuman = {
 		primary = CMN
-	}
-	bolghar = {
-		primary = BUL
-		male_names = {
-			Almish Alzek Anzi Apskhih Araslan Asparukh Balamber Bars Bataul Batbayan Batoya Batulia Bayan Belkermak Bezmer Boyan Bulger Buzan Chepa Chinialush Dengizikh
-			Dizeng Dometa Dristar Drong Dukum Ellak Elemag Ernakh Eskhakh Goleda Gostun Guar Hudbad Iani Irnek Isbul Islivan Isperikh Ispor Kano Karan Karaton
-			Kardam Kharaton Khinialon Khudbard Kordil Kormesiy Kormisosh Kotrag Krovat Krum Kuber Kubrat Kurt Kutrigur Kuvrat Labertam Magotin Malamir Mugel Odolgan Okhsi
-			Okhsun Okors Omurtag Onegavon Organ Organa Ornag Oshi Ostro Pagan Pakhtiyar Pavel Praksa Rassate Rugila Sabin Sandil Sandilkh Sarkhan Sartï¿½ï¿½ Savin Sevar Shilki
-			Sondoke Tarasiy Taridin Tatra Telec Telerig Tervel Timï¿½r Timï¿½reï¿½
-			Tingiz Tiradin Tokhtaman Toktu Tsog Tsul Tuk Umor Uturgur Vakrim Venda
-			Vetam Vinekh Yani
-			Yavantey Yerneslu  Zabergan Zenti Tukiy Aydar Irkhan Batir
-		}
-		dynasty_names = {
-			Vokil Altsikur Kashu Barskhan Barsil Balanjar Vokil Erdevulu Silkid Bilar Sabir Esegel Izgil Askil
-			Bersula Urazgilid Kalmagorid Klyuch Mayna Yasach Utka Bezd Kurnal Mesha Kaban
-			Oshnya Tolkish Izgar Sulcha Karmal
-		}
-	}
-	avar = {
-		primary = AVR
-		male_names = {
-			Ahmad Ali Magomed Magomedkhan Magomet Muhamad Muhamadkhan
-			Muhammad Murad Nurmagomed Nurmuhamad Ramazan Rasul Ruslan Shamil Sultan
-		}
-		dynasty_names = {
-			Sabir Akhasir Kazarig Kidar Ghidatli Gumbekh Kharoda Ghunib Yandalal Tsumadal
-			Tsuntab
-		}
 	}
 	khazar = {
 		primary = KHZ
@@ -1266,12 +515,6 @@ tartar = {
 			Baghatur Dyggvi Tarkhan Zachariah "Yazir Bulash" Chorpan Tarkhan "Alp Tarkhan"
 			Tar'mach Hazer Bulan Sabriel Obadiah Hezekiah Manasseh Chanukkah Isaac Zebulun
 			Manasseh Nisi Aaron Menahem Benjamin Joseph David Georgius Tzul Tzitzak
-		}
-	}
-	hunnic = {
-		male_names = {
-			Alp Balamber Uldin Charaton Attila Bleda Octar Ruga Rugila Ellak Ellac Dengizich Ernak Chelchel Aetla Ardaric Hunor Magor Mundo Edeko Hunoulph Odoacer Ediko Askoum
-			Kursich Basich
 		}
 	}
 }

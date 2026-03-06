@@ -11,11 +11,6 @@ norse_cultural_ideas = {
 			primary_culture = danish
 			primary_culture = norwegian
 			primary_culture = norse
-			primary_culture = elsinorian
-			primary_culture = ruotsish
-			primary_culture = holmgardrian
-			primary_culture = marisbaltician
-			primary_culture = miklagardrian
 		}
 	}
 	free = yes
