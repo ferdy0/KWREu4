@@ -25,15 +25,16 @@ country_event = {
 		picture = CIVIL_WAR_eventPicture
 	}
 
-	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			tag = BOH
 			was_tag = BOH
 		}
 		owns = 266
-		has_ruler_flag = he_after_the_compromise
+		NOT = { 
+			has_ruler_flag = he_of_the_compromise
+			has_country_flag = first_hussite_king
+		}
 		is_at_war = no
 		OR = {
 			religion = catholic

@@ -284,20 +284,26 @@ country_decisions = {
 		}
 		
 		allow = {
-			war_score_against = {
-				who = LUX
-				value = 50
+			OR = {
+				LUX = {
+					is_subject_of = HOL
+				}
+				LUX = {
+					is_subject_of = NED
+				}
+			}
+			OR = {
+				94 = {
+					infantry_in_province = HOL
+				}
+				94 = {
+					infantry_in_province = NED
+				}
 			}
 		}
 		
 		effect = {
-			white_peace = LUX
-			create_subject = {
-				subject_type = potestate_vassal
-				subject = LUX
-			}
 			LUX = {
-				add_government_reform = potestate_freedom_mon
 				define_ruler = {
 					dynasty = "von Luxemburg"
 					culture = LUX
