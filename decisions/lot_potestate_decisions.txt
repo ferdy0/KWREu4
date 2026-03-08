@@ -285,19 +285,21 @@ country_decisions = {
 		
 		allow = {
 			OR = {
-				LUX = {
-					is_subject_of = HOL
+				AND = {
+					LUX = {
+						is_subject_of = HOL
+					}
+					94 = {
+						infantry_in_province = HOL
+					}
 				}
-				LUX = {
-					is_subject_of = NED
-				}
-			}
-			OR = {
-				94 = {
-					infantry_in_province = HOL
-				}
-				94 = {
-					infantry_in_province = NED
+				AND = {
+					LUX = {
+						is_subject_of = NED
+					}
+					94 = {
+						infantry_in_province = NED
+					}
 				}
 			}
 		}
