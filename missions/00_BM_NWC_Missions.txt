@@ -1,14 +1,64 @@
-ICE_missions_1 = {
+ICE_colonial_1 = {
     slot = 1
     generic = no
     ai = yes
     potential = {
-        tag = ICE
+        OR = {
+            tag = NWC
+            tag = ICE
+        }
     }
     has_country_shield = yes
+	
+	ICE_build_fleet_mission = {
+        icon = mission_galleass
+        required_missions = {  }
+        position = 1
+
+        trigger = {
+            # Just so that skuddo can't instantly click the button
+            navy_size_percentage = 1
+            # Everything required to actually go do a colonialism
+            OR = { # Explorers can't go exploring if they don't have at least three heavy and/or light ships
+                num_of_heavy_ship = 3
+                num_of_light_ship = 3
+            }
+            # Greenland and Quebec only need one guy to deal with uprisings, but the American Northeast will require at least two
+            num_of_transport = 2
+        }
+
+        effect = {
+            create_explorer = { tradition = 80 }
+        }
+    }
+	
+	ICE_greenland_mission = {
+        required_missions = { ICE_build_fleet_mission }
+        icon = mission_exploration
+        position = 2
+        provinces_to_highlight = {
+            area = greenland_area
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+        }
+
+        trigger = {
+            greenland_area = {
+				has_discovered = ROOT
+			}
+        }
+
+        effect = {
+            # Gives skuddo a free colonist and a 50% discount to colonies to help the early game
+            add_country_modifier = {
+                name = "ice_early_colonization_modifier"
+                duration = 18250 # Just colonizing one province takes like 20+ years... and greenland is two provinces
+            }
+        }
+    }
 }
 
-NWC_missions_1 = {
+NWC_colonial_1 = {
     slot = 1
     generic = no
     ai = yes
@@ -19,7 +69,7 @@ NWC_missions_1 = {
 
     NWC_monopolize_great_lakes_mission = {
         required_missions = { NWC_greater_expansion_mission }
-        icon = mission_establish_high_seas_navy
+        icon = mission_ne_great_lakes_conquest
         position = 5
 
         provinces_to_highlight = {
@@ -74,7 +124,7 @@ NWC_missions_1 = {
         required_missions = { 
             NWC_monopolize_great_lakes_mission
         }
-        icon = mission_colonize_louisiana
+        icon = mission_rb_settle_the_north
         position = 6
 
         provinces_to_highlight = {
@@ -184,9 +234,30 @@ NWC_missions_1 = {
 
         }
     }
+	
+	# While everything before this is ambitious yet reasonable, everything after is just pure fantasy
+    NCW_south_american_meme = {
+        required_missions = { 
+            NCW_north_american_supremacy_meme
+        }
+        icon = mission_norwegian_south_america
+        position = 9
+
+        provinces_to_highlight = {
+			
+        }
+
+        trigger = {
+			
+        }
+
+        effect = {
+			
+        }
+    }
 }
 
-ICE_missions_2 = {
+ICE_colonial_2 = {
     slot = 2
     generic = no
     ai = yes
@@ -197,9 +268,10 @@ ICE_missions_2 = {
         }
     }
     has_country_shield = yes
+	
 }
 
-NWC_missions_2 = {
+NWC_colonial_2 = {
     slot = 2
     generic = no
     ai = yes
@@ -207,9 +279,54 @@ NWC_missions_2 = {
         tag = NWC
     }
     has_country_shield = yes
+	
+	NWC_make_landfall_mission = { 
+        required_missions = { ICE_greenland_mission ICE_fishing_in_greenland_mission }
+        icon = mission_settlers_north_america
+        position = 3
+        provinces_to_highlight = {
+            area = newfoundland_area
+            OR = { 
+                is_city = no
+                NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            }
+        }
+
+        trigger = {
+            newfoundland_area = {
+			    type = all
+				country_or_non_sovereign_subject_holds = ROOT
+                is_city = yes
+			}
+            980 = { 
+                owned_by = ROOT 
+            }
+        }
+
+        effect = {
+            newfoundland_area = {
+                limit = {
+					NOT = { is_core = ROOT }
+				}
+                add_core = ROOT
+            }
+            set_capital = 980
+            980 = { # Little bit of an eco boost to justify moving the capital
+                add_base_production = 2
+                if = {
+					limit = {
+						NOT = {
+							trade_goods = fish
+						}
+					}
+					change_trade_goods = fish
+				}
+            }
+        }
+    }
 
     NWC_greater_expansion_mission = { 
-        icon = mission_rb_settle_the_north
+        icon = mission_rb_colonise_canada
         required_missions = { NWC_make_landfall_mission }
         position = 4
         provinces_to_highlight = {
@@ -275,7 +392,7 @@ NWC_missions_2 = {
         }
     }
 
-    NWC_colonise_east_coast_mission = { 
+    NWC_colonise_east_coast_mission = {
         icon = mission_rb_the_thirteen_colonies
         required_missions = { NWC_greater_expansion_mission }
         position = 5
@@ -310,7 +427,7 @@ NWC_missions_2 = {
     }
 
     NWC_southern_plantation_economy_mission = {
-        icon = mission_pol_breadbasket_europe
+        icon = prosperity_for_all
         required_missions = { 
             NWC_colonise_east_coast_mission 
             NWC_mountains_just_like_home_mission
@@ -401,7 +518,7 @@ NWC_missions_2 = {
     }
 }
 
-ICE_missions_3 = {
+ICE_non_whaling_trade_3 = {
     slot = 3
     generic = no
     ai = yes
@@ -412,56 +529,46 @@ ICE_missions_3 = {
         }
     }
     has_country_shield = yes
-
-    ICE_build_fleet_mission = {
-        icon = mission_galleass
-        required_missions = {  }
+	
+	ICE_fish_markets = {
+        required_missions = { }
+        icon = mission_fish_markets
         position = 1
 
+        provinces_to_highlight = {
+            is_capital_of = ROOT
+        }
+
         trigger = {
-            # Just so that skuddo can't instantly click the button
-            navy_size_percentage = 1
-            # Everything required to actually go do a colonialism
-            OR = { # Explorers can't go exploring if they don't have at least three heavy and/or light ships
-                num_of_heavy_ship = 3
-                num_of_light_ship = 3
-            }
-            # Greenland and Quebec only need one guy to deal with uprisings, but the American Northeast will require at least two
-            num_of_transport = 2
+            #capital_scope = {
+            #    base_production = 5
+            #}
         }
 
         effect = {
-            create_explorer = { tradition = 80 }
+
         }
     }
-
-    ICE_greenland_mission = {
-        required_missions = { ICE_build_fleet_mission }
-        icon = mission_exploration
+	
+	ICE_fishing_in_greenland_mission = {
+        required_missions = { ICE_fish_markets }
+        icon = mission_sailor_boat
         position = 2
+
         provinces_to_highlight = {
-            area = greenland_area
-			NOT = { owned_by = ROOT }
-			has_discovered = ROOT
         }
 
         trigger = {
-            greenland_area = {
-				has_discovered = ROOT
-			}
+			
         }
 
         effect = {
-            # Gives skuddo a free colonist and a 50% discount to colonies to help the early game
-            add_country_modifier = {
-                name = "ice_early_colonization_modifier"
-                duration = 18250 # Just colonizing one province takes like 20+ years... and greenland is two provinces
-            }
+
         }
     }
 }
 
-NWC_missions_3 = {
+NWC_trade_and_industry_3 = {
     slot = 3
     generic = no
     ai = yes
@@ -469,47 +576,69 @@ NWC_missions_3 = {
         tag = NWC
     }
     has_country_shield = yes
+	
+	NWC_fur_trade_mission = {
+        required_missions = { NWC_make_landfall_mission }
+        icon = mission_dominate_home_trade_node
+        position = 4
 
-    NWC_make_landfall_mission = { 
-        required_missions = { ICE_greenland_mission }
-        icon = mission_settlers_north_america
-        position = 3
+        # Certain natives are excluded from this mission because they come from areas without fur
         provinces_to_highlight = {
-            area = newfoundland_area
-            OR = { 
-                is_city = no
-                NOT = { country_or_non_sovereign_subject_holds = ROOT }
-            }
+            OR = {
+                culture_group = central_algonquian
+                culture_group = eastern_algonquian
+				culture_group = iroquoian
+                culture_group = plains_algonquian
+                culture_group = siouan
+                culture = kiowa
+                culture = chipewyan
+                culture = athabascan
+			}
+            is_city = yes
+            trade_goods = fur
+            NOT = { base_production = 3 }
+            country_or_non_sovereign_subject_holds = ROOT
         }
 
         trigger = {
-            newfoundland_area = {
-			    type = all
-				country_or_non_sovereign_subject_holds = ROOT
+            num_of_owned_provinces_with = {
+                value = 8
+                OR = {
+                    culture_group = central_algonquian
+                    culture_group = eastern_algonquian
+                    culture_group = iroquoian
+                    culture_group = plains_algonquian
+                    culture_group = siouan
+                    culture = kiowa
+                    culture = chipewyan
+                    culture = athabascan
+                }
                 is_city = yes
+				trade_goods = fur
+                base_production = 3
 			}
-            980 = { 
-                owned_by = ROOT 
-            }
         }
 
         effect = {
-            newfoundland_area = {
+            every_owned_province = {
                 limit = {
-					NOT = { is_core = ROOT }
-				}
-                add_core = ROOT
-            }
-            set_capital = 980
-            980 = { # Little bit of an eco boost to justify moving the capital
-                add_base_production = 2
-                if = {
-					limit = {
-						NOT = {
-							trade_goods = fish
-						}
-					}
-					change_trade_goods = fish
+                    OR = {
+                        culture_group = central_algonquian
+                        culture_group = eastern_algonquian
+                        culture_group = iroquoian
+                        culture_group = plains_algonquian
+                        culture_group = siouan
+                        culture = kiowa
+                        culture = chipewyan
+                        culture = athabascan
+                    }
+                    is_city = yes
+				    trade_goods = fur
+                    base_production = 3
+                }
+                add_province_modifier = {
+					name = nwc_native_trades
+					duration = 7300
 				}
             }
         }
@@ -845,7 +974,7 @@ NWC_missions_3 = {
     }
 }
 
-ICE_missions_4 = {
+ICE_whaling_4 = {
     slot = 4
     generic = no
     ai = yes
@@ -856,29 +985,73 @@ ICE_missions_4 = {
         }
     }
     has_country_shield = yes
-
-    ICE_whaling_mission = {
-        required_missions = { }
-        icon = mission_fish_markets
-        position = 1
+	
+	ICE_royal_whaling_company = {
+        required_missions = { ICE_fish_markets }
+        icon = mission_rb_control_the_hansa
+        position = 2
 
         provinces_to_highlight = {
-            is_capital_of = ROOT
         }
 
         trigger = {
-            capital_scope = {
-                base_production = 5
-            }
+			
         }
 
         effect = {
+			
+        }
+    }
+	
+	ICE_monopolise_dockyards = {
+        required_missions = { ICE_royal_whaling_company }
+        icon = mission_scandinavian_port_authority
+        position = 3
 
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+			
+        }
+
+        effect = {
+			
         }
     }
 }
 
-NWC_missions_4 = {
+ICE_religion_4 = {
+    slot = 4
+    generic = no
+    ai = yes
+    potential = {
+        OR = {
+            tag = NWC
+            tag = ICE
+        }
+    }
+    has_country_shield = yes
+	
+	ICE_protestantism_decision = {
+        required_missions = {  }
+        icon = mission_protestant_heddal_church
+        position = 4
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+			
+        }
+
+        effect = {
+			
+        }
+    }
+}
+
+NWC_dealing_with_natives_4 = {
     slot = 4
     generic = no
     ai = yes
@@ -886,76 +1059,9 @@ NWC_missions_4 = {
         tag = NWC
     }
     has_country_shield = yes
-
-    NWC_fur_trade_mission = {
-        required_missions = { NWC_make_landfall_mission }
-        icon = mission_dominate_home_trade_node
-        position = 4
-
-        # Certain natives are excluded from this mission because they come from areas without fur
-        provinces_to_highlight = {
-            OR = {
-                culture_group = central_algonquian
-                culture_group = eastern_algonquian
-				culture_group = iroquoian
-                culture_group = plains_algonquian
-                culture_group = siouan
-                culture = kiowa
-                culture = chipewyan
-                culture = athabascan
-			}
-            is_city = yes
-            trade_goods = fur
-            NOT = { base_production = 3 }
-            country_or_non_sovereign_subject_holds = ROOT
-        }
-
-        trigger = {
-            num_of_owned_provinces_with = {
-                value = 8
-                OR = {
-                    culture_group = central_algonquian
-                    culture_group = eastern_algonquian
-                    culture_group = iroquoian
-                    culture_group = plains_algonquian
-                    culture_group = siouan
-                    culture = kiowa
-                    culture = chipewyan
-                    culture = athabascan
-                }
-                is_city = yes
-				trade_goods = fur
-                base_production = 3
-			}
-        }
-
-        effect = {
-            every_owned_province = {
-                limit = {
-                    OR = {
-                        culture_group = central_algonquian
-                        culture_group = eastern_algonquian
-                        culture_group = iroquoian
-                        culture_group = plains_algonquian
-                        culture_group = siouan
-                        culture = kiowa
-                        culture = chipewyan
-                        culture = athabascan
-                    }
-                    is_city = yes
-				    trade_goods = fur
-                    base_production = 3
-                }
-                add_province_modifier = {
-					name = nwc_native_trades
-					duration = 7300
-				}
-            }
-        }
-    }
-
+	
     NWC_convert_natives_mission = {
-        required_missions = { NWC_fur_trade_mission }
+        required_missions = { NWC_fur_trade_mission ICE_protestantism_decision }
         icon = mission_native_reductions
         position = 5
 
@@ -1024,7 +1130,7 @@ NWC_missions_4 = {
 
     NWC_treaties_with_the_natives = { # This is where the fun begins
         required_missions = { NWC_convert_natives_mission }
-        icon = mission_establish_high_seas_navy
+        icon = trade_with_the_natives
         position = 6
 
         provinces_to_highlight = {
@@ -1073,7 +1179,125 @@ NWC_missions_4 = {
     }
 }
 
-ICE_missions_5 = {
+NWC_native_branching = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = NWC
+		NOT = {
+			OR = {
+				has_country_flag = nwc_peace_with_natives
+				has_country_flag = nwc_war_with_natives
+			}
+		}
+	}
+	has_country_shield = yes
+	
+	nwc_branching1 = {
+		icon = mission_unknown_mission
+		required_missions = { NWC_treaties_with_the_natives }
+		position = 7
+		
+		trigger = { custom_trigger_tooltip = { tooltip = NWC_NATIVES_BRANCHING always = no } }
+		
+		effect = {
+			custom_tooltip = NWC_NATIVES_BRANCHING
+		}
+	}
+	
+	nwc_branching2 = {
+		icon = mission_unknown_mission
+		required_missions = { nwc_branching1 }
+		position = 8
+		
+		trigger = { custom_trigger_tooltip = { tooltip = NWC_NATIVES_BRANCHING always = no } }
+		
+		effect = {
+			custom_tooltip = NWC_NATIVES_BRANCHING
+		}
+	}
+}
+
+NWC_native_friends_branch = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = NWC
+		has_country_flag = nwc_peace_with_natives
+	}
+	has_country_shield = yes
+	
+	NWC_peace_with_the_natives = {
+		icon = mission_iroquois_the_five_nations
+		required_missions = { NWC_treaties_with_the_natives }
+		position = 7
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+	}
+	
+	NWC_lay_with_the_natives = {
+		icon = native_royal_marriage
+		required_missions = { NWC_peace_with_the_natives }
+		position = 8
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+	}
+}
+
+NWC_native_foes_branch = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = NWC
+		has_country_flag = nwc_war_with_natives
+	}
+	has_country_shield = yes
+	
+	NWC_eliminate_the_natives = {
+		icon = mission_native_build_army_mission
+		required_missions = { NWC_treaties_with_the_natives }
+		position = 7
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+	}
+	
+	NWC_invite_germans = {
+		icon = settle_north_america
+		required_missions = { NWC_eliminate_the_natives }
+		position = 8
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+	}
+}
+
+ICE_althing_governance_5 = {
     slot = 5
     generic = no
     ai = yes
@@ -1084,17 +1308,17 @@ ICE_missions_5 = {
         }
     }
     has_country_shield = yes
-
-    ICE_empower_althing_mission = {
+	
+	ICE_althing_is_old_mission = {
         required_missions = { }
-        icon = mission_establish_high_seas_navy
+        icon = mission_swedish_peasantry
         position = 1
 
         provinces_to_highlight = {
         }
 
         trigger = {
-            OR = {
+			OR = {
                 legitimacy = 70
                 republican_tradition = 70
                 devotion = 70
@@ -1117,7 +1341,41 @@ ICE_missions_5 = {
         }
 
         effect = {
+			
+        }
+    }
 
+    ICE_corrupt_the_althing = {
+        required_missions = { ICE_althing_is_old_mission ICE_royal_whaling_company }
+        icon = ven_scales_of_power
+        position = 3
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+			
+        }
+
+        effect = {
+
+        }
+    }
+	
+	ICE_establishing_royal_nwc = {
+        required_missions = { ICE_corrupt_the_althing }
+        icon = mission_norwegian_royal_army
+        position = 5
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+			
+        }
+
+        effect = {
+			
         }
     }
 }
@@ -1130,4 +1388,42 @@ NWC_missions_5 = {
         tag = NWC
     }
     has_country_shield = yes
+	
+	NWC_expand_the_administration = {
+        required_missions = { ICE_establishing_royal_nwc }
+        icon = powerhouse_of_the_north
+        position = 7
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+			
+        }
+
+        effect = {
+
+        }
+    }
+	
+	NWC_corporate_commonwealth = {
+        required_missions = { NWC_expand_the_administration }
+        icon = mission_ruler_of_north_america
+        position = 9
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+			OR = {
+				mission_completed = NWC_lay_with_the_natives
+				mission_completed = NWC_invite_germans
+			}
+			#some other requirements
+        }
+
+        effect = {
+			
+        }
+    }
 }
