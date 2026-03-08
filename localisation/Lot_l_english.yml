@@ -595,7 +595,7 @@
  sb_lot_satilite_galicia_volhynia_3_2_desc:0 "The Kingdom of Galicia-Volhynia will form a barrier for all that wish to harass our kingdom from the east. By establishing a favourable regime in Galicia-Volhynia we can ensure that the Galicians and Volhynians don't think to take the Carpathian basin for themselves."
  bte_lot_frens_between_empires_3_6_title:0 "Friends Between Empires"
  bte_lot_frens_between_empires_3_6_desc:0 "#Tbd"
- decides_branching_imperial:0 "If we complete this mission by being allies with §BBohemia§! we will unlock the §Ypro-Imperial§! branching missions. If we aren't allies with §BBohemia§! when we complete this mission we will instead unlock the §Yanti-Imperial§! branching missions."
+ decides_branching_imperial:0 "If we complete this mission by being allies with §TBohemia§! we will unlock the §Ypro-Imperial§! branching missions. If we aren't allies with §TBohemia§! when we complete this mission we will instead unlock the §Yanti-Imperial§! branching missions."
  bte_lot_guarantee_serbia_3_9_title:0 "Meddle in Illyria"
  bte_lot_guarantee_serbia_3_9_desc:0 "#Tbd"
  bte_lot_fortify_southern_border_4_7_title:0 "Fortify Transylvania"

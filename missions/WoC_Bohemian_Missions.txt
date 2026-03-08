@@ -2243,26 +2243,18 @@ woc_boh_bohemian_branch_3 = {
 		position = 7
 		
 		provinces_to_highlight = {
-			OR = {
-				province_id = 1771
-				province_id = 4238
-			}
+			province_id = 1771
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { has_production_building_trigger = yes }
-				NOT = { num_of_times_improved = 5 }
+				NOT = { num_of_times_improved = 8 }
 			}
 		}
 		
 		trigger = {
 			1771 = {
 				owned_by = ROOT
-				num_of_times_improved = 5
-				has_production_building_trigger = yes
-			}
-			4238 = {
-				owned_by = ROOT
-				num_of_times_improved = 5
+				num_of_times_improved = 8
 				has_production_building_trigger = yes
 			}
 		}
