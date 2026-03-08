@@ -270,7 +270,7 @@ byz_mount_athos = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			yearly_patriarch_authority = 0.01
+			yearly_patriarch_authority = 0.001
 			church_loyalty_modifier = 0.05
 		}
 
@@ -300,7 +300,7 @@ byz_mount_athos = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			yearly_patriarch_authority = 0.02
+			yearly_patriarch_authority = 0.002
 			church_loyalty_modifier = 0.7
 		}
 
@@ -330,7 +330,7 @@ byz_mount_athos = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			yearly_patriarch_authority = 0.03
+			yearly_patriarch_authority = 0.003
 			church_loyalty_modifier = 0.1
 			prestige_per_development_from_conversion = 0.1
 		}
