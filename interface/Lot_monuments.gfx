@@ -1,0 +1,10 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_great_project_byz_grand_bazaar"
+        texturefile = "gfx//interface//great_projects//GrandEmporion.dds"
+    }
+    spriteType = {
+        name = "GFX_great_project_byz_mount_athos"
+        texturefile = "gfx//interface//great_projects//MountAthos.dds"
+    }
+}

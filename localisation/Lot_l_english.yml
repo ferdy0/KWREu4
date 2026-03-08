@@ -340,6 +340,8 @@
  byzantine_collapsings.100.a:0 "Let the Purple Phoenix rise!"
  army_in_deep_mourning:0 "Mourning Troops"
  having_had_of_the_having_15:0 "Has had the §YTwilight of the Synadenos§! disaster for at least 10 years."
+ byz_grand_bazaar:0 "Grand Emporion"
+ byz_mount_athos:0 "Monastries of Mount Athos"
  ###### Potestate Modding, New ######################
  potestate_vassal:0 "Freedom"
  potestate_vassal_long_desc:0 "A Potestal Freedom must follow their overlord to war and will pay a fraction of their income to their overlord. Potestal Freedoms may conduct independent diplomacy but may not fight each other."
