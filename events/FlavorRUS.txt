@@ -2566,7 +2566,7 @@ country_event = {
 }
 
 # The Grand Duchy of Finland
-country_event = {
+country_event = { # Kalani - Reworked releasing Finland so it doesn't create ugly borders or steal provinces
 	id = flavor_rus.105
 	title = flavor_rus.105.t
 	desc = flavor_rus.105.desc
@@ -2576,83 +2576,13 @@ country_event = {
 	# Establish the autonomous Grand Duchy of Finland
 	option = {
 		name = flavor_rus.105.a
-		hidden_effect = {
-			finland_area = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
-			}
-			bothnia_area = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
-			}
-			1930 = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
-			}
-			32 = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
-			}
-			4124 = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
-			}
-			4151 = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
-			}
-		}
 		if = {
 			limit = { NOT = { exists = FIN } }
-			release = FIN
+			kalani_release_finland_effect = yes
 			hidden_effect = {
 				FIN = {
 					change_government = monarchy
 					add_government_reform = feudalism_reform
-					if = {
-						limit = { 28 = { religion = catholic } }
-						change_religion = catholic
-					}
-					else_if = {
-						limit = { 28 = { religion = protestant } }
-						change_religion = protestant
-					}
-					else_if = {
-						limit = { 28 = { religion = reformed } }
-						change_religion = reformed
-					}
-					else = {
-						change_religion = orthodox
-					}
-					change_primary_culture = finnish
-					set_prestige_to_zero = yes
-					add_adm_power = 50
-					add_dip_power = 50
-					add_mil_power = 50
 				}
 			}
 		}
@@ -2692,59 +2622,9 @@ country_event = {
 				is_revolutionary = yes
 			}
 		}
-		hidden_effect = {
-			finland_area = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
-			}
-			bothnia_area = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
-			}
-			1930 = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
-			}
-			32 = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
-			}
-			4124 = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
-			}
-			4151 = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
-			}
-		}
 		if = {
 			limit = { NOT = { exists = FIN } }
-			release = FIN
+			kalani_release_finland_effect = yes
 			hidden_effect = {
 				FIN = {
 					change_government = republic
@@ -2753,28 +2633,8 @@ country_event = {
 						add_government_reform = junior_revolutionary_republic_reform
 					}
 					else = {
-						add_government_reform = oligarchic_republic
+						add_government_reform = oligarchy_reform
 					}
-					if = {
-						limit = { 28 = { religion = catholic } }
-						change_religion = catholic
-					}
-					else_if = {
-						limit = { 28 = { religion = protestant } }
-						change_religion = protestant
-					}
-					else_if = {
-						limit = { 28 = { religion = reformed } }
-						change_religion = reformed
-					}
-					else = {
-						change_religion = orthodox
-					}
-					change_primary_culture = finnish
-					set_prestige_to_zero = yes
-					add_adm_power = 50
-					add_dip_power = 50
-					add_mil_power = 50
 				}
 			}
 		}
