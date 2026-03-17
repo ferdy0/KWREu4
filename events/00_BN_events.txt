@@ -417,13 +417,13 @@ country_event = { #still needs localisation
     immediate = {
         on_change_tag_effect = yes
         swap_non_generic_missions = yes
-        add_government_reform = BM_NWC_corperate_althing
+        add_government_reform = trade_company_government
         change_primary_culture = norwegian
-        add_accepted_culture = icelandic
         add_country_modifier = {
             name = "nwc_icelandic_culture_accepted"
             duration = -1
         }
+        add_accepted_culture = icelandic
     }
 
     option = {

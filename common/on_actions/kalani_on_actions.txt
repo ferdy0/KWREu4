@@ -1,0 +1,3 @@
+﻿on_culture_demoted = {
+    NWC_on_culture_demoted_effect = yes
+}

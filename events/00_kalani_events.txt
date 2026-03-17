@@ -1334,4 +1334,25 @@ country_event = {
         ai_chance = { factor = 0 }
     }
 }    
-        
+
+namespace = kalani_test
+country_event = {
+    id = kalani_test.1
+    title = colonial_nwc.1.title
+    desc = colonial_nwc.1.desc
+    picture = REFORM_eventPicture
+
+    is_triggered_only = yes
+
+    option = { # Actually, nevermind
+        name = colonial_nwc.1.a
+        set_country_flag = nwc_peace_with_natives
+        swap_non_generic_missions = yes
+    }
+
+    option = { # Actually, nevermind
+        name = colonial_nwc.2.a
+        set_country_flag = nwc_war_with_natives
+        swap_non_generic_missions = yes
+    }
+}

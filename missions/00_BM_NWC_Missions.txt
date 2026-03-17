@@ -1,4 +1,4 @@
-ICE_colonial_1 = {
+ICE_missions_1 = {
     slot = 1
     generic = no
     ai = yes
@@ -58,7 +58,7 @@ ICE_colonial_1 = {
     }
 }
 
-NWC_colonial_1 = {
+NWC_missions_1 = {
     slot = 1
     generic = no
     ai = yes
@@ -257,7 +257,7 @@ NWC_colonial_1 = {
     }
 }
 
-ICE_colonial_2 = {
+ICE_missions_2 = {
     slot = 2
     generic = no
     ai = yes
@@ -271,7 +271,7 @@ ICE_colonial_2 = {
 	
 }
 
-NWC_colonial_2 = {
+NWC_missions_2 = {
     slot = 2
     generic = no
     ai = yes
@@ -518,7 +518,7 @@ NWC_colonial_2 = {
     }
 }
 
-ICE_non_whaling_trade_3 = {
+ICE_missions_3 = {
     slot = 3
     generic = no
     ai = yes
@@ -568,7 +568,7 @@ ICE_non_whaling_trade_3 = {
     }
 }
 
-NWC_trade_and_industry_3 = {
+NWC_missions_3 = {
     slot = 3
     generic = no
     ai = yes
@@ -974,7 +974,7 @@ NWC_trade_and_industry_3 = {
     }
 }
 
-ICE_whaling_4 = {
+ICE_missions_4 = {
     slot = 4
     generic = no
     ai = yes
@@ -1021,37 +1021,7 @@ ICE_whaling_4 = {
     }
 }
 
-ICE_religion_4 = {
-    slot = 4
-    generic = no
-    ai = yes
-    potential = {
-        OR = {
-            tag = NWC
-            tag = ICE
-        }
-    }
-    has_country_shield = yes
-	
-	ICE_protestantism_decision = {
-        required_missions = {  }
-        icon = mission_protestant_heddal_church
-        position = 4
-
-        provinces_to_highlight = {
-        }
-
-        trigger = {
-			
-        }
-
-        effect = {
-			
-        }
-    }
-}
-
-NWC_dealing_with_natives_4 = {
+NWC_missions_4 = {
     slot = 4
     generic = no
     ai = yes
@@ -1128,7 +1098,7 @@ NWC_dealing_with_natives_4 = {
         }
     }
 
-    NWC_treaties_with_the_natives = { # This is where the fun begins
+    NWC_peace_with_the_natives = { # This is where the fun begins
         required_missions = { NWC_convert_natives_mission }
         icon = trade_with_the_natives
         position = 6
@@ -1179,46 +1149,6 @@ NWC_dealing_with_natives_4 = {
     }
 }
 
-NWC_native_branching = {
-	slot = 4
-	generic = no
-	ai = yes
-	potential = {
-		tag = NWC
-		NOT = {
-			OR = {
-				has_country_flag = nwc_peace_with_natives
-				has_country_flag = nwc_war_with_natives
-			}
-		}
-	}
-	has_country_shield = yes
-	
-	nwc_branching1 = {
-		icon = mission_unknown_mission
-		required_missions = { NWC_treaties_with_the_natives }
-		position = 7
-		
-		trigger = { custom_trigger_tooltip = { tooltip = NWC_NATIVES_BRANCHING always = no } }
-		
-		effect = {
-			custom_tooltip = NWC_NATIVES_BRANCHING
-		}
-	}
-	
-	nwc_branching2 = {
-		icon = mission_unknown_mission
-		required_missions = { nwc_branching1 }
-		position = 8
-		
-		trigger = { custom_trigger_tooltip = { tooltip = NWC_NATIVES_BRANCHING always = no } }
-		
-		effect = {
-			custom_tooltip = NWC_NATIVES_BRANCHING
-		}
-	}
-}
-
 NWC_native_friends_branch = {
 	slot = 4
 	generic = no
@@ -1229,7 +1159,7 @@ NWC_native_friends_branch = {
 	}
 	has_country_shield = yes
 	
-	NWC_peace_with_the_natives = {
+	NWC_integrate_the_natives = {
 		icon = mission_iroquois_the_five_nations
 		required_missions = { NWC_treaties_with_the_natives }
 		position = 7
@@ -1256,6 +1186,27 @@ NWC_native_friends_branch = {
 			
 		}
 	}
+
+    NWC_corporate_commonwealth = {
+        required_missions = { NWC_expand_the_administration }
+        icon = mission_ruler_of_north_america
+        position = 9
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+			OR = {
+				mission_completed = NWC_lay_with_the_natives
+				mission_completed = NWC_invite_germans
+			}
+			#some other requirements
+        }
+
+        effect = {
+			
+        }
+    }
 }
 
 NWC_native_foes_branch = {
@@ -1295,9 +1246,30 @@ NWC_native_foes_branch = {
 			
 		}
 	}
+
+    NWC_corporate_commonwealth_evil = {
+        required_missions = { NWC_expand_the_administration }
+        icon = mission_ruler_of_north_america
+        position = 9
+
+        provinces_to_highlight = {
+        }
+
+        trigger = {
+			OR = {
+				mission_completed = NWC_lay_with_the_natives
+				mission_completed = NWC_invite_germans
+			}
+			#some other requirements
+        }
+
+        effect = {
+			
+        }
+    }
 }
 
-ICE_althing_governance_5 = {
+ICE_missions_5 = {
     slot = 5
     generic = no
     ai = yes
@@ -1403,27 +1375,6 @@ NWC_missions_5 = {
 
         effect = {
 
-        }
-    }
-	
-	NWC_corporate_commonwealth = {
-        required_missions = { NWC_expand_the_administration }
-        icon = mission_ruler_of_north_america
-        position = 9
-
-        provinces_to_highlight = {
-        }
-
-        trigger = {
-			OR = {
-				mission_completed = NWC_lay_with_the_natives
-				mission_completed = NWC_invite_germans
-			}
-			#some other requirements
-        }
-
-        effect = {
-			
         }
     }
 }

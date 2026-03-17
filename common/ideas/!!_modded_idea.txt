@@ -625,21 +625,23 @@ NWC_ideas = {
 		colonists = 1
 	}
 	NWC_2 = {
-
+		global_ship_trade_power = 0.25
 	}
 	NWC_3 = {
-
+		global_sailors_modifier = 0.10
+		allowed_marine_fraction = 0.25
 	}
-	tyrhennian_4 = {
-
+	NWC_4 = {
+		naval_forcelimit_modifier = 0.33
 	}
-	tyrhennian_5 = {
-
+	NWC_5 = {
+		trade_steering = 0.33
+		trade_efficiency = 0.20
 	}
-	tyrhennian_6 = {
-
+	NWC_6 = {
+		production_efficiency = 0.2
 	}
-	tyrhennian_7 = {
+	NWC_7 = {
 
 	}
 }

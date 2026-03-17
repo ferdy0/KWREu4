@@ -348,11 +348,103 @@ ice_early_colonization_modifier = {
 }
 
 # Kalani - NWC's long list of accepting cultures
+nwc_native_trades = {
+    local_missionary_strength = 0.02
+    trade_goods_size_modifier = 0.10
+}
+
 nwc_icelandic_culture_accepted = {
     num_accepted_cultures = 1
 }
 
-nwc_native_trades = {
-    local_missionary_strength = 0.03
-    trade_goods_size_modifier = 0.10
+nwc_andean_culture_group_accepted = {
+    num_accepted_cultures = 4
+}
+
+nwc_apachean_culture_group_accepted = {
+    num_accepted_cultures = 4
+}
+
+nwc_araucanian_culture_group_accepted = {
+    num_accepted_cultures = 4
+}
+
+nwc_aridomerican_culture_group_accepted = {
+    num_accepted_cultures = 6
+}
+
+nwc_caddoan_culture_group_accepted = {
+    num_accepted_cultures = 3
+}
+
+nwc_caribbean_culture_group_accepted = {
+    num_accepted_cultures = 4
+}
+
+nwc_central_algonquian_culture_group_accepted = {
+    num_accepted_cultures = 8
+}
+
+nwc_central_american_culture_group_accepted = {
+    num_accepted_cultures = 4
+}
+
+nwc_chibchan_culture_group_accepted = {
+    num_accepted_cultures = 3
+}
+
+nwc_eastern_algonquian_culture_group_accepted = {
+    num_accepted_cultures = 8
+}
+
+nwc_eskaleut_culture_group_accepted = {
+    num_accepted_cultures = 2
+}
+
+nwc_iroquoian_culture_group_accepted = {
+    num_accepted_cultures = 6
+}
+
+nwc_maranon_culture_group_accepted = {
+    num_accepted_cultures = 2
+}
+
+nwc_matacoan_culture_group_accepted = {
+    num_accepted_cultures = 1
+}
+
+nwc_mayan_culture_group_accepted = {
+    num_accepted_cultures = 7
+}
+
+nwc_muskogean_culture_group_accepted = {
+    num_accepted_cultures = 8
+}
+
+nwc_na_dene_culture_group_accepted = {
+    num_accepted_cultures = 3
+}
+
+nwc_otomanguean_culture_group_accepted = {
+    num_accepted_cultures = 3
+}
+
+nwc_penutian_culture_group_accepted = {
+    num_accepted_cultures = 3
+}
+
+nwc_plains_algonquian_culture_group_accepted = {
+    num_accepted_cultures = 5
+}
+
+nwc_siouan_culture_group_accepted = {
+    num_accepted_cultures = 4
+}
+
+nwc_sonoran_culture_group_accepted = {
+    num_accepted_cultures = 4
+}
+
+nwc_tupi_culture_group_accepted = {
+    num_accepted_cultures = 2
 }
