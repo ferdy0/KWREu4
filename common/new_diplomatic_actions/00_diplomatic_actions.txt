@@ -6701,7 +6701,7 @@ advisory_merchants = {
 				if = {
 					limit = {
 						government = theocracy
-						relation = catholic
+						religion = catholic
 					}
 					add_reform_desire = 0.2
 				}
@@ -6742,7 +6742,7 @@ advisory_merchants = {
 				if = {
 					limit = {
 						government = theocracy
-						relation = catholic
+						religion = catholic
 					}
 					add_reform_desire = 0.2
 				}
