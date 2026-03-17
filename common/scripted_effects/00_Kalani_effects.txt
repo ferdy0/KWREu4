@@ -1,90 +1,97 @@
 kalani_release_finland_effect = {
-    every_owned_province = {
-        limit = {
-            OR = {
-                area = finland_area
-                area = bothnia_area
-                province_id = 30
-                province_id = 32
-                province_id = 4124
-                province_id = 4151
-                province_id = 1930
-            }
-        }
-        add_core = FIN
-		remove_core = ROOT 
-        cede_province = FIN
-    }
-    if = { # Set capital in Abo
-        limit = {
-            27 = { owned_by = FIN }
-        }
-        FIN = {
-            set_capital = 27
-            if = {
-				limit = { 27 = { religion = catholic } }
-				change_religion = catholic
+	hidden_effect = {
+		FIN = {
+			every_core_province = { remove_core = FIN }
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = finland_area
+					area = bothnia_area
+					province_id = 30
+					province_id = 32
+					province_id = 4124
+					province_id = 4151
+					province_id = 1930
+				}
 			}
-			else_if = {
-				limit = { 27 = { religion = protestant } }
-				change_religion = protestant
+			add_core = FIN
+			remove_core = ROOT 
+		}
+	}
+	release = FIN
+	hidden_effect = {
+		if = { # Set capital in Abo
+			limit = {
+				27 = { owned_by = FIN }
 			}
-			else_if = {
-				limit = { 27 = { religion = reformed } }
-				change_religion = reformed
+			FIN = {
+				set_capital = 27
+				if = {
+					limit = { 27 = { religion = catholic } }
+					change_religion = catholic
+				}
+				else_if = {
+					limit = { 27 = { religion = protestant } }
+					change_religion = protestant
+				}
+				else_if = {
+					limit = { 27 = { religion = reformed } }
+					change_religion = reformed
+				}
+				else = {
+					change_religion = orthodox
+				}
 			}
-			else = {
-				change_religion = orthodox
+		}
+		else_if = { # Set capital in Helsinki as a fallback
+			limit = {
+				28 = { owned_by = FIN }
 			}
-        }
-    }
-    else_if = { # Set capital in Helsinki as a fallback
-        limit = {
-            28 = { owned_by = FIN }
-        }
-        FIN = {
-            set_capital = 28
-            if = {
-				limit = { 28 = { religion = catholic } }
-				change_religion = catholic
+			FIN = {
+				set_capital = 28
+				if = {
+					limit = { 28 = { religion = catholic } }
+					change_religion = catholic
+				}
+				else_if = {
+					limit = { 28 = { religion = protestant } }
+					change_religion = protestant
+				}
+				else_if = {
+					limit = { 28 = { religion = reformed } }
+					change_religion = reformed
+				}
+				else = {
+					change_religion = orthodox
+				}
 			}
-			else_if = {
-				limit = { 28 = { religion = protestant } }
-				change_religion = protestant
+		}
+		else = {
+			FIN = {
+				if = {
+					limit = { capital_scope = { religion = catholic } }
+					change_religion = catholic
+				}
+				else_if = {
+					limit = { capital_scope = { religion = protestant } }
+					change_religion = protestant
+				}
+				else_if = {
+					limit = { capital_scope = { religion = reformed } }
+					change_religion = reformed
+				}
+				else = {
+					change_religion = orthodox
+				}
 			}
-			else_if = {
-				limit = { 28 = { religion = reformed } }
-				change_religion = reformed
-			}
-			else = {
-				change_religion = orthodox
-			}
-        }
-    }
-    else = {
-        FIN = {
-            if = {
-				limit = { capital_scope = { religion = catholic } }
-				change_religion = catholic
-			}
-			else_if = {
-				limit = { capital_scope = { religion = protestant } }
-				change_religion = protestant
-			}
-			else_if = {
-				limit = { capital_scope = { religion = reformed } }
-				change_religion = reformed
-			}
-			else = {
-				change_religion = orthodox
-			}
-        }
-    }
-    FIN = {
-        change_primary_culture = finnish
-		set_prestige_to_zero = yes
-		add_adm_power = 50
-		add_dip_power = 50
-		add_mil_power = 50
-    }
+		}
+		FIN = {
+			change_primary_culture = finnish
+			set_prestige_to_zero = yes
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
 }
