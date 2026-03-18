@@ -1,5 +1,5 @@
-owner = KHO
-controller = KHO
+owner = Z40
+controller = Z40
 capital = "Asatarabad"
 is_city = yes
 culture = mazandarani

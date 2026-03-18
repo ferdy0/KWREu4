@@ -2,7 +2,7 @@ dependency = {
 	subject_type="cultural_sphere_of_influence_subject"
 	first="HAH"
 	second="KRY"
-	start_date="1444.11.11"
+	start_date="1444.1.11"
 	end_date="1836.1.1"
 }
 
@@ -10,7 +10,7 @@ dependency = {
 	subject_type="cultural_sphere_of_influence_subject"
 	first="HAH"
 	second="AVR"
-	start_date="1444.11.11"
+	start_date="1444.1.11"
 	end_date="1836.1.1"
 }
 
@@ -18,7 +18,7 @@ dependency = {
 	subject_type="cultural_sphere_of_influence_subject"
 	first="HAH"
 	second="QOM"
-	start_date="1444.11.11"
+	start_date="1444.1.11"
 	end_date="1836.1.1"
 }
 
@@ -26,7 +26,15 @@ dependency = {
 	subject_type="cultural_sphere_of_influence_subject"
 	first="HAH"
 	second="BPI"
-	start_date="1444.11.11"
+	start_date="1444.1.11"
+	end_date="1836.1.1"
+}
+
+dependency = {
+	subject_type="cultural_sphere_of_influence_subject"
+	first="HAH"
+	second="Z40"
+	start_date="1444.1.11"
 	end_date="1836.1.1"
 }
 
@@ -77,4 +85,11 @@ dependency = {
 	second = SRV
 	start_date = 1444.1.1
 	end_date = 1836.1.1
+}
+
+alliance = {
+	first = HAH
+	second = GUJ
+	start_date = 1291.3.23
+	end_date = 1881.1.1
 }

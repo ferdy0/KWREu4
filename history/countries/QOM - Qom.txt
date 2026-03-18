@@ -13,13 +13,13 @@ add_army_professionalism = 0.05
 	religious_school = hanafi_school
 	add_piety = -0.5
 	monarch = {
-		name = "Muhammad bin Baysonqor"
+		name = "Mehrab Farhadzade"
 		birth_date = 1417.1.1
-		dynasty = "Timurid"
+		dynasty = "i-Sabbah"
 		adm = 3
 		dip = 2
 		mil = 4
-		culture = uzbehk
+		culture = persian
 		religion = shiite
 	}
 	clear_scripted_personalities = yes

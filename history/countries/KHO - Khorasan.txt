@@ -10,3 +10,16 @@ capital = 427
 	add_prestige = 105
 	add_treasury = 63
 }
+
+1379.4.13 = {
+	monarch = {
+		name = "Pujman II"
+		dynasty = "i-Sabbah"
+		adm = 6
+		dip = 4
+		mil = 3
+		birth_date = 1396.3.16
+		religion = shiite
+		culture = persian
+	}
+}

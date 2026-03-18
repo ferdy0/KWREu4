@@ -1,0 +1,39 @@
+government = monarchy
+add_government_reform = iqta
+government_rank = 1
+technology_group = muslim
+religion = shiite
+primary_culture = mazandarani
+capital = 2214
+religious_school = hanafi_school
+add_accepted_culture = khorasani
+add_accepted_culture = persian
+add_army_professionalism = 0.05
+historical_rival = DLH
+historical_rival = MUL
+historical_rival = TUR
+1370.1.1= {
+	monarch = {
+		name = "Timur"
+		dynasty = "Seljuk"
+		adm = 4	
+		dip = 4	
+		mil = 5
+		leader = { name = "Timur"	type = general	fire = 6	shock = 6	manuever = 6	siege = 2 }
+	}
+	add_piety = 0.5
+}
+1383.1.1= { leader = {	name = "Miran Shah"	type = general	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1408.1.1 } }
+1384.1.1= {
+	heir = {
+		name = "Khalil"
+		monarch_name = "Khalil Sultan"
+		dynasty = "Seljuk"
+		birth_date = 1384.1.1
+		death_date = 1411.11.4
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}	
