@@ -189,16 +189,6 @@ defined_text = {
 			}
         }
 	}
-#MODDED
-	text = {
-		localisation_key = string_praefectus
-		trigger = {
-			OR = {
-				culture_group = roman_group
-				culture_group = barbaro_germanic
-			}
-		}
-	}
 #VANILLA
 	text = {
 		localisation_key = string_zupan
@@ -225,22 +215,6 @@ defined_text = {
 	}
 #MODDED
 	text = {
-		localisation_key = string_tanner
-		trigger = {
-			OR = {
-				culture_group = equine_group
-				culture_group = cat_group
-				culture_group = bear_group
-				culture_group = hedgehog_group
-				culture_group = duck_group
-				culture_group = dog_group
-				culture_group = elephant_group
-				culture_group = dragon_group
-				culture_group = red_panda_group
-			}
-		}
-	}
-	text = {
         localisation_key = string_official
         trigger = {
 			NOT = { religion_group = muslim }
@@ -256,17 +230,6 @@ defined_text = {
 				culture = anglois
 				culture_group = french
 				culture_group = germanic
-				culture_group = roman_group
-				culture_group = barbaro_germanic
-				culture_group = equine_group
-				culture_group = cat_group
-				culture_group = bear_group
-				culture_group = hedgehog_group
-				culture_group = duck_group
-				culture_group = dog_group
-				culture_group = elephant_group
-				culture_group = dragon_group
-				culture_group = red_panda_group
 			}
         }
 	}
@@ -3205,263 +3168,17 @@ defined_text = {
 			religion = zoroastrian
 		}
 	}
-#MODDED
-	# From CK3 - they're the default name anyway
-	text = {
-		localisation_key = adamite_rel
-		trigger = { religion = adamites }
-	}
-	text = {
-		localisation_key = insular_celtic_rel
-		trigger = { religion = insular_celtic }
-	}
-	text = {
-		localisation_key = bosnian_church # Krstjani
-		trigger = { religion = bosnian_church }
-	}
-	text = {
-		localisation_key = mutazila # Qadariyah
-		trigger = { religion = mutazila }
-	}
-	text = {
-		localisation_key = quranist
-		trigger = { religion = quranist }
-	}
-	text = {
-		localisation_key = alawite
-		trigger = { religion = alawite }
-	}
-	text = {
-		localisation_key = yazidism
-		trigger = { religion = yazidi }
-	}
-	text = {
-		localisation_key = meshefaresism
-		trigger = { religion = meshefaresism }
-	}
-	text = {
-		localisation_key = kitebacilweism
-		trigger = { religion = kitebacilweism }
-	}
-	text = {
-		localisation_key = zurvanism
-		trigger = { religion = zurvanism }
-	}
-	text = {
-		localisation_key = gayomarthianism
-		trigger = { religion = gayomarthianism }
-	}
-	text = {
-		localisation_key = khurramism
-		trigger = { religion = khurramism }
-	}
-	text = {
-		localisation_key = mandeaism
-		trigger = { religion = mandeaism }
-	}
-	text = {
-		localisation_key = valentinianism
-		trigger = { religion = valentinianism }
-	}
-	text = {
-		localisation_key = sethianism
-		trigger = { religion = sethianism }
-	}
-	text = {
-		localisation_key = priscillianism
-		trigger = { religion = priscillianism }
-	}
-	text = {
-		localisation_key = cainitism
-		trigger = { religion = cainitism }
-	}
-	text = {
-		localisation_key = kushitism_pagan
-		trigger = { religion = kushitism_pagan }
-	}
-	text = {
-		localisation_key = kushitism_pagan_reformed
-		trigger = { religion = kushitism_pagan_reformed }
-	}
-	text = {
-		localisation_key = magyar_pagan_rel # Uralic
-		trigger = { religion = magyar_pagan }
-	}
-	text = {
-		localisation_key = magyar_pagan_reformed_rel
-		trigger = { religion = magyar_pagan_reformed }
-	}
-	text = {
-		localisation_key = siberian_pagan # Turumism
-		trigger = { religion = siberian_pagan_reformed }
-	}
-	text = {
-		localisation_key = canaanite
-		trigger = { religion = canaanite }
-	}
-	text = {
-		localisation_key = druidism
-		trigger = { religion = druidism }
-	}
-	text = {
-		localisation_key = kemetism
-		trigger = { religion = kemetism }
-	}
-	text = {
-		localisation_key = mardukism
-		trigger = { religion = mardukism }
-	}
-	text = {
-		localisation_key = cathar_rel
-		trigger = { religion = cathar }
-	}
-	#text = {
-	#	localisation_key = fraticelli_rel
-	#	trigger = { religion = fraticelli }
-	#}
-	text = {
-		localisation_key = waldensian_rel
-		trigger = { religion = waldensian }
-	}
-	text = {
-		localisation_key = lollard_rel
-		trigger = { religion = lollard }
-	}
-	text = {
-		localisation_key = monophysite_rel
-		trigger = { religion = monophysite }
-	}
-	text = {
-		localisation_key = bogomilist_rel
-		trigger = { religion = bogomilist }
-	}
-	text = {
-		localisation_key = monothelite_rel
-		trigger = { religion = monothelite }
-	}
-	text = {
-		localisation_key = iconoclast_rel
-		trigger = { religion = iconoclast }
-	}
-	text = {
-		localisation_key = paulician_rel
-		trigger = { religion = paulician }
-	}
 	text = {
 		localisation_key = nestorian_rel
 		trigger = { religion = nestorian }
-	}
-	text = {
-		localisation_key = messalian_rel
-		trigger = { religion = messalian }
-	}
-	text = {
-		localisation_key = zikri
-		trigger = { religion = zikri }
-	}
-	text = {
-		localisation_key = yazidism
-		trigger = { religion = yazidi }
-	}
-	text = {
-		localisation_key = kharijite
-		trigger = { religion = kharijite }
-	}
-	text = {
-		localisation_key = druze
-		trigger = { religion = druze }
-	}
-	text = {
-		localisation_key = hurufi
-		trigger = { religion = hurufi }
-	}
-	text = {
-		localisation_key = qarmatian_rel
-		trigger = { religion = qarmatian }
-	}
-	text = {
-		localisation_key = pagan_religion_rel
-		trigger = { religion = pagan_religion }
-	}
-	text = {
-		localisation_key = baltic_pagan
-		trigger = { religion = baltic_pagan }
-	}
-	text = {
-		localisation_key = baltic_pagan_reformed
-		trigger = { religion = baltic_pagan_reformed }
-	}
-	text = {
-		localisation_key = finnish_pagan
-		trigger = { religion = finnish_pagan_reformed }
-	}
-	text = {
-		localisation_key = norse_pagan_rel
-		trigger = { religion = norse_pagan }
-	}
-	text = {
-		localisation_key = slavic_pagan_rel
-		trigger = { religion = slavic_pagan }
-	}
-	text = {
-		localisation_key = slavic_pagan_reformed_rel
-		trigger = { religion = slavic_pagan_reformed }
-	}
-	text = {
-		localisation_key = tengri_pagan
-		trigger = { religion = tengri_pagan }
-	}
-	text = {
-		localisation_key = zun_pagan_rel
-		trigger = { religion = zun_pagan }
-	}
-	text = {
-		localisation_key = zun_pagan_reformed
-		trigger = { religion = zun_pagan_reformed }
-	}
-	text = {
-		localisation_key = hellenic_pagan_rel
-		trigger = { religion = hellenic_pagan }
-	}
-	text = {
-		localisation_key = hellenic_pagan_reformed_rel
-		trigger = { religion = hellenic_pagan_reformed }
-	}
-	text = {
-		localisation_key = west_african_pagan_rel
-		trigger = { religion = west_african_pagan }
-	}
-	text = {
-		localisation_key = west_african_pagan_reformed_rel
-		trigger = { religion = west_african_pagan_reformed }
-	}
-	text = {
-		localisation_key = bon
-		trigger = { religion = bon }
 	}
 	text = {
 		localisation_key = bon_reformed
 		trigger = { religion = bon_reformed }
 	}
 	text = {
-		localisation_key = mazdaki
-		trigger = { religion = mazdaki }
-	}
-	text = {
 		localisation_key = manichean_rel
 		trigger = { religion = manichean }
-	}
-	text = {
-		localisation_key = khurmazta
-		trigger = { religion = khurmazta }
-	}
-	text = {
-		localisation_key = samaritan_faith_rel
-		trigger = { religion = samaritan_faith }
-	}
-	text = {
-		localisation_key = karaite_faith_rel
-		trigger = { religion = karaite_faith }
 	}
 	text = {
 		localisation_key = jain_rel

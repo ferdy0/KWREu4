@@ -8,14 +8,6 @@ gnostic = {
 	manichean = {
 		icon = 32
 		color = { 208 183 0 }
-		allowed_conversion = {
-			bogomilist
-			mandeaism
-			valentinianism
-			sethianism
-			priscillianism
-			cainitism
-		}
 		country = {
 			tolerance_heathen = 2
 			legitimacy = 1

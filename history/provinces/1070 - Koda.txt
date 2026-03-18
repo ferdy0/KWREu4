@@ -1,7 +1,7 @@
 #1070 - Koda
 
 culture = samoyed
-religion = tengri_pagan # Kalani - Fixed w/ Lot Permission
+religion = tengri_pagan_reformed
 capital = "Narim"
 trade_goods = unknown
 hre = no
