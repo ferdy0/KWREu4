@@ -353,7 +353,6 @@
  potestate_flavour.1.d.1:0 "With the death of the last $MONARCHTITLE$ it is time, once again, for elections in the potestate. Representatives of the constituent Potestal Freedoms shall all gather in Delft to cast their vote on the next Lord of Frisia. Let us hope $MONARCH$ stands a chance."
  potestate_flavour.1.d.2:0 "With the fresh election $MONARCH$ our last $MONARCHTITLE$'s mandate as Potestate has run out. Now the representatives of the Potestal Freedoms shall gather in Delft to vote on a new Lord of Frisia. Let us hope to capture the mandate once more."
  potestate_flavour.1.a:0 "Send out the messangers!"
- potestate_flavour.1.b:0 "We shall delay the vote half a year."
  potestate_flavour.2.t:0 "Potestal Elections"
  potestate_flavour.2.d:0 "It is time to vote on the future potestate of our freedoms. They will be the champion of our rights, our sailor on the tides of providence, and the sword to guard our freedom. Candidates have stepped forward from all constituent freedoms, vying for the prestigious duty."
  potestate_flavour.2.a:0 "[HOL.Monarch.GetName] of Holland will have our vote."

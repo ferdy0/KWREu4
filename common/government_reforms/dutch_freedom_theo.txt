@@ -3,13 +3,7 @@ potestate_freedom_theo = {
 	allow_normal_conversion = no
 	potential = {
 		NOT = { has_country_flag = formed_netherlands_flag }
-		overlord = {
-			OR = {
-				has_reform = potestate_overlord_mon
-				has_reform = potestate_overlord_rep
-				has_reform = potestate_overlord_theo
-			}
-		}
+		has_reform = potestate_freedom_theo
 	}
 	fixed_rank = 1
 	lock_level_when_selected = yes
@@ -31,11 +25,7 @@ potestate_overlord_theo = {
 			has_country_flag = formed_netherlands_flag
 			tag = PAP
 		}
-		OR = {
-			primary_culture = dutch
-			primary_culture = frisian
-			primary_culture = flemish
-		}
+		has_reform = potestate_overlord_theo
 	}
 	maintain_dynasty = yes
 	lock_level_when_selected = yes

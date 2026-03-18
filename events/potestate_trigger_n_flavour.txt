@@ -30,6 +30,7 @@ country_event = { #Death of the Potestate
 		NOT = {
 			has_ruler_flag = the_elected_potestate
 			has_global_flag = election_in_progress_just_wait
+			is_at_war = yes
 		}
 	}
 	
@@ -39,11 +40,6 @@ country_event = { #Death of the Potestate
 	
 	option = {
 		name = potestate_flavour.1.a
-		trigger = {
-			NOT = {
-				is_at_war = yes
-			}
-		}
 		hidden_effect = {
 			country_event = {
 				id = potestate_flavour.2
@@ -52,26 +48,19 @@ country_event = { #Death of the Potestate
 			set_global_flag = election_in_progress_just_wait
 			every_known_country = {
 				limit = {
-					is_subject_of_type = potestate_vassal
-					NOT = { tag = EFR }
+					OR = {
+						has_reform = potestate_overlord_mon
+						has_reform = potestate_overlord_rep
+						has_reform = potestate_overlord_theo
+						has_reform = potestate_freedom_mon
+						has_reform = potestate_freedom_rep
+						has_reform = potestate_freedom_theo
+					}
 				}
 				country_event = {
 					id = potestate_flavour.2
 					days = 21
 				}
-			}
-		}
-	}
-	
-	option = {
-		name = potestate_flavour.1.b
-		trigger = {
-			is_at_war = yes
-		}
-		hidden_effect = {
-			country_event = {
-				id = potestate_flavour.1
-				days = 180
 			}
 		}
 	}
@@ -97,6 +86,9 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 					has_reform = potestate_freedom_rep
 					has_reform = potestate_freedom_theo
 				}
+			}
+			NOT = {
+				has_country_flag = holland_gets_frisian_vote
 			}
 		}
 		ai_chance = {
@@ -200,13 +192,6 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 			}
 			modifier = {
 				factor = 50
-				tag = FRI
-				HOL = {
-					has_country_flag = permanent_frisian_vote
-				}
-			}
-			modifier = {
-				factor = 50
 				tag = HOL
 				HOL = {
 					has_country_flag = permanent_hollander_vote
@@ -253,6 +238,9 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 					has_reform = potestate_freedom_rep
 					has_reform = potestate_freedom_theo
 				}
+			}
+			NOT = {
+				has_country_flag = holland_gets_frisian_vote
 			}
 		}
 		ai_chance = {
@@ -410,6 +398,9 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 					has_reform = potestate_freedom_theo
 				}
 			}
+			NOT = {
+				has_country_flag = holland_gets_frisian_vote
+			}
 		}
 		ai_chance = {
 			factor = 10
@@ -512,13 +503,6 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 			}
 			modifier = {
 				factor = 50
-				tag = FRI
-				UTR = {
-					has_country_flag = permanent_frisian_vote
-				}
-			}
-			modifier = {
-				factor = 50
 				tag = HOL
 				UTR = {
 					has_country_flag = permanent_hollander_vote
@@ -565,6 +549,9 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 					has_reform = potestate_freedom_rep
 					has_reform = potestate_freedom_theo
 				}
+			}
+			NOT = {
+				has_country_flag = holland_gets_frisian_vote
 			}
 		}
 		ai_chance = {
@@ -668,13 +655,6 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 			}
 			modifier = {
 				factor = 50
-				tag = FRI
-				GEL = {
-					has_country_flag = permanent_frisian_vote
-				}
-			}
-			modifier = {
-				factor = 50
 				tag = HOL
 				GEL = {
 					has_country_flag = permanent_hollander_vote
@@ -721,6 +701,9 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 					has_reform = potestate_freedom_rep
 					has_reform = potestate_freedom_theo
 				}
+			}
+			NOT = {
+				has_country_flag = holland_gets_frisian_vote
 			}
 		}
 		ai_chance = {
@@ -824,13 +807,6 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 			}
 			modifier = {
 				factor = 50
-				tag = FRI
-				KLE = {
-					has_country_flag = permanent_frisian_vote
-				}
-			}
-			modifier = {
-				factor = 50
 				tag = HOL
 				KLE = {
 					has_country_flag = permanent_hollander_vote
@@ -877,6 +853,9 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 					has_reform = potestate_freedom_rep
 					has_reform = potestate_freedom_theo
 				}
+			}
+			NOT = {
+				has_country_flag = holland_gets_frisian_vote
 			}
 		}
 		ai_chance = {
@@ -980,13 +959,6 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 			}
 			modifier = {
 				factor = 50
-				tag = FRI
-				Z0N = {
-					has_country_flag = permanent_frisian_vote
-				}
-			}
-			modifier = {
-				factor = 50
 				tag = HOL
 				Z0N = {
 					has_country_flag = permanent_hollander_vote
@@ -1033,6 +1005,9 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 					has_reform = potestate_freedom_rep
 					has_reform = potestate_freedom_theo
 				}
+			}
+			NOT = {
+				has_country_flag = holland_gets_frisian_vote
 			}
 		}
 		ai_chance = {
@@ -1136,13 +1111,6 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 			}
 			modifier = {
 				factor = 50
-				tag = FRI
-				LUX = {
-					has_country_flag = permanent_frisian_vote
-				}
-			}
-			modifier = {
-				factor = 50
 				tag = HOL
 				LUX = {
 					has_country_flag = permanent_hollander_vote
@@ -1189,6 +1157,9 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 					has_reform = potestate_freedom_rep
 					has_reform = potestate_freedom_theo
 				}
+			}
+			NOT = {
+				has_country_flag = holland_gets_frisian_vote
 			}
 		}
 		ai_chance = {
@@ -1292,13 +1263,6 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 			}
 			modifier = {
 				factor = 50
-				tag = FRI
-				BRB = {
-					has_country_flag = permanent_frisian_vote
-				}
-			}
-			modifier = {
-				factor = 50
 				tag = HOL
 				BRB = {
 					has_country_flag = permanent_hollander_vote
@@ -1345,6 +1309,9 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 					has_reform = potestate_freedom_rep
 					has_reform = potestate_freedom_theo
 				}
+			}
+			NOT = {
+				has_country_flag = holland_gets_frisian_vote
 			}
 		}
 		ai_chance = {
@@ -1448,13 +1415,6 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 			}
 			modifier = {
 				factor = 50
-				tag = FRI
-				FLA = {
-					has_country_flag = permanent_frisian_vote
-				}
-			}
-			modifier = {
-				factor = 50
 				tag = HOL
 				FLA = {
 					has_country_flag = permanent_hollander_vote
@@ -1485,6 +1445,18 @@ country_event = { #Election! (Allow options for BRB, FLA, FRI, GEL, HOL, KLE, LU
 					which = potestate_voting_check
 					value = 1
 				}
+			}
+		}
+	}
+	option = { #Frisian vote to Netherlands
+		name = potestate_flavour.2.k
+		trigger = {
+			has_country_flag = holland_gets_frisian_vote
+		}
+		HOL = {
+			country_event = {
+				id = potestate_flavour.2
+				days = 10
 			}
 		}
 	}
@@ -1974,6 +1946,7 @@ country_event = {
 	after = {
 		hidden_effect = {
 			clr_global_flag = election_in_progress_just_wait
+			clear_global_event_target = new_potestate_raa
 		}
 	}
 	
@@ -2006,8 +1979,12 @@ country_event = {
 		hidden_effect = {
 			every_known_country = {
 				limit = {
-					is_subject_of_type = potestate_vassal
-					NOT = { is_subject_of = event_target:new_potestate_raa }
+					OR = {
+						has_reform = potestate_freedom_mon
+						has_reform = potestate_freedom_rep
+						has_reform = potestate_freedom_theo
+						has_reform = potestate_peasant_freedom
+					}
 				}
 				event_target:new_potestate_raa = {
 					create_subject = {

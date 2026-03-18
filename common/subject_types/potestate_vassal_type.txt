@@ -20,7 +20,7 @@ potestate_vassal = {
 
 	trust_on_start = 5
 	
-	base_liberty_desire = 5.0
+	base_liberty_desire = -5.0
 	military_focus = 1.2
 
 	relative_power_class = 1
