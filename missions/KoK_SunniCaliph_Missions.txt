@@ -1,4 +1,4 @@
-KoK_ARB_hedjaz_najd_bedouin_1 = {
+KoK_SCAL_hedjaz_najd_bedouin_1 = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -489,7 +489,7 @@ KoK_ARB_hedjaz_najd_bedouin_1 = {
 	}
 }
 
-KoK_ARB_hedjaz_najd_bedouin_2 = {
+KoK_SCAL_hedjaz_najd_bedouin_2 = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -871,7 +871,7 @@ KoK_ARB_hedjaz_najd_bedouin_2 = {
 	}
 }
 
-KoK_ARB_hedjaz_najd_bedouin_3 = {
+KoK_SCAL_hedjaz_najd_bedouin_3 = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -1114,7 +1114,7 @@ KoK_ARB_hedjaz_najd_bedouin_3 = {
 	}
 }
 
-KoK_ARB_hedjaz_najd_bedouin_4 = {
+KoK_SCAL_hedjaz_najd_bedouin_4 = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -1320,7 +1320,7 @@ KoK_ARB_hedjaz_najd_bedouin_4 = {
 	}
 }
 
-KoK_ARB_hedjaz_najd_bedouin_5 = {
+KoK_SCAL_hedjaz_najd_bedouin_5 = {
 	slot = 5
 	generic = no
 	ai = yes
@@ -1701,7 +1701,7 @@ KoK_ARB_hedjaz_najd_bedouin_5 = {
 	}
 }
 
-KoK_ARB_hedjaz_najd_bedouin_arb_1 = {
+KoK_SCAL_hedjaz_najd_bedouin_arb_1 = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -1815,7 +1815,7 @@ KoK_ARB_hedjaz_najd_bedouin_arb_1 = {
 	}
 }
 
-KoK_ARB_hedjaz_najd_bedouin_arb_2 = {
+KoK_SCAL_hedjaz_najd_bedouin_arb_2 = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -1903,7 +1903,7 @@ KoK_ARB_hedjaz_najd_bedouin_arb_2 = {
 	}
 }
 
-KoK_ARB_hedjaz_najd_bedouin_arb_3 = {
+KoK_SCAL_hedjaz_najd_bedouin_arb_3 = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -2047,7 +2047,7 @@ KoK_ARB_hedjaz_najd_bedouin_arb_3 = {
 	}
 }
 
-KoK_ARB_hedjaz_najd_bedouin_arb_4 = {
+KoK_SCAL_hedjaz_najd_bedouin_arb_4 = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -2154,7 +2154,7 @@ KoK_ARB_hedjaz_najd_bedouin_arb_4 = {
 	}
 }
 
-KoK_ARB_hedjaz_najd_bedouin_arb_5 = {
+KoK_SCAL_hedjaz_najd_bedouin_arb_5 = {
 	slot = 5
 	generic = no
 	ai = yes
