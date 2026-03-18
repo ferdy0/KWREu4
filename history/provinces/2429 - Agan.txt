@@ -1,6 +1,6 @@
 capital = "Variegansk"
 culture = ostyaki
-religion = tengri_pagan # Kalani - Fixed w/ Lot Permission
+religion = tengri_pagan_reformed
 trade_goods = fur
 base_tax = 2
 base_production = 2

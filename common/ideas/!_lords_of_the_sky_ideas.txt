@@ -8,10 +8,7 @@ lords_of_the_sky_ideas = {
 	}
 	trigger = {
 		tag = LOS
-		OR = {
-			religion = tengri_pagan
-			religion = tengri_pagan_reformed
-		}
+		religion = tengri_pagan_reformed
 		government = theocracy
 	}
 	free = yes

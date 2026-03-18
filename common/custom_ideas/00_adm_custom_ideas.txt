@@ -283,24 +283,6 @@ adm_idea_modifiers = {
 			}
 			modifier = {
 				factor = 1.1
-				NOT = {
-					religion = monophysite
-				}
-				any_owned_province = {
-					religion_group = monophysite
-				}
-			}
-			modifier = {
-				factor = 1.1
-				NOT = {
-					religion = bogomilist
-				}
-				any_owned_province = {
-					religion_group = bogomilist
-				}
-			}
-			modifier = {
-				factor = 1.1
 				any_neighbor_country = {
 					NOT = {
 						religion = ROOT
