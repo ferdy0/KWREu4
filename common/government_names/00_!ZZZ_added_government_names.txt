@@ -149,27 +149,6 @@ grand_duchy_monarchy = {
 		}
 	}
 }
-suffet = {
-	rank = {
-		1 = REPUBLIC
-		2 = GRAND_REPUBLIC
-		3 = GREAT_REPUBLIC
-	}
-	ruler_male = {
-		3 = SUFFET
-		2 = SUFFET
-		1 = SUFFET
-	}
-	ruler_female = {
-		3 = SUFFET_fem
-		2 = SUFFET_fem
-		1 = SUFFET_fem
-	}
-	trigger = {
-		culture_group = punic_group
-		government = republic
-	}
-}
 pharaoh = {
 	rank = {
 		1 = NOME
@@ -281,16 +260,6 @@ dauphin = {
 	}
 	trigger = {
 		culture_group = french
-		government = monarchy
-	}
-}
-fara = {
-	rank = { 1 = FARA }
-	ruler_male = { 1 = DUKE }
-	ruler_female = { 1 = DUCHESS }
-	trigger = {
-		NOT = { government_rank = 2 }
-		culture_group = old_lombard_g
 		government = monarchy
 	}
 }
