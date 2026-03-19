@@ -1471,10 +1471,21 @@ country_event = {
 	
 	trigger = {
 		tag = HOL
-		is_variable_equal = {
-			which = potestate_voting_check
-			which = total_potestate_members
+		#is_variable_equal = {
+		#	which = potestate_voting_check
+		#	which = total_potestate_members
+		#}
+		had_global_flag = {
+			flag = election_in_progress_just_wait
+			days = 90
 		}
+		NOT = {
+			has_country_flag = counting_the_votses
+		}
+	}
+	
+	immediate = {
+		set_country_flag = counting_the_votses
 	}
 	
 	after = {
@@ -1947,6 +1958,7 @@ country_event = {
 		hidden_effect = {
 			clr_global_flag = election_in_progress_just_wait
 			clear_global_event_target = new_potestate_raa
+			clr_country_flag = counting_the_votses
 		}
 	}
 	
