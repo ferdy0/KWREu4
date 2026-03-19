@@ -1,0 +1,62 @@
+kalani_icelandic_althing = { # Kalani - Althing for Iceland instead of the NWC. Focuses on republican governance.
+    icon = "sailors"
+    lock_level_when_selected = yes
+	allow_normal_conversion = no
+	modifiers = {
+		max_absolutism = -10
+		republican_tradition = 0.3
+	}
+	potential = {
+		OR = {
+            has_reform = kalani_icelandic_althing
+            have_had_reform = kalani_icelandic_althing
+            has_reform = kalani_corporate_althing
+			have_had_reform = kalani_corporate_althing
+		}
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense" 
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+    boost_income = yes
+	ai = {
+		factor = 10
+	}
+}
+
+kalani_corporate_althing = { # Kalani - Althing for the NWC. Focuses on trade and government corruption.
+	icon = "sailors"
+    lock_level_when_selected = yes
+	allow_normal_conversion = no
+	modifiers = {
+		max_absolutism = -10
+	}
+	potential = {
+		OR = {
+			has_reform = kalani_corporate_althing
+			have_had_reform = kalani_corporate_althing
+            has_reform = kalani_icelandic_althing
+            have_had_reform = kalani_icelandic_althing
+		}
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense" 
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+		custom_attributes = {
+			halved_parliament_bribes = yes
+		}
+	}
+	ai = {
+		factor = 10
+	}
+}

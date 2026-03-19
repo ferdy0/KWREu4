@@ -686,7 +686,7 @@ republic = {
 				potestate_freedom_rep
 				potestate_overlord_rep
 				#BM specials
-				BM_NWC_corperate_althing
+				
 			}
 		}
 		republican_virtues = {
@@ -727,6 +727,9 @@ republic = {
 				german_other_reform
 				#1.37
 				support_state_reform
+				# Kalani Special
+				kalani_icelandic_althing
+				kalani_corporate_althing
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
