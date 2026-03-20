@@ -22,7 +22,7 @@ technology = {
 
 technology = {
 	# Tech 1
-	year = 700
+	year = 1390
 	expects_institution = {
 		feudalism = 0.25
 	}
@@ -75,7 +75,7 @@ technology = {
 
 technology = {
 	# Tech 2
-	year = 750
+	year = 1420
 	expects_institution = {
 		feudalism = 0.5
 	}
@@ -90,7 +90,7 @@ technology = {
 
 technology = {
 	# Tech 3
-	year = 769
+	year = 1440
 	expects_institution = {
 		feudalism = 0.5
 	}

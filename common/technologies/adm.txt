@@ -32,7 +32,7 @@ technology = { #Tribal Government
 
 technology = { #Advanced Tribes
 	# Tech 1
-	year = 700
+	year = 1390
 	expects_institution = {
 		feudalism = 0.25
 	}
@@ -43,7 +43,7 @@ technology = { #Advanced Tribes
 
 technology = { #Feudal Monarchy
 	# Tech 2
-	year = 750
+	year = 1420
 	expects_institution = {
 		feudalism = 0.5
 	}
@@ -58,7 +58,7 @@ technology = { #Feudal Monarchy
 
 technology = { #Medieval Administration
 	# Tech 3
-	year = 769
+	year = 1440
 	expects_institution = {
 		feudalism = 0.5
 	}
