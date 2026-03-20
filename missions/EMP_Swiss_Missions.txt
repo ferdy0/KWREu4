@@ -455,7 +455,7 @@ swiss_maritime_missions_2 = {
 				}
 			}
 
-			1869 = {	# Frankfurt (Rheinland Trade Node)
+			1876 = {	# Frankfurt (Rheinland Trade Node)
 				add_trade_modifier = {
 					who = ROOT
 					duration = 18250	# 50 Years
