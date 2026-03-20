@@ -91,6 +91,34 @@ country_decisions = {
 		ai_importance = 4000
 	}
 
+	pagan_conversion_to_gnostic = { # Kalani = Oops, accidentally deleted this one. Its back now though.
+		potential = {
+			religion_group = pagan
+			NOT = { religion = tengri_pagan_reformed }
+			any_owned_province = {
+				religion_group = gnostic
+			}
+			is_free_or_tributary_trigger = yes
+		}
+		allow = {
+			NOT = { government = tribal }
+			stability = 1
+		}
+		effect = {
+			custom_tooltip = pagan_conversion_to_gnostic_tooltip
+			hidden_effect = {
+				country_event = { id = religious_events.999 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { religion = animism }
+			}
+		}
+	}
+
 	form_manchu_dynasty_EXTRA = {
 		major = yes
 		potential = {
