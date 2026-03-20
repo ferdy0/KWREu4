@@ -53,8 +53,14 @@
  colonial_nwc.1.l: "Consolidate La Plata"
  colonial_nwc.1.m: "Consolidate Australia"
 
+ nwc_flavor.1.t: "An Unfortunate Truth"
+ nwc_flavor.1.d: "As we embark on this colonial venture in the new world, we are faced with an untimely realization; Neither our stronghold of Iceland nor our mother country of Norway will be able to supply enough colonists to press our claims to the land. Should we continue regardless of this fact, what few settlers we have will be stretched precariously thin across this vast continent."
+ nwc_flavor.1.a: "If only we were Englishmen..."
 
  # Custom Tooltips for the Event
+ nwc_explain_growing_pains_tt: "As the colony continues to expand, we will receive a §Rscaling debuff§! based on the number of owned Nordic culture group provinces in the New World."
+ nwc_explain_mild_growing_pains_tt: "The effects of our colony being stretched thin have been §Ghalved§!."
+
  nwc_transfer_canada_tt: "All provinces and colonial subjects in Colonial Canada will be consolidated under the NWC."
  nwc_transfer_east_coast_tt: "All provinces and colonial subjects in Colonial Eastern America will be consolidated under the NWC."
  nwc_transfer_louisiana_tt: "All provinces and colonial subjects in Colonial Louisiana will be consolidated under the NWC."

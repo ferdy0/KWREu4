@@ -1,0 +1,16 @@
+namespace = nwc_flavor
+country_event = {
+    id = nwc_flavor.1
+    title = nwc_flavor.1.t
+    desc = nwc_flavor.1.d
+    picture = REFORM_eventPicture
+
+    is_triggered_only = yes
+
+    option = { # Actually, nevermind
+        name = nwc_flavor.1.a
+        custom_tooltip = nwc_explain_growing_pains_tt
+        hidden_effect = { set_country_flag = nwc_growing_pains_flag } # Set the flag
+        kalani_growing_pains_calculation_effect = yes # Initialize
+    }
+}

@@ -1,0 +1,177 @@
+ice_early_colonization_modifier = {
+    colonists = 1
+    colony_cost_modifier = -0.5	
+}
+
+nwc_native_trades = {
+    local_missionary_strength = 0.02
+    trade_goods_size_modifier = 0.10
+}
+
+# Kalani - Growing Pains of the Colony, to represent the Norwegian-Icelandic population being stretched thin
+nwc_growing_pains_1 = {
+    global_colonial_growth = -10 # Less people to colonize
+    global_manpower_modifier = -0.05 # Less people to fight
+    global_tax_modifier = -0.05 # Less people to tax
+    colony_cost_modifier = 0.05 # Just felt like being mean :P
+}
+
+nwc_growing_pains_2 = {
+    global_colonial_growth = -20 # Less people to colonize
+    global_manpower_modifier = -0.10 # Less people to fight
+    global_tax_modifier = -0.10 # Less people to tax
+    colony_cost_modifier = 0.10 # Just felt like being mean :P
+}
+
+nwc_growing_pains_3 = {
+    global_colonial_growth = -30 # Less people to colonize
+    global_manpower_modifier = -0.15 # Less people to fight
+    global_tax_modifier = -0.15 # Less people to tax
+    colony_cost_modifier = 0.15 # Just felt like being mean :P
+}
+
+nwc_growing_pains_4 = {
+    global_colonial_growth = -40 # Less people to colonize
+    global_manpower_modifier = -0.20 # Less people to fight
+    global_tax_modifier = -0.20 # Less people to tax
+    colony_cost_modifier = 0.20 # Just felt like being mean :P
+}
+
+nwc_growing_pains_5 = {
+    global_colonial_growth = -50 # Less people to colonize
+    global_manpower_modifier = -0.25 # Less people to fight
+    global_tax_modifier = -0.25 # Less people to tax
+    colony_cost_modifier = 0.25 # Just felt like being mean :P
+}
+
+nwc_growing_pains_6 = {
+    global_colonial_growth = -60 # Less people to colonize
+    global_manpower_modifier = -0.30 # Less people to fight
+    global_tax_modifier = -0.30 # Less people to tax
+    colony_cost_modifier = 0.30 # Just felt like being mean :P
+}
+
+nwc_growing_pains_7 = {
+    global_colonial_growth = -70 # Less people to colonize
+    global_manpower_modifier = -0.35 # Less people to fight
+    global_tax_modifier = -0.35 # Less people to tax
+    colony_cost_modifier = 0.35 # Just felt like being mean :P
+}
+
+nwc_growing_pains_8 = {
+    global_colonial_growth = -80 # Less people to colonize
+    global_manpower_modifier = -0.40 # Less people to fight
+    global_tax_modifier = -0.40 # Less people to tax
+    colony_cost_modifier = 0.40 # Just felt like being mean :P
+}
+
+nwc_growing_pains_9 = {
+    global_colonial_growth = -90 # Less people to colonize
+    global_manpower_modifier = -0.45 # Less people to fight
+    global_tax_modifier = -0.45 # Less people to tax
+    colony_cost_modifier = 0.45 # Just felt like being mean :P
+}
+
+nwc_growing_pains_10 = {
+    global_colonial_growth = -100 # Less people to colonize
+    global_manpower_modifier = -0.50 # Less people to fight
+    global_tax_modifier = -0.50 # Less people to tax
+    colony_cost_modifier = 0.50 # Just felt like being mean :P
+}
+
+# Kalani - NWC's long list of accepting cultures
+nwc_icelandic_culture_accepted = {
+    num_accepted_cultures = 1
+}
+
+nwc_andean_culture_group_accepted = {
+    num_accepted_cultures = 4
+}
+
+nwc_apachean_culture_group_accepted = {
+    num_accepted_cultures = 4
+}
+
+nwc_araucanian_culture_group_accepted = {
+    num_accepted_cultures = 4
+}
+
+nwc_aridomerican_culture_group_accepted = {
+    num_accepted_cultures = 6
+}
+
+nwc_caddoan_culture_group_accepted = {
+    num_accepted_cultures = 3
+}
+
+nwc_caribbean_culture_group_accepted = {
+    num_accepted_cultures = 4
+}
+
+nwc_central_algonquian_culture_group_accepted = {
+    num_accepted_cultures = 8
+}
+
+nwc_central_american_culture_group_accepted = {
+    num_accepted_cultures = 4
+}
+
+nwc_chibchan_culture_group_accepted = {
+    num_accepted_cultures = 3
+}
+
+nwc_eastern_algonquian_culture_group_accepted = {
+    num_accepted_cultures = 8
+}
+
+nwc_eskaleut_culture_group_accepted = {
+    num_accepted_cultures = 2
+}
+
+nwc_iroquoian_culture_group_accepted = {
+    num_accepted_cultures = 6
+}
+
+nwc_maranon_culture_group_accepted = {
+    num_accepted_cultures = 2
+}
+
+nwc_matacoan_culture_group_accepted = {
+    num_accepted_cultures = 1
+}
+
+nwc_mayan_culture_group_accepted = {
+    num_accepted_cultures = 7
+}
+
+nwc_muskogean_culture_group_accepted = {
+    num_accepted_cultures = 8
+}
+
+nwc_na_dene_culture_group_accepted = {
+    num_accepted_cultures = 3
+}
+
+nwc_otomanguean_culture_group_accepted = {
+    num_accepted_cultures = 3
+}
+
+nwc_penutian_culture_group_accepted = {
+    num_accepted_cultures = 3
+}
+
+nwc_plains_algonquian_culture_group_accepted = {
+    num_accepted_cultures = 5
+}
+
+nwc_siouan_culture_group_accepted = {
+    num_accepted_cultures = 4
+}
+
+nwc_sonoran_culture_group_accepted = {
+    num_accepted_cultures = 4
+}
+
+nwc_tupi_culture_group_accepted = {
+    num_accepted_cultures = 2
+}

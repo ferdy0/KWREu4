@@ -322,6 +322,7 @@ NWC_missions_2 = {
 					change_trade_goods = fish
 				}
             }
+            hidden_effect = { country_event = { id = nwc_flavor.1 } }
         }
     }
 

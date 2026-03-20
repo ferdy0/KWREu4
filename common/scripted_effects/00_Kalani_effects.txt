@@ -95,3 +95,737 @@ kalani_release_finland_effect = {
 		}
 	}
 }
+
+kalani_growing_pains_calculation_effect = {
+	if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				value = 250
+				culture_group = scandinavian
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+				is_city = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = nwc_growing_pains_10 }
+			}
+			add_country_modifier = {
+				name = nwc_growing_pains_10
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = nwc_growing_pains_1
+			remove_country_modifier = nwc_growing_pains_2
+			remove_country_modifier = nwc_growing_pains_3
+			remove_country_modifier = nwc_growing_pains_4
+			remove_country_modifier = nwc_growing_pains_5
+			remove_country_modifier = nwc_growing_pains_6
+			remove_country_modifier = nwc_growing_pains_7
+			remove_country_modifier = nwc_growing_pains_8
+			remove_country_modifier = nwc_growing_pains_9
+		}
+	}
+	else_if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				value = 225
+				culture_group = scandinavian
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+				is_city = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = nwc_growing_pains_9 }
+			}
+			add_country_modifier = {
+				name = nwc_growing_pains_9
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = nwc_growing_pains_1
+			remove_country_modifier = nwc_growing_pains_2
+			remove_country_modifier = nwc_growing_pains_3
+			remove_country_modifier = nwc_growing_pains_4
+			remove_country_modifier = nwc_growing_pains_5
+			remove_country_modifier = nwc_growing_pains_6
+			remove_country_modifier = nwc_growing_pains_7
+			remove_country_modifier = nwc_growing_pains_8
+			remove_country_modifier = nwc_growing_pains_10
+		}
+	}
+	else_if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				value = 200
+				culture_group = scandinavian
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+				is_city = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = nwc_growing_pains_8 }
+			}
+			add_country_modifier = {
+				name = nwc_growing_pains_8
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = nwc_growing_pains_1
+			remove_country_modifier = nwc_growing_pains_2
+			remove_country_modifier = nwc_growing_pains_3
+			remove_country_modifier = nwc_growing_pains_4
+			remove_country_modifier = nwc_growing_pains_5
+			remove_country_modifier = nwc_growing_pains_6
+			remove_country_modifier = nwc_growing_pains_7
+			remove_country_modifier = nwc_growing_pains_9
+			remove_country_modifier = nwc_growing_pains_10
+		}
+	}
+	else_if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				value = 175
+				culture_group = scandinavian
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+				is_city = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = nwc_growing_pains_7 }
+			}
+			add_country_modifier = {
+				name = nwc_growing_pains_7
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = nwc_growing_pains_1
+			remove_country_modifier = nwc_growing_pains_2
+			remove_country_modifier = nwc_growing_pains_3
+			remove_country_modifier = nwc_growing_pains_4
+			remove_country_modifier = nwc_growing_pains_5
+			remove_country_modifier = nwc_growing_pains_6
+			remove_country_modifier = nwc_growing_pains_8
+			remove_country_modifier = nwc_growing_pains_9
+			remove_country_modifier = nwc_growing_pains_10
+		}
+	}
+	else_if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				value = 150
+				culture_group = scandinavian
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+				is_city = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = nwc_growing_pains_6 }
+			}
+			add_country_modifier = {
+				name = nwc_growing_pains_6
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = nwc_growing_pains_1
+			remove_country_modifier = nwc_growing_pains_2
+			remove_country_modifier = nwc_growing_pains_3
+			remove_country_modifier = nwc_growing_pains_4
+			remove_country_modifier = nwc_growing_pains_5
+			remove_country_modifier = nwc_growing_pains_7
+			remove_country_modifier = nwc_growing_pains_8
+			remove_country_modifier = nwc_growing_pains_9
+			remove_country_modifier = nwc_growing_pains_10
+		}
+	}
+	else_if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				value = 125
+				culture_group = scandinavian
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+				is_city = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = nwc_growing_pains_5 }
+			}
+			add_country_modifier = {
+				name = nwc_growing_pains_5
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = nwc_growing_pains_1
+			remove_country_modifier = nwc_growing_pains_2
+			remove_country_modifier = nwc_growing_pains_3
+			remove_country_modifier = nwc_growing_pains_4
+			remove_country_modifier = nwc_growing_pains_6
+			remove_country_modifier = nwc_growing_pains_7
+			remove_country_modifier = nwc_growing_pains_8
+			remove_country_modifier = nwc_growing_pains_9
+			remove_country_modifier = nwc_growing_pains_10
+		}
+	}
+	else_if = { # Intentionally skipped 75 to be generous to Skuddo
+		limit = {
+			num_of_owned_provinces_with = {
+				value = 100
+				culture_group = scandinavian
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+				is_city = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = nwc_growing_pains_4 }
+			}
+			add_country_modifier = {
+				name = nwc_growing_pains_4
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = nwc_growing_pains_1
+			remove_country_modifier = nwc_growing_pains_2
+			remove_country_modifier = nwc_growing_pains_3
+			remove_country_modifier = nwc_growing_pains_5
+			remove_country_modifier = nwc_growing_pains_6
+			remove_country_modifier = nwc_growing_pains_7
+			remove_country_modifier = nwc_growing_pains_8
+			remove_country_modifier = nwc_growing_pains_9
+			remove_country_modifier = nwc_growing_pains_10
+		}
+	}
+	else_if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				value = 50
+				culture_group = scandinavian
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+				is_city = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = nwc_growing_pains_3 }
+			}
+			add_country_modifier = {
+				name = nwc_growing_pains_3
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = nwc_growing_pains_1
+			remove_country_modifier = nwc_growing_pains_2
+			remove_country_modifier = nwc_growing_pains_4
+			remove_country_modifier = nwc_growing_pains_5
+			remove_country_modifier = nwc_growing_pains_6
+			remove_country_modifier = nwc_growing_pains_7
+			remove_country_modifier = nwc_growing_pains_8
+			remove_country_modifier = nwc_growing_pains_9
+			remove_country_modifier = nwc_growing_pains_10
+		}
+	}
+	else_if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				value = 25
+				culture_group = scandinavian
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+				is_city = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = nwc_growing_pains_2 }
+			}
+			add_country_modifier = {
+				name = nwc_growing_pains_2
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = nwc_growing_pains_1
+			remove_country_modifier = nwc_growing_pains_3
+			remove_country_modifier = nwc_growing_pains_4
+			remove_country_modifier = nwc_growing_pains_5
+			remove_country_modifier = nwc_growing_pains_6
+			remove_country_modifier = nwc_growing_pains_7
+			remove_country_modifier = nwc_growing_pains_8
+			remove_country_modifier = nwc_growing_pains_9
+			remove_country_modifier = nwc_growing_pains_10
+		}
+	}
+	else_if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				value = 5
+				culture_group = scandinavian
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+				is_city = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = nwc_growing_pains_1 }
+			}
+			add_country_modifier = {
+				name = nwc_growing_pains_1
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = nwc_growing_pains_2
+			remove_country_modifier = nwc_growing_pains_3
+			remove_country_modifier = nwc_growing_pains_4
+			remove_country_modifier = nwc_growing_pains_5
+			remove_country_modifier = nwc_growing_pains_6
+			remove_country_modifier = nwc_growing_pains_7
+			remove_country_modifier = nwc_growing_pains_8
+			remove_country_modifier = nwc_growing_pains_9
+			remove_country_modifier = nwc_growing_pains_10
+		}
+	}
+	else = {
+		hidden_effect = {
+			remove_country_modifier = nwc_growing_pains_1
+			remove_country_modifier = nwc_growing_pains_2
+			remove_country_modifier = nwc_growing_pains_3
+			remove_country_modifier = nwc_growing_pains_4
+			remove_country_modifier = nwc_growing_pains_5
+			remove_country_modifier = nwc_growing_pains_6
+			remove_country_modifier = nwc_growing_pains_7
+			remove_country_modifier = nwc_growing_pains_8
+			remove_country_modifier = nwc_growing_pains_9
+			remove_country_modifier = nwc_growing_pains_10
+		}
+	}
+}
+
+kalani_mild_growing_pains_calculation_effect = { # Recalculation to be more generous to Skuddo as a mission reward
+	if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				value = 500
+				culture_group = scandinavian
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+				is_city = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = nwc_growing_pains_10 }
+			}
+			add_country_modifier = {
+				name = nwc_growing_pains_10
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = nwc_growing_pains_1
+			remove_country_modifier = nwc_growing_pains_2
+			remove_country_modifier = nwc_growing_pains_3
+			remove_country_modifier = nwc_growing_pains_4
+			remove_country_modifier = nwc_growing_pains_5
+			remove_country_modifier = nwc_growing_pains_6
+			remove_country_modifier = nwc_growing_pains_7
+			remove_country_modifier = nwc_growing_pains_8
+			remove_country_modifier = nwc_growing_pains_9
+		}
+	}
+	else_if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				value = 450
+				culture_group = scandinavian
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+				is_city = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = nwc_growing_pains_9 }
+			}
+			add_country_modifier = {
+				name = nwc_growing_pains_9
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = nwc_growing_pains_1
+			remove_country_modifier = nwc_growing_pains_2
+			remove_country_modifier = nwc_growing_pains_3
+			remove_country_modifier = nwc_growing_pains_4
+			remove_country_modifier = nwc_growing_pains_5
+			remove_country_modifier = nwc_growing_pains_6
+			remove_country_modifier = nwc_growing_pains_7
+			remove_country_modifier = nwc_growing_pains_8
+			remove_country_modifier = nwc_growing_pains_10
+		}
+	}
+	else_if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				value = 400
+				culture_group = scandinavian
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+				is_city = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = nwc_growing_pains_8 }
+			}
+			add_country_modifier = {
+				name = nwc_growing_pains_8
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = nwc_growing_pains_1
+			remove_country_modifier = nwc_growing_pains_2
+			remove_country_modifier = nwc_growing_pains_3
+			remove_country_modifier = nwc_growing_pains_4
+			remove_country_modifier = nwc_growing_pains_5
+			remove_country_modifier = nwc_growing_pains_6
+			remove_country_modifier = nwc_growing_pains_7
+			remove_country_modifier = nwc_growing_pains_9
+			remove_country_modifier = nwc_growing_pains_10
+		}
+	}
+	else_if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				value = 350
+				culture_group = scandinavian
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+				is_city = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = nwc_growing_pains_7 }
+			}
+			add_country_modifier = {
+				name = nwc_growing_pains_7
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = nwc_growing_pains_1
+			remove_country_modifier = nwc_growing_pains_2
+			remove_country_modifier = nwc_growing_pains_3
+			remove_country_modifier = nwc_growing_pains_4
+			remove_country_modifier = nwc_growing_pains_5
+			remove_country_modifier = nwc_growing_pains_6
+			remove_country_modifier = nwc_growing_pains_8
+			remove_country_modifier = nwc_growing_pains_9
+			remove_country_modifier = nwc_growing_pains_10
+		}
+	}
+	else_if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				value = 300
+				culture_group = scandinavian
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+				is_city = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = nwc_growing_pains_6 }
+			}
+			add_country_modifier = {
+				name = nwc_growing_pains_6
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = nwc_growing_pains_1
+			remove_country_modifier = nwc_growing_pains_2
+			remove_country_modifier = nwc_growing_pains_3
+			remove_country_modifier = nwc_growing_pains_4
+			remove_country_modifier = nwc_growing_pains_5
+			remove_country_modifier = nwc_growing_pains_7
+			remove_country_modifier = nwc_growing_pains_8
+			remove_country_modifier = nwc_growing_pains_9
+			remove_country_modifier = nwc_growing_pains_10
+		}
+	}
+	else_if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				value = 250
+				culture_group = scandinavian
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+				is_city = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = nwc_growing_pains_5 }
+			}
+			add_country_modifier = {
+				name = nwc_growing_pains_5
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = nwc_growing_pains_1
+			remove_country_modifier = nwc_growing_pains_2
+			remove_country_modifier = nwc_growing_pains_3
+			remove_country_modifier = nwc_growing_pains_4
+			remove_country_modifier = nwc_growing_pains_6
+			remove_country_modifier = nwc_growing_pains_7
+			remove_country_modifier = nwc_growing_pains_8
+			remove_country_modifier = nwc_growing_pains_9
+			remove_country_modifier = nwc_growing_pains_10
+		}
+	}
+	else_if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				value = 200
+				culture_group = scandinavian
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+				is_city = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = nwc_growing_pains_4 }
+			}
+			add_country_modifier = {
+				name = nwc_growing_pains_4
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = nwc_growing_pains_1
+			remove_country_modifier = nwc_growing_pains_2
+			remove_country_modifier = nwc_growing_pains_3
+			remove_country_modifier = nwc_growing_pains_5
+			remove_country_modifier = nwc_growing_pains_6
+			remove_country_modifier = nwc_growing_pains_7
+			remove_country_modifier = nwc_growing_pains_8
+			remove_country_modifier = nwc_growing_pains_9
+			remove_country_modifier = nwc_growing_pains_10
+		}
+	}
+	else_if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				value = 150
+				culture_group = scandinavian
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+				is_city = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = nwc_growing_pains_3 }
+			}
+			add_country_modifier = {
+				name = nwc_growing_pains_3
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = nwc_growing_pains_1
+			remove_country_modifier = nwc_growing_pains_2
+			remove_country_modifier = nwc_growing_pains_4
+			remove_country_modifier = nwc_growing_pains_5
+			remove_country_modifier = nwc_growing_pains_6
+			remove_country_modifier = nwc_growing_pains_7
+			remove_country_modifier = nwc_growing_pains_8
+			remove_country_modifier = nwc_growing_pains_9
+			remove_country_modifier = nwc_growing_pains_10
+		}
+	}
+	else_if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				value = 100
+				culture_group = scandinavian
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+				is_city = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = nwc_growing_pains_2 }
+			}
+			add_country_modifier = {
+				name = nwc_growing_pains_2
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = nwc_growing_pains_1
+			remove_country_modifier = nwc_growing_pains_3
+			remove_country_modifier = nwc_growing_pains_4
+			remove_country_modifier = nwc_growing_pains_5
+			remove_country_modifier = nwc_growing_pains_6
+			remove_country_modifier = nwc_growing_pains_7
+			remove_country_modifier = nwc_growing_pains_8
+			remove_country_modifier = nwc_growing_pains_9
+			remove_country_modifier = nwc_growing_pains_10
+		}
+	}
+	else_if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				value = 50
+				culture_group = scandinavian
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+				is_city = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = nwc_growing_pains_1 }
+			}
+			add_country_modifier = {
+				name = nwc_growing_pains_1
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = nwc_growing_pains_2
+			remove_country_modifier = nwc_growing_pains_3
+			remove_country_modifier = nwc_growing_pains_4
+			remove_country_modifier = nwc_growing_pains_5
+			remove_country_modifier = nwc_growing_pains_6
+			remove_country_modifier = nwc_growing_pains_7
+			remove_country_modifier = nwc_growing_pains_8
+			remove_country_modifier = nwc_growing_pains_9
+			remove_country_modifier = nwc_growing_pains_10
+		}
+	}
+	else = {
+		hidden_effect = {
+			remove_country_modifier = nwc_growing_pains_1
+			remove_country_modifier = nwc_growing_pains_2
+			remove_country_modifier = nwc_growing_pains_3
+			remove_country_modifier = nwc_growing_pains_4
+			remove_country_modifier = nwc_growing_pains_5
+			remove_country_modifier = nwc_growing_pains_6
+			remove_country_modifier = nwc_growing_pains_7
+			remove_country_modifier = nwc_growing_pains_8
+			remove_country_modifier = nwc_growing_pains_9
+			remove_country_modifier = nwc_growing_pains_10
+		}
+	}
+}
