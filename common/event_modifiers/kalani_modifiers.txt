@@ -8,6 +8,11 @@ nwc_native_trades = {
     trade_goods_size_modifier = 0.10
 }
 
+nwc_german_cultural_acceptance = { # Rather than just giving acceptance on the whole group, just give Skuddo extra slots and a discount
+    num_accepted_cultures = 3
+    promote_culture_cost =  -0.25
+}
+
 # Kalani - Growing Pains of the Colony, to represent the Norwegian-Icelandic population being stretched thin
 nwc_growing_pains_1 = {
     global_colonial_growth = -10 # Less people to colonize

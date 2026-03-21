@@ -60,7 +60,8 @@
  nwc_icelandic_culture_accepted: "Icelandic Heritage"
 
  # Custom Tooltips for the Event
- nwc_explain_growing_pains_tt: "As the colony continues to expand, we will receive a §Rscaling debuff§! based on the number of owned Nordic culture group provinces in the New World."
+ nwc_explain_company_shares_tt: "The Burghers Estate Land represents company shares that are held by private and foreign investors.\n The Nobility Estate Land represents company shares that are held by your Overlord, and will disappear if you become Independent.\n Crownland represents company shares held directly by the company itself."
+ nwc_explain_growing_pains_tt: "We will receive a §Rscaling debuff§! based on the number of owned Nordic culture group provinces in the New World."
  nwc_explain_mild_growing_pains_tt: "The effects of our colony being stretched thin have been §Ghalved§!."
 
  nwc_transfer_canada_tt: "All provinces and colonial subjects in Colonial Canada will be consolidated under the NWC."
@@ -75,6 +76,17 @@
  nwc_transfer_peru_tt: "All provinces and colonial subjects in Colonial Peru will be consolidated under the NWC."
  nwc_transfer_la_plata_tt: "All provinces and colonial subjects in Colonial La Plata will be consolidated under the NWC."
  nwc_transfer_australia_tt: "All provinces and colonial subjects in Colonial Australia will be consolidated under the NWC."
+
+ nwc_growing_pains_1: "Stretched Thin"
+ nwc_growing_pains_2: "$nwc_growing_pains_1$"
+ nwc_growing_pains_3: "$nwc_growing_pains_1$"
+ nwc_growing_pains_4: "$nwc_growing_pains_1$"
+ nwc_growing_pains_5: "$nwc_growing_pains_1$"
+ nwc_growing_pains_6: "$nwc_growing_pains_1$"
+ nwc_growing_pains_7: "$nwc_growing_pains_1$"
+ nwc_growing_pains_8: "$nwc_growing_pains_1$"
+ nwc_growing_pains_9: "$nwc_growing_pains_1$"
+ nwc_growing_pains_10: "$nwc_growing_pains_1$"
 
  nwc_icelandic_culture_accepted: "Icelandic Heritage"
 
