@@ -389,9 +389,18 @@ Norway_missions_s2 = {
         }
 
         trigger = {
-            ICE = {
-                NOT = {
-                    liberty_desire = 5
+            OR = {
+                ICE = {
+                    NOT = {
+                        liberty_desire = 5
+                    }
+                }
+                AND = {
+                    NOT = { exists = ICE }
+                    subarctic_islands_area = {
+			            type = all
+                        owned_by = ROOT
+			        }
                 }
             }
             369 = {
@@ -407,16 +416,43 @@ Norway_missions_s2 = {
         }
 
         effect = {
-            ICE = {
-                hidden_effect = { change_tag = NWC }
-                country_event = {
-                    id = mission_nor.14
+            if = { # Kalani - If Iceland exists, give them the flavor event
+                limit = { exists = ICE }
+                ICE = {
+                    hidden_effect = { change_tag = NWC }
+                    country_event = {
+                        id = mission_nor.14
+                    }
                 }
             }
-            hidden_effect = {
-                create_subject = {
-                    subject_type = commercial_enterprise
-                    subject = NWC
+            else = { # Kalani - Otherwise, just release the NWC
+                hidden_effect = {
+                    every_owned_province = {
+                        limit = {
+                            OR = {
+                                area = subarctic_islands_area
+                                area = greenland_area
+                                province_id = 369
+                            }
+                        }
+                        add_core = NWC
+                    }
+                }
+                release = NWC
+                hidden_effect = {
+                    NWC = {
+                        change_primary_culture = norwegian
+                        change_government = republic
+                        add_government_reform = trade_company_government
+                        set_prestige_to_zero = yes
+                        add_adm_power = 50
+                        add_dip_power = 50
+                        add_mil_power = 50
+                    }
+                    create_subject = {
+                        subject_type = commercial_enterprise
+                        subject = NWC
+                    }
                 }
             }
             add_treasury = 100

@@ -2616,6 +2616,7 @@ country_event = { # Kalani - Reworked releasing Finland so it doesn't create ugl
 	# Kalani - Federal Republic of Finland
 	option = {
 		name = flavor_rus.105.c
+		highlight = yes
 		trigger = {
 			OR = {
 				government = republic

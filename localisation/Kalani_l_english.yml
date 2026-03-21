@@ -54,8 +54,10 @@
  colonial_nwc.1.m: "Consolidate Australia"
 
  nwc_flavor.1.t: "An Unfortunate Truth"
- nwc_flavor.1.d: "As we embark on this colonial venture in the new world, we are faced with an untimely realization; Neither our stronghold of Iceland nor our mother country of Norway will be able to supply enough colonists to press our claims to the land. Should we continue regardless of this fact, what few settlers we have will be stretched precariously thin across this vast continent."
+ nwc_flavor.1.d: "While the rediscovery and permanent settlement of Vinland has captured the imagination of investors back at home, we are forced to reckon with an unfortunate truth; Neither our stronghold of Iceland nor our mother country of Norway will be able to supply enough colonists to press our claims to the land. Should we continue regardless of this fact, what few settlers we have will be stretched precariously thin across this vast continent."
  nwc_flavor.1.a: "If only we were Englishmen..."
+
+ nwc_icelandic_culture_accepted: "Icelandic Heritage"
 
  # Custom Tooltips for the Event
  nwc_explain_growing_pains_tt: "As the colony continues to expand, we will receive a §Rscaling debuff§! based on the number of owned Nordic culture group provinces in the New World."

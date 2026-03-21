@@ -1,5 +1,8 @@
-﻿on_culture_demoted = {
+
+
+on_culture_demoted = {
     NWC_on_culture_demoted_effect = yes
+    log = "Crazy? I was Crazy Once."
 }
 
 on_colony_finished = {

@@ -414,32 +414,43 @@ country_event = { #still needs localisation
 
     is_triggered_only = yes
 
-    immediate = {
-        on_change_tag_effect = yes
-        swap_non_generic_missions = yes
-        add_government_reform = trade_company_government
-        change_primary_culture = norwegian
-        add_country_modifier = {
-            name = "nwc_icelandic_culture_accepted"
-            duration = -1
-        }
-        add_accepted_culture = icelandic
-    }
-
     option = {
         name = mission_nor.14.a
-        country_event = { id = ideagroups.1 }
-        369 = {
-            add_core = NWC
-            cede_province = NWC
+        change_tag = NWC
+        if = {
+            limit = {
+                NOT = { government = republic }
+            }
+            change_government = republic
         }
-        1978 = {
-            add_core = NWC
-            cede_province = NWC
-        }
-        1979 = {
-            add_core = NWC
-            cede_province = NWC
+        add_government_reform = trade_company_government
+        hidden_effect = {
+            on_change_tag_effect = yes
+            swap_non_generic_missions = yes
+            country_event = { id = ideagroups.1 }
+            change_primary_culture = norwegian
+            add_country_modifier = {
+                name = "nwc_icelandic_culture_accepted"
+                duration = -1
+            }
+            add_accepted_culture = icelandic
+            overlord = {
+                create_subject = {
+                    subject_type = commercial_enterprise
+                    subject = NWC
+                }
+                every_owned_province = {
+                    limit = {
+                        OR = {
+                            area = subarctic_islands_area
+                            area = greenland_area
+                            province_id = 369
+                        }
+                    }
+                    add_core = NWC
+                    cede_province = NWC
+                }
+            }
         }
     }
 }

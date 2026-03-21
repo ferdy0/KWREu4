@@ -219,13 +219,3 @@ great_expedition_discovery_outcomes = {
         custom_tooltip = GE_explored_new_england_tt
     }
 }
-
-NWC_on_culture_demoted_effect = {
-	if = {
-		limit = {
-			has_country_modifier = nwc_icelandic_culture_accepted
-			NOT = { accepted_culture = icelandic }
-		}
-		remove_country_modifier = nwc_icelandic_culture_accepted
-	}
-}
