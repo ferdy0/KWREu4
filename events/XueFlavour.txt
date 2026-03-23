@@ -57,3 +57,642 @@ country_event = {
 		add_government_reform = xue_seal_of_the_emperor_reform
 	}
 }
+
+# Kalani Contribution for the Crisis of the Not-Ming
+namespace = xue_disaster
+country_event = { # The Not-Taiping rise up to create a rival dynasty.
+	id = xue_disaster.1
+	title = "xue_disaster.1.t"
+	desc = "xue_disaster.1.d"
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		NOT = { exists = HUA }
+		num_of_owned_provinces_with = {
+			value = 10
+			region = south_china_region
+			controlled_by = REB
+		}
+		any_owned_province = {
+			OR = {
+				area = fujian_area
+				area = guangdong_area
+				area = guangxi_area
+				province_id = 665
+				province_id = 670
+				province_id = 1833
+				province_id = 2159
+				province_id = 2161
+				province_id = 2174
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						controlled_by = REB
+						controlled_by = ROOT
+					}
+					OR = {
+						area = fujian_area
+						area = guangdong_area
+						area = guangxi_area
+						province_id = 665
+						province_id = 670
+						province_id = 1833
+						province_id = 2159
+						province_id = 2161
+						province_id = 2174
+					}
+				}
+				add_core = HUA
+				clear_rebels = yes
+			}
+			release = HUA
+			if = { # Set the correct capital
+				limit = {
+					2158 = { owned_by = HUA }
+				}
+				HUA = { set_capital = 2158 }
+			}
+			else_if = {
+				limit = {
+					667 = { owned_by = HUA }
+				}
+				HUA = { set_capital = 667 }
+			}
+			HUA = {
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.6
+						cavalry = 0.3
+						artillery = 0.1
+					}
+				}
+				change_government = monarchy
+				add_government_reform = chinese_warlord
+				adopt_reform_progress = ROOT
+				define_ruler = {
+					name = "Zicheng"
+					dynasty = "Li"
+				}
+				add_yearly_manpower = 15
+				add_years_of_income = 15
+			}
+			if = { # Definitely not the Taiping I promise guys
+				limit = {
+					HUA = { religion = confucianism }
+				}
+				if = {
+					limit = {
+						HUA = {
+							any_owned_province = { religion = catholic }
+						}
+					}
+					HUA = { add_harmonized_religion = catholic }
+				}
+				if = {
+					limit = {
+						HUA = {
+							any_owned_province = { religion = protestant }
+						}
+					}
+					HUA = { add_harmonized_religion = protestant }
+				}
+				if = {
+					limit = {
+						HUA = {
+							any_owned_province = { religion = reformed }
+						}
+					}
+					HUA = { add_harmonized_religion = reformed }
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						NOT = { is_neighbor_of = ROOT }
+						is_subject_of_type = tributary_state
+						is_subject_of = ROOT
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { is_neighbor_of = ROOT }
+						is_subject_of_type = tributary_state
+						is_subject_of = ROOT
+					}
+					country_event = {
+						id = ming_crisis.10
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = xue_disaster.1.a
+		add_stability = -2
+		add_mandate = -10
+		if = {
+			limit = {
+				has_dlc = "Mandate of Heaven"
+				is_emperor_of_china = yes
+			}
+			HUA = {
+				declare_war_with_cb = {
+					who = root
+					casus_belli = cb_take_mandate
+				}
+			}
+		}
+		else = {
+			HUA = {
+				declare_war = root
+			}
+		}
+	}
+	
+	option = {
+		name = xue_disaster.1.b
+		trigger = {
+			ai = no
+		}
+		add_stability = -2
+		add_mandate = -10
+		if = {
+			limit = {
+				has_dlc = "Mandate of Heaven"
+				is_emperor_of_china = yes
+			}
+			HUA = {
+				declare_war_with_cb = {
+					who = root
+					casus_belli = cb_take_mandate
+				}
+			}
+		}
+		else = {
+			HUA = {
+				declare_war = root
+			}
+		}
+		switch_tag = HUA
+	}
+}
+
+country_event = { # The Not-Shun rise up to create a rival dynasty.
+	id = xue_disaster.2
+	title = "xue_disaster.2.t"
+	desc = "xue_disaster.2.d"
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		NOT = { exists = YAN }
+		num_of_owned_provinces_with = {
+			value = 10
+			region = south_china_region
+			controlled_by = REB
+		}
+		any_owned_province = {
+			OR = {
+				area = gansu_area
+				area = west_gansu_area
+				area = shaanxi_area
+				area = shanxi_area
+				area = hebei_area
+				area = south_hebei_area
+				area = liaoning_area
+				area = shandong_area
+				area = north_henan_area
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						controlled_by = REB
+						controlled_by = ROOT
+					}
+					OR = {
+						area = gansu_area
+						area = west_gansu_area
+						area = shaanxi_area
+						area = shanxi_area
+						area = hebei_area
+						area = south_hebei_area
+						area = liaoning_area
+						area = shandong_area
+						area = north_henan_area
+					}
+				}
+				add_core = YAN
+				clear_rebels = yes
+			}
+			every_owned_province = { #get rid of bordergore from random Mongolian provinces
+				limit = {
+					region = mongolia_region
+					any_neighbor_province = {
+						is_core = YAN
+					}
+					OR = {
+						controlled_by = REB
+						controlled_by = ROOT
+					}
+				}
+				add_core = YAN
+				clear_rebels = yes
+			}
+			release = YAN
+			if = { # Set the correct capital
+				limit = {
+					1816 = { owned_by = YAN }
+				}
+				YAN = { set_capital = 1816 }
+			}
+			YAN = {
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.6
+						cavalry = 0.3
+						artillery = 0.1
+					}
+				}
+				change_government = monarchy
+				add_government_reform = chinese_warlord
+				adopt_reform_progress = ROOT
+				define_ruler = {
+					name = "Zicheng"
+					dynasty = "Li"
+				}
+				add_yearly_manpower = 15
+				add_years_of_income = 15
+			}
+			if = {
+				limit = {
+					YAN = { religion = confucianism }
+				}
+				if = {
+					limit = {
+						YAN = {
+							any_owned_province = { religion = jewish }
+						}
+					}
+					YAN = { add_harmonized_religion = jewish }
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						NOT = { is_neighbor_of = ROOT }
+						is_subject_of_type = tributary_state
+						is_subject_of = ROOT
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { is_neighbor_of = ROOT }
+						is_subject_of_type = tributary_state
+						is_subject_of = ROOT
+					}
+					country_event = {
+						id = ming_crisis.10
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = xue_disaster.1.a
+		add_stability = -2
+		add_mandate = -10
+		if = {
+			limit = {
+				has_dlc = "Mandate of Heaven"
+				is_emperor_of_china = yes
+			}
+			YAN = {
+				declare_war_with_cb = {
+					who = root
+					casus_belli = cb_take_mandate
+				}
+			}
+		}
+		else = {
+			YAN = {
+				declare_war = root
+			}
+		}
+	}
+	
+	option = {
+		name = xue_disaster.1.b
+		trigger = {
+			ai = no
+		}
+		add_stability = -2
+		add_mandate = -10
+		if = {
+			limit = {
+				has_dlc = "Mandate of Heaven"
+				is_emperor_of_china = yes
+			}
+			YAN = {
+				declare_war_with_cb = {
+					who = root
+					casus_belli = cb_take_mandate
+				}
+			}
+		}
+		else = {
+			YAN = {
+				declare_war = root
+			}
+		}
+		switch_tag = YAN
+	}
+
+	after = {
+		hidden_effect = {
+			YAN = {
+				if = {
+					limit = {
+						any_neighbor_country = {
+							has_reform = steppe_horde
+							total_own_and_non_tributary_subject_development = 300
+							is_subject = no
+							#NOT = { truce_with = ROOT }
+							NOT = { alliance_with = ROOT }
+							#NOT = { is_subject_of = ROOT }
+						}
+					}
+					random_neighbor_country = {
+						limit = {
+							has_reform = steppe_horde
+							total_own_and_non_tributary_subject_development = 300
+							is_subject = no
+							#NOT = { truce_with = ROOT }
+							NOT = { alliance_with = ROOT }
+							#NOT = { is_subject_of = ROOT }
+						}
+						country_event = { id = ming_crisis.9 days = 1 }
+					}
+				}
+				else_if = {
+					limit = {
+						any_neighbor_country = {
+							tag = MCH
+							is_free_or_tributary_trigger = yes
+							NOT = { alliance_with = root }
+						}
+					}
+					MCH = {
+						country_event = { id = ming_crisis.9 days = 1 }
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { # Jurchen Protectorate. Equivalent to Ming's Yunnan Protectorate
+	id = xue_disaster.3
+	title = "xue_disaster.3.t"
+	desc = "xue_disaster.3.d"
+	picture = MONGOL_BANNERS_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		NOT = { exists = MJZ }
+		num_of_owned_provinces_with = {
+			value = 10
+			OR = {
+				region = manchuria_region
+				region = north_china_region
+			}
+			controlled_by = REB
+		}
+		any_owned_province = {
+			OR = {
+				area = east_heilongjiang_area
+				area = central_heilongjiang_area
+				area = ilan_hala_area
+				area = central_jilin_area
+				area = ningguta_area
+				area = furdan_area
+				area = jilin_area
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						controlled_by = REB
+						controlled_by = ROOT
+					}
+					OR = {
+						area = east_heilongjiang_area
+						area = central_heilongjiang_area
+						area = ilan_hala_area
+						area = central_jilin_area
+						area = ningguta_area
+						area = furdan_area
+						area = jilin_area
+					}
+				}
+				add_core = MJZ
+				clear_rebels = yes
+			}
+			release = MJZ
+			if = { # Release does not make them a subject, you should know better John Paradox
+				limit = { MJZ = { is_subject = no } }
+				create_subject = {
+					who = MJZ
+					subject_type = vassal
+				}
+			}
+			if = { # Set the correct capital
+				limit = {
+					2108 = { owned_by = MJZ }
+				}
+				MJZ = { set_capital = 2108 }
+			}
+			else_if = {
+				limit = {
+					4201 = { owned_by = MJZ }
+				}
+				MJZ = { set_capital = 4201 }
+			}
+			MJZ = {
+				capital_scope = {
+					build_to_forcelimit = { # Invert Infantry and Cavalry on account of being Manchu
+						infantry = 0.3
+						cavalry = 0.6
+						artillery = 0.1
+					}
+				}
+				change_religion = confucianism
+				add_harmonized_religion = tengri_pagan_reformed
+				change_government = tribal
+				add_government_reform = steppe_horde
+				adopt_reform_progress = ROOT
+			}
+			if = {
+				limit = {
+					any_country = {
+						NOT = { is_neighbor_of = ROOT }
+						is_subject_of_type = tributary_state
+						is_subject_of = ROOT
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { is_neighbor_of = ROOT }
+						is_subject_of_type = tributary_state
+						is_subject_of = ROOT
+					}
+					country_event = {
+						id = ming_crisis.10
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = xue_disaster.3.a
+		ai_chance = { factor = 1 }
+		add_mandate = -5
+		MJZ = { add_liberty_desire = 100 }
+	}
+	option = {
+		name = ming_crisis.3.b
+		ai_chance = { factor = 0 }
+		add_mandate = 15
+		MJZ = {
+			declare_war_with_cb = {
+				who = root
+				casus_belli = cb_independence_war
+			}
+		}
+	}
+	option = {
+		name = xue_disaster.3.c
+		trigger = { ai = no }
+		add_mandate = 15
+		switch_tag = MJZ
+		MJZ = {
+			declare_war_with_cb = {
+				who = root
+				casus_belli = cb_independence_war
+			}
+		}
+	}
+}
+
+country_event = { # Xue falls apart!
+	id = xue_disaster.4
+	title = "xue_disaster.4.t"
+	desc = "xue_disaster.4.d"
+	picture = ANGRY_MOB_eventPicture
+	goto = xue_disaster_nationalist_province
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			superregion = china_superregion
+			any_core_country = {
+				NOT = { tag = ROOT }
+				NOT = { tag = HUA }
+				NOT = { tag = YAN }
+				NOT = { tag = MNG } # Somehow... the Ming Dynasty has returned
+				NOT = { tag = CSH } # Somehow... the Shun Dynasty has returned
+				exists = no
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					superregion = china_superregion
+					any_core_country = {
+						NOT = { tag = ROOT }
+						NOT = { tag = HUA }
+						NOT = { tag = YAN }
+						NOT = { tag = MNG }
+						NOT = { tag = CSH }
+						exists = no
+					}
+				}
+				save_event_target_as = xue_disaster_nationalist_province
+				random_core_country = {
+					limit = {
+						NOT = { tag = ROOT }
+						NOT = { tag = HUA }
+						NOT = { tag = YAN }
+						NOT = { tag = MNG }
+						NOT = { tag = CSH }
+						exists = no
+					}
+					save_event_target_as = xue_disaster_new_tag
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = ming_crisis.11.a
+		add_mandate = 5
+		event_target:xue_disaster_new_tag = {
+			event_target:xue_disaster_nationalist_province = {
+				spawn_rebels = {
+					type = nationalist_rebels
+					friend = PREV
+					size = 5
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = ming_crisis.11.b
+		add_mandate = -5
+		event_target:xue_disaster_nationalist_province = {
+			area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_local_autonomy = 10
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

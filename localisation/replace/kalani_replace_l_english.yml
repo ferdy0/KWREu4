@@ -1,0 +1,5 @@
+﻿l_english:
+ ming_crisis.1.d:0 "Great [Root.GetUsableName] faces a terrible crisis. The [Root.Monarch.Dynasty.GetName] family have failed to rule in accordance with the Mandate of Heaven, and have lost the blessings and good fame that the Mandate affords. Mismanagement and strife are rampant in China and discontent is spreading rapidly among the people; already great masses have risen in revolt. We must think of our ancestors and strive to cultivate virtue, for the great Mandate is not easy to keep."
+ ming_crisis.10.d:0 "The [Root.Overlord.GetName] dynasty is in crisis. The state struggles to control even its own territory, with warlords raising armies and vying for power across China. We must ask ourselves whether such a tumultuous state truly hold the Mandate of Heaven, and therefore whether [Root.GetName] ought to reconsider its tributary relationship with the [Root.Overlord.GetName]."
+ ming_crisis.10.a:0 "The [Root.Overlord.GetName] are no longer useful to us."
+ ming_crisis.10.tt:0 "[Root.GetName] will remain a [Root.Overlord.GetName] tributary"

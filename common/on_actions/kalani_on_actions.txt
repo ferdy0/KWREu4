@@ -2,7 +2,6 @@
 
 on_culture_demoted = {
     NWC_on_culture_demoted_effect = yes
-    log = "Crazy? I was Crazy Once."
 }
 
 on_colony_finished = {
@@ -25,58 +24,13 @@ on_colony_finished = {
 }
 
 on_province_owner_change = {
-    if = {
-        limit = {
-            owner = { has_country_flag = nwc_growing_pains_flag }
-        }
-        owner = {
-            kalani_growing_pains_calculation_effect = yes
-        }
-    }
-    else_if = {
-        limit = {
-            owner = { has_country_flag = nwc_mild_growing_pains_flag }
-        }
-        owner = {
-            kalani_mild_growing_pains_calculation_effect = yes
-        }
-    }
+    NWC_on_province_owner_change_effect = yes
 }
 
 on_province_culture_converted = {
-    if = {
-        limit = {
-            owner = { has_country_flag = nwc_growing_pains_flag }
-        }
-        owner = {
-            kalani_growing_pains_calculation_effect = yes
-        }
-    }
-    else_if = {
-        limit = {
-            owner = { has_country_flag = nwc_mild_growing_pains_flag }
-        }
-        owner = {
-            kalani_mild_growing_pains_calculation_effect = yes
-        }
-    }
+    NWC_on_culture_change_effect = yes
 }
 
 on_province_culture_changed = {
-    if = {
-        limit = {
-            owner = { has_country_flag = nwc_growing_pains_flag }
-        }
-        owner = {
-            kalani_growing_pains_calculation_effect = yes
-        }
-    }
-    else_if = {
-        limit = {
-            owner = { has_country_flag = nwc_mild_growing_pains_flag }
-        }
-        owner = {
-            kalani_mild_growing_pains_calculation_effect = yes
-        }
-    }
+    NWC_on_culture_change_effect = yes
 }

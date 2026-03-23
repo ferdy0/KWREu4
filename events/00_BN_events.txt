@@ -417,14 +417,13 @@ country_event = { #still needs localisation
     option = {
         name = mission_nor.14.a
         change_tag = NWC
-        if = {
-            limit = {
-                NOT = { government = republic }
-            }
-            change_government = republic
-        }
-        add_government_reform = trade_company_government
         hidden_effect = {
+            if = {
+                limit = {
+                    NOT = { government = republic }
+                }
+                change_government = republic
+            }
             on_change_tag_effect = yes
             swap_non_generic_missions = yes
             country_event = { id = ideagroups.1 }
@@ -452,6 +451,7 @@ country_event = { #still needs localisation
                 }
             }
         }
+        add_government_reform = trade_company_government
     }
 }
 

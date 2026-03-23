@@ -252,7 +252,16 @@ NWC_missions_1 = {
         }
 
         effect = {
-			
+			define_advisor = {
+				name = "Klaus Schwab"
+				skill = 5
+				culture = swabian
+                religion = catholic
+                location = 4710
+                age = 33
+                discount = yes
+				type = trader
+			}
         }
     }
 }

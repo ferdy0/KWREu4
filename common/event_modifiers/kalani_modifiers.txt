@@ -13,6 +13,12 @@ nwc_german_cultural_acceptance = { # Rather than just giving acceptance on the w
     promote_culture_cost =  -0.25
 }
 
+nwc_cultural_autonomy_modifier = {
+    min_local_autonomy = 10
+    local_unrest = -3
+    local_culture_conversion_cost = 0.5
+}
+
 # Kalani - Growing Pains of the Colony, to represent the Norwegian-Icelandic population being stretched thin
 nwc_growing_pains_1 = {
     global_colonial_growth = -10 # Less people to colonize

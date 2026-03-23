@@ -1,5 +1,10 @@
 ﻿l_english:
  # Kalani - DON'T ADD :0 TO THE END! I KNOW ITS INCORRECT BUT IT WORKS FINE AND MAKES IT MORE READABLE FOR ME IN VSCODE!
+ # Xue Flavor
+ xue_disaster.4.t: "[xue_disaster_new_tag.GetName] Separatists rise up in [xue_disaster_nationalist_province.GetName]!"
+ xue_disaster.4.d: "A group of [xue_disaster_new_tag.GetName] rebels has the audacity to question the authority of our [Root.Monarch.GetTitle], and claim we are no longer the descedants of heaven! They prepared a threatening force in [xue_disaster_nationalist_province.GetName] are now in open revolt against us!"
+ xue_disaster.4.a: "They need to be striked down immediately!"
+ xue_disaster.4.b: "Maybe a few concessions might appease them..."
  # Iceland Missions
  ICE_build_fleet_mission_title: "Build a Fleet (P)"
  ICE_fish_markets_title: "Expand the Fish Markets"
@@ -78,15 +83,15 @@
  nwc_transfer_australia_tt: "All provinces and colonial subjects in Colonial Australia will be consolidated under the NWC."
 
  nwc_growing_pains_1: "Stretched Thin"
- nwc_growing_pains_2: "$nwc_growing_pains_1$"
- nwc_growing_pains_3: "$nwc_growing_pains_1$"
- nwc_growing_pains_4: "$nwc_growing_pains_1$"
- nwc_growing_pains_5: "$nwc_growing_pains_1$"
- nwc_growing_pains_6: "$nwc_growing_pains_1$"
- nwc_growing_pains_7: "$nwc_growing_pains_1$"
- nwc_growing_pains_8: "$nwc_growing_pains_1$"
- nwc_growing_pains_9: "$nwc_growing_pains_1$"
- nwc_growing_pains_10: "$nwc_growing_pains_1$"
+ nwc_growing_pains_2: "Stretched Thin"
+ nwc_growing_pains_3: "Stretched Thin"
+ nwc_growing_pains_4: "Stretched Thin"
+ nwc_growing_pains_5: "Stretched Thin"
+ nwc_growing_pains_6: "Stretched Thin"
+ nwc_growing_pains_7: "Stretched Thin"
+ nwc_growing_pains_8: "Stretched Thin"
+ nwc_growing_pains_9: "Stretched Thin"
+ nwc_growing_pains_10: "Stretched Thin"
 
  nwc_icelandic_culture_accepted: "Icelandic Heritage"
 

@@ -1351,8 +1351,13 @@ country_event = {
     }
 
     option = { # Actually, nevermind
-        name = colonial_nwc.2.a
+        name = colonial_nwc.1.b
         set_country_flag = nwc_war_with_natives
         swap_non_generic_missions = yes
+    }
+
+    option = { # Actually, nevermind
+        name = colonial_nwc.1.c
+        set_country_flag = nwc_cultural_autonomy_flag
     }
 }
