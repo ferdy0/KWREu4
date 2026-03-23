@@ -1,0 +1,247 @@
+########################################
+# Potestate Factionalism
+# Apparently people don't like it if you
+# take all the power for yourself
+########################################
+
+namespace = hooks_n_cods
+
+# The disgruntled freedoms
+country_event = {
+	id = hooks_n_cods.1
+	title = "hooks_n_cods.1.t"
+	desc = "hooks_n_cods.1.d"
+	picture = WHITE_MOUNTAIN_eventPicture
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = hooks_and_cods_reflavoured
+			add_stability = -2
+			random_owned_province = {
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 2
+				}
+			}
+		}
+	}
+	
+	option = { #Pretender rebels rise
+		name = hooks_n_cods.1.a
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+	}
+}
+
+#Disgruntled nobles (Hooks)
+country_event = {
+	id = hooks_n_cods.2
+	title = "hooks_n_cods.2.t"
+	desc = "hooks_n_cods.2.d"
+	picture = SIEGE_PRAGUE_CASTLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+			months_of_ruling = 72
+		}
+	}
+	
+	option = {
+		name = "hooks_n_cods.2.a"
+		ai_chance = { factor = 1 }
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 4
+			}
+		}
+	}
+}
+
+#Disgruntled burghers (Cods) the anti_tax kind
+country_event = {
+	id = hooks_n_cods.3
+	title = "hooks_n_cods.3.t"
+	desc = "hooks_n_cods.3.d"
+	picture = REVOLT_HUGUENOTS_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+			months_of_ruling = 72
+		}
+	}
+	
+	option = {
+		name = "hooks_n_cods.3.a"
+		ai_chance = { factor = 1 }
+		random_owned_province = {
+			spawn_rebels = {
+				type = anti_tax_rebels
+				size = 4
+			}
+		}
+	}
+}
+
+#Disgruntled burghers (Cods) but now democratic
+country_event = {
+	id = hooks_n_cods.4
+	title = "hooks_n_cods.4.t"
+	desc = "hooks_n_cods.4.d"
+	picture = REVOLT_HUGUENOTS_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+			months_of_ruling = 72
+		}
+	}
+	
+	option = {
+		name = "hooks_n_cods.4.a"
+		ai_chance = { factor = 1 }
+		random_owned_province = {
+			spawn_rebels = {
+				type = parliamentarians_rebels
+				size = 4
+			}
+		}
+	}
+}
+
+#Disgruntled burghers (Cods) but now monarchist
+country_event = {
+	id = hooks_n_cods.5
+	title = "hooks_n_cods.5.t"
+	desc = "hooks_n_cods.5.d"
+	picture = REVOLT_HUGUENOTS_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+			months_of_ruling = 72
+		}
+	}
+	
+	option = {
+		name = "hooks_n_cods.5.a"
+		ai_chance = { factor = 1 }
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 4
+			}
+		}
+	}
+}
+
+#Disgruntled everyone
+country_event = {
+	id = hooks_n_cods.6
+	title = "hooks_n_cods.6.t"
+	desc = "hooks_n_cods.6.d"
+	picture = REVOLT_HUGUENOTS_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+			months_of_ruling = 72
+		}
+	}
+	
+	option = {
+		name = "hooks_n_cods.6.a"
+		ai_chance = { factor = 1 }
+		add_stability = -1
+		add_country_modifier = {
+			name =  more_more_more_autonomy
+			duration = 1095
+		}
+	}
+}
+
+#Ships Raided
+country_event = {
+	id = hooks_n_cods.7
+	title = "hooks_n_cods.7.t"
+	desc = "hooks_n_cods.7.d"
+	picture = DUTCH_SHIPS_PLUNDERING_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+			months_of_ruling = 72
+		}
+	}
+	
+	option = {
+		name = "hooks_n_cods.7.a"
+		ai_chance = { factor = 1 }
+		add_years_of_income = -0.5
+	}
+}
+
+#Establish Stadthoudership
+country_event = {
+	id = hooks_n_cods.50
+	title = "hooks_n_cods.50.t"
+	desc = "hooks_n_cods.50.d"
+	picture = DIET_eventPicture
+	
+	trigger = {
+		had_country_flag = {
+			flag = hooks_and_cods_reflavoured
+			days = 21900
+		}
+	}
+	
+	option = { #Fall to nobles & rebels
+		name = hooks_n_cods.50.a
+		add_government_reform = stadthalter_monarchy_reform
+		add_prestige = -25
+	}
+	
+	option = { #be prideful, don't concede
+		name = hooks_n_cods.50.b
+		add_prestige = 15
+		add_legitimacy = 10
+	}
+}
+
+#We weathered the storm
+country_event = {
+	id = hooks_n_cods.100
+	title = "hooks_n_cods.100.t"
+	desc = {
+		trigger = {
+			has_reform = stadthalter_monarchy_reform
+		}
+		desc = "hooks_n_cods.100.d.1"
+	}
+	desc = {
+		trigger = {
+			NOT = { has_reform = stadthalter_monarchy_reform }
+		}
+		desc = "hooks_n_cods.100.d.2"
+	}
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hooks_n_cods.100.a
+		set_country_flag = had_cods_and_hooks
+	}
+}

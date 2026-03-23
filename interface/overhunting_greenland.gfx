@@ -6,3 +6,11 @@ spriteTypes = {
         loadType = "INGAME"
     }
 }
+spriteTypes = {
+    spriteType = {
+        name = "GFX_disaster_cods_and_hooks_reflavoured"
+        texturefile = "gfx//interface//disasters//hooks_and_cods.dds"
+        noOfFrames = 3
+        loadType = "INGAME"
+    }
+}

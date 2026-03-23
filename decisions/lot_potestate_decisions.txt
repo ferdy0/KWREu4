@@ -271,6 +271,29 @@ country_decisions = {
 		}
 	}
 	
+	councils_of_trent_repercussions = {
+		
+		potential = {
+			OR = {
+				tag = CAS
+				tag = SPA
+			}
+			is_council_enabled = yes
+		}
+		
+		allow = {
+			has_idea_group = humanist_ideas
+			council_position = harsh
+		}
+		
+		effect = {
+			country_event = {
+				id = flavor_spa.1050
+				days = 30
+			}
+		}
+	}
+	
 	enforce_lux_dynasty_treaty = {
 		major = yes
 		

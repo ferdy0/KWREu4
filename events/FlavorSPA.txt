@@ -5,6 +5,7 @@
 namespace = flavor_spa
 normal_or_historical_nations = yes
 
+# Some of this might not bear the proper in-universe localisation but Milch didn't require that so I (Lot) decided to skip it for my own mental health.
 # The Iberian Wedding
 country_event = {
 	id = flavor_spa.9999
@@ -105,7 +106,7 @@ country_event = {
 	
 	option = {		# Let us bind their Dynasty to ours
 		name = flavor_spa.9999.a
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 100 }
 		if = {
 			limit = { tag = CAS }
 			create_union = POR
@@ -166,7 +167,7 @@ country_event = {
 	}
 	option = {		# No let us marry a local talent instead
 		name = flavor_spa.9999.b
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 0 }
 		add_stability_or_adm_power = yes
 		if = {
 			limit = { tag = CAS }
@@ -316,6 +317,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		is_year = 1492
 		NOT = { has_global_flag = columbus_happened }
 		has_idea = quest_for_the_new_world
 		OR = {
@@ -3014,6 +3016,172 @@ country_event = { #The Spanish Dollar
 			amount = 1
 		}
 		
+	}
+}
+
+country_event = {
+	id = flavor_spa.1050
+	title = flavor_spa.1050.t
+	desc = flavor_spa.1050.d
+	picture = JESUIT_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_spa.1050.a
+		
+		change_religion = jewish
+		add_stability = -1
+		add_legitimacy = -20
+		set_ruler_religion = jewish
+		set_heir_religion = jewish
+		capital_scope = {
+			change_religion = jewish
+		}
+		hidden_effect = {
+			country_event = {
+				id = flavor_spa.1051
+				days = 30
+			}
+			country_event = {
+				id = flavor_spa.1051
+				days = 180
+			}
+			country_event = {
+				id = flavor_spa.1051
+				days = 360
+			}
+			country_event = {
+				id = flavor_spa.1051
+				days = 730
+			}
+			country_event = {
+				id = flavor_spa.1051
+				days = 1460
+			}
+			country_event = {
+				id = flavor_spa.1051
+				days = 2920
+			}
+			country_event = {
+				id = flavor_spa.1051
+				days = 5840
+			}
+		}
+	}
+	
+	option = {
+		name = flavor_spa.1050.b
+		
+		kill_ruler = yes
+	}
+}
+
+country_event = {
+	id = flavor_spa.1051
+	title = flavor_spa.1051.t
+	desc = flavor_spa.1051.d
+	picture = JUDAISM_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_spa.1051.a
+		
+		random_owned_province = {
+			limit = {
+				religion = catholic
+			}
+			change_religion = jewish
+		}
+		random_owned_province = {
+			limit = {
+				religion = catholic
+			}
+			change_religion = jewish
+		}
+	}
+}
+
+country_event = {
+	id = flavor_spa.1052
+	title = flavor_spa.1052.t
+	desc = flavor_spa.1052.d
+	picture = JUDAISM_TEMPLE_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = CAS
+			tag = SPA
+		}
+		num_of_religion = {
+			religion = jewish
+			value = 0.3
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = flavor_spa.1052.a
+		
+		random_owned_province = {
+			limit = {
+				religion = jewish
+				NOT = { culture = sephardi }
+			}
+			change_culture = sephardi
+		}
+		hidden_effect = {
+			country_event = {
+				id = flavor_spa.1053
+				days = 180
+			}
+			country_event = {
+				id = flavor_spa.1053
+				days = 540
+			}
+			country_event = {
+				id = flavor_spa.1053
+				days = 910
+			}
+			country_event = {
+				id = flavor_spa.1053
+				days = 1640
+			}
+			country_event = {
+				id = flavor_spa.1053
+				days = 3280
+			}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_spa.1053
+	title = flavor_spa.1053.t
+	desc = flavor_spa.1053.d
+	picture = JUDAISM_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_spa.1053.a
+		
+		random_owned_province = {
+			limit = {
+				religion = jewish
+				NOT = { culture = sephardi }
+			}
+			change_culture = sephardi
+		}
+		random_owned_province = {
+			limit = {
+				religion = jewish
+				NOT = { culture = sephardi }
+			}
+			change_culture = sephardi
+		}
 	}
 }
 

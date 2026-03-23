@@ -1,0 +1,99 @@
+#Inspired by Meiou & Taxes Cods & Hooks
+cods_and_hooks_reflavoured = {
+	potential = {
+		tag = NED
+		NOT = {
+			has_country_flag = had_cods_and_hooks
+		}
+	}
+	
+	can_start = {
+		custom_trigger_tooltip = {
+			tooltip = hooks_cods_reflavoured_reqs
+			NOT = {
+				had_country_flag = {
+					flag = formed_netherlands_flag
+					days = 54750
+				}
+			}
+		}
+		OR = {
+			has_female_heir = yes
+			NOT = {
+				heir_claim = 80
+			}
+		}
+	}
+	
+	can_stop = {
+		hidden_trigger = {
+			has_country_flag = had_cods_and_hooks
+		}
+	}
+	
+	progress = {
+		modifier = {
+			factor = 1
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { legitimacy = 70 }
+		}
+		modifier = {
+			factor = 2
+			has_female_heir = yes
+		}
+		modifier = {
+			factor = 1
+			NOT = { heir_claim = 50 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { heir_claim = 75 }
+		}
+	}
+	
+	can_end = {
+		NOT = {
+			has_spawned_rebels = pretender_rebels
+		}
+		stability = 2
+		OR = {
+			had_country_flag = {
+				flag = hooks_and_cods_reflavoured
+				days = 31025
+			}
+			AND = {
+				had_country_flag = {
+					flag = hooks_and_cods_reflavoured
+					days = 18250
+				}
+				has_reform = stadthalter_monarchy_reform
+			}
+		}
+		is_at_war = no
+	}
+	
+	modifier = {
+		global_unrest = 6
+		stability_cost_modifier = 0.2
+		min_autonomy = 35
+	}
+	
+	on_start = hooks_n_cods.1
+	on_end = hooks_n_cods.100
+	ended_by_country_breaking_to_rebels = no
+	
+	on_monthly = {
+		random_events = {
+			60 = 0
+			10 = hooks_n_cods.2
+			3 = hooks_n_cods.3
+			3 = hooks_n_cods.4
+			4 = hooks_n_cods.5
+			10 = hooks_n_cods.6
+			10 = hooks_n_cods.7
+		}
+	}
+}

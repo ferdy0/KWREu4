@@ -1,5 +1,5 @@
-owner = NOV
-controller = NOV
+owner = PLT
+controller = PLT
 capital = "Vyazma"
 is_city = yes
 culture = ryazanian
@@ -8,8 +8,7 @@ trade_goods = cloth
 base_tax = 8
 base_production = 1
 base_manpower = 2
-add_core = NOV
-add_core = RYA
+add_core = PLT
 discovered_by = eastern
 discovered_by = nomad_group
 discovered_by = ottoman

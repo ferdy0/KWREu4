@@ -5097,7 +5097,6 @@ potestate_unification = {
 				}
 			}
 			change_tag = NED
-			add_government_reform = stadthalter_monarchy_reform
 			swap_non_generic_missions = yes
 			on_change_tag_effect = yes
 			low_countries_region = {
