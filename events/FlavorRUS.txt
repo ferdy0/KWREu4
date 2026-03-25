@@ -927,7 +927,7 @@ country_event = {
 }
 
 # Fjodor Baikov's Diplomatic Incident
-country_event = {
+country_event = { # Kalani - Changed to Prestige so this event does something to Republican Russia
 	id = flavor_rus.18	
 	title = "flavor_rus.EVTNAME3419"
 	desc = "flavor_rus.EVTDESC3419"
@@ -961,7 +961,7 @@ country_event = {
 	option = {		# Pretend to be a Chinese Vassal
 		name = "flavor_rus.EVTOPTB3419"
 		ai_chance = { factor = 20 }
-		add_legitimacy = -5
+		add_prestige = -5
 		event_target:EmperorOfChina = {
 			add_opinion = {
 				who = ROOT
@@ -974,7 +974,7 @@ country_event = {
 		ai_chance = {
 			factor = 5
 		}
-		add_legitimacy = -5
+		add_prestige = -5
 		add_years_of_income = -0.25
 		event_target:EmperorOfChina = {
 			add_opinion = {
@@ -1084,7 +1084,7 @@ country_event = {
 }
 
 # The Treaty of Nerchiinsk
-country_event = {
+country_event = { # Kalani - Added an option for the Emperor of China
 	id = flavor_rus.20
 	
 	title = "flavor_rus.EVTNAME3421"
@@ -1097,6 +1097,7 @@ country_event = {
 		tag = RUS
 		is_year = 1650
 		OR = {
+			event_target:EmperorOfChina = { exists = yes }
 			exists = MNG
 			exists = QNG
 		}
@@ -1107,6 +1108,16 @@ country_event = {
 			}
 		}
 		OR = {
+			event_target:EmperorOfChina = {
+				NOT = { war_with = ROOT }
+				any_owned_province = {
+					any_neighbor_province = {
+						region = manchuria_region
+						owned_by = ROOT
+					}
+				}
+				total_development = 1000
+			}
 			MNG = {
 				NOT = { war_with = ROOT }
 				any_owned_province = {
@@ -1136,6 +1147,22 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
+			if = {
+				limit = {
+					event_target:EmperorOfChina = {
+						NOT = { war_with = ROOT }
+						any_owned_province = {
+							any_neighbor_province = {
+								region = manchuria_region
+								owned_by = ROOT
+							}
+						}
+					}
+				}
+				event_target:EmperorOfChina = {
+					set_country_flag = nerchiinsk_treaty
+				}
+			}
 			if = {
 				limit = {
 					MNG = {

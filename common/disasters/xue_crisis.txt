@@ -1,16 +1,14 @@
 ming_crisis = {
 	potential = {
-		OR = {
-			tag = MNG
-			tag = XUE
-		}
-		NOT = { has_country_flag = ming_crisis_happened }
+		tag = XUE
+		NOT = { has_country_flag = xue_crisis_happened }
 		normal_or_historical_nations = yes
 	}
 	
 	can_start = {
 		has_any_disaster = no
 		NOT = { current_age = age_of_discovery }
+		had_country_flag = { flag = xue_dynasty_formed days = 27375 } # 75 years, as per Luna's request
 		if = {
 			limit = {	
 				has_dlc = "Mandate of Heaven"
@@ -117,20 +115,20 @@ ming_crisis = {
 		global_trade_goods_size_modifier = -0.3
 	}
 	
-	on_start = ming_crisis.1
-	on_end = ming_crisis.7
+	on_start = ming_crisis.1 # Potentially new event to give some flavor?
+	on_end = ming_crisis.7 # Potentially new event to give some flavor?
 	
 	on_monthly = {
 		events = {
 			mch_missions.5 # Koxinga flees to Taiwan
-			ming_crisis.3 # Li Zicheng's Rebellion and the Shun Dynasty
-			ming_crisis.4 # Autonomy for Yunnan province
-			ming_crisis.5 # Losing Control in the South
+			xue_disaster.1 # Southern dynasty rises up
+			xue_disaster.2 # Northern dynasty rises up
+			xue_disaster.3 # Jurchen Protectorate
 		}
 		random_events = {
 			1000 = 0
 			100 = ming_crisis.6 # Rebellion
-			100 = ming_crisis.11
+			100 = xue_disaster.4
 		}
 	}
 }

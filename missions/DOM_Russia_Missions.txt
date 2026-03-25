@@ -677,6 +677,7 @@ mos_rus_eastern_europe = {
 				if = { limit = { accepted_culture = serbian } remove_accepted_culture = serbian }
 				if = { limit = { accepted_culture = bulgarian } remove_accepted_culture = bulgarian }
 				if = { limit = { accepted_culture = croatian } remove_accepted_culture = croatian }
+				if = { limit = { accepted_culture = old_pommeranian } remove_accepted_culture = old_pommeranian }
 				create_new_culture_group = {
 					culture_group = slavic
 					culture = russian
@@ -694,6 +695,7 @@ mos_rus_eastern_europe = {
 					culture14 = serbian
 					culture15 = bulgarian
 					culture16 = croatian
+					culture17 = old_pommeranian
 				}
 			}
 			balkan_region = {
