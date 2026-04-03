@@ -830,6 +830,321 @@ kalani_mild_growing_pains_calculation_effect = { # Recalculation to be more gene
 	}
 }
 
+kalani_explode_nwc_effect = {
+	# Makes cores for the rebels and then creates a size 5 rebellion.
+	if = { # Mikmaq
+		limit = {
+			NOT = { exists = MIK }
+		}
+		every_owned_province = { 
+			limit = {
+				OR = {
+					culture = mikmaq
+					# In case of culture conversion
+					area = lower_acadia_area
+					area = upper_acadia_area
+				}
+			}
+			add_core = MIK
+		}
+		random_owned_province = {
+			limit = {
+				any_core_country = {
+					tag = MIK
+				}
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				friend = MIK
+				size = 5
+			}
+		}
+	}
+	if = { # Maliseet
+		limit = {
+			NOT = { exists = MLS }
+		}
+		every_owned_province = { 
+			limit = {
+				OR = {
+					culture = maliseet
+					# In case of culture conversion
+					area = st_john_valley_area
+					area = eastern_maine_area
+				}
+			}
+			add_core = MLS
+		}
+		random_owned_province = {
+			limit = {
+				any_core_country = {
+					tag = MLS
+				}
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				friend = MLS
+				size = 5
+			}
+		}
+	}
+	if = { # Iroquois
+		limit = {
+			NOT = { exists = IRO }
+		}
+		every_owned_province = { 
+			limit = {
+				OR = {
+					culture = iroquois
+					# In case of culture conversion
+					area = hudson_valley_area
+					area = iroquoisia_area
+				}
+			}
+			add_core = IRO
+		}
+		random_owned_province = {
+			limit = {
+				any_core_country = {
+					tag = IRO
+				}
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				friend = IRO
+				size = 5
+			}
+		}
+	}
+	if = { # Huron
+		limit = {
+			NOT = { exists = HUR }
+		}
+		every_owned_province = { 
+			limit = {
+				OR = {
+					culture = huron
+					# In case of culture conversion
+					area = huronia_area
+				}
+			}
+			add_core = HUR
+		}
+		random_owned_province = {
+			limit = {
+				any_core_country = {
+					tag = HUR
+				}
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				friend = HUR
+				size = 5
+			}
+		}
+	}
+	if = { # Shawnee
+		limit = {
+			NOT = { exists = SHA }
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					culture = shawnee
+					# In case of culture conversion
+					area = kentucky_area
+					area = western_kentucky_area
+					area = appalachia_area
+				}
+			}
+			add_core = SHA
+		}
+		random_owned_province = {
+			limit = {
+				any_core_country = {
+					tag = SHA
+				}
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				friend = SHA
+				size = 5
+			}
+		}
+	}
+	if = { # Illini
+		limit = {
+			NOT = { exists = ILL }
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					culture = illini
+					# In case of culture conversion
+					area = illinois_country_area
+				}
+			}
+			add_core = ILL
+		}
+		random_owned_province = {
+			limit = {
+				any_core_country = {
+					tag = ILL
+				}
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				friend = ILL
+				size = 5
+			}
+		}
+	}
+	if = { # Creek
+		limit = {
+			NOT = { exists = CRE }
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					culture = creek
+					# In case of culture conversion
+					area = upper_american_georgia_area
+				}
+			}
+			add_core = CRE
+		}
+		random_owned_province = {
+			limit = {
+				any_core_country = {
+					tag = CRE
+				}
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				friend = CRE
+				size = 5
+			}
+		}
+	}
+}
+
+kalani_release_random_native_effect = {
+	random_owned_province = {
+		limit = {
+			OR = {
+				continent = north_america
+				continent = south_america
+				continent = oceania
+				continent = new_world
+			}
+			any_core_country = {
+				NOT = { tag = ROOT }
+				NOT = { tag = MIK }
+				NOT = { tag = MLS }
+				NOT = { tag = IRO }
+				NOT = { tag = HUR }
+				NOT = { tag = SHA }
+				NOT = { tag = ILL }
+				NOT = { tag = CRE }
+				exists = no
+			}
+		}
+		save_event_target_as = nwc_disaster_nationalist_province
+		random_core_country = {
+			limit = {
+				NOT = { tag = ROOT }
+				NOT = { tag = MIK }
+				NOT = { tag = MLS }
+				NOT = { tag = IRO }
+				NOT = { tag = HUR }
+				NOT = { tag = SHA }
+				NOT = { tag = ILL }
+				NOT = { tag = CRE }
+				exists = no
+			}
+			save_event_target_as = nwc_disaster_new_tag
+		}
+	}
+}
+
+kalani_german_colonist_culture_decider = {
+	if = { # If you're North German, pick your Primary Culture
+		limit = {
+			OR = {
+				primary_culture = pommeranian
+				primary_culture = prussian
+				primary_culture = baltic_german
+				primary_culture = lower_saxon
+				primary_culture = hannoverian
+				primary_culture = hessian
+				primary_culture = saxon
+			}
+		}
+		save_event_target_as = german_colonist_coutry
+	}
+	else_if = { # Otherwise, grab a North German province of an accepted culture
+		limit = {
+			OR = {
+				accepted_culture = pommeranian
+				accepted_culture = prussian
+				accepted_culture = baltic_german
+				accepted_culture = lower_saxon
+				accepted_culture = hannoverian
+				accepted_culture = hessian
+				accepted_culture = saxon
+			}
+			any_owned_province = {
+				OR = {
+					region = north_german_region
+					region = baltic_region
+				}
+				has_owner_accepted_culture = yes
+				OR = {
+					culture = pommeranian
+					culture = prussian
+					culture = baltic_german
+					culture = lower_saxon
+					culture = hannoverian
+					culture = hessian
+					culture = saxon
+				}
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_owner_accepted_culture = yes
+				OR = {
+					culture = pommeranian
+					culture = prussian
+					culture = baltic_german
+					culture = lower_saxon
+					culture = hannoverian
+					culture = hessian
+					culture = saxon
+				}
+			}
+			save_event_target_as = german_colonist_province
+		}
+	}
+}
+
+NWC_on_culture_promoted_effect = {
+	if = {
+		limit = { has_country_flag = nwc_cultural_autonomy_flag }
+		every_owned_province = {
+			limit = {
+				has_owner_accepted_culture = yes
+				NOT = { culture_group = ROOT }
+				NOT = { has_province_modifier = nwc_cultural_autonomy_modifier }
+			}
+			add_province_modifier = {
+				name = nwc_cultural_autonomy_modifier
+				duration = -1
+			}
+		}
+	}
+}
+
 NWC_on_culture_demoted_effect = {
 	if = {
         limit = {
@@ -850,11 +1165,55 @@ NWC_on_culture_demoted_effect = {
         }
     }
 	if = {
+		limit = { has_country_flag = nwc_cultural_autonomy_flag }
+		every_owned_province = {
+			limit = {
+				OR = {
+                    NOT = { has_owner_accepted_culture = yes }
+					culture_group = owner
+				}
+				has_province_modifier = nwc_cultural_autonomy_modifier
+			}
+			remove_province_modifier = nwc_cultural_autonomy_modifier
+		}
+	}
+	# Remove max accepted culture modifiers
+	if = {
 		limit = {
 			has_country_modifier = nwc_icelandic_culture_accepted
 			NOT = { accepted_culture = icelandic }
 		}
 		remove_country_modifier = nwc_icelandic_culture_accepted
+	}
+}
+
+NWC_on_primary_culture_changed_effect = {
+	if = {
+		limit = { has_country_flag = nwc_cultural_autonomy_flag }
+		every_owned_province = {
+			limit = {
+				has_owner_accepted_culture = yes
+				NOT = { culture_group = ROOT }
+				NOT = { has_province_modifier = nwc_cultural_autonomy_modifier }
+			}
+			add_province_modifier = {
+				name = nwc_cultural_autonomy_modifier
+				duration = -1
+			}
+		}
+	}
+	if = {
+		limit = { has_country_flag = nwc_cultural_autonomy_flag }
+		every_owned_province = {
+			limit = {
+				OR = {
+                    NOT = { has_owner_accepted_culture = yes }
+					culture_group = owner
+				}
+				has_province_modifier = nwc_cultural_autonomy_modifier
+			}
+			remove_province_modifier = nwc_cultural_autonomy_modifier
+		}
 	}
 }
 
@@ -956,5 +1315,14 @@ NWC_on_culture_change_effect = {
 			}
 			remove_province_modifier = nwc_cultural_autonomy_modifier
 		}
+	}
+	if = {
+		limit = {
+			has_province_modifier = nwc_cultural_autonomy_modifier
+			owner = { 
+				NOT = { has_country_flag = nwc_cultural_autonomy_flag }
+			}
+		}
+		remove_province_modifier = nwc_cultural_autonomy_modifier
 	}
 }

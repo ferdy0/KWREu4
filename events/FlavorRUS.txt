@@ -2367,6 +2367,20 @@ country_event = {
 			}
 			add_permanent_claim = ROOT
 		}
+		galich_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		perm_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
 		kama_area = {
 			limit = {
 				NOT = { is_permanent_claim = ROOT }
@@ -2521,6 +2535,24 @@ country_event = {
 country_event = {
 	id = flavor_rus.101
 	title = flavor_rus.101.t
+	desc = {
+		desc = flavor_rus.101.desc
+		trigger = { # Destruction of Novgorod
+			NOR = { 
+				tag = NOV
+				was_tag = NOV
+			} 
+		}
+	}
+	desc = {
+		desc = flavor_rus.101.desc.b
+		trigger = { # Preservation of Novgorod
+			OR = { 
+				tag = NOV
+				was_tag = NOV
+			} 
+		}
+	}
 	desc = flavor_rus.101.desc
 	picture = TRADE_GOODS_eventPicture
 	is_triggered_only = yes
@@ -2640,6 +2672,15 @@ country_event = { # Kalani - Reworked releasing Finland so it doesn't create ugl
 		}
 	}
 
+	# We will govern Finland ourselves with all means necessary
+	option = {
+		name = flavor_rus.105.b
+		add_adm_power = 75
+		ai_chance = {
+			factor = 1
+		}
+	}
+
 	# Kalani - Federal Republic of Finland
 	option = {
 		name = flavor_rus.105.c
@@ -2681,15 +2722,6 @@ country_event = { # Kalani - Reworked releasing Finland so it doesn't create ugl
 		custom_tooltip = flavor_rus.105.a.tt
 		ai_chance = {
 			factor = 0
-		}
-	}
-
-	# We will govern Finland ourselves with all means necessary
-	option = {
-		name = flavor_rus.105.b
-		add_adm_power = 75
-		ai_chance = {
-			factor = 1
 		}
 	}
 }

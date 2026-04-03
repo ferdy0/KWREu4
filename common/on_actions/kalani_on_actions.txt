@@ -1,7 +1,15 @@
+﻿
 
+on_culture_promoted = {
+    NWC_on_culture_promoted_effect = yes
+}
 
 on_culture_demoted = {
     NWC_on_culture_demoted_effect = yes
+}
+
+on_primary_culture_changed = {
+    NWC_on_primary_culture_changed_effect = yes
 }
 
 on_colony_finished = {

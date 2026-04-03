@@ -1,4 +1,4 @@
-ming_crisis = {
+xue_crisis = {
 	potential = {
 		tag = XUE
 		NOT = { has_country_flag = xue_crisis_happened }

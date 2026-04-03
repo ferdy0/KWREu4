@@ -3,14 +3,294 @@ country_event = {
     id = nwc_flavor.1
     title = nwc_flavor.1.t
     desc = nwc_flavor.1.d
-    picture = REFORM_eventPicture
+    picture = BANKRUPTCY_eventPicture
 
     is_triggered_only = yes
 
-    option = { # Actually, nevermind
+    option = {
         name = nwc_flavor.1.a
         custom_tooltip = nwc_explain_growing_pains_tt
         hidden_effect = { set_country_flag = nwc_growing_pains_flag } # Set the flag
         kalani_growing_pains_calculation_effect = yes # Initialize
+    }
+}
+
+namespace = nwc_disaster
+country_event = { # Opening event when disaster progress starts
+    id = nwc_disaster.1
+    title = nwc_disaster.1.t
+    desc = nwc_disaster.1.d
+
+    picture = NATIVES_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = nwc_disaster.1.a
+    }
+}
+
+country_event = { # Opening event when disaster itself starts
+    id = nwc_disaster.2
+    title = nwc_disaster.2.t
+    desc = nwc_disaster.2.d
+
+    picture = VILLAGE_BURNING_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = nwc_disaster.2.a
+        add_stability = -5
+    }
+}
+
+country_event = { # Closing event when disaster ends w/ native extermination
+    id = nwc_disaster.3
+    title = nwc_disaster.3.t
+    desc = nwc_disaster.3.d
+
+    picture = FARMING_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = nwc_disaster.3.a
+        set_country_flag = nwc_war_with_natives
+        swap_non_generic_missions = yes
+    }
+}
+
+country_event = { # Closing event when disaster ends w/ native negotiation
+    id = nwc_disaster.4
+    title = nwc_disaster.4.t
+    desc = nwc_disaster.4.d
+
+    picture = DIPLOMACY_SIGNING_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = nwc_disaster.4.a
+        set_country_flag = nwc_peace_with_natives
+        swap_non_generic_missions = yes
+    }
+}
+
+country_event = { # More natives rise up in revolt
+    id = nwc_disaster.5
+    title = nwc_disaster.5.t
+    desc = nwc_disaster.5.d
+
+    picture = NATIVES_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = nwc_disaster.6.a
+
+    }
+}
+
+country_event = { # Colonists demand retaliation against natives
+    id = nwc_disaster.6
+    title = nwc_disaster.6.t
+    desc = nwc_disaster.6.d
+
+    picture = ANGRY_MOB_eventPicture
+
+    is_triggered_only = yes
+
+    trigger = {
+        any_owned_province = {
+            kalani_is_native_culture_trigger = yes
+            controlled_by = ROOT
+            has_siege = no
+            is_city = yes
+        }
+    }
+
+    immediate = {
+        random_owned_province = {
+            limit = {
+                kalani_is_native_culture_trigger = yes
+                controlled_by = ROOT
+                is_city = yes
+                has_siege = no
+            }
+            save_event_target_as = native_province
+        }
+    }
+
+    option = { # Agree to their demands and genocide the natives
+        name = nwc_disaster.6.a
+        event_target:native_province = {
+            # Genocide the shit out of the natives, which will ironically stretch skuddo thin even more
+            add_devastation = 100
+            change_culture = ROOT
+            change_religion = ROOT
+        }
+    }
+
+    option = { # Ignore their demands and piss off the colonists
+        name = nwc_disaster.6.b
+    }
+}
+
+country_event = { # Burghers want to pull out their investment
+    id = nwc_disaster.7
+    title = nwc_disaster.7.t
+    desc = nwc_disaster.7.d
+
+    picture = DEBATE_REPUBLICAN_eventPicture
+
+    is_triggered_only = yes
+
+    trigger = {
+        has_estate = estate_burghers
+		estate_territory = { 
+			estate = estate_burghers
+			territory = 10
+		}
+        NOT = {
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 60
+			}
+		}
+    }
+
+    option = { # Pay out dividends to make them shut up
+        name = nwc_disaster.7.a
+        add_years_of_income = -0.1
+        add_estate_loyalty = { # Investors would prefer to keep their shares and get paid for it than sell them
+			estate = estate_burghers
+			loyalty = 10
+		}
+    }
+
+    option = { # Don't pay anything and face their wrath
+        name = nwc_disaster.7.b
+        add_estate_loyalty = { # Investors get really upset and anxious if they don't get paid
+			estate = estate_burghers
+			loyalty = -20
+		}
+    }
+
+    option = { # Offer to buy their shares to make them shut up
+        name = nwc_disaster.7.c
+        add_years_of_income = -0.25
+        # This is a lot of money to spend, especially for an anemic colony in the middle of a disaster
+        # but its actually well below "market price" of the shares compared to money earned from selling crownland
+        change_estate_land_share = { 
+			estate = estate_burghers 
+			share = -5
+		}
+        add_estate_loyalty = { # Creates a cascade effect of investors panic selling their shares, but its less severe than not paying.
+			estate = estate_burghers
+			loyalty = -5
+		}
+        add_estate_influence_modifier = {
+			estate = estate_burghers
+			desc = EST_VAL_SOLD_NWC_SHARES
+			influence = -10
+			duration = 730
+		}
+    }
+}
+
+country_event = { # The Hessians offer their services
+    id = nwc_disaster.8
+    title = nwc_disaster.8.t
+    desc = nwc_disaster.8.d
+
+    picture = SCOTTISH_MERCENARIES_eventPicture
+
+    is_triggered_only = yes
+
+    trigger = {
+        NOR = { 
+            manpower_percentage = 0.5 
+            has_country_flag = nwc_hessian_mercenaries_offered
+        }
+        num_of_owned_provinces_with = {
+            value = 5
+            is_city = yes
+            has_siege = no
+            controlled_by = ROOT
+        }
+    }
+
+    immediate = {
+        set_country_flag = nwc_hessian_mercenaries_offered
+    }
+
+    option = { # Turn down the Hessians because you're a broke ass loser
+        name = nwc_disaster.8.a
+    }
+
+    option = { # Oh my god yes please, anything to stem the bleeding, take all of my money
+        name = nwc_disaster.8.b
+        trigger = {
+            NOT = { has_idea_group = mercenary_ideas }
+        }
+        add_years_of_income = -0.5
+        add_yearly_manpower = 3
+        add_country_modifier = { # This lasts until the disaster is over
+			name = nwc_hessian_mercenaries
+			duration = -1
+		}
+        if = {
+            limit = {
+                num_of_hired_mercenary_companies = 1
+            }
+            while = {
+                limit = {
+                    any_hired_mercenary_company = {
+                        NOT = { has_company_manpower = 0.75 }
+                    }
+                }
+                random_hired_mercenary_company = {
+                    limit = {
+                        NOT = { has_company_manpower = 0.75 }
+                    }
+                    add_company_manpower = 1
+                }
+            }
+        }
+        set_country_flag = nwc_hessian_mercenaries_accepted
+    }
+
+    option = { # If you have mercenary ideas, accept the offer but haggle for a better rate
+        name = nwc_disaster.8.c
+        highlight = yes
+        trigger = {
+            has_idea_group = mercenary_ideas
+        }
+        add_years_of_income = -0.25
+        add_yearly_manpower = 3
+        add_country_modifier = { # This lasts until the disaster is over
+			name = nwc_hessian_mercenaries
+			duration = -1
+		}
+        if = {
+            limit = {
+                num_of_hired_mercenary_companies = 1
+            }
+            while = {
+                limit = {
+                    any_hired_mercenary_company = {
+                        NOT = { has_company_manpower = 0.75 }
+                    }
+                }
+                random_hired_mercenary_company = {
+                    limit = {
+                        NOT = { has_company_manpower = 0.75 }
+                    }
+                    add_company_manpower = 1
+                }
+            }
+        }
+        set_country_flag = nwc_hessian_mercenaries_accepted
     }
 }

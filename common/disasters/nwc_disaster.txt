@@ -1,0 +1,115 @@
+nwc_disaster = {
+    potential = {
+        had_country_flag = { flag = nwc_fakeout_peace days = 730 }
+        NOT = { has_country_flag = nwc_war_with_natives }
+        NOT = { has_country_flag = nwc_peace_with_natives }
+    }
+
+    can_start = {
+        had_country_flag = { flag = nwc_fakeout_peace days = 730 }
+        NOT = { has_country_flag = nwc_war_with_natives }
+        NOT = { has_country_flag = nwc_peace_with_natives }
+    }
+    can_end = {
+        stability = 1
+        NOT = { num_of_rebel_armies = 1 }
+        OR = {
+            has_country_flag = nwc_war_with_natives
+            has_country_flag = nwc_peace_with_natives
+        }
+    }
+    can_stop = {
+        always = no
+    }
+
+    progress = {
+		modifier = {
+			factor = 1
+            NOT = { stability = 1 }
+        }
+        # The crisis accelerates the more stretched thin skuddo is
+        modifier = { # Absolute best case scenario, the crisis will happen more ~7.5 years after completing the mission.
+            factor = 0.5
+            has_country_modifier = nwc_growing_pains_1
+        }
+        modifier = {
+            factor = 1.0
+            has_country_modifier = nwc_growing_pains_2
+        }
+        modifier = {
+            factor = 1.5
+            has_country_modifier = nwc_growing_pains_3
+        }
+        modifier = { # Reasonable best case scenario, we would expect the crisis to happen ~5 years after completing the mission
+            factor = 2.0
+            has_country_modifier = nwc_growing_pains_4
+        }
+        modifier = {
+            factor = 2.5
+            has_country_modifier = nwc_growing_pains_5
+        }
+        modifier = { # Reasonable worst case scenario, we would expect the crisis to happen ~4 years after completing the mission
+            factor = 3.0
+            has_country_modifier = nwc_growing_pains_6
+        }
+        modifier = {
+            factor = 3.5
+            has_country_modifier = nwc_growing_pains_7
+        }
+        modifier = {
+            factor = 4.0
+            has_country_modifier = nwc_growing_pains_8
+        }
+        modifier = {
+            factor = 4.5
+            has_country_modifier = nwc_growing_pains_9
+        }
+        modifier = { # Absolute worst case scenario, the crisis will happen ~2.5 years after completing the mission.
+            factor = 5.0
+            has_country_modifier = nwc_growing_pains_10
+        }
+    }
+
+    modifier = {
+        stability_cost_modifier = 0.5
+        global_unrest = 5 # Colonists & Natives Alike are unhappy
+        burghers_loyalty_modifier = -0.1 # Investors are panicking
+        native_uprising_chance = 2.0 # More of a nuisance than anything
+    }
+
+    on_start = nwc_disaster.2
+    on_end = nwc_disaster.3
+
+    on_monthly = {
+        events = {
+            nwc_disaster.8 # Hessians offer their services
+        }
+        random_events = {
+            1000 = 0
+            100 = nwc_disaster.5 # Natives rise up in revolt
+            100 = nwc_disaster.6 # Colonists want to do a genocide
+            100 = nwc_disaster.7 # Investor Panic
+        }
+    }
+
+    on_progress_effect = {
+        if = {
+            limit = {
+                NOT = { has_country_flag = nwc_disaster_fakeout_revealed }
+            }
+            set_country_flag = nwc_disaster_fakeout_revealed
+            country_event = { id = nwc_disaster.1 }
+        }
+        if = {
+			limit = {
+				NOT = { has_country_flag = nwc_disaster_begin_negotiations }
+				check_variable = {
+					which = nwc_disaster_progress
+					value = 10
+				}
+			}
+            set_country_flag = nwc_disaster_begin_negotiations
+            #country_event = { id = empire_of_china_nomadic_border_events.3 }
+        }
+    }
+}

@@ -9,50 +9,47 @@ ICE_missions_1 = {
         }
     }
     has_country_shield = yes
-	
-	ICE_build_fleet_mission = {
-        icon = mission_galleass
-        required_missions = {  }
-        position = 1
 
-        trigger = {
-            # Just so that skuddo can't instantly click the button
-            navy_size_percentage = 1
-            # Everything required to actually go do a colonialism
-            OR = { # Explorers can't go exploring if they don't have at least three heavy and/or light ships
-                num_of_heavy_ship = 3
-                num_of_light_ship = 3
-            }
-            # Greenland and Quebec only need one guy to deal with uprisings, but the American Northeast will require at least two
-            num_of_transport = 2
-        }
-
-        effect = {
-            create_explorer = { tradition = 80 }
-        }
-    }
-	
-	ICE_greenland_mission = {
+    ICE_marines_mission = {
         required_missions = { ICE_build_fleet_mission }
-        icon = mission_exploration
+        icon = mission_marines
         position = 2
+
         provinces_to_highlight = {
-            area = greenland_area
-			NOT = { owned_by = ROOT }
-			has_discovered = ROOT
+            province_id = 370
+            OR = {
+                NOT = { owned_by = ROOT }
+                has_dock_building_trigger = no
+            }
         }
 
         trigger = {
-            greenland_area = {
-				has_discovered = ROOT
-			}
+            if = {
+                limit = {
+                    OR = {
+                        has_dlc = "Domination"
+                        has_dlc = "Golden Century"
+                        has_dlc = "Rule Britannia"
+                        has_dlc = "Lions of the North"
+                    }
+                }
+                OR = {
+                    navy_tradition = 60 # If you don't have marines, have a strong naval tradition
+                    num_of_marines = 10 # Otherwise, just prove you can make a marine corps by yourself
+                } 
+            }
+            else = {
+                navy_tradition = 60 # If you don't have marines, have a strong naval tradition
+            }
+            370 = { 
+                owned_by = ROOT 
+                has_dock_building_trigger = yes
+            }
         }
 
         effect = {
-            # Gives skuddo a free colonist and a 50% discount to colonies to help the early game
-            add_country_modifier = {
-                name = "ice_early_colonization_modifier"
-                duration = 18250 # Just colonizing one province takes like 20+ years... and greenland is two provinces
+            370 = { # I know Sailors are attached to all dev types, but a little manpower bonus can't hurt
+                add_base_manpower = 2
             }
         }
     }
@@ -120,7 +117,7 @@ NWC_missions_1 = {
         }
     }
 
-    NCW_hudson_bay_mission = {
+    NWC_hudson_bay_mission = {
         required_missions = { 
             NWC_monopolize_great_lakes_mission
         }
@@ -156,9 +153,9 @@ NWC_missions_1 = {
         }
     }
 
-    NCW_tame_the_great_plains = {
+    NWC_tame_the_great_plains = {
         required_missions = { 
-            NCW_hudson_bay_mission
+            NWC_hudson_bay_mission
             NWC_southern_plantation_economy_mission 
         }
         icon = mission_colonize_louisiana
@@ -188,13 +185,20 @@ NWC_missions_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+            cascadia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
         }
     }
 
     # While everything before this is ambitious yet reasonable, everything after is just pure fantasy
-    NCW_north_american_supremacy_meme = {
+    NWC_north_american_supremacy_meme = {
         required_missions = { 
-            NCW_tame_the_great_plains
+            NWC_tame_the_great_plains
         }
         icon = mission_norwegian_america
         position = 8
@@ -234,11 +238,10 @@ NWC_missions_1 = {
 
         }
     }
-	
-	# While everything before this is ambitious yet reasonable, everything after is just pure fantasy
-    NCW_south_american_meme = {
+
+    NWC_south_american_meme = {
         required_missions = { 
-            NCW_north_american_supremacy_meme
+            NWC_north_american_supremacy_meme
         }
         icon = mission_norwegian_south_america
         position = 9
@@ -253,14 +256,13 @@ NWC_missions_1 = {
 
         effect = {
 			define_advisor = {
-				name = "Klaus Schwab"
-				skill = 5
-				culture = swabian
+                type = trader
+                name = "Klaus Schwab"
+                culture = swabian
                 religion = catholic
                 location = 4710
-                age = 33
+                skill = 3
                 discount = yes
-				type = trader
 			}
         }
     }
@@ -278,6 +280,55 @@ ICE_missions_2 = {
     }
     has_country_shield = yes
 	
+    ICE_build_fleet_mission = {
+        icon = mission_galleass
+        required_missions = {  }
+        position = 1
+
+        trigger = {
+            # Just so that skuddo can't instantly click the button
+            navy_size_percentage = 1
+            # Everything required to actually go do a colonialism
+            OR = { # Explorers can't go exploring if they don't have at least three heavy and/or light ships
+                num_of_heavy_ship = 3
+                num_of_light_ship = 3
+            }
+            # Greenland and Quebec only need one guy to deal with uprisings, but the American Northeast will require at least two
+            num_of_transport = 2
+        }
+
+        effect = {
+            create_explorer = {
+				tradition = 100
+			}
+			add_navy_tradition = 10
+        }
+    }
+	
+	ICE_greenland_mission = {
+        required_missions = { ICE_build_fleet_mission }
+        icon = mission_exploration
+        position = 2
+        provinces_to_highlight = {
+            area = greenland_area
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+        }
+
+        trigger = {
+            greenland_area = {
+				has_discovered = ROOT
+			}
+        }
+
+        effect = {
+            # Gives skuddo a free colonist and a 50% discount to colonies to help the early game
+            add_country_modifier = {
+                name = "ice_early_colonization_modifier"
+                duration = 18250 # Just colonizing one province takes like 20+ years... and greenland is two provinces
+            }
+        }
+    }
 }
 
 NWC_missions_2 = {
@@ -290,7 +341,7 @@ NWC_missions_2 = {
     has_country_shield = yes
 	
 	NWC_make_landfall_mission = { 
-        required_missions = { ICE_greenland_mission ICE_fishing_in_greenland_mission }
+        required_missions = { ICE_greenland_mission }
         icon = mission_settlers_north_america
         position = 3
         provinces_to_highlight = {
@@ -501,6 +552,20 @@ NWC_missions_2 = {
                     duration = 18250
                 }
             }
+            southeast_america_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+            mississippi_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
         }
     }
 
@@ -559,23 +624,6 @@ ICE_missions_3 = {
 
         }
     }
-	
-	ICE_fishing_in_greenland_mission = {
-        required_missions = { ICE_fish_markets }
-        icon = mission_sailor_boat
-        position = 2
-
-        provinces_to_highlight = {
-        }
-
-        trigger = {
-			
-        }
-
-        effect = {
-
-        }
-    }
 }
 
 NWC_missions_3 = {
@@ -624,32 +672,35 @@ NWC_missions_3 = {
                     culture = athabascan
                 }
                 is_city = yes
-				trade_goods = fur
+                trade_goods = fur
                 base_production = 3
-			}
+            }
         }
 
         effect = {
-            every_owned_province = {
-                limit = {
-                    OR = {
-                        culture_group = central_algonquian
-                        culture_group = eastern_algonquian
-                        culture_group = iroquoian
-                        culture_group = plains_algonquian
-                        culture_group = siouan
-                        culture = kiowa
-                        culture = chipewyan
-                        culture = athabascan
+            custom_tooltip = nwc_native_trade_effect_tt
+            hidden_effect = {
+                every_owned_province = {
+                    limit = {
+                        OR = {
+                            culture_group = central_algonquian
+                            culture_group = eastern_algonquian
+                            culture_group = iroquoian
+                            culture_group = plains_algonquian
+                            culture_group = siouan
+                            culture = kiowa
+                            culture = chipewyan
+                            culture = athabascan
+                        }
+                        is_city = yes
+                        trade_goods = fur
+                        base_production = 3
                     }
-                    is_city = yes
-				    trade_goods = fur
-                    base_production = 3
+                    add_province_modifier = {
+                        name = nwc_native_trades
+                        duration = 18250
+                    }
                 }
-                add_province_modifier = {
-					name = nwc_native_trades
-					duration = 7300
-				}
             }
         }
     }
@@ -748,7 +799,7 @@ NWC_missions_3 = {
                     NOT = {
                         OR = {
                             owned_by = NOR
-                            owned_by = NWC
+                           owned_by = NWC
                         }
                     }
                 }
@@ -809,68 +860,28 @@ NWC_missions_3 = {
         }
 
         effect = {
-            susquehanna_area = {
-                random_list = {
-                    20 = {
-                        # Nothing changes
+            # Kalani - I've elected to make this mission focus exclusively on Iron goods and removed copper.
+            # Because its the better trade good and Copper isn't as common in Appalachia, as per Banana's notes.
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        area = susquehanna_area
+                        area = great_valley_area
+                        province_id = 2553
+                        area = south_appalachia_area
+                        area = appalachia_area
                     }
-                    40 = {
-                        change_trade_goods = iron
-                    }
-                    40 = {
-                        change_trade_goods = copper
-                    }
-                }
-            }
-            great_valley_area = {
-                random_list = {
-                    20 = {
-                        # Nothing changes
-                    }
-                    40 = {
-                        change_trade_goods = iron
-                    }
-                    40 = {
-                        change_trade_goods = copper
+                    NOR = { # If you're already mining Iron (or Coal), don't replace it
+                        trade_goods = iron
+                        trade_goods = coal
                     }
                 }
-            }
-            2553 = {
-                random_list = {
-                    20 = {
+                random_list = { 
+                    40 = {
                         # Nothing changes
                     }
-                    40 = {
+                    60 = {
                         change_trade_goods = iron
-                    }
-                    40 = {
-                        change_trade_goods = copper
-                    }
-                }
-            }
-            south_appalachia_area = {
-                random_list = {
-                    20 = {
-                        # Nothing changes
-                    }
-                    40 = {
-                        change_trade_goods = iron
-                    }
-                    40 = {
-                        change_trade_goods = copper
-                    }
-                }
-            }
-            appalachia_area = {
-                random_list = {
-                    20 = {
-                        # Nothing changes
-                    }
-                    40 = {
-                        change_trade_goods = iron
-                    }
-                    40 = {
-                        change_trade_goods = copper
                     }
                 }
             }
@@ -1103,7 +1114,7 @@ NWC_missions_4 = {
                     }
 				    religion = ROOT
                 }
-                add_local_autonomy = -10 
+                add_nationalism = -5
             }
         }
     }
@@ -1154,7 +1165,9 @@ NWC_missions_4 = {
         }
 
         effect = {
-
+            hidden_effect = { # Disaster starts two years after completing the mission
+                set_country_flag = nwc_fakeout_peace
+            }
         }
     }
 }

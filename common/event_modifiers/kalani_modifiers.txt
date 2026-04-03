@@ -8,15 +8,25 @@ nwc_native_trades = {
     trade_goods_size_modifier = 0.10
 }
 
-nwc_german_cultural_acceptance = { # Rather than just giving acceptance on the whole group, just give Skuddo extra slots and a discount
-    num_accepted_cultures = 3
-    promote_culture_cost =  -0.25
+nwc_vinland_fur_trade = {
+    production_efficiency = 0.05
+}
+
+nwc_hessian_mercenaries = {
+    mercenary_manpower = 0.5
+    mercenary_cost = -0.25
+    mercenary_discipline = 0.1
 }
 
 nwc_cultural_autonomy_modifier = {
     min_local_autonomy = 10
     local_unrest = -3
     local_culture_conversion_cost = 0.5
+}
+
+kalani_sent_nwc_colonists_modifier = {
+    global_manpower_modifier = -0.10 # Sending colonists means they aren't back at home to be conscripted
+    global_colonial_growth = -50 # But sending colonists also means you straight up can't have your own
 }
 
 # Kalani - Growing Pains of the Colony, to represent the Norwegian-Icelandic population being stretched thin
@@ -107,7 +117,7 @@ nwc_araucanian_culture_group_accepted = {
     num_accepted_cultures = 4
 }
 
-nwc_aridomerican_culture_group_accepted = {
+nwc_aridoamerican_culture_group_accepted = {
     num_accepted_cultures = 6
 }
 

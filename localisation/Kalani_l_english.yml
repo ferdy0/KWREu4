@@ -16,6 +16,7 @@
  ICE_corrupt_the_althing_title: "Tip the Alþing in our Favour"
  ICE_protestantism_decision_title: "A Reaction to Chronoclism"
  ICE_establishing_royal_nwc_title: "Seek Royal Approval (P)"
+ ICE_marines_mission_title: "Icelandic Marine Corps"
  # NWC Missions
  NWC_make_landfall_mission_title: "Make Landfall in Vinland"
  NWC_mountains_just_like_home_mission_title: "The Scandes of the West"
@@ -30,10 +31,10 @@
  NWC_southern_plantation_economy_mission_title: "Plantations of the South (P)"
  NWC_west_indies_title: "Establish New Suðreyjar"
  NWC_monopolize_great_lakes_mission_title: "Surround the Great Lakes (P)"
- NCW_hudson_bay_mission_title: "Hudson Bay (P)"
- NCW_tame_the_great_plains_title: "Tame the Great Plains"
- NCW_north_american_supremacy_meme_title: "From Sea to Shining Sea"
- NCW_south_american_meme_title: "The New World Order"
+ NWC_hudson_bay_mission_title: "Hudson Bay (P)"
+ NWC_tame_the_great_plains_title: "Tame the Great Plains"
+ NWC_north_american_supremacy_meme_title: "From Sea to Shining Sea"
+ NWC_south_american_meme_title: "The New World Order"
  NWC_integrate_the_natives_title: "Skræling Integration"
  NWC_lay_with_the_natives_title: "Marriage with the Skrælings"
  NWC_eliminate_the_natives_title: "Eliminate the Skrælings"
@@ -43,7 +44,7 @@
 
  nwc_colonial_transfer_title: "Kalani Doofenshmirtz's Colony Merge-inator"
  colonial_nwc.1.title: "Kalani Doofenshmirtz's Colony Merge-inator"
- colonial_nwc.1.desc: "A Platypus? SKUDDO THE PLATYPUS!? Also yes, all of this is incredibly serious and incredibly canon. Fail RP my ass, you Triumvirate sons of bitches!"
+ colonial_nwc.1.desc: "A Platypus? SKUDDO THE PLATYPUS!? Also yes, all of this is incredibly serious and incredibly canon. Fail RP my ass, you Triumvirate sons (and daughters) of bitches!"
  colonial_nwc.1.a: "I actually quite like the Triumvirate, thank you very much!"
  colonial_nwc.1.b: "Consolidate Canada"
  colonial_nwc.1.c: "Consolidate Eastern America"
@@ -62,7 +63,14 @@
  nwc_flavor.1.d: "While the rediscovery and permanent settlement of Vinland has captured the imagination of investors back at home, we are forced to reckon with an unfortunate truth; Neither our stronghold of Iceland nor our mother country of Norway will be able to supply enough colonists to press our claims to the land. Should we continue regardless of this fact, what few settlers we have will be stretched precariously thin across this vast continent."
  nwc_flavor.1.a: "If only we were Englishmen..."
 
+ nwc_disaster.7.t: "Anxious Investors"
+ nwc_disaster.7.d: "The deteriorating situation in the colony has made our investors doubt the future of the company. Many want to see an immediate return on their investment before the company is dissolved."
+ nwc_disaster.7.a: "Keeping paying out the dividends as normal, we must not cause a panic."
+ nwc_disaster.7.b: "Temporarily reeze the dividend payments, surely they will understand."
+ nwc_disaster.7.c: "Offer to repurchase their shares, if they really are that concerned."
+
  nwc_icelandic_culture_accepted: "Icelandic Heritage"
+ EST_VAL_SOLD_NWC_SHARES: "Panic Selling of Shares: §Y$VAL$%§!"
 
  # Custom Tooltips for the Event
  nwc_explain_company_shares_tt: "The Burghers Estate Land represents company shares that are held by private and foreign investors.\n The Nobility Estate Land represents company shares that are held by your Overlord, and will disappear if you become Independent.\n Crownland represents company shares held directly by the company itself."
@@ -82,6 +90,10 @@
  nwc_transfer_la_plata_tt: "All provinces and colonial subjects in Colonial La Plata will be consolidated under the NWC."
  nwc_transfer_australia_tt: "All provinces and colonial subjects in Colonial Australia will be consolidated under the NWC."
 
+ nwc_native_trades: "Skræling Fur Trade"
+
+ nwc_native_trade_effect_tt: "§YEvery owned province§! that meets the mission requirements gets '§YSkræling Fur Trade§!' for §Y50 years§!, giving the following effects:\nLocal Goods Produced Modifier: §G+10.0%§!\nLocal Missionary Strength: §G+2.0%§!"
+ 
  nwc_growing_pains_1: "Stretched Thin"
  nwc_growing_pains_2: "Stretched Thin"
  nwc_growing_pains_3: "Stretched Thin"
@@ -96,4 +108,5 @@
  nwc_icelandic_culture_accepted: "Icelandic Heritage"
 
  # Russian Stuff
+ flavor_rus.101.desc.b: "The city of [310.GetName] is one of the oldest. Dating all the way back to the 9th century, the city served as a major trade hub on the trade route between Scandinavia and the Byzantine Empire. Naturally, this city developed as one of the greatest trade hubs in East Europe.\nPLACEHOLDER TEXT!"
  flavor_rus.105.c: "Establish an autonomous Federal Republic instead."

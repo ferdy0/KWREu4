@@ -1,0 +1,25 @@
+kalani_is_native_culture = {
+    OR = {
+        culture_group = apachean
+        culture_group = araucanian
+        culture_group = aridoamerican
+        culture_group = caddoan
+        culture_group = central_algonquian
+        culture_group = central_american
+        culture_group = chibchan
+        culture_group = eastern_algonquian
+        culture_group = eskaleut
+        culture_group = iroquoian
+        culture_group = maranon
+        culture_group = matacoan
+        culture_group = mayan
+        culture_group = muskogean
+        culture_group = na_dene
+        culture_group = otomanguean
+        culture_group = penutian
+        culture_group = plains_algonquian
+        culture_group = siouan_culture
+        culture_group = sonoran
+        culture_group = tupi
+    }
+}

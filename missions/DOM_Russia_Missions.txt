@@ -132,6 +132,11 @@ mos_rus_conquer_west = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			33 = {
+				owned_by = ROOT
+				has_building = marketplace
+				has_building = dock
+			}
 			curonia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
@@ -149,6 +154,12 @@ mos_rus_conquer_west = {
 			add_country_modifier = {
 				name = "baltic_ambition_new"
 				duration = 9125
+			}
+			33 = {
+				add_province_modifier = {
+					name = "neva_fleet"
+					duration = -1
+				}
 			}
 			baltic_region = {
 				limit = {
@@ -755,8 +766,13 @@ nov_rus_conquer_west = {
 		has_dlc = "Domination"
 	}
 	potential = {
-		was_tag = NOV
-		tag = RUS
+		OR = {
+			tag = NOV
+			AND = {
+				was_tag = NOV
+				tag = RUS
+			}
+		}
 		has_dlc = "Domination"
 		NOT = { map_setup = map_setup_random }
 	}
@@ -1037,8 +1053,13 @@ nov_rus_eastern_europe = {
 		has_dlc = "Domination"
 	}
 	potential = {
-		was_tag = NOV
-		tag = RUS
+		OR = {
+			tag = NOV
+			AND = {
+				was_tag = NOV
+				tag = RUS
+			}
+		}
 		has_dlc = "Domination"
 		NOT = { map_setup = map_setup_random }
 	}
@@ -1586,6 +1607,7 @@ mos_rus_russian_consolidation = {
 	potential = {
 		OR = {
 			tag = MOS
+			tag = NOV
 			tag = RUS
 		}
 		has_dlc = "Domination"
@@ -2375,6 +2397,7 @@ mos_rus_russian_steppes = {
 	potential = {
 		OR = {
 			tag = MOS
+			tag = NOV
 			tag = RUS
 		}
 		has_dlc = "Domination"
@@ -2653,6 +2676,7 @@ mos_rus_california = {
 	potential = {
 		OR = {
 			tag = MOS
+			tag = NOV
 			tag = RUS
 		}
 		has_dlc = "Domination"
@@ -2768,8 +2792,13 @@ nov_rus_russian_navy = {
 		has_dlc = "Domination"
 	}
 	potential = {
-		was_tag = NOV
-		tag = RUS
+		OR = {
+			tag = NOV
+			AND = {
+				was_tag = NOV
+				tag = RUS
+			}
+		}
 		has_dlc = "Domination"
 		NOT = { map_setup = map_setup_random }
 	}
@@ -2852,6 +2881,7 @@ mos_rus_siberian_conquest = {
 	potential = {
 		OR = {
 			tag = MOS
+			tag = NOV
 			tag = RUS
 		}
 		has_dlc = "Domination"
@@ -3257,6 +3287,7 @@ mos_rus_new_world = {
 	potential = {
 		OR = {
 			tag = MOS
+			tag = NOV
 			tag = RUS
 		}
 		has_dlc = "Domination"
