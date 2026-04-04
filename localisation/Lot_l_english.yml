@@ -388,6 +388,7 @@
  potestate_peasant_freedom_desc:0 "A true freedom, as early medieval Frisia used to be as well. A governmental form where peasant communities hold the power themselves and elect rulers from among their leaders."
  integrate_east_frisia_pot_title:0 "Integrate East Frisia"
  integrate_east_frisia_pot_desc:0 "Long East Frisia has been a freedom independent of our Potestate. In an increasingly volatile world they deserve the protection of the combined armies of our potestate. To retain their true freedom and independence they shall not be included in election for a new potestate."
+ potestate_condoned_provinces:0 "Potential Potestal Provinces"
  ###### Dutch Missions & the VOC ####################
  NED_ESTABLISH_VOC_IN_INDONESIA:0 "We will establish the §Y[VOC.GetName]§! in the East Indies as our §YCommercial Enterprise§!."
  establish_voc_title:0 "Establish the VOC"
@@ -431,7 +432,9 @@
  lux_luxembourg_fortress_desc:0 "Despite the terrain of the Netherlands being mostly flat and swampy, it is apparent that we require defensible structures. None is a better candidate than a might fort in [94.GetName]."
  utr_archbishop_of_t_nether_title:0 "Archbishop of Utrecht"
  utr_archbishop_of_t_nether_desc:0 "We, the Prince-Bishops of Utrecht, hold the highest say in ecclesiastical matters over the Low Countries after only the Bishop-Elector of Cologne and the Supreme Pontiff. With good diplomacy and good persuasion we could perhaps solidify this position with us as supreme authority, the Archbishop, of the Low Countries."
- utr_archbishopric:0 "Archbishop of the Low Countries"
+ utr_archbishopric_c:0 "Archbishop of the Low Countries"
+ utr_archbishopric_p:0 "Centre of Dutch Protestantism"
+ utr_archbishopric_r:0 "Centre of Dutch Reformed Christianity"
  brb_compete_flanders_title:0 "Dig the Willebroek Canal"
  brb_compete_flanders_desc:0 "From river to Brussel Brabant will be free. With a canal through Willebroek to Brussel we could bypass the tolls of Mechelen when ferrying market goods from Antwerp to Brussel and increase our economy."
  brussel_schelde_zeekanaal:0 "Kanaal van Willebroek"
@@ -590,6 +593,9 @@
  dc_lot_defender_of_christianity_2_4_desc:0 "As the principal frontier between Catholicism and Orthodoxy, we have come to be known as the Bulwark of Catholicism. By demonstrating our ability to match anything the heathens and schismatics can throw at us, we can ensure that this title is thoroughly deserved."
  dc_lot_defend_croatia_2_5_title:0 "Defend Catholic Croatia"
  dc_lot_defend_croatia_2_5_desc:0 "With the collapse of the Byzantine empire we find ourselves with a unique opportunity to defend the Catholics of Croatia. Their fledgling state cannot hope to stand up to its ambitious neighbours but by bringing them under our protection we can guarantee their survival."
+ flavour_hun.1.t:0 "The Recatholisation of Croatia"
+ flavour_hun.1.d:0 "Under Imperial policy the catholics of Croatia were free to practice the Latin rite and safeguarded from missionary zeal. With the shattering of the Byzantine empire these protections were no longer guaranteed and the persecution of Croation catholics necessitated our intervention. Now free from Orthodox rule the catholic minorities have returned to the Latin rite en masse."
+ flavour_hun.1.a:0 "Today is a great day for the one true Catholic Christianity!"
  dc_lot_ally_latin_empire_2_6_title:0 "A Catholic Union"
  dc_lot_ally_latin_empire_2_6_desc:0 "Thought the ties of matrimonial union do not bind as strongly in our time as in our father's times a union between the preemintent Catholic states of the Balkans should prove a power to be reckoned with."
  sb_lot_rival_galicia_volhynia_3_1_title:0 "Rival Galicia- Volhynia"
@@ -611,6 +617,8 @@
  bte_lot_reconquer_greece_5_8_desc:0 "#Tbd"
  bte_lot_contend_wallachia_5_9_title:0 "A Principality on the Danube"
  bte_lot_contend_wallachia_5_9_desc:0 "#Tbd"
+ catholic_minority_croats:0 "Local Catholic Minority"
+ yoooo_catholic_croatia:0 "Reclaimed Catholic Croatia"
  ###### Hooks & Cods Disaster #######################
  cods_and_hooks_reflavoured:0 "Hook & Cod Wars"
  cods_and_hooks_reflavoured_desc:0 "With the establishment of the hereditary Potestate we might have overplayed our hand. The nobles of the various freedoms wear their anxieties on their sleaves and abuse the legitimacy of our heir to contest our dominance over the potestal title."
@@ -659,4 +667,5 @@
  hooks_n_cods.100.d.1:0 "Through compromise and negotiation we have come to an agreeable form of governance for all parties involved. Just like the water boards take in the voices of the populace of their waterschappen so too the potestate will represent the voices of all of our citizens."
  hooks_n_cods.100.d.2:0 "We have held out against the demands of the Hooks and Cods and proved once again the traditional might of the House of $DYNASTY$."
  hooks_n_cods.100.a:0 "Huzzah for $COUNTRY_ADJ$ traditions!"
- 
+ ###### Minor Requests 'ere & there #################
+ tea_horse_road:0 "Tea Horse Road"

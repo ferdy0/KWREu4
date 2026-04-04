@@ -24,7 +24,7 @@ dutch_water_boards = {
 	}
 	
 	on_deactivation = {
-	add_unrest = 5
+		add_unrest = 5
 	}
 }
 
@@ -72,40 +72,53 @@ der_sumpfdrache = {
 	}
 }
 
-utr_archbishopric = {
+utr_archbishopric_c = { #catholic
 	potential = {
 		has_building = cathedral
 	}
 	trigger = {
 		owner = {
-			OR = {
-				religion = catholic
-				religion = protestant
-				religion = reformed
-			}
+			religion = catholic
 		}
 	}
-	if = {
-		limit = {
-			owner = { religion = catholic }
-		}
-		diplomats = 1
-		diplomatic_upkeep = 1
-		local_religious_conversion_resistance = 0.1
+	diplomats = 1
+	diplomatic_upkeep = 1
+	local_religious_conversion_resistance = 0.1
+	
+	on_activation = {
 	}
-	else_if = {
-		limit = {
-			owner = { religion = protestant }
-		}
-		local_religious_unity_contribution = -0.1
-		local_missionary_strength = -0.01
+	
+	on_deactivation = {
 	}
-	else_if = {
-		limit = {
-			owner = { religion = reformed }
-		}
-		local_missionary_strength = -0.02
+}
+utr_archbishopric_p = { #protestant
+	potential = {
+		has_building = cathedral
 	}
+	trigger = {
+		owner = {
+			religion = protestant
+		}
+	}
+	local_religious_unity_contribution = -0.1
+	local_missionary_strength = -0.01
+	
+	on_activation = {
+	}
+	
+	on_deactivation = {
+	}
+}
+utr_archbishopric_r = { #reformed
+	potential = {
+		has_building = cathedral
+	}
+	trigger = {
+		owner = {
+			religion = reformed
+		}
+	}
+	local_missionary_strength = -0.02
 	
 	on_activation = {
 	}
@@ -137,4 +150,71 @@ silesian_tithes = {
 	
 	on_deactivation = {
 	}
+}
+
+tea_horse_road = {
+	potential = {
+	}
+	trigger = {
+		OR = {
+			owner = { #Dhaka is friends with Lhasa
+				owns_or_non_sovereign_subject_of = 564 #Dhaka
+				any_known_country = {
+					owns_or_non_sovereign_subject_of = 677 #Lhasa
+					marriage_with = ROOT
+				}
+			}
+			owner = { #Dhaka is friends with Chengdu
+				owns_or_non_sovereign_subject_of = 564 #Dhaka
+				any_known_country = {
+					owns_or_non_sovereign_subject_of = 679 #Chengdu
+					marriage_with = ROOT
+				}
+			}
+			owner = { #Lhasa is friends with Dhaka
+				owns_or_non_sovereign_subject_of = 677 #Lhasa
+				any_known_country = {
+					owns_or_non_sovereign_subject_of = 564 #Dhaka
+					marriage_with = ROOT
+				}
+			}
+			owner = { #Lhasa is friends with Chengdu
+				owns_or_non_sovereign_subject_of = 677 #Lhasa
+				any_known_country = {
+					owns_or_non_sovereign_subject_of = 679 #Chengdu
+					marriage_with = ROOT
+				}
+			}
+			owner = { #Chengdu is friends with Dhaka
+				owns_or_non_sovereign_subject_of = 679 #Chengdu
+				any_known_country = {
+					owns_or_non_sovereign_subject_of = 564 #Dhaka
+					marriage_with = ROOT
+				}
+			}
+			owner = { #Chengdu is friends with Lhasa
+				owns_or_non_sovereign_subject_of = 679 #Chengdu
+				any_known_country = {
+					owns_or_non_sovereign_subject_of = 677 #Lhasa
+					marriage_with = ROOT
+				}
+			}
+			AND = { #Owns all of the main hubs
+				owner = { owns_or_non_sovereign_subject_of = 564 } #Dhaka
+				owner = { owns_or_non_sovereign_subject_of = 677 } #Lhasa
+				owner = { owns_or_non_sovereign_subject_of = 679 } #Chengdu
+			}
+		}
+	}
+	trade_value_modifier = 0.1
+	local_institution_spread = 0.05
+	local_prosperity_growth = 0.05
+	
+	on_activation = {
+	}
+	
+	on_deactivation = {
+		add_prosperity = -2
+	}
+	picture = "golden_highway_complete"
 }

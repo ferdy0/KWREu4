@@ -4901,6 +4901,25 @@ on_province_owner_change = {
 			duration = -1
 		}
 	}
+	
+	if = {
+		limit = {
+			owner = {
+				OR = {
+					has_reform = potestate_overlord_mon
+					has_reform = potestate_overlord_rep
+					has_reform = potestate_overlord_theo
+					has_reform = potestate_freedom_mon
+					has_reform = potestate_freedom_rep
+					has_reform = potestate_peasant_freedom
+					has_reform = potestate_freedom_theo
+				}
+			}
+			NOT = { province_group = potestate_condoned_provinces }
+			continent = europe
+		}
+		cede_province = previous_owner
+	}
 }
 
 # country

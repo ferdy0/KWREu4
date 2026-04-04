@@ -1,0 +1,32 @@
+########################################
+# Flavor events for Hungary
+#
+# written by Lot26
+########################################
+
+namespace = flavour_hun
+normal_or_historical_nations = yes
+
+#croatian recatholisation
+country_event = {
+	id = flavour_hun.1
+	title = "flavour_hun.1.t"
+	desc = "flavour_hun.1.d"
+	picture = REBELLION_AGAINST_ANGLICANS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavour_hun.1.a"
+		CRO = {
+			change_religion = catholic
+			every_owned_province = {
+				limit = {
+					has_province_modifier = catholic_minority_croats
+				}
+				change_religion = catholic
+				remove_province_modifier = catholic_minority_croats
+			}
+		}
+	}
+}

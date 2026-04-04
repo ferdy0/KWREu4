@@ -3236,7 +3236,7 @@ utrecht_local_flavour = {
 		}
 	}
 	
-	utr_archbishop_of_t_nether = { #i hope this works
+	utr_archbishop_of_t_nether = { #i hope this works ##i now think this works
 		icon = eastern_catholicization
 		position = 2
 		required_missions = {  }
@@ -3260,7 +3260,9 @@ utrecht_local_flavour = {
 		effect = {
 			98 = {
 				add_building = cathedral
-				add_province_triggered_modifier = utr_archbishopric
+				add_province_triggered_modifier = utr_archbishopric_c
+				add_province_triggered_modifier = utr_archbishopric_p
+				add_province_triggered_modifier = utr_archbishopric_r
 			}
 		}
 	}

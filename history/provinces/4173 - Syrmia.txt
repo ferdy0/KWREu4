@@ -14,3 +14,7 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = western
+add_permanent_province_modifier = {
+	name = catholic_minority_croats
+	duration = 54750
+}

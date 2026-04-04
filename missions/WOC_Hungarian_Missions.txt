@@ -964,7 +964,43 @@ lot_defend_catholicism_2_2 = {
 		}
 		
 		effect = {
-			#idk
+			if = {
+				limit = {
+					CRO = {
+						is_subject_of = ROOT
+					}
+				}
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = slavonia_area
+							area = croatia_area
+							area = east_adriatic_coast_area
+						}
+					}
+					cede_province = CRO
+				}
+			}
+			else = {
+				slavonia_area = {
+					add_core = CRO
+				}
+				croatia_area = {
+					add_core = CRO
+				}
+				east_adriatic_coast_area = {
+					add_core = CRO
+				}
+				create_vassal = CRO
+			}
+			add_country_modifier = {
+				name = yoooo_catholic_croatia
+				duration = 9125
+			}
+			country_event = {
+				id = flavour_hun.1
+				days = 30
+			}
 		}
 	}
 	

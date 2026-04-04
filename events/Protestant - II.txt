@@ -1,8 +1,8 @@
-# The Protestant Reformation
+# The Norwegian Protestant Reformation
 country_event = {
-	id = 2001
-	title = "EVTNAME2001"
-	desc = "EVTDESC2001"
+	id = norwegian_reformation_begins
+	title = norwegian_reformation_begins.t
+	desc = norwegian_reformation_begins.d
 	picture = {	
 		trigger = {
 			has_dlc = "Emperor"
@@ -19,14 +19,13 @@ country_event = {
 	major = yes
 	
 	trigger = {
-		is_year = 1560
 		NOT = { is_religion_enabled = protestant }
 		religion = catholic
 		is_defender_of_faith = no	
 		NOT = { has_reform = papacy_reform }
 		reform_desire = 1
 		capital_scope = {
-			continent = europe
+			region = scandinavia_region
 		}
 		any_owned_province = {
 			can_have_center_of_reformation_trigger = {
@@ -36,23 +35,8 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 4000
+		months = 2000
 		
-		modifier = {
-			factor = 2
-			PAP = { is_part_of_hre = yes }
-			OR = {
-				culture_group = germanic
-				culture_group = scandinavian
-				culture_group = british
-				primary_culture = anglois
-				culture_group = west_slavic
-				primary_culture = czech_new
-				primary_culture = sorbian_new
-				primary_culture = schlesian_new
-				primary_culture = polish_new
-			}
-		}
 		modifier = {
 			factor = 0.9
 			reform_desire = 1.05
@@ -75,12 +59,16 @@ country_event = {
 		}
 		
 		modifier = {
-			factor = 0.75
-			NOT = { num_of_cities = 10 }
+			factor = 0.5
+			AND = {
+				is_or_was_tag = { tag = NOR }
+				ai = no
+			}
 		}
+		
 		modifier = {
 			factor = 0.75
-			NOT = { num_of_cities = 2 }
+			is_year = 1500
 		}
 		
 		modifier = {
@@ -103,43 +91,11 @@ country_event = {
 		modifier = {
 			factor = 0.75
 			NOT = { has_opinion = { who = PAP value = -150 } }
-		}		
-		modifier = {
-			factor = 2.0
-			government = theocracy
-		}
-		modifier = {
-			factor = 2
-			has_dlc = "Rule Britannia"	#For Anglicanism
-			OR = {
-				culture_group = british
-				primary_culture = anglois
-			}
-		}
-		modifier = {
-			factor = 8.0
-			OR = {
-				NOT = { exists = PAP }
-				PAP = { is_part_of_hre = no }
-			}
-			OR = {
-				culture_group = latin
-				culture_group = iberian
-			}
-		}
-		modifier = {
-			factor = 0.75
-			PAP = { is_part_of_hre = yes }
-			is_part_of_hre = no
-			OR = {
-				culture_group = latin
-				culture_group = iberian
-			}
 		}
 	}
 
 	option = {
-		name = "EVTOPTA2001"
+		name = norwegian_reformation_begins.a
 		enable_religion = protestant
 		random_owned_province = {
 			limit = {
@@ -187,4 +143,3 @@ country_event = {
 		}
 	}
 }
-

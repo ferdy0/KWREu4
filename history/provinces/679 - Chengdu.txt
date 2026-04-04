@@ -18,3 +18,4 @@ add_core = MNG
 add_core = SHU
 discovered_by = chinese
 discovered_by = nomad_group
+add_province_triggered_modifier = tea_horse_road

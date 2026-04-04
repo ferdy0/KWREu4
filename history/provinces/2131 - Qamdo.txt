@@ -14,3 +14,4 @@ add_core = UTS
 discovered_by = chinese
 discovered_by = nomad_group
 discovered_by = ottoman
+add_province_triggered_modifier = tea_horse_road

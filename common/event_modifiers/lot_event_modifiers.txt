@@ -114,3 +114,10 @@ ready_to_secede_from_this_byz = {  }
 more_more_more_autonomy = {
 	min_autonomy = 50
 }
+catholic_minority_croats = {
+	local_tolerance_of_heretics = 2
+}
+yoooo_catholic_croatia = {
+	papal_influence = 0.5
+	relation_with_same_religion = 15
+}
