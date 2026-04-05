@@ -4172,6 +4172,7 @@ ARB_hedjaz_najd_bedouin_potential = {
 		tag = MFL 
 		tag = ANZ
 		tag = FAD
+		tag = IRQ # Kalani - because Ferdy decided to be sloppy and lazy, I have to be the one to fix this
 	}
 	NOT = { map_setup = map_setup_random }
 }
