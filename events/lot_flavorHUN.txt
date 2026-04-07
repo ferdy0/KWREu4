@@ -30,3 +30,81 @@ country_event = {
 		}
 	}
 }
+
+#the satellite kingdoms
+country_event = {
+	id = flavour_hun.2
+	title = "flavour_hun.2.t"
+	desc = "flavour_hun.2.d"
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			VOL = {
+				change_religion = catholic
+				change_technology_group = western
+				define_ruler = {
+					name = "Mátyás I"
+					dynasty = "Báthory"
+					culture = hungarian
+					religion = catholic
+					age = 24
+					male = yes
+				}
+				remove_consort = yes
+				remove_heir = { allow_new_heir_ = yes }
+			}
+		}
+	}
+	
+	after = {
+		hidden_effect = {
+			vassalize = GAL
+			GAL = {
+				change_religion = catholic
+				change_primary_culture = ruthenian
+				change_technology_group = eastern
+				define_ruler = {
+					name = "Péter I"
+					dynasty = "Celko"
+					culture = hungarian
+					religion = catholic
+					age = 21
+					male = yes
+				}
+				remove_consort = yes
+				remove_heir = { allow_new_heir_ = yes }
+			}
+			VOL = {
+				override_country_name = KINGDOM_OF_VOLHYNIA
+			}
+		}
+	}
+	
+	option = {
+		name = "flavour_hun.2.a"
+	}
+	
+	option = {
+		name = "flavour_hun.2.b"
+		hidden_effect = {
+			VOL = {
+				every_owned_province = {
+					limit = {
+						region = ruthenia_region
+					}
+					add_core = GAL
+				}
+				release = GAL
+				malopolska_area = {
+					add_permanent_claim = VOL
+				}
+				sandomierz_area = {
+					add_permanent_claim = VOL
+				}
+			}
+		}
+	}
+}

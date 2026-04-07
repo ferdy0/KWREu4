@@ -1158,29 +1158,49 @@ lot_securing_borders_2 = {
 		position = 1
 		
 		trigger = {
-			is_rival = VOL
-			#possibly an other requirement too
+			OR = {
+				AND = {
+					is_rival = VOL
+					trade_embargoing = VOL
+				}
+				any_known_country = {
+					owns_core_province = 279
+					is_enemy = HUN
+					trade_embargo_by = HUN
+				}
+			}
 		}
 		
 		effect = {
-			#either restore union or subjugation cb on galicia volhynia, not sure which
+			add_casus_belli = {
+				target = VOL
+				type = cb_vassalize_mission
+				months = 300
+			}
 		}
 	}
 	
 	sb_lot_satilite_galicia_volhynia_3_2 = {
 		icon = mission_lit_march_west
 		required_missions = { sb_lot_strengthen_army_1_1 sb_lot_rival_galicia_volhynia_3_1 }
-		position = 1
+		position = 2
 		
 		trigger = {
 			VOL = {
 				is_subject_of = HUN
+				NOT = { liberty_desire = 50 }
 			}
-			#possibly an other requirement too
 		}
 		
 		effect = {
-			#no clue yet
+			add_power_projection = {
+				type = 25_permanent_power_projection
+				amount = 25
+			}
+			country_event = {
+				id = flavour_hun.2
+				days = 25
+			}
 		}
 	}
 	
