@@ -35,10 +35,10 @@ monarch_names = {
 	"Tjudmund #1" = 20
 	"Skúli #1" = 15
 	"Eirik #1" = 10
-	"Harald #1" = 10
+	"Harald #4" = 10
 	"Magnus #2" = 10
-	"Olaf #3" = 10
-	"Sven #3" = 10
+	"Olaf #2" = 10
+	"Sven #1" = 10
 	"Alfr #0" = 5
 	"Grim #0" = 5
 	"Snorri #0" = 5
@@ -50,11 +50,11 @@ monarch_names = {
 	"Valdemar #0" = 0
 	"Ødd #0" = 0
 	
-	"Ylva #0" = -5
+	"Ylva #1" = -5
 	"Edla #1" = -1
 	"Mær #0" = -1
-	"Osterhild #0" = -1
-	"Åstra #0" = -1
+	"Osterhild #1" = -1
+	"Åstra #1" = -1
 }
 leader_names = {
 	"Amundsen"

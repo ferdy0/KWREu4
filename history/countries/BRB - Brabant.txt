@@ -31,7 +31,7 @@ capital = 92
 }
 1440.8.26 = {
 	monarch = {
-		name = "Godfried III"
+		name = "Godfried II"
 		dynasty = "de Boulogne"
 		adm = 5
 		dip = 4

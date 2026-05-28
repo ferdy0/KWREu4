@@ -71,7 +71,7 @@ monarch_names = {
 	"Pierre #0" = 0
 	"Raoul #0" = 0
 	"René #0" = 0
-	"Simon #0" = 0
+	"Simon #1" = 0
 	"Thibaut #0" = 0
 	"Xavier #0" = 0
 	

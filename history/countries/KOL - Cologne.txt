@@ -43,7 +43,7 @@ elector = yes
 }
 1368.8.25 = {
 	monarch = {
-		name = "Kuno I"
+		name = "Konrad II"
 		dynasty = "von Falkenstein"
 		adm = 6
 		dip = 5

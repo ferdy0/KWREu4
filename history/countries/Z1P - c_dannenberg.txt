@@ -34,7 +34,7 @@ set_country_flag = ZZZ_generated_converter_nation
 }
 1432.7.16 = {
 	monarch = {
-		name = "Hermann IV"
+		name = "Hermann I"
 		dynasty = "von Segeberg"
 		adm = 5
 		dip = 4

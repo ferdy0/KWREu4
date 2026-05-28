@@ -6,19 +6,107 @@ religion = catholic
 primary_culture = venetian
 capital = 112
 mercantilism = 15
-1444.11.11= {
+1355.4.21 = {
 	monarch = {
-		name = "Domínico"
-		dynasty = "degli Ubaldini"
+		name = "Giovanni IV"
+		dynasty = "Gradenigo"
+		birth_date = 1280.2.14
+		dip = 1
+		mil = 2
+		adm = 1
+	}
+}
+1356.8.13 = {
+	monarch = {
+		name = "Giovanni V"
+		dynasty = "Dolfin"
+		birth_date = 1303.2.14
+		dip = 4
+		mil = 4
+		adm = 2
+	}
+}
+1361.7.16 = {
+	monarch = {
+		name = "Lorenzo I"
+		dynasty = "Celsi"
+		birth_date = 1310.9.13
+		dip = 0
+		mil = 3
+		adm = 5
+	}
+}
+1365.7.18 = {
+	monarch = {
+		name = "Marco I"
+		dynasty = "Cornaro"
+		birth_date = 1286.2.14
+		dip = 4
+		mil = 4
+		adm = 2
+	}
+}
+1368.1.13 = {
+	monarch = {
+		name = "Andrea I"
+		dynasty = "Contarini"
+		birth_date = 1302.1.1
+		dip = 0
+		mil = 0
+		adm = 2
+	}
+}
+1382.6.10 = {
+	monarch = {
+		name = "Michele I"
+		dynasty = "Morosini"
+		birth_date = 1308.1.1
+		dip = 1
+		mil = 1
+		adm = 1
+	}
+}
+1382.10.16 = {
+	monarch = {
+		name = "Antonio I"
+		dynasty = "Venier"
+		birth_date = 1330.1.1
+		dip = 1
+		mil = 1
+		adm = 1
+	}
+}
+1400.11.23 = {
+	monarch = {
+		name = "Michele II"
+		dynasty = "Steno"
+		birth_date = 1331.2.14
+		dip = 1
+		mil = 2
+		adm = 1
+	}
+}
+1413.12.26 = {
+	monarch = {
+		name = "Tommaso I"
+		dynasty = "Mocenigo"
+		birth_date = 1343.2.14
+		dip = 4
+		mil = 4
+		adm = 2
+	}
+}
+1423.4.4 = {
+	monarch = {
+		name = "Francesco I"
+		dynasty = "Foscari"
 		adm = 5
 		dip = 4
 		mil = 5
-		birth_date = 1384.5.27
+		birth_date = 1373.6.19
 		religion = catholic
 		culture = venetian
 	}
-	add_ruler_personality = intricate_web_weaver_personality
-	add_ruler_personality = secretive_personality
 }
 1444.11.11= {
 	add_prestige = 79

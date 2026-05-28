@@ -30,17 +30,17 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Nikolai #1" = 30
+	"Nikolai #0" = 30
 	"Bótulfr #1" = 20
 	"Rolf #0" = 20
 	"Sigurd #2" = 20
 	"Simon #1" = 20
 	"Ingvar #0" = 15
 	"Arngrimm #0" = 10
-	"Járre #1" = 10
+	"Járre #0" = 10
 	"Nils-Sako #0" = 10
 	"Surtur #0" = 10
-	"Áilu #1" = 10
+	"Áilu #0" = 10
 	"Baeivi #0" = 5
 	"Jaco #0" = 5
 	"Frode #0" = 5

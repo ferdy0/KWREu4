@@ -45,7 +45,7 @@ add_accepted_culture = gascon
 }
 1402.12.13 = {
 	monarch = {
-		name = "Raymond I"
+		name = "Raymond V"
 		dynasty = "de Charolais"
 		adm = 3
 		dip = 3
@@ -83,7 +83,7 @@ add_accepted_culture = gascon
 1437.2.20 = {
 	heir = {
 		name = "Raymond"
-		monarch_name = "Raymond II"
+		monarch_name = "Raymond VI"
 		dynasty = "de Charolais"
 		adm = 6
 		dip = 6

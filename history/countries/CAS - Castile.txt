@@ -44,7 +44,7 @@ change_estate_land_share = {
 }
 1419.11.19 = {
 	monarch = {
-		name = "Sebastían II"
+		name = "Sebastián II"
 		dynasty = "Davides"
 		adm = 3
 		dip = 3

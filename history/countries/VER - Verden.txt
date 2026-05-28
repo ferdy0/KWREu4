@@ -18,7 +18,7 @@ fixed_capital = 54
 		culture = lower_saxon
 	}
 }
-1350.1.12 = {
+1360.1.12 = {
 	monarch = {
 		name = "Wolfram I"
 		dynasty = "van Stade"
@@ -32,7 +32,7 @@ fixed_capital = 54
 }
 1390.1.10 = {
 	monarch = {
-		name = "Heinrich I"
+		name = "Heinrich III"
 		dynasty = "van Stade"
 		adm = 2
 		dip = 3
@@ -44,7 +44,7 @@ fixed_capital = 54
 }
 1439.4.10 = {
 	monarch = {
-		name = "Heinrich II"
+		name = "Heinrich IV"
 		dynasty = "van Stade"
 		adm = 4
 		dip = 4
@@ -55,7 +55,7 @@ fixed_capital = 54
 	}
 	heir = {
 		name = "Heinrich"
-		monarch_name = "Heinrich III"
+		monarch_name = "Heinrich V"
 		dynasty = "van Stade"
 		adm = 6
 		dip = 5

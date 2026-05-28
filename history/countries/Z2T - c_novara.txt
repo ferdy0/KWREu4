@@ -57,7 +57,7 @@ set_country_flag = ZZZ_generated_converter_nation
 }
 1428.9.19 = {
 	monarch = {
-		name = "Emrico I"
+		name = "Enrico I"
 		dynasty = "Wettin"
 		adm = 5
 		dip = 4

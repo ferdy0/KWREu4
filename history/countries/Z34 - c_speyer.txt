@@ -9,7 +9,7 @@ fixed_capital = 77
 set_country_flag = ZZZ_generated_converter_nation
 1375.12.5 = {
 	monarch = {
-		name = "Lambert III"
+		name = "Lambert I"
 		dynasty = "von Luxemburg"
 		adm = 5
 		dip = 4
@@ -21,7 +21,7 @@ set_country_flag = ZZZ_generated_converter_nation
 }
 1387.8.16 = {
 	monarch = {
-		name = "Siegfried III"
+		name = "Siegfried I"
 		dynasty = "von Luxemburg"
 		adm = 5
 		dip = 4

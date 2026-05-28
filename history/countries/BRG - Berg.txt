@@ -19,7 +19,7 @@ capital = 84
 }
 1363.12.14 = {
 	monarch = {
-		name = "Pieter II"
+		name = "Peter II"
 		dynasty = "Etichonen"
 		birth_date = 1331.3.10
 		adm = 3

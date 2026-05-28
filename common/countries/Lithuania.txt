@@ -30,10 +30,9 @@ historical_units = {
 	slavic_stradioti
 }
 monarch_names = {
+	"Aleksandras #1" = 40
 	"Galindas #2" = 40
 	"Golding #2" = 40
-	"Zygimantas #0" = 40
-	"Aleksandras #1" = 20
 	"Alvydas #1" = 20
 	"Auctune #1" = 20
 	"Jan #1" = 20
@@ -42,10 +41,11 @@ monarch_names = {
 	"Nomedas #1" = 20
 	"Vladislovas #0" = 20
 	"Vytautas #0" = 20
+	"Zygimantas #0" = 20
 	"Zygimantas Augustas #0" = 20
 	"Gerdautas #0" = 15
 	"Henrikas #0" = 15
-	"Sergonis #1" = 15
+	"Sergonis #0" = 15
 	"Algirdas #0" = 10
 	"Dalimir #0" = 10
 	"Konrad #1" = 10

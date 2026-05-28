@@ -30,16 +30,16 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Heinrich #7" = 50
-	"Wolfram #3" = 30
-	"Andreas #2" = 20
-	"Ezio #1" = 20
+	"Heinrich #0" = 50
+	"Wolfram #0" = 30
+	"Andreas #0" = 20
+	"Aetius #1" = 20
 	"Konrad #1" = 20
-	"Lambert #3" = 20
+	"Lambert #2" = 20
 	"Alvin #0" = 10
-	"Arnulf #2" = 10
+	"Arnulf #0" = 10
 	"Hans #0" = 10
-	"Otto #2" = 10
+	"Otto #0" = 10
 	"Cosimo #0" = 0
 	"Gausbert #0" = 0
 	"Gebhard #0" = 0

@@ -29,7 +29,7 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Alberto #6" = 60
+	"Alberto #5" = 60
 	"Filiberto #0" = 30
 	"Luigi #2" = 30
 	"Ordelaffo #1" = 30

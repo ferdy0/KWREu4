@@ -46,7 +46,7 @@ elector = yes
 	}
 	heir = {
 		name = "Dirk"
-		monarch_name = "Dirk VI"
+		monarch_name = "Dirk VII"
 		dynasty = "Gerulfing"
 		adm = 6
 		dip = 5

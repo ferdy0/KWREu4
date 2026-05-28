@@ -34,19 +34,19 @@ historical_units = {
 }
 
 monarch_names = {
-	"Corrado #2" = 40
+	"Corrado #1" = 40
 	"Enrico #0" = 40
 	"Rainaldo #0" = 30
-	"Bonifacio #1" = 20
+	"Bonifacio #0" = 20
 	"Guelfo #0" = 20
-	"Ugo #1" = 20
+	"Ugo #0" = 20
 	"Goffredo #1" = 15
 	"Ranieri #0" = 15
-	"Bertoldo #1" = 10
+	"Bertoldo #0" = 10
 	"Diopoldo #0" = 10
-	"Niccolò #1" = 10
+	"Niccolò #0" = 10
 	"Teobaldo #0" = 5
-	"Uberto #2" = 5
+	"Uberto #0" = 5
 	"Achille #0" = 0
 	"Alberto #0" = 0
 	"Alessandro #0" = 0
@@ -94,7 +94,7 @@ monarch_names = {
 	"Caterina #0" = -1
 	"Lucrezia #0" = -1
 	"Marina #0" = -1
-	"Matilde #1" = -5
+	"Matilde #0" = -5
 }
 
 leader_names = {

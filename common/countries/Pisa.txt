@@ -28,17 +28,17 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Carolu #5" = 60
+	"Carolu #4" = 60
 	"Gabriele #1" = 20
 	"Gherardo Leonardo #0" = 20
 	"Giovanni #0" = 20
 	"Vissente #0" = 20
 	"Jacopo #0" = 15
 	"Emanuele #0" = 15
-	"Alessandro #1" = 5
+	"Alessandro #0" = 5
 	"Alvaro #0" = 5
 	"Belisario #0" = 5
-	"Vittorio #1" = 5
+	"Vittorio #0" = 5
 	"Adriano #0" = 0
 	"Alessio #0" = 0
 	"Ambrogio #0" = 0

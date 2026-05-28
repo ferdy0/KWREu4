@@ -68,8 +68,8 @@ capital = 4382
 }
 1437.6.3 = {
 	heir = {
-		name = "Gawel"
-		monarch_name = "Gawel III"
+		name = "Havel"
+		monarch_name = "Havel III"
 		dynasty = "von Luxemburg"
 		adm = 5
 		dip = 6

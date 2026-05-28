@@ -19,7 +19,7 @@ capital = 163
 }
 1383.10.22 = {
 	monarch = {
-		name = "Pedro III"
+		name = "Pedros III"
 		dynasty = "de Lacon-Gunale"
 		adm = 6
 		dip = 3
@@ -43,7 +43,7 @@ capital = 163
 }
 1427.7.17 = {
 	monarch = {
-		name = "Pedro IV"
+		name = "Pedros IV"
 		dynasty = "de Lacon-Gunale"
 		adm = 4
 		dip = 5

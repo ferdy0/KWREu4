@@ -28,7 +28,7 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Fernándo #4" = 80
+	"Fernán #4" = 80
 	"Antoninus #1" = 40
 	"Enrique #0" = 40
 	"Nuño #0" = 40

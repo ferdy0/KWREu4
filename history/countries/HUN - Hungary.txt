@@ -7,7 +7,7 @@ primary_culture = hungarian
 capital = 153
 1361.8.18 = {
 	monarch = {
-		name = "Giulio I"
+		name = "Julius I"
 		dynasty = "von Hachberg"
 		adm = 6
 		dip = 4
@@ -31,7 +31,7 @@ capital = 153
 }
 1401.12.29 = {
 	monarch = {
-		name = "Giulio II"
+		name = "Julius II"
 		dynasty = "von Hachberg"
 		adm = 6
 		dip = 4

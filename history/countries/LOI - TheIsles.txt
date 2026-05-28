@@ -31,7 +31,7 @@ capital = 253
 }
 1444.1.21 = {
 	monarch = {
-		name = "Áedán V"
+		name = "Áedán I"
 		dynasty = "Briain"
 		adm = 2
 		dip = 2

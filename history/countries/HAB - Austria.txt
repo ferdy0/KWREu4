@@ -19,7 +19,7 @@ capital = 134
 }
 1398.10.26 = {
 	monarch = {
-		name = "Adalbert III"
+		name = "Albert III"
 		dynasty = "von Habsburg"
 		adm = 3
 		dip = 2

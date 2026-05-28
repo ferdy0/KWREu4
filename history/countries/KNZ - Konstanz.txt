@@ -9,7 +9,7 @@ fixed_capital = 4712
 mercantilism = 25
 1356.1.12 = {
 	monarch = {
-		name = "Heinrich II"
+		name = "Heinrich I"
 		dynasty = "von Brandis"
 		adm = 3
 		dip = 3
@@ -74,7 +74,7 @@ mercantilism = 25
 
 1406.12.28 = {
 	monarch = {
-		name = "Albrecht I"
+		name = "Albrecht II"
 		dynasty = "Blarer"
 		birth_date = 1374.1.1
 		adm = 3
@@ -113,7 +113,7 @@ mercantilism = 25
 
 1436.7.30 = {
 	monarch = {
-		name = "Heinrich III"
+		name = "Heinrich II"
 		dynasty = "von Hewen"
 		birth_date = 1398.1.1
 		adm = 2

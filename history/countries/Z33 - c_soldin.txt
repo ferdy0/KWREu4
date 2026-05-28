@@ -21,7 +21,7 @@ set_country_flag = ZZZ_generated_converter_nation
 }
 1408.2.2 = {
 	monarch = {
-		name = "Wilhelm IV"
+		name = "Wilhelm I"
 		dynasty = "von Köln"
 		adm = 4
 		dip = 6

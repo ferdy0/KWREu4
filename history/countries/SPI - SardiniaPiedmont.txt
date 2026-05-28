@@ -31,7 +31,7 @@ capital = 4727
 }
 1396.2.12 = {
 	monarch = {
-		name = "Alberto V"
+		name = "Alberto IV"
 		dynasty = "di Sambonifacio"
 		adm = 3
 		dip = 3
@@ -43,7 +43,7 @@ capital = 4727
 }
 1405.6.3 = {
 	monarch = {
-		name = "Alberto VI"
+		name = "Alberto V"
 		dynasty = "di Sambonifacio"
 		adm = 4
 		dip = 5

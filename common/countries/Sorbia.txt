@@ -28,7 +28,7 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Otto #6" = 80
+	"Otto #4" = 80
 	"Antoni #0" = 40
 	"Friedrich #0" = 40
 	"Petrus #1" = 40
@@ -46,7 +46,7 @@ monarch_names = {
 	"Rudolf #0" = 10
 	"Kasimir #0" = 5
 	"Michael #0" = 5
-	"Miloslav #0" = 5
+	"Miloslaus #0" = 5
 	"Albrecht #0" = 0
 	"Alexander #0" = 0
 	"Arnold #0" = 0
@@ -59,7 +59,8 @@ monarch_names = {
 	"Markus #0" = 0
 	"Radomil #0" = 0
 	"Siegfried #0" = 0
-	"Wertislav #0" = 0
+	"Thurgot #1" = 0
+	"Wertislaus #0" = 0
 	"Wilhelm #0" = 0
 	
 	"Eva #0" = -1

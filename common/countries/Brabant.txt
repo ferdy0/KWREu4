@@ -28,15 +28,16 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Koenraad #2" = 30
-	"Godfried #3" = 20
-	"Simon #1" = 20
-	"Eduard #2" = 15
-	"Otto #0" = 15
-	"Anselm #1" = 10
+	"Koenraad #2" = 50
+	"Godfried #2" = 30
+	"Simon #1" = 30
+	"Eduard #2" = 20
+	"Otto #0" = 20
+	"Anselm #0" = 10
 	"Ijsbrecht #0" = 10
 	"Ilbert #0" = 10
 	"Steyn #0" = 10
+	"Manassès #2" = 5
 	"Albrecht #0" = 0
 	"Arnulf #0" = 0
 	"Bérenger #0" = 0
@@ -44,7 +45,6 @@ monarch_names = {
 	"Gauthier #0" = 0
 	"Gerolt #0" = 0
 	"Gwijde #0" = 0
-	"Manassès #0" = 0
 	"Wouter #0" = 0
 	
 	"Jasminne #1" = -10

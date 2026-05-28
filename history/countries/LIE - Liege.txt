@@ -32,7 +32,7 @@ add_accepted_culture = flemish
 }
 1368.8.25 = {
 	monarch = {
-		name = "Jan I"
+		name = "Jan V"
 		dynasty = "van Arkel"
 		adm = 3
 		dip = 3
@@ -56,8 +56,8 @@ add_accepted_culture = flemish
 }
 1389.1.1 = {
 	monarch = {
-		name = "Johann II"
-		dynasty = "von Wittelsbach"
+		name = "Johann VI"
+		dynasty = "von Nordheim"
 		adm = 3
 		dip = 3
 		mil = 4
@@ -68,7 +68,7 @@ add_accepted_culture = flemish
 }
 1418.1.1 = {
 	monarch = {
-		name = "Jan III"
+		name = "Jan VII"
 		dynasty = "van Wallenrode"
 		adm = 3
 		dip = 3
@@ -80,7 +80,7 @@ add_accepted_culture = flemish
 }
 1419.1.1 = {
 	monarch = {
-		name = "Jan IV"
+		name = "Jan VII"
 		dynasty = "van Loon-Heinsberg"
 		adm = 1
 		dip = 0

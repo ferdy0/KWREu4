@@ -19,7 +19,7 @@ capital = 280
 }
 1396.11.15 = {
 	monarch = {
-		name = "Igor I"
+		name = "Igor II"
 		dynasty = "Rurikovich"
 		birth_date = 1373.6.23
 		adm = 1

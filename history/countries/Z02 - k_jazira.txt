@@ -33,7 +33,7 @@ set_country_flag = ZZZ_generated_converter_nation
 }
 1399.9.2 = {
 	monarch = {
-		name = "Stepanos II"
+		name = "Stepanos I"
 		dynasty = "Vrtanesid"
 		adm = 5
 		dip = 3
@@ -71,7 +71,7 @@ set_country_flag = ZZZ_generated_converter_nation
 1434.1.31 ={
 	heir = {
 		name = "Stepanos"
-		monarch_name = "Stepanos III"
+		monarch_name = "Stepanos II"
 		dynasty = "Vrtanesid"
 		adm = 1
 		dip = 2

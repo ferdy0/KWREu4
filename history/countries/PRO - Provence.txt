@@ -31,7 +31,7 @@ capital = 201
 }
 1400.12.5 = {
 	monarch = {
-		name = "Charles IV"
+		name = "Charles I"
 		dynasty = "de Lacon-Gunale"
 		adm = 3
 		dip = 6

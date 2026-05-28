@@ -8,7 +8,7 @@ capital = 213
 1372.1.12 = {
 	monarch = {
 		name = "Lope I"
-		dynasty "del Habsburg-Xalón"
+		dynasty = "del Habsburg-Xalón"
 		adm = 4
 		dip = 3
 		mil = 4

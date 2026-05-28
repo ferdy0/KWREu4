@@ -21,7 +21,7 @@ set_country_flag = ZZZ_generated_converter_nation
 }
 1384.2.13 = {
 	monarch = {
-		name = "Guigues III"
+		name = "Guigues IV"
 		dynasty = "de Breviumbra"
 		adm = 5
 		dip = 3
@@ -45,7 +45,7 @@ set_country_flag = ZZZ_generated_converter_nation
 }
 1413.2.28 = {
 	monarch = {
-		name = "Guigues IV"
+		name = "Guigues V"
 		dynasty = "de Breviumbra"
 		adm = 2
 		dip = 4

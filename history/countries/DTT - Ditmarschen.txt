@@ -8,7 +8,7 @@ capital = 4141 #Ditmarschen
 
 1444.1.1 = {
 	monarch = {
-		name = "Achtundvierziger"
+		name = "Freie Bauern"
 		ADM = 3
 		DIP = 3
 		MIL = 5

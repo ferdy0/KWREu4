@@ -116,12 +116,11 @@ monarch_names = {
 	"Kuisma #1" = 15
 	"Aato #0" = 10
 	"Aleksanteri #0" = 10
-	"Jani #0" = 10
+	"Juhani #2" = 10
 	"Kibroi #0" = 10
 	"Lemetti #0" = 10
 	"Edvard #0" = 5
 	"Jaakko #0" = 5
-	"Juha #0" = 5
 	"Mainio #0" = 5
 	"Aapeli #0" = 0
 	"Alpertti #0" = 0
@@ -156,8 +155,8 @@ monarch_names = {
 	
 	"Aina #0" = -1
 	"Jaana #0" = -1
-	"Marfa #0" = -1
-	"Maria #0" = -1
+	"Marfa #1" = -1
+	"Maria #1" = -1
 	"Saara #0" = -1
 	"Tarja #0" = -1
 }

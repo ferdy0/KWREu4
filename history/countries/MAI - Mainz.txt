@@ -67,7 +67,7 @@ elector = yes
 		culture = swabian
 	}
 }
-1390.2.6 = {
+1396.1.1 = {
 	monarch = {
 		name = "Gottfried I"
 		dynasty = "von Leiningen"

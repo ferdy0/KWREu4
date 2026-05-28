@@ -19,7 +19,7 @@ capital = 183
 }
 1358.6.9 = {
 	monarch = {
-		name = "GÃ©raud I"
+		name = "Géraud I"
 		dynasty = "de Vexin-Amiens-Aurillac"
 		adm = 2
 		dip = 2

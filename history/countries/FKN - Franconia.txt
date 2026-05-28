@@ -7,7 +7,7 @@ primary_culture = franconian
 capital = 79
 1363.5.31 = {
 	monarch = {
-		name = "Kuno I"
+		name = "Konrad IV"
 		dynasty = "von Heldrungen"
 		adm = 6
 		dip = 3
@@ -31,7 +31,7 @@ capital = 79
 }
 1402.10.28 = {
 	monarch = {
-		name = "Konrad IV"
+		name = "Konrad V"
 		dynasty = "von Heldrungen"
 		adm = 6
 		dip = 3

@@ -29,7 +29,7 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Friedrich #0" = 100
+	"Friedrich #1" = 100
 	"Ludwig #0" = 80
 	"Gotthard #2" = 30
 	"Alberich #1" = 20
@@ -64,7 +64,7 @@ monarch_names = {
 	"Richard #0" = 10
 	"Wilhelm #0" = 10
 	"Wolfgang Georg #0" = 10
-	"Gottfried #0" = 5
+	"Gottfried #1" = 5
 	"Bruno #0" = 0
 	"Gottschalk #0" = 0
 	"Herbert #0" = 0

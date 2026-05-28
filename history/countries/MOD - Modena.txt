@@ -57,8 +57,8 @@ add_accepted_culture = lombard
 }
 1444.1.28 = {
 	heir = {
-		name = "Raneiri"
-		monarch_name = "Raneiri V"
+		name = "Raneiro"
+		monarch_name = "Raneiro I"
 		dynasty = "von Thüringen"
 		adm = 3
 		dip = 6

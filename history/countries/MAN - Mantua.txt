@@ -20,7 +20,7 @@ capital = 109
 }
 1385.9.4 = {
 	monarch = {
-		name = "Siegfried II"
+		name = "Sigfrido II"
 		dynasty = "von Luxemburg"
 		birth_date = 1353.3.20
 		adm = 1

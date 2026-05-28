@@ -31,7 +31,7 @@ historical_units = {
 	slavic_stradioti
 }
 monarch_names = {
-	"Pedro #4" = 140
+	"Pedros #4" = 140
 	"Theophylaktos #4" = 140
 	"Antonio #0" = 40
 	"Giacomo #0" = 40

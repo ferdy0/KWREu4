@@ -29,8 +29,8 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Heinrich #2" = 40
-	"Ruprecht #3" = 40
+	"Heinrich #4" = 40
+	"Ruprecht #2" = 40
 	"Baldwin #0" = 20
 	"Christoph #0" = 20
 	"Friedrich #0" = 20
@@ -42,13 +42,13 @@ monarch_names = {
 	"Nicolaus #0" = 20
 	"Oliver #2" = 20
 	"Otto #0" = 20
-	"Albrecht #1" = 15
+	"Albrecht #0" = 15
 	"Bernhard #0" = 15
 	"Burkhard #0" = 15
 	"Gottfried #0" = 15
 	"Florent #0" = 10
 	"Mathias #1" = 10
-	"Wolfram #1" = 10
+	"Wolfram #0" = 10
 	"Adrian #0" = 5
 	"Ambroos #1" = 5
 	"Eduard #0" = 5

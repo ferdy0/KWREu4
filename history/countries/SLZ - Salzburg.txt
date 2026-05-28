@@ -8,7 +8,7 @@ capital = 76
 elector = yes
 1365.8.12 = {
 	monarch = {
-		name = "Pilgrim I"
+		name = "Pilgrim II"
 		dynasty = "von Puchheim"
 		adm = 4
 		dip = 4
@@ -56,7 +56,7 @@ elector = yes
 }
 1429.2.8 = {
 	monarch = {
-		name = "Johann I"
+		name = "Johann II"
 		dynasty = "von Reisberg"
 		adm = 4
 		dip = 4
@@ -68,7 +68,7 @@ elector = yes
 }
 1441.9.30 = {
 	monarch = {
-		name = "Friedrich II"
+		name = "Friedrich III"
 		dynasty = "von Emmerberg"
 		adm = 3
 		dip = 5

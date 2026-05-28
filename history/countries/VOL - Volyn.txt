@@ -20,7 +20,7 @@ add_accepted_culture = ruthenian
 }
 1389.7.22 = {
 	monarch = {
-		name = "Voislav II"
+		name = "Voislav I"
 		dynasty = "von Habsburg"
 		adm = 4
 		dip = 6
@@ -32,7 +32,7 @@ add_accepted_culture = ruthenian
 }
 1433.1.5 = {
 	monarch = {
-		name = "Rostislav II"
+		name = "Rostislav I"
 		dynasty = "von Habsburg"
 		adm = 4
 		dip = 4

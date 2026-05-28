@@ -20,7 +20,7 @@ fixed_capital = 53
 }
 1414.6.3 = {
 	monarch = {
-		name = "Otto III"
+		name = "Otto I"
 		dynasty = "von Klingenberg"
 		dip = 1
 		adm = 3
@@ -43,7 +43,7 @@ fixed_capital = 53
 	}
 	queen = {
 		name = "Ingrid"
-		dynasty = "Beu√ü"
+		dynasty = "Beuﬂ"
 		adm = 1
 		dip = 4
 		mil = 2
@@ -58,7 +58,7 @@ fixed_capital = 53
 1430.1.1= {
 	heir = {
 		name = "Otto"
-		monarch_name = "Otto IV"
+		monarch_name = "Otto II"
 		dynasty = "von Klingenberg"
 		birth_date = 1430.1.1
 		death_date = 1484.1.1

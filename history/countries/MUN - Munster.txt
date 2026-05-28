@@ -20,7 +20,7 @@ fixed_capital = 86
 }
 1363.1.1= {
 	monarch = {
-		name = "Johann II"
+		name = "Johann I"
 		dynasty = "von Virneburg"
 		adm = 1
 		dip = 1
@@ -44,7 +44,7 @@ fixed_capital = 86
 }
 1379.1.1 = {
 	monarch = {
-		name = "Potho I"
+		name = "Johann II"
 		dynasty = "von Pottenstein"
 		adm = 2
 		dip = 1
@@ -57,7 +57,7 @@ fixed_capital = 86
 1382.1.1= {
 	monarch = {
 		name = "Heidenreich I"
-		dynasty = "Wolf von LÃ¼dinghausen"
+		dynasty = "Wolf von Lüdinghausen"
 		adm = 3
 		dip = 2
 		mil = 2
@@ -68,7 +68,7 @@ fixed_capital = 86
 }
 1392.1.1 = {
 	monarch = {
-		name = "Otto I"
+		name = "Otto IV"
 		dynasty = "von Hoya"
 		adm = 2
 		dip = 1

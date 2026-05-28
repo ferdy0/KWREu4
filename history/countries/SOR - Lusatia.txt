@@ -31,7 +31,7 @@ capital = 1759
 }
 1404.4.30 = {
 	monarch = {
-		name = "Otto V"
+		name = "Otto III"
 		dynasty = "von Luxemburg"
 		adm = 4
 		dip = 5
@@ -43,7 +43,7 @@ capital = 1759
 }
 1442.9.6 = {
 	monarch = {
-		name = "Otto VI"
+		name = "Otto IV"
 		dynasty = "von Luxemburg"
 		adm = 4
 		dip = 4

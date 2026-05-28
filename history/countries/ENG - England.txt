@@ -43,7 +43,7 @@ capital = 236
 }
 1442.9.11= {
 	monarch = {
-		name = "Edmund III"
+		name = "Edmund I"
 		dynasty = "Gerulfing-Darbye"
 		adm = 4
 		dip = 4

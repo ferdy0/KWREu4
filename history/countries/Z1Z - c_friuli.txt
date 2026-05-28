@@ -21,7 +21,7 @@ set_country_flag = ZZZ_generated_converter_nation
 }
 1365.8.20 = {
 	monarch = {
-		name = "Benedikt I"
+		name = "Benedetto I"
 		dynasty = "von Heimbach"
 		adm = 2
 		dip = 4
@@ -57,7 +57,7 @@ set_country_flag = ZZZ_generated_converter_nation
 }
 1433.1.19 = {
 	monarch = {
-		name = "Stjepan II"
+		name = "Stjepan III"
 		dynasty = "von Isenberg"
 		adm = 2
 		dip = 4

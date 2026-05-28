@@ -44,7 +44,7 @@ add_accepted_culture = karelian
 }
 1380.10.17 = {
 	monarch = {
-		name = "Jani I"
+		name = "Juhani II"
 		dynasty = "Kemeloe-Mikkeli"
 		adm = 4
 		dip = 4

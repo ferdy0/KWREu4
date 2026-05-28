@@ -8,7 +8,7 @@ capital = 210
 add_accepted_culture = aragonese
 1359.2.9 = {
 	monarch = {
-		name = "Dinis I"
+		name = "Diniz I"
 		dynasty = "de Bazán"
 		adm = 1
 		dip = 3
@@ -32,7 +32,7 @@ add_accepted_culture = aragonese
 }
 1405.6.12 = {
 	monarch = {
-		name = "Dinis II"
+		name = "Diniz II"
 		dynasty = "de Bazán"
 		adm = 1
 		dip = 3

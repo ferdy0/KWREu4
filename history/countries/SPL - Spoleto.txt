@@ -20,7 +20,7 @@ fixed_capital = 4731
 }
 1393.1.31 = {
 	monarch = {
-		name = "Corrado II"
+		name = "Corrado I"
 		dynasty = "d'Assisi"
 		adm = 3
 		dip = 3
@@ -70,7 +70,7 @@ fixed_capital = 4731
 1437.2.26 = {
 	heir = {
 		name = "Corrado"
-		monarch_name = "Corrado III"
+		monarch_name = "Corrado II"
 		dynasty = "d'Assisi"
 		adm = 2
 		dip = 2
