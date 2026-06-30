@@ -41,33 +41,44 @@ country_event = {
 		}
 	}
 	
+	after = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = mckl_indep
+				}
+				MKL = {
+					add_years_of_income = -5
+					define_ruler = {
+						name = "Friedrich I"
+						dynasty = "von Luxemburg"
+						age = 23
+						claim = 80
+						male = yes
+						culture = hessian
+						religion = catholic
+					}
+					define_consort = {
+						name = "Hannelore"
+						dynasty = "Sass"
+						age = 20
+						claim = 80
+						female = yes
+						culture = pommeranian
+						religion = catholic
+					}
+				}
+			}
+		}
+	}
+	
 	option = { # Mecklenburgian Independence
 		ai_chance = { factor = 30 }
 		name = lot_flavor_ev.1.a
 		add_years_of_income = 5
 		break_union = MKL
 		hidden_effect = {
-			MKL = {
-				add_years_of_income = -5
-				define_ruler = {
-					name = "Friedrich I"
-					dynasty = "von Luxemburg"
-					age = 23
-					claim = 80
-					male = yes
-					culture = hessian
-					religion = catholic
-				}
-				define_consort = {
-					name = "Hannelore"
-					dynasty = "Sass"
-					age = 20
-					claim = 80
-					female = yes
-					culture = pommeranian
-					religion = catholic
-				}
-			}
+			set_country_flag = mckl_indep
 		}
 	}
 	
@@ -331,7 +342,7 @@ country_event = {
 			}
 		}
 		NOT = {
-			war_with = LUX
+			has_country_flag = triggered_recently_or_so
 		}
 	}
 	
@@ -339,12 +350,35 @@ country_event = {
 		months = 3
 	}
 	
+	immediate = {
+		set_country_flag = triggered_recently_or_so
+	}
+	
 	option = {
 		name = lot_flavor_ev.6.a
-		
-		declare_war_with_cb = {
-			who = LUX
-			casus_belli = cb_trade_war_triggered
+		hidden_effect = {
+			country_event = {
+				id = lot_flavor_ev.7
+				days = 300
+			}
 		}
+	}
+}
+
+country_event = {
+	id = lot_flavor_ev.7
+	title = lot_flavor_ev.6.t
+	desc = lot_flavor_ev.6.d
+	picture = OVEREXTENSION_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	immediate = {
+		clr_country_flag = triggered_recently_or_so
+	}
+	
+	option = {
+		name = lot_flavor_ev.6.a
 	}
 }
