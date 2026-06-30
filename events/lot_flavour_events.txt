@@ -96,6 +96,7 @@ country_event = {
 		}
 		is_year = 1447
 		has_heir = yes
+		NOT = { is_female = yes }
 	}
 	
 	mean_time_to_happen = {

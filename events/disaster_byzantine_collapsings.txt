@@ -3206,15 +3206,15 @@ country_event = {
 	trigger = {
 		had_global_flag = {
 			flag = karaman_has_seceded
-			days = 365
-		}
-		had_global_flag = {
-			flag = trebizond_has_seceded
 			days = 730
 		}
 		had_global_flag = {
-			flag = latin_emp_has_seceded
+			flag = trebizond_has_seceded
 			days = 1095
+		}
+		had_global_flag = {
+			flag = latin_emp_has_seceded
+			days = 1460
 		}
 		BYZ = {
 			owns_or_non_sovereign_subject_of = 327
@@ -3366,7 +3366,7 @@ country_event = {
 	trigger = {
 		had_global_flag = {
 			flag = cilicia_has_seceded
-			days = 365
+			days = 730
 		}
 		had_global_flag = {
 			flag = latin_emp_has_seceded
@@ -4109,7 +4109,7 @@ province_event = {
 		name = byzantine_collapsings.53.a
 		add_province_modifier = {
 			name = ready_to_secede_from_this_byz
-			duration = 3650
+			duration = 2555
 		}
 	}
 }

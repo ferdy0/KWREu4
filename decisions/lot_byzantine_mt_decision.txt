@@ -140,4 +140,46 @@ country_decisions = {
 			}
 		}
 	}
+	
+	byzantine_adivsors = {
+		major = yes
+		color = { 112 41 99 }
+		
+		potential = {
+			tag = HUN
+			exists = BYZ
+			mission_completed = bte_lot_reconquer_greece_5_8
+		}
+		
+		allow = {
+			alliance_with = BYZ
+			BYZ = {
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = wait_thirty_yrs
+				OR = {
+					had_country_flag = {
+						flag = smthin_smthin_thirty_yrs
+						days = 10950
+					}
+					has_country_flag = first_time_offer_mt
+				}
+			}
+		}
+		
+		effect = {
+			clr_country_flag = first_time_offer_mt
+			clr_country_flag = smthin_smthin_thirty_yrs
+			BYZ = {
+				country_event = {
+					id = flavour_hun.3
+					days = 15
+				}
+			}
+		}
+	}
 }

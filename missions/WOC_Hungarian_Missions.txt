@@ -450,6 +450,14 @@ lot_defend_catholicism_2_1 = {
 		
 		effect = {
 			#wow so good, you converted Bohemia!
+			create_alliance = BOH
+			add_historical_friend = BOH
+			BOH = {
+				add_historical_friend = HUN
+			}
+			add_legitimacy = 15
+			add_prestige = 15
+			add_papal_influence = 40
 		}
 	}
 }
@@ -536,10 +544,30 @@ lot_between_two_empires_branching_pro_imperial = {
 		
 		trigger = {
 			alliance_with = emperor
+			trust = {
+				who = emperor
+				value = 75
+			}
+			reverse_has_opinion = {
+				who = emperor
+				value = 125
+			}
 		}
 		
 		effect = {
-			#something good ig
+			every_elector = {
+				add_opinion = {
+					who = HUN
+					modifier = royal_ambassador_visit
+					years = 50
+				}
+			}
+			153 = {
+				add_province_modifier = {
+					name = imperial_embussy
+					duration = 18250
+				}
+			}
 		}
 	}
 	
@@ -547,13 +575,38 @@ lot_between_two_empires_branching_pro_imperial = {
 		icon = mission_rb_control_electors
 		required_missions = { bte_lot_ally_empire_1_7 }
 		position = 8
+		provinces_to_highlight = {
+			owner = {
+				is_elector = yes
+				NOT = {
+					all_elector = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+				}
+			}
+		}
 		
 		trigger = {
-			#be friends with electors or so
+			calc_true_if = {
+				all_elector = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+				amount = 4
+			}
 		}
 		
 		effect = {
 			#something good ig
+			add_country_modifier = {
+				name = infl_wif_the_electors
+				duration = 18250
+			}
 		}
 	}
 	
@@ -602,6 +655,14 @@ lot_between_two_empires_branching_anti_imperial = {
 		icon = bohemian_borderlands
 		required_missions = { bte_lot_frens_between_empires_3_6 }
 		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = bohemia_area
+				area = erzgebirge_area
+				area = moravia_area
+			}
+			NOT = { owned_by = ROOT }
+		}
 		
 		trigger = {
 			bohemia_area = {
@@ -619,7 +680,31 @@ lot_between_two_empires_branching_anti_imperial = {
 		}
 		
 		effect = {
-			#something good ig
+			add_prestige = 20
+			random_elector = {
+				limit = {
+					capital_scope = {
+						region = north_german_region
+					}
+				}
+				reverse_add_casus_belli = {
+					target = ROOT
+					type = cb_vassalize_mission
+					months = 300
+				}
+			}
+			random_elector = {
+				limit = {
+					capital_scope = {
+						region = south_german_region
+					}
+				}
+				reverse_add_casus_belli = {
+					target = ROOT
+					type = cb_vassalize_mission
+					months = 300
+				}
+			}
 		}
 	}
 	
@@ -627,13 +712,53 @@ lot_between_two_empires_branching_anti_imperial = {
 		icon = mission_rb_control_electors
 		required_missions = { bte_lot_conquer_bohemia_1_7 }
 		position = 8
+		provinces_to_highlight = {
+			owner = {
+				is_elector = yes
+			}
+		}
 		
 		trigger = {
-			#control electors
+			OR = {
+				AND = {
+					is_elector = yes
+					any_subject_country = {
+						is_elector = yes
+					}
+				}
+				calc_true_if = {
+					any_subject_country = {
+						is_elector = yes
+					}
+					amount = 2
+				}
+			}
+			any_elector = {
+				NOT = {
+					is_subject_of = ROOT
+				}
+				subsidised_percent_amount = {
+					value = 0.25
+				}
+			}
 		}
 		
 		effect = {
-			#something good ig
+			add_country_modifier = {
+				name = hre_delenda_est_hun
+				duration = 9125
+			}
+			add_casus_belli = {
+				target = emperor
+				type = cb_ita_dismantle_hre
+				months = 600
+			}
+			emperor = {
+				add_country_modifier = {
+					name = hre_delenda_est_hre
+					duration = 9125
+				}
+			}
 		}
 	}
 	
@@ -1015,7 +1140,16 @@ lot_defend_catholicism_2_2 = {
 		}
 		
 		effect = {
-			#congrats on the marriage
+			add_papal_influence = 15
+			add_trust = {
+				who = LAE
+				value = 25
+				mutual = yes
+			}
+			add_country_modifier = {
+				name = most_fert_cath_marriage
+				duration = 18250
+			}
 		}
 	}
 }
@@ -1408,16 +1542,28 @@ lot_between_two_empires_3 = {
 		
 		trigger = {
 			exists = BYZ
-			NOT = { hre_size = 1 }
+			hre_size = 1
 			num_of_trusted_allies = 2
+			any_ally = {
+				NOT = { tag = BYZ }
+				NOT = { is_part_of_hre = yes }
+				total_development = 150
+			}
 		}
 		
 		effect = {
 			if = {
 				limit = {
-					alliance_with = BOH
+					any_elector = {
+						alliance_with = ROOT
+					}
 				}
-				add_historical_friend = BOH
+				every_elector = {
+					limit = {
+						alliance_with = ROOT
+					}
+					add_historical_friend = ROOT
+				}
 				clr_country_flag = friends_with_the_holy_empire
 				clr_country_flag = enemies_of_the_holy_empire
 				set_country_flag = friends_with_the_holy_empire
@@ -1451,7 +1597,10 @@ lot_between_two_empires_3 = {
 				swap_non_generic_missions = yes
 			}
 			custom_tooltip = decides_branching_imperial
-			#also some other rewards ig
+			add_country_modifier = {
+				name = building_up_def_lines
+				duration = 9125
+			}
 		}
 	}
 	
@@ -1461,11 +1610,25 @@ lot_between_two_empires_3 = {
 		position = 9
 		
 		trigger = {
-			#some way to meddle in Illyria
+			has_spy_network_in = {
+				who  = SER
+				value = 75
+			}
+			reverse_has_opinion = {
+				who = SER
+				value = 100
+			}
 		}
 		
 		effect = {
-			#some cool effects ig
+			SER = {
+				add_truce_with = HUN
+			}
+			steer_trade = SER
+			add_country_modifier = {
+				name = the_meddler_iii
+				duration = 9125
+			}
 		}
 	}
 }
@@ -1713,7 +1876,12 @@ lot_between_two_empires_4 = {
 		}
 		
 		effect = {
-			#some cool effects ig
+			southern_transylvania_area = {
+				add_province_modifier = {
+					name = transylvanian_fort_lines
+					duration = 18250
+				}
+			}
 		}
 	}
 	
@@ -1813,14 +1981,23 @@ lot_between_two_empires_4 = {
 		icon = mission_the_russian_tsardom
 		required_missions = { hun_strengthen_the_vegvar }
 		position = 9
+		provinces_to_highlight = {
+			OR = {
+				area = bulgaria_area
+				area = silistria_area
+			}
+		}
 		
 		trigger = {
 			OR = {
 				BUL = {
 					is_subject_of = ROOT
 				}
-				BUL = {
-					is_subject_of = BYZ
+				AND = {
+					BUL = {
+						is_subject_of = BYZ
+					}
+					alliance_with = BYZ
 				}
 				AND = {
 					bulgaria_area = {
@@ -1841,12 +2018,52 @@ lot_between_two_empires_4 = {
 						type = all
 						country_or_non_sovereign_subject_holds = BYZ
 					}
+					alliance_with = BYZ
 				}
 			}
 		}
 		
 		effect = {
-			#some cool effects ig
+			if = {
+				limit = {
+					bulgaria_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = BYZ
+					}
+					silistria_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = BYZ
+					}
+					alliance_with = BYZ
+				}
+				add_historical_friend = BYZ
+				BYZ = {
+					add_historical_friend = HUN
+				}
+				add_country_modifier = {
+					name = helping_our_imperial_frens
+					duration = 9125
+				}
+			}
+			else_if = {
+				limit = {
+					alliance_with = BYZ
+				}
+				add_historical_friend = BYZ
+				BYZ = {
+					add_historical_friend = HUN
+				}
+				add_country_modifier = {
+					name = rebalanced_regional_prestige
+					duration = 7300
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = rebalanced_regional_prestige
+					duration = 14600
+				}
+			}
 		}
 	}
 }
@@ -2092,11 +2309,28 @@ lot_between_two_empires_5 = {
 		position = 7
 		
 		trigger = {
-			#something about allying the byzantines
+			alliance_with = BYZ
+			marriage_with = BYZ
+			BYZ = {
+				has_any_disaster = no
+				calc_true_if = {
+					all_province = {
+						region = anatolia_region
+						is_state_core = BYZ
+					}
+					amount = 15
+				}
+				total_development = 250
+			}
+			is_year = 1455
 		}
 		
 		effect = {
-			#some cool effects ig
+			add_country_modifier = {
+				name = a_grand_ally
+				duration = 9125
+			}
+			
 		}
 	}
 	
@@ -2106,11 +2340,39 @@ lot_between_two_empires_5 = {
 		position = 8
 		
 		trigger = {
-			#something about allying the byzantines
+			alliance_with = BYZ
+			has_won_war_against = {
+				who = LAE
+				max_years_since = 25
+			}
+			BYZ = {
+				has_won_war_against = {
+					who = LAE
+					max_years_since = 25
+				}
+				owns_core_province = 4705
+				owns_core_province = 4702
+				owns_core_province = 148
+				owns_core_province = 1853
+				owns_core_province = 147
+				owns_or_non_sovereign_subject_of = 4700
+				owns_or_non_sovereign_subject_of = 2348
+				owns_or_non_sovereign_subject_of = 3003
+				owns_or_non_sovereign_subject_of = 164
+			}
+			
 		}
 		
 		effect = {
-			#some cool effects ig
+			add_papal_influence = -10
+			add_favors = {
+				who = BYZ
+				amount = 50
+			}
+			custom_tooltip = unlocks_byzantine_adivsors_tt
+			hidden_effect = {
+				set_country_flag = first_time_offer_mt
+			}
 		}
 	}
 	
@@ -2118,28 +2380,114 @@ lot_between_two_empires_5 = {
 		icon = danubian_power
 		required_missions = { hun_strengthen_the_vegvar }
 		position = 9
+		provinces_to_highlight = {
+			area = wallachia_area
+		}
 		
 		trigger = {
 			OR = {
 				WAL = {
 					is_subject_of = ROOT
 				}
-				WAL = {
-					is_subject_of = BYZ
+				AND = {
+					WAL = {
+						is_subject_of = BYZ
+					}
+					alliance_with = BYZ
 				}
 				wallachia_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
-				wallachia_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = BYZ
+				AND = {
+					wallachia_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = BYZ
+					}
+					alliance_with = BYZ
 				}
 			}
 		}
 		
 		effect = {
-			#some cool effects ig
+			if = {
+				limit = {
+					WAL = {
+						is_subject_of = BYZ
+					}
+					alliance_with = BYZ
+				}
+				add_historical_friend = BYZ
+				BYZ = {
+					add_historical_friend = HUN
+				}
+				add_country_modifier = {
+					name = helping_our_imperial_frens
+					duration = 9125
+				}
+				WAL = {
+					add_truce_with = HUN
+				}
+				steer_trade = WAL
+			}
+			else_if = {
+				limit = {
+					wallachia_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = BYZ
+					}
+					alliance_with = BYZ
+				}
+				add_country_modifier = {
+					name = helping_our_imperial_frens
+					duration = 9125
+				}
+				1756 = {
+					add_trade_modifier = {
+						who = ROOT
+						duration = 9125
+						power = 15
+						key = TRANSDANUBIAN_TRADE_LICENCE
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					WAL = {
+						is_subject_of = ROOT
+					}
+					alliance_with = BYZ
+				}
+				add_historical_friend = BYZ
+				BYZ = {
+					add_historical_friend = HUN
+				}
+				WAL = {
+					add_truce_with = HUN
+				}
+				steer_trade = WAL
+			}
+			else_if = {
+				limit = {
+					WAL = {
+						is_subject_of = ROOT
+					}
+				}
+				WAL = {
+					add_truce_with = HUN
+				}
+				steer_trade = WAL
+			}
+			else = {
+				1756 = {
+					add_trade_modifier = {
+						who = ROOT
+						duration = 9125
+						power = 15
+						key = TRANSDANUBIAN_TRADE_LICENCE
+					}
+				}
+			}
 		}
 	}
 }
